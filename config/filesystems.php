@@ -60,6 +60,14 @@ return [
             'report' => false,
         ],
 
+        'article_view' => [
+            'driver' => 'local',
+            'root' => base_path('resources/views'),
+            'serve' => true,
+            'throw' => false,
+            'report' => false,
+        ],
+
     ],
 
     /*
