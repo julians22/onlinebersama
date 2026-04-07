@@ -62,7 +62,7 @@ return [
 
         'article_view' => [
             'driver' => 'local',
-            'root' => base_path('resources/views'),
+            'root' => base_path('resources/views/contents/articles'),
             'serve' => true,
             'throw' => false,
             'report' => false,
