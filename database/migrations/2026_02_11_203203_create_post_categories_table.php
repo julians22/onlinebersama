@@ -20,7 +20,7 @@ return new class extends Migration
         });
 
         Schema::table('posts', function (Blueprint $table) {
-            $table->foreignId('post_category_id')->after('type')->constrained()->onDelete('cascade');
+            $table->foreignId('post_category_id')->nullable()->after('type')->constrained()->onDelete('cascade');
         });
     }
 
