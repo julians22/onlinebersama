@@ -5,7 +5,7 @@
                 <img class="w-56" src="{{ asset('images/logo-com-white.svg') }}" alt="OnlineBersama">
             </div>
             <div class="flex justify-between gap-8.5 w-132.5">
-                <div class="flex flex-col gap-y-2.5 w-full max-w-75.5">
+                <div class="flex flex-col w-full max-w-75.5">
                     <a href="{{ route('index') }}#mengapa-com" class="footer-link">Mengapa .com?</a>
                     <a href="{{ route('websites') }}" class="footer-link">Untuk Situs Web</a>
                     <a href="{{ route('email') }}" class="footer-link">Untuk Email</a>
