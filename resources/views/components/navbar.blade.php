@@ -12,7 +12,9 @@
             </div>
             <div class="flex items-center gap-x-10">
                 <ul class="hidden lg:flex gap-x-10">
-                    <li><a href="#" class="font-medium text-white text-xl leading-6">Mengapa .com?</a></li>
+                    <li>
+                        <a href="{{ route('index') }}#mengapa-com" class="font-medium text-white text-xl leading-6">Mengapa .com?</a>
+                    </li>
                     <li>
                         <button type="button" @click="open = !open" class="flex items-center gap-1.5 font-medium text-white text-xl leading-6 cursor-pointer">
                             Bagaimana Cara Menggunakan .com?
