@@ -30,7 +30,7 @@
     {{-- Dropdown Menu --}}
     <div class="z-[-1] relative">
         <div x-cloak class="top-0 left-0 absolute grid grid-cols-12 bg-white w-full transition-all duration-300 ease-in-out" :class="open ? 'translate-y-0' : '-translate-y-full'">
-            <div class="gap-10 grid grid-cols-3 col-span-9 p-10 h-max">
+            <div class="2xl:gap-10 xl:gap-8 grid grid-cols-3 2xl:col-span-9 xl:col-span-8 p-10 h-max">
                 <a href="{{ route('websites') }}" class="group flex gap-5 hover:bg-mint-100 p-6 rounded-[10px] min-h-54.25 transition-all duration-300 ease-in-out">
                     <div class="space-y-4">
                         <h3 class="text-navy-blue-300 subheadline-3">.com untuk Situs Web</h3>
@@ -59,8 +59,8 @@
                     </div>
                 </a>
             </div>
-            <div class="flex flex-col gap-4 col-span-3 bg-light-gray-100 p-10 w-full">
-                <button type="button" class="relative rounded-2xl w-97.5 h-54.25 overflow-hidden cursor-pointer">
+            <div class="flex flex-col gap-4 2xl:col-span-3 xl:col-span-4 bg-light-gray-100 p-10 w-full">
+                <button type="button" class="relative rounded-2xl w-full max-w-97.5 h-54.25 overflow-hidden cursor-pointer">
                     <img class="top-1/2 left-1/2 absolute size-14 -translate-x-1/2 -translate-y-1/2" src="{{ asset('images/icons/white-play.svg') }}">
                     <img class="size-full object-cover object-top" src="{{ asset('images/placeholder-video-navbar.jpg') }}" alt="Placeholder Video">
                 </button>

@@ -115,7 +115,7 @@
             </div>
         </div>
     </section>
-    <section class="flex flex-col gap-10 py-20 container">
+    <section class="flex flex-col gap-10 py-20 container-smaller">
         <h2 class="text-navy-blue-300 text-center headline-1">Tanya Jawab</h2>
         <div class="flex flex-col">
             <x-displays.accordion question="Mengapa saya harus memilih .com?">
