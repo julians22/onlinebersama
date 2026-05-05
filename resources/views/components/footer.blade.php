@@ -4,8 +4,8 @@
             <div>
                 <img class="w-56" src="{{ asset('images/logo-com-white.svg') }}" alt="OnlineBersama">
             </div>
-            <div class="flex justify-between gap-8.5 w-[528px]">
-                <div class="flex flex-col gap-y-2.5 w-full max-w-[302px]">
+            <div class="flex justify-between gap-8.5 w-132.5">
+                <div class="flex flex-col gap-y-2.5 w-full max-w-75.5">
                     <a href="#" class="footer-link">Mengapa .com?</a>
                     <a href="#" class="footer-link">Untuk Situs Web</a>
                     <a href="#" class="footer-link">Untuk Email</a>
@@ -14,20 +14,20 @@
                     <a href="#" class="footer-link">Temukan .com Anda</a>
                 </div>
                 <div class="flex flex-col gap-y-2.5">
-                    <div class="flex flex-col gap-y-2.5 w-full max-w-[280px]">
+                    <div class="flex flex-col gap-y-2.5 w-full max-w-48.5">
                         <a href="#" class="footer-link">Pernyataan Privasi</a>
                         <a href="#" class="footer-link">Ketentuan Penggunaan</a>
                         <a href="#" class="footer-link">Pengaturan Cookie</a>
                         <a href="#" class="footer-link">Verisign.com</a>
                     </div>
                     <div class="flex gap-5">
-                        <a href="#">
+                        <a href="#" class="py-2">
                             <img src="{{ asset('images/icons/white-facebook-icon.svg') }}" alt="">
                         </a>
-                        <a href="#">
+                        <a href="#" class="py-2">
                             <img src="{{ asset('images/icons/white-linkedin-icon.svg') }}" alt="">
                         </a>
-                        <a href="#">
+                        <a href="#" class="py-2">
                             <img src="{{ asset('images/icons/white-x-icon.svg') }}" alt="">
                         </a>
                     </div>

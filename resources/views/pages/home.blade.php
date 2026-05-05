@@ -41,13 +41,13 @@
         </div>
         <div class="relative">
             <img class="mx-auto" src="{{ asset('images/placeholder-video-how.jpg') }}" alt="">
-            <button type="button" class="top-1/2 left-1/2 z-10 absolute -translate-x-1/2 -translate-y-1/2 cursor-pointer">
+            <button type="button" class="top-1/2 left-1/2 z-10 absolute -translate-x-1/2 -translate-y-1/2 cursor-pointer mt-10">
                 <img class="size-32.5" src="{{ asset('images/icons/navy-play.svg') }}" alt="">
             </button>
-            <div class="top-0 left-1/2 absolute flex py-50 max-w-386 size-full -translate-x-1/2">
-                <div class="space-y-3.5">
-                    <h2 class="text-navy-blue-300 headline-1">Bukan Sekadar Domain. <span class="block">Melainkan Suatu Pernyataan.</span></h2>
-                    <p class="max-w-146.5 text-deep-blue-300 leading-8! paragraph-md">Tinggalkan jejak Anda dan bangun merek tepercaya dengan .com.</p>
+            <div class="top-0 left-1/2 -translate-x-1/2 absolute flex size-full max-w-480 py-40 px-32 2xl:py-50 2xl:px-42">
+                <div class="space-y-3.5 max-w-182 min-[1800px]:max-w-213.5">
+                    <h2 class="text-navy-blue-300 headline-1">Bukan Sekadar Domain. Melainkan Suatu Pernyataan.</h2>
+                    <p class="max-w-140 text-deep-blue-300 leading-8! paragraph-md">Tinggalkan jejak Anda dan bangun merek tepercaya dengan .com.</p>
                 </div>
             </div>
         </div>

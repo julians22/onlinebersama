@@ -75,7 +75,7 @@
         </div>
     </section>
     <section class="flex items-center gap-44 py-19.5 container">
-        <div class="flex flex-col gap-11.5">
+        <div class="top-32 sticky flex flex-col gap-11.5">
             <h2 class="text-navy-blue-300 text-center headline-2">Cara Meneruskan Nama Domain Anda</h2>
             <div class="relative rounded-[10px] overflow-hidden">
                 <img class="size-full aspect-video" src="{{ asset('images/how-to-forward-domain.jpg') }}" alt="">
