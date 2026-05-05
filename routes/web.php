@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Route;
 Route::controller(PageController::class)->group(function() {
     Route::get('/', 'index')->name('index');
     Route::get('/cari-nama-domain', 'find')->name('find');
+    Route::get('/kumpulan-materi', 'learning')->name('learning');
 });
 
 Route::controller(UseCaseController::class)->group(function() {
