@@ -1,5 +1,5 @@
 <footer class="bg-gradient-blue-double text-white">
-    <div class="container flex flex-col gap-5 py-20">
+    <div class="flex flex-col gap-5 py-20 container">
         <div class="flex justify-between">
             <div>
                 <img class="w-56" src="{{ asset('images/logo-com-white.svg') }}" alt="OnlineBersama">
@@ -22,13 +22,13 @@
                     </div>
                     <div class="flex gap-5">
                         <a href="#">
-                            <img src="{{ asset('icons/white-facebook-icon.svg') }}" alt="">
+                            <img src="{{ asset('images/icons/white-facebook-icon.svg') }}" alt="">
                         </a>
                         <a href="#">
-                            <img src="{{ asset('icons/white-linkedin-icon.svg') }}" alt="">
+                            <img src="{{ asset('images/icons/white-linkedin-icon.svg') }}" alt="">
                         </a>
                         <a href="#">
-                            <img src="{{ asset('icons/white-x-icon.svg') }}" alt="">
+                            <img src="{{ asset('images/icons/white-x-icon.svg') }}" alt="">
                         </a>
                     </div>
                 </div>

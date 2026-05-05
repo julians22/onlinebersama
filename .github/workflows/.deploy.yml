@@ -47,7 +47,6 @@ jobs:
           script: |
             cd /home/designcube3/demo_projects/onlinebersama
             # Menggunakan alias pphp84 sesuai konfigurasi server Anda
-            /usr/local/apps/php84/bin/php artisan key:generate
             /usr/local/apps/php84/bin/php artisan down
             /usr/local/apps/php84/bin/php artisan migrate --force
             /usr/local/apps/php84/bin/php artisan config:cache
