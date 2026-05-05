@@ -17,6 +17,12 @@ sudo podman run -d \
   -v /home/ubuntu/applications/devel/onlinebersama/.env:/var/www/html/.env:Z \
   laravel-staging
 
+# Pastikan folder tujuan ada
+mkdir -p /home/ubuntu/applications/devel/onlinebersama/public/build
+
+# Copy folder build dari container ke host
+sudo podman cp app-staging:/var/www/html/public/build /home/ubuntu/applications/devel/onlinebersama/public/
+
 echo "--- Running Artisan Commands ---"
 sudo podman exec app-staging php artisan migrate --force
 sudo podman exec app-staging php artisan key:generate
