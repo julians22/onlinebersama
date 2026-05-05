@@ -6,18 +6,18 @@
             </div>
             <div class="flex gap-8.5">
                 <div class="flex flex-col w-73.75">
-                    <a href="#" class="footer-link">Why .com?</a>
-                    <a href="#" class="footer-link">For Websites</a>
-                    <a href="#" class="footer-link">For Email</a>
-                    <a href="#" class="footer-link">For Social Media & E-Commerce</a>
-                    <a href="#" class="footer-link">Learning Hub</a>
-                    <a href="#" class="footer-link">Find a .com</a>
+                    <a href="#" class="footer-link">Mengapa .com?</a>
+                    <a href="#" class="footer-link">Untuk Situs Web</a>
+                    <a href="#" class="footer-link">Untuk Email</a>
+                    <a href="#" class="footer-link">Untuk Media Sosial dan <span class="block">E-Commerce</span></a>
+                    <a href="#" class="footer-link">Panduan Belajar</a>
+                    <a href="#" class="footer-link">Temukan .com Anda</a>
                 </div>
                 <div class="flex flex-col justify-between">
                     <div class="flex flex-col w-41.5">
-                        <a href="#" class="footer-link">Privacy Statement</a>
-                        <a href="#" class="footer-link">Conditions of Use</a>
-                        <a href="#" class="footer-link">Cookie Settings</a>
+                        <a href="#" class="footer-link">Pernyataan Privasi</a>
+                        <a href="#" class="footer-link">Ketentuan Penggunaan</a>
+                        <a href="#" class="footer-link">Pengaturan Cookie</a>
                         <a href="#" class="footer-link">Verisign.com</a>
                     </div>
                     <div class="flex gap-5">
@@ -35,8 +35,8 @@
             </div>
         </div>
         <div class="space-y-4 font-sans text-[12px] leading-5">
-            <p>&copy; 2026 VeriSign, Inc. All rights reserved. VERISIGN, the VERISIGN logo, and other trademarks, service marks, and designs are registered or unregistered trademarks of VeriSign, Inc. and its subsidiaries in the United States and in other countries. All other trademarks are property of their respective owners.</p>
-            <p>References to X, and the X logo are trademarks of X Corp. or its affiliates.</p>
+            <p>&copy; 2026 VeriSign, Inc. Semua hak dilindungi undang-undang. VERISIGN, logo VERISIGN, serta merek dagang, merek layanan, dan desain lainnya adalah merek dagang terdaftar atau tidak terdaftar dari VeriSign, Inc. serta anak perusahaannya di Amerika Serikat dan di negara lainnya. Semua merek dagang lainnya merupakan hak milik dari pemiliknya masing-masing.</p>
+            <p>Referensi terhadap X dan logo X adalah merek dagang dari X Corp atau afiliasinya.</p>
         </div>
     </div>
 </footer>

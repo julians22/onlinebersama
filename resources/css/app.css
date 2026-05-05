@@ -85,6 +85,12 @@
 /* ====== Components ====== */
 
 @layer components{
+    /* Accordion */
+
+    .accordion-content {
+        @apply font-sans font-medium text-[18px] tracking-[0.25px] md:text-[24px] leading-8.5!;
+    }
+
     /* Button */
 
     .btn-primary {
@@ -92,13 +98,13 @@
     }
 
     .btn-secondary {
-        @apply transition-all duration-150 ease-in-out block text-center text-sm text-white rounded-full bg-magenta-300 leading-6 px-4 py-0.5 hover:bg-magenta-400 hover:text-light-gray-300 focus:border focus:border-magenta-300 focus:bg-magenta-200 lg:text-xl lg:p-4;
+        @apply transition-all duration-150 ease-in-out block text-center text-sm text-white rounded-full bg-magenta-300 leading-6 px-4 py-0.5 border hover:bg-magenta-400 hover:text-light-gray-300 focus:border-magenta-300 focus:bg-magenta-200 lg:text-xl lg:p-4;
     }
 
     /* Footer */
 
     .footer-link {
-        @apply font-sans text-[20px] leading-4.5 w-max tracking-[0.25px] my-2.75 hover:font-bold hover:underline hover:underline-offset-[12%] hover:decoration-[8%];
+        @apply font-sans text-[20px] leading-6.5 w-max tracking-[0.25px] my-2.75 hover:font-bold hover:underline hover:underline-offset-[12%] hover:decoration-[8%];
     }
 }
 
@@ -187,7 +193,7 @@
 
     .nav-misc {
         background: linear-gradient(101deg, var(--color-navy-blue-300, #304D6D) 15.08%, var(--color-deep-blue-300, #1A2E47) 76.56%);
-        box-shadow: 0 4px 4px 0 rgba(169, 169, 169, 0.25);
+        /* box-shadow: 0 4px 4px 0 rgba(169, 169, 169, 0.25); */
     }
 }
 

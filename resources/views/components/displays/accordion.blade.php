@@ -21,7 +21,7 @@
         </div>
         {{-- Body/Content --}}
         <div x-ref="content" class="overflow-hidden transition-all duration-150 ease-in-out max-h-0">
-            <p class="paragraph-md leading-8.5!">{{ $slot }}</p>
+            <div class="accordion-content">{{ $slot }}</div>
         </div>
     </div>
 </div>

@@ -7,13 +7,13 @@ use Illuminate\Support\Facades\Route;
 
 Route::controller(PageController::class)->group(function() {
     Route::get('/', 'index')->name('index');
-    Route::get('/find-a-com', 'find')->name('find');
+    Route::get('/cari-nama-domain', 'find')->name('find');
 });
 
 Route::controller(UseCaseController::class)->group(function() {
-    Route::get('/use-case-social-media', 'socialMedia')->name('social-media');
-    Route::get('/use-case-email', 'email')->name('email');
-    Route::get('/use-case-websites', 'websites')->name('websites');
+    Route::get('/penerusan-domain', 'socialMedia')->name('social-media');
+    Route::get('/alamat-email-khusus', 'email')->name('email');
+    Route::get('/situs-web-profesional', 'websites')->name('websites');
 });
 
 Route::group(['prefix' => 'resources', 'as' => 'resources.'], function() {
