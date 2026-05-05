@@ -1,0 +1,28 @@
+# Git
+.git
+.gitignore
+
+# Laravel local files
+node_modules
+vendor
+public/build
+storage/framework/cache/data/*
+storage/framework/sessions/*
+storage/framework/views/*
+storage/logs/*
+
+# Docker / Podman specific
+Dockerfile
+.dockerignore
+deploy-staging.sh
+
+# Environment & IDE
+.env
+.env.backup
+.phpunit.result.cache
+.vscode
+.idea
+
+# OS files
+.DS_Store
+Thumbs.db
