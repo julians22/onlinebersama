@@ -19,6 +19,7 @@ sudo podman run -d \
 
 echo "--- Running Artisan Commands ---"
 sudo podman exec app-staging php artisan migrate --force
+sudo podman exec app-staging php artisan key:generate
 sudo podman exec app-staging php artisan config:cache
 sudo podman exec app-staging php artisan route:cache
 sudo podman exec app-staging php artisan view:cache
