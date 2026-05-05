@@ -6,19 +6,19 @@
             </div>
             <div class="flex justify-between gap-8.5 w-132.5">
                 <div class="flex flex-col gap-y-2.5 w-full max-w-75.5">
-                    <a href="#" class="footer-link">Mengapa .com?</a>
-                    <a href="#" class="footer-link">Untuk Situs Web</a>
-                    <a href="#" class="footer-link">Untuk Email</a>
-                    <a href="#" class="footer-link">Untuk Media Sosial dan <span class="block">E-Commerce</span></a>
+                    <a href="{{ route('index') }}#mengapa-com" class="footer-link">Mengapa .com?</a>
+                    <a href="{{ route('websites') }}" class="footer-link">Untuk Situs Web</a>
+                    <a href="{{ route('email') }}" class="footer-link">Untuk Email</a>
+                    <a href="{{ route('social-media') }}" class="footer-link">Untuk Media Sosial dan <span class="block">E-Commerce</span></a>
                     <a href="#" class="footer-link">Panduan Belajar</a>
-                    <a href="#" class="footer-link">Temukan .com Anda</a>
+                    <a href="{{ route('find') }}" class="footer-link">Temukan .com Anda</a>
                 </div>
                 <div class="flex flex-col gap-y-2.5">
                     <div class="flex flex-col gap-y-2.5 w-full max-w-48.5">
-                        <a href="#" class="footer-link">Pernyataan Privasi</a>
-                        <a href="#" class="footer-link">Ketentuan Penggunaan</a>
+                        <a href="https://www.verisign.com/id-id/privacy/" class="footer-link">Pernyataan Privasi</a>
+                        <a href="https://www.verisign.com/id-id/privacy/legal-notices/" class="footer-link">Ketentuan Penggunaan</a>
                         <a href="#" class="footer-link">Pengaturan Cookie</a>
-                        <a href="#" class="footer-link">Verisign.com</a>
+                        <a href="https://www.verisign.com/" class="footer-link">Verisign.com</a>
                     </div>
                     <div class="flex gap-5">
                         <a href="#" class="py-2">

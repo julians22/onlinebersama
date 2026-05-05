@@ -52,7 +52,7 @@
             </div>
         </div>
     </section>
-    <section class="bg-gradient-blue-single pt-11.5 pb-19.5">
+    <section class="bg-gradient-blue-single pt-11.5 pb-19.5 scroll-m-8" id="mengapa-com">
         <div class="container">
             <div class="flex flex-col gap-8 mx-auto max-w-250">
                 <div class="space-y-2 text-white text-center">
