@@ -36,7 +36,7 @@ jobs:
           REMOTE_USER: ${{ secrets.SERVER_USER }}
           TARGET: "/home/designcube3/demo_projects/onlinebersama"
           ARGS: "-avz --delete"
-          EXCLUDE: "/.git/, /.github/, /tests/, /node_modules/, /storage/logs/"
+          EXCLUDE: "/.git/, /.github/, /tests/, /node_modules/, /storage/logs/, /.env, /vendor/ /storage/app/, /storage/framework/"
 
       - name: Finalize Deployment (Remote Commands)
         uses: appleboy/ssh-action@master
@@ -47,6 +47,7 @@ jobs:
           script: |
             cd /home/designcube3/demo_projects/onlinebersama
             # Menggunakan alias pphp84 sesuai konfigurasi server Anda
+            /usr/local/apps/php84/bin/php artisan key:generate
             /usr/local/apps/php84/bin/php artisan down
             /usr/local/apps/php84/bin/php artisan migrate --force
             /usr/local/apps/php84/bin/php artisan config:cache
