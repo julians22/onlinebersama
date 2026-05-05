@@ -115,7 +115,7 @@
     /* Footer */
 
     .footer-link {
-        @apply my-2.75 w-max font-sans hover:font-bold text-[20px] hover:decoration-[8%] hover:underline hover:underline-offset-[12%] leading-6.5 tracking-[0.25px];
+        @apply py-2.75 w-max font-sans hover:font-bold text-[20px] hover:decoration-[8%] hover:underline hover:underline-offset-[12%] leading-6.5 tracking-[0.25px];
     }
 }
 
