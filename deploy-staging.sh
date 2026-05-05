@@ -8,7 +8,14 @@ sudo podman build -t laravel-staging .
 
 echo "--- Restarting Container ---"
 sudo podman rm -f app-staging || true
-sudo podman run -d --name app-staging -p 8080:9000 --restart always laravel-staging
+sleep 2
+
+sudo podman run -d \
+  --name app-staging \
+  -p 8080:9000 \
+  --restart always \
+  -v /home/ubuntu/applications/devel/onlinebersama/.env:/var/www/html/.env:Z \
+  laravel-staging
 
 echo "--- Running Artisan Commands ---"
 sudo podman exec app-staging php artisan migrate --force

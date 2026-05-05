@@ -10,7 +10,7 @@ RUN npm run build
 FROM php:8.3-fpm-alpine
 RUN apk add --no-cache icu-dev libpng-dev libzip-dev zlib-dev git unzip curl
 RUN docker-php-ext-install pdo_mysql intl gd zip
-COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
+COPY --from=docker.io/library/composer:latest /usr/bin/composer /usr/bin/composer
 
 WORKDIR /var/www/html
 COPY . .
