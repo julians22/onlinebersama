@@ -24,5 +24,11 @@ class AppServiceProvider extends ServiceProvider
         if (config('app.env') !== 'local') {
             URL::forceScheme('https');
         }
+
+        // Memaksa root URL agar selalu menggunakan /staging
+        // Ini memastikan redirect internal tidak 'kabur' ke domain utama
+        if (!app()->runningInConsole()) {
+            URL::forceRootUrl(config('app.url'));
+        }
     }
 }
