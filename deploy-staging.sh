@@ -1,32 +1,20 @@
 #!/bin/bash
 
-# Nama image dan container
-IMAGE_NAME="laravel-staging"
-CONTAINER_NAME="app-staging"
+# Hentikan script jika ada error
+set -e
 
-echo "--- Memulai proses deployment staging ---"
+echo "--- Rebuilding Image ---"
+sudo podman build -t laravel-staging .
 
-# 1. Hapus container lama jika ada
-podman rm -f $CONTAINER_NAME || true
+echo "--- Restarting Container ---"
+sudo podman rm -f app-staging || true
+sudo podman run -d --name app-staging -p 8080:9000 --restart always laravel-staging
 
-# 2. Build image (menggunakan no-cache agar perubahan file terbaca sempurna)
-podman build -t $IMAGE_NAME .
+echo "--- Running Artisan Commands ---"
+sudo podman exec app-staging php artisan migrate --force
+sudo podman exec app-staging php artisan config:cache
+sudo podman exec app-staging php artisan route:cache
+sudo podman exec app-staging php artisan view:cache
+sudo podman exec app-staging php artisan filament:assets
 
-# 3. Jalankan container
-# Menghubungkan port 8080 host ke 9000 container
-podman run -d \
-  --name $CONTAINER_NAME \
-  -p 8080:9000 \
-  --restart always \
-  $IMAGE_NAME
-
-echo "--- Menjalankan perintah artisan ---"
-
-# 4. Jalankan perintah optimasi Laravel & Filament
-podman exec $CONTAINER_NAME php artisan migrate --force
-podman exec $CONTAINER_NAME php artisan config:cache
-podman exec $CONTAINER_NAME php artisan route:cache
-podman exec $CONTAINER_NAME php artisan view:cache
-podman exec $CONTAINER_NAME php artisan filament:assets
-
-echo "--- Deployment Selesai! ---"
+echo "--- Deployment Successful ---"
