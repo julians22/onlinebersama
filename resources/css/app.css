@@ -78,6 +78,17 @@
     }
 }
 
+@utility container-smaller {
+    margin-inline: auto;
+    padding-inline: 16px;
+    max-width: 1312px;
+    width: 100%;
+
+    @variant md {
+        padding-inline: 32px;
+    }
+}
+
 /* ====== Base ====== */
 
 @layer base {}
@@ -88,23 +99,23 @@
     /* Accordion */
 
     .accordion-content {
-        @apply font-sans font-medium text-[18px] tracking-[0.25px] md:text-[24px] leading-8.5!;
+        @apply font-sans font-medium text-[18px] md:text-[24px] leading-8.5! tracking-[0.25px];
     }
 
     /* Button */
 
     .btn-primary {
-        @apply transition-all duration-150 ease-in-out block text-center text-sm text-deep-blue-300 rounded-full bg-vibrant-yellow-300 leading-6 px-4 py-0.5 hover:bg-vibrant-yellow-400 focus:bg-vibrant-yellow-200 lg:text-xl lg:p-4;
+        @apply block bg-vibrant-yellow-300 hover:bg-vibrant-yellow-400 focus:bg-vibrant-yellow-200 lg:p-4 px-4 py-0.5 rounded-full text-deep-blue-300 text-sm lg:text-xl text-center leading-6 transition-all duration-150 ease-in-out;
     }
 
     .btn-secondary {
-        @apply transition-all duration-150 ease-in-out block text-center text-sm text-white rounded-full bg-magenta-300 leading-6 px-4 py-0.5 border hover:bg-magenta-400 hover:text-light-gray-300 focus:border-magenta-300 focus:bg-magenta-200 lg:text-xl lg:p-4;
+        @apply block bg-magenta-300 hover:bg-magenta-400 focus:bg-magenta-200 lg:p-4 px-4 py-0.5 border focus:border-magenta-300 rounded-full text-white hover:text-light-gray-300 text-sm lg:text-xl text-center leading-6 transition-all duration-150 ease-in-out;
     }
 
     /* Footer */
 
     .footer-link {
-        @apply font-sans text-[20px] leading-6.5 w-max tracking-[0.25px] my-2.75 hover:font-bold hover:underline hover:underline-offset-[12%] hover:decoration-[8%];
+        @apply py-2.75 w-max font-sans hover:font-bold text-[20px] hover:decoration-[8%] hover:underline hover:underline-offset-[12%] leading-6.5 tracking-[0.25px];
     }
 }
 
@@ -114,63 +125,63 @@
     /* Headlines */
 
     .headline-xl {
-        @apply font-serif font-extrabold text-[52px] leading-13 tracking-normal md:text-[92px] md:leading-30;
+        @apply font-serif font-extrabold text-[52px] md:text-[92px] leading-13 md:leading-30 tracking-normal;
     }
 
     .headline-lg {
-        @apply font-serif font-semibold text-[42px] leading-12 tracking-normal md:text-[88px] md:leading-26.5 lg:leading-28.5;
+        @apply font-serif font-semibold text-[42px] md:text-[88px] leading-12 md:leading-26.5 lg:leading-28.5 tracking-normal;
     }
 
     .headline-1 {
-        @apply font-serif font-semibold text-[36px] leading-9.5 tracking-normal md:text-[64px] md:leading-20.5;
+        @apply font-serif font-semibold text-[36px] md:text-[64px] leading-9.5 md:leading-20.5 tracking-normal;
     }
 
     .headline-2 {
-        @apply font-serif font-semibold text-[24px] leading-8 tracking-normal md:text-[48px] md:leading-14.5 lg:leading-15.5;
+        @apply font-serif font-semibold text-[24px] md:text-[48px] leading-8 md:leading-14.5 lg:leading-15.5 tracking-normal;
     }
 
     .headline-3 {
-        @apply font-serif font-semibold text-[20px] leading-6 tracking-normal md:text-[32px] md:leading-10.5 lg:leading-10.25;
+        @apply font-serif font-semibold text-[20px] md:text-[32px] leading-6 md:leading-10.5 lg:leading-10.25 tracking-normal;
     }
 
     .headline-4 {
-        @apply font-serif font-semibold text-[18px] leading-6 tracking-normal md:text-[24px] md:leading-7 lg:leading-8;
+        @apply font-serif font-semibold text-[18px] md:text-[24px] leading-6 md:leading-7 lg:leading-8 tracking-normal;
     }
 
     /* Subheadlines */
 
     .subheadline-1 {
-        @apply font-sans font-semibold text-[36px] leading-10.5 tracking-[0.25px] md:text-[64px] md:leading-18 lg:leading-21;
+        @apply font-sans font-semibold text-[36px] md:text-[64px] leading-10.5 md:leading-18 lg:leading-21 tracking-[0.25px];
     }
 
     .subheadline-2 {
-        @apply font-sans font-semibold text-[32px] leading-10 tracking-[0.25px] md:text-[40px] md:leading-12 lg:leading-11.5;
+        @apply font-sans font-semibold text-[32px] md:text-[40px] leading-10 md:leading-12 lg:leading-11.5 tracking-[0.25px];
     }
 
     .subheadline-3 {
-        @apply font-sans font-semibold text-[26px] leading-7.5 tracking-[0.25px] md:text-[32px] md:leading-8.5 lg:leading-9.5;
+        @apply font-sans font-semibold text-[26px] md:text-[32px] leading-7.5 md:leading-8.5 lg:leading-9.5 tracking-[0.25px];
     }
 
     .subheadline-4 {
-        @apply font-sans font-semibold text-[20px] leading-6.25 tracking-[0.25px] md:text-[28px] md:leading-7.5 md:font-extrabold lg:leading-10.5;
+        @apply font-sans font-semibold md:font-extrabold text-[20px] md:text-[28px] leading-6.25 md:leading-7.5 lg:leading-10.5 tracking-[0.25px];
     }
 
     /* Paragraph */
 
     p.paragraph-lg {
-        @apply font-sans font-medium text-[20px] leading-7.5 tracking-[0.25px] md:text-[32px] md:leading-9.5 lg:leading-11;
+        @apply font-sans font-medium text-[20px] md:text-[32px] leading-7.5 md:leading-9.5 lg:leading-11 tracking-[0.25px];
     }
 
     p.paragraph-md {
-        @apply font-sans font-medium text-[18px] leading-7 tracking-[0.25px] md:text-[24px];
+        @apply font-sans font-medium text-[18px] md:text-[24px] leading-7 tracking-[0.25px];
     }
 
     p.paragraph-sm {
-        @apply font-sans font-medium text-[16px] leading-6 tracking-[0.25px] md:font-semibold md:text-[20px] md:leading-7.5;
+        @apply font-sans font-medium md:font-semibold text-[16px] md:text-[20px] leading-6 md:leading-7.5 tracking-[0.25px];
     }
 
     p.paragraph-xs {
-        @apply font-sans font-medium text-[12px] leading-4.5 tracking-[0.25px] md:font-semibold md:text-[14px] md:leading-4 lg:leading-5;
+        @apply font-sans font-medium md:font-semibold text-[12px] md:text-[14px] leading-4.5 md:leading-4 lg:leading-5 tracking-[0.25px];
     }
 
     /* Misc */

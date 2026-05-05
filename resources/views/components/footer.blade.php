@@ -1,11 +1,11 @@
 <footer class="bg-gradient-blue-double text-white">
-    <div class="container flex flex-col gap-5 py-20">
+    <div class="flex flex-col gap-5 py-20 container">
         <div class="flex justify-between">
             <div>
                 <img class="w-56" src="{{ asset('images/logo-com-white.svg') }}" alt="OnlineBersama">
             </div>
-            <div class="flex gap-8.5">
-                <div class="flex flex-col w-73.75">
+            <div class="flex justify-between gap-8.5 w-[528px]">
+                <div class="flex flex-col gap-y-2.5 w-full max-w-[302px]">
                     <a href="#" class="footer-link">Mengapa .com?</a>
                     <a href="#" class="footer-link">Untuk Situs Web</a>
                     <a href="#" class="footer-link">Untuk Email</a>
@@ -13,8 +13,8 @@
                     <a href="#" class="footer-link">Panduan Belajar</a>
                     <a href="#" class="footer-link">Temukan .com Anda</a>
                 </div>
-                <div class="flex flex-col justify-between">
-                    <div class="flex flex-col w-41.5">
+                <div class="flex flex-col gap-y-2.5">
+                    <div class="flex flex-col gap-y-2.5 w-full max-w-[280px]">
                         <a href="#" class="footer-link">Pernyataan Privasi</a>
                         <a href="#" class="footer-link">Ketentuan Penggunaan</a>
                         <a href="#" class="footer-link">Pengaturan Cookie</a>
@@ -22,13 +22,13 @@
                     </div>
                     <div class="flex gap-5">
                         <a href="#">
-                            <img src="{{ asset('icons/white-facebook-icon.svg') }}" alt="">
+                            <img src="{{ asset('images/icons/white-facebook-icon.svg') }}" alt="">
                         </a>
                         <a href="#">
-                            <img src="{{ asset('icons/white-linkedin-icon.svg') }}" alt="">
+                            <img src="{{ asset('images/icons/white-linkedin-icon.svg') }}" alt="">
                         </a>
                         <a href="#">
-                            <img src="{{ asset('icons/white-x-icon.svg') }}" alt="">
+                            <img src="{{ asset('images/icons/white-x-icon.svg') }}" alt="">
                         </a>
                     </div>
                 </div>
