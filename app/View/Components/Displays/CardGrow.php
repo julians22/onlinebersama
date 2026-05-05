@@ -11,10 +11,12 @@ class CardGrow extends Component
     /**
      * Create a new component instance.
      */
-    public function __construct()
-    {
-        //
-    }
+    public function __construct(
+        public string $active,
+        public string $route,
+        public string $image,
+        public ?string $alt
+    ) {}
 
     /**
      * Get the view / contents that represent the component.
