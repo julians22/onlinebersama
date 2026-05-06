@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('type', 20);
             $table->string('status', 20)->default('draft');
             $table->string('read_time', 10);
-            $table->string('template-view-path', 225)->default('default');
+            $table->string('template_view_path', 225)->default('default');
             $table->string('meta_title')->nullable();
             $table->string('meta_description')->nullable();
             $table->string('meta_keywords')->nullable();

@@ -10,7 +10,21 @@ if (!function_exists('articleViews')){
 
         return $articleViews;
     }
+}
 
+if (!function_exists('articleViewsOptions')){
+    function articleViewsOptions($folderNameToRemove = 'dynamic')
+    {
+        $articleViews = articleViews();
+
+        $options = [];
+        foreach ($articleViews as $file) {
+            $optionValue = str_replace('.blade.php', '', $file);
+            $optionValue = str_replace($folderNameToRemove . '/', '', $optionValue);
+            $options[] = $optionValue;
+        }
+        return $options;
+    }
 }
 
 if (!function_exists('')) {

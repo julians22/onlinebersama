@@ -71,7 +71,7 @@ class PostSeeder extends Seeder
                 ]);
                 // update the post template view path to use the new view file
                 $post->update([
-                    'template-view-path' => $post->slug
+                    'template_view_path' => $post->slug
                 ]);
             }
         }

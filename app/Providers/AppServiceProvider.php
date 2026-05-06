@@ -27,7 +27,7 @@ class AppServiceProvider extends ServiceProvider
 
         // Memaksa root URL agar selalu menggunakan /staging
         // Ini memastikan redirect internal tidak 'kabur' ke domain utama
-        if (!app()->runningInConsole()) {
+        if (!app()->runningInConsole() && (config('app.env') === 'staging' || config('app.env') === 'production')) {
             URL::forceRootUrl(config('app.url'));
         }
     }
