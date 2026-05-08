@@ -6,7 +6,7 @@
 
 <main>
     <section class="relative">
-        <img class="w-full h-170 object-cover aspect-48/17" src="{{ asset('images/homepage-hero.jpg') }}" alt="Home Hero">
+        <img class="w-full h-170 object-cover aspect-48/17" src="{{ asset('images/hero-homepage.jpg') }}" alt="Home Hero">
         <div class="top-0 left-1/2 absolute flex items-end py-19.5 size-full -translate-x-1/2 container">
             <div class="space-y-12 text-white">
                 <h1 class="headline-1">

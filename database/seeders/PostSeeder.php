@@ -41,7 +41,7 @@ class PostSeeder extends Seeder
             'Empat Cara Untuk Menggunakan Penerusan Nama Domain',
             'Bagaimana Cara Memilih dan Mendaftarkan Nama Domain .com untuk Bisnis Anda dalam Tiga Langkah',
             'Sepuluh Cara Memasarkan Bisnis Dengan Nama Domain .com',
-            'Pertanyaan Usaha Kecil Tentang Membangun Kehadiran Online'
+            'Pertanyaan Usaha Kecil Tentang Membangun Kehadiran Online',
         ];
 
         foreach ($articles as $article) {

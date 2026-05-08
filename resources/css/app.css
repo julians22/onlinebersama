@@ -109,7 +109,7 @@
     }
 
     .btn-secondary {
-        @apply block bg-magenta-300 hover:bg-magenta-400 focus:bg-magenta-200 lg:p-4 px-4 py-0.5 border focus:border-magenta-300 rounded-full text-white hover:text-light-gray-300 text-sm lg:text-xl text-center leading-6 transition-all duration-150 ease-in-out;
+        @apply block bg-magenta-300 hover:bg-magenta-400 focus:bg-magenta-200 lg:p-4 px-4 py-0.5 border border-transparent focus:border-magenta-300 rounded-full text-white hover:text-light-gray-300 text-sm lg:text-xl text-center leading-6 transition-all duration-150 ease-in-out;
     }
 
     /* Footer */
@@ -210,4 +210,44 @@
 
 [x-cloak] {
     display: none;
+}
+
+.online_bersama_small_business_story {
+    @apply pb-14!;
+    .swiper-slide {
+        @apply relative overflow-hidden;
+        img {
+            @apply w-156 rounded-[10px] mx-auto;
+        }
+        .overlay-slide {
+            @apply absolute transition-all duration-500 ease-in-out -bottom-full left-1/2 -translate-x-1/2 flex flex-col justify-end inset-0 w-156 text-white rounded-[10px] p-8;
+        }
+        button {
+            @apply absolute transition-all duration-500 ease-in-out scale-0 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer;
+            img {
+                @apply size-19.5;
+            }
+        }
+        &.swiper-slide-active {
+            .overlay-slide {
+                @apply bottom-0!;
+            }
+            button {
+                @apply scale-100!;
+            }
+        }
+        &.swiper-slide-next,
+        &.swiper-slide-prev {
+            @apply relative z-10 cursor-pointer;
+        }
+    }
+    .swiper-pagination {
+        @apply flex justify-center items-center gap-2.5;
+        .swiper-pagination-bullet {
+            @apply transition-all duration-150 ease-in-out size-2.25 bg-[#e1e8ef] outline-none opacity-100! m-0!;
+            &.swiper-pagination-bullet-active {
+                @apply size-3! bg-[#b3c5d7];
+            }
+        }
+    }
 }

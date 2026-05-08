@@ -12,16 +12,14 @@
             </div>
             <div class="flex items-center gap-x-10">
                 <ul class="hidden lg:flex gap-x-10">
-                    <li>
-                        <a href="{{ route('index') }}#mengapa-com" class="font-medium text-white text-xl leading-6">Mengapa .com?</a>
-                    </li>
+                    <li><a href="{{ route('index') }}#mengapa-com" class="font-medium text-white text-xl leading-6">Mengapa .com?</a></li>
                     <li>
                         <button type="button" @click="open = !open" class="flex items-center gap-1.5 font-medium text-white text-xl leading-6 cursor-pointer">
                             Bagaimana Cara Menggunakan .com?
                             <img class="transition-all duration-300 ease-in-out" :class="open ? '-rotate-180' : 'rotate-0'" src="{{ asset('images/icons/white-arrow-down.svg') }}">
                         </button>
                     </li>
-                    <li><a href="#" class="font-medium text-white text-xl leading-6">Panduan Belajar</a></li>
+                    <li><a href="{{ route('resources') }}" class="font-medium text-white text-xl leading-6">Panduan Belajar</a></li>
                 </ul>
                 <a href="{{ route('find') }}" class="px-4 lg:px-6 py-0.5 lg:py-2 font-medium text-navy-blue-300 btn-primary">
                     Temukan .com Anda</span>

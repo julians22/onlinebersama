@@ -157,7 +157,7 @@
         </div>
     </section>
     <section class="relative bg-[#F0EAE4]">
-        <img class="mx-auto" src="{{ asset('images/resources-hero.jpg') }}" alt="">
+        <img class="mx-auto" src="{{ asset('images/hero-resources-usecase.jpg') }}" alt="">
         <div class="top-0 left-1/2 absolute flex flex-col justify-center gap-6 size-full -translate-x-1/2 container">
             <h2 class="text-navy-blue-300 headline-1">Mencari sumber <span class="block">informasi lainnya?</span></h2>
             <p class="max-w-150 text-deep-blue-300 leading-8.5! paragraph-md">Jelajahi Panduan Belajar untuk menemukan semua artikel, video, dan banyak lagi tentang cara menggunakan domain .com.</p>

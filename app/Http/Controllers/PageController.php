@@ -15,9 +15,4 @@ class PageController extends Controller
     {
         return view('pages.find-a-com');
     }
-
-    public function learning()
-    {
-        return view('pages.learning');
-    }
 }

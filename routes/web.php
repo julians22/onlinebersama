@@ -8,7 +8,6 @@ use Illuminate\Support\Facades\Route;
 Route::controller(PageController::class)->group(function() {
     Route::get('/', 'index')->name('index');
     Route::get('/cari-nama-domain', 'find')->name('find');
-    Route::get('/kumpulan-materi', 'learning')->name('learning');
 });
 
 Route::controller(UseCaseController::class)->group(function() {
@@ -17,8 +16,9 @@ Route::controller(UseCaseController::class)->group(function() {
     Route::get('/situs-web-profesional', 'websites')->name('websites');
 });
 
-Route::group(['prefix' => 'resources', 'as' => 'resources.'], function() {
-    Route::get('/', [ResourcesPageController::class, 'index'])->name('index');
-    Route::get('{slug}', [ResourcesPageController::class, 'show'])->name('show');
+Route::name('resources')->group(function() {
+    Route::controller(ResourcesPageController::class)->group(function() {
+        Route::get('/kumpulan-materi', 'index');
+        Route::get('{slug}', 'show')->name('.show');
+    });
 });
-

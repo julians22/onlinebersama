@@ -7,17 +7,12 @@ use Illuminate\Http\Request;
 
 class ResourcesPageController extends Controller
 {
-    function index()
+    public function index()
     {
-        $posts = Post::where('status', 'published')
-            ->with('category')
-            ->orderBy('created_at', 'desc')
-            ->get();
-
-        return view('contents.index', compact('posts'));
+        return view('contents.index');
     }
 
-    function show(Request $request, string $slug) {
+    public function show(Request $request, string $slug) {
         $post = Post::where('slug', $slug)->with('category')->first();
 
         if (!$post || $post->status !== 'published') {
