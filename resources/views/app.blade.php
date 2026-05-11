@@ -11,6 +11,10 @@
     <meta name="description" content="@yield('meta_description', config('app.name', 'Laravel'))">
     <meta name="keywords" content="@yield('meta_keywords', '')">
     <meta name="author" content="@yield('meta_author', '')">
+
+    <!-- Analytics Scripts -->
+    <script type="text/plain" class="optanon-category-C0001" src="//assets.adobedtm.com/1d6e8340b68d/b0c6093737cf/launch-adacc40eeb69-staging.min.js" defer></script>
+
     {{-- Fonts --}}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
