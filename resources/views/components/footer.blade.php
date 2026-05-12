@@ -12,7 +12,8 @@
                 <div class="flex flex-col w-full max-w-75.5">
                     <a
                         data-analytics-name="{{ request()->routeIs('index') ? 'anchor | Why .com?' : 'text | Why .com?' }}"
-                        href="{{ route('index') }}#mengapa-com" class="footer-link">Mengapa .com?</a>
+                        href="{{ request()->routeIs('index') ? '' : route('index') }}#mengapa-com"
+                        class="footer-link">Mengapa .com?</a>
                     <a
                         data-analytics-name="text | For Websites"
                         href="{{ route('websites') }}" class="footer-link">Untuk Situs Web</a>
