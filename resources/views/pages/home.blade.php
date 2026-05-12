@@ -6,48 +6,71 @@
 
 <main>
     <section class="relative">
-        <img class="w-full h-170 object-cover aspect-48/17" src="{{ asset('images/hero-homepage.jpg') }}" alt="Home Hero">
-        <div class="top-0 left-1/2 absolute flex items-end py-19.5 size-full -translate-x-1/2 container">
-            <div class="space-y-12 text-white">
-                <h1 class="headline-1">
+        <img class="w-full h-112.5 object-cover aspect-48/17 lg:h-152.75 xl:h-170" src="{{ asset('images/hero-homepage.jpg') }}" alt="">
+        <div class="container-smaller top-0 left-1/2 absolute flex justify-center items-end px-7 pt-7 pb-4 size-full -translate-x-1/2 md:justify-start sm:p-10 lg:px-18.5 lg:py-25.75">
+            <div class="space-y-2 text-white text-center sm:space-y-3 md:space-y-6 md:text-left lg:space-y-7">
+                <h1 class="headline-1 leading-normal text-[28px]! sm:leading-14! sm:text-5xl! lg:leading-16! lg:text-[64px]! lg:font-extrabold!">
                     Di Mana
-                    <span class="block mt-2.5 text-[132px]">Dunia</span>
-                    <span class="block mt-10 text-[132px]">Menemukanmu</span>
+                    <span class="block md:leading-20! md:text-[82px] lg:leading-26! lg:text-[110px] 2xl:text-[132px] 2xl:leading-32!">
+                        <span class="inline md:block">Dunia</span> Menemukanmu
+                    </span>
                 </h1>
-                <p class="max-w-156 leading-8.5! paragraph-md">Nama domain .com membantu orang-orang menemukan dan memercayai Anda</p>
+                <p class="max-w-135 paragraph-md leading-8.5! text-[22px]! md:max-w-156 md:text-[24px]!">
+                    Nama domain .com membantu orang-orang menemukan dan memercayai Anda
+                </p>
             </div>
         </div>
     </section>
     <section class="bg-deep-blue-300">
-        <div class="flex flex-col justify-center items-center gap-6 py-22 container">
-            <h2 class="text-white subheadline-2">Temukan Nama Domain .com</h2>
-            <img src="{{ asset('images/ns-search.png') }}">
+        <div class="flex flex-col justify-center items-center gap-6 py-16 container lg:py-22">
+            <h2 class="subheadline-2 text-white text-center max-w-xs mx-auto md:max-w-full lg:text-[40px]!">
+                Temukan Nama Domain .com
+            </h2>
+            <img class="hidden lg:block" src="{{ asset('images/ns-search.png') }}">
+            <img class="hidden md:block lg:hidden" src="{{ asset('images/ns-search-tablet.png') }}">
+            <img class="block md:hidden" src="{{ asset('images/ns-search-mobile.png') }}">
         </div>
     </section>
     <section class="bg-light-gray-100">
-        <div class="py-10 container">
-            <h2 class="mb-11.25 text-navy-blue-300 text-center headline-1">Bagaimana Cara Menggunakan .com?</h2>
-            <div x-data="{ active: 'social' }" class="flex gap-8">
-                <x-displays.card-grow active="email" route="email" image="images/brand-1.jpg">
-                    Email
-                </x-displays.card-grow>
-                <x-displays.card-grow active="social" route="social-media" image="images/brand-2.jpg">
-                    Media Sosial dan <span class="block">E-Commerce</span>
-                </x-displays.card-grow>
-                <x-displays.card-grow active="websites" route="websites" image="images/brand-3.jpg">
-                    Situs Web
-                </x-displays.card-grow>
+        <div class="max-w-full mx-auto py-10 xl:px-8 2xl:px-0 2xl:max-w-331.5">
+            <h2 class="headline-1 max-w-md mx-auto text-navy-blue-300 text-center mb-6 px-4 md:px-0 md:mb-11.25 md:max-w-2xl xl:mx-0 xl:max-w-full">
+                Bagaimana Cara Menggunakan .com?
+            </h2>
+            <div class="online-bersama-how-to-use swiper">
+                <div x-data="{ active: 'social' }" class="swiper-wrapper">
+                    <div @mouseenter="active = 'email'" :class="active === 'email' ? 'hovered' : 'not-hovered'" class="swiper-slide">
+                        <x-displays.card-grow active="email" route="email" image="images/brand-1.jpg">
+                            Email
+                        </x-displays.card-grow>
+                    </div>
+                    <div @mouseenter="active = 'social'" :class="active === 'social' ? 'hovered' : 'not-hovered'" class="swiper-slide">
+                        <x-displays.card-grow active="social" route="social-media" image="images/brand-2.jpg">
+                            Media Sosial dan <span class="block">E-Commerce</span>
+                        </x-displays.card-grow>
+                    </div>
+                    <div @mouseenter="active = 'websites'" :class="active === 'websites' ? 'hovered' : 'not-hovered'" class="swiper-slide">
+                        <x-displays.card-grow active="websites" route="websites" image="images/brand-3.jpg">
+                            Situs Web
+                        </x-displays.card-grow>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
             </div>
         </div>
         <div class="relative">
-            <img class="mx-auto" src="{{ asset('images/placeholder-video-how.jpg') }}" alt="">
-            <button type="button" class="top-1/2 left-1/2 z-10 absolute -translate-x-1/2 -translate-y-1/2 cursor-pointer mt-10">
-                <img class="size-32.5" src="{{ asset('images/icons/navy-play.svg') }}" alt="">
+            <img class="mx-auto hidden lg:block" src="{{ asset('images/placeholder-video-how.jpg') }}" alt="">
+            <img class="w-full mx-auto block sm:h-200 sm:object-cover sm:object-bottom md:h-210 min-[900px]:h-230! lg:hidden" src="{{ asset('images/placeholder-video-how-mobile.jpg') }}" alt="">
+            <button type="button" class="top-2/3 left-1/2 z-10 absolute -translate-x-1/2 -translate-y-1/2 cursor-pointer min-[900px]:top-[60%] lg:top-[55%]">
+                <img class="size-10 min-[400px]:size-14 min-[900px]:size-16 lg:size-20 2xl:size-32.5" src="{{ asset('images/icons/navy-play.svg') }}" alt="">
             </button>
-            <div class="top-0 left-1/2 -translate-x-1/2 absolute flex size-full max-w-480 py-40 px-32 2xl:py-50 2xl:px-42">
-                <div class="space-y-3.5 max-w-182 min-[1800px]:max-w-213.5">
-                    <h2 class="text-navy-blue-300 headline-1">Bukan Sekadar Domain. Melainkan Suatu Pernyataan.</h2>
-                    <p class="max-w-140 text-deep-blue-300 leading-8! paragraph-md">Tinggalkan jejak Anda dan bangun merek tepercaya dengan .com.</p>
+            <div class="top-0 left-1/2 -translate-x-1/2 absolute flex justify-center size-full max-w-480 px-4 pt-4 min-[400px]:pt-13.5 sm:px-6 sm:pt-6 md:pt-11.75 lg:justify-start lg:px-24 lg:py-32 xl:py-38 xl:px-30 2xl:py-50 2xl:px-42">
+                <div class="space-y-3.5 text-center max-w-85 mx-auto sm:max-w-xl lg:text-left lg:max-w-full lg:mx-0">
+                    <h2 class="headline-1 text-navy-blue-300 text-[24px]! leading-8! sm:leading-13! sm:text-[40px]! lg:max-w-2xl lg:mx-0 lg:text-[52px]! lg:leading-16! xl:text-[64px]! xl:leading-18! 2xl:leading-21.25! xl:max-w-3xl 2xl:max-w-4xl">
+                        Bukan Sekadar Domain. Melainkan Suatu Pernyataan.
+                    </h2>
+                    <p class="paragraph-md text-deep-blue-300 text-[16px]! leading-6! sm:text-[18px]! lg:max-w-xs xl:text-[24px]! xl:leading-8! xl:max-w-sm 2xl:max-w-full">
+                        Tinggalkan jejak Anda dan bangun merek tepercaya dengan .com.
+                    </p>
                 </div>
             </div>
         </div>

@@ -9,7 +9,7 @@
         <div class="flex justify-between items-center gap-20 py-15.5 container">
             <div class="space-y-4">
                 <h1 class="text-navy-blue-300 headline-1">.com untuk <span class="block">Media Sosial dan</span> E-Commerce</h1>
-                <p class="text-deep-blue-300 leading-8.5! paragraph-md">Dengan penerusan domain, Anda dapat membuat tautan ke toko online atau halaman media sosial dari nama domain .com yang mudah diingat.</p>
+                <p class="text-deep-blue-300 paragraph-md">Dengan penerusan domain, Anda dapat membuat tautan ke toko online atau halaman media sosial dari nama domain .com yang mudah diingat.</p>
             </div>
             <div class="relative rounded-[10px] overflow-hidden shrink-0">
                 <img class="box-shadow-sm w-156 object-cover aspect-video" src="{{ asset('images/uc-social-media-ecommerce.jpg') }}" alt="">
@@ -44,31 +44,37 @@
         </div>
     </section>
     <section class="bg-deep-blue-300">
-        <div class="pt-10 pb-19.5 container">
-            <h2 class="mb-13 text-white text-center headline-1">Dua Cara untuk Menggunakan <span class="block">Penerusan Domain</span></h2>
+        <div class="max-w-380 mx-auto pt-10 pb-19.5">
+            <h2 class="mb-13 text-white text-center headline-1">Dua Cara untuk Menggunakan Penerusan Domain</h2>
             <div x-data="{ active: 'social-media' }" class="flex justify-center gap-4">
                 <div class="flex flex-col gap-4 max-w-xs">
                     <button type="button" @click="active = 'social-media'" :class="active === 'social-media' && 'bg-white! text-deep-blue-300!'" class="space-y-3 bg-navy-blue-300 p-6 rounded-[10px] h-full text-white text-left cursor-pointer">
                         <h3 class="subheadline-3">Media Sosial</h3>
-                        <p class="leading-8.5! paragraph-md">Buat lebih banyak pasang mata tertuju pada halaman Anda.</p>
+                        <p class="paragraph-md">Buat lebih banyak pasang mata tertuju pada halaman Anda.</p>
                     </button>
                     <button type="button" @click="active = 'online-store'" :class="active === 'online-store' && 'bg-white! text-deep-blue-300!'" class="space-y-3 bg-navy-blue-300 p-6 rounded-[10px] h-full text-white text-left cursor-pointer">
                         <h3 class="subheadline-3">Toko Online</h3>
-                        <p class="leading-8.5! paragraph-md">Permudah pencarian bisnis Anda.</p>
+                        <p class="paragraph-md">Permudah pencarian bisnis Anda.</p>
                     </button>
                 </div>
                 <a x-show="active === 'social-media'" href="#" class="relative rounded-[10px] max-w-156 overflow-hidden">
                     <img class="size-full object-cover aspect-video" src="{{ asset('images/uc-social-media-ecommerce.jpg') }}" alt="">
                     <div class="top-0 left-0 absolute flex flex-col justify-end gap-4 bg-linear-360 from-black/60 to-transparent p-6 size-full text-white">
                         <p class="leading-8.5! paragraph-md">Jangkau lebih banyak orang dengan menghubungkan halaman media sosial Anda ke alamat web .com kustom.</p>
-                        <p class="w-max font-sans font-bold text-[20px] decoration-[8%] underline underline-offset-[12%] tracking-[0.25px]">Baca Selengkapnya</p>
+                        <p class="flex items-center w-max font-sans font-bold text-[20px] decoration-[8%] underline underline-offset-[12%] tracking-[0.25px]">
+                            Baca Selengkapnya
+                            <img src="{{ asset('images/icons/white-chevron-backward.svg') }}" alt="">
+                        </p>
                     </div>
                 </a>
                 <a x-show="active === 'online-store'" x-cloak href="#" class="relative rounded-[10px] max-w-156 overflow-hidden">
                     <img class="size-full object-cover aspect-video" src="{{ asset('images/uc-email.jpg') }}" alt="">
                     <div class="top-0 left-0 absolute flex flex-col justify-end gap-4 bg-linear-360 from-black/60 to-transparent p-6 size-full text-white">
                         <p class="leading-8.5! paragraph-md">Tautkan toko Anda di platform mana pun dari nama domain .com kustom.</p>
-                        <p class="w-max font-sans font-bold text-[20px] decoration-[8%] underline underline-offset-[12%] tracking-[0.25px]">Baca Selengkapnya</p>
+                        <p class="flex items-center w-max font-sans font-bold text-[20px] decoration-[8%] underline underline-offset-[12%] tracking-[0.25px]">
+                            Baca Selengkapnya
+                            <img src="{{ asset('images/icons/white-chevron-backward.svg') }}" alt="">
+                        </p>
                     </div>
                 </a>
             </div>

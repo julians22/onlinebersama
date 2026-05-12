@@ -9,7 +9,7 @@
         <div class="flex flex-col items-center gap-8 py-40 text-white text-center container">
             <div class="space-y-2.5">
                 <h1 class="headline-1">Temukan Nama Domain .com</h1>
-                <p class="max-w-250 leading-8.5! paragraph-md">Nama domain .com membantu pelanggan menemukan dan memercayai Anda. Temukan nama domain .com yang menarik menggunakan generator nama domain kami.</p>
+                <p class="max-w-250 paragraph-md">Nama domain .com membantu pelanggan menemukan dan memercayai Anda. Temukan nama domain .com yang menarik menggunakan generator nama domain kami.</p>
             </div>
             <div class="shrink-0">
                 <img src="{{ asset('images/ns-search.png') }}" alt="">
@@ -17,12 +17,10 @@
         </div>
     </section>
     <section class="flex justify-center items-center gap-12 py-20 container">
-        <div class="relative rounded-[10px] overflow-hidden">
-            <img class="w-150" src="{{ asset('images/placeholder-video-find.jpg') }}" alt="">
-            <button type="button" class="top-1/2 left-1/2 absolute -translate-x-1/2 -translate-y-1/2 cursor-pointer">
-                <img class="size-19.5" src="{{ asset('images/icons/white-play-rounded.svg') }}" alt="">
-            </button>
-        </div>
+        <button type="button" class="group relative w-150 rounded-[10px] bg-red-500 cursor-pointer overflow-hidden">
+            <img class="size-full" src="{{ asset('images/placeholder-video-find.jpg') }}" alt="">
+            <img class="transition-all duration-150 ease-in-out top-1/2 left-1/2 absolute -translate-x-1/2 -translate-y-1/2 size-19.5 group-hover:scale-110" src="{{ asset('images/icons/white-play-rounded.svg') }}" alt="">
+        </button>
         <h2 class="max-w-125 text-navy-blue-300 headline-2">Tiga Tip Memilih Nama Domain .com</h2>
     </section>
     <section class="bg-light-gray-100">

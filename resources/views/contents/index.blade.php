@@ -19,10 +19,10 @@
     </section>
     <section class="max-w-403 mx-auto pt-10 pb-19.5">
         <div class="space-y-3 text-center mb-8">
-            <h2 class="headline-1 text-navy-blue-300 ">Kisah Usaha Kecil</h2>
+            <h2 class="headline-1 text-navy-blue-300">Kisah Usaha Kecil</h2>
             <p class="paragraph-md text-deep-blue-300">Lihat bagaimana bisnis menggunakan nama domain .com untuk membantu mereka mencapai tujuan. </p>
         </div>
-        <div class="online_bersama_small_business_story swiper w-full">
+        <div class="online-bersama-small-business-story swiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <img src="{{ asset('images/placeholder-video-why-com.jpg') }}" alt="">

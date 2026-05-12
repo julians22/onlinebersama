@@ -9,7 +9,7 @@
         <div class="flex justify-between items-center gap-20 py-15.5 container">
             <div class="space-y-4">
                 <h1 class="text-navy-blue-300 headline-1">.com untuk Email</h1>
-                <p class="text-deep-blue-300 leading-8.5! paragraph-md">Jadikan email sebagai pernyataan kredibilitas. Dengan alamat email .com kustom, email bisnis Anda dapat terlihat lebih profesional.</p>
+                <p class="text-deep-blue-300 paragraph-md">Jadikan email sebagai pernyataan kredibilitas. Dengan alamat email .com kustom, email bisnis Anda dapat terlihat lebih profesional.</p>
             </div>
             <div class="relative rounded-[10px] overflow-hidden shrink-0">
                 <img class="box-shadow-sm w-156 object-cover aspect-video" src="{{ asset('images/uc-email.jpg') }}" alt="">

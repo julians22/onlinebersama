@@ -9,7 +9,7 @@
         <div class="flex justify-between items-center gap-20 py-15.5 container">
             <div class="space-y-4">
                 <h1 class="text-navy-blue-300 headline-1">.com untuk Situs Web</h1>
-                <p class="text-deep-blue-300 leading-8.5! paragraph-md">Situs web dengan nama domain .com adalah fondasi yang dapat diandalkan pelanggan Anda untuk menemukan dan berinteraksi secara online seiring perkembangan bisnis Anda.</p>
+                <p class="text-deep-blue-300 paragraph-md">Situs web dengan nama domain .com adalah fondasi yang dapat diandalkan pelanggan Anda untuk menemukan dan berinteraksi secara online seiring perkembangan bisnis Anda.</p>
             </div>
             <div class="relative rounded-[10px] overflow-hidden shrink-0">
                 <img class="box-shadow-sm w-156 object-cover aspect-video" src="{{ asset('images/uc-websites.jpg') }}" alt="">
@@ -44,7 +44,7 @@
         </div>
     </section>
     <section class="bg-gradient-blue-double">
-        <div class="flex flex-col justify-center items-center gap-10 py-19.5 container">
+        <div class="flex flex-col justify-center items-center gap-10 py-19.5 max-w-382 mx-auto">
             <div class="space-y-10 text-white text-center">
                 <h2 class="headline-2">Daftar Periksa Perencanaan Situs Web</h2>
                 <p class="paragraph-lg">Bangun rumah online Anda di situs web dengan nama domain .com.</p>
@@ -57,11 +57,11 @@
                     </div>
                     <div class="flex gap-4 py-2 border-mint-300 border-b-4 text-deep-blue-300">
                         <img class="size-12.5" src="{{ asset('images/icons/mint-check.svg') }}" alt="">
-                        <p class="paragraph-sm">Pilih dan daftarkan nama domain .com untuk alamat web Anda.</p>
+                        <p class="paragraph-sm font-medium! leading-6.5!">Pilih dan daftarkan nama domain .com untuk alamat web Anda.</p>
                     </div>
                     <div class="flex gap-4 py-2 text-deep-blue-300">
                         <img class="size-12.5" src="{{ asset('images/icons/mint-check.svg') }}" alt="">
-                        <p class="paragraph-sm">Tentukan tujuan situs web Anda (misalnya, blog, situs e-commerce, brosur online).</p>
+                        <p class="paragraph-sm font-medium! leading-6.5!">Tentukan tujuan situs web Anda (misalnya, blog, situs e-commerce, brosur online).</p>
                     </div>
                 </div>
                 <div class="gap-4 grid grid-rows-subgrid row-span-3 bg-white p-4 rounded-[10px]">
@@ -71,25 +71,25 @@
                     </div>
                     <div class="flex gap-4 py-2 border-mint-300 border-b-4 text-deep-blue-300">
                         <img class="size-12.5" src="{{ asset('images/icons/mint-check.svg') }}" alt="">
-                        <p class="paragraph-sm">Tentukan informasi terpenting yang harus ada di situs web Anda sekarang, dan informasi yang dapat ditambahkan nanti.</p>
+                        <p class="paragraph-sm font-medium! leading-6.5!">Tentukan informasi terpenting yang harus ada di situs web Anda sekarang, dan informasi yang dapat ditambahkan nanti.</p>
                     </div>
                     <div class="flex gap-4 py-2 text-deep-blue-300">
                         <img class="size-12.5" src="{{ asset('images/icons/mint-check.svg') }}" alt="">
-                        <p class="paragraph-sm">Cari tahu informasi apa yang akan menarik dan bermanfaat bagi pengunjung Anda (misalnya, informasi kontak, deskripsi produk).</p>
+                        <p class="paragraph-sm font-medium! leading-6.5!">Cari tahu informasi apa yang akan menarik dan bermanfaat bagi pengunjung Anda (misalnya, informasi kontak, deskripsi produk).</p>
                     </div>
                 </div>
                 <div class="gap-4 grid grid-rows-subgrid row-span-3 bg-white p-4 rounded-[10px]">
                     <div class="flex flex-col justify-center items-center gap-2.5 bg-mint-300 p-6 rounded-lg text-deep-blue-300 text-center">
                         <img class="size-10" src="{{ asset('images/icons/deep-list.svg') }}" alt="">
-                        <h3 class="subheadline-3">Kelola Situs <span class="block">Web Anda</span></h3>
+                        <h3 class="subheadline-3 max-w-xs">Kelola Situs Web Anda</span></h3>
                     </div>
                     <div class="flex gap-4 py-2 border-mint-300 border-b-4 text-deep-blue-300">
                         <img class="size-12.5" src="{{ asset('images/icons/mint-check.svg') }}" alt="">
-                        <p class="paragraph-sm">Pikirkan cara pengunjung menemukan situs web Anda, dan cantumkan alamat web Anda di semua lokasi yang memungkinkan.</p>
+                        <p class="paragraph-sm font-medium! leading-6.5!">Pikirkan cara pengunjung menemukan situs web Anda, dan cantumkan alamat web Anda di semua lokasi yang memungkinkan.</p>
                     </div>
                     <div class="flex gap-4 py-2 text-deep-blue-300">
                         <img class="size-12.5" src="{{ asset('images/icons/mint-check.svg') }}" alt="">
-                        <p class="paragraph-sm">Pahami siapa saja yang akan mengunjungi situs web Anda menggunakan alat bantu untuk memudahkan analisis lalu lintas situs web Anda.</p>
+                        <p class="paragraph-sm font-medium! leading-6.5!">Pahami siapa saja yang akan mengunjungi situs web Anda menggunakan alat bantu untuk memudahkan analisis lalu lintas situs web Anda.</p>
                     </div>
                 </div>
             </div>

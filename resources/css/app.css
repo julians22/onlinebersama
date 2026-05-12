@@ -96,6 +96,15 @@
 /* ====== Components ====== */
 
 @layer components{
+    /* Navbar */
+
+    .nav-link {
+        @apply font-bold text-white text-xl leading-6;
+        &.nav-dropdown {
+            @apply flex items-center gap-x-1.5 cursor-pointer;
+        }
+    }
+
     /* Accordion */
 
     .accordion-content {
@@ -115,7 +124,7 @@
     /* Footer */
 
     .footer-link {
-        @apply my-2.75 w-max font-sans hover:font-bold text-[20px] hover:decoration-[8%] hover:underline hover:underline-offset-[12%] tracking-[0.25px];
+        @apply my-2.75 w-max font-sans text-[20px] tracking-[0.25px] hover:decoration-[8%] hover:underline hover:underline-offset-[12%];
     }
 }
 
@@ -212,8 +221,10 @@
     display: none;
 }
 
-.online_bersama_small_business_story {
-    @apply pb-14!;
+/* Small Business Story (SLIDER) */
+
+.online-bersama-small-business-story {
+    @apply w-full pb-14!;
     .swiper-slide {
         @apply relative overflow-hidden;
         img {
@@ -239,6 +250,38 @@
         &.swiper-slide-next,
         &.swiper-slide-prev {
             @apply relative z-10 cursor-pointer;
+        }
+    }
+    .swiper-pagination {
+        @apply flex justify-center items-center gap-2.5;
+        .swiper-pagination-bullet {
+            @apply transition-all duration-150 ease-in-out size-2.25 bg-[#e1e8ef] outline-none opacity-100! m-0!;
+            &.swiper-pagination-bullet-active {
+                @apply size-3! bg-[#b3c5d7];
+            }
+        }
+    }
+}
+
+/* How to Use (SLIDER) */
+
+.online-bersama-how-to-use {
+    @apply pb-12! xl:pb-0!;
+    .swiper-slide {
+        @apply rounded-[10px]! overflow-hidden! xl:w-full! xl:transition-all! xl:duration-700! xl:ease-in-out!;
+        &.hovered {
+            @apply xl:max-w-[50%]! 2xl:max-w-165.5!;
+        }
+        &.not-hovered {
+            @apply xl:max-w-[25%]! 2xl:max-w-75!;
+        }
+        #card-grow-action {
+            @apply transition-all duration-500 ease-in-out translate-y-20 opacity-0;
+        }
+        &.swiper-slide-active {
+            #card-grow-action {
+                @apply transition-all duration-500 ease-in-out translate-y-0 opacity-100;
+            }
         }
     }
     .swiper-pagination {
