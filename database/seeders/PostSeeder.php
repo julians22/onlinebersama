@@ -64,14 +64,9 @@ class PostSeeder extends Seeder
             // create view file for the post template view path
             $view_path = resource_path('views/articles/' . $post->slug . '.blade.php');
             if (!file_exists($view_path)) {
-
-                Artisan::call('make:view', [
-                    'name' => 'contents.articles.dynamic.' . $post->slug,
-                    '--force' => true
-                ]);
                 // update the post template view path to use the new view file
                 $post->update([
-                    'template-view-path' => $post->slug
+                    'template_view_path' => $post->slug
                 ]);
             }
         }
