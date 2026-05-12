@@ -21,7 +21,8 @@
                     <li>
                         <a
                             data-analytics-name="{{ request()->routeIs('index') ? 'anchor | Why .com?' : 'text | Why .com?' }}"
-                            href="{{ route('index') }}#mengapa-com" class="nav-link">Mengapa .com?</a>
+                            href="{{ request()->routeIs('index') ? '' : route('index') }}#mengapa-com"
+                            class="nav-link">Mengapa .com?</a>
                     </li>
                     <li>
                         <button
