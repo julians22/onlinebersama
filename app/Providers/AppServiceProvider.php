@@ -2,8 +2,10 @@
 
 namespace App\Providers;
 
+use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\URL;
 use Illuminate\Support\ServiceProvider;
+use Livewire\Livewire;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -23,6 +25,14 @@ class AppServiceProvider extends ServiceProvider
         // Memaksa semua URL menggunakan HTTPS
         if (config('app.env') !== 'local') {
             URL::forceScheme('https');
+        }
+
+        if (config('app.env') === 'staging') {
+            Livewire::setUpdateRoute(function ($handle) {
+                return Route::post('/staging/livewire/update', $handle)
+                    ->middleware(['web']) // Ensure necessary middleware is included
+                    ->name('staging.livewire.update'); // Giving it a name is recommended
+            });
         }
 
         // Memaksa root URL agar selalu menggunakan /staging
