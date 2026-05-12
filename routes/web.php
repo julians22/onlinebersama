@@ -23,9 +23,3 @@ Route::name('resources')->group(function() {
         Route::get('{slug}', 'show')->name('.show');
     });
 });
-
-Livewire::setUpdateRoute(function ($handle) {
-    if(config('app.env') == 'staging'){
-        return Route::post('/staging/livewire/update', $handle)->name('custom.livewire.update');
-    }
-});
