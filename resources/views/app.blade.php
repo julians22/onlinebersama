@@ -11,6 +11,19 @@
     <meta name="description" content="@yield('meta_description', config('app.name', 'Laravel'))">
     <meta name="keywords" content="@yield('meta_keywords', '')">
     <meta name="author" content="@yield('meta_author', '')">
+
+    <!-- Analytics Scripts -->
+
+
+    <!-- OneTrust Cookies -->
+    <script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js"  type="text/javascript" charset="UTF-8" data-domain-script="68658e5f-be44-4a87-a030-a3ff50512d67-test" ></script>
+    <script type="text/javascript">
+    function OptanonWrapper() { }
+    </script>
+
+    <!-- ADOBE SCRIPT -->
+    <script type="text/plain" class="optanon-category-C0001" src="//assets.adobedtm.com/1d6e8340b68d/b0c6093737cf/launch-adacc40eeb69-staging.min.js" defer></script>
+
     {{-- Fonts --}}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
