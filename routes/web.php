@@ -4,6 +4,7 @@ use App\Http\Controllers\PageController;
 use App\Http\Controllers\ResourcesPageController;
 use App\Http\Controllers\UseCaseController;
 use Illuminate\Support\Facades\Route;
+use Livewire\Livewire;
 
 Route::controller(PageController::class)->group(function() {
     Route::get('/', 'index')->name('index');
@@ -21,4 +22,10 @@ Route::name('resources')->group(function() {
         Route::get('/kumpulan-materi', 'index');
         Route::get('{slug}', 'show')->name('.show');
     });
+});
+
+Livewire::setUpdateRoute(function ($handle) {
+    if(config('app.env') == 'staging'){
+        return Route::post('/staging/livewire/update', $handle)->name('custom.livewire.update');
+    }
 });
