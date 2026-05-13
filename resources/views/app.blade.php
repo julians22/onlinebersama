@@ -14,25 +14,27 @@
 
     <!-- Analytics Scripts -->
 
-    @if (config('app.env') == 'staging')
-        <!-- OneTrust Cookies Consent Notice start for onlinebersama.com -->
-        <script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js"  type="text/javascript" charset="UTF-8" data-domain-script="019dac2e-6419-7678-bb88-2fce4bccca28-test" ></script>
-        <script type="text/javascript">
-        function OptanonWrapper() { }
-        </script>
-        <!-- OneTrust Cookies Consent Notice end for onlinebersama.com -->
+@env(['staging', 'local', 'testing'])
+    <!-- OneTrust Cookies Consent Notice start for onlinebersama.com -->
+    <script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js"  type="text/javascript" charset="UTF-8" data-domain-script="019dac2e-6419-7678-bb88-2fce4bccca28-test" ></script>
+    <script type="text/javascript">
+    function OptanonWrapper() { }
+    </script>
+    <!-- OneTrust Cookies Consent Notice end for onlinebersama.com -->
 
-        <!-- ADOBE SCRIPT -->
-        <script type="text/plain" class="optanon-category-C0001" src="//assets.adobedtm.com/1d6e8340b68d/b0c6093737cf/launch-adacc40eeb69-staging.min.js" defer></script>
-    @endif
+    <!-- ADOBE SCRIPT -->
+    <script type="text/plain" class="optanon-category-C0001" src="//assets.adobedtm.com/1d6e8340b68d/b0c6093737cf/launch-adacc40eeb69-staging.min.js" defer></script>
+@endenv
 
-    {{-- Fonts --}}
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     <!-- Favicon -->
     <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
-    {{-- Vite Resource --}}
+
+    <!-- Vite scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     @livewireStyles
 </head>

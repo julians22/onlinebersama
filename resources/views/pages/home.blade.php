@@ -149,7 +149,7 @@
                         </div>
                     </div>
                     <a
-                        x-data="clicked: false"
+                        x-data="{clicked: false}"
                         @click.prevent="clicked = true"
                         href="#"
                         data-analytics-name="video image | IKAT Indonesia"
