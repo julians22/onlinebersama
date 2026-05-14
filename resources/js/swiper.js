@@ -48,7 +48,41 @@ const howToUse = new Swiper(`.${prefix}how-to-use`, {
             spaceBetween: 32,
         },
         1280: {
+            enabled: false,
             slidesPerView: 3,
+            centeredSlides: false,
+        }
+    }
+});
+
+const findHowToUse = new Swiper(`.${prefix}find-how-to-use`, {
+    initialSlide: 1,
+    slidesPerView: 1.375,
+    slideShadows: false,
+    spaceBetween: 24,
+    centeredSlides: true,
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: true,
+    },
+    breakpoints: {
+        500: {
+            slidesPerView: 1.5,
+        },
+        640: {
+            slidesPerView: 1.75,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        1024: {
+            slidesPerView: 2.4,
+            spaceBetween: 32,
+        },
+        1280: {
+            slidesPerView: 3,
+            initialSlide: 0,
             centeredSlides: false,
         }
     }
