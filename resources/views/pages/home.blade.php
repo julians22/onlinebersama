@@ -30,8 +30,8 @@
     <section
         data-analytics-level2="search"
         class="bg-deep-blue-300">
-        <div class="flex flex-col justify-center items-center gap-6 py-16 container lg:py-22">
-            <h2 class="subheadline-2 text-white text-center max-w-xs mx-auto sm:max-w-full lg:text-[40px]!">
+        <div class="flex flex-col justify-center items-center gap-6 py-16 lg:py-22">
+            <h2 class="subheadline-2 text-white text-center max-w-xs mx-auto sm:max-w-full container lg:text-[40px]!">
                 Temukan Nama Domain .com
             </h2>
             @env('local')

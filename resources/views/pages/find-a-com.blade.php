@@ -6,8 +6,8 @@
 
 <main>
     <section class="bg-deep-blue-300">
-        <div class="flex flex-col items-center gap-8 py-16 text-white text-center container md:py-25 lg:py-40">
-            <div class="space-y-2.5 md:max-w-175 lg:max-w-full">
+        <div class="flex flex-col items-center gap-8 py-16 text-white text-center">
+            <div class="space-y-2.5 md:max-w-175 lg:max-w-full container">
                 <h1 class="headline-1">Temukan Nama Domain .com</h1>
                 <p class="max-w-250 paragraph-md">Nama domain .com membantu pelanggan menemukan dan memercayai Anda. Temukan nama domain .com yang menarik menggunakan generator nama domain kami.</p>
             </div>
