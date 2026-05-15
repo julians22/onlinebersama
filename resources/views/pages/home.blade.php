@@ -29,19 +29,13 @@
     <!-- Search -->
     <section
         data-analytics-level2="search"
-        class="bg-deep-blue-300">
-        <div class="flex flex-col justify-center items-center gap-6 py-16 lg:py-22">
+        class="bg-deep-blue-300 py-16 lg:py-22">
+        <div class="flex flex-col justify-center items-center">
             <h2 class="subheadline-2 text-white text-center max-w-xs mx-auto sm:max-w-full container lg:text-[40px]!">
                 Temukan Nama Domain .com
             </h2>
-            @env('local')
-                <img class="hidden lg:block" src="{{ asset('images/ns-search.png') }}">
-                <img class="hidden md:block lg:hidden" src="{{ asset('images/ns-search-tablet.png') }}">
-                <img class="block md:hidden" src="{{ asset('images/ns-search-mobile.png') }}">
-            @else
-                <x-displays.namestudio/>
-            @endenv
         </div>
+        <x-displays.namestudio/>
     </section>
     <!-- End Search -->
 
