@@ -11,11 +11,15 @@
                 <h1 class="headline-1">Temukan Nama Domain .com</h1>
                 <p class="max-w-250 paragraph-md">Nama domain .com membantu pelanggan menemukan dan memercayai Anda. Temukan nama domain .com yang menarik menggunakan generator nama domain kami.</p>
             </div>
+            @env('local')
             <div class="shrink-0">
                 <img class="hidden lg:block" src="{{ asset('images/ns-search.png') }}">
                 <img class="hidden md:block lg:hidden" src="{{ asset('images/ns-search-tablet.png') }}">
                 <img class="block md:hidden" src="{{ asset('images/ns-search-mobile.png') }}">
             </div>
+            @else
+                <x-displays.namestudio/>
+            @endenv
         </div>
     </section>
     <section class="flex justify-center items-center gap-6 py-10 container flex-col-reverse md:py-20 lg:gap-12 lg:flex-row">

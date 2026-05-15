@@ -34,9 +34,13 @@
             <h2 class="subheadline-2 text-white text-center max-w-xs mx-auto sm:max-w-full lg:text-[40px]!">
                 Temukan Nama Domain .com
             </h2>
-            <img class="hidden lg:block" src="{{ asset('images/ns-search.png') }}">
-            <img class="hidden md:block lg:hidden" src="{{ asset('images/ns-search-tablet.png') }}">
-            <img class="block md:hidden" src="{{ asset('images/ns-search-mobile.png') }}">
+            @env('local')
+                <img class="hidden lg:block" src="{{ asset('images/ns-search.png') }}">
+                <img class="hidden md:block lg:hidden" src="{{ asset('images/ns-search-tablet.png') }}">
+                <img class="block md:hidden" src="{{ asset('images/ns-search-mobile.png') }}">
+            @else
+                <x-displays.namestudio/>
+            @endenv
         </div>
     </section>
     <!-- End Search -->
