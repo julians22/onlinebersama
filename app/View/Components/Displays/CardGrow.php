@@ -15,6 +15,7 @@ class CardGrow extends Component
         public string $active,
         public string $route,
         public string $image,
+        public ?string $dataAnalyticsName,
         public ?string $alt
     ) {}
 

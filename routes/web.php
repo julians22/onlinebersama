@@ -4,6 +4,7 @@ use App\Http\Controllers\PageController;
 use App\Http\Controllers\ResourcesPageController;
 use App\Http\Controllers\UseCaseController;
 use Illuminate\Support\Facades\Route;
+use Livewire\Livewire;
 
 Route::controller(PageController::class)->group(function() {
     Route::get('/', 'index')->name('index');
