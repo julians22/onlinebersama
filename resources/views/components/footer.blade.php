@@ -1,15 +1,16 @@
 <footer
     data-analytics-level1="footer"
     class="bg-gradient-blue-double text-white">
-    <div class="flex flex-col gap-5 py-20 container">
-        <div class="flex justify-between">
+    <div class="flex flex-col gap-5 py-20 container-smaller">
+        <div class="flex flex-col gap-y-7 justify-between lg:gap-y-0 lg:flex-row">
             <a
+                class="w-56"
                 data-analytics-name="logo | .com"
                 href="{{ route('index') }}">
-                <img class="w-56" src="{{ asset('images/logo-com-white.svg') }}" alt="OnlineBersama">
+                <img class="w-full" src="{{ asset('images/logo-com-white.svg') }}" alt="OnlineBersama">
             </a>
-            <div class="flex justify-between gap-8.5 w-132.5">
-                <div class="flex flex-col w-full max-w-75.5">
+            <div class="flex flex-col gap-8 md:flex-row lg:justify-between lg:w-132.5">
+                <div class="flex flex-col lg:w-full lg:max-w-75.5">
                     <a
                         data-analytics-name="{{ request()->routeIs('index') ? 'anchor | Why .com?' : 'text | Why .com?' }}"
                         href="{{ request()->routeIs('index') ? '' : route('index') }}#mengapa-com"
@@ -30,8 +31,8 @@
                         data-analytics-name="text | Find a .com"
                         href="{{ route('find') }}" class="footer-link">Temukan .com Anda</a>
                 </div>
-                <div class="flex flex-col gap-y-2.5">
-                    <div class="flex flex-col gap-y-2.5 w-full max-w-48.5">
+                <div class="flex flex-col gap-y-10 md:gap-y-2.5">
+                    <div class="flex flex-col lg:gap-y-2.5 lg:w-full lg:max-w-48.5">
                         <a
                             data-analytics-name="text | Privacy Statement"
                             href="https://www.verisign.com/id-id/privacy/" class="footer-link">Pernyataan Privasi</a>

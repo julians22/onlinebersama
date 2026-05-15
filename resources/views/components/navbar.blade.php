@@ -1,13 +1,15 @@
 <header
     data-analytics-level1="topnav"
-    x-data="{ open: false }" class="top-0 right-0 z-50 sticky w-full">
+    x-data="{ dropdown: false, sidebar: false }"
+    class="top-0 right-0 z-50 sticky w-full">
     {{-- Navigation Menu --}}
-    <nav class="nav-misc"
+    <nav
         data-analytics-level1="topnav"
-    >
-        <div class="flex justify-between items-center gap-2.5 py-2 lg:py-5 container">
+        class="bg-gradient-nav">
+        <div class="container-nav flex justify-between items-center gap-2.5 py-2 sm:py-3 lg:py-5">
             <div class="flex items-center gap-3.5">
-                <button type="button" class="lg:hidden block size-6 cursor-pointer">
+                {{-- Toggle Button (Mobile) --}}
+                <button type="button" @click="sidebar = !sidebar" class="lg:hidden block size-6 cursor-pointer">
                     <img src="{{ asset('images/icons/white-burger.svg') }}" alt="">
                 </button>
                 <a
@@ -16,86 +18,149 @@
                     <img class="w-20 lg:w-31.5" src="{{ asset('images/logo-com-white.svg') }}" alt="OnlineBersama">
                 </a>
             </div>
-            <div class="flex items-center gap-x-10">
-                <ul class="hidden lg:flex lg:gap-x-4 xl:gap-x-10">
-                    <li>
+            <div class="flex items-center lg:gap-x-4 xl:gap-x-10">
+                <ul class="hidden lg:gap-x-4 lg:flex xl:gap-x-10">
+                    <li class="flex items-center text-right">
                         <a
                             data-analytics-name="{{ request()->routeIs('index') ? 'anchor | Why .com?' : 'text | Why .com?' }}"
                             href="{{ request()->routeIs('index') ? '' : route('index') }}#mengapa-com"
                             class="nav-link">Mengapa .com?</a>
                     </li>
-                    <li>
+                    <li class="max-w-55 min-[1200px]:max-w-full">
                         <button
                             data-analytics-name="hover expand | How Do I use a .com?"
-                            type="button" @click="open = !open" class="nav-link nav-dropdown">
+                            type="button"@click="dropdown = !dropdown" class="nav-link nav-dropdown text-right">
                             Bagaimana Cara Menggunakan .com?
-                            <img class="transition-all duration-300 ease-in-out" :class="open ? '-rotate-180' : 'rotate-0'" src="{{ asset('images/icons/white-arrow-down.svg') }}">
+                            <img class="transition-all duration-300 ease-in-out" :class="dropdown ? '-rotate-180' : 'rotate-0'" src="{{ asset('images/icons/white-arrow-down.svg') }}">
                         </button>
                     </li>
-                    <li><a
-                        data-analytics-name="text | Learning Hub"
-                        href="{{ route('resources') }}" class="nav-link">Panduan Belajar</a></li>
+                    <li class="flex items-center text-right">
+                        <a
+                            data-analytics-name="text | Learning Hub"
+                            href="{{ route('resources') }}" class="nav-link">Panduan Belajar</a>
+                    </li>
                 </ul>
                 <a
-                    data-analytics-name="button | Find a .com"
+                    ata-analytics-name="button | Find a .com"
                     href="{{ route('find') }}" class="px-4 lg:px-6 py-0.5 lg:py-2 font-medium text-navy-blue-300 btn-primary">
                     Temukan .com Anda</span>
                 </a>
             </div>
         </div>
     </nav>
-    {{-- Dropdown Menu --}}
-    <div class="z-[-1] relative"
+    {{-- Dropdown --}}
+    <div
         data-analytics-level2="topnav expanded"
-    >
-        <div x-cloak class="top-0 left-0 absolute grid grid-cols-12 bg-white w-full transition-all duration-300 ease-in-out" :class="open ? 'translate-y-0' : '-translate-y-full'">
-            <div class="gap-10 grid grid-cols-3 col-span-9 p-10 h-max">
-                <a
-                    data-analytics-name="hover | For Websites"
-                    href="{{ route('websites') }}" class="group flex gap-5 hover:bg-mint-100 p-6 rounded-[10px] min-h-54.25 transition-all duration-300 ease-in-out">
-                    <div class="space-y-4">
-                        <h3 class="text-navy-blue-300 subheadline-3">.com untuk Situs Web</h3>
-                        <p class="font-bold text-deep-blue-300 paragraph-sm">Agar lebih mudah ditemukan, mulailah menggunakan situs web .com Anda sendiri.</p>
-                    </div>
-                    <div class="opacity-0 group-hover:opacity-100 mt-2.5 transition-all duration-300 ease-in-out shrink-0">
-                        <img src="{{ asset('images/icons/navy-chevron-right.svg') }}">
-                    </div>
-                </a>
-                <a
-                    data-analytics-name="hover | For Email"
-                    href="{{ route('email') }}" class="group flex gap-5 hover:bg-mint-100 p-6 rounded-[10px] min-h-54.25 transition-all duration-300 ease-in-out">
-                    <div class="space-y-4">
-                        <h3 class="text-navy-blue-300 subheadline-3">.com untuk Email</h3>
-                        <p class="font-bold text-deep-blue-300 paragraph-sm">Jadikan email sebagai pernyataan kredibilitas.</p>
-                    </div>
-                    <div class="opacity-0 group-hover:opacity-100 mt-2.5 transition-all duration-300 ease-in-out shrink-0">
-                        <img src="{{ asset('images/icons/navy-chevron-right.svg') }}">
-                    </div>
-                </a>
-                <a
-                    data-analytics-name="hover | For Social Media & E-Commerce"
-                    href="{{ route('social-media') }}" class="group flex gap-5 hover:bg-mint-100 p-6 rounded-[10px] min-h-54.25 transition-all duration-300 ease-in-out">
-                    <div class="space-y-4">
-                        <h3 class="text-navy-blue-300 subheadline-3">.com untuk Media Sosial dan E-Commerce </h3>
-                        <p class="font-bold text-deep-blue-300 paragraph-sm">Dapatkan alamat web .com untuk eksistensi online Anda.</p>
-                    </div>
-                    <div class="opacity-0 group-hover:opacity-100 mt-2.5 transition-all duration-300 ease-in-out shrink-0">
-                        <img src="{{ asset('images/icons/navy-chevron-right.svg') }}">
-                    </div>
-                </a>
+        @click.outside="dropdown = false" x-cloak x-show="dropdown" class="z-[-1] relative"
+            x-transition:enter="transition-all ease-in-out duration-300"
+            x-transition:enter-start="-translate-y-[1100px] xl:-translate-y-[350px]"
+            x-transition:enter-end="translate-y-0"
+            x-transition:leave="transition-all ease-in-out duration-300"
+            x-transition:leave-start="translate-y-0"
+            x-transition:leave-end="-translate-y-[1100px] xl:-translate-y-[350px]"
+        >
+        <div class="absolute hidden top-0 left-1/2 -translate-x-1/2 w-full bg-white after:absolute after:top-0 after:right-0 after:w-1/2 after:h-full after:bg-light-gray-100 lg:block">
+            <div class="relative z-10 max-w-480 flex bg-white mx-auto lg:flex-col xl:flex-row">
+                <div class="gap-6 grid grid-cols-3 p-10 h-max 2xl:gap-10">
+                    <a data-analytics-name="hover | For Websites" href="{{ route('websites') }}" class="group flex gap-5 hover:bg-mint-100 p-6 rounded-[10px] min-h-54.25 transition-all duration-300 ease-in-out">
+                        <div class="space-y-4">
+                            <h3 class="text-navy-blue-300 subheadline-3">.com untuk Situs Web</h3>
+                            <p class="font-bold text-deep-blue-300 paragraph-sm">Agar lebih mudah ditemukan, mulailah menggunakan situs web .com Anda sendiri.</p>
+                        </div>
+                        <div class="opacity-0 group-hover:opacity-100 mt-2.5 transition-all duration-300 ease-in-out shrink-0">
+                            <img src="{{ asset('images/icons/navy-chevron-right.svg') }}">
+                        </div>
+                    </a>
+                    <a data-analytics-name="hover | For Email" href="{{ route('email') }}" class="group flex gap-5 hover:bg-mint-100 p-6 rounded-[10px] min-h-54.25 transition-all duration-300 ease-in-out">
+                        <div class="space-y-4">
+                            <h3 class="text-navy-blue-300 subheadline-3">.com untuk Email</h3>
+                            <p class="font-bold text-deep-blue-300 paragraph-sm">Jadikan email sebagai pernyataan kredibilitas.</p>
+                        </div>
+                        <div class="opacity-0 group-hover:opacity-100 mt-2.5 transition-all duration-300 ease-in-out shrink-0">
+                            <img src="{{ asset('images/icons/navy-chevron-right.svg') }}">
+                        </div>
+                    </a>
+                    <a data-analytics-name="hover | For Social Media & E-Commerce" href="{{ route('social-media') }}" class="group flex gap-5 hover:bg-mint-100 p-6 rounded-[10px] min-h-54.25 transition-all duration-300 ease-in-out">
+                        <div class="space-y-4">
+                            <h3 class="text-navy-blue-300 subheadline-3">.com untuk Media Sosial dan E-Commerce</h3>
+                            <p class="font-bold text-deep-blue-300 paragraph-sm">Dapatkan alamat web .com untuk eksistensi online Anda.</p>
+                        </div>
+                        <div class="opacity-0 group-hover:opacity-100 mt-2.5 transition-all duration-300 ease-in-out shrink-0">
+                            <img src="{{ asset('images/icons/navy-chevron-right.svg') }}">
+                        </div>
+                    </a>
+                </div>
+                <div class="flex flex-col gap-4 bg-light-gray-100 p-10 w-full xl:max-w-117.5">
+                    <button data-analytics-name="video image | Startup Experience" type="button" class="group relative rounded-2xl w-full aspect-video overflow-hidden cursor-pointer lg:max-w-117.5 xl:max-w-full 2xl:max-w-97.5 2xl:h-54.25">
+                        <span data-analytics-name="play button | Startup Experience" class="transition-all duration-300 ease-in-out top-1/2 left-1/2 absolute size-14 -translate-x-1/2 -translate-y-1/2 group-hover:scale-110">
+                            <img class="size-full" src="{{ asset('images/icons/white-play.svg') }}">
+                        </span>
+                        <img class="size-full object-cover object-top" src="{{ asset('images/placeholder-video-navbar.jpg') }}" alt="Placeholder Video">
+                    </button>
+                    <p class="font-semibold paragraph-sm">Featured Video - Startup Experience</p>
+                </div>
             </div>
-            <div class="flex flex-col gap-4 col-span-3 bg-light-gray-100 p-10 w-full">
-                <button
-                    data-analytics-name="video image | Startup Experience"
-                    type="button" class="relative rounded-2xl w-full max-w-97.5 h-54.25 overflow-hidden cursor-pointer">
-                    <span
-                        data-analytics-name="play button | Startup Experience"
-                        class="top-1/2 left-1/2 absolute size-14 hover:scale-105 -translate-x-1/2 -translate-y-1/2 cursor-pointer">
-                        <img class="size-full" src="{{ asset('images/icons/white-play.svg') }}">
-                    </span>
-                    <img class="size-full object-cover object-top" src="{{ asset('images/placeholder-video-navbar.jpg') }}" alt="Placeholder Video">
+        </div>
+    </div>
+    {{-- Sidebar (Mobile) --}}
+    <div @click.outside="sidebar = false" x-cloak x-show="sidebar" class="fixed top-0 left-0 w-[90%] h-dvh bg-white box-shadow-sm block lg:hidden"
+        x-transition:enter="transition-all ease-in-out duration-300"
+        x-transition:enter-start="-translate-x-full"
+        x-transition:enter-end="translate-x-0"
+        x-transition:leave="transition-all ease-in-out duration-300"
+        x-transition:leave-start="translate-x-0"
+        x-transition:leave-end="-translate-x-full"
+    >
+        <div class="flex flex-col">
+            <div class="flex justify-between p-6">
+                <img class="w-20" src="{{ asset('images/logo-com-blue.svg') }}" alt="">
+                <button type="button" @click="sidebar = false" class="cursor-pointer">
+                    <img class="size-6" src="{{ asset('images/icons/magenta-close.svg') }}" alt="">
                 </button>
-                <p class="font-semibold paragraph-sm">Featured Video - Startup Experience</p>
+            </div>
+            <div class="flex flex-col h-[calc(100dvh-72px)] overflow-y-auto">
+                <div class="sidebar-link">
+                    <a href="{{ request()->routeIs('index') ? '' : route('index') }}#mengapa-com" class="group">
+                        Mengapa .com?
+                        <img class="group-focus:opacity-100" src="{{ asset('images/icons/black-chevron-right.svg') }}" alt="">
+                    </a>
+                </div>
+                <div class="sidebar-link">
+                    <p>Bagaimana Cara Menggunakan .com?</p>
+                </div>
+                <div class="sidebar-list">
+                    <a href="{{ route('websites') }}" class="group">
+                        .com untuk Situs Web
+                        <img class="group-focus:opacity-100" src="{{ asset('images/icons/black-chevron-right.svg') }}" alt="">
+                    </a>
+                    <a href="{{ route('email') }}" class="group">
+                        .com untuk Email
+                        <img class="group-focus:opacity-100" src="{{ asset('images/icons/black-chevron-right.svg') }}" alt="">
+                    </a>
+                    <a href="{{ route('social-media') }}" class="group">
+                        .com untuk Sosial Media dan E-Commerce
+                        <img class="group-focus:opacity-100" src="{{ asset('images/icons/black-chevron-right.svg') }}" alt="">
+                    </a>
+                </div>
+                <div class="sidebar-link">
+                    <a href="{{ route('resources') }}" class="group">
+                        Panduan Belajar
+                        <img class="group-focus:opacity-100" src="{{ asset('images/icons/black-chevron-right.svg') }}" alt="">
+                    </a>
+                </div>
+                <div class="sidebar-link">
+                    <a href="{{ route('find') }}" class="group">
+                        Temukan .com Anda
+                        <img class="group-focus:opacity-100" src="{{ asset('images/icons/black-chevron-right.svg') }}" alt="">
+                    </a>
+                </div>
+                <div class="border-t-2 border-light-gray-300 flex flex-col gap-4 w-full px-3 py-8 min-[500px]:px-6">
+                    <button type="button" class="group relative rounded-2xl w-full aspect-video overflow-hidden cursor-pointer min-[500px]:max-w-97.5 min-[500px]:h-54.25">
+                        <img class="transition-all duration-300 ease-in-out top-1/2 left-1/2 absolute size-14 -translate-x-1/2 -translate-y-1/2 group-focus:scale-110" src="{{ asset('images/icons/white-play.svg') }}">
+                        <img class="size-full object-cover object-top" src="{{ asset('images/placeholder-video-navbar.jpg') }}" alt="">
+                    </button>
+                    <p class="font-sans font-semibold text-[20px]">Featured Video - Startup Experience</p>
+                </div>
             </div>
         </div>
     </div>
