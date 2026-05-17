@@ -9,6 +9,7 @@ use Livewire\Livewire;
 Route::controller(PageController::class)->group(function() {
     Route::get('/', 'index')->name('index');
     Route::get('/cari-nama-domain', 'find')->name('find');
+    Route::get('persyaratan-layanan', 'terms')->name('terms');
 });
 
 Route::controller(UseCaseController::class)->group(function() {

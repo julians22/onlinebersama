@@ -23,7 +23,7 @@ class AppServiceProvider extends ServiceProvider
     public function boot(): void
     {
         // Memaksa semua URL menggunakan HTTPS
-        if (config('app.env') !== 'local') {
+        if (config('app.env') === 'staging' || config('app.env') === 'production'){
             URL::forceScheme('https');
         }
 
