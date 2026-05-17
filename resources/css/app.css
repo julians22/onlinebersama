@@ -67,6 +67,17 @@
 
 /* ====== Container ====== */
 
+@utility container-nav {
+    margin-inline: auto;
+    padding-inline: 16px;
+    max-width: 1760px;
+    width: 100%;
+
+    @variant md {
+        padding-inline: 32px;
+    }
+}
+
 @utility container {
     margin-inline: auto;
     padding-inline: 16px;
@@ -89,6 +100,10 @@
     }
 }
 
+* {
+    @apply box-border;
+}
+
 /* ====== Base ====== */
 
 @layer base {}
@@ -105,10 +120,33 @@
         }
     }
 
+    .sidebar-link {
+        @apply p-6 border-t-2 border-light-gray-300;
+        p {
+            @apply flex justify-between items-center gap-x-2 font-sans font-bold text-navy-blue-300 text-[28px] leading-8;
+        }
+        a {
+            @apply flex justify-between items-center gap-x-2 font-sans font-bold text-navy-blue-300 text-[28px] leading-8;
+            img {
+                @apply transition-all duration-150 ease-in-out size-6 opacity-0;
+            }
+        }
+    }
+
+    .sidebar-list {
+        @apply flex flex-col gap-y-2 pr-6 pb-4.5;
+        a {
+            @apply flex justify-between items-center gap-x-2 transition-all duration-150 ease-in-out font-sans font-semibold text-[20px] rounded-r-[10px] leading-[100%] text-navy-blue-300 py-4 pl-6 pr-4 focus:bg-mint-100;
+            img {
+                @apply transition-all duration-150 ease-in-out size-6 opacity-0;
+            }
+        }
+    }
+
     /* Accordion */
 
     .accordion-content {
-        @apply font-sans font-medium text-[18px] md:text-[24px] leading-8.5! tracking-[0.25px];
+        @apply font-sans font-medium text-[18px] md:text-[24px] tracking-[0.25px] md:leading-8.5!;
     }
 
     /* Button */
@@ -203,17 +241,22 @@
         box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.30);
     }
 
+    .bg-gradient-nav {
+        background: linear-gradient(101deg, var(--color-navy-blue-300, #304D6D) 15.08%, var(--color-deep-blue-300, #1A2E47) 76.56%);
+        /* box-shadow: 0 4px 4px 0 rgba(169, 169, 169, 0.25); */
+    }
+
+    .bg-gradient-nav-dropdown {
+        background: #FFF;
+        background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(242, 242, 242, 1) 50%, rgba(242, 242, 242, 1) 100%);
+    }
+
     .bg-gradient-blue-single {
         background: linear-gradient(322deg, #1A2E47 42.53%, #304D6D 99.87%);
     }
 
     .bg-gradient-blue-double {
         background: var(--gradients-navy-to-deep-blue, linear-gradient(180deg, var(--color-navy-blue-300, #304D6D) 0%, var(--color-deep-blue-300, #1A2E47) 100%));
-    }
-
-    .nav-misc {
-        background: linear-gradient(101deg, var(--color-navy-blue-300, #304D6D) 15.08%, var(--color-deep-blue-300, #1A2E47) 76.56%);
-        /* box-shadow: 0 4px 4px 0 rgba(169, 169, 169, 0.25); */
     }
 }
 
@@ -266,14 +309,14 @@
 /* How to Use (SLIDER) */
 
 .online-bersama-how-to-use {
-    @apply pb-12! xl:pb-0!;
+    @apply overflow-visible! py-12!;
     .swiper-slide {
-        @apply rounded-[10px]! overflow-hidden! xl:w-full! xl:transition-all! xl:duration-700! xl:ease-in-out!;
+        @apply rounded-[10px]! xl:w-full! xl:transition-all! xl:duration-700! xl:ease-in-out!;
         &.hovered {
-            @apply xl:max-w-[50%]! 2xl:max-w-165.5!;
+            @apply xl:basis-2/4;
         }
         &.not-hovered {
-            @apply xl:max-w-[25%]! 2xl:max-w-75!;
+            @apply xl:basis-[23.2%];
         }
         #card-grow-action {
             @apply transition-all duration-500 ease-in-out translate-y-20 opacity-0;
@@ -281,6 +324,31 @@
         &.swiper-slide-active {
             #card-grow-action {
                 @apply transition-all duration-500 ease-in-out translate-y-0 opacity-100;
+            }
+        }
+    }
+    .swiper-pagination {
+        @apply flex justify-center items-center gap-2.5;
+        .swiper-pagination-bullet {
+            @apply transition-all duration-150 ease-in-out size-2.25 bg-[#e1e8ef] outline-none opacity-100! m-0!;
+            &.swiper-pagination-bullet-active {
+                @apply size-3! bg-[#b3c5d7];
+            }
+        }
+    }
+}
+
+/* [Find a .com] How to Use (SLIDER) */
+
+.online-bersama-find-how-to-use {
+    @apply overflow-visible! py-12!;
+    .swiper-slide {
+        #card-grow-action {
+            @apply transition-all duration-500 ease-in-out max-xl:translate-y-20 max-xl:opacity-0;
+        }
+        &.swiper-slide-active {
+            #card-grow-action {
+                @apply transition-all duration-500 ease-in-out max-xl:translate-y-0 max-xl:opacity-100;
             }
         }
     }

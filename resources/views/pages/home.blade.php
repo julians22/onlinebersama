@@ -10,7 +10,7 @@
         data-analytics-level2="hero"
         class="relative">
         <img class="w-full h-112.5 object-cover aspect-48/17 lg:h-152.75 xl:h-170" src="{{ asset('images/hero-homepage.jpg') }}" alt="">
-        <div class="container-smaller top-0 left-1/2 absolute flex justify-center items-end px-7 pt-7 pb-4 size-full -translate-x-1/2 md:justify-start sm:p-10 lg:px-18.5 lg:py-25.75">
+        <div class="container top-0 left-1/2 absolute flex justify-center items-end px-7 pt-7 pb-4 size-full -translate-x-1/2 md:justify-start sm:p-10 lg:px-18.5 lg:py-25.75">
             <div class="space-y-2 text-white text-center sm:space-y-3 md:space-y-6 md:text-left lg:space-y-7">
                 <h1 class="headline-1 leading-normal text-[28px]! sm:leading-14! sm:text-5xl! lg:leading-16! lg:text-[64px]! lg:font-extrabold!">
                     Di Mana
@@ -18,7 +18,7 @@
                         <span class="inline md:block">Dunia</span> Menemukanmu
                     </span>
                 </h1>
-                <p class="max-w-135 paragraph-md leading-8.5! text-[22px]! md:max-w-156 md:text-[24px]!">
+                <p class="max-w-135 leading-8.5! text-[22px]! paragraph-md md:max-w-full md:leading-11! lg:text-[32px]!">
                     Nama domain .com membantu orang-orang menemukan dan memercayai Anda
                 </p>
             </div>
@@ -29,24 +29,22 @@
     <!-- Search -->
     <section
         data-analytics-level2="search"
-        class="bg-deep-blue-300">
-        <div class="flex flex-col justify-center items-center gap-6 py-16 container lg:py-22">
-            <h2 class="subheadline-2 text-white text-center max-w-xs mx-auto md:max-w-full lg:text-[40px]!">
+        class="bg-deep-blue-300 py-16 lg:py-22">
+        <div class="flex flex-col justify-center items-center">
+            <h2 class="subheadline-2 text-white text-center max-w-xs mx-auto sm:max-w-full container lg:text-[40px]!">
                 Temukan Nama Domain .com
             </h2>
-            <img class="hidden lg:block" src="{{ asset('images/ns-search.png') }}">
-            <img class="hidden md:block lg:hidden" src="{{ asset('images/ns-search-tablet.png') }}">
-            <img class="block md:hidden" src="{{ asset('images/ns-search-mobile.png') }}">
         </div>
+        <x-displays.namestudio/>
     </section>
     <!-- End Search -->
 
     <!-- How To Use -->
-    <section class="bg-light-gray-100">
+    <section class="bg-light-gray-100 overflow-hidden">
         <div
             data-analytics-level2="Bagaimana Cara Menggunakan .com?"
             class="max-w-full mx-auto py-10 xl:px-8 2xl:px-0 2xl:max-w-331.5">
-            <h2 class="headline-1 max-w-md mx-auto text-navy-blue-300 text-center mb-6 px-4 md:px-0 md:mb-11.25 md:max-w-2xl xl:mx-0 xl:max-w-full">
+            <h2 class="headline-1 max-w-md mx-auto text-navy-blue-300 text-center -mb-6 px-4 md:px-0 md:-mb-2 md:max-w-2xl xl:mx-0 xl:max-w-full">
                 Bagaimana Cara Menggunakan .com?
             </h2>
             <div class="online-bersama-how-to-use swiper">
@@ -87,7 +85,7 @@
                 class="w-full mx-auto block sm:h-200 sm:object-cover sm:object-bottom md:h-210 min-[900px]:h-230! lg:hidden" src="{{ asset('images/placeholder-video-how-mobile.jpg') }}" alt="">
             <button
                 data-analytics-name="play button | Bukan Sekadar Domain. Melainkan Suatu Pernyataan"
-                type="button" class="top-2/3 left-1/2 z-10 absolute -translate-x-1/2 -translate-y-1/2 cursor-pointer min-[900px]:top-[60%] lg:top-[55%]">
+                type="button" class="top-2/3 left-1/2 z-10 absolute -translate-x-1/2 -translate-y-1/2 cursor-pointer transition-all duration-300 ease-in-out hover:scale-110 min-[900px]:top-[60%] lg:top-[55%]">
                 <img class="size-10 min-[400px]:size-14 min-[900px]:size-16 lg:size-20 2xl:size-32.5" src="{{ asset('images/icons/navy-play.svg') }}" alt="">
             </button>
             <div class="top-0 left-1/2 -translate-x-1/2 absolute flex justify-center size-full max-w-480 px-4 pt-4 min-[400px]:pt-13.5 sm:px-6 sm:pt-6 md:pt-11.75 lg:justify-start lg:px-24 lg:py-32 xl:py-38 xl:px-30 2xl:py-50 2xl:px-42">
@@ -107,23 +105,23 @@
     <!-- Why .com? -->
     <section
         data-analytics-level2="Mengapa .com?"
-        class="bg-gradient-blue-single pt-11.5 pb-19.5 scroll-m-8" id="mengapa-com">
-        <div class="container">
-            <div class="flex flex-col gap-8 mx-auto max-w-250">
+        id="mengapa-com" class="bg-gradient-blue-single py-10 scroll-mt-12 px-4 md:px-8 md:pb-19.5 md:pt-11.5">
+        <div class="max-w-156 mx-auto lg:container">
+            <div class="flex flex-col gap-6 mx-auto max-w-250 md:gap-8">
                 <div class="space-y-2 text-white text-center">
                     <h2 class="headline-1">Mengapa .com?</h2>
-                    <p class="paragraph-md">Nama domain .com dapat digunakan di berbagai platform, tempat, dan kesempatan.</p>
+                    <p class="paragraph-md md:leading-8.5!">Nama domain .com dapat digunakan di berbagai platform, tempat, dan kesempatan.</p>
                 </div>
                 <div class="flex flex-col gap-6">
-                    <div class="gap-4 grid grid-cols-3">
+                    <div class="gap-4 grid grid-cols-1 lg:grid-cols-3">
                         <div
                             data-analytics-level3="box1"
                             class="bg-navy-blue-500 p-6 rounded-[10px]">
                             <div
                                 data-analytics-name="Universal"
                                 class="space-y-3">
-                                <h3 class="text-vibrant-yellow-300 subheadline-3">Universal</h3>
-                                <p class="text-white leading-7.5! paragraph-md">Nama domain .com dipahami semua orang, di mana pun.</p>
+                                <h3 class="text-vibrant-yellow-300 text-[32px]! leading-9.5! subheadline-3">Universal</h3>
+                                <p class="text-white text-[24px]! paragraph-md">Nama domain .com dipahami semua orang, di mana pun.</p>
                             </div>
                         </div>
                         <div
@@ -133,8 +131,8 @@
                                 data-analytics-name="text | Tepercaya"
                                 class="space-y-3"
                             >
-                                <h3 class="text-vibrant-yellow-300 subheadline-3">Tepercaya</h3>
-                                <p class="text-white leading-7.5! paragraph-md">Domain yang dipercaya perusahaan global dan merchant lokal.</p>
+                                <h3 class="text-vibrant-yellow-300 text-[32px]! leading-9.5! subheadline-3">Tepercaya</h3>
+                                <p class="text-white text-[24px]! paragraph-md">Domain yang dipercaya perusahaan global dan merchant lokal.</p>
                             </div>
                         </div>
                         <div
@@ -143,29 +141,20 @@
                             <div
                                 data-analytics-name="text | Diakui"
                                 class="space-y-3">
-                                <h3 class="text-vibrant-yellow-300 subheadline-3">Diakui</h3>
-                                <p class="text-white leading-7.5! paragraph-md">.com diakui oleh bisnis dan konsumen di seluruh dunia.</p>
+                                <h3 class="text-vibrant-yellow-300 text-[32px]! leading-9.5! subheadline-3">Diakui</h3>
+                                <p class="text-white text-[24px]! paragraph-md">.com diakui oleh bisnis dan konsumen di seluruh dunia.</p>
                             </div>
                         </div>
                     </div>
-                    <a
-                        x-data="{clicked: false}"
-                        @click.prevent="clicked = true"
-                        href="#"
-                        data-analytics-name="video image | IKAT Indonesia"
-                        class="relative rounded-[10px] overflow-hidden">
-                        <img
-                            data-analytics-name="video image | IKAT Indonesia"
-                            class="w-full" src="{{ asset('images/placeholder-video-why-com.jpg') }}" alt="">
-                        <span
-                            data-analytics-name="play button | IKAT Indonesia"
-                            type="button" class="top-1/2 left-1/2 absolute size-19.5 -translate-x-1/2 -translate-y-1/2 cursor-pointer">
-                            <img class="size-19.5" src="{{ asset('images/icons/white-play-rounded.svg') }}" alt="">
-                        </span>
-                        <div class="bottom-0 left-0 absolute p-8">
-                            <div class="space-y-4 text-white">
-                                <h4 class="font-extrabold! subheadline-3">IKAT Indonesia</h4>
-                                <p class="paragraph-sm">Dengarkan bagaimana nama domain .com yang dikenal membantu pemilik bisnis mengembangkan bisnisnya.</p>
+                    <div class="relative rounded-[10px] overflow-hidden">
+                        <button type="button" class="group/child relative size-full cursor-pointer outline-none mb-6 sm:mb-0">
+                            <img class="w-full rounded-[10px]" src="{{ asset('images/placeholder-video-why-com.jpg') }}" alt="">
+                            <img class="transition-all duration-300 ease-in-out top-1/2 left-1/2 absolute size-19.5 -translate-x-1/2 -translate-y-1/2 group-hover/child:scale-110 sm:-translate-y-[90%] lg:-translate-y-1/2" src="{{ asset('images/icons/white-play-rounded.svg') }}" alt="">
+                        </button>
+                        <div class="bottom-0 left-0 sm:p-8 sm:absolute">
+                            <div class="max-w-3xl space-y-2 text-white">
+                                <h4 class="font-extrabold! text-[20px]! subheadline-3 sm:text-[28px]!">IKAT Indonesia</h4>
+                                <p class="font-semibold! paragraph-sm sm:text-[20px]! sm:leading-normal!">Dengarkan bagaimana nama domain .com yang dikenal membantu pemilik bisnis mengembangkan bisnisnya.</p>
                             </div>
                         </div>
                     </a>
@@ -173,7 +162,7 @@
                 <div class="flex justify-center">
                     <a
                         data-analytics-name="button | Lihat Kisah Usaha Kecil"
-                        href="#" class="px-10 py-3 font-bold btn-primary">Lihat Kisah Usaha Kecil</a>
+                        href="#" class="px-10 py-3 font-bold btn-primary text-[18px]! w-full sm:w-auto">Lihat Kisah Usaha Kecil</a>
                 </div>
             </div>
         </div>
@@ -184,26 +173,26 @@
     <section
         data-analytics-level2="Tinggalkan Jejak Anda di Dunia Maya"
         class="bg-light-gray-100">
-        <div class="pt-10 pb-19.5 container">
+        <div class="pt-10 pb-19.5 px-4 mx-auto max-w-md md:px-8 md:container">
             <h2 class="mb-10 text-navy-blue-300 text-center headline-1">Tinggalkan Jejak Anda di Dunia Maya</h2>
             <div class="flex flex-col gap-6 mx-auto max-w-208">
                 <div
                     data-analytics-level3="card1"
-                    class="top-40 sticky card-stack">
+                    class="top-24 sticky card-stack md:top-40">
                     <x-displays.card-stack number="1" title="Lebih Mudah Ditemukan" image="images/homepage-editorial-1.jpg">
                         Nama domain .com membantu memudahkan pelanggan menemukan bisnis secara online.
                     </x-displays.card-stack>
                 </div>
                 <div
                     data-analytics-level3="card2"
-                    class="top-60 sticky card-stack">
+                    class="top-44 sticky card-stack md:top-60">
                     <x-displays.card-stack number="2" title="Tampil Beda Secara Online" image="images/homepage-editorial-2.jpg">
                         Nama domain .com dapat membantu meningkatkan visibilitas bisnis.
                     </x-displays.card-stack>
                 </div>
                 <div
                     data-analytics-level3="card3"
-                    class="top-86 sticky card-stack">
+                    class="top-66 sticky card-stack md:top-86">
                     <x-displays.card-stack number="3" title="Tingkatkan Kredibilitas Anda" image="images/homepage-editorial-3.jpg">
                         Nama domain .com dapat membantu usaha kecil terlihat lebih profesional.
                     </x-displays.card-stack>
@@ -216,7 +205,7 @@
     <!-- Resources -->
     <section
         data-analytics-level2="Tanya Jawab"
-        class="flex flex-col gap-10 py-20 container-smaller">
+        class="flex flex-col gap-10 py-10 container-smaller md:py-20">
         <h2 class="text-navy-blue-300 text-center headline-1">Tanya Jawab</h2>
         <div class="flex flex-col">
             <x-displays.accordion question="Mengapa saya harus memilih .com?">
@@ -255,7 +244,7 @@
                 x-data="{clicked: false}"
                 @click.prevent="clicked = true"
                 data-analytics-name="button | Ketahui Selengkapnya"
-                href="#" class="px-10 py-3 font-bold btn-secondary">Ketahui Selengkapnya</a>
+                href="#" class="px-10 py-3 font-bold btn-secondary text-[18px]! w-full sm:w-auto">Ketahui Selengkapnya</a>
         </div>
     </section>
     <!-- End Resources -->
