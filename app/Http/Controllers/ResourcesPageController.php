@@ -26,4 +26,9 @@ class ResourcesPageController extends Controller
 
         return view('contents.show', compact('post', 'view_path'));
     }
+
+    public function toolbox()
+    {
+        return view('contents.toolbox');
+    }
 }
