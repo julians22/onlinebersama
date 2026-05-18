@@ -22,10 +22,8 @@ const smallBusinessStory = new Swiper(`.${prefix}small-business-story`, {
     },
     breakpoints: {
         640: {
-            slidesPerView: 1.25,
-            coverflowEffect: {
-                depth: 450,
-            },
+            spaceBetween: 160,
+            slidesPerView: 1.4,
         },
         1024: {
             slidesPerView: 1.75,
@@ -33,6 +31,9 @@ const smallBusinessStory = new Swiper(`.${prefix}small-business-story`, {
         1280: {
             slidesPerView: 2,
             spaceBetween: -70,
+            coverflowEffect: {
+                depth: 450,
+            },
         }
     }
 });
