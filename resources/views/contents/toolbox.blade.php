@@ -54,6 +54,12 @@
             </div>
         </x-articles.step-item>
 
+        <x-articles.intro-and-quicklinks>
+
+            <p class="paragraph-md text-deep-blue-300">You may have heard the terms “website” and “landing page” used interchangeably, but it’s important to note a key difference between the two. A website is focused on your company: what you offer, who you are, and why and how you do what you do. A landing page is focused on getting visitors to take one step towards becoming customers, like filling out a form for an email newsletter. We call this the “call-to-action” or CTA.</p>
+
+        </x-articles.intro-and-quicklinks>
+
 
     </div>
 </main>
