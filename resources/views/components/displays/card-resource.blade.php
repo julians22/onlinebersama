@@ -9,7 +9,7 @@
             {{-- @endforeach --}}
         </div>
         <div class="min-h-28.5">
-            <h2 class="subheadline-3 text-deep-blue-300">{{ $slot }}</h2>
+            <h2 class="subheadline-3 text-deep-blue-300 line-clamp-3">{{ $slot }}</h2>
         </div>
         <a href="{{ $route }}" class="w-max flex items-center font-sans text-xl font-bold text-magenta-300 leading-6">
             Baca Selengkapnya

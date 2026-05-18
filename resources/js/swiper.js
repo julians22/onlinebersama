@@ -6,13 +6,13 @@ const prefix = 'online-bersama-';
 const smallBusinessStory = new Swiper(`.${prefix}small-business-story`, {
     effect: 'coverflow',
     centeredSlides: true,
-    slidesPerView: 2,
+    slidesPerView: 1.08,
     slideToClickedSlide: true,
     loop: true,
-    spaceBetween: -70,
+    spaceBetween: 140,
     coverflowEffect: {
         rotate: 0,
-        depth: 450,
+        depth: 300,
         slideShadows: false,
     },
     pagination: {
@@ -20,6 +20,21 @@ const smallBusinessStory = new Swiper(`.${prefix}small-business-story`, {
         type: 'bullets',
         clickable: true,
     },
+    breakpoints: {
+        640: {
+            slidesPerView: 1.25,
+            coverflowEffect: {
+                depth: 450,
+            },
+        },
+        1024: {
+            slidesPerView: 1.75,
+        },
+        1280: {
+            slidesPerView: 2,
+            spaceBetween: -70,
+        }
+    }
 });
 
 const howToUse = new Swiper(`.${prefix}how-to-use`, {

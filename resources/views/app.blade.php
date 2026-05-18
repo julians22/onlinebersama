@@ -13,18 +13,17 @@
     <meta name="author" content="@yield('meta_author', '')">
 
     <!-- Analytics Scripts -->
+    @env(['staging', 'local', 'testing'])
+        <!-- OneTrust Cookies Consent Notice start for onlinebersama.com -->
+        <script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js"  type="text/javascript" charset="UTF-8" data-domain-script="019dac2e-6419-7678-bb88-2fce4bccca28-test" ></script>
+        <script type="text/javascript">
+        function OptanonWrapper() { }
+        </script>
+        <!-- OneTrust Cookies Consent Notice end for onlinebersama.com -->
 
-@env(['staging', 'local', 'testing'])
-    <!-- OneTrust Cookies Consent Notice start for onlinebersama.com -->
-    <script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js"  type="text/javascript" charset="UTF-8" data-domain-script="019dac2e-6419-7678-bb88-2fce4bccca28-test" ></script>
-    <script type="text/javascript">
-    function OptanonWrapper() { }
-    </script>
-    <!-- OneTrust Cookies Consent Notice end for onlinebersama.com -->
-
-    <!-- ADOBE SCRIPT -->
-    <script type="text/plain" class="optanon-category-C0001" src="//assets.adobedtm.com/1d6e8340b68d/b0c6093737cf/launch-adacc40eeb69-staging.min.js" defer></script>
-@endenv
+        <!-- ADOBE SCRIPT -->
+        <script type="text/plain" class="optanon-category-C0001" src="//assets.adobedtm.com/1d6e8340b68d/b0c6093737cf/launch-adacc40eeb69-staging.min.js" defer></script>
+    @endenv
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
