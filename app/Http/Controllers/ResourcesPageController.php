@@ -29,4 +29,9 @@ class ResourcesPageController extends Controller
             'view_path' => $view_path,
         ]);
     }
+
+    public function toolbox()
+    {
+        return view('contents.toolbox');
+    }
 }

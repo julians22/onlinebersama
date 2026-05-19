@@ -106,6 +106,14 @@
     width: 100%;
 }
 
+@utility trim-both{
+    leading-trim: both;
+}
+
+@utility edge-cap{
+    text-edge: cap;
+}
+
 * {
     @apply box-border;
 }

@@ -22,5 +22,7 @@ Route::name('resources')->group(function() {
     Route::controller(ResourcesPageController::class)->group(function() {
         Route::get('/kumpulan-materi', 'index');
         Route::get('{slug}', 'show')->name('.show');
+
+        Route::get('/kumpulan-materi/toolbox', 'toolbox')->name('toolbox');
     });
 });
