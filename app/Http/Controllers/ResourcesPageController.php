@@ -24,6 +24,9 @@ class ResourcesPageController extends Controller
             $view_path = 'contents.articles.default';
         }
 
-        return view('contents.show', compact('post', 'view_path'));
+        return view('contents.show', [
+            'post' => $post,
+            'view_path' => $view_path,
+        ]);
     }
 }
