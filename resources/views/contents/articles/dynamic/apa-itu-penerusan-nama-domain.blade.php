@@ -1,129 +1,141 @@
-<section class="container-extra-smaller flex flex-col gap-8 py-11">
-    <x-articles.intro-and-quicklinks>
-        <div class="flex flex-col gap-8">
-            <p class="paragraph-md text-deep-blue-300 leading-8.5!">Not ready for a website just yet? A .com domain name can still benefit your business because domain forwarding allows you to establish a memorable and branded web address regardless of where you build your online presence. Domain name forwarding is a quick and easy way to help you start personalizing and marketing your online presence - whether you’re on social media or an online marketplace.</p>
-            <div class="flex flex-col gap-3">
-                <a href="#1" class="font-sans text-[22px] font-semibold leading-[140%] text-deep-blue-300">1: What Does “Forwarding” a .com Domain Name Mean?</a>
-                <a href="#2" class="font-sans text-[22px] font-semibold leading-[140%] text-deep-blue-300">2: What Are the Different Ways To Forward a .com Domain Name?</a>
-                <a href="#3" class="font-sans text-[22px] font-semibold leading-[140%] text-deep-blue-300">3: How Do I Forward a .com Domain Name?</a>
+<section class="article-outer">
+    <div class="article-wrapper">
+        <x-articles.intro-and-quicklinks>
+            <div class="article-child-wrapper">
+                <p>Belum siap untuk memiliki situs web? Memiliki Nama domain tetap dapat memberikan manfaat bagi bisnis Anda karena penerusan domain memungkinkan Anda untuk memiliki alamat situs web yang mudah diingat dan sesuai merk, terlepas di mana Anda akan membangun kehadiran online Anda. Penerusan nama domain adalah cara yang cepat dan mudah untuk membantu Anda mulai mempersonalisasi dan memasarkan kehadiran online Anda - baik di media sosial maupun di toko online.</p>
+                <p>Lihat panduan singkat ini untuk mengetahui cara melakukannya.</p>
+                <div class="flex flex-col gap-3">
+                    <a href="#apa-yang-dimaksud-dengan-penerusan-nama-domain-com" class="font-sans text-[22px] font-semibold leading-[140%] text-deep-blue-300">1: Apa yang Dimaksud dengan “Penerusan” Nama Domain .com?</a>
+                    <a href="#apa-saja-cara-yang-dapat-dilakukan-untuk-meneruskan-nama-domain-com" class="font-sans text-[22px] font-semibold leading-[140%] text-deep-blue-300">2: Apa Saja Cara yang Dapat Dilakukan untuk Meneruskan Nama Domain .com?</a>
+                    <a href="#bagaimana-cara-saya-meneruskan-nama-domain-com" class="font-sans text-[22px] font-semibold leading-[140%] text-deep-blue-300">3: Bagaimana Cara Saya Meneruskan Nama Domain .com?</a>
+                </div>
             </div>
-        </div>
-    </x-articles.intro-and-quicklinks>
-    <p class="paragraph-md text-deep-blue-300 leading-8.5!">If your business has a social media page or online store, you can make it easier to find with a memorable, custom .com web address. This is because with domain forwarding, you can direct a domain name to the online presence of your choice, which can help you reach more people.</p>
-    <div id="1" class="flex flex-col gap-8">
-        <h3 class="subheadline-2 text-deep-blue-300">What Does “Forwarding” a .com Domain Name Mean?</h3>
-        <p class="paragraph-md text-deep-blue-300 leading-8.5!">Domain name forwarding (also called web forwarding or redirecting) is just like forwarding mail when you move - <strong>you simply create a rule that tells your domain name provider to send all visitors who type your domain name in a web browser to the online page of your choice.</strong> You can update the rule anytime you’d like, so as your online presence evolves and grows, your domain name can move with you.</p>
-        <video class="aspect-video h-81.25" autoplay loop muted playsinline>
-            <source src="https://yourdot.com/domain-name-forwarding/DomainName_Redirect-Animation_ARB.b38ac33105b7ef6b11fc6086456b89c00eb559ce9f496865b9af1ff22ae57edd.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <p class="paragraph-md text-deep-blue-300 leading-8.5!">Some additional benefits you may get from forwarding a .com domain name include:</p>
-        <div class="flex flex-col gap-2.5">
-            <x-articles.arrow-item-content>
-                <div class="flex flex-col flex-1">
-                    <p class="paragraph-md text-deep-blue-300 leading-8.5!"><strong>A memorable web address to use for marketing.</strong> A .com domain name is for more than just a website. Help turn customers into repeat customers by giving your online store a memorable .com web address with domain name forwarding.</p>
-                </div>
-            </x-articles.arrow-item-content>
-            <x-articles.arrow-item-content>
-                <div class="flex flex-col flex-1">
-                    <p class="paragraph-md text-deep-blue-300 leading-8.5!"><strong>A consistent web address for your business.</strong> Get a custom .com web address that moves with your business, so even if you change which social media or e-commerce sites your business uses, your customers will always be able to find you.</p>
-                </div>
-            </x-articles.arrow-item-content>
-            <x-articles.arrow-item-content>
-                <div class="flex flex-col flex-1">
-                    <p class="paragraph-md text-deep-blue-300 leading-8.5!"><strong>The flexibility to change</strong> or update the online destination a .com domain name sends your visitors to at any time.</p>
-                </div>
-            </x-articles.arrow-item-content>
-        </div>
-        <x-articles.callout-cta>
-            <div class="flex flex-col gap-4">
-                <h4 class="subheadline-4 text-deep-blue-300 font-semibold!">Did You Know?</h4>
-                <p class="paragraph-md text-deep-blue-300 leading-8.5!">Research shows that consumers worldwide believe that .com is a great choice for an online presence.<sup>1</sup> Plus, a .com domain name makes it easier for customers to find and recognize a business on social media and e-commerce platforms.</p>
+        </x-articles.intro-and-quicklinks>
+        <p>Jika bisnis Anda memiliki halaman media sosial atau toko online, Anda dapat membuatnya lebih mudah ditemukan dengan alamat web .com khusus yang mudah diingat. Hal ini karena dengan penerusan domain, Anda dapat mengarahkan nama domain ke kehadiran online pilihan Anda, sehingga membantu Anda menjangkau lebih banyak orang.</p>
+        <div id="apa-yang-dimaksud-dengan-penerusan-nama-domain-com" class="article-child-wrapper scroll-mt-20 sm:scroll-mt-28">
+            <h3>Apa yang Dimaksud dengan “Penerusan” Nama Domain .com?</h3>
+            <p>Penerusan nama domain(juga disebut penerusan atau pengalihan web) mirip seperti mengalihkan alamat surat menyurat Anda saat Anda pindah rumah - <strong>Anda cukup membuat aturan yang memberi tahu penyedia nama domain Anda untuk mengarahkan semua pengunjung yang mengetik nama domain Anda di browser ke halaman online pilihan Anda.</strong> Anda dapat memperbarui aturan tersebut kapan saja, sehingga seiring perkembangan dan pertumbuhan kehadiran online Anda, nama domain Anda dapat ikut menyesuaikan.</p>
+            <video class="aspect-video h-81.25" autoplay loop muted playsinline>
+                <source src="https://yourdot.com/domain-name-forwarding/DomainName_Redirect-Animation_ARB.b38ac33105b7ef6b11fc6086456b89c00eb559ce9f496865b9af1ff22ae57edd.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p>Beberapa manfaat tambahan yang dapat Anda peroleh dari penerusan nama domain .com meliputi:</p>
+            <div class="flex flex-col gap-2.5">
+                <x-articles.arrow-item-content>
+                    <div class="flex flex-col flex-1">
+                        <p><strong>Alamat web yang mudah diingat untuk keperluan pemasaran.</strong> Nama domain .com tidak hanya digunakan untuk situs web saja. Bantu mengubah pelanggan menjadi pelanggan tetap dengan memberikan alamat web .com yang mudah diingat untuk toko online Anda melalui penerusan nama domain.</p>
+                    </div>
+                </x-articles.arrow-item-content>
+                <x-articles.arrow-item-content>
+                    <div class="flex flex-col flex-1">
+                        <p><strong>Alamat web yang konsisten untuk bisnis Anda.</strong> Dapatkan alamat web .com khususkustom yang dapat mengikuti perkembangan bisnis Anda, sehingga meskipun Anda mengganti platform media sosial atau e-commerce yang digunakan, pelanggan tetap dapat menemukan Anda.</p>
+                    </div>
+                </x-articles.arrow-item-content>
+                <x-articles.arrow-item-content>
+                    <div class="flex flex-col flex-1">
+                        <p><strong>Fleksibilitas untuk mengubah</strong> atau memperbarui tujuan online yang menjadi arah pengunjung dari nama domain .com Anda kapan saja.</p>
+                    </div>
+                </x-articles.arrow-item-content>
             </div>
-        </x-articles.callout-cta>
-    </div>
-    <div id="2" class="flex flex-col gap-8">
-        <h3 class="subheadline-2 text-deep-blue-300">What Are the Different Ways To Forward a Domain Name?</h3>
-        <p class="paragraph-md text-deep-blue-300 leading-8.5!">Now that we’ve gone over the benefits of domain name forwarding, let’s break down the different types of forwarding and how each one can affect what your customers see in their web browser.</p>
-        <p class="paragraph-md text-deep-blue-300 leading-8.5!">When working with a domain name retailer, you will likely have two options:</p>
+            <x-articles.callout-cta>
+                <div class="flex flex-col gap-4">
+                    <h4 class="subheadline-4 text-deep-blue-300 font-semibold!">Tahukah Anda?</h4>
+                    <p>Penelitian menunjukkan bahwa konsumen di seluruh dunia percaya bahwa .com merupakan pilihan yang tepat untuk kehadiran online.1 Selain itu, nama domain .com memudahkan pelanggan untuk menemukan dan mengenali bisnis di platform media sosial dan e-commerce.</p>
+                </div>
+            </x-articles.callout-cta>
+        </div>
+        <div id="apa-saja-cara-yang-dapat-dilakukan-untuk-meneruskan-nama-domain-com" class="article-child-wrapper scroll-mt-20 sm:scroll-mt-28">
+            <h3>Apa Cara yang Dapat Dilakukan untuk Meneruskan Nama Domain?</h3>
+            <p>Sekarang setelah kita membahas manfaat penerusan nama domain, mari kita uraikan berbagai jenis penerusan dan bagaimana penerusan tersebut dapat memengaruhi apa yang dilihat pelanggan Anda di browser web mereka.</p>
+            <p>Saat bekerja dengan penjual nama domain, Anda mungkin akan memiliki dua opsi:</p>
+            <x-articles.arrow-item-content>
+                <div class="flex flex-col flex-1">
+                    <p><strong>Hanya Penerusan:</strong> Ketika seseorang mengetik nama domain .com khusus milik bisnis Anda di browser, mereka akan secara otomatis diarahkan ke alamat web tujuan yang Anda tentukan. Bagi banyak bisnis, opsi ini sudah memenuhi kebutuhan penerusan secara umum.</p>
+                </div>
+            </x-articles.arrow-item-content>
+        </div>
+        <div class="grid grid-flow-row items-center lg:grid-flow-col">
+            <x-articles.workflow header="Pilihan Penerusan">
+                Hanya Penerusan
+            </x-articles.workflow>
+            <x-icons.arrow-rounded width="20" height="20" fill="#A7127E" class="row-span-2 rotate-90 mx-auto my-2 lg:mx-0 lg:my-0 lg:rotate-0" />
+            <x-articles.workflow header="URL yang Diketik Pengunjung" class="break-all">
+                TipsCantikMudah.com
+            </x-articles.workflow>
+            <x-icons.arrow-rounded width="20" height="20" fill="#A7127E" class="row-span-2 rotate-90 mx-auto my-2 lg:mx-0 lg:my-0 lg:rotate-0" />
+            <x-articles.workflow header="URL Situs Web yang Dilihat Pengunjung" class="break-all">
+                AkunMediaSosialAnda.com/tipscantikmudah
+            </x-articles.workflow>
+            <x-icons.arrow-rounded width="20" height="20" fill="#A7127E" class="row-span-2 rotate-90 mx-auto my-2 lg:mx-0 lg:my-0 lg:rotate-0" />
+            <x-articles.workflow header="Tampilan Baris Alamat" class="break-all">
+                AkunMediaSosialAnda.com/tipscantikmudah
+            </x-articles.workflow>
+        </div>
         <x-articles.arrow-item-content>
             <div class="flex flex-col flex-1">
-                <p class="paragraph-md text-deep-blue-300 leading-8.5!"><strong>Forwarding Only:</strong> When a person types in your business’s custom .com domain name in a web browser, they’re automatically forwarded to a destination web address of your choice. For many businesses, this option meets their general forwarding needs.</p>
+                <p><strong>Penerusan dengan Masking:</strong> Meskipun opsi ini mirip dengan opsi “hanya penerusan”, terdapat beberapa manfaat tambahan. Tidak seperti “hanya penerusan”, “penerusan dengan masking” membantu memastikan bahwa audiens Anda akan terus melihat nama domain .com khusus milik Anda di kolom baris alamat alih-alih alamat lain dari media sosial Anda atau platform lain. Melalui penerusan dengan masking, Anda dapat menyesuaikan judul dan deskripsi bisnis Anda agar ramah di mesin pencari.</p>
             </div>
         </x-articles.arrow-item-content>
-    </div>
-    <div class="grid grid-flow-col items-center">
-        <x-articles.workflow header="Forwarding Options">
-            Forwarding Only
-        </x-articles.workflow>
-        <x-icons.arrow-rounded width="20" height="20" fill="#A7127E" class="row-span-2" />
-        <x-articles.workflow header="Visitor Types In">
-            EasySkinTips.com
-        </x-articles.workflow>
-        <x-icons.arrow-rounded width="20" height="20" fill="#A7127E" class="row-span-2" />
-        <x-articles.workflow header="Website URL Visitor Sees" class="break-all">
-            YourSocialMediaAccount.com/easyskintips
-        </x-articles.workflow>
-        <x-icons.arrow-rounded width="20" height="20" fill="#A7127E" class="row-span-2" />
-        <x-articles.workflow header="Address Bar Displays" class="break-all">
-            YourSocialMediaAccount.com/easyskintips
-        </x-articles.workflow>
-    </div>
-    <x-articles.arrow-item-content>
-        <div class="flex flex-col flex-1">
-            <p class="paragraph-md text-deep-blue-300 leading-8.5!"><strong>Forwarding with Masking:</strong> While this option is similar to the “forwarding only” option, there are few additional benefits. Unlike “forwarding only,” “forwarding with masking” helps ensure that your audience will continue to see the custom .com domain name in the address bar rather than another address from your social media or other site. In addition, it lets you customize your business’s title and description to make it search engine friendly.</p>
+        <div class="grid grid-flow-row items-center lg:grid-flow-col">
+            <x-articles.workflow header="Pilihan Penerusan">
+                Penerusan dengan Masking
+            </x-articles.workflow>
+            <x-icons.arrow-rounded width="20" height="20" fill="#A7127E" class="row-span-2 rotate-90 mx-auto my-2 lg:mx-0 lg:my-0 lg:rotate-0" />
+            <x-articles.workflow header="URL yang Diketik Pengunjung" class="break-all">
+                TipsCantikMudah.com
+            </x-articles.workflow>
+            <x-icons.arrow-rounded width="20" height="20" fill="#A7127E" class="row-span-2 rotate-90 mx-auto my-2 lg:mx-0 lg:my-0 lg:rotate-0" />
+            <x-articles.workflow header="URL Situs Web yang Dilihat Pengunjung" class="break-all">
+                AkunMediaSosialAnda.com/tipscantikmudah
+            </x-articles.workflow>
+            <x-icons.arrow-rounded width="20" height="20" fill="#A7127E" class="row-span-2 rotate-90 mx-auto my-2 lg:mx-0 lg:my-0 lg:rotate-0" />
+            <x-articles.workflow header="Tampilan Baris Alamat" class="break-all">
+                TipsCantikMudah.com
+            </x-articles.workflow>
         </div>
-    </x-articles.arrow-item-content>
-    <div class="grid grid-flow-col items-center">
-        <x-articles.workflow header="Forwarding Options">
-            Forwarding With Maksing
-        </x-articles.workflow>
-        <x-icons.arrow-rounded width="20" height="20" fill="#A7127E" class="row-span-2" />
-        <x-articles.workflow header="Visitor Types In">
-            EasySkinTips.com
-        </x-articles.workflow>
-        <x-icons.arrow-rounded width="20" height="20" fill="#A7127E" class="row-span-2" />
-        <x-articles.workflow header="Website URL Visitor Sees" class="break-all">
-            YourSocialMediaAccount.com/easyskintips
-        </x-articles.workflow>
-        <x-icons.arrow-rounded width="20" height="20" fill="#A7127E" class="row-span-2" />
-        <x-articles.workflow header="Address Bar Displays" class="break-all">
-            EasySkinTips.com
-        </x-articles.workflow>
-    </div>
-    <div id="3" class="flex flex-col gap-8">
-        <h3 class="subheadline-2 text-deep-blue-300">How Do I Forward a .com Domain Name?</h3>
-        <p class="paragraph-md text-deep-blue-300 leading-8.5!">To start, you’ll need to have already registered a .com domain name and determined your destination web address.</p>
-        <p class="paragraph-md text-deep-blue-300 leading-8.5!">Many domain name retailers generally follow a five-step process. Since every retailer’s process may differ, we recommend consulting their help center or searching their site for specific instructions on how to forward a domain name.</p>
-        <x-articles.step-item :number="1">
-            <div class="flex gap-2 flex-col flex-1">
-                <h3 class="subheadline-3 text-deep-blue-300">Register a Domain Name</h3>
-                <p class="paragraph-md text-deep-blue-300 leading-8.5!">Start by registering a .com domain name through your preferred registrar. You can find great domain name suggestions by using our domain name generator here.</p>
+        <div id="bagaimana-cara-saya-meneruskan-nama-domain-com" class="article-child-wrapper scroll-mt-20 sm:scroll-mt-28">
+            <h3>Bagaimana Cara Saya Meneruskan Nama Domain .com?</h3>
+            <p>Untuk memulai, Anda harus memastikan bahwa nama domain .com sudah terdaftar dan selanjutnya menentukan alamat web tujuan Anda.</p>
+            <p>Banyak penyedia domain umumnya mengikuti proses lima langkah. Namun proses pada setiap penjual nama domain mungkin akan berbeda, kami menyarankan untuk berkonsultasi dengan pusat bantuan mereka atau cari petunjuk khusus tentang cara meneruskan nama domain di situs mereka.</p>
+            <div class="article-child-wrapper pl-4">
+                <x-articles.step-item :number="1">
+                    <div class="flex gap-2 flex-col flex-1">
+                        <h4 class="subheadline-4 text-deep-blue-300 font-semibold!">Daftarkan nama domain .com</h4>
+                        <p>Mulailah dengan mendaftarkan nama domain .com melalui perusahaan penyedia nama domain pilihan Anda. Anda dapat menemukan berbagai saran nama domain yang menarik dengan menggunakan generator nama domain kami di sini.</p>
+                    </div>
+                </x-articles.step-item>
+                <x-articles.step-item :number="2">
+                    <div class="flex gap-2 flex-col flex-1">
+                        <h4 class="subheadline-4 text-deep-blue-300 font-semibold!">Login ke Akun Anda di situs web Penjual Nama Domain Anda</h4>
+                        <p>Masuk dan buka menu “Kelola Nama Domain” atau klik tab “Nama Domain”. Bagian ini juga dapat disebut sebagai “Control Panel” atau “Akun Saya”, tergantung pada penyedia nama domain Anda.</p>
+                    </div>
+                </x-articles.step-item>
+                <x-articles.step-item :number="3">
+                    <div class="flex gap-2 flex-col flex-1">
+                        <h4 class="subheadline-4 text-deep-blue-300 font-semibold!">Pilih Nama Domain yang Ingin Anda Teruskan</h4>
+                        <p>Pilih nama domain .com yang ingin Anda teruskan, cari opsi “Penerusan Domain” atau “Alihkan Domain”, lalu klik “Tambah Baru.” Jika Anda telah mendaftarkan beberapa nama domain pada penyedia domain Anda, Anda perlu mengulangi langkah-langkah ini untuk setiap nama domain yang ingin Anda teruskan. Langkah-langkah ini dapat berbeda tergantung pada penjual nama domain Anda.</p>
+                    </div>
+                </x-articles.step-item>
+                <x-articles.step-item :number="4">
+                    <div class="flex gap-2 flex-col flex-1">
+                        <h4 class="subheadline-4 text-deep-blue-300 font-semibold!">Konfirmasikan Tujuan Penerusan Nama Domain .com</h4>
+                        <p>Tempelkan URL halaman media sosial atau e-commerce Anda ke bagian “Penerusan Domain” atau “Alihkan Domain”. Tergantung pada penjual nama domain, Anda juga dapat memutuskan jenis penerusan yang ingin dipilih (hanya penerusan vs. penerusan dengan masking).</p>
+                    </div>
+                </x-articles.step-item>
+                <x-articles.step-item :number="5">
+                    <div class="flex gap-2 flex-col flex-1">
+                        <h4 class="subheadline-4 text-deep-blue-300 font-semibold!">Perbarui pengaturan DNS Anda</h4>
+                        <p>Pastikan Anda memperbarui pengaturan DNS untuk mendukung perubahan ini, lalu klik “Simpan,” dan selesai.</p>
+                    </div>
+                </x-articles.step-item>
             </div>
-        </x-articles.step-item>
-        <x-articles.step-item :number="2">
-            <div class="flex gap-2 flex-col flex-1">
-                <h3 class="subheadline-3 text-deep-blue-300">Login to Your Account With Your Domain Name Retailer</h3>
-                <p class="paragraph-md text-deep-blue-300 leading-8.5!">Log in and go to “Manage Domain Names” or click on the “Domain Name” tab. This may also be referred to as your “Control Panel” or “My Account” depending on your retailer.</p>
-            </div>
-        </x-articles.step-item>
-        <x-articles.step-item :number="3">
-            <div class="flex gap-2 flex-col flex-1">
-                <h3 class="subheadline-3 text-deep-blue-300">Select the .com Domain Name You Wish To Forward</h3>
-                <p class="paragraph-md text-deep-blue-300 leading-8.5!">Select the .com domain name you wish to forward, look for the “Domain Forwarding” or “Redirect Domain” option, and click “Add New”. If you have registered multiple domain names with your domain name retailer, you’ll need to repeat these steps for each domain name you’d like to forward. These steps may vary depending on your domain name retailer.</p>
-            </div>
-        </x-articles.step-item>
-        <x-articles.step-item :number="4">
-            <div class="flex gap-2 flex-col flex-1">
-                <h3 class="subheadline-3 text-deep-blue-300">Confirm the Destination Where the .com Domain Name Will Be Forwarded</h3>
-                <p class="paragraph-md text-deep-blue-300 leading-8.5!">Paste your social media or e-commerce page URL into the “Domain Forwarding” or “Redirect Domain” section. Depending on your domain name retailer, you may also decide the type of forwarding you would like to choose (forwarding only vs. forwarding with masking).</p>
-            </div>
-        </x-articles.step-item>
-        <x-articles.step-item :number="5">
-            <div class="flex gap-2 flex-col flex-1">
-                <h3 class="subheadline-3 text-deep-blue-300">Update Your DNS Settings</h3>
-                <p class="paragraph-md text-deep-blue-300 leading-8.5!">Make sure you update your DNS settings to support this change, then hit “Save”, and you’re done.</p>
-            </div>
-        </x-articles.step-item>
+        </div>
+        <x-articles.tip-callout>
+            <x-slot:title>
+                <p>KESIMPULAN</p>
+            </x-slot:title>
+            <p>Anda kini siap mengembangkan kehadiran online Anda dengan bantuan nama domain .com.</p>
+            <p><sup>1</sup> Studi Preferensi Konsumen Online Verisign, 2025.</p>
+        </x-articles.tip-callout>
     </div>
 </section>

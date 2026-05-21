@@ -173,6 +173,26 @@
         @apply block bg-magenta-300 hover:bg-magenta-400 focus:bg-magenta-200 lg:p-4 px-4 py-0.5 border border-transparent focus:border-magenta-300 rounded-full text-white hover:text-light-gray-300 text-sm lg:text-xl text-center leading-6 transition-all duration-150 ease-in-out;
     }
 
+    /* Article */
+
+    .article-outer {
+        @apply px-4 md:px-8;
+    }
+
+    .article-wrapper {
+        @apply container-extra-smaller flex flex-col gap-6 py-10 md:gap-8 md:py-11;
+        h3 {
+            @apply font-sans font-semibold text-[32px] leading-10 tracking-[0.25px] text-deep-blue-300 md:text-[40px] md:leading-12 lg:leading-11.5;
+        }
+        p, span {
+            @apply font-sans font-medium text-[18px] leading-7 tracking-[0.25px] text-deep-blue-300 md:text-[24px] md:leading-8.5;
+        }
+    }
+
+    .article-child-wrapper {
+        @apply flex flex-col gap-6 md:gap-8
+    }
+
     /* Footer */
 
     .footer-link {
@@ -229,19 +249,19 @@
 
     /* Paragraph */
 
-    p.paragraph-lg {
+    .paragraph-lg {
         @apply font-sans font-medium text-[20px] md:text-[32px] leading-7.5 md:leading-9.5 lg:leading-11 tracking-[0.25px];
     }
 
-    p.paragraph-md {
+    .paragraph-md {
         @apply font-sans font-medium text-[18px] md:text-[24px] leading-7 tracking-[0.25px];
     }
 
-    p.paragraph-sm {
+    .paragraph-sm {
         @apply font-sans font-medium md:font-semibold text-[16px] md:text-[20px] leading-6 md:leading-7.5 tracking-[0.25px];
     }
 
-    p.paragraph-xs {
+    .paragraph-xs {
         @apply font-sans font-medium md:font-semibold text-[12px] md:text-[14px] leading-4.5 md:leading-4 lg:leading-5 tracking-[0.25px];
     }
 

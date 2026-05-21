@@ -10,6 +10,7 @@
 
 <main>
     @if ($post->isCustomTemplate())
+        <x-displays.scroll-progress />
         <section class="bg-light-gray-100">
             <div class="container grid grid-cols-1 items-center gap-10 py-10 md:py-19.5 xl:grid-flow-col">
                 <div class="flex flex-col gap-4 md:gap-6">
@@ -21,14 +22,13 @@
                         <a href="{{ route('resources') }}">Panduan Belajar</a>
                     </div>
                     <h1 class="headline-1 text-navy-blue-300">{{ $post->title }}</h1>
-                    <p class="paragraph-sm text-deep-blue-300">Rata-rata waktu membaca {{ $post->read_time }}</p>
+                    <p class="paragraph-sm text-deep-blue-300">Waktu baca rata-rata {{ $post->read_time }}</p>
                 </div>
                 <div class="aspect-video w-full rounded-[10px] overflow-hidden xl:w-156.75">
                     <img class="w-full" src="{{ asset('images/placeholder-video-why-com.jpg') }}" alt="">
                 </div>
             </div>
         </section>
-        <x-displays.scroll-progress />
         @include($view_path)
         <section class="bg-deep-blue-300 py-16 lg:py-22">
             <div class="flex flex-col justify-center items-center gap-6 py-16 container lg:py-22">
