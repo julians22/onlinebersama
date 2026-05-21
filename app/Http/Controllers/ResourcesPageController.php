@@ -13,7 +13,15 @@ class ResourcesPageController extends Controller
     }
 
     public function show(Request $request, string $slug) {
-        $post = Post::where('slug', $slug)->with('category')->first();
+        $post = Post::published()
+            ->where('slug', $slug)
+            ->with('category')
+            ->first();
+        $other_posts = Post::published()
+            ->where('id', '!=', $post->id)
+            ->inRandomOrder()
+            ->take(3)
+            ->get();
 
         if (!$post || $post->status !== 'published') {
             abort(404);
@@ -26,6 +34,7 @@ class ResourcesPageController extends Controller
 
         return view('contents.show', [
             'post' => $post,
+            'other_posts' => $other_posts,
             'view_path' => $view_path,
         ]);
     }

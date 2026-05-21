@@ -47,7 +47,7 @@
             <h2 class="headline-1 max-w-md mx-auto text-navy-blue-300 text-center -mb-6 px-4 md:px-0 md:-mb-2 md:max-w-2xl xl:mx-0 xl:max-w-full">
                 Bagaimana Cara Menggunakan .com?
             </h2>
-            <div class="online-bersama-how-to-use swiper">
+            <div class="online-bersama-how-to-use-grow swiper">
                 <div x-data="{ active: 'social' }" class="swiper-wrapper">
                     <div @mouseenter="active = 'email'" :class="active === 'email' ? 'hovered' : 'not-hovered'"
                         data-analytics-level3=".com untuk Email"

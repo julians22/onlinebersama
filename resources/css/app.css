@@ -106,11 +106,11 @@
     width: 100%;
 }
 
-@utility trim-both{
+@utility trim-both {
     leading-trim: both;
 }
 
-@utility edge-cap{
+@utility edge-cap {
     text-edge: cap;
 }
 
@@ -245,7 +245,7 @@
         @apply font-sans font-medium md:font-semibold text-[12px] md:text-[14px] leading-4.5 md:leading-4 lg:leading-5 tracking-[0.25px];
     }
 
-    .paragraph-steps{
+    .paragraph-steps {
         @apply font-sans font-medium md:font-semibold text-[22px] leading-[140%] tracking-[1.1px];
     }
 
@@ -339,9 +339,24 @@
     }
 }
 
-/* How to Use (SLIDER) */
+/* Explore More Topics (SLIDER) */
 
-.online-bersama-how-to-use {
+.online-bersama-explore-more-topics {
+    @apply overflow-visible! py-12!;
+    .swiper-pagination {
+        @apply flex justify-center items-center gap-2.5;
+        .swiper-pagination-bullet {
+            @apply transition-all duration-150 ease-in-out size-2.25 bg-[#e1e8ef] outline-none opacity-100! m-0!;
+            &.swiper-pagination-bullet-active {
+                @apply size-3! bg-[#b3c5d7];
+            }
+        }
+    }
+}
+
+/* How to Use (SLIDER - Card Grow) */
+
+.online-bersama-how-to-use-grow {
     @apply overflow-visible! py-12!;
     .swiper-slide {
         @apply rounded-[10px]! xl:w-full! xl:transition-all! xl:duration-700! xl:ease-in-out!;
@@ -351,11 +366,11 @@
         &.not-hovered {
             @apply xl:basis-[23.2%];
         }
-        #card-grow-action {
+        .card-grow-action {
             @apply transition-all duration-500 ease-in-out translate-y-20 opacity-0;
         }
         &.swiper-slide-active {
-            #card-grow-action {
+            .card-grow-action {
                 @apply transition-all duration-500 ease-in-out translate-y-0 opacity-100;
             }
         }
@@ -371,16 +386,16 @@
     }
 }
 
-/* [Find a .com] How to Use (SLIDER) */
+/* How to Use (SLIDER - Card Inside) */
 
-.online-bersama-find-how-to-use {
+.online-bersama-how-to-use {
     @apply overflow-visible! py-12!;
     .swiper-slide {
-        #card-grow-action {
+        .card-grow-action {
             @apply transition-all duration-500 ease-in-out max-xl:translate-y-20 max-xl:opacity-0;
         }
         &.swiper-slide-active {
-            #card-grow-action {
+            .card-grow-action {
                 @apply transition-all duration-500 ease-in-out max-xl:translate-y-0 max-xl:opacity-100;
             }
         }

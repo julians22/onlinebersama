@@ -20,7 +20,10 @@ class ResourcesList extends Component
 
     public function render()
     {
-        $posts = Post::published()->latest()->paginate($this->paginate);
+        $posts = Post::published()
+            ->latest()
+            ->with('category')
+            ->paginate($this->paginate);
 
         return view('livewire.resources-list', [
             'posts' => $posts

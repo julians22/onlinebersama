@@ -3,6 +3,8 @@ import 'swiper/css/bundle';
 
 const prefix = 'online-bersama-';
 
+/* Small Business Story (SLIDER) */
+
 const smallBusinessStory = new Swiper(`.${prefix}small-business-story`, {
     effect: 'coverflow',
     centeredSlides: true,
@@ -38,7 +40,45 @@ const smallBusinessStory = new Swiper(`.${prefix}small-business-story`, {
     }
 });
 
-const howToUse = new Swiper(`.${prefix}how-to-use`, {
+/* Explore More Topics (SLIDER) */
+
+const exploreMoreTopics = new Swiper(`.${prefix}explore-more-topics`, {
+    initialSlide: 1,
+    slidesPerView: 1.375,
+    slideShadows: false,
+    spaceBetween: 16,
+    centeredSlides: true,
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: true,
+    },
+    breakpoints: {
+        500: {
+            slidesPerView: 1.5,
+        },
+        640: {
+            slidesPerView: 1.75,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        1024: {
+            slidesPerView: 2.4,
+            spaceBetween: 32,
+        },
+        1280: {
+            slidesPerView: 3,
+            spaceBetween: 32,
+            initialSlide: 0,
+            centeredSlides: false,
+        }
+    }
+});
+
+/* How to Use (SLIDER - Card Grow) */
+
+const howToUseGrow = new Swiper(`.${prefix}how-to-use-grow`, {
     initialSlide: 1,
     slidesPerView: 1.375,
     slideShadows: false,
@@ -66,12 +106,15 @@ const howToUse = new Swiper(`.${prefix}how-to-use`, {
         1280: {
             enabled: false,
             slidesPerView: 3,
+            spaceBetween: 32,
             centeredSlides: false,
         }
     }
 });
 
-const findHowToUse = new Swiper(`.${prefix}find-how-to-use`, {
+/* How to Use (SLIDER - Card Inside) */
+
+const howToUse = new Swiper(`.${prefix}how-to-use`, {
     initialSlide: 1,
     slidesPerView: 1.375,
     slideShadows: false,
@@ -98,6 +141,7 @@ const findHowToUse = new Swiper(`.${prefix}find-how-to-use`, {
         },
         1280: {
             slidesPerView: 3,
+            spaceBetween: 32,
             initialSlide: 0,
             centeredSlides: false,
         }

@@ -1,5 +1,4 @@
-<div {{ $attributes->merge(['class' => 'space-y-2.5 gap-2 flex items-start content-start flex-wrap']) }}>
-
+<div {{ $attributes->merge(['class' => 'space-y-2.5 gap-4 flex items-start content-start flex-wrap']) }}>
     <div class="flex size-10 p-[2.857px] justify-center items-center rounded-full bg-light-gray-300">
         <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
             <mask id="mask0_6218_6156" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="35" height="35">
@@ -10,7 +9,5 @@
             </g>
         </svg>
     </div>
-
     {{ $slot }}
-
 </div>

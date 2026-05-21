@@ -10,7 +10,66 @@
 
 <main>
     @if ($post->isCustomTemplate())
+        <section class="bg-light-gray-100">
+            <div class="container grid grid-cols-1 items-center gap-10 py-10 md:py-19.5 xl:grid-flow-col">
+                <div class="flex flex-col gap-4 md:gap-6">
+                    <div class="flex items-center gap-1 font-sans text-deep-blue-300 text-sm font-semibold">
+                        <div class="mb-0.5">
+                            <x-icons.home width="13" height="13" fill="#1A2E47" />
+                        </div>
+                        <span class="font-medium text-[10px]">/</span>
+                        <a href="{{ route('resources') }}">Panduan Belajar</a>
+                    </div>
+                    <h1 class="headline-1 text-navy-blue-300">{{ $post->title }}</h1>
+                    <p class="paragraph-sm text-deep-blue-300">Rata-rata waktu membaca {{ $post->read_time }}</p>
+                </div>
+                <div class="aspect-video w-full rounded-[10px] overflow-hidden xl:w-156.75">
+                    <img class="w-full" src="{{ asset('images/placeholder-video-why-com.jpg') }}" alt="">
+                </div>
+            </div>
+        </section>
+        <x-displays.scroll-progress />
         @include($view_path)
+        <section class="bg-deep-blue-300 py-16 lg:py-22">
+            <div class="flex flex-col justify-center items-center gap-6 py-16 container lg:py-22">
+                <h2 class="subheadline-2 text-white text-center max-w-xs mx-auto sm:max-w-full lg:text-[40px]!">
+                    Temukan Nama Domain .com
+                </h2>
+            </div>
+            <x-displays.namestudio/>
+        </section>
+        <section class="bg-light-gray-100 overflow-hidden!">
+            <div class="container py-10 px-0 md:pt-10 md:pb-19.5 xl:px-8">
+                <h2 class="text-navy-blue-300 text-center -mb-6 px-4 headline-1 md:-mb-2 md:px-8">Bagaimana Cara Menggunakan .com?</h2>
+                <div class="online-bersama-how-to-use swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <x-displays.card-inside route="email" image="images/brand-1.jpg">Email</x-displays.card-inside>
+                        </div>
+                        <div class="swiper-slide">
+                            <x-displays.card-inside route="social-media" image="images/brand-2.jpg">Media Sosial dan <span class="block">E-Commerce</span></x-displays.card-inside>
+                        </div>
+                        <div class="swiper-slide">
+                            <x-displays.card-inside route="websites" image="images/brand-3.jpg">Situs Web</x-displays.card-inside>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+        <section class="container overflow-hidden! py-10 md:pt-24.25 md:pb-33.75">
+            <h2 class="text-navy-blue-300 text-center -mb-6 px-4 headline-1 md:-mb-2 md:px-8">Jelajahi Topik Lainnya</h2>
+            <div class="online-bersama-explore-more-topics swiper">
+                <div class="swiper-wrapper">
+                    @foreach($other_posts as $post)
+                        <div class="swiper-slide">
+                            <x-displays.card-resource route="{{ route('resources.show', $post->slug) }}">{{ $post->title }}</x-displays.card-resource>
+                        </div>
+                    @endforeach
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
     @else
         @include('contents.articles.default')
     @endif

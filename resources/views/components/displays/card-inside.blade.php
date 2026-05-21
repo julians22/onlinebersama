@@ -13,7 +13,7 @@
                 'subheadline-3 md:text-[32px]! md:leading-10!'
             ])>{{ $slot }}</h3>
         </div>
-        <div id="card-grow-action">
+        <div class="card-grow-action">
             <a href="{{ route($route) }}" class="btn-primary font-bold text-lg py-3 sm:max-w-55.75">Pelajari Selengkapnya</a>
         </div>
     </div>

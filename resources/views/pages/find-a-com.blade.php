@@ -26,7 +26,7 @@
     <section class="bg-light-gray-100 overflow-hidden!">
         <div class="container py-10 px-0 md:pt-10 md:pb-19.5 xl:px-8">
             <h2 class="text-navy-blue-300 text-center -mb-6 px-4 headline-1 md:-mb-2 md:px-8">Bagaimana Cara Menggunakan .com?</h2>
-            <div class="online-bersama-find-how-to-use swiper">
+            <div class="online-bersama-how-to-use swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <x-displays.card-inside route="email" image="images/brand-1.jpg">Email</x-displays.card-inside>

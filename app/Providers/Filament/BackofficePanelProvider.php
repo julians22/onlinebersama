@@ -2,6 +2,7 @@
 
 namespace App\Providers\Filament;
 
+use App\Filament\Widgets\AccountWidgetDashboard;
 use App\Filament\Widgets\TosActionChart;
 use Filament\Http\Middleware\Authenticate;
 use Filament\Http\Middleware\AuthenticateSession;
@@ -29,7 +30,7 @@ class BackofficePanelProvider extends PanelProvider
             ->id('backoffice')
             ->path('backoffice')
             ->login()
-            ->brandLogo(asset('img/dotcom-logo.svg'))
+            ->brandLogo(asset('images/logo-com-white.svg'))
             ->darkMode(1, 1)
             ->colors([
                 'primary' => '#142f52'
@@ -41,8 +42,9 @@ class BackofficePanelProvider extends PanelProvider
             ])
             ->discoverWidgets(in: app_path('Filament/Widgets'), for: 'App\Filament\Widgets')
             ->widgets([
-                AccountWidget::class,
+                AccountWidgetDashboard::class,
                 TosActionChart::class,
+                // AccountWidget::class,
                 // FilamentInfoWidget::class,
             ])
             ->middleware([
@@ -60,4 +62,5 @@ class BackofficePanelProvider extends PanelProvider
                 Authenticate::class,
             ]);
     }
+
 }
