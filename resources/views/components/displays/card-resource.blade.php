@@ -5,9 +5,9 @@
     <div class="flex flex-col gap-y-4">
         <div class="flex flex-wrap gap-2.5">
             @if(Route::currentRouteName() !== 'resources.show')
-                {{-- @foreach($tags as $tag) --}}
-                    <span class="font-sans text-sm bg-mint-200 text-deep-blue-300 font-semibold rounded-[5px] px-2 py-1">Situs Web</span>
-                {{-- @endforeach --}}
+                @foreach($tags as $tag)
+                    <span class="font-sans text-sm bg-mint-200 text-deep-blue-300 font-semibold rounded-[5px] px-2 py-1">{{$tag}}</span>
+                @endforeach
             @endif
         </div>
         <div class="min-h-28.5">

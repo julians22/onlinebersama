@@ -61,11 +61,20 @@
             <h2 class="text-navy-blue-300 text-center -mb-6 px-4 headline-1 md:-mb-2 md:px-8">Jelajahi Topik Lainnya</h2>
             <div class="online-bersama-explore-more-topics swiper">
                 <div class="swiper-wrapper">
-                    @foreach($other_posts as $post)
+                    @forelse ($other_posts as $post)
                         <div class="swiper-slide">
                             <x-displays.card-resource route="{{ route('resources.show', $post->slug) }}">{{ $post->title }}</x-displays.card-resource>
                         </div>
-                    @endforeach
+                    @empty
+
+                        <div class="swiper-slide">
+                            {{-- Related Not found --}}
+                            <div>
+                                <h5>No Article Found</h5>
+                            </div>
+                        </div>
+
+                    @endforelse
                 </div>
                 <div class="swiper-pagination"></div>
             </div>

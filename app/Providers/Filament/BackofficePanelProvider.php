@@ -44,8 +44,6 @@ class BackofficePanelProvider extends PanelProvider
             ->widgets([
                 AccountWidgetDashboard::class,
                 TosActionChart::class,
-                // AccountWidget::class,
-                // FilamentInfoWidget::class,
             ])
             ->middleware([
                 EncryptCookies::class,

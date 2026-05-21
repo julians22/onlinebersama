@@ -96,7 +96,7 @@
                 <h2 class="headline-1">Telusuri Semua Sumber Informasi</h2>
                 <p class="paragraph-md">Jelajahi artikel, video, dan lainnya untuk mendukung perjalanan Anda.</p>
             </div>
-            <livewire:resources-list></livewire:resources-list>
+            <livewire:resources-list :topics="$topics->toArray()" />
         </div>
     </section>
     <section class="flex flex-col gap-21.25 py-10 max-w-250 mx-auto px-4 md:px-8 md:py-20">
