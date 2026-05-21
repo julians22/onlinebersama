@@ -3,6 +3,8 @@
 namespace App\Livewire;
 
 use App\Models\Post;
+use Livewire\Attributes\Computed;
+use Livewire\Attributes\Url;
 use Livewire\Component;
 use Livewire\WithPagination;
 
@@ -12,21 +14,47 @@ class ResourcesList extends Component
 
     public int $paginate = 6;
 
-    public function updatePaginate($paginate)
+    #[Url(as: 'topic', except: '*')]
+    public string $selectedTopic = '*';
+
+    public array $topics = [];
+
+    #[Computed()]
+    public function selectedTopicLabel()
+    {
+        if ($this->selectedTopic === '*') {
+            return 'Semua Topik';
+        }
+
+        return collect($this->topics)->firstWhere('slug', $this->selectedTopic)['name'] ?? 'Semua Topik';
+    }
+
+    public function updatePaginate(int $paginate)
     {
         $this->paginate = $paginate;
         $this->resetPage();
+    }
+
+    public function setTopic(string $topic)
+    {
+        $this->selectedTopic = $topic;
     }
 
     public function render()
     {
         $posts = Post::published()
             ->latest()
-            ->with('category')
+            ->with('category', 'topics')
+            ->when($this->selectedTopic !== '*', function ($query) {
+                return $query->whereHas('topics', function ($query) {
+                    $query->where('slug', $this->selectedTopic);
+                });
+            })
             ->paginate($this->paginate);
 
         return view('livewire.resources-list', [
-            'posts' => $posts
+            'posts' => $posts,
+            'selectedTopicLabel' => $this->selectedTopicLabel(),
         ]);
     }
 }

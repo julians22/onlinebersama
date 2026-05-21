@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Spatie\Sluggable\HasSlug;
 use Spatie\Sluggable\SlugOptions;
 
@@ -13,12 +14,15 @@ class Post extends Model
     const STATUS_DRAFT = 'draft';
     const STATUS_PUBLISHED = 'published';
 
+    const TYPE_ARTICLE = 'article';
+    const TYPE_VIDEO = 'video';
+
     /**
      * The attributes that are mass assignable.
      *
      * @var array
      */
-    protected $fillable = ['title', 'slug', 'type', 'post_category_id', 'status', 'read_time', 'template_view_path', 'meta_title', 'meta_description', 'meta_keywords'];
+    protected $fillable = ['title', 'slug', 'type', 'post_category_id', 'status', 'read_time', 'template_view_path', 'meta_title', 'meta_description', 'meta_keywords', 'writer'];
 
     /**
      * Get the options for generating the slug.
@@ -27,12 +31,39 @@ class Post extends Model
     {
         return SlugOptions::create()
             ->generateSlugsFrom('title')
+            ->doNotGenerateSlugsOnUpdate()
             ->saveSlugsTo('slug');
     }
 
     public function category()
     {
         return $this->belongsTo(PostCategory::class, 'post_category_id');
+    }
+
+    // 1. Relasi BelongsToMany (digunakan untuk memanggil data di Frontend)
+    public function topics()
+    {
+        return $this->belongsToMany(Topic::class)
+                    ->withPivot('sort_order')
+                    ->orderByPivot('sort_order');
+    }
+
+    public function relatedArticles()
+    {
+        return $this->belongsToMany(Post::class, 'related_posts', 'post_id', 'related_post_id')
+                    ->withPivot('sort_order')
+                    ->orderByPivot('sort_order');
+    }
+
+    // 2. Relasi HasMany ke Pivot (DIGUNAKAN UNTUK FORM FILAMENT)
+    public function pivotTopics()
+    {
+        return $this->hasMany(PostTopic::class);
+    }
+
+    public function pivotRelatedPosts()
+    {
+        return $this->hasMany(RelatedPost::class, 'post_id');
     }
 
     public function isCustomTemplate()
