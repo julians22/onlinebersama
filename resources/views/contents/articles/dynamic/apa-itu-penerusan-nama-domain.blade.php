@@ -4,10 +4,29 @@
             <div class="article-child-wrapper">
                 <p>Belum siap untuk memiliki situs web? Memiliki Nama domain tetap dapat memberikan manfaat bagi bisnis Anda karena penerusan domain memungkinkan Anda untuk memiliki alamat situs web yang mudah diingat dan sesuai merk, terlepas di mana Anda akan membangun kehadiran online Anda. Penerusan nama domain adalah cara yang cepat dan mudah untuk membantu Anda mulai mempersonalisasi dan memasarkan kehadiran online Anda - baik di media sosial maupun di toko online.</p>
                 <p>Lihat panduan singkat ini untuk mengetahui cara melakukannya.</p>
-                <div class="flex flex-col gap-3">
-                    <a href="#apa-yang-dimaksud-dengan-penerusan-nama-domain-com" class="font-sans text-[22px] font-semibold leading-[140%] text-deep-blue-300">1: Apa yang Dimaksud dengan “Penerusan” Nama Domain .com?</a>
-                    <a href="#apa-saja-cara-yang-dapat-dilakukan-untuk-meneruskan-nama-domain-com" class="font-sans text-[22px] font-semibold leading-[140%] text-deep-blue-300">2: Apa Saja Cara yang Dapat Dilakukan untuk Meneruskan Nama Domain .com?</a>
-                    <a href="#bagaimana-cara-saya-meneruskan-nama-domain-com" class="font-sans text-[22px] font-semibold leading-[140%] text-deep-blue-300">3: Bagaimana Cara Saya Meneruskan Nama Domain .com?</a>
+                <div class="hidden flex-col gap-3 lg:flex">
+                    <a href="#apa-yang-dimaksud-dengan-penerusan-nama-domain-com" class="anchor-link">
+                        1: Apa yang Dimaksud dengan “Penerusan” Nama Domain .com?
+                    </a>
+                    <a href="#apa-saja-cara-yang-dapat-dilakukan-untuk-meneruskan-nama-domain-com" class="anchor-link">
+                        2: Apa Saja Cara yang Dapat Dilakukan untuk Meneruskan Nama Domain .com?
+                    </a>
+                    <a href="#bagaimana-cara-saya-meneruskan-nama-domain-com" class="anchor-link">
+                        3: Bagaimana Cara Saya Meneruskan Nama Domain .com?
+                    </a>
+                </div>
+                <div x-data="{ openDropdown: false }" class="block w-full relative lg:hidden">
+                    <button type="button" class="select-dropdown" @click="openDropdown = !openDropdown">
+                        Navigasi Halaman Ini
+                        <span class="transition-all duration-300 ease-in-out" :class="openDropdown ? '-rotate-180' : 'rotate-0'">
+                            <x-icons.small-arrow width="12" height="8" fill="#2A3C46" />
+                        </span>
+                    </button>
+                    <div x-cloak x-show="openDropdown" class="option-dropdown" @click.outside="openDropdown = false">
+                        <a href="#apa-yang-dimaksud-dengan-penerusan-nama-domain-com" x-on:click="openDropdown = false;">1: Apa yang Dimaksud dengan “Penerusan” Nama Domain .com?</a>
+                        <a href="#apa-saja-cara-yang-dapat-dilakukan-untuk-meneruskan-nama-domain-com" x-on:click="openDropdown = false;">2: Apa Saja Cara yang Dapat Dilakukan untuk Meneruskan Nama Domain .com?</a>
+                        <a href="#bagaimana-cara-saya-meneruskan-nama-domain-com" x-on:click="openDropdown = false;">3: Bagaimana Cara Saya Meneruskan Nama Domain .com?</a>
+                    </div>
                 </div>
             </div>
         </x-articles.intro-and-quicklinks>
@@ -46,7 +65,7 @@
         </div>
         <div id="apa-saja-cara-yang-dapat-dilakukan-untuk-meneruskan-nama-domain-com" class="article-child-wrapper scroll-mt-20 sm:scroll-mt-28">
             <h3>Apa Cara yang Dapat Dilakukan untuk Meneruskan Nama Domain?</h3>
-            <p>Sekarang setelah kita membahas manfaat penerusan nama domain, mari kita uraikan berbagai jenis penerusan dan bagaimana penerusan tersebut dapat memengaruhi apa yang dilihat pelanggan Anda di browser web mereka.</p>
+            <p>Sekarang setelah kita membahas <a href="{{ route('resources.show', 'manfaat-penerusan-nama-domain') }}" class="text-magenta-300 underline">manfaat penerusan nama domain</a>, mari kita uraikan berbagai jenis penerusan dan bagaimana penerusan tersebut dapat memengaruhi apa yang dilihat pelanggan Anda di browser web mereka.</p>
             <p>Saat bekerja dengan penjual nama domain, Anda mungkin akan memiliki dua opsi:</p>
             <x-articles.arrow-item-content>
                 <div class="flex flex-col flex-1">

@@ -173,6 +173,22 @@
         @apply block bg-magenta-300 hover:bg-magenta-400 focus:bg-magenta-200 lg:p-4 px-4 py-0.5 border border-transparent focus:border-magenta-300 rounded-full text-white hover:text-light-gray-300 text-sm lg:text-xl text-center leading-6 transition-all duration-150 ease-in-out;
     }
 
+    /* Select */
+
+    button.select-dropdown {
+        @apply w-full flex items-center justify-between gap-x-2.5 font-sans text-left font-semibold text-xl rounded-[10px] text-deep-blue-300 border border-light-gray-500 leading-7.5 cursor-pointer bg-white px-4 py-3;
+    }
+
+    .option-dropdown {
+        @apply flex flex-col gap-3 top-full bg-white rounded-[10px] overflow-hidden z-10 mt-1.5 inset-x-0 shadow-md min-h-10 absolute py-3 max-h-87.5 overflow-y-auto;
+        button, a {
+            @apply px-4 py-2 font-sans text-left font-semibold text-xl text-deep-blue-300 leading-7.5 cursor-pointer bg-white transition-colors duration-300;
+            &:hover {
+                @apply bg-mint-300;
+            }
+        }
+    }
+
     /* Article */
 
     .article-outer {
@@ -181,11 +197,26 @@
 
     .article-wrapper {
         @apply container-extra-smaller flex flex-col gap-6 py-10 md:gap-8 md:py-11;
+        a.anchor-link {
+            @apply font-sans text-[22px] font-semibold leading-[140%] text-deep-blue-300;
+        }
         h3 {
             @apply font-sans font-semibold text-[32px] leading-10 tracking-[0.25px] text-deep-blue-300 md:text-[40px] md:leading-12 lg:leading-11.5;
+            &.title-arrow {
+                @apply text-[26px]! md:leading-9.5! md:text-[32px]! lg:leading-normal!;
+            }
         }
         p, span {
             @apply font-sans font-medium text-[18px] leading-7 tracking-[0.25px] text-deep-blue-300 md:text-[24px] md:leading-8.5;
+        }
+        ul {
+            @apply pl-5;
+            li {
+                @apply relative font-sans font-medium text-[18px] leading-7 tracking-[0.25px] text-deep-blue-300 md:text-[24px] md:leading-8.5;
+                &::before {
+                    @apply absolute -left-5 top-3.5 size-1 bg-deep-blue-300 rounded-full content-[''];
+                }
+            }
         }
     }
 

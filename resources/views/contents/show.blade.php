@@ -12,7 +12,7 @@
     @if ($post->isCustomTemplate())
         <x-displays.scroll-progress />
         <section class="bg-light-gray-100">
-            <div class="container grid grid-cols-1 items-center gap-10 py-10 md:py-19.5 xl:grid-flow-col">
+            <div class="container grid grid-cols-1 items-center gap-6 py-10 md:gap-10 md:py-19.5 xl:grid-flow-col">
                 <div class="flex flex-col gap-4 md:gap-6">
                     <div class="flex items-center gap-1 font-sans text-deep-blue-300 text-sm font-semibold">
                         <div class="mb-0.5">
@@ -30,9 +30,10 @@
             </div>
         </section>
         @include($view_path)
-        <section class="bg-deep-blue-300 py-16 lg:py-22">
-            <div class="flex flex-col justify-center items-center gap-6 py-16 container lg:py-22">
-                <h2 class="subheadline-2 text-white text-center max-w-xs mx-auto sm:max-w-full lg:text-[40px]!">
+        <section
+            class="bg-deep-blue-300 py-16 lg:py-22">
+            <div class="container flex flex-col justify-center items-center">
+                <h2 class="subheadline-2 text-white text-center max-w-xs mx-auto sm:mx-0 sm:max-w-full lg:text-[40px]!">
                     Temukan Nama Domain .com
                 </h2>
             </div>
