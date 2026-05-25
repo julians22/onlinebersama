@@ -6,7 +6,7 @@ use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class Workflow extends Component
+class NavigateLink extends Component
 {
     /**
      * Create a new component instance.
@@ -21,6 +21,6 @@ class Workflow extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.articles.workflow');
+        return view('components.articles.navigate-link');
     }
 }

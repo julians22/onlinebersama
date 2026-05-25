@@ -3,30 +3,30 @@
         <x-articles.intro-and-quicklinks>
             <div class="article-child-wrapper">
                 <p>Siap membawa komunikasi Anda ke tingkat berikutnya? Dapatkan alamat email .com khusus dan bangun merek Anda di setiap email yang Anda kirim. Berikut panduan singkat untuk membantu Anda mulai menggunakan alamat email .com Anda sendiri dalam empat langkah sederhana:</p>
-                <div class="flex flex-col gap-3">
-                    <a href="#pilih-nama-domain" class="anchor-link">
+                <x-articles.navigate-link>
+                    <a href="#pilih-nama-domain">
                         1: Pilih Nama Domain
                     </a>
-                    <a href="#daftarkan-nama-domain" class="anchor-link">
+                    <a href="#daftarkan-nama-domain">
                         2: Daftarkan Nama Domain
                     </a>
-                    <a href="#pilih-penyedia-email-bisnis-yang-tepat" class="anchor-link">
+                    <a href="#pilih-penyedia-email-bisnis-yang-tepat">
                         3: Pilih Penyedia Email Bisnis yang Tepat
                     </a>
-                    <a href="#sambungkan-alamat-email-ke-nama-domain" class="anchor-link">
+                    <a href="#sambungkan-alamat-email-ke-nama-domain">
                         4: Sambungkan Alamat Email ke Nama Domain
                     </a>
-                </div>
+                </x-articles.navigate-link>
             </div>
         </x-articles.intro-and-quicklinks>
         <div id="pilih-nama-domain" class="article-child-wrapper scroll-mt-20 sm:scroll-mt-28">
             <h3>Langkah 1: Pilih Nama Domain</h3>
-            <p>Langkah pertama dalam membuat alamat email bisnis khusus Anda adalah memilih nama domain. Untuk cara mudah untuk mendapatkan saran nama domain yang bagus, coba generator nama domain yang didukung oleh NameStudio&reg;.</p>
-            <img class="rounded-[10px]" src="{{ asset('images/placeholder-video-why-com.jpg') }}" alt="">
+            <p>Langkah pertama dalam membuat <a href="{{ route('resources.show', 'manfaat-alamat-email-bisnis-khusus') }}" class="link-to">alamat email bisnis khusus</a> Anda adalah memilih nama domain. Untuk cara mudah untuk mendapatkan saran nama domain yang bagus, coba <a href="{{ route('find') }}" class="link-to">generator nama domain</a> yang didukung oleh NameStudio&reg;.</p>
+            <img class="rounded-[10px]" src="{{ asset('images/mid-article-image-1.jpg') }}" alt="">
             <p>Jika Anda sudah mendaftarkan nama domain, Anda dapat langsung melanjutkan ke Langkah 3: Pilih Penyedia Email Bisnis yang Tepat.</p>
             <x-articles.callout-cta>
                 <div class="flex flex-col gap-4">
-                    <h4 class="subheadline-4 text-deep-blue-300 font-semibold!">Tahukah Anda?</h4>
+                    <h4>Tahukah Anda?</h4>
                     <p>Alamat email .com membantu bisnis kecil terlihat lebih kredibel di Indonesia.</p>
                 </div>
             </x-articles.callout-cta>
@@ -36,7 +36,7 @@
             <p>Setelah Anda memilih nama domain yang tersedia, Anda dapat mendaftarkannya melalui penyedia domain, yang juga disebut “registrar”. Proses pendaftaran biasanya dirancang agar mudah dan pada umumnya serupa di berbagai penyedia.</p>
             <x-articles.callout-cta>
                 <div class="flex flex-col gap-4">
-                    <h4 class="subheadline-4 text-deep-blue-300 font-semibold!">TIP</h4>
+                    <h4>TIP</h4>
                     <p>Periksa apakah penyedia domain Anda menawarkan layanan email bisnis. Beberapa menyediakan berbagai paket email bisnis yang dapat dengan mudah digabungkan dengan pendaftaran nama domain Anda.</p>
                 </div>
             </x-articles.callout-cta>
@@ -67,7 +67,7 @@
             </div>
             <x-articles.callout-cta>
                 <div class="flex flex-col gap-4">
-                    <h4 class="subheadline-4 text-deep-blue-300 font-semibold!">Perlu Diingat</h4>
+                    <h4>Perlu Diingat</h4>
                     <p>Dengan mempertimbangkan anggaran, Anda dapat membuat beberapa alamat email untuk mendukung berbagai bagian bisnis Anda, seperti info@LivingKreasi.com atau inquiries@LivingKreasi.com. Dengan melakukan ini, email Anda akan menjadi bentuk pernyataan kredibilitas yang membantu Anda tampil beda menonjol dan membangun kepercayaan di setiap email yang Anda kirim.</p>
                 </div>
             </x-articles.callout-cta>
@@ -82,5 +82,6 @@
             </x-slot:title>
             <p>Dengan alamat email .com khusus, Anda dapat menciptakan kesan yang kuat dan tahan lama serta membangun kepercayaan dengan pelanggan.</p>
         </x-articles.tip-callout>
+        <x-articles.related-article :data="$post->relatedOneArticle" />
     </div>
 </section>

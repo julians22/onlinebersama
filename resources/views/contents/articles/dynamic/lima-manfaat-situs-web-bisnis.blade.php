@@ -3,23 +3,23 @@
         <x-articles.intro-and-quicklinks>
             <div class="article-child-wrapper">
                 <p>Situs web adalah salah satu alat pemasaran terpenting bagi bisnis dalam skala apa pun. Sebagai fondasi kehadiran online Anda, situs web bisnis dapat menyediakan platform fleksibel untuk menampilkan produk, layanan, dan identitas perusahaan, sehingga memberi Anda kontrol lebih besar atas cara pelanggan berinteraksi dengan bisnis Anda. Berikut adalah lima manfaat utama memiliki situs web bisnis dengan nama domain .com.</p>
-                <div class="flex flex-col gap-3">
-                    <a href="#meningkatkan-kredibilitas-anda" class="anchor-link">
+                <x-articles.navigate-link>
+                    <a href="#meningkatkan-kredibilitas-anda">
                         1: Meningkatkan Kredibilitas Anda
                     </a>
-                    <a href="#mencuri-perhatian-pelanggan" class="anchor-link">
+                    <a href="#mencuri-perhatian-pelanggan">
                         2: Mencuri Perhatian Pelanggan
                     </a>
-                    <a href="#memusatkan-kehadiran-online-anda" class="anchor-link">
+                    <a href="#memusatkan-kehadiran-online-anda">
                         3: Memusatkan Kehadiran Online Anda
                     </a>
-                    <a href="#mengontrol-pemasaran-anda" class="anchor-link">
+                    <a href="#mengontrol-pemasaran-anda">
                         4: Mengontrol Pemasaran Anda
                     </a>
-                    <a href="#mendapatkan-wawasan-lebih-dalam" class="anchor-link">
+                    <a href="#mendapatkan-wawasan-lebih-dalam">
                         5: Mendapatkan Wawasan Lebih Dalam
                     </a>
-                </div>
+                </x-articles.navigate-link>
             </div>
         </x-articles.intro-and-quicklinks>
         <div id="meningkatkan-kredibilitas-anda" class="article-child-wrapper scroll-mt-20 sm:scroll-mt-28">
@@ -27,7 +27,7 @@
             <p>Ekstensi nama domain .com memiliki kredibilitas di seluruh dunia. Jika digunakan dengan situs web, nama domain .com khusus dapat membantu memberikan legitimasi pada bisnis Anda dan memungkinkan Anda untuk:</p>
             <x-articles.arrow-item-content>
                 <div class="flex flex-col flex-1">
-                    <p>Mengiklankan nama domain bisnis Anda dan bukan pihak ketiga. Alih-alih menggunakan URL pihak ketiga yang umum (misalnya, PembuatSitusWeb.com/site/rumahpantaianthony), Anda dapat mempromosikan bisnis Anda menggunakan nama domain .com khusus Anda (misalnya, RumahPantaiAnthony.com) dan membantu pelanggan merasa yakin saat mengklik situs Anda.</p>
+                    <p>Mengiklankan nama domain bisnis Anda dan bukan pihak ketiga. Alih-alih menggunakan URL pihak ketiga yang umum (misalnya, <span class="block break-all">PembuatSitusWeb.com/site/rumahpantaianthony)</span>, Anda dapat mempromosikan bisnis Anda menggunakan nama domain .com khusus Anda (misalnya, RumahPantaiAnthony.com) dan membantu pelanggan merasa yakin saat mengklik situs Anda.</p>
                 </div>
             </x-articles.arrow-item-content>
             <x-articles.arrow-item-content>
@@ -37,12 +37,12 @@
             </x-articles.arrow-item-content>
             <x-articles.arrow-item-content>
                 <div class="flex flex-col flex-1">
-                    <p>Buat alamat email bisnis khusus dengan nama domain .com Anda (misalnya, sales@RumahPantaiAnthony.com) untuk membantu bisnis Anda terlihat lebih profesional.</p>
+                    <p>Buat <a href="{{ route('resources.show', 'cara-membuat-alamat-email-bisnis-khusus') }}" class="link-to">alamat email bisnis</a> khusus dengan nama domain .com Anda (misalnya, sales@RumahPantaiAnthony.com) untuk membantu bisnis Anda terlihat lebih profesional.</p>
                 </div>
             </x-articles.arrow-item-content>
             <x-articles.callout-cta>
                 <div class="flex flex-col gap-4">
-                    <h4 class="subheadline-4 text-deep-blue-300 font-semibold!">Tahukah Anda?</h4>
+                    <h4>Tahukah Anda?</h4>
                     <p>Nama domain .com dipahami oleh semua orang, di mana saja dan dapat membantu bisnis dalam skala apapun untuk terhubung dengan pelanggan dan mitra di seluruh dunia. </p>
                 </div>
             </x-articles.callout-cta>
@@ -132,7 +132,8 @@
             <x-slot:title>
                 <p>KESIMPULAN</p>
             </x-slot:title>
-            <p>Siap membangun situs web bisnis Anda sendiri? Artikel kami tentang cara memilih pembuat situs web yang tepat  untuk bisnis Anda dan daftar periksa pembuatan situs web dapat membantu Anda memulai.</p>
+            <p>Siap membangun situs web bisnis Anda sendiri? Artikel kami tentang <a href="{{ route('resources.show', 'cara-memilih-pembuat-situs-web') }}" class="link-to">cara memilih pembuat situs web yang tepat</a> untuk bisnis Anda dan <a href="{{ route('resources.show', 'daftar-periksa-membuat-situs-web') }}" class="link-to">daftar periksa pembuatan situs web</a> dapat membantu Anda memulai.</p>
         </x-articles.tip-callout>
+        <x-articles.related-article :data="$post->relatedOneArticle" />
     </div>
 </section>

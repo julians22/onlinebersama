@@ -31,9 +31,13 @@ class BackofficePanelProvider extends PanelProvider
             ->path('backoffice')
             ->login()
             ->brandLogo(asset('images/logo-com-white.svg'))
-            ->darkMode(1, 1)
+            ->darkMode(true, true)
             ->colors([
                 'primary' => '#142f52'
+            ])
+            ->navigationGroups([
+                'Resources',
+                'Reports'
             ])
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\Filament\Resources')
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\Filament\Pages')

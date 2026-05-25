@@ -6,7 +6,7 @@
         <h3>Membuat Rencana Pembuatan Situs Web:</h3>
         <x-articles.arrow-item-content>
             <div class="flex flex-col flex-1">
-                <p>Pilih dan daftarkan nama domain .com untuk alamat situs web Anda. <em>Tips: Bahkan jika Anda belum langsung membuat situs web Anda, nama domain .com tetap memberikan alamat situs web yang mudah diingat dan konsisten untuk bisnis Anda.</em></p>
+                <p><a href="{{ route('resources.show', 'bagaimana-cara-memilih-dan-mendaftarkan-nama-domain-com-untuk-bisnis-anda-dalam-tiga-langkah') }}" class="link-to">Pilih dan daftarkan nama domain .com</a> untuk alamat situs web Anda. <em>Tips: Bahkan jika Anda belum langsung membuat situs web Anda, nama domain .com tetap memberikan alamat situs web yang mudah diingat dan konsisten untuk bisnis Anda.</em></p>
             </div>
         </x-articles.arrow-item-content>
         <x-articles.arrow-item-content>
@@ -16,7 +16,7 @@
         </x-articles.arrow-item-content>
         <x-articles.arrow-item-content>
             <div class="flex flex-col flex-1">
-                <p>Tentukan apakah Anda ingin membuat situs web sendiri menggunakan pembuat situ web/<em>website builder</em>, atau meminta bantuan ahli profesional. <em>Tips: Banyak pembuat situs web/website builder memiliki alat berbasis AI yang bisa membantu Anda membuat situs web, menemukan nama domain .com yang cocok, dan bahkan menulis konten.</em></p>
+                <p>Tentukan apakah Anda ingin membuat situs web sendiri menggunakan pembuat situs web/<em><a href="{{ route('resources.show', 'cara-memilih-pembuat-situs-web') }}" class="link-to">website builder</a></em>, atau meminta bantuan ahli profesional. <em>Tips: Banyak pembuat situs web/website builder memiliki alat berbasis AI yang bisa membantu Anda membuat situs web, menemukan nama domain .com yang cocok, dan bahkan menulis konten.</em></p>
             </div>
         </x-articles.arrow-item-content>
         <x-articles.arrow-item-content>
@@ -26,7 +26,7 @@
         </x-articles.arrow-item-content>
         <x-articles.callout-cta>
             <div class="flex flex-col gap-4">
-                <h4 class="subheadline-4 text-deep-blue-300 font-semibold!">Tip</h4>
+                <h4>Tip</h4>
                 <p>Saat memilih layanan atau perusahaan yang tepat, ada baiknya jika Anda membandingkan berbagai pilihan. Beberapa pembuat situs web/website builder menyertakan layanan hosting, dan perusahaan hosting juga bisa membantu Anda membuat situs web atau menyediakan alat pembuatan situs web mandiri. Pertimbangkan untuk meminta rekomendasi dari teman atau rekan kerja.</p>
             </div>
         </x-articles.callout-cta>
@@ -56,14 +56,14 @@
         </x-articles.arrow-item-content>
         <x-articles.arrow-item-content>
             <div class="flex flex-col flex-1">
-                <p>Tentukan konten situs web yang penting dan buatlah konten penting tersebut. Informasi apa yang akan dianggap menarik dan bermanfaat oleh pengunjung situs web Anda? Setidaknya, pastikan situs web Anda menyediakan beberapa cara bagi pengunjung untuk menghubungi perusahaan Anda, misalnya alamat email bisnis khusus dan nomor telepon.</p>
+                <p>Tentukan konten situs web yang penting dan buatlah konten penting tersebut. Informasi apa yang akan dianggap menarik dan bermanfaat oleh pengunjung situs web Anda? Setidaknya, pastikan situs web Anda menyediakan beberapa cara bagi pengunjung untuk menghubungi perusahaan Anda, misalnya <a href="{{ route('resources.show', 'manfaat-alamat-email-bisnis-khusus') }}" class="link-to">alamat email bisnis khusus</a> dan nomor telepon.</p>
             </div>
         </x-articles.arrow-item-content>
-        <img class="rounded-[10px]" src="{{ asset('images/placeholder-video-why-com.jpg') }}" alt="">
+        <img class="rounded-[10px]" src="{{ asset('images/mid-article-image-4.jpg') }}" alt="">
         <h3>Mempromosikan, Memelihara, dan Mengoptimalkan Situs Web:</h3>
         <x-articles.arrow-item-content>
             <div class="flex flex-col flex-1">
-                <p>Pikirkan cara agar pengunjung dapat menemukan situs web Anda, dan promosikan nama domain Anda di berbagai media yang memungkinkan, termasuk kartu nama, kemasan produk, materi cetak, papan nama, media sosial, iklan, dan direktori daring. Selain itu, pertimbangkan juga penggunaan iklan mesin pencari serta alamat <em>email</em> bisnis khusus.</p>
+                <p>Pikirkan cara agar pengunjung dapat menemukan situs web Anda, dan promosikan nama domain Anda di berbagai media yang memungkinkan, termasuk kartu nama, kemasan produk, materi cetak, papan nama, media sosial, iklan, dan direktori daring. Selain itu, pertimbangkan juga penggunaan iklan mesin pencari serta <a href="{{ route('resources.show', 'cara-membuat-alamat-email-bisnis-khusus') }}" class="link-to">alamat <em>email</em> bisnis khusus</a>.</p>
             </div>
         </x-articles.arrow-item-content>
         <x-articles.arrow-item-content>
@@ -76,5 +76,6 @@
                 <p>Optimalkan situs web Anda secara terus-menerus dan buat konten yang berguna bagi pengunjung situs web Anda berdasarkan data lalu lintas dan masukan dari pengguna. Susun rencana bulanan yang berisi kegiatan rutin yang perlu dilakukan. Tetapkan jadwal dan alokasikan waktu khusus untuk promosi dan pemeliharaan. Jika situs web dan konten Anda disiapkan dengan benar, pemeliharaan biasanya tidak memerlukan waktu yang lama.</p>
             </div>
         </x-articles.arrow-item-content>
+        <x-articles.related-article :data="$post->relatedOneArticle" />
     </div>
 </section>

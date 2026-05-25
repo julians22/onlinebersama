@@ -22,10 +22,13 @@
                         <a href="{{ route('resources') }}">Panduan Belajar</a>
                     </div>
                     <h1 class="headline-1 text-navy-blue-300">{{ $post->title }}</h1>
+                    @if ($post->writer)
+                        <h4 class="subheadline-4 text-deep-blue-300 font-extrabold!">Oleh {{ $post->writer }}</h4>
+                    @endif
                     <p class="paragraph-sm text-deep-blue-300">Waktu baca rata-rata {{ $post->read_time }}</p>
                 </div>
                 <div class="aspect-video w-full rounded-[10px] overflow-hidden xl:w-156.75">
-                    <img class="w-full" src="{{ asset('images/placeholder-video-why-com.jpg') }}" alt="">
+                    <img class="w-full" src="{{ imageArticle($post->slug) }}" alt="">
                 </div>
             </div>
         </section>
@@ -58,23 +61,24 @@
                 </div>
             </div>
         </section>
-        <section class="container overflow-hidden! py-10 md:pt-24.25 md:pb-33.75">
-            <h2 class="text-navy-blue-300 text-center -mb-6 px-4 headline-1 md:-mb-2 md:px-8">Jelajahi Topik Lainnya</h2>
+        <section class="container overflow-hidden! py-10 md:pt-10 md:pb-19.5">
+            <h2 class="text-navy-blue-300 text-center -mb-6 px-4 headline-1 md:-mb-2 md:px-8">Jelajahi Topik Lain</h2>
             <div class="online-bersama-explore-more-topics swiper">
                 <div class="swiper-wrapper">
                     @forelse ($other_posts as $post)
                         <div class="swiper-slide">
-                            <x-displays.card-resource route="{{ route('resources.show', $post->slug) }}">{{ $post->title }}</x-displays.card-resource>
+                            <x-displays.card-resource
+                                :image="$post->slug"
+                                route="{{ route('resources.show', $post->slug) }}"
+                            >{{ $post->title }}</x-displays.card-resource>
                         </div>
                     @empty
-
                         <div class="swiper-slide">
                             {{-- Related Not found --}}
                             <div>
                                 <h5>No Article Found</h5>
                             </div>
                         </div>
-
                     @endforelse
                 </div>
                 <div class="swiper-pagination"></div>

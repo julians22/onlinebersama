@@ -2,32 +2,19 @@
     <div class="article-wrapper">
         <x-articles.intro-and-quicklinks>
             <div class="article-child-wrapper">
-                <p>Belum siap untuk memiliki situs web? Memiliki Nama domain tetap dapat memberikan manfaat bagi bisnis Anda karena penerusan domain memungkinkan Anda untuk memiliki alamat situs web yang mudah diingat dan sesuai merk, terlepas di mana Anda akan membangun kehadiran online Anda. Penerusan nama domain adalah cara yang cepat dan mudah untuk membantu Anda mulai mempersonalisasi dan memasarkan kehadiran online Anda - baik di media sosial maupun di toko online.</p>
+                <p>Belum siap untuk memiliki situs web? Memiliki Nama domain tetap dapat memberikan manfaat bagi bisnis Anda karena penerusan domain memungkinkan Anda untuk memiliki alamat situs web yang mudah diingat dan sesuai merk, terlepas di mana Anda akan membangun <span class="tooltip" data-tooltip="Kehadiran online / eksistensi online adalah suatu keadaan di mana bisnis Anda dapat ditemukan di internet, bisa dalam bentuk situs web, halaman media sosial, dan/atau pasar online. Menggunakan nama domain .com dengan kehadiran online Anda, dapat membuka peluang dengan membantu pelanggan menemukan “markas” Anda dengan mudah saat melakukan bisnis online.">kehadiran online</span> Anda. Penerusan nama domain adalah cara yang cepat dan mudah untuk membantu Anda mulai mempersonalisasi dan memasarkan kehadiran online Anda - baik di media sosial maupun di toko online.</p>
                 <p>Lihat panduan singkat ini untuk mengetahui cara melakukannya.</p>
-                <div class="hidden flex-col gap-3 lg:flex">
-                    <a href="#apa-yang-dimaksud-dengan-penerusan-nama-domain-com" class="anchor-link">
+                <x-articles.navigate-link>
+                    <a href="#apa-yang-dimaksud-dengan-penerusan-nama-domain-com">
                         1: Apa yang Dimaksud dengan “Penerusan” Nama Domain .com?
                     </a>
-                    <a href="#apa-saja-cara-yang-dapat-dilakukan-untuk-meneruskan-nama-domain-com" class="anchor-link">
+                    <a href="#apa-saja-cara-yang-dapat-dilakukan-untuk-meneruskan-nama-domain-com">
                         2: Apa Saja Cara yang Dapat Dilakukan untuk Meneruskan Nama Domain .com?
                     </a>
-                    <a href="#bagaimana-cara-saya-meneruskan-nama-domain-com" class="anchor-link">
+                    <a href="#bagaimana-cara-saya-meneruskan-nama-domain-com">
                         3: Bagaimana Cara Saya Meneruskan Nama Domain .com?
                     </a>
-                </div>
-                <div x-data="{ openDropdown: false }" class="block w-full relative lg:hidden">
-                    <button type="button" class="select-dropdown" @click="openDropdown = !openDropdown">
-                        Navigasi Halaman Ini
-                        <span class="transition-all duration-300 ease-in-out" :class="openDropdown ? '-rotate-180' : 'rotate-0'">
-                            <x-icons.small-arrow width="12" height="8" fill="#2A3C46" />
-                        </span>
-                    </button>
-                    <div x-cloak x-show="openDropdown" class="option-dropdown" @click.outside="openDropdown = false">
-                        <a href="#apa-yang-dimaksud-dengan-penerusan-nama-domain-com" x-on:click="openDropdown = false;">1: Apa yang Dimaksud dengan “Penerusan” Nama Domain .com?</a>
-                        <a href="#apa-saja-cara-yang-dapat-dilakukan-untuk-meneruskan-nama-domain-com" x-on:click="openDropdown = false;">2: Apa Saja Cara yang Dapat Dilakukan untuk Meneruskan Nama Domain .com?</a>
-                        <a href="#bagaimana-cara-saya-meneruskan-nama-domain-com" x-on:click="openDropdown = false;">3: Bagaimana Cara Saya Meneruskan Nama Domain .com?</a>
-                    </div>
-                </div>
+                </x-articles.navigate-link>
             </div>
         </x-articles.intro-and-quicklinks>
         <p>Jika bisnis Anda memiliki halaman media sosial atau toko online, Anda dapat membuatnya lebih mudah ditemukan dengan alamat web .com khusus yang mudah diingat. Hal ini karena dengan penerusan domain, Anda dapat mengarahkan nama domain ke kehadiran online pilihan Anda, sehingga membantu Anda menjangkau lebih banyak orang.</p>
@@ -58,14 +45,14 @@
             </div>
             <x-articles.callout-cta>
                 <div class="flex flex-col gap-4">
-                    <h4 class="subheadline-4 text-deep-blue-300 font-semibold!">Tahukah Anda?</h4>
+                    <h4>Tahukah Anda?</h4>
                     <p>Penelitian menunjukkan bahwa konsumen di seluruh dunia percaya bahwa .com merupakan pilihan yang tepat untuk kehadiran online.1 Selain itu, nama domain .com memudahkan pelanggan untuk menemukan dan mengenali bisnis di platform media sosial dan e-commerce.</p>
                 </div>
             </x-articles.callout-cta>
         </div>
         <div id="apa-saja-cara-yang-dapat-dilakukan-untuk-meneruskan-nama-domain-com" class="article-child-wrapper scroll-mt-20 sm:scroll-mt-28">
             <h3>Apa Cara yang Dapat Dilakukan untuk Meneruskan Nama Domain?</h3>
-            <p>Sekarang setelah kita membahas <a href="{{ route('resources.show', 'manfaat-penerusan-nama-domain') }}" class="text-magenta-300 underline">manfaat penerusan nama domain</a>, mari kita uraikan berbagai jenis penerusan dan bagaimana penerusan tersebut dapat memengaruhi apa yang dilihat pelanggan Anda di browser web mereka.</p>
+            <p>Sekarang setelah kita membahas <a href="#" class="link-to">manfaat penerusan nama domain</a>, mari kita uraikan berbagai jenis penerusan dan bagaimana penerusan tersebut dapat memengaruhi apa yang dilihat pelanggan Anda di browser web mereka.</p>
             <p>Saat bekerja dengan penjual nama domain, Anda mungkin akan memiliki dua opsi:</p>
             <x-articles.arrow-item-content>
                 <div class="flex flex-col flex-1">
@@ -116,34 +103,34 @@
             <h3>Bagaimana Cara Saya Meneruskan Nama Domain .com?</h3>
             <p>Untuk memulai, Anda harus memastikan bahwa nama domain .com sudah terdaftar dan selanjutnya menentukan alamat web tujuan Anda.</p>
             <p>Banyak penyedia domain umumnya mengikuti proses lima langkah. Namun proses pada setiap penjual nama domain mungkin akan berbeda, kami menyarankan untuk berkonsultasi dengan pusat bantuan mereka atau cari petunjuk khusus tentang cara meneruskan nama domain di situs mereka.</p>
-            <div class="article-child-wrapper pl-4">
+            <div class="article-child-wrapper md:pl-4">
                 <x-articles.step-item :number="1">
                     <div class="flex gap-2 flex-col flex-1">
-                        <h4 class="subheadline-4 text-deep-blue-300 font-semibold!">Daftarkan nama domain .com</h4>
-                        <p>Mulailah dengan mendaftarkan nama domain .com melalui perusahaan penyedia nama domain pilihan Anda. Anda dapat menemukan berbagai saran nama domain yang menarik dengan menggunakan generator nama domain kami di sini.</p>
+                        <h4>Daftarkan nama domain .com</h4>
+                        <p>Mulailah dengan mendaftarkan nama domain .com melalui perusahaan penyedia nama domain pilihan Anda. Anda dapat menemukan berbagai saran nama domain yang menarik dengan menggunakan generator nama domain kami <a href="{{ route('find') }}" class="link-to">di sini</a>.</p>
                     </div>
                 </x-articles.step-item>
                 <x-articles.step-item :number="2">
                     <div class="flex gap-2 flex-col flex-1">
-                        <h4 class="subheadline-4 text-deep-blue-300 font-semibold!">Login ke Akun Anda di situs web Penjual Nama Domain Anda</h4>
+                        <h4>Login ke Akun Anda di situs web Penjual Nama Domain Anda</h4>
                         <p>Masuk dan buka menu “Kelola Nama Domain” atau klik tab “Nama Domain”. Bagian ini juga dapat disebut sebagai “Control Panel” atau “Akun Saya”, tergantung pada penyedia nama domain Anda.</p>
                     </div>
                 </x-articles.step-item>
                 <x-articles.step-item :number="3">
                     <div class="flex gap-2 flex-col flex-1">
-                        <h4 class="subheadline-4 text-deep-blue-300 font-semibold!">Pilih Nama Domain yang Ingin Anda Teruskan</h4>
+                        <h4>Pilih Nama Domain yang Ingin Anda Teruskan</h4>
                         <p>Pilih nama domain .com yang ingin Anda teruskan, cari opsi “Penerusan Domain” atau “Alihkan Domain”, lalu klik “Tambah Baru.” Jika Anda telah mendaftarkan beberapa nama domain pada penyedia domain Anda, Anda perlu mengulangi langkah-langkah ini untuk setiap nama domain yang ingin Anda teruskan. Langkah-langkah ini dapat berbeda tergantung pada penjual nama domain Anda.</p>
                     </div>
                 </x-articles.step-item>
                 <x-articles.step-item :number="4">
                     <div class="flex gap-2 flex-col flex-1">
-                        <h4 class="subheadline-4 text-deep-blue-300 font-semibold!">Konfirmasikan Tujuan Penerusan Nama Domain .com</h4>
+                        <h4>Konfirmasikan Tujuan Penerusan Nama Domain .com</h4>
                         <p>Tempelkan URL halaman media sosial atau e-commerce Anda ke bagian “Penerusan Domain” atau “Alihkan Domain”. Tergantung pada penjual nama domain, Anda juga dapat memutuskan jenis penerusan yang ingin dipilih (hanya penerusan vs. penerusan dengan masking).</p>
                     </div>
                 </x-articles.step-item>
                 <x-articles.step-item :number="5">
                     <div class="flex gap-2 flex-col flex-1">
-                        <h4 class="subheadline-4 text-deep-blue-300 font-semibold!">Perbarui pengaturan DNS Anda</h4>
+                        <h4>Perbarui pengaturan DNS Anda</h4>
                         <p>Pastikan Anda memperbarui pengaturan DNS untuk mendukung perubahan ini, lalu klik “Simpan,” dan selesai.</p>
                     </div>
                 </x-articles.step-item>
@@ -154,7 +141,8 @@
                 <p>KESIMPULAN</p>
             </x-slot:title>
             <p>Anda kini siap mengembangkan kehadiran online Anda dengan bantuan nama domain .com.</p>
-            <p><sup>1</sup> Studi Preferensi Konsumen Online Verisign, 2025.</p>
         </x-articles.tip-callout>
+        <p class="text-[14px] leading-5 font-semibold"><sup>1</sup> Studi Preferensi Konsumen Online Verisign, 2025.</p>
+        <x-articles.related-article :data="$post->relatedOneArticle" />
     </div>
 </section>

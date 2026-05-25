@@ -22,7 +22,7 @@ class Post extends Model
      *
      * @var array
      */
-    protected $fillable = ['title', 'slug', 'type', 'post_category_id', 'status', 'read_time', 'template_view_path', 'meta_title', 'meta_description', 'meta_keywords', 'writer'];
+    protected $fillable = ['title', 'slug', 'type', 'status', 'read_time', 'template_view_path', 'meta_title', 'meta_description', 'meta_keywords', 'writer', 'related_slug', 'published_at'];
 
     /**
      * Get the options for generating the slug.
@@ -35,9 +35,9 @@ class Post extends Model
             ->saveSlugsTo('slug');
     }
 
-    public function category()
+    public function relatedOneArticle()
     {
-        return $this->belongsTo(PostCategory::class, 'post_category_id');
+        return $this->hasOne(Post::class, 'slug', 'related_slug');
     }
 
     // 1. Relasi BelongsToMany (digunakan untuk memanggil data di Frontend)

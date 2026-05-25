@@ -3,6 +3,7 @@
 namespace App\Filament\Resources\Topics\Schemas;
 
 use Filament\Forms\Components\TextInput;
+use Filament\Schemas\Components\Section;
 use Filament\Schemas\Schema;
 
 class TopicForm
@@ -11,14 +12,19 @@ class TopicForm
     {
         return $schema
             ->components([
-                TextInput::make('name')
-                    ->required(),
-                TextInput::make('slug')
-                    ->unique('topics', 'slug')
-                    ->live()
-                    // hide when create form
-                    ->hidden(fn (string $operation): bool => $operation === 'create')
-                    ->required(),
+                Section::make('Topik Detail')
+                    ->columnSpanFull()
+                    ->schema([
+                        TextInput::make('name')
+                            ->label('Nama')
+                            ->required(),
+                        TextInput::make('slug')
+                            ->unique('topics', 'slug')
+                            ->live()
+                            // hide when create form
+                            ->hidden(fn (string $operation): bool => $operation === 'create')
+                            ->required(),
+                    ])
             ]);
     }
 }

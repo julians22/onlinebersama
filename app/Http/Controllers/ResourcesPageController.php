@@ -19,7 +19,7 @@ class ResourcesPageController extends Controller
 
         $post = Post::published()
             ->where('slug', $slug)
-            ->with('category', 'topics', 'relatedArticles')
+            ->with('topics', 'relatedArticles', 'relatedOneArticle')
             ->first();
         $other_posts = $post->relatedArticles;
 
@@ -32,10 +32,18 @@ class ResourcesPageController extends Controller
             $view_path = 'contents.articles.default';
         }
 
+        $check_image_exists = file_exists(public_path('images/articles/' . $post->slug . '.jpg'));
+        if (!$check_image_exists) {
+            $image = 'images/articles/default-image.jpg';
+        } else {
+            $image = 'images/articles/' . $post->slug . '.jpg';
+        }
+
         return view('contents.show', [
             'post' => $post,
             'other_posts' => $other_posts,
-            'view_path' => $view_path
+            'view_path' => $view_path,
+            'image' => $image
         ]);
     }
 

@@ -3,17 +3,17 @@
         <x-articles.intro-and-quicklinks>
             <div class="article-child-wrapper">
                 <p>Apakah anda sedang mencari cara yang cepat dan mudah untuk membantu membangun kredibilitas, membentuk citra profesional, sekaligus memasarkan bisnis Anda? Alamat bisnis khusus (dengan nama domain .com) dapat berfungsi sebagai alat pemasaran yang berharga sekaligus membantu membangun legitimasi Anda. Berikut manfaat yang dapat Anda peroleh dengan memiliki alamat email bisnis khusus:</p>
-                <div class="flex flex-col gap-3">
-                    <a href="#membangun-kredibilitas" class="anchor-link">
+                <x-articles.navigate-link>
+                    <a href="#membangun-kredibilitas">
                         1: Membangun Kredibilitas
                     </a>
-                    <a href="#membangun-legitimasi-dengan-citra-profesional" class="anchor-link">
+                    <a href="#membangun-legitimasi-dengan-citra-profesional">
                         2: Membangun Legitimasi Dengan Citra Profesional
                     </a>
-                    <a href="#memasarkan-keseluruhan-bisnis-anda" class="anchor-link">
+                    <a href="#memasarkan-keseluruhan-bisnis-anda">
                         3: Memasarkan Keseluruhan Bisnis Anda
                     </a>
-                </div>
+                </x-articles.navigate-link>
             </div>
         </x-articles.intro-and-quicklinks>
         <p>Misalnya Anda ingin menggunakan jasa perusahaan desain interior dan Anda mencari beberapa pilihan secara online. Anda menemukan dua bisnis yang berbeda – sekilas keduanya tampak menjanjikan, tetapi bisnis mana yang ingin Anda hubungi di antara dua alamat email ini? </p>
@@ -30,7 +30,7 @@
         </div>
         <div id="membangun-legitimasi-dengan-citra-profesional" class="article-child-wrapper scroll-mt-20 sm:scroll-mt-28">
             <h3>Membangun Legitimasi Dengan Citra Profesional</h3>
-            <img class="rounded-[10px]" src="{{ asset('images/placeholder-video-why-com.jpg') }}" alt="">
+            <img class="rounded-[10px]" src="{{ asset('images/mid-article-image-1.jpg') }}" alt="">
             <p>Selain membangun kredibilitas, alamat email khusus dapat membantu memperkenalkan kepada seluruh dunia bahwa bisnis Anda sudah berdiri. Alamat email khusus dapat meningkatkan citra profesional Anda bagi calon konsumen yang mungkin masih ragu untuk menjalin komunikasi melalui alamat email umum.</p>
             <p>Gunakan <strong>livingkreasi@EmailGenerik.com</strong> sebagai contoh. Alamat email umum seperti ini mungkin tidak memiliki legitimasi yang sama dengan alamat email khusus. Namun, ketika Anda menggunakan alamat email khusus, konsumen Anda mungkin akan cenderung lebih berinteraksi dengan Anda dan bisnis Anda. Bahkan, alamat email .com dapat membantu usaha kecil terlihat lebih profesional di seluruh dunia.</p>
         </div>
@@ -45,5 +45,6 @@
             </x-slot:title>
             <p>Anda tidak perlu merasa ragu untuk mulai membangun dan menentukan citra profesional Anda, karena ini merupakan cara memulai yang mudah dan terjangkau.</p>
         </x-articles.tip-callout>
+        <x-articles.related-article :data="$post->relatedOneArticle" />
     </div>
 </section>

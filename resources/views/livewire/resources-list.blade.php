@@ -28,7 +28,11 @@
     <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
         @foreach($posts as $index => $post)
             <div wire:key="post-{{ $index }}">
-                <x-displays.card-resource :tags="$post->topics->pluck('name')->toArray()" route="{{ route('resources.show', $post->slug) }}">{{ $post->title }}</x-displays.card-resource>
+                <x-displays.card-resource
+                    :tags="$post->topics->pluck('name')->toArray()"
+                    :image="$post->slug"
+                    route="{{ route('resources.show', $post->slug) }}"
+                >{{ $post->title }}</x-displays.card-resource>
             </div>
         @endforeach
     </div>

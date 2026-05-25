@@ -44,7 +44,7 @@ class ResourcesList extends Component
     {
         $posts = Post::published()
             ->latest()
-            ->with('category', 'topics')
+            ->with('topics')
             ->when($this->selectedTopic !== '*', function ($query) {
                 return $query->whereHas('topics', function ($query) {
                     $query->where('slug', $this->selectedTopic);

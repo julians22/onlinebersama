@@ -197,14 +197,33 @@
 
     .article-wrapper {
         @apply container-extra-smaller flex flex-col gap-6 py-10 md:gap-8 md:py-11;
-        a.anchor-link {
-            @apply font-sans text-[22px] font-semibold leading-[140%] text-deep-blue-300;
+        .anchor-link {
+            @apply flex flex-col gap-3;
+            a {
+                @apply font-sans text-[22px] font-semibold leading-[140%] text-deep-blue-300;
+            }
+        }
+        a.link-to {
+            @apply text-magenta-300 underline;
+        }
+        span.tooltip {
+            @apply relative text-magenta-300 underline decoration-dotted;
+            &::after {
+                @apply absolute left-1/2 -translate-x-1/2 top-full mt-1 w-73.75 p-4 rounded-[10px] text-[14px] text-black bg-[#e0f2ec] font-semibold leading-5 opacity-0 transition-opacity duration-300 invisible;
+                content: attr(data-tooltip);
+            }
+            &:hover::after {
+                @apply opacity-100 visible;
+            }
         }
         h3 {
             @apply font-sans font-semibold text-[32px] leading-10 tracking-[0.25px] text-deep-blue-300 md:text-[40px] md:leading-12 lg:leading-11.5;
-            &.title-arrow {
+            &.smaller {
                 @apply text-[26px]! md:leading-9.5! md:text-[32px]! lg:leading-normal!;
             }
+        }
+        h4 {
+            @apply font-sans font-semibold text-[20px] leading-6.25 tracking-[0.25px] text-deep-blue-300 md:text-[28px] md:leading-7.5 lg:leading-10.5;
         }
         p, span {
             @apply font-sans font-medium text-[18px] leading-7 tracking-[0.25px] text-deep-blue-300 md:text-[24px] md:leading-8.5;
