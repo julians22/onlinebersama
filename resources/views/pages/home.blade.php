@@ -83,11 +83,6 @@
             <img
                 data-analytics-name="video image | Bukan Sekadar Domain. Melainkan Suatu Pernyataan"
                 class="w-full mx-auto block sm:h-200 sm:object-cover sm:object-bottom md:h-210 min-[900px]:h-230! lg:hidden" src="{{ asset('images/placeholder-video-how-mobile.jpg') }}" alt="">
-            <button
-                data-analytics-name="play button | Bukan Sekadar Domain. Melainkan Suatu Pernyataan"
-                type="button" class="top-2/3 left-1/2 z-10 absolute -translate-x-1/2 -translate-y-1/2 cursor-pointer transition-all duration-300 ease-in-out hover:scale-110 min-[900px]:top-[60%] lg:top-[55%]">
-                <img class="size-10 min-[400px]:size-14 min-[900px]:size-16 lg:size-20 2xl:size-32.5" src="{{ asset('images/icons/navy-play.svg') }}" alt="">
-            </button>
             <div class="top-0 left-1/2 -translate-x-1/2 absolute flex justify-center size-full max-w-480 px-4 pt-4 min-[400px]:pt-13.5 sm:px-6 sm:pt-6 md:pt-11.75 lg:justify-start lg:px-24 lg:py-32 xl:py-38 xl:px-30 2xl:py-50 2xl:px-42">
                 <div class="space-y-3.5 text-center max-w-85 mx-auto sm:max-w-xl lg:text-left lg:max-w-full lg:mx-0">
                     <h2 class="headline-1 text-navy-blue-300 text-[24px]! leading-8! sm:leading-13! sm:text-[40px]! lg:max-w-2xl lg:mx-0 lg:text-[52px]! lg:leading-16! xl:text-[64px]! xl:leading-18! 2xl:leading-21.25! xl:max-w-3xl 2xl:max-w-4xl">
@@ -98,6 +93,16 @@
                     </p>
                 </div>
             </div>
+            <div
+                data-analytics-name="video image | Bukan Sekadar Domain. Melainkan Suatu Pernyataan"
+                class="w-full h-full absolute top-0 left-0 group-hover/child:scale-110 transition-all duration-300 ease-in-out">
+                <button
+                    data-analytics-name="play button | Bukan Sekadar Domain. Melainkan Suatu Pernyataan"
+                    type="button" class="top-2/3 left-1/2 z-10 absolute -translate-x-1/2 -translate-y-1/2 cursor-pointer transition-all duration-300 ease-in-out hover:scale-110 min-[900px]:top-[60%] lg:top-[55%]">
+                    <img class="size-10 min-[400px]:size-14 min-[900px]:size-16 lg:size-20 2xl:size-32.5" src="{{ asset('images/icons/navy-play.svg') }}" alt="">
+                </button>
+            </div>
+
         </div>
     </section>
     <!-- End How To Use -->
@@ -147,15 +152,21 @@
                         </div>
                     </div>
                     <div class="relative rounded-[10px] overflow-hidden">
-                        <button type="button" class="group/child relative size-full cursor-pointer outline-none mb-6 sm:mb-0">
-                            <img class="w-full rounded-[10px]" src="{{ asset('images/placeholder-video-why-com.jpg') }}" alt="">
-                            <img class="transition-all duration-300 ease-in-out top-1/2 left-1/2 absolute size-19.5 -translate-x-1/2 -translate-y-1/2 group-hover/child:scale-110 sm:-translate-y-[90%] lg:-translate-y-1/2" src="{{ asset('images/icons/white-play-rounded.svg') }}" alt="">
-                        </button>
+                        <img class="w-full rounded-[10px]" src="{{ asset('images/placeholder-video-why-com.jpg') }}" alt="">
                         <div class="bottom-0 left-0 sm:p-8 sm:absolute">
                             <div class="max-w-3xl space-y-2 text-white">
                                 <h4 class="font-extrabold! text-[20px]! subheadline-3 sm:text-[28px]!">IKAT Indonesia</h4>
                                 <p class="font-semibold! paragraph-sm sm:text-[20px]! sm:leading-normal!">Dengarkan bagaimana nama domain .com yang dikenal membantu pemilik bisnis mengembangkan bisnisnya.</p>
                             </div>
+                        </div>
+                        <div
+                            data-analytics-name="video image | IKAT Indonesia"
+                            class="w-full h-full absolute top-0 left-0 group-hover/child:scale-110 transition-all duration-300 ease-in-out">
+                            <button
+                                data-analytics-name="play button | IKAT Indonesia"
+                                type="button" class="group/child relative size-full cursor-pointer outline-none mb-6 sm:mb-0">
+                                <img class="transition-all duration-300 ease-in-out top-1/2 left-1/2 absolute size-19.5 -translate-x-1/2 -translate-y-1/2 group-hover/child:scale-110 sm:-translate-y-[90%] lg:-translate-y-1/2" src="{{ asset('images/icons/white-play-rounded.svg') }}" alt="">
+                            </button>
                         </div>
                     </a>
                 </div>
