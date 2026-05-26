@@ -26,4 +26,4 @@ Route::name('resources.')->group(function() {
     });
 });
 
-Route::get('kumpulan-materi', fn() => redirect()->route('resources'));
+Route::get('kumpulan-materi', fn() => redirect()->route('resources.index'));
