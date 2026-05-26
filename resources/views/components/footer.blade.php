@@ -39,7 +39,9 @@
                         <a
                             data-analytics-name="text | Conditions of Use"
                             href="https://www.verisign.com/id-id/privacy/legal-notices/" class="footer-link">Ketentuan Penggunaan</a>
-                        <a href="#" class="footer-link">Pengaturan Cookie</a>
+                        <a
+                            data-analytics-name="text | Cookie Settings"
+                            href="#" class="footer-link">Pengaturan Cookie</a>
                         <a
                             data-analytics-name="text | Verisign.com"
                             href="https://www.verisign.com/" class="footer-link">Verisign.com</a>

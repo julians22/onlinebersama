@@ -38,6 +38,7 @@ class ResourcesList extends Component
     public function setTopic(string $topic)
     {
         $this->selectedTopic = $topic;
+        $this->resetPage();
     }
 
     public function render()

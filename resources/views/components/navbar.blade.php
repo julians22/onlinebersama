@@ -41,7 +41,7 @@
                     </li>
                 </ul>
                 <a
-                    ata-analytics-name="button | Find a .com"
+                    data-analytics-name="button | Find a .com"
                     href="{{ route('find') }}" class="px-4 lg:px-6 py-0.5 lg:py-2 font-medium text-navy-blue-300 btn-primary">
                     Temukan .com Anda</span>
                 </a>
