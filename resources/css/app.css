@@ -141,7 +141,7 @@
         }
         a {
             @apply flex justify-between items-center gap-x-2 font-sans font-bold text-navy-blue-300 text-[28px] leading-8;
-            img {
+            svg {
                 @apply transition-all duration-150 ease-in-out size-6 opacity-0;
             }
         }
@@ -150,8 +150,8 @@
     .sidebar-list {
         @apply flex flex-col gap-y-2 pr-6 pb-4.5;
         a {
-            @apply flex justify-between items-center gap-x-2 transition-all duration-150 ease-in-out font-sans font-semibold text-[20px] rounded-r-[10px] leading-[100%] text-navy-blue-300 py-4 pl-6 pr-4 focus:bg-mint-100;
-            img {
+            @apply flex justify-between items-center gap-x-2 transition-all duration-150 ease-in-out font-sans font-semibold text-[20px] rounded-r-[10px] leading-[100%] text-navy-blue-300 py-4 pl-6 pr-4 hover:bg-mint-100;
+            svg {
                 @apply transition-all duration-150 ease-in-out size-6 opacity-0;
             }
         }
