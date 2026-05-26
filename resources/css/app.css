@@ -114,6 +114,10 @@
     text-edge: cap;
 }
 
+@utility ns-overlay-max-width{
+    max-width: min(43.5rem, calc(100cqw - 2rem));
+}
+
 * {
     @apply box-border;
 }
