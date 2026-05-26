@@ -19,7 +19,7 @@
                             <x-icons.home width="13" height="13" fill="#1A2E47" />
                         </div>
                         <span class="font-medium text-[10px]">/</span>
-                        <a href="{{ route('resources') }}">Panduan Belajar</a>
+                        <a href="{{ route('resources.index') }}">Panduan Belajar</a>
                     </div>
                     <h1 class="headline-1 text-navy-blue-300">{{ $post->title }}</h1>
                     @if ($post->writer)

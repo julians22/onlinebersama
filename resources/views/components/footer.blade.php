@@ -26,7 +26,7 @@
                         href="{{ route('social-media') }}" class="footer-link">Untuk Media Sosial dan <span class="block">E-Commerce</span></a>
                     <a
                         data-analytics-name="text | Learning Hub"
-                        href="#" class="footer-link">Panduan Belajar</a>
+                        href="{{ route('resources.index') }}" class="footer-link">Panduan Belajar</a>
                     <a
                         data-analytics-name="text | Find a .com"
                         href="{{ route('find') }}" class="footer-link">Temukan .com Anda</a>
