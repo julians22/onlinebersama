@@ -1,6 +1,6 @@
 @props(['data'])
 
-<div class="pt-4">
+<div {{ $attributes }}>
     <h4 class="py-4">Artikel Terkait</h4>
     <div class="flex flex-col-reverse justify-between gap-4 p-4 rounded-[10px] box-shadow-sm sm:gap-8 sm:flex-row">
         <div class="flex flex-col justify-between space-y-4 sm:space-y-0 sm:pl-4">

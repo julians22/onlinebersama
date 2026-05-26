@@ -76,6 +76,6 @@
                 <p>Anda dapat menggunakan nama domain .com Anda sebagai ajakan untuk bertindak (call-to-action) di akhir video, unggahan media sosial, atau di mana pun Anda menempatkan konten untuk membantu menghasilkan kunjungan ke situs web Anda.</p>
             </div>
         </x-articles.callout-cta>
-        <x-articles.related-article :data="$post->relatedOneArticle" />
+        <x-articles.related-article :data="$post->relatedOneArticle" class="pt-4" />
     </div>
 </section>

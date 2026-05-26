@@ -76,6 +76,6 @@
                 <p>Optimalkan situs web Anda secara terus-menerus dan buat konten yang berguna bagi pengunjung situs web Anda berdasarkan data lalu lintas dan masukan dari pengguna. Susun rencana bulanan yang berisi kegiatan rutin yang perlu dilakukan. Tetapkan jadwal dan alokasikan waktu khusus untuk promosi dan pemeliharaan. Jika situs web dan konten Anda disiapkan dengan benar, pemeliharaan biasanya tidak memerlukan waktu yang lama.</p>
             </div>
         </x-articles.arrow-item-content>
-        <x-articles.related-article :data="$post->relatedOneArticle" />
+        <x-articles.related-article :data="$post->relatedOneArticle" class="pt-4" />
     </div>
 </section>

@@ -45,6 +45,6 @@
             </x-slot:title>
             <p>Anda tidak perlu merasa ragu untuk mulai membangun dan menentukan citra profesional Anda, karena ini merupakan cara memulai yang mudah dan terjangkau.</p>
         </x-articles.tip-callout>
-        <x-articles.related-article :data="$post->relatedOneArticle" />
+        <x-articles.related-article :data="$post->relatedOneArticle" class="pt-4" />
     </div>
 </section>

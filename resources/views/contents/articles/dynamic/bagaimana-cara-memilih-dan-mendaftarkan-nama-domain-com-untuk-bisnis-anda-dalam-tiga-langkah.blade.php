@@ -100,6 +100,6 @@
             <p>Bahkan jika Anda belum siap untuk meluncurkan situs web bisnis Anda sendiri, mendaftarkan nama domain tetap dapat membantu memasarkan bisnis Anda secara online.</p>
         </x-articles.tip-callout>
         <p class="text-[14px] leading-5 font-semibold"><sup>1</sup> DNIB.com</p>
-        <x-articles.related-article :data="$post->relatedOneArticle" />
+        <x-articles.related-article :data="$post->relatedOneArticle" class="pt-4" />
     </div>
 </section>

@@ -16,6 +16,9 @@
             </x-slot:title>
             <p>Perjalanan kewirausahaan memang tidak mudah, tapi sangat layak untuk dijalani! Semoga berhasil!</p>
         </x-articles.tip-callout>
-        <x-articles.related-article :data="$post->relatedOneArticle" />
+        <div class="flex flex-col gap-8 mt-8">
+            <x-articles.e-book />
+            <x-articles.related-article :data="$post->relatedOneArticle" />
+        </div>
     </div>
 </section>

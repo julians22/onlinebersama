@@ -134,6 +134,6 @@
             </x-slot:title>
             <p>Siap membangun situs web bisnis Anda sendiri? Artikel kami tentang <a href="{{ route('resources.show', 'cara-memilih-pembuat-situs-web') }}" class="link-to">cara memilih pembuat situs web yang tepat</a> untuk bisnis Anda dan <a href="{{ route('resources.show', 'daftar-periksa-membuat-situs-web') }}" class="link-to">daftar periksa pembuatan situs web</a> dapat membantu Anda memulai.</p>
         </x-articles.tip-callout>
-        <x-articles.related-article :data="$post->relatedOneArticle" />
+        <x-articles.related-article :data="$post->relatedOneArticle" class="pt-4" />
     </div>
 </section>

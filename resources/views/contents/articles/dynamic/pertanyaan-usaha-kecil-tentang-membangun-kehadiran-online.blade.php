@@ -48,6 +48,6 @@
             </x-slot:title>
             <p>Memulai kehadiran online dengan nama domain .com adalah cara yang cepat dan mudah untuk membawa produk atau layanan Anda ke tingkat berikutnya. Baik mengembangkan merek, memperluas jangkauan, maupun menjalin hubungan dengan pelanggan baru, sekarang adalah waktu yang tepat untuk terhubung secara online.</p>
         </x-articles.tip-callout>
-        <x-articles.related-article :data="$post->relatedOneArticle" />
+        <x-articles.related-article :data="$post->relatedOneArticle" class="pt-4" />
     </div>
 </section>

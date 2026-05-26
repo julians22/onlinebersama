@@ -156,6 +156,6 @@
             </x-slot:title>
             <p>Setelah Anda memilih pembuat situs web terbaik untuk bisnis dan membangun situs web, Anda dapat mulai mempromosikan situs sehingga orang dapat menemukan Anda. <a href="{{ route('resources.show', 'sepuluh-cara-untuk-memasarkan-bisnis-dengan-nama-domain-com') }}" class="link-to">Panduan</a> kami tentang cara memasarkan bisnis Anda dengan nama domain .com dapat membantu Anda memulai.</p>
         </x-articles.tip-callout>
-        <x-articles.related-article :data="$post->relatedOneArticle" />
+        <x-articles.related-article :data="$post->relatedOneArticle" class="pt-4" />
     </div>
 </section>

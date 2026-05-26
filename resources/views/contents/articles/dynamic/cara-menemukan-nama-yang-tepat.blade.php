@@ -6,7 +6,7 @@
         <h3>Langkah 1: Mendiskusikan Nama Potensial</h3>
         <p>Ada banyak faktor yang perlu dipertimbangkan saat memilih nama perusahaan baru: apakah mudah diucapkan? Apakah nama tersebut membangun ekspektasi tentang perusahaan Anda? Apakah terlalu mirip dengan nama perusahaan lain? Apakah Anda mendapatkan nama domain .com yang baik untuk situs web Anda?</p>
         <p>Jika Anda membutuhkan bantuan, ada mesin pencari nama online, seperti NameStudio.com.</p>
-        <img class="rounded-[10px]" src="{{ asset('images/placeholder-video-why-com.jpg') }}" alt="">
+        <img class="rounded-[10px]" src="{{ asset('images/mid-article-image-6.jpg') }}" alt="">
         <p>Anda hanya membutuhkan sebuah ide, dan NameStudio dapat mengubahnya menjadi saran nama bisnis yang bagus beserta nama domain yang tersedia. Saya selalu menyarankan untuk menggunakan nama domain .com karena terpercaya, dikenal, dan digunakan di seluruh dunia.</p>
         <h3>Langkah 2: Riset Perusahaan dengan Nama Serupa</h3>
         <p>Setelah Anda mengidentifikasi nama yang Anda sukai, dan Anda tahu bahwa ada nama domain .com yang dapat Anda daftarkan, langkah berikutnya adalah melihat apakah ada perusahaan lain di industri Anda yang menggunakan nama serupa dengan nama tersebut. Anda mungkin menemukan bahwa meskipun tidak ada perusahaan dengan nama yang sama, mungkin ada perusahaan yang mendapat peringkat tinggi pada halaman hasil mesin pencari dengan nama serupa. Jika namanya terlalu mirip dengan nama Anda sebaiknya beralih ke nama lain agar Anda tidak berisiko membingungkan calon pelanggan.</p>
@@ -21,6 +21,9 @@
             </x-slot:title>
             <p>Idealnya, nama bisnis Anda dapat mencerminkan proposisi nilai unik — yaitu hal yang ingin Anda lakukan lebih baik dibanding siapa pun. Jika hal tersebut bisa tercermin dalam nama Anda, produk Anda akan mungkin akan laku dengan sendirinya!</p>
         </x-articles.tip-callout>
-        <x-articles.related-article :data="$post->relatedOneArticle" />
+        <div class="flex flex-col gap-8 mt-8">
+            <x-articles.e-book />
+            <x-articles.related-article :data="$post->relatedOneArticle" />
+        </div>
     </div>
 </section>
