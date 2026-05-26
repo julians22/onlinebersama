@@ -117,7 +117,7 @@
         <div class="top-0 left-1/2 absolute flex flex-col justify-start gap-6 size-full -translate-x-1/2 py-10 container md:py-0 md:justify-center">
             <h2 class="text-navy-blue-300 headline-1">Mencari sumber <span class="block">informasi lainnya?</span></h2>
             <p class="max-w-150 text-deep-blue-300 paragraph-md md:leading-8.5!">Jelajahi Panduan Belajar untuk menemukan semua artikel, video, dan banyak lagi tentang cara menggunakan domain .com.</p>
-            <a href="{{ route('resources') }}" class="px-6 py-3 text-[18px]! font-bold btn-secondary sm:w-max">Kunjungi Panduan Belajar</a>
+            <a href="{{ route('resources.index') }}" class="px-6 py-3 text-[18px]! font-bold btn-secondary sm:w-max">Kunjungi Panduan Belajar</a>
         </div>
     </section>
     <section

@@ -18,11 +18,12 @@ Route::controller(UseCaseController::class)->group(function() {
     Route::get('/situs-web-profesional', 'websites')->name('websites');
 });
 
-Route::name('resources')->group(function() {
+Route::name('resources.')->group(function() {
     Route::controller(ResourcesPageController::class)->group(function() {
-        Route::get('/kumpulan-materi', 'index');
-        Route::get('{slug}', 'show')->name('.show');
-
-        Route::get('/kumpulan-materi/toolbox', 'toolbox')->name('toolbox');
+        Route::get('/panduan-belajar', 'index')->name('index');
+        Route::get('/panduan-belajar/{slug}', 'show')->name('show');
+        // Route::get('/panduan-belajar/toolbox', 'toolbox')->name('toolbox');
     });
 });
+
+Route::get('kumpulan-materi', fn() => redirect()->route('resources.index'));
