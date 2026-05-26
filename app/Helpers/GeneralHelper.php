@@ -34,3 +34,15 @@ if (!function_exists('')) {
         return $appName;
     }
 }
+
+if (!function_exists('imageArticle')) {
+    function imageArticle(string $slug)
+    {
+        $check_image_exists = file_exists(public_path('images/articles/' . $slug . '.jpg'));
+        if (!$check_image_exists) {
+            return asset('images/articles/default-image.jpg');
+        }
+
+        return asset('images/articles/' . $slug . '.jpg');
+    }
+}

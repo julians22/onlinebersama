@@ -3,7 +3,6 @@
 namespace Database\Seeders;
 
 use App\Models\Post;
-use App\Models\PostCategory;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Artisan;
@@ -27,10 +26,6 @@ class PostSeeder extends Seeder
         // 9. Sepuluh Cara Memasarkan Bisnis Dengan Nama Domain .com
         // 10. Pertanyaan Usaha Kecil Tentang Membangun Kehadiran Online
 
-        $post_category = PostCategory::create([
-            'name' => 'Artikel'
-        ]);
-
         $articles = [
             'Apa Itu Penerusan Nama Domain?',
             'Cara Memilih Pembuat Situs Web',
@@ -48,7 +43,6 @@ class PostSeeder extends Seeder
             Post::create([
                 'title' => $article,
                 'type' => 'article',
-                'post_category_id' => $post_category->id,
                 'status' => 'published',
                 'read_time' => rand(1, 10) . ' menit',
                 'meta_title' => $article,
@@ -58,7 +52,7 @@ class PostSeeder extends Seeder
         }
 
         // update article post template view path, use slug of the post title
-        $posts = $post_category->posts()->where('type', 'article')->get();
+        $posts = Post::where('type', 'article')->get();
         foreach ($posts as $post) {
 
             // create view file for the post template view path

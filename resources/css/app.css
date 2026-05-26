@@ -81,7 +81,7 @@
 @utility container {
     margin-inline: auto;
     padding-inline: 16px;
-    max-width: 1440px;
+    max-width: 1520px;
     width: 100%;
 
     @variant md {
@@ -104,6 +104,14 @@
     margin-inline: auto;
     max-width: 904px;
     width: 100%;
+}
+
+@utility trim-both {
+    leading-trim: both;
+}
+
+@utility edge-cap {
+    text-edge: cap;
 }
 
 * {
@@ -165,6 +173,76 @@
         @apply block bg-magenta-300 hover:bg-magenta-400 focus:bg-magenta-200 lg:p-4 px-4 py-0.5 border border-transparent focus:border-magenta-300 rounded-full text-white hover:text-light-gray-300 text-sm lg:text-xl text-center leading-6 transition-all duration-150 ease-in-out;
     }
 
+    /* Select */
+
+    button.select-dropdown {
+        @apply w-full flex items-center justify-between gap-x-2.5 font-sans text-left font-semibold text-xl rounded-[10px] text-deep-blue-300 border border-light-gray-500 leading-7.5 cursor-pointer bg-white px-4 py-3;
+    }
+
+    .option-dropdown {
+        @apply flex flex-col gap-3 top-full bg-white rounded-[10px] overflow-hidden z-10 mt-1.5 inset-x-0 shadow-md min-h-10 absolute py-3 max-h-87.5 overflow-y-auto;
+        button, a {
+            @apply px-4 py-2 font-sans text-left font-semibold text-xl text-deep-blue-300 leading-7.5 cursor-pointer bg-white transition-colors duration-300;
+            &:hover {
+                @apply bg-mint-300;
+            }
+        }
+    }
+
+    /* Article */
+
+    .article-outer {
+        @apply px-4 md:px-8;
+    }
+
+    .article-wrapper {
+        @apply container-extra-smaller flex flex-col gap-6 py-10 md:gap-8 md:py-11;
+        .anchor-link {
+            @apply flex flex-col gap-3;
+            a {
+                @apply font-sans text-[22px] font-semibold leading-[140%] text-deep-blue-300;
+            }
+        }
+        a.link-to {
+            @apply text-magenta-300 underline;
+        }
+        span.tooltip {
+            @apply relative text-magenta-300 underline decoration-dotted;
+            &::after {
+                @apply absolute left-1/2 -translate-x-1/2 top-full mt-1 w-73.75 p-4 rounded-[10px] text-[14px] text-black bg-[#e0f2ec] font-semibold leading-5 opacity-0 transition-opacity duration-300 invisible;
+                content: attr(data-tooltip);
+            }
+            &:hover::after {
+                @apply opacity-100 visible;
+            }
+        }
+        h3 {
+            @apply font-sans font-semibold text-[32px] leading-10 tracking-[0.25px] text-deep-blue-300 md:text-[40px] md:leading-12 lg:leading-11.5;
+            &.smaller {
+                @apply text-[26px]! md:leading-9.5! md:text-[32px]! lg:leading-normal!;
+            }
+        }
+        h4 {
+            @apply font-sans font-semibold text-[20px] leading-6.25 tracking-[0.25px] text-deep-blue-300 md:text-[28px] md:leading-7.5 lg:leading-10.5;
+        }
+        p, span {
+            @apply font-sans font-medium text-[18px] leading-7 tracking-[0.25px] text-deep-blue-300 md:text-[24px] md:leading-8.5;
+        }
+        ul {
+            @apply pl-5;
+            li {
+                @apply relative font-sans font-medium text-[18px] leading-7 tracking-[0.25px] text-deep-blue-300 md:text-[24px] md:leading-8.5;
+                &::before {
+                    @apply absolute -left-5 top-3.5 size-1 bg-deep-blue-300 rounded-full content-[''];
+                }
+            }
+        }
+    }
+
+    .article-child-wrapper {
+        @apply flex flex-col gap-6 md:gap-8
+    }
+
     /* Footer */
 
     .footer-link {
@@ -221,23 +299,23 @@
 
     /* Paragraph */
 
-    p.paragraph-lg {
+    .paragraph-lg {
         @apply font-sans font-medium text-[20px] md:text-[32px] leading-7.5 md:leading-9.5 lg:leading-11 tracking-[0.25px];
     }
 
-    p.paragraph-md {
+    .paragraph-md {
         @apply font-sans font-medium text-[18px] md:text-[24px] leading-7 tracking-[0.25px];
     }
 
-    p.paragraph-sm {
+    .paragraph-sm {
         @apply font-sans font-medium md:font-semibold text-[16px] md:text-[20px] leading-6 md:leading-7.5 tracking-[0.25px];
     }
 
-    p.paragraph-xs {
+    .paragraph-xs {
         @apply font-sans font-medium md:font-semibold text-[12px] md:text-[14px] leading-4.5 md:leading-4 lg:leading-5 tracking-[0.25px];
     }
 
-    .paragraph-steps{
+    .paragraph-steps {
         @apply font-sans font-medium md:font-semibold text-[22px] leading-[140%] tracking-[1.1px];
     }
 
@@ -293,17 +371,23 @@
             @apply w-156 rounded-[10px] mx-auto;
         }
         .overlay-slide {
-            @apply absolute transition-all duration-500 ease-in-out -bottom-full left-1/2 -translate-x-1/2 flex flex-col justify-end inset-0 w-156 text-white rounded-[10px] p-8;
+            @apply flex transition-all duration-500 ease-in-out bottom-0 flex-col justify-end w-full opacity-0 text-deep-blue-300 space-y-2 rounded-[10px] px-0 mt-4 md:absolute md:text-white md:left-1/2 md:-translate-x-1/2 md:-bottom-full md:inset-0 md:p-6 md:mt-0 md:space-y-0 md:opacity-100 lg:p-8 lg:w-156;
+            h4 {
+                @apply font-extrabold!;
+            }
+            p {
+                @apply font-semibold!;
+            }
         }
         button {
-            @apply absolute transition-all duration-500 ease-in-out scale-0 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer;
+            @apply absolute transition-all duration-500 ease-in-out scale-0 top-1/2 left-1/2 -translate-x-1/2 -translate-y-[110%] cursor-pointer md:-translate-y-1/2;
             img {
                 @apply size-19.5;
             }
         }
         &.swiper-slide-active {
             .overlay-slide {
-                @apply bottom-0!;
+                @apply opacity-100 bottom-0!;
             }
             button {
                 @apply scale-100!;
@@ -325,9 +409,24 @@
     }
 }
 
-/* How to Use (SLIDER) */
+/* Explore More Topics (SLIDER) */
 
-.online-bersama-how-to-use {
+.online-bersama-explore-more-topics {
+    @apply overflow-visible! py-12!;
+    .swiper-pagination {
+        @apply flex justify-center items-center gap-2.5;
+        .swiper-pagination-bullet {
+            @apply transition-all duration-150 ease-in-out size-2.25 bg-[#e1e8ef] outline-none opacity-100! m-0!;
+            &.swiper-pagination-bullet-active {
+                @apply size-3! bg-[#b3c5d7];
+            }
+        }
+    }
+}
+
+/* How to Use (SLIDER - Card Grow) */
+
+.online-bersama-how-to-use-grow {
     @apply overflow-visible! py-12!;
     .swiper-slide {
         @apply rounded-[10px]! xl:w-full! xl:transition-all! xl:duration-700! xl:ease-in-out!;
@@ -337,11 +436,11 @@
         &.not-hovered {
             @apply xl:basis-[23.2%];
         }
-        #card-grow-action {
+        .card-grow-action {
             @apply transition-all duration-500 ease-in-out translate-y-20 opacity-0;
         }
         &.swiper-slide-active {
-            #card-grow-action {
+            .card-grow-action {
                 @apply transition-all duration-500 ease-in-out translate-y-0 opacity-100;
             }
         }
@@ -357,16 +456,16 @@
     }
 }
 
-/* [Find a .com] How to Use (SLIDER) */
+/* How to Use (SLIDER - Card Inside) */
 
-.online-bersama-find-how-to-use {
+.online-bersama-how-to-use {
     @apply overflow-visible! py-12!;
     .swiper-slide {
-        #card-grow-action {
+        .card-grow-action {
             @apply transition-all duration-500 ease-in-out max-xl:translate-y-20 max-xl:opacity-0;
         }
         &.swiper-slide-active {
-            #card-grow-action {
+            .card-grow-action {
                 @apply transition-all duration-500 ease-in-out max-xl:translate-y-0 max-xl:opacity-100;
             }
         }

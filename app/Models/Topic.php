@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 use Spatie\Sluggable\HasSlug;
 use Spatie\Sluggable\SlugOptions;
 
-class PostCategory extends Model
+class Topic extends Model
 {
     use HasSlug;
 
@@ -15,7 +15,8 @@ class PostCategory extends Model
      *
      * @var array
      */
-    protected $fillable = ['name', 'slug', 'description'];
+    protected $fillable = ['name', 'slug'];
+
 
     /**
      * Get the options for generating the slug.
@@ -24,11 +25,7 @@ class PostCategory extends Model
     {
         return SlugOptions::create()
             ->generateSlugsFrom('name')
+            ->doNotGenerateSlugsOnUpdate()
             ->saveSlugsTo('slug');
-    }
-
-    public function posts()
-    {
-        return $this->hasMany(Post::class, 'post_category_id');
     }
 }

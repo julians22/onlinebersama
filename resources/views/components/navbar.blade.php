@@ -41,7 +41,7 @@
                     </li>
                 </ul>
                 <a
-                    ata-analytics-name="button | Find a .com"
+                    data-analytics-name="button | Find a .com"
                     href="{{ route('find') }}" class="px-4 lg:px-6 py-0.5 lg:py-2 font-medium text-navy-blue-300 btn-primary">
                     Temukan .com Anda</span>
                 </a>
@@ -52,13 +52,13 @@
     <div
         data-analytics-level2="topnav expanded"
         @click.outside="dropdown = false" x-cloak x-show="dropdown" class="z-[-1] relative"
-            x-transition:enter="transition-all ease-in-out duration-300"
-            x-transition:enter-start="-translate-y-[1100px] xl:-translate-y-[350px]"
-            x-transition:enter-end="translate-y-0"
-            x-transition:leave="transition-all ease-in-out duration-300"
-            x-transition:leave-start="translate-y-0"
-            x-transition:leave-end="-translate-y-[1100px] xl:-translate-y-[350px]"
-        >
+        x-transition:enter="transition-all ease-in-out duration-300"
+        x-transition:enter-start="-translate-y-[1100px] xl:-translate-y-[350px]"
+        x-transition:enter-end="translate-y-0"
+        x-transition:leave="transition-all ease-in-out duration-300"
+        x-transition:leave-start="translate-y-0"
+        x-transition:leave-end="-translate-y-[1100px] xl:-translate-y-[350px]"
+    >
         <div class="absolute hidden top-0 left-1/2 -translate-x-1/2 w-full bg-white after:absolute after:top-0 after:right-0 after:w-1/2 after:h-full after:bg-light-gray-100 lg:block">
             <div class="relative z-10 max-w-480 flex bg-white mx-auto lg:flex-col xl:flex-row">
                 <div class="gap-6 grid grid-cols-3 p-10 h-max 2xl:gap-10">
