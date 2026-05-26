@@ -40,7 +40,7 @@
                     <li class="flex items-center text-right">
                         <a
                             data-analytics-name="text | Learning Hub"
-                            href="{{ route('resources') }}" class="nav-link">Panduan Belajar</a>
+                            href="{{ route('resources.index') }}" class="nav-link">Panduan Belajar</a>
                     </li>
                 </ul>
                 <a
@@ -164,7 +164,7 @@
                 <div class="sidebar-link">
                     <a
                         data-analytics-name="text | Learning Hub"
-                        href="{{ route('resources') }}" class="group">
+                        href="{{ route('resources.index') }}" class="group">
                         Panduan Belajar
                         <img class="group-focus:opacity-100" src="{{ asset('images/icons/black-chevron-right.svg') }}" alt="">
                     </a>
