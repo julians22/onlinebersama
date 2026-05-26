@@ -1,6 +1,6 @@
 <header
     data-analytics-level1="topnav"
-    x-data="{ dropdown: false, sidebar: false }"
+    x-data="{ dropdown: false, sidebar: false, expandedDataText: 'click expand | How Do I Use a .com?', collapsedDataText: 'click collapse | How Do I Use a .com?' }"
     class="top-0 right-0 z-50 sticky w-full">
     {{-- Navigation Menu --}}
     <!-- Desktop Navigation -->
@@ -31,7 +31,7 @@
                     </li>
                     <li class="max-w-55 min-[1200px]:max-w-full">
                         <button
-                            data-analytics-name="hover expand | How Do I use a .com?"
+                            :data-analytics-name="dropdown ? expandedDataText : collapsedDataText"
                             type="button"@click="dropdown = !dropdown" class="nav-link nav-dropdown text-right">
                             Bagaimana Cara Menggunakan .com?
                             <img class="transition-all duration-300 ease-in-out" :class="dropdown ? '-rotate-180' : 'rotate-0'" src="{{ asset('images/icons/white-arrow-down.svg') }}">
