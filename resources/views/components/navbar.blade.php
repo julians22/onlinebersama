@@ -31,7 +31,7 @@
                     </li>
                     <li class="max-w-55 min-[1200px]:max-w-full">
                         <button
-                            :data-analytics-name="dropdown ? expandedDataText : collapsedDataText"
+                            :data-analytics-name="dropdown ? collapsedDataText : expandedDataText"
                             type="button"@click="dropdown = !dropdown" class="nav-link nav-dropdown text-right">
                             Bagaimana Cara Menggunakan .com?
                             <img class="transition-all duration-300 ease-in-out" :class="dropdown ? '-rotate-180' : 'rotate-0'" src="{{ asset('images/icons/white-arrow-down.svg') }}">
