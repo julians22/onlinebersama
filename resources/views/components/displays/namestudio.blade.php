@@ -524,7 +524,7 @@
         <livewire:name-studio-overlay>
     @endif
 
-    <name-studio api-key="0a102daba8f361dbb755a492ba034ead" engine-ai-mode="always" entry-mode="prompt" tlds="com"
+    <name-studio api-key="{{ config('onlinebersama.namestudio_api_key') }}" engine-ai-mode="always" entry-mode="prompt" tlds="com"
         data-ns-revision="2026-05-11">
         <script type="application/json" data-type="name-studio">
             {"i18n":{"id":{"namestudio-search":{"prompt":{"placeholder":"Temukan Nama Domain","btnreset":"","btngenerate":"Cari","btngenerateloading":"Cari","btngenerateregenerate":"Cari"}}}},"legal":{"terms":"https://onlinebersama.com/staging/persyaratan-layanan"}}

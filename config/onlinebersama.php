@@ -12,4 +12,14 @@ return [
     |
     */
     'namestudio_overlay_enabled' => env('NAMESTUDIO_OVERLAY_ENABLED', false),
+
+    /*
+    |--------------------------------------------------------------------------
+    | Namestudio API Key
+    |--------------------------------------------------------------------------
+    |
+    | This option is for the Namestudio API key. You can set this in your ".env" file using the NAMESTUDIO_API_KEY variable
+    |
+    */
+    'namestudio_api_key' => env('NAMESTUDIO_API_KEY', ''),
 ];
