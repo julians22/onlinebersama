@@ -50,17 +50,17 @@
                         <a
                             data-analytics-name="icon | Facebook"
                             href="#" class="py-2">
-                            <img src="{{ asset('images/icons/white-facebook-icon.svg') }}" alt="">
+                            <x-icons.facebook width="24" height="24" fill="#fff" />
                         </a>
                         <a
                             data-analytics-name="icon | LinkedIn"
                             href="#" class="py-2">
-                            <img src="{{ asset('images/icons/white-linkedin-icon.svg') }}" alt="">
+                            <x-icons.linkedin width="24" height="24" fill="#fff" />
                         </a>
                         <a
                             data-analytics-name="icon | X"
                             href="#" class="py-2">
-                            <img src="{{ asset('images/icons/white-x-icon.svg') }}" alt="">
+                            <x-icons.x width="24" height="24" fill="#fff" />
                         </a>
                     </div>
                 </div>

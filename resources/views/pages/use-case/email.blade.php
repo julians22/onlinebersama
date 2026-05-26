@@ -5,19 +5,33 @@
 @section('content')
 
 <main>
-    <section class="bg-light-gray-100">
+    {{-- Hero --}}
+    <section
+        data-analytics-level2="hero section | Email Use Case"
+        class="bg-light-gray-100">
         <div class="flex justify-between items-center flex-col gap-10.75 py-10 container md:gap-20 md:py-15.5 lg:flex-row">
             <div class="space-y-4">
                 <h1 class="text-navy-blue-300 headline-1">.com untuk Email</h1>
                 <p class="text-deep-blue-300 paragraph-md">Jadikan email sebagai pernyataan kredibilitas. Dengan alamat email .com kustom, email bisnis Anda dapat terlihat lebih profesional.</p>
             </div>
-            <button type="button" class="group relative rounded-[10px] overflow-hidden shrink-0 cursor-pointer">
+            <div class="relative rounded-[10px] overflow-hidden shrink-0">
                 <div class="top-0 left-0 absolute bg-black/30 size-full"></div>
-                <img class="box-shadow-sm w-156 object-cover aspect-video lg:w-125 xl:w-156" src="{{ asset('images/uc-email.jpg') }}" alt="">
-                <img class="transition-all duration-300 ease-in-out size-19.5 top-1/2 left-1/2 absolute -translate-x-1/2 -translate-y-1/2 group-hover:scale-110" src="{{ asset('images/icons/white-play-rounded.svg') }}" alt="">
-            </button>
+                <img
+                    data-analytics-name="video image | Email Use Case"
+                    class="box-shadow-sm w-156 object-cover aspect-video lg:w-125 xl:w-156"
+                    src="{{ asset('images/uc-email.jpg') }}" alt="">
+                <button
+                    data-analytics-name="play button | Email Use Case"
+                    type="button"
+                    class="absolute transition-all duration-300 ease-in-out top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer hover:scale-110">
+                    <img class="size-19.5" src="{{ asset('images/icons/white-play-rounded.svg') }}" alt="">
+                </button>
+            </div>
         </div>
     </section>
+    {{-- End Hero --}}
+
+    {{-- Benefits --}}
     <section class="py-10 container">
         <h2 class="mb-10 text-navy-blue-300 text-center headline-1">Manfaat Email Kustom</h2>
         <div class="flex flex-col gap-6 mx-auto max-w-md md:max-w-208">
@@ -41,6 +55,9 @@
             <a href="#" class="px-10 py-3 font-bold btn-secondary text-[18px]! w-full sm:w-auto">Ketahui Manfaat Lainnya</a>
         </div>
     </section>
+    {{-- End Benefits --}}
+
+    {{-- Content --}}
     <section class="bg-gradient-blue-double">
         <div class="flex justify-center items-center gap-10 px-10 py-10 flex-col container md:px-8 md:gap-12 md:py-20 xl:flex-row">
             <button type="button" class="group relative rounded-[10px] overflow-hidden shrink-0 cursor-pointer">
@@ -53,6 +70,9 @@
             </div>
         </div>
     </section>
+    {{-- End Content --}}
+
+    {{-- List Point --}}
     <section class="flex items-center gap-10 py-10 container flex-col md:py-19.5 xl:gap-28 xl:flex-row 2xl:gap-44">
         <div class="top-32 flex flex-col gap-11.5 xl:sticky">
             <h2 class="text-navy-blue-300 headline-1 text-center md:text-[48px]! md:leading-15.5!">Cara Menyiapkan Alamat <span class="sm:block">Email Kustom</span></h2>
@@ -102,6 +122,9 @@
             </div>
         </div>
     </section>
+    {{-- End List Point --}}
+
+    {{-- How To Use --}}
     <section class="bg-light-gray-100">
         <div class="flex flex-col gap-10 py-10 container md:pb-19.5">
             <h2 class="text-navy-blue-300 text-center headline-1">Bagaimana Cara Menggunakan .com?</h2>
@@ -111,6 +134,9 @@
             </div>
         </div>
     </section>
+    {{-- End How To Use --}}
+
+    {{-- Other Information --}}
     <section class="relative bg-[#F0EAE4]">
         <img class="mx-auto object-cover hidden h-150 md:block 2xl:h-auto" src="{{ asset('images/hero-resources-usecase.jpg') }}" alt="">
         <img class="w-full block h-187.5 object-cover md:h-auto md:hidden" src="{{ asset('images/hero-resources-usecase-mobile.jpg') }}" alt="">
@@ -120,6 +146,9 @@
             <a href="{{ route('resources') }}" class="px-6 py-3 text-[18px]! font-bold btn-secondary sm:w-max">Kunjungi Panduan Belajar</a>
         </div>
     </section>
+    {{-- End Other Information --}}
+
+    {{-- Search --}}
     <section
         class="bg-deep-blue-300 py-16 lg:py-22">
         <div class="container flex flex-col justify-center items-center">
@@ -129,6 +158,7 @@
         </div>
         <x-displays.namestudio/>
     </section>
+    {{-- End Search --}}
 </main>
 
 @endsection

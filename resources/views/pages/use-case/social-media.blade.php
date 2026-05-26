@@ -5,6 +5,7 @@
 @section('content')
 
 <main>
+    {{-- Hero --}}
     <section class="bg-light-gray-100">
         <div class="flex justify-between items-center flex-col gap-10.75 py-10 container md:gap-20 md:py-15.5 lg:flex-row">
             <div class="space-y-4">
@@ -18,6 +19,9 @@
             </button>
         </div>
     </section>
+    {{-- End Hero --}}
+
+    {{-- Benefits --}}
     <section class="py-10 container">
         <h2 class="mb-10 text-navy-blue-300 text-center headline-1">Manfaat Penerusan Domain</span></h2>
         <div class="flex flex-col gap-6 mx-auto max-w-md md:max-w-208">
@@ -41,6 +45,9 @@
             <a href="#" class="px-10 py-3 font-bold btn-secondary text-[18px]! w-full sm:w-auto">Ketahui Manfaat Lainnya</a>
         </div>
     </section>
+    {{-- End Benefits --}}
+
+    {{-- Content --}}
     <section class="bg-deep-blue-300">
         <div class="max-w-380 mx-auto pt-10 pb-19.5 px-4 md:px-8 xl:px-0">
             <h2 class="mb-6 text-white text-center headline-1 md:mb-13">Dua Cara untuk Menggunakan Penerusan Domain</h2>
@@ -78,6 +85,9 @@
             </div>
         </div>
     </section>
+    {{-- End Content --}}
+
+    {{-- List Point --}}
     <section class="flex items-center gap-10 py-10 container flex-col md:py-19.5 xl:gap-28 xl:flex-row 2xl:gap-44">
         <div class="top-32 flex flex-col gap-11.5 xl:sticky">
             <h2 class="text-navy-blue-300 headline-1 text-center md:text-[48px]! md:leading-15.5!">Cara Meneruskan Nama Domain Anda</h2>
@@ -127,6 +137,9 @@
             </div>
         </div>
     </section>
+    {{-- End List Point --}}
+
+    {{-- How To Use --}}
     <section class="bg-light-gray-100">
         <div class="flex flex-col gap-10 py-10 container md:pb-19.5">
             <h2 class="text-navy-blue-300 text-center headline-1">Bagaimana Cara Menggunakan .com?</h2>
@@ -136,6 +149,9 @@
             </div>
         </div>
     </section>
+    {{-- End How To Use --}}
+
+    {{-- Other Information --}}
     <section class="relative bg-[#F0EAE4]">
         <img class="mx-auto object-cover hidden h-150 md:block 2xl:h-auto" src="{{ asset('images/hero-resources-usecase.jpg') }}" alt="">
         <img class="w-full block h-187.5 object-cover md:h-auto md:hidden" src="{{ asset('images/hero-resources-usecase-mobile.jpg') }}" alt="">
@@ -145,6 +161,9 @@
             <a href="{{ route('resources') }}" class="px-6 py-3 text-[18px]! font-bold btn-secondary sm:w-max">Kunjungi Panduan Belajar</a>
         </div>
     </section>
+    {{-- End Other Information --}}
+
+    {{-- Search --}}
     <section
         class="bg-deep-blue-300 py-16 lg:py-22">
         <div class="container flex flex-col justify-center items-center">
@@ -154,6 +173,7 @@
         </div>
         <x-displays.namestudio/>
     </section>
+    {{-- End Search --}}
 </main>
 
 @endsection

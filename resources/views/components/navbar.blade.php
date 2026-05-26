@@ -93,7 +93,7 @@
                 <div class="flex flex-col gap-4 bg-light-gray-100 p-10 w-full xl:max-w-117.5">
                     <button data-analytics-name="video image | Startup Experience" type="button" class="group relative rounded-2xl w-full aspect-video overflow-hidden cursor-pointer lg:max-w-117.5 xl:max-w-full 2xl:max-w-97.5 2xl:h-54.25">
                         <span data-analytics-name="play button | Startup Experience" class="transition-all duration-300 ease-in-out top-1/2 left-1/2 absolute size-14 -translate-x-1/2 -translate-y-1/2 group-hover:scale-110">
-                            <img class="size-full" src="{{ asset('images/icons/white-play.svg') }}">
+                            <x-icons.play width="56" height="56" fill="#fff" />
                         </span>
                         <img class="size-full object-cover object-top" src="{{ asset('images/placeholder-video-navbar.jpg') }}" alt="Placeholder Video">
                     </button>
