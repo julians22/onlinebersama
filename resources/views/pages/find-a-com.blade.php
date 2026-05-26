@@ -1,6 +1,6 @@
 @extends('app')
 
-@section('title', 'Find a .com')
+@section('title', 'Temukan dan Tukar Pikiran Ide Nama Domain .com yang Tersedia')
 
 @section('content')
 

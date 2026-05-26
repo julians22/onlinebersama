@@ -1,6 +1,6 @@
 @extends('app')
 
-@section('title', 'Use Case - Websites')
+@section('title', 'Situs Web Profesional | Cara  Menggunakan Nama Domain .com')
 
 @section('content')
 

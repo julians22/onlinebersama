@@ -1,6 +1,6 @@
 @extends('app')
 
-@section('title', 'Homepage')
+@section('title', 'Di Mana Dunia Menemukanmu | .com')
 
 @section('content')
 
