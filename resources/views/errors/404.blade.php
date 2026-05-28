@@ -8,7 +8,12 @@
         <h3 class="subheadline-4 font-semibold! md:subheadline-3">Maaf, halaman yang Anda cari tidak ditemukan!</h3>
     </div>
     <div class="flex justify-center">
-        <a href="{{ route('index') }}" class="w-full max-w-61.75 font-bold btn-secondary py-4 text-[18px]!">Kembali ke Beranda</a>
+        <a
+            data-analytics-name="button | Back to Home"
+            href="{{ route('index') }}"
+            class="w-full max-w-61.75 font-bold btn-secondary py-4 text-[18px]!">
+            Kembali ke Beranda
+        </a>
     </div>
 </main>
 

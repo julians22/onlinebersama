@@ -64,15 +64,15 @@
             <x-articles.workflow header="Pilihan Penerusan">
                 Hanya Penerusan
             </x-articles.workflow>
-            <x-icons.arrow-rounded width="20" height="20" fill="#A7127E" class="row-span-2 rotate-90 mx-auto my-2 lg:mx-0 lg:my-0 lg:rotate-0" />
+            <x-icons.arrow-rounded width="24" height="24" fill="#A7127E" class="row-span-2 rotate-90 mx-auto my-2 lg:mx-0 lg:my-0 lg:rotate-0" />
             <x-articles.workflow header="URL yang Diketik Pengunjung" class="break-all">
                 TipsCantikMudah.com
             </x-articles.workflow>
-            <x-icons.arrow-rounded width="20" height="20" fill="#A7127E" class="row-span-2 rotate-90 mx-auto my-2 lg:mx-0 lg:my-0 lg:rotate-0" />
+            <x-icons.arrow-rounded width="24" height="24" fill="#A7127E" class="row-span-2 rotate-90 mx-auto my-2 lg:mx-0 lg:my-0 lg:rotate-0" />
             <x-articles.workflow header="URL Situs Web yang Dilihat Pengunjung" class="break-all">
                 AkunMediaSosialAnda.com/tipscantikmudah
             </x-articles.workflow>
-            <x-icons.arrow-rounded width="20" height="20" fill="#A7127E" class="row-span-2 rotate-90 mx-auto my-2 lg:mx-0 lg:my-0 lg:rotate-0" />
+            <x-icons.arrow-rounded width="24" height="24" fill="#A7127E" class="row-span-2 rotate-90 mx-auto my-2 lg:mx-0 lg:my-0 lg:rotate-0" />
             <x-articles.workflow header="Tampilan Baris Alamat" class="break-all">
                 AkunMediaSosialAnda.com/tipscantikmudah
             </x-articles.workflow>

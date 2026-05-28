@@ -5,7 +5,10 @@
 @section('content')
 
 <main>
-    <section class="bg-deep-blue-300 py-16 md:py-25 lg:py-40">
+    {{-- Hero --}}
+    <section
+        data-analytics-level2="hero"
+        class="bg-deep-blue-300 py-16 md:py-25 lg:py-40">
         <div class="flex flex-col items-center gap-8 text-white text-center container">
             <div class="space-y-2.5 md:max-w-175 lg:max-w-full">
                 <h1 class="headline-1">Temukan Nama Domain .com</h1>
@@ -16,32 +19,60 @@
             <x-displays.namestudio/>
         </div>
     </section>
-    <section class="flex justify-center items-center gap-6 py-10 container flex-col-reverse md:py-20 lg:gap-12 lg:flex-row">
-        <button type="button" class="group relative aspect-video rounded-[10px] cursor-pointer overflow-hidden max-w-lg md:w-150">
+    {{-- End Hero --}}
+
+    {{-- Three Tips --}}
+    <section
+        data-analytics-level2="Tiga Tip Memilih Nama Domain .com"
+        class="flex justify-center items-center gap-6 py-10 container flex-col-reverse md:py-20 lg:gap-12 lg:flex-row">
+        <button
+            data-analytics-name="animation image | Tiga Tip Memilih Nama Domain .com"
+            type="button" class="group relative aspect-video rounded-[10px] cursor-pointer overflow-hidden max-w-lg md:w-150">
             <img class="size-full" src="{{ asset('images/placeholder-video-find.jpg') }}" alt="">
             <img class="transition-all duration-150 ease-in-out top-1/2 left-1/2 absolute -translate-x-1/2 -translate-y-1/2 size-19.5 group-hover:scale-110" src="{{ asset('images/icons/white-play-rounded.svg') }}" alt="">
         </button>
         <h2 class="text-navy-blue-300 headline-1 text-center md:text-[48px]! md:leading-15.5! lg:text-left lg:max-w-125">Tiga Tip Memilih Nama Domain .com</h2>
     </section>
-    <section class="bg-light-gray-100 overflow-hidden!">
+    {{-- End Three Tips --}}
+
+    {{-- How to Use --}}
+    <section
+        data-analytics-level2="Bagaimana Cara Menggunakan .com?"
+        class="bg-light-gray-100 overflow-hidden!">
         <div class="container py-10 px-0 md:pt-10 md:pb-19.5 xl:px-8">
             <h2 class="text-navy-blue-300 text-center -mb-6 px-4 headline-1 md:-mb-2 md:px-8">Bagaimana Cara Menggunakan .com?</h2>
             <div class="online-bersama-how-to-use swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <x-displays.card-inside route="email" image="images/brand-1.jpg">Email</x-displays.card-inside>
+                        <x-displays.card-inside
+                            data-analytics-level3=".com untuk Email"
+                            route="email"
+                            image="images/brand-1.jpg">
+                            Email
+                        </x-displays.card-inside>
                     </div>
                     <div class="swiper-slide">
-                        <x-displays.card-inside route="social-media" image="images/brand-2.jpg">Media Sosial dan <span class="block">E-Commerce</span></x-displays.card-inside>
+                        <x-displays.card-inside
+                            data-analytics-level3=".com untuk Media Sosial dan E-Commerce"
+                            route="social-media"
+                            image="images/brand-2.jpg">
+                            Media Sosial dan <span class="block">E-Commerce</span>
+                        </x-displays.card-inside>
                     </div>
                     <div class="swiper-slide">
-                        <x-displays.card-inside route="websites" image="images/brand-3.jpg">Situs Web</x-displays.card-inside>
+                        <x-displays.card-inside
+                            data-analytics-level3=".com untuk Situs Web"
+                            route="websites"
+                            image="images/brand-3.jpg">
+                            Situs Web
+                        </x-displays.card-inside>
                     </div>
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
         </div>
     </section>
+    {{-- End How to Use --}}
 </main>
 
 @endsection

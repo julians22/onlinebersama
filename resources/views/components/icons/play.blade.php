@@ -1,0 +1,13 @@
+@props(['width', 'height', 'fill'])
+
+<svg width="{{ $width }}" height="{{ $height }}" viewBox="0 0 {{ $width }} {{ $height }}" fill="none" xmlns="http://www.w3.org/2000/svg" {{ $attributes }}>
+    <g clip-path="url(#clip0_3038_804)">
+        <path d="M28 0C12.5286 0 0 12.5286 0 28C0 43.4715 12.5286 56 28 56C43.4715 56 56 43.4715 56 28C56 12.5286 43.4785 0 28 0ZM28 49.9586C15.9171 49.9586 5.89288 40.0829 5.89288 27.8514C5.89288 15.62 15.9171 5.89288 28 5.89288C40.0829 5.89288 50.1071 15.7686 50.1071 28C50.1071 40.2314 40.0829 49.9586 28 49.9586Z" fill="{{ $fill }}"/>
+        <path d="M39.667 28.2158L20.9404 39.2676V17.1631L39.667 28.2158Z" fill="{{ $fill }}" stroke="{{ $fill }}" stroke-width="3.11111"/>
+    </g>
+    <defs>
+        <clipPath id="clip0_3038_804">
+            <rect width="56" height="56" fill="{{ $fill }}"/>
+        </clipPath>
+    </defs>
+</svg>

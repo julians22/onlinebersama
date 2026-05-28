@@ -13,7 +13,10 @@
         <div class="min-h-28.5">
             <h2 class="subheadline-3 text-deep-blue-300 line-clamp-3">{{ $slot }}</h2>
         </div>
-        <a href="{{ $route }}" class="w-max flex items-center font-sans text-xl font-bold text-magenta-300 leading-6">
+        <a
+            data-analytics-name="text | Baca Selengkapnya"
+            href="{{ $route }}"
+            class="w-max flex items-center font-sans text-xl font-bold text-magenta-300 leading-6">
             Baca Selengkapnya
             <img src="{{ asset('images/icons/magenta-chevron-right.svg') }}" alt="">
         </a>
