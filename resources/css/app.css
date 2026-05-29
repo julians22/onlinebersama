@@ -210,15 +210,8 @@
         a.link-to {
             @apply text-magenta-300 underline;
         }
-        span.tooltip {
+        span.tooltip-trigger {
             @apply relative text-magenta-300 underline decoration-dotted;
-            &::after {
-                @apply absolute left-1/2 -translate-x-1/2 top-full mt-1 w-73.75 p-4 rounded-[10px] text-[14px] text-black bg-[#e0f2ec] font-semibold leading-5 opacity-0 transition-opacity duration-300 invisible;
-                content: attr(data-tooltip);
-            }
-            &:hover::after {
-                @apply opacity-100 visible;
-            }
         }
         h3 {
             @apply font-sans font-semibold text-[32px] leading-10 tracking-[0.25px] text-deep-blue-300 md:text-[40px] md:leading-12 lg:leading-11.5;

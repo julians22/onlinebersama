@@ -46,7 +46,7 @@
 @push('scripts')
 
 <script>
-    window.addEventListener('resize', () => {
+    const checkResolution = () => {
         const isMobile = window.innerWidth < 768;
         const currentPaginate = @this.get('paginate');
         const newPaginate = isMobile ? 3 : 6;
@@ -54,7 +54,9 @@
         if (currentPaginate !== newPaginate) {
             @this.call('updatePaginate', newPaginate);
         }
-    })
+    }
+
+    setTimeout(() => { checkResolution() }, 1)
 </script>
 
 @endpush

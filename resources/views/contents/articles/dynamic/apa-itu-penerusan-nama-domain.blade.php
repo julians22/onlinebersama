@@ -2,7 +2,7 @@
     <div class="article-wrapper">
         <x-articles.intro-and-quicklinks>
             <div class="article-child-wrapper">
-                <p>Belum siap untuk memiliki situs web? Memiliki Nama domain tetap dapat memberikan manfaat bagi bisnis Anda karena penerusan domain memungkinkan Anda untuk memiliki alamat situs web yang mudah diingat dan sesuai merk, terlepas di mana Anda akan membangun <span class="tooltip" data-tooltip="Kehadiran online / eksistensi online adalah suatu keadaan di mana bisnis Anda dapat ditemukan di internet, bisa dalam bentuk situs web, halaman media sosial, dan/atau pasar online. Menggunakan nama domain .com dengan kehadiran online Anda, dapat membuka peluang dengan membantu pelanggan menemukan “markas” Anda dengan mudah saat melakukan bisnis online.">kehadiran online</span> Anda. Penerusan nama domain adalah cara yang cepat dan mudah untuk membantu Anda mulai mempersonalisasi dan memasarkan kehadiran online Anda - baik di media sosial maupun di toko online.</p>
+                <p>Belum siap untuk memiliki situs web? Memiliki Nama domain tetap dapat memberikan manfaat bagi bisnis Anda karena penerusan domain memungkinkan Anda untuk memiliki alamat situs web yang mudah diingat dan sesuai merk, terlepas di mana Anda akan membangun <x-articles.tooltip data-tooltip="Kehadiran online / eksistensi online adalah suatu keadaan di mana bisnis Anda dapat ditemukan di internet, bisa dalam bentuk situs web, halaman media sosial, dan/atau pasar online. Menggunakan nama domain .com dengan kehadiran online Anda, dapat membuka peluang dengan membantu pelanggan menemukan “markas” Anda dengan mudah saat melakukan bisnis online.">kehadiran online</x-articles.tooltip> Anda. Penerusan nama domain adalah cara yang cepat dan mudah untuk membantu Anda mulai mempersonalisasi dan memasarkan kehadiran online Anda - baik di media sosial maupun di toko online.</p>
                 <p>Lihat panduan singkat ini untuk mengetahui cara melakukannya.</p>
                 <x-articles.navigate-link>
                     <a href="#apa-yang-dimaksud-dengan-penerusan-nama-domain-com">
@@ -21,7 +21,7 @@
         <div id="apa-yang-dimaksud-dengan-penerusan-nama-domain-com" class="article-child-wrapper scroll-mt-20 sm:scroll-mt-28">
             <h3>Apa yang Dimaksud dengan “Penerusan” Nama Domain .com?</h3>
             <p>Penerusan nama domain(juga disebut penerusan atau pengalihan web) mirip seperti mengalihkan alamat surat menyurat Anda saat Anda pindah rumah - <strong>Anda cukup membuat aturan yang memberi tahu penyedia nama domain Anda untuk mengarahkan semua pengunjung yang mengetik nama domain Anda di browser ke halaman online pilihan Anda.</strong> Anda dapat memperbarui aturan tersebut kapan saja, sehingga seiring perkembangan dan pertumbuhan kehadiran online Anda, nama domain Anda dapat ikut menyesuaikan.</p>
-            <video class="aspect-video h-81.25" autoplay loop muted playsinline>
+            <video class="aspect-video md:h-81.25" autoplay loop muted playsinline>
                 <source src="https://yourdot.com/domain-name-forwarding/DomainName_Redirect-Animation_ARB.b38ac33105b7ef6b11fc6086456b89c00eb559ce9f496865b9af1ff22ae57edd.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
