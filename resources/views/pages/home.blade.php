@@ -85,10 +85,10 @@
                 class="w-full mx-auto block sm:h-200 sm:object-cover sm:object-bottom md:h-210 min-[900px]:h-230! lg:hidden" src="{{ asset('images/placeholder-video-how-mobile.jpg') }}" alt="">
             <div class="top-0 left-1/2 -translate-x-1/2 absolute flex justify-center size-full max-w-480 px-4 pt-4 min-[400px]:pt-13.5 sm:px-6 sm:pt-6 md:pt-11.75 lg:justify-start lg:px-24 lg:py-32 xl:py-38 xl:px-30 2xl:py-50 2xl:px-42">
                 <div class="space-y-3.5 text-center max-w-85 mx-auto sm:max-w-xl lg:text-left lg:max-w-full lg:mx-0">
-                    <h2 class="headline-1 text-navy-blue-300 text-[24px]! leading-8! sm:leading-13! sm:text-[40px]! lg:max-w-2xl lg:mx-0 lg:text-[52px]! lg:leading-16! xl:text-[64px]! xl:leading-18! 2xl:leading-21.25! xl:max-w-3xl 2xl:max-w-4xl">
+                    <h2 class="headline-1 text-navy-blue-300 text-[24px]! leading-8! sm:leading-13! sm:text-[40px]! lg:max-w-2xl lg:mx-0 lg:text-[52px]! lg:leading-16! xl:text-[64px]! xl:leading-18! 2xl:leading-21.25! xl:max-w-3xl min-[1680px]:max-w-4xl!">
                         Bukan Sekadar Domain. Melainkan Suatu Pernyataan.
                     </h2>
-                    <p class="paragraph-md text-deep-blue-300 text-[16px]! leading-6! sm:text-[18px]! lg:max-w-xs xl:text-[24px]! xl:leading-8! xl:max-w-sm 2xl:max-w-full">
+                    <p class="paragraph-md text-deep-blue-300 text-[16px]! leading-6! sm:text-[18px]! lg:max-w-xs xl:text-[24px]! xl:leading-8! xl:max-w-lg">
                         Tinggalkan jejak Anda dan bangun merek tepercaya dengan .com.
                     </p>
                 </div>
@@ -99,10 +99,9 @@
                 <button
                     data-analytics-name="play button | Bukan Sekadar Domain. Melainkan Suatu Pernyataan"
                     type="button" class="top-2/3 left-1/2 z-10 absolute -translate-x-1/2 -translate-y-1/2 cursor-pointer transition-all duration-300 ease-in-out hover:scale-110 min-[900px]:top-[60%] lg:top-[55%]">
-                    <x-icons.large-play-rounded width="130" height="130" fill="#304D6D" stroke="#304D6D" strokeWidth="4" class="size-10 min-[400px]:size-14 min-[900px]:size-16 lg:size-20 2xl:size-32.5" />
+                    <x-icons.large-play-rounded width="130" height="130" fill="#304D6D" stroke="#304D6D" strokeWidth="4" class="size-10 min-[400px]:size-16 lg:size-20 2xl:size-32.5" />
                 </button>
             </div>
-
         </div>
     </section>
     <!-- End How To Use -->
@@ -134,8 +133,7 @@
                             class="space-y-3 bg-navy-blue-500 p-6 rounded-[10px]">
                             <div
                                 data-analytics-name="text | Tepercaya"
-                                class="space-y-3"
-                            >
+                                class="space-y-3">
                                 <h3 class="text-vibrant-yellow-300 text-[32px]! leading-9.5! subheadline-3">Tepercaya</h3>
                                 <p class="text-white text-[24px]! paragraph-md">Domain yang dipercaya perusahaan global dan merchant lokal.</p>
                             </div>
@@ -153,7 +151,7 @@
                     </div>
                     <div class="relative rounded-[10px] overflow-hidden">
                         <img class="w-full rounded-[10px]" src="{{ asset('images/placeholder-video-why-com.jpg') }}" alt="">
-                        <div class="bottom-0 left-0 sm:p-8 sm:absolute">
+                        <div class="bottom-0 left-0 p-8 absolute hidden sm:block">
                             <div class="max-w-3xl space-y-2 text-white">
                                 <h4 class="font-extrabold! text-[20px]! subheadline-3 sm:text-[28px]!">IKAT Indonesia</h4>
                                 <p class="font-semibold! paragraph-sm sm:text-[20px]! sm:leading-normal!">Dengarkan bagaimana nama domain .com yang dikenal membantu pemilik bisnis mengembangkan bisnisnya.</p>
@@ -168,12 +166,19 @@
                                 <x-icons.play-rounded width="78" height="78" fill="#fff" class="transition-all duration-300 ease-in-out top-1/2 left-1/2 absolute size-19.5 -translate-x-1/2 -translate-y-1/2 group-hover/child:scale-110 sm:-translate-y-[90%] lg:-translate-y-1/2" />
                             </button>
                         </div>
-                    </a>
+                    </div>
+                    <div class="block sm:hidden">
+                        <div class="max-w-3xl space-y-2 text-white">
+                            <h4 class="font-extrabold! text-[20px]! subheadline-3 sm:text-[28px]!">IKAT Indonesia</h4>
+                            <p class="font-semibold! paragraph-sm sm:text-[20px]! sm:leading-normal!">Dengarkan bagaimana nama domain .com yang dikenal membantu pemilik bisnis mengembangkan bisnisnya.</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="justify-center md:flex">
                     <a
                         data-analytics-name="button | Lihat Kisah Usaha Kecil"
-                        href="#" class="btn-primary w-full sm:w-auto">
+                        href="{{ route('resources.show', 'pertanyaan-usaha-kecil-tentang-membangun-kehadiran-online') }}"
+                        class="btn-primary w-full sm:w-auto">
                         Lihat Kisah Usaha Kecil
                     </a>
                 </div>
@@ -186,31 +191,30 @@
     <section
         data-analytics-level2="Tinggalkan Jejak Anda di Dunia Maya"
         class="bg-light-gray-100">
-        <div class="pt-10 pb-19.5 px-4 mx-auto max-w-md md:px-8 md:container">
-            <h2 class="sticky top-30 mb-10 text-navy-blue-300 text-center headline-1">Tinggalkan Jejak Anda di Dunia Maya</h2>
+        <div class="pt-10 pb-64 px-4 mx-auto max-w-md md:px-8 md:container">
+            <h2 class="sticky top-20 mb-10 text-navy-blue-300 text-center headline-1 md:top-24 lg:top-30">Tinggalkan Jejak Anda di Dunia Maya</h2>
             <div class="flex flex-col gap-6 mx-auto max-w-208">
                 <div
                     data-analytics-level3="card1"
-                    class="top-24 sticky card-stack md:top-60">
+                    class="top-50 sticky card-stack md:top-76 min-[1150px]:top-60!">
                     <x-displays.card-stack number="1" title="Lebih Mudah Ditemukan" image="images/homepage-editorial-1.jpg">
                         Nama domain .com membantu memudahkan pelanggan menemukan bisnis secara online.
                     </x-displays.card-stack>
                 </div>
                 <div
                     data-analytics-level3="card2"
-                    class="top-44 sticky card-stack md:top-80">
+                    class="top-50 sticky card-stack -mt-18 translate-y-18 md:-mt-22 md:translate-y-22 lg:-mt-20 lg:translate-y-20 md:top-76 min-[1150px]:top-60!">
                     <x-displays.card-stack number="2" title="Tampil Beda Secara Online" image="images/homepage-editorial-2.jpg">
                         Nama domain .com dapat membantu meningkatkan visibilitas bisnis.
                     </x-displays.card-stack>
                 </div>
                 <div
                     data-analytics-level3="card3"
-                    class="top-66 sticky card-stack md:top-105">
+                    class="top-50 sticky card-stack -mb-24 translate-y-18 md:-mb-24 md:translate-y-20 md:top-76 min-[1150px]:top-60!">
                     <x-displays.card-stack number="3" title="Tingkatkan Kredibilitas Anda" image="images/homepage-editorial-3.jpg">
                         Nama domain .com dapat membantu usaha kecil terlihat lebih profesional.
                     </x-displays.card-stack>
                 </div>
-                <div class="h-screen"></div>
             </div>
         </div>
     </section>

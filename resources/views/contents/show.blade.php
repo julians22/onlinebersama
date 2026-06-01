@@ -8,7 +8,7 @@
 
 @section('content')
 
-<main>
+<main data-analytics-level1="body">
     @if ($post->isCustomTemplate())
         <x-displays.scroll-progress />
         <section class="bg-light-gray-100">

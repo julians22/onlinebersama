@@ -5,10 +5,7 @@
         </x-articles.intro-and-quicklinks>
         <h3>Apa Itu Penerusan Nama Domain?</h3>
         <p>Penerusan nama domain (juga disebut penerusan atau pengalihan web) mirip seperti mengalihkan alamat  surat menyurat saat Anda pindah rumah – <strong>Anda cukup membuat aturan yang memberi tahu penyedia nama domain Anda untuk mengarahkan semua pengunjung yang mengetik nama domain Anda di browser ke halaman online pilihan Anda.</strong> Anda dapat memperbarui aturan tersebut kapan saja, sehingga seiring <x-articles.tooltip data-tooltip="Kehadiran online / eksistensi online adalah suatu keadaan di mana bisnis Anda dapat ditemukan di internet, bisa dalam bentuk situs web, halaman media sosial, dan/atau pasar online. Menggunakan nama domain .com dengan kehadiran online Anda, dapat membuka peluang dengan membantu pelanggan menemukan “markas” Anda dengan mudah saat melakukan bisnis online.">kehadiran online</x-articles.tooltip> Anda berkembang dan bertumbuh, nama domain Anda dapat ikut menyesuaikan.</p>
-        <video class="aspect-video md:h-81.25" autoplay loop muted playsinline>
-            <source src="https://yourdot.com/domain-name-forwarding/DomainName_Redirect-Animation_ARB.b38ac33105b7ef6b11fc6086456b89c00eb559ce9f496865b9af1ff22ae57edd.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+        <img class="aspect-video md:h-81.25" src="{{ asset('images/gif/penerusan-nama-domain.gif') }}" alt="" />
         <h3>Bagaimana cara Menggunakan Penerusan Nama Domain?</h3>
         <div class="flex flex-col gap-2">
             <h3 class="smaller">Media Sosial</h3>

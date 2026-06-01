@@ -4,7 +4,7 @@
 
 @section('content')
 
-<main>
+<main data-analytics-level1="body">
     {{-- Hero --}}
     <section
         data-analytics-level2="hero"
@@ -29,28 +29,30 @@
     <section
         data-analytics-level2="Manfaat Situs Web"
         class="py-10 container">
-        <h2 class="mb-10 text-navy-blue-300 text-center headline-1">Manfaat Situs Web</h2>
-        <div class="flex flex-col gap-6 mx-auto max-w-md md:max-w-208">
-            <div
-                data-analytics-level3="Berkembang Sesuai Keinginan Anda"
-                class="top-22 sticky card-stack md:top-40">
-                <x-displays.card-stack number="1" title="Berkembang Sesuai Keinginan Anda" image="images/website-editorial-1.jpg" alt="">
-                    Ciptakan tempat bagi bisnis Anda untuk berakar dan berkembang sesuai keinginan Anda. Situs web dengan nama domain .com dapat berkembang seiring perkembangan bisnis Anda.
-                </x-displays.card-stack>
-            </div>
-            <div
-                data-analytics-level3="Kendalikan Merek Anda"
-                class="top-44 sticky card-stack md:top-66">
-                <x-displays.card-stack number="2" title="Kendalikan Merek Anda" image="images/website-editorial-2.jpg" alt="">
-                    Memiliki situs web dengan nama domain .com memberi Anda ruang untuk membangun merek dan mengendalikan eksistensi online Anda.
-                </x-displays.card-stack>
-            </div>
-            <div
-                data-analytics-level3="Lebih Mudah Ditemukan"
-                class="top-66 sticky card-stack md:top-86">
-                <x-displays.card-stack number="3" title="Lebih Mudah Ditemukan" image="images/website-editorial-3.jpg" alt="">
-                    Situs web dengan nama domain .com memudahkan pelanggan menemukan Anda. Di situlah dunia akan menemukan Anda.
-                </x-displays.card-stack>
+        <div class="pb-28 md:pb-48">
+            <h2 class="mb-10 text-navy-blue-300 text-center headline-1">Manfaat Situs Web</h2>
+            <div class="flex flex-col gap-6 mx-auto max-w-md md:max-w-208">
+                <div
+                    data-analytics-level3="Berkembang Sesuai Keinginan Anda"
+                    class="top-50 sticky card-stack md:top-76 min-[1150px]:top-60!">
+                    <x-displays.card-stack number="1" title="Berkembang Sesuai Keinginan Anda" image="images/website-editorial-1.jpg" alt="">
+                        Ciptakan tempat bagi bisnis Anda untuk berakar dan berkembang sesuai keinginan Anda. Situs web dengan nama domain .com dapat berkembang seiring perkembangan bisnis Anda.
+                    </x-displays.card-stack>
+                </div>
+                <div
+                    data-analytics-level3="Kendalikan Merek Anda"
+                    class="top-50 sticky card-stack -mt-18 translate-y-18 md:-mt-22 md:translate-y-22 lg:-mt-20 lg:translate-y-20 md:top-76 min-[1150px]:top-60!">
+                    <x-displays.card-stack number="2" title="Kendalikan Merek Anda" image="images/website-editorial-2.jpg" alt="">
+                        Memiliki situs web dengan nama domain .com memberi Anda ruang untuk membangun merek dan mengendalikan eksistensi online Anda.
+                    </x-displays.card-stack>
+                </div>
+                <div
+                    data-analytics-level3="Lebih Mudah Ditemukan"
+                    class="top-50 sticky card-stack -mb-24 translate-y-18 md:-mb-24 md:translate-y-20 md:top-76 min-[1150px]:top-60!">
+                    <x-displays.card-stack number="3" title="Lebih Mudah Ditemukan" image="images/website-editorial-3.jpg" alt="">
+                        Situs web dengan nama domain .com memudahkan pelanggan menemukan Anda. Di situlah dunia akan menemukan Anda.
+                    </x-displays.card-stack>
+                </div>
             </div>
         </div>
         <div class="flex justify-center mt-10">
@@ -68,64 +70,52 @@
     <section
         data-analytics-level2="Daftar Periksa Perencanaan Situs Web"
         class="bg-gradient-blue-double">
-        <div class="flex flex-col justify-center items-center gap-10 py-10 max-w-398 mx-auto px-4 md:py-19.5 md:px-8">
-            <div class="space-y-2 text-white text-center md:space-y-10">
-                <h2 class="headline-1 text-center md:text-[48px]! md:leading-15.5!">Daftar Periksa Perencanaan Situs Web</h2>
+        <div class="flex flex-col justify-center items-center gap-10 py-10 container-nav md:py-19.5">
+            <div class="space-y-4 text-white text-center">
+                <h2 class="headline-1 text-center">Daftar Periksa Perencanaan Situs Web</h2>
                 <p class="paragraph-lg">Bangun rumah online Anda di situs web dengan nama domain .com.</p>
             </div>
             <div class="gap-8 grid grid-cols-1 max-w-214 xl:max-w-full xl:grid-cols-3">
-                <div data-analytics-level3="card1" class="grid">
-                    <div
-                        data-analytics-name="box | Buat Rencana Pembangunan Situs Web Anda"
-                        class="gap-4 grid grid-rows-subgrid row-span-3 bg-white p-4 rounded-[10px]">
-                        <div class="flex flex-col justify-center items-center gap-2.5 bg-mint-300 p-6 rounded-lg text-deep-blue-300 text-center">
-                            <x-icons.list width="40" height="40" fill="#1A2E47" />
-                            <h3 class="subheadline-3 hyphens-manual">Buat Rencana Pemba&shy;ngunan Situs Web Anda</span></h3>
-                        </div>
-                        <div class="flex gap-4 py-2 border-mint-300 border-b-4 text-deep-blue-300">
-                            <x-icons.mint-check width="50" height="50" class="shrink-0" />
-                            <p class="paragraph-sm text-[20px]! font-medium! leading-6.5!">Pilih dan daftarkan nama domain .com untuk alamat web Anda.</p>
-                        </div>
-                        <div class="flex gap-4 py-2 text-deep-blue-300">
-                            <x-icons.mint-check width="50" height="50" class="shrink-0" />
-                            <p class="paragraph-sm text-[20px]! font-medium! leading-6.5!">Tentukan tujuan situs web Anda (misalnya, blog, situs e-commerce, brosur online).</p>
-                        </div>
+                <div class="gap-4 grid grid-rows-subgrid row-span-3 bg-white p-4 rounded-[10px]">
+                    <div class="flex flex-col justify-center items-center gap-2.5 bg-mint-300 p-6 rounded-lg text-deep-blue-300 text-center">
+                        <x-icons.list width="40" height="40" fill="#1A2E47" />
+                        <h3 class="subheadline-3 hyphens-manual text-[26px]! md:text-[28px]!">Buat Rencana Pemba&shy;ngunan Situs Web Anda</span></h3>
+                    </div>
+                    <div class="flex gap-4 py-2 border-mint-300 border-b-4 text-deep-blue-300">
+                        <x-icons.mint-check width="50" height="50" class="shrink-0" />
+                        <p class="paragraph-sm text-[20px]! font-medium! leading-6.5!">Pilih dan daftarkan nama domain .com untuk alamat web Anda.</p>
+                    </div>
+                    <div class="flex gap-4 py-2 text-deep-blue-300">
+                        <x-icons.mint-check width="50" height="50" class="shrink-0" />
+                        <p class="paragraph-sm text-[20px]! font-medium! leading-6.5!">Tentukan tujuan situs web Anda (misalnya, blog, situs e-commerce, brosur online).</p>
                     </div>
                 </div>
-                <div data-analytics-level3="card2" class="grid">
-                    <div
-                        data-analytics-name="box | Tentukan Persyaratan Situs Web"
-                        class="gap-4 grid grid-rows-subgrid row-span-3 bg-white p-4 rounded-[10px]">
-                        <div class="flex flex-col justify-center items-center gap-2.5 bg-mint-300 p-6 rounded-lg text-deep-blue-300 text-center">
-                            <x-icons.list width="40" height="40" fill="#1A2E47" />
-                            <h3 class="subheadline-3">Tentukan Persyaratan Situs Web</h3>
-                        </div>
-                        <div class="flex gap-4 py-2 border-mint-300 border-b-4 text-deep-blue-300">
-                            <x-icons.mint-check width="50" height="50" class="shrink-0" />
-                            <p class="paragraph-sm text-[20px]! font-medium! leading-6.5!">Tentukan informasi terpenting yang harus ada di situs web Anda sekarang, dan informasi yang dapat ditambahkan nanti.</p>
-                        </div>
-                        <div class="flex gap-4 py-2 text-deep-blue-300">
-                            <x-icons.mint-check width="50" height="50" class="shrink-0" />
-                            <p class="paragraph-sm text-[20px]! font-medium! leading-6.5!">Cari tahu informasi apa yang akan menarik dan bermanfaat bagi pengunjung Anda (misalnya, informasi kontak, deskripsi produk).</p>
-                        </div>
+                <div class="gap-4 grid grid-rows-subgrid row-span-3 bg-white p-4 rounded-[10px]">
+                    <div class="flex flex-col justify-center items-center gap-2.5 bg-mint-300 p-6 rounded-lg text-deep-blue-300 text-center">
+                        <x-icons.list width="40" height="40" fill="#1A2E47" />
+                        <h3 class="subheadline-3 text-[26px]! md:text-[28px]!">Tentukan Persyaratan Situs Web</h3>
+                    </div>
+                    <div class="flex gap-4 py-2 border-mint-300 border-b-4 text-deep-blue-300">
+                        <x-icons.mint-check width="50" height="50" class="shrink-0" />
+                        <p class="paragraph-sm text-[20px]! font-medium! leading-6.5!">Tentukan informasi terpenting yang harus ada di situs web Anda sekarang, dan informasi yang dapat ditambahkan nanti.</p>
+                    </div>
+                    <div class="flex gap-4 py-2 text-deep-blue-300">
+                        <x-icons.mint-check width="50" height="50" class="shrink-0" />
+                        <p class="paragraph-sm text-[20px]! font-medium! leading-6.5!">Cari tahu informasi apa yang akan menarik dan bermanfaat bagi pengunjung Anda (misalnya, informasi kontak, deskripsi produk).</p>
                     </div>
                 </div>
-                <div data-analytics-level3="card3" class="grid">
-                    <div
-                        data-analytics-name="box | Kelola Situs Web Anda"
-                        class="gap-4 grid grid-rows-subgrid row-span-3 bg-white p-4 rounded-[10px]">
-                        <div class="flex flex-col justify-center items-center gap-2.5 bg-mint-300 p-6 rounded-lg text-deep-blue-300 text-center">
-                            <x-icons.list width="40" height="40" fill="#1A2E47" />
-                            <h3 class="subheadline-3 xl:max-w-xs">Kelola Situs Web Anda</h3>
-                        </div>
-                        <div class="flex gap-4 py-2 border-mint-300 border-b-4 text-deep-blue-300">
-                            <x-icons.mint-check width="50" height="50" class="shrink-0" />
-                            <p class="paragraph-sm text-[20px]! font-medium! leading-6.5!">Pikirkan cara pengunjung menemukan situs web Anda, dan cantumkan alamat web Anda di semua lokasi yang memungkinkan.</p>
-                        </div>
-                        <div class="flex gap-4 py-2 text-deep-blue-300">
-                            <x-icons.mint-check width="50" height="50" class="shrink-0" />
-                            <p class="paragraph-sm text-[20px]! font-medium! leading-6.5!">Pahami siapa saja yang akan mengunjungi situs web Anda menggunakan alat bantu untuk memudahkan analisis lalu lintas situs web Anda.</p>
-                        </div>
+                <div class="gap-4 grid grid-rows-subgrid row-span-3 bg-white p-4 rounded-[10px]">
+                    <div class="flex flex-col justify-center items-center gap-2.5 bg-mint-300 p-6 rounded-lg text-deep-blue-300 text-center">
+                        <x-icons.list width="40" height="40" fill="#1A2E47" />
+                        <h3 class="subheadline-3 text-[26px]! md:text-[28px]! xl:max-w-xs">Kelola Situs Web Anda</h3>
+                    </div>
+                    <div class="flex gap-4 py-2 border-mint-300 border-b-4 text-deep-blue-300">
+                        <x-icons.mint-check width="50" height="50" class="shrink-0" />
+                        <p class="paragraph-sm text-[20px]! font-medium! leading-6.5!">Pikirkan cara pengunjung menemukan situs web Anda, dan cantumkan alamat web Anda di semua lokasi yang memungkinkan.</p>
+                    </div>
+                    <div class="flex gap-4 py-2 text-deep-blue-300">
+                        <x-icons.mint-check width="50" height="50" class="shrink-0" />
+                        <p class="paragraph-sm text-[20px]! font-medium! leading-6.5!">Pahami siapa saja yang akan mengunjungi situs web Anda menggunakan alat bantu untuk memudahkan analisis lalu lintas situs web Anda.</p>
                     </div>
                 </div>
             </div>
@@ -143,8 +133,8 @@
     {{-- List Point --}}
     <section
         data-analytics-level2="Cara Membangun Situs Web Professional"
-        class="flex items-center gap-10 py-10 container flex-col md:py-19.5 xl:gap-28 xl:flex-row 2xl:gap-44">
-        <div class="top-32 flex flex-col gap-11.5 xl:sticky">
+        class="flex items-center gap-10 py-10 container flex-col md:py-19.5 xl:items-start xl:gap-28 xl:flex-row 2xl:gap-44">
+        <div class="top-28 flex flex-col gap-11.5 xl:sticky">
             <h2 class="text-navy-blue-300 headline-1 text-center md:text-[48px]! md:leading-15.5!">Cara Membangun Situs <span class="sm:block">Web Profesional</span></h2>
             <div class="mx-auto">
                 <button type="button" class="group cursor-pointer relative rounded-[10px] overflow-hidden">
@@ -157,6 +147,7 @@
             </div>
         </div>
         <div class="flex flex-col gap-8 max-w-125">
+            <div class="sticky top-20 w-full h-25 bg-linear-180 from-white from-25% to-transparent -mt-18 hidden xl:block"></div>
             <div data-analytics-level3="Daftarkan Nama Domain" class="flex gap-3.25 md:px-4">
                 <div class="flex justify-center items-center border-4 border-mint-300 rounded-full size-7.5 font-extrabold text-[16px] text-navy-blue-300 shrink-0 md:text-[32px] md:font-semibold md:size-12.5">1</div>
                 <div class="space-y-2 text-deep-blue-300">

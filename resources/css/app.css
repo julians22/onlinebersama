@@ -224,6 +224,9 @@
             &.smaller {
                 @apply text-[26px]! md:leading-9.5! md:text-[32px]! lg:leading-normal!;
             }
+            &.related-title {
+                @apply text-[26px]! leading-9.5! md:text-[32px]!;
+            }
         }
         h4 {
             @apply font-sans font-semibold text-[20px] leading-6.25 tracking-[0.25px] text-deep-blue-300 md:text-[28px] md:leading-7.5 lg:leading-10.5;
@@ -383,10 +386,7 @@
             }
         }
         button {
-            @apply absolute transition-all duration-500 ease-in-out scale-0 top-1/2 left-1/2 -translate-x-1/2 -translate-y-[110%] cursor-pointer md:-translate-y-1/2;
-            img {
-                @apply size-19.5;
-            }
+            @apply absolute transition-all duration-500 ease-in-out scale-0 left-1/2 -translate-x-1/2 -translate-y-[110%] cursor-pointer flex justify-center items-center w-full h-full md:top-1/2 md:-translate-y-1/2 md:w-156;
         }
         &.swiper-slide-active {
             .overlay-slide {

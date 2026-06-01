@@ -4,7 +4,7 @@
 
 @section('content')
 
-<main>
+<main data-analytics-level1="body">
     <section class="lg:py-11 py-10 px-4 md:px-0">
         <div class="container-extra-smaller lg:space-y-8 space-y-6 text-deep-blue-300">
             <h1 class="headline-1 text-navy-blue-300">VERISIGN® KETENTUAN LAYANAN DARI JASA PENCARIAN NAMA DOMAIN</h1>

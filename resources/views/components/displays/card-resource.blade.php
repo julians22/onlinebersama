@@ -11,7 +11,7 @@
             </div>
         @endif
         <div class="min-h-28.5">
-            <h2 class="subheadline-3 text-deep-blue-300 line-clamp-3">{{ $slot }}</h2>
+            <h2 class="subheadline-3 text-deep-blue-300 line-clamp-3 text-[26px]! md:text-[28px]!">{{ $slot }}</h2>
         </div>
         <a
             data-analytics-name="text | Baca Selengkapnya"

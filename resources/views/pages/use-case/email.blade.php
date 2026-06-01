@@ -4,7 +4,7 @@
 
 @section('content')
 
-<main>
+<main data-analytics-level1="body">
     {{-- Hero --}}
     <section
         data-analytics-level2="hero"
@@ -29,28 +29,30 @@
     <section
         data-analytics-level2="Manfaat Email Kustom"
         class="py-10 container">
-        <h2 class="mb-10 text-navy-blue-300 text-center headline-1">Manfaat Email Kustom</h2>
-        <div class="flex flex-col gap-6 mx-auto max-w-md md:max-w-208">
-            <div
-                data-analytics-level3="Membangun Legitimasi"
-                class="top-22 sticky card-stack md:top-40">
-                <x-displays.card-stack number="1" title="Membangun Legitimasi" image="images/email-editorial-1.jpg" alt="">
-                    Beri bisnis Anda tampilan yang berkelas dan profesional. Dapatkan alamat email .com kustom dan tunjukkan kepada semua orang bahwa Anda profesional.
-                </x-displays.card-stack>
-            </div>
-            <div
-                data-analytics-level3="Meningkatkan Kredibilitas"
-                class="top-44 sticky card-stack md:top-60">
-                <x-displays.card-stack number="2" title="Meningkatkan Kredibilitas" image="images/email-editorial-2.jpg" alt="">
-                    Dengan alamat email .com kustom, Anda dapat memberikan kesan yang kuat dan membekas, serta menumbuhkan kepercayaan pelanggan terhadap Anda.
-                </x-displays.card-stack>
-            </div>
-            <div
-                data-analytics-level3="Memasarkan Bisnis Anda"
-                class="top-66 sticky card-stack md:top-86">
-                <x-displays.card-stack number="3" title="Memasarkan Bisnis Anda" image="images/email-editorial-3.jpg" alt="">
-                    Dapatkan alamat email .com kustom dan bangun merek Anda lewat setiap email yang dikirim.
-                </x-displays.card-stack>
+        <div class="pb-28 md:pb-48">
+            <h2 class="mb-10 text-navy-blue-300 text-center headline-1">Manfaat Email Kustom</h2>
+            <div class="flex flex-col gap-6 mx-auto max-w-md md:max-w-208">
+                <div
+                    data-analytics-level3="Membangun Legitimasi"
+                    class="top-50 sticky card-stack md:top-76 min-[1150px]:top-60!">
+                    <x-displays.card-stack number="1" title="Membangun Legitimasi" image="images/email-editorial-1.jpg" alt="">
+                        Beri bisnis Anda tampilan yang berkelas dan profesional. Dapatkan alamat email .com kustom dan tunjukkan kepada semua orang bahwa Anda profesional.
+                    </x-displays.card-stack>
+                </div>
+                <div
+                    data-analytics-level3="Meningkatkan Kredibilitas"
+                    class="top-50 sticky card-stack -mt-18 translate-y-18 md:-mt-22 md:translate-y-22 lg:-mt-20 lg:translate-y-20 md:top-76 min-[1150px]:top-60!">
+                    <x-displays.card-stack number="2" title="Meningkatkan Kredibilitas" image="images/email-editorial-2.jpg" alt="">
+                        Dengan alamat email .com kustom, Anda dapat memberikan kesan yang kuat dan membekas, serta menumbuhkan kepercayaan pelanggan terhadap Anda.
+                    </x-displays.card-stack>
+                </div>
+                <div
+                    data-analytics-level3="Memasarkan Bisnis Anda"
+                    class="top-50 sticky card-stack -mb-24 translate-y-18 md:-mb-24 md:translate-y-20 md:top-76 min-[1150px]:top-60!">
+                    <x-displays.card-stack number="3" title="Memasarkan Bisnis Anda" image="images/email-editorial-3.jpg" alt="">
+                        Dapatkan alamat email .com kustom dan bangun merek Anda lewat setiap email yang dikirim.
+                    </x-displays.card-stack>
+                </div>
             </div>
         </div>
         <div class="flex justify-center mt-10">
@@ -86,8 +88,8 @@
     {{-- List Point --}}
     <section
         data-analytics-level2="Cara Menyiapkan Alamat Email Kustom"
-        class="flex items-center gap-10 py-10 container flex-col md:py-19.5 xl:gap-28 xl:flex-row 2xl:gap-44">
-        <div class="top-32 flex flex-col gap-11.5 xl:sticky">
+        class="flex items-center gap-10 py-10 container flex-col md:py-19.5 xl:items-start xl:gap-28 xl:flex-row 2xl:gap-44">
+        <div class="top-28 flex flex-col gap-11.5 xl:sticky">
             <h2 class="text-navy-blue-300 headline-1 text-center md:text-[48px]! md:leading-15.5!">Cara Menyiapkan Alamat <span class="sm:block">Email Kustom</span></h2>
             <div class="mx-auto">
                 <button type="button" class="group cursor-pointer relative rounded-[10px] overflow-hidden">
@@ -100,6 +102,7 @@
             </div>
         </div>
         <div class="flex flex-col gap-8 max-w-125">
+            <div class="sticky top-20 w-full h-25 bg-linear-180 from-white from-25% to-transparent -mt-18 hidden xl:block"></div>
             <div data-analytics-level3="Daftarkan Nama Domain" class="flex gap-3.25 md:px-4">
                 <div class="flex justify-center items-center border-4 border-mint-300 rounded-full size-7.5 font-extrabold text-[16px] text-navy-blue-300 shrink-0 md:text-[32px] md:font-semibold md:size-12.5">1</div>
                 <div class="space-y-2 text-deep-blue-300">

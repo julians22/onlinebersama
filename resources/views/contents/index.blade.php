@@ -4,7 +4,7 @@
 
 @section('content')
 
-<main>
+<main data-analytics-level1="body">
     {{-- Hero --}}
     <section
         data-analytics-level2="hero"
@@ -44,8 +44,8 @@
                         <h4 class="subheadline-4">IKAT Indonesia</h4>
                         <p class="paragraph-sm">Dengarkan bagaimana nama domain .com yang dikenal membantu pemilik bisnis mengembangkan bisnisnya.</p>
                     </div>
-                    <button data-analytics-name="play button | Startup Experience" type="button">
-                        <x-icons.play-rounded width="78" height="78" fill="#fff" />
+                    <button data-analytics-name="play button | Startup Experience" type="button" class="group">
+                        <x-icons.play-rounded width="78" height="78" fill="#fff" class="group-hover:scale-110 transition-all duration-300 ease-in-out" />
                     </button>
                 </div>
                 <div data-analytics-level3="carousel-2" class="swiper-slide">
@@ -54,8 +54,8 @@
                         <h4 class="subheadline-4">IKAT Indonesia</h4>
                         <p class="paragraph-sm">Dengarkan bagaimana nama domain .com yang dikenal membantu pemilik bisnis mengembangkan bisnisnya.</p>
                     </div>
-                    <button data-analytics-name="play button | IKAT Indonesia" type="button">
-                        <x-icons.play-rounded width="78" height="78" fill="#fff" />
+                    <button data-analytics-name="play button | IKAT Indonesia" type="button" class="group">
+                        <x-icons.play-rounded width="78" height="78" fill="#fff" class="group-hover:scale-110 transition-all duration-300 ease-in-out" />
                     </button>
                 </div>
                 <div data-analytics-level3="carousel-3" class="swiper-slide">
@@ -64,8 +64,8 @@
                         <h4 class="subheadline-4">IKAT Indonesia</h4>
                         <p class="paragraph-sm">Dengarkan bagaimana nama domain .com yang dikenal membantu pemilik bisnis mengembangkan bisnisnya.</p>
                     </div>
-                    <button data-analytics-name="play button | Chick Diva Geek" type="button">
-                        <x-icons.play-rounded width="78" height="78" fill="#fff" />
+                    <button data-analytics-name="play button | Chick Diva Geek" type="button" class="group">
+                        <x-icons.play-rounded width="78" height="78" fill="#fff" class="group-hover:scale-110 transition-all duration-300 ease-in-out" />
                     </button>
                 </div>
                 <div data-analytics-level3="carousel-4" class="swiper-slide">
@@ -74,8 +74,8 @@
                         <h4 class="subheadline-4">IKAT Indonesia</h4>
                         <p class="paragraph-sm">Dengarkan bagaimana nama domain .com yang dikenal membantu pemilik bisnis mengembangkan bisnisnya.</p>
                     </div>
-                    <button data-analytics-name="play button | Startup Experience" type="button">
-                        <x-icons.play-rounded width="78" height="78" fill="#fff" />
+                    <button data-analytics-name="play button | Startup Experience" type="button" class="group">
+                        <x-icons.play-rounded width="78" height="78" fill="#fff" class="group-hover:scale-110 transition-all duration-300 ease-in-out" />
                     </button>
                 </div>
                 <div data-analytics-level3="carousel-5" class="swiper-slide">
@@ -84,8 +84,8 @@
                         <h4 class="subheadline-4">IKAT Indonesia</h4>
                         <p class="paragraph-sm">Dengarkan bagaimana nama domain .com yang dikenal membantu pemilik bisnis mengembangkan bisnisnya.</p>
                     </div>
-                    <button data-analytics-name="play button | IKAT Indonesia" type="button">
-                        <x-icons.play-rounded width="78" height="78" fill="#fff" />
+                    <button data-analytics-name="play button | IKAT Indonesia" type="button" class="group">
+                        <x-icons.play-rounded width="78" height="78" fill="#fff" class="group-hover:scale-110 transition-all duration-300 ease-in-out" />
                     </button>
                 </div>
                 <div data-analytics-level3="carousel-6" class="swiper-slide">
@@ -94,8 +94,8 @@
                         <h4 class="subheadline-4">IKAT Indonesia</h4>
                         <p class="paragraph-sm">Dengarkan bagaimana nama domain .com yang dikenal membantu pemilik bisnis mengembangkan bisnisnya.</p>
                     </div>
-                    <button data-analytics-name="play button | Chick Diva Geek" type="button">
-                        <x-icons.play-rounded width="78" height="78" fill="#fff" />
+                    <button data-analytics-name="play button | Chick Diva Geek" type="button" class="group">
+                        <x-icons.play-rounded width="78" height="78" fill="#fff" class="group-hover:scale-110 transition-all duration-300 ease-in-out" />
                     </button>
                 </div>
             </div>
@@ -107,8 +107,8 @@
     {{-- Resources --}}
     <section
         data-analytics-level2="Telusuri Semua Sumber Informasi"
-        class="bg-deep-blue-300">
-        <div class="container py-10 md:pb-19.5">
+        class="bg-deep-blue-300 px-4 md:px-8">
+        <div class="max-w-300 mx-auto py-10 md:pb-19.5">
             <div class="space-y-3 text-center text-white mb-10">
                 <h2 class="headline-1">Telusuri Semua Sumber Informasi</h2>
                 <p class="paragraph-md">Jelajahi artikel, video, dan lainnya untuk mendukung perjalanan Anda.</p>

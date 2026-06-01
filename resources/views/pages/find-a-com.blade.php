@@ -4,7 +4,7 @@
 
 @section('content')
 
-<main>
+<main data-analytics-level1="body">
     {{-- Hero --}}
     <section
         data-analytics-level2="hero"
