@@ -18,7 +18,7 @@
             href="{{ $route }}"
             class="w-max flex items-center font-sans text-xl font-bold text-magenta-300 leading-6">
             Baca Selengkapnya
-            <img src="{{ asset('images/icons/magenta-chevron-right.svg') }}" alt="">
+            <x-icons.arrow-rounded width="24" height="24" fill="#A7127E" class="size-4.5 ml-1" strokeWidth="1" />
         </a>
     </div>
 </article>

@@ -17,7 +17,7 @@
             <button data-analytics-name="video image | Website Use Case" type="button" class="group relative rounded-[10px] overflow-hidden shrink-0 cursor-pointer box-shadow-sm">
                 <div class="top-0 left-0 absolute bg-black/30 size-full"></div>
                 <span data-analytics-name="play button | Website Use Case" class="transition-all duration-300 ease-in-out top-1/2 left-1/2 absolute -translate-x-1/2 -translate-y-1/2 group-hover:scale-110">
-                    <img class="size-19.5" src="{{ asset('images/icons/white-play-rounded.svg') }}" alt="">
+                    <x-icons.play-rounded width="78" height="78" fill="#fff" />
                 </span>
                 <img class="w-156 object-cover aspect-video lg:w-125 xl:w-156" src="{{ asset('images/uc-websites.jpg') }}" alt="">
             </button>
@@ -57,7 +57,7 @@
             <a
                 data-analytics-name="button | Ketahui Manfaat Lainnya"
                 href="#"
-                class="px-10 py-3 font-bold btn-secondary text-[18px]! w-full sm:w-auto">
+                class="btn-secondary w-full sm:w-auto">
                 Ketahui Manfaat Lainnya
             </a>
         </div>
@@ -79,15 +79,15 @@
                         data-analytics-name="box | Buat Rencana Pembangunan Situs Web Anda"
                         class="gap-4 grid grid-rows-subgrid row-span-3 bg-white p-4 rounded-[10px]">
                         <div class="flex flex-col justify-center items-center gap-2.5 bg-mint-300 p-6 rounded-lg text-deep-blue-300 text-center">
-                            <img class="size-10" src="{{ asset('images/icons/deep-list.svg') }}" alt="">
+                            <x-icons.list width="40" height="40" fill="#1A2E47" />
                             <h3 class="subheadline-3 hyphens-manual">Buat Rencana Pemba&shy;ngunan Situs Web Anda</span></h3>
                         </div>
                         <div class="flex gap-4 py-2 border-mint-300 border-b-4 text-deep-blue-300">
-                            <img class="size-12.5" src="{{ asset('images/icons/mint-check.svg') }}" alt="">
+                            <x-icons.mint-check width="50" height="50" class="shrink-0" />
                             <p class="paragraph-sm text-[20px]! font-medium! leading-6.5!">Pilih dan daftarkan nama domain .com untuk alamat web Anda.</p>
                         </div>
                         <div class="flex gap-4 py-2 text-deep-blue-300">
-                            <img class="size-12.5" src="{{ asset('images/icons/mint-check.svg') }}" alt="">
+                            <x-icons.mint-check width="50" height="50" class="shrink-0" />
                             <p class="paragraph-sm text-[20px]! font-medium! leading-6.5!">Tentukan tujuan situs web Anda (misalnya, blog, situs e-commerce, brosur online).</p>
                         </div>
                     </div>
@@ -97,15 +97,15 @@
                         data-analytics-name="box | Tentukan Persyaratan Situs Web"
                         class="gap-4 grid grid-rows-subgrid row-span-3 bg-white p-4 rounded-[10px]">
                         <div class="flex flex-col justify-center items-center gap-2.5 bg-mint-300 p-6 rounded-lg text-deep-blue-300 text-center">
-                            <img class="size-10" src="{{ asset('images/icons/deep-list.svg') }}" alt="">
+                            <x-icons.list width="40" height="40" fill="#1A2E47" />
                             <h3 class="subheadline-3">Tentukan Persyaratan Situs Web</h3>
                         </div>
                         <div class="flex gap-4 py-2 border-mint-300 border-b-4 text-deep-blue-300">
-                            <img class="size-12.5" src="{{ asset('images/icons/mint-check.svg') }}" alt="">
+                            <x-icons.mint-check width="50" height="50" class="shrink-0" />
                             <p class="paragraph-sm text-[20px]! font-medium! leading-6.5!">Tentukan informasi terpenting yang harus ada di situs web Anda sekarang, dan informasi yang dapat ditambahkan nanti.</p>
                         </div>
                         <div class="flex gap-4 py-2 text-deep-blue-300">
-                            <img class="size-12.5" src="{{ asset('images/icons/mint-check.svg') }}" alt="">
+                            <x-icons.mint-check width="50" height="50" class="shrink-0" />
                             <p class="paragraph-sm text-[20px]! font-medium! leading-6.5!">Cari tahu informasi apa yang akan menarik dan bermanfaat bagi pengunjung Anda (misalnya, informasi kontak, deskripsi produk).</p>
                         </div>
                     </div>
@@ -115,15 +115,15 @@
                         data-analytics-name="box | Kelola Situs Web Anda"
                         class="gap-4 grid grid-rows-subgrid row-span-3 bg-white p-4 rounded-[10px]">
                         <div class="flex flex-col justify-center items-center gap-2.5 bg-mint-300 p-6 rounded-lg text-deep-blue-300 text-center">
-                            <img class="size-10" src="{{ asset('images/icons/deep-list.svg') }}" alt="">
+                            <x-icons.list width="40" height="40" fill="#1A2E47" />
                             <h3 class="subheadline-3 xl:max-w-xs">Kelola Situs Web Anda</h3>
                         </div>
                         <div class="flex gap-4 py-2 border-mint-300 border-b-4 text-deep-blue-300">
-                            <img class="size-12.5" src="{{ asset('images/icons/mint-check.svg') }}" alt="">
+                            <x-icons.mint-check width="50" height="50" class="shrink-0" />
                             <p class="paragraph-sm text-[20px]! font-medium! leading-6.5!">Pikirkan cara pengunjung menemukan situs web Anda, dan cantumkan alamat web Anda di semua lokasi yang memungkinkan.</p>
                         </div>
                         <div class="flex gap-4 py-2 text-deep-blue-300">
-                            <img class="size-12.5" src="{{ asset('images/icons/mint-check.svg') }}" alt="">
+                            <x-icons.mint-check width="50" height="50" class="shrink-0" />
                             <p class="paragraph-sm text-[20px]! font-medium! leading-6.5!">Pahami siapa saja yang akan mengunjungi situs web Anda menggunakan alat bantu untuk memudahkan analisis lalu lintas situs web Anda.</p>
                         </div>
                     </div>
@@ -132,7 +132,7 @@
             <div class="flex w-full justify-center">
                 <a data-analytics-name="button | Telusuri Daftar Periksa Lengkap"
                     href="#"
-                    class="px-10 py-3 font-bold btn-primary text-[18px]! w-full sm:w-auto">
+                    class="btn-primary w-full sm:w-auto">
                     Telusuri Daftar Periksa Lengkap
                 </a>
             </div>
@@ -150,7 +150,7 @@
                 <button type="button" class="group cursor-pointer relative rounded-[10px] overflow-hidden">
                     <div class="top-0 left-0 absolute bg-linear-360 from-black/80 to-transparent size-full"></div>
                     <span class="transition-all duration-300 ease-in-out top-1/2 left-1/2 absolute -translate-x-1/2 -translate-y-1/2 group-hover:scale-110">
-                        <img class="size-19.5" src="{{ asset('images/icons/white-play-rounded.svg') }}" alt="">
+                        <x-icons.play-rounded width="78" height="78" fill="#fff" />
                     </span>
                     <img class="size-full aspect-video max-w-150 xl:max-w-full" src="{{ asset('images/usecase-website.jpg') }}" alt="">
                 </button>
@@ -232,7 +232,7 @@
             <a
                 data-analytics-name="button | Kunjungi Panduan Belajar"
                 href="{{ route('resources.index') }}"
-                class="px-6 py-3 text-[18px]! font-bold btn-secondary sm:w-max">
+                class="btn-secondary w-full sm:w-max">
                 Kunjungi Panduan Belajar
             </a>
         </div>

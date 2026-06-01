@@ -18,7 +18,7 @@
                         <span class="inline md:block">Dunia</span> Menemukanmu
                     </span>
                 </h1>
-                <p class="max-w-135 leading-8.5! text-[22px]! paragraph-md md:max-w-full md:leading-11! lg:text-[32px]!">
+                <p class="max-w-135 leading-8.5! text-[22px]! paragraph-md md:max-w-212.5 md:leading-11! lg:text-[32px]!">
                     Nama domain .com membantu orang-orang menemukan dan memercayai Anda
                 </p>
             </div>
@@ -99,7 +99,7 @@
                 <button
                     data-analytics-name="play button | Bukan Sekadar Domain. Melainkan Suatu Pernyataan"
                     type="button" class="top-2/3 left-1/2 z-10 absolute -translate-x-1/2 -translate-y-1/2 cursor-pointer transition-all duration-300 ease-in-out hover:scale-110 min-[900px]:top-[60%] lg:top-[55%]">
-                    <img class="size-10 min-[400px]:size-14 min-[900px]:size-16 lg:size-20 2xl:size-32.5" src="{{ asset('images/icons/navy-play.svg') }}" alt="">
+                    <x-icons.large-play-rounded width="130" height="130" fill="#304D6D" stroke="#304D6D" strokeWidth="4" class="size-10 min-[400px]:size-14 min-[900px]:size-16 lg:size-20 2xl:size-32.5" />
                 </button>
             </div>
 
@@ -165,15 +165,17 @@
                             <button
                                 data-analytics-name="play button | IKAT Indonesia"
                                 type="button" class="group/child relative size-full cursor-pointer outline-none mb-6 sm:mb-0">
-                                <img class="transition-all duration-300 ease-in-out top-1/2 left-1/2 absolute size-19.5 -translate-x-1/2 -translate-y-1/2 group-hover/child:scale-110 sm:-translate-y-[90%] lg:-translate-y-1/2" src="{{ asset('images/icons/white-play-rounded.svg') }}" alt="">
+                                <x-icons.play-rounded width="78" height="78" fill="#fff" class="transition-all duration-300 ease-in-out top-1/2 left-1/2 absolute size-19.5 -translate-x-1/2 -translate-y-1/2 group-hover/child:scale-110 sm:-translate-y-[90%] lg:-translate-y-1/2" />
                             </button>
                         </div>
                     </a>
                 </div>
-                <div class="flex justify-center">
+                <div class="justify-center md:flex">
                     <a
                         data-analytics-name="button | Lihat Kisah Usaha Kecil"
-                        href="#" class="px-10 py-3 font-bold btn-primary text-[18px]! w-full sm:w-auto">Lihat Kisah Usaha Kecil</a>
+                        href="#" class="btn-primary w-full sm:w-auto">
+                        Lihat Kisah Usaha Kecil
+                    </a>
                 </div>
             </div>
         </div>
@@ -185,29 +187,30 @@
         data-analytics-level2="Tinggalkan Jejak Anda di Dunia Maya"
         class="bg-light-gray-100">
         <div class="pt-10 pb-19.5 px-4 mx-auto max-w-md md:px-8 md:container">
-            <h2 class="mb-10 text-navy-blue-300 text-center headline-1">Tinggalkan Jejak Anda di Dunia Maya</h2>
+            <h2 class="sticky top-30 mb-10 text-navy-blue-300 text-center headline-1">Tinggalkan Jejak Anda di Dunia Maya</h2>
             <div class="flex flex-col gap-6 mx-auto max-w-208">
                 <div
                     data-analytics-level3="card1"
-                    class="top-24 sticky card-stack md:top-40">
+                    class="top-24 sticky card-stack md:top-60">
                     <x-displays.card-stack number="1" title="Lebih Mudah Ditemukan" image="images/homepage-editorial-1.jpg">
                         Nama domain .com membantu memudahkan pelanggan menemukan bisnis secara online.
                     </x-displays.card-stack>
                 </div>
                 <div
                     data-analytics-level3="card2"
-                    class="top-44 sticky card-stack md:top-60">
+                    class="top-44 sticky card-stack md:top-80">
                     <x-displays.card-stack number="2" title="Tampil Beda Secara Online" image="images/homepage-editorial-2.jpg">
                         Nama domain .com dapat membantu meningkatkan visibilitas bisnis.
                     </x-displays.card-stack>
                 </div>
                 <div
                     data-analytics-level3="card3"
-                    class="top-66 sticky card-stack md:top-86">
+                    class="top-66 sticky card-stack md:top-105">
                     <x-displays.card-stack number="3" title="Tingkatkan Kredibilitas Anda" image="images/homepage-editorial-3.jpg">
                         Nama domain .com dapat membantu usaha kecil terlihat lebih profesional.
                     </x-displays.card-stack>
                 </div>
+                <div class="h-screen"></div>
             </div>
         </div>
     </section>
@@ -255,7 +258,7 @@
                 x-data="{clicked: false}"
                 @click.prevent="clicked = true"
                 data-analytics-name="button | Ketahui Selengkapnya"
-                href="#" class="px-10 py-3 font-bold btn-secondary text-[18px]! w-full sm:w-auto">Ketahui Selengkapnya</a>
+                href="#" class="btn-secondary w-full sm:w-auto">Ketahui Selengkapnya</a>
         </div>
     </section>
     <!-- End Resources -->

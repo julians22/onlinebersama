@@ -17,7 +17,7 @@
             <button data-analytics-name="video image | Email Use Case" type="button" class="group relative rounded-[10px] overflow-hidden shrink-0 cursor-pointer box-shadow-sm">
                 <div class="top-0 left-0 absolute bg-black/30 size-full"></div>
                 <span data-analytics-name="play button | Email Use Case" class="transition-all duration-300 ease-in-out top-1/2 left-1/2 absolute -translate-x-1/2 -translate-y-1/2 group-hover:scale-110">
-                    <img class="size-19.5" src="{{ asset('images/icons/white-play-rounded.svg') }}" alt="">
+                    <x-icons.play-rounded width="78" height="78" fill="#fff" />
                 </span>
                 <img class="w-156 object-cover aspect-video lg:w-125 xl:w-156" src="{{ asset('images/uc-email.jpg') }}" alt="">
             </button>
@@ -57,7 +57,7 @@
             <a
                 data-analytics-name="button | Katahui Manfaat Lainnya"
                 href="#"
-                class="px-10 py-3 font-bold btn-secondary text-[18px]! w-full sm:w-auto">
+                class="btn-secondary w-full sm:w-auto">
                 Ketahui Manfaat Lainnya
             </a>
         </div>
@@ -72,7 +72,7 @@
             <button data-analytics-name="video image | Tiga Cara Menggunakan Alamat Email Kustom" type="button" class="group relative rounded-[10px] overflow-hidden shrink-0 cursor-pointer">
                 <img class="size-full object-cover aspect-video" src="{{ asset('images/three-ways.jpg') }}" alt="">
                 <span data-analytics-name="play button | Tiga Cara Menggunakan Alamat Email Kustom" class="transition-all duration-300 ease-in-out top-1/2 left-1/2 absolute -translate-x-1/2 -translate-y-1/2 group-hover:scale-110">
-                    <img class="size-19.5" src="{{ asset('images/icons/white-play-rounded.svg') }}" alt="">
+                    <x-icons.play-rounded width="78" height="78" fill="#fff" />
                 </span>
             </button>
             <div class="space-y-2 max-w-150 text-white md:space-y-6 md:p-6">
@@ -93,7 +93,7 @@
                 <button type="button" class="group cursor-pointer relative rounded-[10px] overflow-hidden">
                     <div class="top-0 left-0 absolute bg-linear-360 from-black/80 to-transparent size-full"></div>
                     <span class="transition-all duration-300 ease-in-out top-1/2 left-1/2 absolute -translate-x-1/2 -translate-y-1/2 group-hover:scale-110">
-                        <img class="size-19.5" src="{{ asset('images/icons/white-play-rounded.svg') }}" alt="">
+                        <x-icons.play-rounded width="78" height="78" fill="#fff" />
                     </span>
                     <img class="size-full aspect-video max-w-150 xl:max-w-full" src="{{ asset('images/usecase-email.jpg') }}" alt="">
                 </button>
@@ -175,7 +175,7 @@
             <a
                 data-analytics-name="button | Kunjungi Panduan Belajar"
                 href="{{ route('resources.index') }}"
-                class="px-6 py-3 text-[18px]! font-bold btn-secondary sm:w-max">
+                class="btn-secondary w-full sm:w-max">
                 Kunjungi Panduan Belajar
             </a>
         </div>

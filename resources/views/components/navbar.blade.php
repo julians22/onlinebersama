@@ -34,7 +34,9 @@
                             :data-analytics-name="dropdown ? collapsedDataText : expandedDataText"
                             type="button"@click="dropdown = !dropdown" class="nav-link nav-dropdown text-right">
                             Bagaimana Cara Menggunakan .com?
-                            <img class="transition-all duration-300 ease-in-out" :class="dropdown ? '-rotate-180' : 'rotate-0'" src="{{ asset('images/icons/white-arrow-down.svg') }}">
+                            <span :class="dropdown ? '-rotate-180' : 'rotate-0'" class="transition-all duration-300 ease-in-out">
+                                <x-icons.arrow width="15" height="7" fill="#fff" />
+                            </span>
                         </button>
                     </li>
                     <li class="flex items-center text-right">
@@ -45,7 +47,7 @@
                 </ul>
                 <a
                     data-analytics-name="button | Find a .com"
-                    href="{{ route('find') }}" class="px-4 lg:px-6 py-0.5 lg:py-2 font-medium text-navy-blue-300 btn-primary">
+                    href="{{ route('find') }}" class="px-4 py-0.5 font-medium text-navy-blue-300 text-[14px] btn-primary lg:text-[20px] lg:px-6 lg:py-2">
                     Temukan .com Anda
                 </a>
             </div>

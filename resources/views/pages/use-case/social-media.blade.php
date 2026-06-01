@@ -17,7 +17,7 @@
             <button data-analytics-name="video image | Domain Forwarding Use Case" type="button" class="group relative rounded-[10px] overflow-hidden shrink-0 cursor-pointer box-shadow-sm">
                 <div class="top-0 left-0 absolute bg-black/30 size-full"></div>
                 <span data-analytics-name="play button | Domain Forwarding Use Case" class="transition-all duration-300 ease-in-out top-1/2 left-1/2 absolute -translate-x-1/2 -translate-y-1/2 group-hover:scale-110">
-                    <img class="size-19.5" src="{{ asset('images/icons/white-play-rounded.svg') }}" alt="">
+                    <x-icons.play-rounded width="78" height="78" fill="#fff" />
                 </span>
                 <img class="w-156 object-cover aspect-video lg:w-125 xl:w-156" src="{{ asset('images/uc-social-media-ecommerce.jpg') }}" alt="">
             </button>
@@ -56,7 +56,7 @@
         <div class="flex justify-center mt-10">
             <a
                 data-analytics-name="text | Ketahui Manfaat Lainnya"
-                href="{{ route('resources.show', 'apa-itu-penerusan-nama-domain') }}" class="px-10 py-3 font-bold btn-secondary text-[18px]! w-full sm:w-auto">
+                href="{{ route('resources.show', 'apa-itu-penerusan-nama-domain') }}" class="btn-secondary w-full sm:w-auto">
                 Ketahui Manfaat Lainnya
             </a>
         </div>
@@ -86,7 +86,7 @@
                         <p class="leading-8.5! paragraph-md text-[20px]!">Jangkau lebih banyak orang dengan menghubungkan halaman media sosial Anda ke alamat web .com kustom.</p>
                         <p data-analytics-name="text | Baca Selengkapnya" class="flex items-center w-max font-sans font-bold text-[20px] decoration-[8%] underline underline-offset-[12%] tracking-[0.25px]">
                             Baca Selengkapnya
-                            <img src="{{ asset('images/icons/white-chevron-backward.svg') }}" alt="">
+                            <x-icons.arrow-rounded width="24" height="24" fill="#fff" class="size-4.5 ml-1" strokeWidth="1" />
                         </p>
                     </div>
                 </a>
@@ -96,7 +96,7 @@
                         <p class="leading-8.5! paragraph-md text-[20px]!">Tautkan toko Anda di platform mana pun dari nama domain .com kustom.</p>
                         <p data-analytics-name="text | Baca Selengkapnya" class="flex items-center w-max font-sans font-bold text-[20px] decoration-[8%] underline underline-offset-[12%] tracking-[0.25px]">
                             Baca Selengkapnya
-                            <img src="{{ asset('images/icons/white-chevron-backward.svg') }}" alt="">
+                            <x-icons.arrow-rounded width="24" height="24" fill="#fff" class="size-4.5 ml-1" strokeWidth="1" />
                         </p>
                     </div>
                 </a>
@@ -115,7 +115,7 @@
                 <button data-analytics-name="video image | xxxx" type="button" class="group cursor-pointer relative rounded-[10px] overflow-hidden">
                     <div class="top-0 left-0 absolute bg-linear-360 from-black/80 to-transparent size-full"></div>
                     <span data-analytics-name="play button | xxx" class="transition-all duration-300 ease-in-out top-1/2 left-1/2 absolute -translate-x-1/2 -translate-y-1/2 group-hover:scale-110">
-                        <img class="size-19.5" src="{{ asset('images/icons/white-play-rounded.svg') }}" alt="">
+                        <x-icons.play-rounded width="78" height="78" fill="#fff" />
                     </span>
                     <img class="size-full aspect-video max-w-150 xl:max-w-full" src="{{ asset('images/usecase-social-media.jpg') }}" alt="">
                 </button>
@@ -197,7 +197,7 @@
             <a
                 data-analytics-name="button | Kunjungi Panduan Belajar"
                 href="{{ route('resources.index') }}"
-                class="px-6 py-3 text-[18px]! font-bold btn-secondary sm:w-max">
+                class="btn-secondary w-full sm:w-max">
                 Kunjungi Panduan Belajar
             </a>
         </div>

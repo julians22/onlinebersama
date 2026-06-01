@@ -19,7 +19,7 @@
                     <a
                         data-analytics-name="button | Liah Semua Sumbar Informasi"
                         href="#"
-                        class="btn-secondary font-bold py-3! px-10! text-[18px]! w-full sm:w-auto">
+                        class="btn-secondary w-full sm:w-auto">
                         Lihat Semua Sumber Informasi
                     </a>
                 </div>
@@ -45,7 +45,7 @@
                         <p class="paragraph-sm">Dengarkan bagaimana nama domain .com yang dikenal membantu pemilik bisnis mengembangkan bisnisnya.</p>
                     </div>
                     <button data-analytics-name="play button | Startup Experience" type="button">
-                        <img src="{{ asset('images/icons/white-play-rounded.svg') }}" alt="">
+                        <x-icons.play-rounded width="78" height="78" fill="#fff" />
                     </button>
                 </div>
                 <div data-analytics-level3="carousel-2" class="swiper-slide">
@@ -55,7 +55,7 @@
                         <p class="paragraph-sm">Dengarkan bagaimana nama domain .com yang dikenal membantu pemilik bisnis mengembangkan bisnisnya.</p>
                     </div>
                     <button data-analytics-name="play button | IKAT Indonesia" type="button">
-                        <img src="{{ asset('images/icons/white-play-rounded.svg') }}" alt="">
+                        <x-icons.play-rounded width="78" height="78" fill="#fff" />
                     </button>
                 </div>
                 <div data-analytics-level3="carousel-3" class="swiper-slide">
@@ -65,7 +65,7 @@
                         <p class="paragraph-sm">Dengarkan bagaimana nama domain .com yang dikenal membantu pemilik bisnis mengembangkan bisnisnya.</p>
                     </div>
                     <button data-analytics-name="play button | Chick Diva Geek" type="button">
-                        <img src="{{ asset('images/icons/white-play-rounded.svg') }}" alt="">
+                        <x-icons.play-rounded width="78" height="78" fill="#fff" />
                     </button>
                 </div>
                 <div data-analytics-level3="carousel-4" class="swiper-slide">
@@ -75,7 +75,7 @@
                         <p class="paragraph-sm">Dengarkan bagaimana nama domain .com yang dikenal membantu pemilik bisnis mengembangkan bisnisnya.</p>
                     </div>
                     <button data-analytics-name="play button | Startup Experience" type="button">
-                        <img src="{{ asset('images/icons/white-play-rounded.svg') }}" alt="">
+                        <x-icons.play-rounded width="78" height="78" fill="#fff" />
                     </button>
                 </div>
                 <div data-analytics-level3="carousel-5" class="swiper-slide">
@@ -85,7 +85,7 @@
                         <p class="paragraph-sm">Dengarkan bagaimana nama domain .com yang dikenal membantu pemilik bisnis mengembangkan bisnisnya.</p>
                     </div>
                     <button data-analytics-name="play button | IKAT Indonesia" type="button">
-                        <img src="{{ asset('images/icons/white-play-rounded.svg') }}" alt="">
+                        <x-icons.play-rounded width="78" height="78" fill="#fff" />
                     </button>
                 </div>
                 <div data-analytics-level3="carousel-6" class="swiper-slide">
@@ -95,7 +95,7 @@
                         <p class="paragraph-sm">Dengarkan bagaimana nama domain .com yang dikenal membantu pemilik bisnis mengembangkan bisnisnya.</p>
                     </div>
                     <button data-analytics-name="play button | Chick Diva Geek" type="button">
-                        <img src="{{ asset('images/icons/white-play-rounded.svg') }}" alt="">
+                        <x-icons.play-rounded width="78" height="78" fill="#fff" />
                     </button>
                 </div>
             </div>

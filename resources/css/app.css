@@ -70,7 +70,7 @@
 @utility container-nav {
     margin-inline: auto;
     padding-inline: 16px;
-    max-width: 1760px;
+    max-width: 1440px;
     width: 100%;
 
     @variant md {
@@ -170,11 +170,11 @@
     /* Button */
 
     .btn-primary {
-        @apply block bg-vibrant-yellow-300 hover:bg-vibrant-yellow-400 focus:bg-vibrant-yellow-200 lg:p-4 px-4 py-0.5 rounded-full text-deep-blue-300 text-sm lg:text-xl text-center leading-6 transition-all duration-150 ease-in-out;
+        @apply block bg-vibrant-yellow-300 hover:bg-vibrant-yellow-400 focus:bg-vibrant-yellow-200 p-3 rounded-full text-deep-blue-300 text-center leading-6 transition-all duration-150 ease-in-out font-bold text-[18px] md:text-[20px] md:px-10 md:py-4;
     }
 
     .btn-secondary {
-        @apply block bg-magenta-300 hover:bg-magenta-400 focus:bg-magenta-200 lg:p-4 px-4 py-0.5 border border-transparent focus:border-magenta-300 rounded-full text-white hover:text-light-gray-300 text-sm lg:text-xl text-center leading-6 transition-all duration-150 ease-in-out;
+        @apply block bg-magenta-300 hover:bg-magenta-400 focus:bg-magenta-200 p-3 rounded-full text-white text-center leading-6 transition-all duration-150 ease-in-out font-bold text-[18px] focus:border-magenta-300 hover:text-light-gray-300 md:text-[20px] md:px-10 md:py-4;
     }
 
     /* Select */
@@ -191,6 +191,12 @@
                 @apply bg-mint-300;
             }
         }
+    }
+
+    /* Card */
+
+    .card-action {
+        @apply md:flex;
     }
 
     /* Article */
@@ -337,7 +343,7 @@
 
     .bg-gradient-nav {
         background: linear-gradient(101deg, var(--color-navy-blue-300, #304D6D) 15.08%, var(--color-deep-blue-300, #1A2E47) 76.56%);
-        /* box-shadow: 0 4px 4px 0 rgba(169, 169, 169, 0.25); */
+        box-shadow: 0 4px 4px 0 rgba(169, 169, 169, 0.25);
     }
 
     .bg-gradient-nav-dropdown {
@@ -433,11 +439,11 @@
         &.not-hovered {
             @apply xl:basis-[23.2%];
         }
-        .card-grow-action {
-            @apply transition-all duration-500 ease-in-out translate-y-20 opacity-0;
+        .card-action {
+            @apply transition-all duration-500 ease-in-out translate-y-20 opacity-0 md:flex;
         }
         &.swiper-slide-active {
-            .card-grow-action {
+            .card-action {
                 @apply transition-all duration-500 ease-in-out translate-y-0 opacity-100;
             }
         }
@@ -458,11 +464,11 @@
 .online-bersama-how-to-use {
     @apply overflow-visible! py-12!;
     .swiper-slide {
-        .card-grow-action {
-            @apply transition-all duration-500 ease-in-out max-xl:translate-y-20 max-xl:opacity-0;
+        .card-action {
+            @apply transition-all duration-500 ease-in-out max-xl:translate-y-20 max-xl:opacity-0 md:flex;
         }
         &.swiper-slide-active {
-            .card-grow-action {
+            .card-action {
                 @apply transition-all duration-500 ease-in-out max-xl:translate-y-0 max-xl:opacity-100;
             }
         }
