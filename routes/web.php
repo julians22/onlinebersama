@@ -27,3 +27,11 @@ Route::name('resources.')->group(function() {
 });
 
 Route::get('kumpulan-materi', fn() => redirect()->route('resources.index'));
+
+Route::get('/ip-debug', function () {
+    return response()->json([
+        'actual_request_ip' => request()->ip(),
+        'all_headers' => request()->headers->all(),
+        'server_variables' => request()->server->all(),
+    ]);
+});
