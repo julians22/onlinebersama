@@ -203,7 +203,7 @@
                 </div>
                 <div
                     data-analytics-level3="card2"
-                    class="top-50 sticky card-stack -mt-18 translate-y-18 md:-mt-22 md:translate-y-22 lg:-mt-20 lg:translate-y-20 md:top-76 min-[1150px]:top-60!">
+                    class="top-50 sticky card-stack -mt-18 translate-y-18 md:-mt-22 md:translate-y-22 md:top-76 lg:-mt-20 lg:translate-y-20 min-[1150px]:top-60!">
                     <x-displays.card-stack number="2" title="Tampil Beda Secara Online" image="images/homepage-editorial-2.jpg">
                         Nama domain .com dapat membantu meningkatkan visibilitas bisnis.
                     </x-displays.card-stack>
@@ -257,12 +257,15 @@
                 <p>Jika Anda memiliki nama domain tingkat atas kode negara (ccTLD), Anda dapat memperluas jangkauan bisnis dengan memasangkannya dengan nama domain .com yang sesuai. Sebagai contoh, jika Anda menggunakan nama domain ccTLD yang sudah ada untuk situs web, Anda dapat meneruskan nama domain .com ke situs web tersebut. Sekarang pelanggan dapat menemukan Anda saat mengetik nama domain .com atau ccTLD Anda.</p>
             </x-displays.accordion>
         </div>
-        <div class="flex justify-center">
+        <div class="justify-center md:flex">
             <a
                 x-data="{clicked: false}"
                 @click.prevent="clicked = true"
                 data-analytics-name="button | Ketahui Selengkapnya"
-                href="#" class="btn-secondary w-full sm:w-auto">Ketahui Selengkapnya</a>
+                href="{{ route('resources.index') }}"
+                class="btn-secondary w-full sm:w-auto">
+                Ketahui Selengkapnya
+            </a>
         </div>
     </section>
     <!-- End Resources -->

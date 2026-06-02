@@ -29,33 +29,33 @@
     <section
         data-analytics-level2="Manfaat Situs Web"
         class="py-10 container">
-        <div class="pb-28 md:pb-48">
-            <h2 class="mb-10 text-navy-blue-300 text-center headline-1">Manfaat Situs Web</h2>
+        <div class="pb-42 md:pb-44">
+            <h2 class="sticky top-22 mb-10 text-navy-blue-300 text-center headline-1 md:top-24 lg:top-30">Manfaat Situs Web</h2>
             <div class="flex flex-col gap-6 mx-auto max-w-md md:max-w-208">
                 <div
                     data-analytics-level3="Berkembang Sesuai Keinginan Anda"
-                    class="top-50 sticky card-stack md:top-76 min-[1150px]:top-60!">
+                    class="top-42 sticky card-stack md:top-54 lg:top-60">
                     <x-displays.card-stack number="1" title="Berkembang Sesuai Keinginan Anda" image="images/website-editorial-1.jpg" alt="">
                         Ciptakan tempat bagi bisnis Anda untuk berakar dan berkembang sesuai keinginan Anda. Situs web dengan nama domain .com dapat berkembang seiring perkembangan bisnis Anda.
                     </x-displays.card-stack>
                 </div>
                 <div
                     data-analytics-level3="Kendalikan Merek Anda"
-                    class="top-50 sticky card-stack -mt-18 translate-y-18 md:-mt-22 md:translate-y-22 lg:-mt-20 lg:translate-y-20 md:top-76 min-[1150px]:top-60!">
+                    class="top-42 sticky card-stack -mt-18 translate-y-18 md:-mt-22 md:translate-y-22 md:top-54 lg:top-60 lg:-mt-24 lg:translate-y-24">
                     <x-displays.card-stack number="2" title="Kendalikan Merek Anda" image="images/website-editorial-2.jpg" alt="">
                         Memiliki situs web dengan nama domain .com memberi Anda ruang untuk membangun merek dan mengendalikan eksistensi online Anda.
                     </x-displays.card-stack>
                 </div>
                 <div
                     data-analytics-level3="Lebih Mudah Ditemukan"
-                    class="top-50 sticky card-stack -mb-24 translate-y-18 md:-mb-24 md:translate-y-20 md:top-76 min-[1150px]:top-60!">
+                    class="top-42 sticky card-stack -mb-24 translate-y-18 md:-mb-20 md:translate-y-22 md:top-54 lg:top-60 lg:translate-y-24">
                     <x-displays.card-stack number="3" title="Lebih Mudah Ditemukan" image="images/website-editorial-3.jpg" alt="">
                         Situs web dengan nama domain .com memudahkan pelanggan menemukan Anda. Di situlah dunia akan menemukan Anda.
                     </x-displays.card-stack>
                 </div>
             </div>
         </div>
-        <div class="flex justify-center mt-10">
+        <div class="justify-center mt-10 md:flex">
             <a
                 data-analytics-name="button | Ketahui Manfaat Lainnya"
                 href="#"
@@ -121,7 +121,7 @@
             </div>
             <div class="flex w-full justify-center">
                 <a data-analytics-name="button | Telusuri Daftar Periksa Lengkap"
-                    href="#"
+                    href="{{ route('resources.show', 'daftar-periksa-membuat-situs-web') }}"
                     class="btn-primary w-full sm:w-auto">
                     Telusuri Daftar Periksa Lengkap
                 </a>

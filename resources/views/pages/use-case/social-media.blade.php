@@ -29,33 +29,33 @@
     <section
         data-analytics-level2="Manfaat Penerusan Domain"
         class="py-10 container">
-        <div class="pb-28 md:pb-48">
+        <div class="pb-30 md:pb-48">
             <h2 class="sticky top-20 mb-10 text-navy-blue-300 text-center headline-1 md:top-24 lg:top-30">Manfaat Penerusan Domain</span></h2>
             <div class="flex flex-col gap-6 mx-auto max-w-md md:max-w-208">
                 <div
                     data-analytics-level3="Cara Pemasaran yang Tak Terlupakan"
-                    class="top-50 sticky card-stack md:top-76 min-[1150px]:top-60!">
+                    class="top-48 sticky card-stack min-[490px]:top-42 md:top-54 lg:top-60">
                     <x-displays.card-stack number="1" title="Cara Pemasaran yang Tak Terlupakan" image="images/social-media-editorial-1.jpg" alt="">
                         Nama domain .com tidak hanya diperuntukkan bagi situs web. Dengan penerusan domain, Anda dapat memberikan alamat web yang mudah diingat untuk setiap eksistensi online.
                     </x-displays.card-stack>
                 </div>
                 <div
                     data-analytics-level3="Alamat Web yang Konsisten"
-                    class="top-50 sticky card-stack -mt-20 translate-y-20 md:-mt-22 md:translate-y-22 lg:-mt-20 lg:translate-y-20 md:top-76 min-[1150px]:top-60!">
+                    class="top-48 sticky card-stack -mt-20 translate-y-20 min-[490px]:top-42 md:-mt-22 md:translate-y-22 md:top-54 lg:top-60 lg:-mt-24 lg:translate-y-24">
                     <x-displays.card-stack number="2" title="Alamat Web yang Konsisten" image="images/social-media-editorial-2.jpg" alt="">
                         Dapatkan alamat web .com kustom yang bergerak bersama bisnis Anda. Dengan begitu, meskipun toko fisik berpindah tempat, pelanggan akan selalu dapat menemukan Anda.
                     </x-displays.card-stack>
                 </div>
                 <div
                     data-analytics-level3="Fleksibilitas untuk Berubah"
-                    class="top-50 sticky card-stack -mb-8 translate-y-20 md:-mb-24 md:translate-y-20 md:top-76 min-[1150px]:top-60!">
+                    class="top-48 sticky card-stack -mb-10 translate-y-20 min-[490px]:top-42 md:-mb-24 md:translate-y-22 md:top-54 lg:top-60 lg:translate-y-24">
                     <x-displays.card-stack number="3" title="Fleksibilitas untuk Berubah" image="images/social-media-editorial-3.jpg" alt="">
                         Anda dapat sewaktu-waktu memperbarui destinasi online yang dituju pengunjung yang mengakses nama domain .com.
                     </x-displays.card-stack>
                 </div>
             </div>
         </div>
-        <div class="flex justify-center mt-10">
+        <div class="justify-center mt-10 md:flex">
             <a
                 data-analytics-name="text | Ketahui Manfaat Lainnya"
                 href="{{ route('resources.show', 'apa-itu-penerusan-nama-domain') }}" class="btn-secondary w-full sm:w-auto">

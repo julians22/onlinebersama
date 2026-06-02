@@ -29,33 +29,33 @@
     <section
         data-analytics-level2="Manfaat Email Kustom"
         class="py-10 container">
-        <div class="pb-28 md:pb-48">
-            <h2 class="mb-10 text-navy-blue-300 text-center headline-1">Manfaat Email Kustom</h2>
+        <div class="pb-28 md:pb-40">
+            <h2 class="sticky top-20 mb-10 text-navy-blue-300 text-center headline-1 md:top-24 lg:top-30">Manfaat Email Kustom</h2>
             <div class="flex flex-col gap-6 mx-auto max-w-md md:max-w-208">
                 <div
                     data-analytics-level3="Membangun Legitimasi"
-                    class="top-50 sticky card-stack md:top-76 min-[1150px]:top-60!">
+                    class="top-48 sticky card-stack min-[407px]:top-40 md:top-54 lg:top-60">
                     <x-displays.card-stack number="1" title="Membangun Legitimasi" image="images/email-editorial-1.jpg" alt="">
                         Beri bisnis Anda tampilan yang berkelas dan profesional. Dapatkan alamat email .com kustom dan tunjukkan kepada semua orang bahwa Anda profesional.
                     </x-displays.card-stack>
                 </div>
                 <div
                     data-analytics-level3="Meningkatkan Kredibilitas"
-                    class="top-50 sticky card-stack -mt-18 translate-y-18 md:-mt-22 md:translate-y-22 lg:-mt-20 lg:translate-y-20 md:top-76 min-[1150px]:top-60!">
+                    class="top-48 sticky card-stack -mt-20 translate-y-20 min-[407px]:top-40 md:-mt-22 md:translate-y-22 md:top-54 lg:-mt-20 lg:translate-y-20 lg:top-60">
                     <x-displays.card-stack number="2" title="Meningkatkan Kredibilitas" image="images/email-editorial-2.jpg" alt="">
                         Dengan alamat email .com kustom, Anda dapat memberikan kesan yang kuat dan membekas, serta menumbuhkan kepercayaan pelanggan terhadap Anda.
                     </x-displays.card-stack>
                 </div>
                 <div
                     data-analytics-level3="Memasarkan Bisnis Anda"
-                    class="top-50 sticky card-stack -mb-24 translate-y-18 md:-mb-24 md:translate-y-20 md:top-76 min-[1150px]:top-60!">
+                    class="top-48 sticky card-stack -mb-8 translate-y-20 min-[407px]:top-40 md:-mb-20 md:translate-y-22 md:top-54 lg:top-60">
                     <x-displays.card-stack number="3" title="Memasarkan Bisnis Anda" image="images/email-editorial-3.jpg" alt="">
                         Dapatkan alamat email .com kustom dan bangun merek Anda lewat setiap email yang dikirim.
                     </x-displays.card-stack>
                 </div>
             </div>
         </div>
-        <div class="flex justify-center mt-10">
+        <div class="justify-center mt-10 md:flex">
             <a
                 data-analytics-name="button | Katahui Manfaat Lainnya"
                 href="#"
