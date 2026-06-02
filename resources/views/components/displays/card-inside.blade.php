@@ -13,11 +13,11 @@
                 'subheadline-3 md:text-[32px]! md:leading-10!'
             ])>{{ $slot }}</h3>
         </div>
-        <div class="card-grow-action">
+        <div class="card-action">
             <a
                 data-analytics-name="button | Pelajari Selengkapnya"
                 href="{{ route($route) }}"
-                class="btn-primary font-bold text-lg py-3 sm:max-w-55.75">
+                class="btn-primary">
                 Pelajari Selengkapnya
             </a>
         </div>

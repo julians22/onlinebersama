@@ -1,7 +1,7 @@
 <footer
     data-analytics-level1="footer"
     class="bg-gradient-blue-double text-white">
-    <div class="flex flex-col gap-5 py-20 container-smaller">
+    <div class="flex flex-col gap-5 py-20 container-nav">
         <div class="flex flex-col gap-y-7 justify-between lg:gap-y-0 lg:flex-row">
             <a
                 class="w-56"
@@ -32,7 +32,7 @@
                         href="{{ route('find') }}" class="footer-link">Temukan .com Anda</a>
                 </div>
                 <div class="flex flex-col gap-y-10 md:gap-y-2.5">
-                    <div class="flex flex-col lg:gap-y-2.5 lg:w-full lg:max-w-48.5">
+                    <div class="flex flex-col lg:w-full lg:max-w-48.5">
                         <a
                             data-analytics-name="text | Privacy Statement"
                             href="https://www.verisign.com/id-id/privacy/" class="footer-link">Pernyataan Privasi</a>

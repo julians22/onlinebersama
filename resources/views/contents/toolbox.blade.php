@@ -2,7 +2,7 @@
 
 @section('content')
 
-<main>
+<main data-analytics-level1="body">
     {{-- Sample Components --}}
     <div class="container-extra-smaller space-y-18 py-10">
         <x-articles.quote-callout>

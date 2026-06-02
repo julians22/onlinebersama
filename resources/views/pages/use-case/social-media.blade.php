@@ -4,7 +4,7 @@
 
 @section('content')
 
-<main>
+<main data-analytics-level1="body">
     {{-- Hero --}}
     <section
         data-analytics-level2="hero"
@@ -17,7 +17,7 @@
             <button data-analytics-name="video image | Domain Forwarding Use Case" type="button" class="group relative rounded-[10px] overflow-hidden shrink-0 cursor-pointer box-shadow-sm">
                 <div class="top-0 left-0 absolute bg-black/30 size-full"></div>
                 <span data-analytics-name="play button | Domain Forwarding Use Case" class="transition-all duration-300 ease-in-out top-1/2 left-1/2 absolute -translate-x-1/2 -translate-y-1/2 group-hover:scale-110">
-                    <img class="size-19.5" src="{{ asset('images/icons/white-play-rounded.svg') }}" alt="">
+                    <x-icons.play-rounded width="78" height="78" fill="#fff" />
                 </span>
                 <img class="w-156 object-cover aspect-video lg:w-125 xl:w-156" src="{{ asset('images/uc-social-media-ecommerce.jpg') }}" alt="">
             </button>
@@ -29,34 +29,36 @@
     <section
         data-analytics-level2="Manfaat Penerusan Domain"
         class="py-10 container">
-        <h2 class="mb-10 text-navy-blue-300 text-center headline-1">Manfaat Penerusan Domain</span></h2>
-        <div class="flex flex-col gap-6 mx-auto max-w-md md:max-w-208">
-            <div
-                data-analytics-level3="Cara Pemasaran yang Tak Terlupakan"
-                class="top-22 sticky card-stack md:top-40">
-                <x-displays.card-stack number="1" title="Cara Pemasaran yang Tak Terlupakan" image="images/social-media-editorial-1.jpg" alt="">
-                    Nama domain .com tidak hanya diperuntukkan bagi situs web. Dengan penerusan domain, Anda dapat memberikan alamat web yang mudah diingat untuk setiap eksistensi online.
-                </x-displays.card-stack>
-            </div>
-            <div
-                data-analytics-level3="Alamat Web yang Konsisten"
-                class="top-44 sticky card-stack md:top-66">
-                <x-displays.card-stack number="2" title="Alamat Web yang Konsisten" image="images/social-media-editorial-2.jpg" alt="">
-                    Dapatkan alamat web .com kustom yang bergerak bersama bisnis Anda. Dengan begitu, meskipun toko fisik berpindah tempat, pelanggan akan selalu dapat menemukan Anda.
-                </x-displays.card-stack>
-            </div>
-            <div
-                data-analytics-level3="Fleksibilitas untuk Berubah"
-                class="top-66 sticky card-stack md:top-92">
-                <x-displays.card-stack number="3" title="Fleksibilitas untuk Berubah" image="images/social-media-editorial-3.jpg" alt="">
-                    Anda dapat sewaktu-waktu memperbarui destinasi online yang dituju pengunjung yang mengakses nama domain .com.
-                </x-displays.card-stack>
+        <div class="pb-30 md:pb-48">
+            <h2 class="sticky top-20 mb-10 text-navy-blue-300 text-center headline-1 md:top-24 lg:top-30">Manfaat Penerusan Domain</span></h2>
+            <div class="flex flex-col gap-6 mx-auto max-w-md md:max-w-208">
+                <div
+                    data-analytics-level3="Cara Pemasaran yang Tak Terlupakan"
+                    class="top-48 sticky card-stack min-[490px]:top-42 md:top-54 lg:top-60">
+                    <x-displays.card-stack number="1" title="Cara Pemasaran yang Tak Terlupakan" image="images/social-media-editorial-1.jpg" alt="">
+                        Nama domain .com tidak hanya diperuntukkan bagi situs web. Dengan penerusan domain, Anda dapat memberikan alamat web yang mudah diingat untuk setiap eksistensi online.
+                    </x-displays.card-stack>
+                </div>
+                <div
+                    data-analytics-level3="Alamat Web yang Konsisten"
+                    class="top-48 sticky card-stack -mt-20 translate-y-20 min-[490px]:top-42 md:-mt-22 md:translate-y-22 md:top-54 lg:top-60 lg:-mt-24 lg:translate-y-24">
+                    <x-displays.card-stack number="2" title="Alamat Web yang Konsisten" image="images/social-media-editorial-2.jpg" alt="">
+                        Dapatkan alamat web .com kustom yang bergerak bersama bisnis Anda. Dengan begitu, meskipun toko fisik berpindah tempat, pelanggan akan selalu dapat menemukan Anda.
+                    </x-displays.card-stack>
+                </div>
+                <div
+                    data-analytics-level3="Fleksibilitas untuk Berubah"
+                    class="top-48 sticky card-stack -mb-10 translate-y-20 min-[490px]:top-42 md:-mb-24 md:translate-y-22 md:top-54 lg:top-60 lg:translate-y-24">
+                    <x-displays.card-stack number="3" title="Fleksibilitas untuk Berubah" image="images/social-media-editorial-3.jpg" alt="">
+                        Anda dapat sewaktu-waktu memperbarui destinasi online yang dituju pengunjung yang mengakses nama domain .com.
+                    </x-displays.card-stack>
+                </div>
             </div>
         </div>
-        <div class="flex justify-center mt-10">
+        <div class="justify-center mt-10 md:flex">
             <a
                 data-analytics-name="text | Ketahui Manfaat Lainnya"
-                href="{{ route('resources.show', 'apa-itu-penerusan-nama-domain') }}" class="px-10 py-3 font-bold btn-secondary text-[18px]! w-full sm:w-auto">
+                href="{{ route('resources.show', 'apa-itu-penerusan-nama-domain') }}" class="btn-secondary w-full sm:w-auto">
                 Ketahui Manfaat Lainnya
             </a>
         </div>
@@ -67,15 +69,15 @@
     <section
         data-analytics-level2="Dua Cara untuk Menggunakan Penerusan Domain"
         class="bg-deep-blue-300">
-        <div class="max-w-380 mx-auto pt-10 pb-19.5 px-4 md:px-8 xl:px-0">
-            <h2 class="mb-6 text-white text-center headline-1 md:mb-13">Dua Cara untuk Menggunakan Penerusan Domain</h2>
+        <div class="container-nav pt-10 pb-19.5">
+            <h2 class="mb-6 text-white text-center headline-1 max-w-4xl mx-auto md:mb-13">Dua Cara untuk Menggunakan Penerusan Domain</h2>
             <div x-data="{ active: 'social-media' }" class="flex flex-col justify-center gap-4 md:flex-row">
                 <div class="flex flex-col gap-4 md:max-w-xs">
-                    <button data-analytics-level3="Media Sosial" type="button" @click="active = 'social-media'" :class="active === 'social-media' && 'bg-white! text-deep-blue-300!'" class="space-y-3 bg-navy-blue-300 p-6 rounded-[10px] h-full text-white text-left cursor-pointer">
+                    <button data-analytics-level3="Media Sosial" type="button" @click="active = 'social-media'" :class="active === 'social-media' && 'bg-white! hover:bg-white! text-deep-blue-300! hover:pl-6!'" class="transition-all duration-300 ease-in-out space-y-3 bg-navy-blue-300 p-6 rounded-[10px] h-full text-white text-left cursor-pointer hover:bg-[#2b4562] hover:pl-7.25">
                         <h3 class="subheadline-3 text-[32px]!">Media Sosial</h3>
                         <p class="paragraph-md text-[24px]!">Buat lebih banyak pasang mata tertuju pada halaman Anda.</p>
                     </button>
-                    <button data-analytics-level3="Toko Online" type="button" @click="active = 'online-store'" :class="active === 'online-store' && 'bg-white! text-deep-blue-300!'" class="space-y-3 bg-navy-blue-300 p-6 rounded-[10px] h-full text-white text-left cursor-pointer">
+                    <button data-analytics-level3="Toko Online" type="button" @click="active = 'online-store'" :class="active === 'online-store' && 'bg-white! hover:bg-white! text-deep-blue-300! hover:pl-6!'" class="transition-all duration-300 ease-in-out space-y-3 bg-navy-blue-300 p-6 rounded-[10px] h-full text-white text-left cursor-pointer hover:bg-[#2b4562] hover:pl-7.25">
                         <h3 class="subheadline-3 text-[32px]!">Toko Online</h3>
                         <p class="paragraph-md text-[24px]!">Permudah pencarian bisnis Anda.</p>
                     </button>
@@ -86,17 +88,17 @@
                         <p class="leading-8.5! paragraph-md text-[20px]!">Jangkau lebih banyak orang dengan menghubungkan halaman media sosial Anda ke alamat web .com kustom.</p>
                         <p data-analytics-name="text | Baca Selengkapnya" class="flex items-center w-max font-sans font-bold text-[20px] decoration-[8%] underline underline-offset-[12%] tracking-[0.25px]">
                             Baca Selengkapnya
-                            <img src="{{ asset('images/icons/white-chevron-backward.svg') }}" alt="">
+                            <x-icons.arrow-rounded width="24" height="24" fill="#fff" class="size-4.5 ml-1" strokeWidth="1" />
                         </p>
                     </div>
                 </a>
-                <a x-show="active === 'online-store'" data-analytics-level3="right image" x-cloak href="#" class="relative rounded-[10px] max-w-full overflow-hidden h-88 md:h-auto md:max-w-156">
+                <a x-show="active === 'online-store'" x-cloak data-analytics-level3="right image" href="#" class="relative rounded-[10px] max-w-full overflow-hidden h-88 md:h-auto md:max-w-156">
                     <img class="size-full object-cover aspect-video" src="{{ asset('images/uc-email.jpg') }}" alt="">
                     <div class="top-0 left-0 absolute flex flex-col justify-end gap-4 bg-linear-360 from-black/60 to-transparent p-4 size-full text-white md:p-6">
                         <p class="leading-8.5! paragraph-md text-[20px]!">Tautkan toko Anda di platform mana pun dari nama domain .com kustom.</p>
                         <p data-analytics-name="text | Baca Selengkapnya" class="flex items-center w-max font-sans font-bold text-[20px] decoration-[8%] underline underline-offset-[12%] tracking-[0.25px]">
                             Baca Selengkapnya
-                            <img src="{{ asset('images/icons/white-chevron-backward.svg') }}" alt="">
+                            <x-icons.arrow-rounded width="24" height="24" fill="#fff" class="size-4.5 ml-1" strokeWidth="1" />
                         </p>
                     </div>
                 </a>
@@ -108,20 +110,21 @@
     {{-- List Point --}}
     <section
         data-analytics-level2="Cara Meneruskan Nama Domain Anda"
-        class="flex items-center gap-10 py-10 container flex-col md:py-19.5 xl:gap-28 xl:flex-row 2xl:gap-44">
-        <div class="top-32 flex flex-col gap-11.5 xl:sticky">
+        class="flex items-center gap-10 py-10 container flex-col md:py-19.5 xl:items-start xl:gap-28 xl:flex-row 2xl:gap-44">
+        <div class="top-28 flex flex-col gap-11.5 xl:sticky">
             <h2 class="text-navy-blue-300 headline-1 text-center md:text-[48px]! md:leading-15.5!">Cara Meneruskan Nama Domain Anda</h2>
             <div class="mx-auto">
                 <button data-analytics-name="video image | xxxx" type="button" class="group cursor-pointer relative rounded-[10px] overflow-hidden">
                     <div class="top-0 left-0 absolute bg-linear-360 from-black/80 to-transparent size-full"></div>
                     <span data-analytics-name="play button | xxx" class="transition-all duration-300 ease-in-out top-1/2 left-1/2 absolute -translate-x-1/2 -translate-y-1/2 group-hover:scale-110">
-                        <img class="size-19.5" src="{{ asset('images/icons/white-play-rounded.svg') }}" alt="">
+                        <x-icons.play-rounded width="78" height="78" fill="#fff" />
                     </span>
                     <img class="size-full aspect-video max-w-150 xl:max-w-full" src="{{ asset('images/usecase-social-media.jpg') }}" alt="">
                 </button>
             </div>
         </div>
         <div class="flex flex-col gap-8 max-w-125">
+            <div class="sticky top-20 w-full h-25 bg-linear-180 from-white from-25% to-transparent -mt-18 hidden xl:block"></div>
             <div class="flex gap-3.25 md:px-4">
                 <div class="flex justify-center items-center border-4 border-mint-300 rounded-full size-7.5 font-extrabold text-[16px] text-navy-blue-300 shrink-0 md:text-[32px] md:font-semibold md:size-12.5">1</div>
                 <div class="space-y-2 text-deep-blue-300">
@@ -197,7 +200,7 @@
             <a
                 data-analytics-name="button | Kunjungi Panduan Belajar"
                 href="{{ route('resources.index') }}"
-                class="px-6 py-3 text-[18px]! font-bold btn-secondary sm:w-max">
+                class="btn-secondary w-full sm:w-max">
                 Kunjungi Panduan Belajar
             </a>
         </div>

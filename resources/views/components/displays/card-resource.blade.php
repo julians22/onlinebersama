@@ -11,14 +11,14 @@
             </div>
         @endif
         <div class="min-h-28.5">
-            <h2 class="subheadline-3 text-deep-blue-300 line-clamp-3">{{ $slot }}</h2>
+            <h2 class="subheadline-3 text-deep-blue-300 line-clamp-3 text-[26px]! md:text-[28px]!">{{ $slot }}</h2>
         </div>
         <a
             data-analytics-name="text | Baca Selengkapnya"
             href="{{ $route }}"
             class="w-max flex items-center font-sans text-xl font-bold text-magenta-300 leading-6">
             Baca Selengkapnya
-            <img src="{{ asset('images/icons/magenta-chevron-right.svg') }}" alt="">
+            <x-icons.arrow-rounded width="24" height="24" fill="#A7127E" class="size-4.5 ml-1" strokeWidth="1" />
         </a>
     </div>
 </article>

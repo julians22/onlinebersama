@@ -11,13 +11,13 @@
     <div :class="open ? 'gap-4' : 'gap-0'" class="flex flex-col py-11">
         {{-- Title & Toggle --}}
         <div class="flex text-left gap-4">
-            <h2 :class="open ? 'py-3.5' : 'py-0'" class="w-full text-navy-blue-300 transition-all duration-300 ease-in-out subheadline-2">{{ $question }}</h2>
+            <h2 :class="open ? 'py-3.5' : 'py-0'" class="w-full text-navy-blue-300 transition-all duration-300 ease-in-out subheadline-2 text-[26px]! md:text-[36px]!">{{ $question }}</h2>
             <div class="flex items-center shrink-0">
                 <button x-show="!open" data-analytics-name="expand | {{ $question }}" type="button" class="cursor-pointer" @click="toggleAccordion">
-                    <img src="{{ asset('images/icons/deep-plus.svg') }}">
+                    <x-icons.plus width="36" height="36" fill="#1A2E47" />
                 </button>
                 <button x-show="open" data-analytics-name="collapse | {{ $question }}" type="button" class="cursor-pointer" @click="toggleAccordion">
-                    <img x-cloak src="{{ asset('images/icons/deep-min.svg') }}">
+                    <x-icons.minus x-cloak width="36" height="36" fill="#1A2E47" />
                 </button>
             </div>
         </div>

@@ -4,7 +4,7 @@
 
 @section('content')
 
-<main>
+<main data-analytics-level1="body">
     {{-- Hero --}}
     <section
         data-analytics-level2="hero"
@@ -29,7 +29,7 @@
             data-analytics-name="animation image | Tiga Tip Memilih Nama Domain .com"
             type="button" class="group relative aspect-video rounded-[10px] cursor-pointer overflow-hidden max-w-lg md:w-150">
             <img class="size-full" src="{{ asset('images/placeholder-video-find.jpg') }}" alt="">
-            <img class="transition-all duration-150 ease-in-out top-1/2 left-1/2 absolute -translate-x-1/2 -translate-y-1/2 size-19.5 group-hover:scale-110" src="{{ asset('images/icons/white-play-rounded.svg') }}" alt="">
+            <x-icons.play-rounded width="78" height="78" fill="#fff" class="transition-all duration-150 ease-in-out top-1/2 left-1/2 absolute -translate-x-1/2 -translate-y-1/2 size-19.5 group-hover:scale-110" />
         </button>
         <h2 class="text-navy-blue-300 headline-1 text-center md:text-[48px]! md:leading-15.5! lg:text-left lg:max-w-125">Tiga Tip Memilih Nama Domain .com</h2>
     </section>
