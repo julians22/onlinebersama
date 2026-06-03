@@ -57,6 +57,14 @@
 <body class="antialiased">
     <x-navbar />
         @yield('content')
+        <div x-data x-cloak x-show="$store.videoModal.open" class="fixed inset-0 flex items-center justify-center z-100 bg-black/50 px-4 md:px-16">
+            <div class="bg-white max-w-240 w-full rounded-[10px] shadow-lg p-4 md:p-12">
+                <video class="w-full h-[483.5px]" controls playsinline webkit-playsinline>
+                    <source src="video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
     <x-footer />
     @livewireScripts
     @stack('scripts')

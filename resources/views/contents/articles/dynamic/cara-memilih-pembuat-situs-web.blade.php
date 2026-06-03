@@ -17,10 +17,10 @@
             </div>
         </x-articles.intro-and-quicklinks>
         <div id="membuat-rencana-identifikasi-kebutuhan-situs-web-anda" class="article-child-wrapper scroll-mt-20 sm:scroll-mt-28">
-            <h3>Membuat Rencana: Identifikasi Kebutuhan Situs Web Anda</h3>
+            <h3 data-analytics-level2="Creating a Plan: Identify Your Website Needs">Membuat Rencana: Identifikasi Kebutuhan Situs Web Anda</h3>
             <p>Langkah pertama yang perlu dipertimbangkan saat membangun situs web adalah memetakan tujuan dan sasaran Anda untuk situs web tersebut. Sebagai contoh, apakah situs Anda berbasis pada <em>informasi</em>, atau berfokus pada <em>e-commerce</em>? Siapa audiens yang ingin Anda jangkau? Menjawab pertanyaan ini dapat membantu menentukan tidak hanya layanan pembuatan situs web apa yang akan digunakan, tetapi juga apa yang akan disertakan dalam situs, cara merencanakan pemeliharaan dan promosi situs, serta alamat web apa yang Anda inginkan agar dilihat pengunjung saat membuka situs Anda.</p>
-            <p>Meskipun mungkin merupakan titik awal yang mudah untuk menggunakan alamat web gratis yang disediakan oleh pembuat situs web (seperti “username.PembuatSitusWeb.com/senyumegar”), <strong>ada banyak manfaat dalam memiliki <a href="{{ route('find') }}" class="link-to">nama domain .com</a> khusus Anda sendiri.</strong> Hal ini secara jelas akan mengiklankan bisnis Anda, memberi alamat web konsisten yang dapat berpindah bersama bisnis meskipun Anda memutuskan untuk mengganti penyedia situs web nanti, serta memberi opsi untuk membuat email bisnis khusus, dan masih banyak lagi.</p>
-            <p>Untuk mengetahui informasi selengkapnya tentang cara membuat rencana situs web, tinjau <a href="{{ route('resources.show', 'daftar-periksa-membuat-situs-web') }}" class="link-to">daftar periksa</a> kami yang menguraikan poin-poin utama yang perlu dipertimbangkan saat memulai.</p>
+            <p>Meskipun mungkin merupakan titik awal yang mudah untuk menggunakan alamat web gratis yang disediakan oleh pembuat situs web (seperti “username.PembuatSitusWeb.com/senyumegar”), <strong>ada banyak manfaat dalam memiliki <a data-analytics-name="text | .com domain name." href="{{ route('find') }}" class="link-to">nama domain .com</a> khusus Anda sendiri.</strong> Hal ini secara jelas akan mengiklankan bisnis Anda, memberi alamat web konsisten yang dapat berpindah bersama bisnis meskipun Anda memutuskan untuk mengganti penyedia situs web nanti, serta memberi opsi untuk membuat email bisnis khusus, dan masih banyak lagi.</p>
+            <p data-analytics-name="creating your website plan.">Untuk mengetahui informasi selengkapnya tentang cara membuat rencana situs web, tinjau <a href="{{ route('resources.show', 'daftar-periksa-membuat-situs-web') }}" class="link-to">daftar periksa</a> kami yang menguraikan poin-poin utama yang perlu dipertimbangkan saat memulai.</p>
         </div>
         <div id="menemukan-pembuat-situs-web-yang-memenuhi-kebutuhan-anda" class="article-child-wrapper scroll-mt-20 sm:scroll-mt-28">
             <h3>Menemukan Pembuat Situs Web yang Memenuhi Kebutuhan Anda</h3>
@@ -150,11 +150,11 @@
                 </div>
             </x-articles.arrow-item-content>
         </div>
-        <x-articles.tip-callout>
+        <x-articles.tip-callout data-analytics-level3="TAKEAWAY">
             <x-slot:title>
                 <p>KESIMPULAN</p>
             </x-slot:title>
-            <p>Setelah Anda memilih pembuat situs web terbaik untuk bisnis dan membangun situs web, Anda dapat mulai mempromosikan situs sehingga orang dapat menemukan Anda. <a href="{{ route('resources.show', 'sepuluh-cara-untuk-memasarkan-bisnis-dengan-nama-domain-com') }}" class="link-to">Panduan</a> kami tentang cara memasarkan bisnis Anda dengan nama domain .com dapat membantu Anda memulai.</p>
+            <p data-analytics-name="text | marketing your business with a .com domain name">Setelah Anda memilih pembuat situs web terbaik untuk bisnis dan membangun situs web, Anda dapat mulai mempromosikan situs sehingga orang dapat menemukan Anda. <a href="{{ route('resources.show', 'sepuluh-cara-untuk-memasarkan-bisnis-dengan-nama-domain-com') }}" class="link-to">Panduan</a> kami tentang cara memasarkan bisnis Anda dengan nama domain .com dapat membantu Anda memulai.</p>
         </x-articles.tip-callout>
         <x-articles.related-article :data="$post->relatedOneArticle" class="pt-4" />
     </div>

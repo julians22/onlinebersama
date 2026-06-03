@@ -45,7 +45,6 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <x-displays.card-inside
-                            data-analytics-level3=".com untuk Email"
                             route="email"
                             image="images/brand-1.jpg">
                             Email
@@ -53,7 +52,6 @@
                     </div>
                     <div class="swiper-slide">
                         <x-displays.card-inside
-                            data-analytics-level3=".com untuk Media Sosial dan E-Commerce"
                             route="social-media"
                             image="images/brand-2.jpg">
                             Media Sosial dan <span class="block">E-Commerce</span>
@@ -61,7 +59,6 @@
                     </div>
                     <div class="swiper-slide">
                         <x-displays.card-inside
-                            data-analytics-level3=".com untuk Situs Web"
                             route="websites"
                             image="images/brand-3.jpg">
                             Situs Web

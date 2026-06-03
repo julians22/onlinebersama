@@ -1,6 +1,6 @@
 @props(['dataTooltip'])
 
-<span x-data="{ open: false }" class="inline-block relative">
+<span x-data="{ open: false }" class="inline-block relative" {{ $attributes }}>
     <span
         x-ref="trigger"
         @mouseenter="window.matchMedia('(pointer: fine)').matches && (open = true)"

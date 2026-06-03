@@ -1,4 +1,4 @@
-<article class="flex flex-col gap-y-4 rounded-[10px] bg-white h-full p-4 box-shadow-sm">
+<article class="flex flex-col gap-y-4 rounded-[10px] bg-white h-full p-4 box-shadow-sm" {{ $attributes }}>
     <figure class="rounded-lg overflow-hidden">
         <img class="aspect-8/5 size-full object-cover" src="{{ imageArticle($image) }}" alt="{{ $alt }}">
     </figure>

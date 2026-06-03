@@ -89,19 +89,17 @@
     <section
         data-analytics-level2="Cara Menyiapkan Alamat Email Kustom"
         class="flex items-center gap-10 py-10 container flex-col md:py-19.5 xl:items-start xl:gap-28 xl:flex-row 2xl:gap-44">
-        <div class="top-28 flex flex-col gap-11.5 xl:sticky">
+        <div class="-top-12 flex flex-col gap-11.5 xl:sticky">
             <h2 class="text-navy-blue-300 headline-1 text-center md:text-[48px]! md:leading-15.5!">Cara Menyiapkan Alamat <span class="sm:block">Email Kustom</span></h2>
-            <div class="mx-auto">
-                <button type="button" class="group cursor-pointer relative rounded-[10px] overflow-hidden">
-                    <div class="top-0 left-0 absolute bg-linear-360 from-black/80 to-transparent size-full"></div>
-                    <span class="transition-all duration-300 ease-in-out top-1/2 left-1/2 absolute -translate-x-1/2 -translate-y-1/2 group-hover:scale-110">
-                        <x-icons.play-rounded width="78" height="78" fill="#fff" />
-                    </span>
-                    <img class="size-full aspect-video max-w-150 xl:max-w-full" src="{{ asset('images/usecase-email.jpg') }}" alt="">
-                </button>
-            </div>
+            <button type="button" class="group cursor-pointer relative rounded-[10px] overflow-hidden">
+                <div class="top-0 left-0 absolute bg-linear-360 from-black/80 to-transparent size-full"></div>
+                <span class="transition-all duration-300 ease-in-out top-1/2 left-1/2 absolute -translate-x-1/2 -translate-y-1/2 group-hover:scale-110">
+                    <x-icons.play-rounded width="78" height="78" fill="#fff" />
+                </span>
+                <img class="size-full aspect-video max-w-150 xl:max-w-full" src="{{ asset('images/usecase-email.jpg') }}" alt="">
+            </button>
         </div>
-        <div class="flex flex-col gap-8 max-w-125">
+        <div class="flex flex-col gap-8 max-w-125 xl:pt-28">
             <div class="sticky top-20 w-full h-25 bg-linear-180 from-white from-25% to-transparent -mt-18 hidden xl:block"></div>
             <div data-analytics-level3="Daftarkan Nama Domain" class="flex gap-3.25 md:px-4">
                 <div class="flex justify-center items-center border-4 border-mint-300 rounded-full size-7.5 font-extrabold text-[16px] text-navy-blue-300 shrink-0 md:text-[32px] md:font-semibold md:size-12.5">1</div>
@@ -150,13 +148,11 @@
             <h2 class="text-navy-blue-300 text-center headline-1">Bagaimana Cara Menggunakan .com?</h2>
             <div class="gap-8 grid grid-cols-1 md:grid-cols-2">
                 <x-displays.card-inside
-                    data-analytics-level3=".com untuk Media Sosial dan E-Commerce"
                     route="social-media"
                     image="images/brand-2.jpg">
                     Media Sosial dan <span class="block">E-Commerce</span>
                 </x-displays.card-inside>
                 <x-displays.card-inside
-                    data-analytics-level3=".com untuk Situs Web"
                     route="websites"
                     image="images/brand-3.jpg">
                     Situs Web

@@ -185,11 +185,12 @@
                     class="border-t-2 border-light-gray-300 flex flex-col gap-4 w-full px-3 py-8 min-[500px]:px-6">
                     <div
                         class="group relative rounded-2xl w-full aspect-video overflow-hidden cursor-pointer min-[500px]:max-w-97.5 min-[500px]:h-54.25">
-                        <a
+                        <button
                             data-analytics-name="play button | Startup Experience"
-                            href="#" class="transition-all duration-300 ease-in-out top-1/2 left-1/2 absolute -translate-x-1/2 -translate-y-1/2 group-hover:scale-110">
+                            type="button"
+                            class="transition-all duration-300 ease-in-out top-1/2 left-1/2 absolute -translate-x-1/2 -translate-y-1/2 group-hover:scale-110">
                             <x-icons.play width="56" height="56" fill="#fff" />
-                        </a>
+                        </button>
                         <img
                             data-analytics-name="video image | Startup Experience"
                             class="size-full object-cover object-top" src="{{ asset('images/placeholder-video-navbar.jpg') }}" alt="">

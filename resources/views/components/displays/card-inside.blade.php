@@ -1,4 +1,6 @@
-<div class="relative box-shadow-md rounded-[10px] overflow-hidden" {{ $attributes }}>
+<div
+    data-analytics-level3=".com untuk {{ strip_tags($slot) }}"
+    class="relative box-shadow-md rounded-[10px] overflow-hidden">
     <img @class([
         'h-71.35 md:h-111.5' => !in_array(Route::currentRouteName(), ['email', 'social-media', 'websites']),
         'h-111.5' => in_array(Route::currentRouteName(), ['email', 'social-media', 'websites']),

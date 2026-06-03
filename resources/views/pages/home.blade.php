@@ -259,8 +259,6 @@
         </div>
         <div class="justify-center md:flex">
             <a
-                x-data="{clicked: false}"
-                @click.prevent="clicked = true"
                 data-analytics-name="button | Ketahui Selengkapnya"
                 href="{{ route('resources.index') }}"
                 class="btn-secondary w-full sm:w-auto">
