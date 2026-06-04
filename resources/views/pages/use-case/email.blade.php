@@ -9,13 +9,13 @@
     <section
         data-analytics-level2="hero"
         class="bg-light-gray-100">
-        <div class="flex justify-between items-center flex-col gap-10.75 py-10 container md:gap-20 md:py-15.5 lg:flex-row">
+        <div class="flex justify-between items-center flex-col gap-10.75 py-10 container-medium md:gap-20 md:py-15.5 lg:flex-row">
             <div class="space-y-4">
                 <h1 class="text-navy-blue-300 headline-1">.com untuk Email</h1>
                 <p class="text-deep-blue-300 paragraph-md">Jadikan email sebagai pernyataan kredibilitas. Dengan alamat email .com kustom, email bisnis Anda dapat terlihat lebih profesional.</p>
             </div>
             <button data-analytics-name="video image | Email Use Case" type="button" class="group relative rounded-[10px] overflow-hidden shrink-0 cursor-pointer box-shadow-sm">
-                <div class="top-0 left-0 absolute bg-black/30 size-full"></div>
+                <div class="top-0 left-0 absolute bg-gradient-video size-full"></div>
                 <span data-analytics-name="play button | Email Use Case" class="transition-all duration-300 ease-in-out top-1/2 left-1/2 absolute -translate-x-1/2 -translate-y-1/2 group-hover:scale-110">
                     <x-icons.play-rounded width="78" height="78" fill="#fff" />
                 </span>
@@ -31,7 +31,7 @@
         class="py-10 container">
         <div class="pb-28 md:pb-40">
             <h2 class="sticky top-20 mb-10 text-navy-blue-300 text-center headline-1 md:top-24 lg:top-30">Manfaat Email Kustom</h2>
-            <div class="flex flex-col gap-6 mx-auto max-w-md md:max-w-208">
+            <div class="flex flex-col gap-6 mx-auto md:max-w-208">
                 <div
                     data-analytics-level3="Membangun Legitimasi"
                     class="top-48 sticky card-stack min-[407px]:top-40 md:top-54 lg:top-60">
@@ -55,7 +55,7 @@
                 </div>
             </div>
         </div>
-        <div class="justify-center mt-10 md:flex">
+        <div class="flex justify-center mt-10">
             <a
                 data-analytics-name="button | Katahui Manfaat Lainnya"
                 href="#"

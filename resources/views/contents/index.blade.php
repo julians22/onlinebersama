@@ -39,64 +39,22 @@
         <div class="online-bersama-small-business-story swiper">
             <div class="swiper-wrapper">
                 <div data-analytics-level3="carousel-1" class="swiper-slide">
-                    <img data-analytics-name="video image | Startup Experience" src="{{ asset('images/placeholder-video-why-com.jpg') }}" alt="">
-                    <div class="overlay-slide">
-                        <h4 class="subheadline-4">IKAT Indonesia</h4>
-                        <p class="paragraph-sm">Dengarkan bagaimana nama domain .com yang dikenal membantu pemilik bisnis mengembangkan bisnisnya.</p>
-                    </div>
-                    <button data-analytics-name="play button | Startup Experience" type="button" class="group">
-                        <x-icons.play-rounded width="78" height="78" fill="#fff" class="group-hover:scale-110 transition-all duration-300 ease-in-out" />
-                    </button>
+                    <x-displays.card-video />
                 </div>
                 <div data-analytics-level3="carousel-2" class="swiper-slide">
-                    <img data-analytics-name="video image | IKAT Indonesia" src="{{ asset('images/placeholder-video-why-com.jpg') }}" alt="">
-                    <div class="overlay-slide">
-                        <h4 class="subheadline-4">IKAT Indonesia</h4>
-                        <p class="paragraph-sm">Dengarkan bagaimana nama domain .com yang dikenal membantu pemilik bisnis mengembangkan bisnisnya.</p>
-                    </div>
-                    <button data-analytics-name="play button | IKAT Indonesia" type="button" class="group">
-                        <x-icons.play-rounded width="78" height="78" fill="#fff" class="group-hover:scale-110 transition-all duration-300 ease-in-out" />
-                    </button>
+                    <x-displays.card-video />
                 </div>
                 <div data-analytics-level3="carousel-3" class="swiper-slide">
-                    <img data-analytics-name="video image | Chick Diva Geek" src="{{ asset('images/placeholder-video-why-com.jpg') }}" alt="">
-                    <div class="overlay-slide">
-                        <h4 class="subheadline-4">IKAT Indonesia</h4>
-                        <p class="paragraph-sm">Dengarkan bagaimana nama domain .com yang dikenal membantu pemilik bisnis mengembangkan bisnisnya.</p>
-                    </div>
-                    <button data-analytics-name="play button | Chick Diva Geek" type="button" class="group">
-                        <x-icons.play-rounded width="78" height="78" fill="#fff" class="group-hover:scale-110 transition-all duration-300 ease-in-out" />
-                    </button>
+                    <x-displays.card-video />
                 </div>
                 <div data-analytics-level3="carousel-4" class="swiper-slide">
-                    <img data-analytics-name="video image | Startup Experience" src="{{ asset('images/placeholder-video-why-com.jpg') }}" alt="">
-                    <div class="overlay-slide">
-                        <h4 class="subheadline-4">IKAT Indonesia</h4>
-                        <p class="paragraph-sm">Dengarkan bagaimana nama domain .com yang dikenal membantu pemilik bisnis mengembangkan bisnisnya.</p>
-                    </div>
-                    <button data-analytics-name="play button | Startup Experience" type="button" class="group">
-                        <x-icons.play-rounded width="78" height="78" fill="#fff" class="group-hover:scale-110 transition-all duration-300 ease-in-out" />
-                    </button>
+                    <x-displays.card-video />
                 </div>
                 <div data-analytics-level3="carousel-5" class="swiper-slide">
-                    <img data-analytics-name="video image | IKAT Indonesia" src="{{ asset('images/placeholder-video-why-com.jpg') }}" alt="">
-                    <div class="overlay-slide">
-                        <h4 class="subheadline-4">IKAT Indonesia</h4>
-                        <p class="paragraph-sm">Dengarkan bagaimana nama domain .com yang dikenal membantu pemilik bisnis mengembangkan bisnisnya.</p>
-                    </div>
-                    <button data-analytics-name="play button | IKAT Indonesia" type="button" class="group">
-                        <x-icons.play-rounded width="78" height="78" fill="#fff" class="group-hover:scale-110 transition-all duration-300 ease-in-out" />
-                    </button>
+                    <x-displays.card-video />
                 </div>
                 <div data-analytics-level3="carousel-6" class="swiper-slide">
-                    <img data-analytics-name="video image | Chick Diva Geek" src="{{ asset('images/placeholder-video-why-com.jpg') }}" alt="">
-                    <div class="overlay-slide">
-                        <h4 class="subheadline-4">IKAT Indonesia</h4>
-                        <p class="paragraph-sm">Dengarkan bagaimana nama domain .com yang dikenal membantu pemilik bisnis mengembangkan bisnisnya.</p>
-                    </div>
-                    <button data-analytics-name="play button | Chick Diva Geek" type="button" class="group">
-                        <x-icons.play-rounded width="78" height="78" fill="#fff" class="group-hover:scale-110 transition-all duration-300 ease-in-out" />
-                    </button>
+                    <x-displays.card-video />
                 </div>
             </div>
             <div class="swiper-pagination"></div>

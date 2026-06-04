@@ -67,10 +67,10 @@
 
 /* ====== Container ====== */
 
-@utility container-nav {
+@utility container {
     margin-inline: auto;
     padding-inline: 16px;
-    max-width: 1440px;
+    max-width: 1520px;
     width: 100%;
 
     @variant md {
@@ -78,10 +78,10 @@
     }
 }
 
-@utility container {
+@utility container-medium {
     margin-inline: auto;
     padding-inline: 16px;
-    max-width: 1520px;
+    max-width: 1440px;
     width: 100%;
 
     @variant md {
@@ -170,11 +170,11 @@
     /* Button */
 
     .btn-primary {
-        @apply block bg-vibrant-yellow-300 hover:bg-vibrant-yellow-400 focus:bg-vibrant-yellow-200 p-3 rounded-full text-deep-blue-300 text-center leading-6 transition-all duration-150 ease-in-out font-bold text-[18px] md:text-[20px] md:px-10 md:py-4;
+        @apply block bg-vibrant-yellow-300 hover:bg-vibrant-yellow-400 focus:bg-vibrant-yellow-200 py-3 px-10 rounded-full text-deep-blue-300 text-center leading-6 transition-all duration-150 ease-in-out font-bold text-[18px] md:text-[20px] md:py-4;
     }
 
     .btn-secondary {
-        @apply block bg-magenta-300 hover:bg-magenta-400 focus:bg-magenta-200 p-3 rounded-full text-white text-center leading-6 transition-all duration-150 ease-in-out font-bold text-[18px] focus:border-magenta-300 hover:text-light-gray-300 md:text-[20px] md:px-10 md:py-4;
+        @apply block bg-magenta-300 hover:bg-magenta-400 focus:bg-magenta-200 py-3 px-10 rounded-full text-white text-center leading-6 transition-all duration-150 ease-in-out font-bold text-[18px] focus:border-magenta-300 hover:text-light-gray-300 md:text-[20px] md:py-4;
     }
 
     /* Select */
@@ -196,7 +196,7 @@
     /* Card */
 
     .card-action {
-        @apply md:flex;
+        @apply sm:flex;
     }
 
     /* Article */
@@ -376,12 +376,18 @@
 .online-bersama-small-business-story {
     @apply w-full pb-14!;
     .swiper-slide {
-        @apply relative overflow-hidden;
+        @apply overflow-hidden;
         img {
             @apply w-156 rounded-[10px] mx-auto;
         }
         .overlay-slide {
-            @apply flex transition-all duration-500 ease-in-out bottom-0 flex-col justify-end w-full opacity-0 text-deep-blue-300 space-y-2 rounded-[10px] px-0 mt-4 md:absolute md:text-white md:left-1/2 md:-translate-x-1/2 md:-bottom-full md:inset-0 md:p-6 md:mt-0 md:space-y-0 md:opacity-100 lg:p-8 lg:w-156;
+            @apply transition-all duration-500 ease-in-out bottom-0 flex-col justify-end w-full opacity-0 text-deep-blue-300 space-y-2 rounded-[10px] px-0 mt-4 md:absolute md:text-white md:left-1/2 md:-translate-x-1/2 md:-bottom-full md:inset-0 md:p-6 md:mt-0 md:space-y-0 md:opacity-100 lg:p-8 lg:w-156;
+            &.desktop {
+                @apply hidden md:flex;
+            }
+            &.mobile {
+                @apply flex md:hidden;
+            }
             h4 {
                 @apply font-extrabold!;
             }
@@ -390,7 +396,7 @@
             }
         }
         button {
-            @apply absolute transition-all duration-500 ease-in-out scale-0 left-1/2 -translate-x-1/2 -translate-y-[110%] cursor-pointer flex justify-center items-center w-full h-full md:top-1/2 md:-translate-y-1/2 md:w-156;
+            @apply absolute transition-all duration-500 ease-in-out scale-0 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer flex justify-center items-center w-full h-full md:-translate-y-1/2 md:w-156;
         }
         &.swiper-slide-active {
             .overlay-slide {

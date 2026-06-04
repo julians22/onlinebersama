@@ -9,13 +9,13 @@
     <section
         data-analytics-level2="hero"
         class="bg-light-gray-100">
-        <div class="flex justify-between items-center flex-col gap-10.75 py-10 container md:gap-20 md:py-15.5 lg:flex-row">
+        <div class="flex justify-between items-center flex-col gap-10.75 py-10 container-medium md:gap-20 md:py-15.5 lg:flex-row">
             <div class="space-y-4">
                 <h1 class="text-navy-blue-300 headline-1">.com untuk Situs Web</h1>
                 <p class="text-deep-blue-300 paragraph-md">Situs web dengan nama domain .com adalah fondasi yang dapat diandalkan pelanggan Anda untuk menemukan dan berinteraksi secara online seiring perkembangan bisnis Anda.</p>
             </div>
             <button data-analytics-name="video image | Website Use Case" type="button" class="group relative rounded-[10px] overflow-hidden shrink-0 cursor-pointer box-shadow-sm">
-                <div class="top-0 left-0 absolute bg-black/30 size-full"></div>
+                <div class="top-0 left-0 absolute bg-gradient-video size-full"></div>
                 <span data-analytics-name="play button | Website Use Case" class="transition-all duration-300 ease-in-out top-1/2 left-1/2 absolute -translate-x-1/2 -translate-y-1/2 group-hover:scale-110">
                     <x-icons.play-rounded width="78" height="78" fill="#fff" />
                 </span>
@@ -31,7 +31,7 @@
         class="py-10 container">
         <div class="pb-42 md:pb-44">
             <h2 class="sticky top-22 mb-10 text-navy-blue-300 text-center headline-1 md:top-24 lg:top-30">Manfaat Situs Web</h2>
-            <div class="flex flex-col gap-6 mx-auto max-w-md md:max-w-208">
+            <div class="flex flex-col gap-6 mx-auto md:max-w-208">
                 <div
                     data-analytics-level3="Berkembang Sesuai Keinginan Anda"
                     class="top-42 sticky card-stack md:top-54 lg:top-60">
@@ -55,7 +55,7 @@
                 </div>
             </div>
         </div>
-        <div class="justify-center mt-10 md:flex">
+        <div class="flex justify-center mt-10">
             <a
                 data-analytics-name="button | Ketahui Manfaat Lainnya"
                 href="#"
@@ -70,7 +70,7 @@
     <section
         data-analytics-level2="Daftar Periksa Perencanaan Situs Web"
         class="bg-gradient-blue-double">
-        <div class="flex flex-col justify-center items-center gap-10 py-10 container-nav md:py-19.5">
+        <div class="flex flex-col justify-center items-center gap-10 py-10 container-medium md:py-19.5">
             <div class="space-y-4 text-white text-center">
                 <h2 class="headline-1 text-center">Daftar Periksa Perencanaan Situs Web</h2>
                 <p class="paragraph-lg">Bangun rumah online Anda di situs web dengan nama domain .com.</p>
@@ -141,7 +141,7 @@
                 <span class="transition-all duration-300 ease-in-out top-1/2 left-1/2 absolute -translate-x-1/2 -translate-y-1/2 group-hover:scale-110">
                     <x-icons.play-rounded width="78" height="78" fill="#fff" />
                 </span>
-                <img class="size-full aspect-video max-w-150 xl:max-w-full" src="{{ asset('images/usecase-website.jpg') }}" alt="">
+                <img class="size-full aspect-video object-cover max-w-150 xl:max-w-full" src="{{ asset('images/usecase-website.jpg') }}" alt="">
             </button>
         </div>
         <div class="flex flex-col gap-8 max-w-125 xl:pt-28">

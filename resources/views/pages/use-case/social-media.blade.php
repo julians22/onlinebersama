@@ -9,13 +9,13 @@
     <section
         data-analytics-level2="hero"
         class="bg-light-gray-100">
-        <div class="flex justify-between items-center flex-col gap-10.75 py-10 container md:gap-20 md:py-15.5 lg:flex-row">
+        <div class="flex justify-between items-center flex-col gap-10.75 py-10 container-medium md:gap-20 md:py-15.5 lg:flex-row">
             <div class="space-y-4">
                 <h1 class="text-navy-blue-300 headline-1">.com untuk <span class="xl:block">Media Sosial dan</span> E-Commerce</h1>
                 <p class="text-deep-blue-300 paragraph-md">Dengan penerusan domain, Anda dapat membuat tautan ke toko online atau halaman media sosial dari nama domain .com yang mudah diingat.</p>
             </div>
             <button data-analytics-name="video image | Domain Forwarding Use Case" type="button" class="group relative rounded-[10px] overflow-hidden shrink-0 cursor-pointer box-shadow-sm">
-                <div class="top-0 left-0 absolute bg-black/30 size-full"></div>
+                <div class="top-0 left-0 absolute bg-gradient-video size-full"></div>
                 <span data-analytics-name="play button | Domain Forwarding Use Case" class="transition-all duration-300 ease-in-out top-1/2 left-1/2 absolute -translate-x-1/2 -translate-y-1/2 group-hover:scale-110">
                     <x-icons.play-rounded width="78" height="78" fill="#fff" />
                 </span>
@@ -31,7 +31,7 @@
         class="py-10 container">
         <div class="pb-30 md:pb-48">
             <h2 class="sticky top-20 mb-10 text-navy-blue-300 text-center headline-1 md:top-24 lg:top-30">Manfaat Penerusan Domain</span></h2>
-            <div class="flex flex-col gap-6 mx-auto max-w-md md:max-w-208">
+            <div class="flex flex-col gap-6 mx-auto md:max-w-208">
                 <div
                     data-analytics-level3="Cara Pemasaran yang Tak Terlupakan"
                     class="top-48 sticky card-stack min-[490px]:top-42 md:top-54 lg:top-60">
@@ -55,7 +55,7 @@
                 </div>
             </div>
         </div>
-        <div class="justify-center mt-10 md:flex">
+        <div class="flex justify-center mt-10">
             <a
                 data-analytics-name="text | Ketahui Manfaat Lainnya"
                 href="{{ route('resources.show', 'apa-itu-penerusan-nama-domain') }}" class="btn-secondary w-full sm:w-auto">
@@ -69,7 +69,7 @@
     <section
         data-analytics-level2="Dua Cara untuk Menggunakan Penerusan Domain"
         class="bg-deep-blue-300">
-        <div class="container-nav pt-10 pb-19.5">
+        <div class="container-medium pt-10 pb-19.5">
             <h2 class="mb-6 text-white text-center headline-1 max-w-4xl mx-auto md:mb-13">Dua Cara untuk Menggunakan Penerusan Domain</h2>
             <div x-data="{ active: 'social-media' }" class="flex flex-col justify-center gap-4 md:flex-row">
                 <div class="flex flex-col gap-4 md:max-w-xs">

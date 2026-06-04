@@ -50,83 +50,52 @@
             <p class="paragraph-md text-deep-blue-300">JIKA ANDA TIDAK SETUJU DENGAN KETENTUAN INI, JANGAN MENGAKSES
                 ATAU MENGGUNAKAN LAYANAN. PENGGUNAAN LAYANAN TIDAK BERLAKU JIKA DILARANG SECARA HUKUM.</p>
 
-            <div class="flex lg:py-6 lg:px-6 py-6 px-4 flex-col gap-4 lg:gap-8 rounded-[10px] bg-light-gray-100">
+            <div class="flex lg:py-6 lg:px-6 py-6 px-4 flex-col gap-4 lg:gap-8 rounded-[10px] bg-light-gray-100 article-wrapper">
                 <h2 class="subheadline-2 text-deep-blue-300">Daftar Isi</h2>
-
-                <div
-                    x-data="{ openDropdown: false }"
-                    class="lg:hidden block relative">
-                    <button
-                        @click="openDropdown = !openDropdown"
-                        type="button"
-                        class="max-w-100.5 w-full flex items-center justify-between gap-x-2.5 font-sans text-left font-semibold text-xl rounded-[10px] text-deep-blue-300 leading-7.5 cursor-pointer bg-white px-4 py-3">
-                        Navigasi halaman
-                        <span>
-                            <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1.41 3.42706e-05L-2.62268e-07 1.41003L6 7.41003L12 1.41003L10.59 3.38694e-05L6 4.58003L1.41 3.42706e-05Z" fill="#2A3C46"/>
-                            </svg>
-                        </span>
-                    </button>
-                    <div x-show="openDropdown"
-                        @click.outside="openDropdown = false"
-                        class="top-full bg-white rounded-[10px] z-10 inset-x-0 shadow min-h-10 absolute">
-                        <ol class="flex gap-3 flex-col px-4 py-2">
-                            <li><a class="paragraph-steps" data-scroll="" @click="openDropdown = false" href="#section-1"><span>1. </span>Persyaratan</a></li>
-                            <li><a class="paragraph-steps" data-scroll="" @click="openDropdown = false" href="#section-2"><span>2. </span>Pemberian
-                                    Lisensi</a></li>
-                            <li><a class="paragraph-steps" data-scroll="" @click="openDropdown = false" href="#section-3"><span>3. </span>Pembatasan Pemberian
-                                    Lisensi</a></li>
-                            <li><a class="paragraph-steps" data-scroll="" @click="openDropdown = false" href="#section-4"><span>4. </span>Privasi</a></li>
-                            <li><a class="paragraph-steps" data-scroll="" @click="openDropdown = false" href="#section-5"><span>5. </span>Aplikasi Media
-                                    Sosial</a></li>
-                            <li><a class="paragraph-steps" data-scroll="" @click="openDropdown = false" href="#section-6"><span>6. </span>Tanggung Jawab
-                                    Pengguna</a></li>
-                            <li><a class="paragraph-steps" data-scroll="" @click="openDropdown = false" href="#section-7"><span>7. </span>Kekayaan
-                                    Intelektual</a></li>
-                            <li><a class="paragraph-steps" data-scroll="" @click="openDropdown = false" href="#section-8"><span>8. </span>Jangka Waktu;
-                                    Penghentian; Modifikasi; Penangguhan; Pemutusan</a></li>
-                            <li><a class="paragraph-steps" data-scroll="" @click="openDropdown = false" href="#section-9"><span>9. </span>Tanggapan Umpan
-                                    Balik</a></li>
-                            <li><a class="paragraph-steps" data-scroll="" @click="openDropdown = false" href="#section-10"><span>10. </span>Perubahan
-                                    Ketentuan Layanan</a></li>
-                            <li><a class="paragraph-steps" data-scroll="" @click="openDropdown = false" href="#section-11"><span>11. </span>Penyangkalan</a>
-                            </li>
-                            <li><a class="paragraph-steps" data-scroll="" @click="openDropdown = false" href="#section-12"><span>12. </span>Batasan
-                                    Kewajiban</a></li>
-                            <li><a class="paragraph-steps" data-scroll="" @click="openDropdown = false" href="#section-13"><span>13. </span>Ganti Rugi</a>
-                            </li>
-                            <li><a class="paragraph-steps" data-scroll="" @click="openDropdown = false" href="#section-14"><span>14. </span>Lain-lain</a></li>
-                        </ol>
-                    </div>
-                </div>
-
-                <ol class="hidden lg:flex gap-3 flex-col">
-                    <li><a class="paragraph-steps" data-scroll="" href="#section-1"><span>1. </span>Persyaratan</a></li>
-                    <li><a class="paragraph-steps" data-scroll="" href="#section-2"><span>2. </span>Pemberian
-                            Lisensi</a></li>
-                    <li><a class="paragraph-steps" data-scroll="" href="#section-3"><span>3. </span>Pembatasan Pemberian
-                            Lisensi</a></li>
-                    <li><a class="paragraph-steps" data-scroll="" href="#section-4"><span>4. </span>Privasi</a></li>
-                    <li><a class="paragraph-steps" data-scroll="" href="#section-5"><span>5. </span>Aplikasi Media
-                            Sosial</a></li>
-                    <li><a class="paragraph-steps" data-scroll="" href="#section-6"><span>6. </span>Tanggung Jawab
-                            Pengguna</a></li>
-                    <li><a class="paragraph-steps" data-scroll="" href="#section-7"><span>7. </span>Kekayaan
-                            Intelektual</a></li>
-                    <li><a class="paragraph-steps" data-scroll="" href="#section-8"><span>8. </span>Jangka Waktu;
-                            Penghentian; Modifikasi; Penangguhan; Pemutusan</a></li>
-                    <li><a class="paragraph-steps" data-scroll="" href="#section-9"><span>9. </span>Tanggapan Umpan
-                            Balik</a></li>
-                    <li><a class="paragraph-steps" data-scroll="" href="#section-10"><span>10. </span>Perubahan
-                            Ketentuan Layanan</a></li>
-                    <li><a class="paragraph-steps" data-scroll="" href="#section-11"><span>11. </span>Penyangkalan</a>
-                    </li>
-                    <li><a class="paragraph-steps" data-scroll="" href="#section-12"><span>12. </span>Batasan
-                            Kewajiban</a></li>
-                    <li><a class="paragraph-steps" data-scroll="" href="#section-13"><span>13. </span>Ganti Rugi</a>
-                    </li>
-                    <li><a class="paragraph-steps" data-scroll="" href="#section-14"><span>14. </span>Lain-lain</a></li>
-                </ol>
+                <x-articles.navigate-link>
+                    <a href="#section-1">
+                        1. Persyaratan
+                    </a>
+                    <a href="#section-2">
+                        2. Pemberian Lisensi
+                    </a>
+                    <a href="#section-3">
+                        3. Pembatasan Pemberian Lisensi
+                    </a>
+                    <a href="#section-4">
+                        4. Privasi
+                    </a>
+                    <a href="#section-5">
+                        5. Aplikasi Media Sosial
+                    </a>
+                    <a href="#section-6">
+                        6. Tanggung Jawab Pengguna
+                    </a>
+                    <a href="#section-7">
+                        7. Kekayaan Intelektual
+                    </a>
+                    <a href="#section-8">
+                        8. Jangka Waktu; Penghentian; Modifikasi; Penangguhan; Pemutusan
+                    </a>
+                    <a href="#section-9">
+                        9. Tanggapan Umpan Balik
+                    </a>
+                    <a href="#section-10">
+                        10. Perubahan Ketentuan Layanan
+                    </a>
+                    <a href="#section-11">
+                        11. Penyangkalan
+                    </a>
+                    <a href="#section-12">
+                        12. Batasan Kewajiban
+                    </a>
+                    <a href="#section-13">
+                        13. Ganti Rugi
+                    </a>
+                    <a href="#section-14">
+                        14. Lain-lain
+                    </a>
+                </x-articles.navigate-link>
             </div>
 
             <h2 id="section-1" class="subheadline-2 scroll-m-16 lg:scroll-m-28">1. Persyaratan</h2>

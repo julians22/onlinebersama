@@ -7,7 +7,7 @@
     <nav
         data-analytics-level1="topnav"
         class="bg-gradient-nav">
-        <div class="container-nav flex justify-between items-center gap-2.5 py-2 sm:py-3 lg:py-5">
+        <div class="container-medium flex justify-between items-center gap-2.5 py-2 sm:py-3 lg:py-5">
             <div class="flex items-center gap-3.5">
                 {{-- Toggle Button (Mobile) --}}
                 <button
