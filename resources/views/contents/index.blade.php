@@ -17,7 +17,7 @@
                 <p class="max-w-162.5 paragraph-md">Temukan cara memaksimalkan nama domain .com Anda dengan kumpulan artikel, video, dan panduan kami.</p>
                 <div class="flex justify-start">
                     <a
-                        data-analytics-name="button | Liah Semua Sumbar Informasi"
+                        data-analytics-name="button | Explore All Resources"
                         href="#"
                         class="btn-secondary w-full sm:w-auto">
                         Lihat Semua Sumber Informasi
@@ -30,7 +30,7 @@
 
     {{-- Small Business Stories --}}
     <section
-        data-analytics-level2="Kisah Usaha Kecil"
+        data-analytics-level2="Small Business Stories"
         class="max-w-403 mx-auto py-10 md:pt-10 md:pb-19.5">
         <div class="space-y-3 text-center mb-6 px-4 md:mb-8 md:px-8 xl:px-0">
             <h2 class="headline-1 text-navy-blue-300">Kisah Usaha Kecil</h2>
@@ -39,22 +39,22 @@
         <div class="online-bersama-small-business-story swiper">
             <div class="swiper-wrapper">
                 <div data-analytics-level3="carousel-1" class="swiper-slide">
-                    <x-displays.card-video />
+                    <x-displays.card-video data-analytics="Startup Experience" />
                 </div>
                 <div data-analytics-level3="carousel-2" class="swiper-slide">
-                    <x-displays.card-video />
+                    <x-displays.card-video data-analytics="Growing Boundlessly" />
                 </div>
                 <div data-analytics-level3="carousel-3" class="swiper-slide">
-                    <x-displays.card-video />
+                    <x-displays.card-video data-analytics="Chic Diva Geek" />
                 </div>
                 <div data-analytics-level3="carousel-4" class="swiper-slide">
-                    <x-displays.card-video />
+                    <x-displays.card-video data-analytics="Startup Experience" />
                 </div>
                 <div data-analytics-level3="carousel-5" class="swiper-slide">
-                    <x-displays.card-video />
+                    <x-displays.card-video data-analytics="Growing Boundlessly" />
                 </div>
                 <div data-analytics-level3="carousel-6" class="swiper-slide">
-                    <x-displays.card-video />
+                    <x-displays.card-video data-analytics="Chic Diva Geek" />
                 </div>
             </div>
             <div class="swiper-pagination"></div>
@@ -64,7 +64,7 @@
 
     {{-- Resources --}}
     <section
-        data-analytics-level2="Telusuri Semua Sumber Informasi"
+        data-analytics-level2="Browse All Resources"
         class="bg-deep-blue-300 px-4 md:px-8">
         <div class="max-w-300 mx-auto py-10 md:pb-19.5">
             <div class="space-y-3 text-center text-white mb-10">
@@ -78,28 +78,39 @@
 
     {{-- Entrepreneurship Journey --}}
     <section
-        data-analytics-level2="Perjalanan Kewirausahaan"
+        data-analytics-level2="The Entrepreneurial Journey"
         class="flex flex-col gap-21.25 py-10 max-w-250 mx-auto px-4 md:px-8 md:py-20">
         <div class="space-y-3 text-center">
             <h2 class="text-navy-blue-300 text-center headline-1">Perjalanan Kewirausahaan</h2>
             <p class="paragraph-md text-deep-blue-300">Mulai dari membangun tim hingga memasarkan perusahaan Anda secara efektif, wirausahawan berpengalaman Henrik Scheel dapat membantu Anda membuka potensi pola pikir kewirausahaan.</p>
         </div>
         <div class="flex flex-col">
-            <x-displays.accordion question="Pola Pikir Seorang Wirausaha">
+            <x-displays.accordion
+                question="Pola Pikir Seorang Wirausaha"
+                data-analytics="The Entrepreneurial Mindset">
                 <p>Apakah Anda melihat masalah sebagai peluang, dan menyambut tantangan baru dengan antusias? Mampukah Anda tetap fokus ketika keadaan menjadi sulit? Ini hanyalah beberapa dari sekian banyak kualitas yang membentuk pola pikir kewirausahaan, dan sangat berharga ketika memulai bisnis Anda sendiri.</p>
             </x-displays.accordion>
-            <x-displays.accordion question="Menemukan dan Menguji Ide Startup Anda">
+            <x-displays.accordion
+                question="Menemukan dan Menguji Ide Startup Anda"
+                data-analytics="Finding and Testing Your Startup Idea">
                 <p>Satu-satunya cara untuk menciptakan perusahaan yang brilian adalah dengan memulai dari ide yang belum sempurna, lalu mengujinya, dan belajar darinya sehingga Anda dapat mengubahnya menjadi sesuatu yang benar-benar hebat. Temukan strategi untuk menghasilkan ide bagi usaha rintisan Anda, dan cara mengujinya secara efektif.</p>
             </x-displays.accordion>
-            <x-displays.accordion question="Cara Menemukan Nama yang Tepat">
+            <x-displays.accordion
+                question="Cara Menemukan Nama yang Tepat"
+                data-analytics="How to Find a Great Name">
                 <div class="flex flex-col gap-4">
                     <p>Nama perusahaan Anda adalah kesan pertama bagi calon pelanggan. Jadi, nama itu harus relevan dan mudah diingat, tetapi juga mudah diadaptasikan dengan perubahan agar Anda memiliki ruang untuk berkembang. Bingung harus mulai dari mana? Henrik menguraikan empat langkah penting untuk membantu Anda menemukan nama yang tepat untuk usaha rintisan Anda.</p>
                 </div>
             </x-displays.accordion>
-            <x-displays.accordion question="Manfaat Landing Page">
+            <x-displays.accordion
+                question="Manfaat Landing Page"
+                data-analytics="Benefits of Landing Pages">
                 <p>Landing page difokuskan untuk mendorong pengunjung mengambil satu langkah kecil dalam prosesnya menjadi pelanggan, dan dapat berfungsi sebagai alat bantu pemasaran berbiaya rendah, tetapi bernilai tinggi bagi perusahaan dari berbagai skala. Temukan manfaat yang dapat ditawarkan halaman arahan untuk bisnis Anda dalam e-book kami.</p>
             </x-displays.accordion>
-            <x-displays.accordion question="Cara Efektif untuk Memasarkan Bisnis Anda" :last="true">
+            <x-displays.accordion
+                question="Cara Efektif untuk Memasarkan Bisnis Anda"
+                data-analytics="Effective Ways to Market Your Company"
+                :last="true">
                 <p>Mempelajari cara memasarkan bisnis secara efektif adalah salah satu keterampilan terpenting yang harus dimiliki setiap wirausahawan, dan cara terbaik untuk menginformasikan apa yang ditawarkan perusahaan kepada audiens target adalah dengan menceritakan kisah Anda.</p>
             </x-displays.accordion>
         </div>

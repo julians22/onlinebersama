@@ -31,10 +31,10 @@
                     @endif
                     <p class="paragraph-sm text-deep-blue-300">Waktu baca rata-rata {{ $post->read_time }}</p>
                 </div>
-                <div @if ($post->writer) data-analytics-level3="{{ $post->title }}" @endif class="relative aspect-video w-full rounded-[10px] overflow-hidden xl:w-156.75">
-                    <img @if ($post->writer) data-analytics-name="video image | {{ $post->title }}" @endif class="w-full" src="{{ imageArticle($post->slug) }}" alt="">
+                <div @if ($post->writer) data-analytics-level3="{{ $post->data_analytics ?? $post->title }}" @endif class="relative aspect-video w-full rounded-[10px] overflow-hidden xl:w-156.75">
+                    <img @if ($post->writer) data-analytics-name="video image | {{ $post->data_analytics ?? $post->title }}" @endif class="w-full" src="{{ imageArticle($post->slug) }}" alt="">
                     @if ($post->writer)
-                        <button data-analytics-name="play button | {{ $post->title }}" type="button" class="group absolute size-full inset-0 flex justify-center items-center bg-gradient-video cursor-pointer">
+                        <button data-analytics-name="play button | {{ $post->data_analytics ?? $post->title }}" type="button" class="group absolute size-full inset-0 flex justify-center items-center bg-gradient-video cursor-pointer">
                             <x-icons.play-rounded width="78" height="78" fill="#fff" class="transition-all duration-300 ease-in-out group-hover:scale-110" />
                         </button>
                     @endif
@@ -61,6 +61,7 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <x-displays.card-inside
+                                data-analytics="Email"
                                 route="email"
                                 image="images/brand-1.jpg">
                                 Email
@@ -68,6 +69,7 @@
                         </div>
                         <div class="swiper-slide">
                             <x-displays.card-inside
+                                data-analytics="Social Media & E-Commerce"
                                 route="social-media"
                                 image="images/brand-2.jpg">
                                 Media Sosial dan <span class="block">E-Commerce</span>
@@ -75,6 +77,7 @@
                         </div>
                         <div class="swiper-slide">
                             <x-displays.card-inside
+                                data-analytics="Websites"
                                 route="websites"
                                 image="images/brand-3.jpg">
                                 Situs Web
@@ -92,12 +95,13 @@
             <div class="online-bersama-explore-more-topics swiper">
                 <div class="swiper-wrapper">
                     @forelse ($other_posts as $post)
-                        <div class="swiper-slide">
+                        <div data-analytics-level3="{{ $post->data_analytics ?? $post->title }}" class="swiper-slide">
                             <x-displays.card-resource
-                                data-analytics-level3="{{ $post->title }}"
+                                data-analytics="{{ $post->data_analytics ?? $post->title }}"
                                 :image="$post->slug"
-                                route="{{ route('resources.show', $post->slug) }}"
-                            >{{ $post->title }}</x-displays.card-resource>
+                                route="{{ route('resources.show', $post->slug) }}">
+                                {{ $post->title }}
+                            </x-displays.card-resource>
                         </div>
                     @empty
                         <div class="swiper-slide">

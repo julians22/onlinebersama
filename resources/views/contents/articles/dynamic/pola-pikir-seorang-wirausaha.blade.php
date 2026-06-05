@@ -17,9 +17,7 @@
             <p>Perjalanan kewirausahaan memang tidak mudah, tapi sangat layak untuk dijalani! Semoga berhasil!</p>
         </x-articles.tip-callout>
         <div class="flex flex-col gap-8 mt-8">
-            <div data-analytics-level3="Get More Insights With the Full E-Book">
-                <x-articles.e-book />
-            </div>
+            <x-articles.e-book />
             <x-articles.related-article :data="$post->relatedOneArticle" />
         </div>
     </div>

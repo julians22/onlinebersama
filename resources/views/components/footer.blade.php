@@ -62,14 +62,14 @@
                             class="footer-link">
                             Ketentuan Penggunaan
                         </a>
-                        <a
+                        <button
                             x-data="{ clicked: false }"
                             @click.prevent="clicked = !clicked"
                             data-analytics-name="text | Cookie Settings"
-                            href="#"
-                            class="footer-link optanon-show-settings">
+                            type="button"
+                            class="footer-link cursor-pointer optanon-show-settings">
                             Pengaturan Cookie
-                        </a>
+                        </button>
                         <a
                             data-analytics-name="text | Verisign.com"
                             href="https://www.verisign.com/"

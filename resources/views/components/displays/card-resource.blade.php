@@ -1,4 +1,4 @@
-<article class="flex flex-col gap-y-4 rounded-[10px] bg-white h-full p-4 box-shadow-sm" {{ $attributes }}>
+<article data-analytics-name="box | {{ $dataAnalytics }}" class="flex flex-col gap-y-4 rounded-[10px] bg-white h-full p-4 box-shadow-sm">
     <figure class="rounded-lg overflow-hidden">
         <img class="aspect-8/5 size-full object-cover" src="{{ imageArticle($image) }}" alt="{{ $alt }}">
     </figure>
@@ -14,7 +14,7 @@
             <h2 class="subheadline-3 text-deep-blue-300 line-clamp-3 text-[26px]! md:text-[28px]!">{{ $slot }}</h2>
         </div>
         <a
-            data-analytics-name="text | Baca Selengkapnya"
+            data-analytics-name="text | Read More"
             href="{{ $route }}"
             class="w-max flex items-center font-sans text-xl font-bold text-magenta-300 leading-6">
             Baca Selengkapnya

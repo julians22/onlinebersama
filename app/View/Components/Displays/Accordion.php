@@ -13,6 +13,7 @@ class Accordion extends Component
      */
     public function __construct(
         public string $question,
+        public ?string $dataAnalytics,
         public ?bool $last = false
     ) {}
 

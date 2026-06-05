@@ -22,7 +22,7 @@ class Post extends Model
      *
      * @var array
      */
-    protected $fillable = ['title', 'slug', 'type', 'status', 'read_time', 'template_view_path', 'meta_title', 'meta_description', 'meta_keywords', 'writer', 'related_slug', 'published_at'];
+    protected $fillable = ['title', 'slug', 'type', 'status', 'read_time', 'template_view_path', 'meta_title', 'meta_description', 'meta_keywords', 'data_analytics', 'writer', 'related_slug', 'published_at'];
 
     /**
      * Get the options for generating the slug.

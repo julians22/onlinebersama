@@ -89,6 +89,9 @@ class PostForm
                                             ->unique('posts', 'slug')
                                             ->live()
                                             ->required(),
+                                        TextInput::make('data_analytics')
+                                            ->label('Data Analytics (Title)')
+                                            ->helperText('Gunakan Bahasa Inggris. Contoh: "How to Create a Landing Page"'),
                                         TextInput::make('writer')
                                             ->label('Penulis')
                                             ->prefixIcon('heroicon-o-user'),
