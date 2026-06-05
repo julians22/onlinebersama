@@ -23,11 +23,11 @@
             </div>
         </x-articles.intro-and-quicklinks>
         <div id="meningkatkan-kredibilitas-anda" class="article-child-wrapper scroll-mt-20 sm:scroll-mt-28">
-            <h3>1. Meningkatkan Kredibilitas Anda</h3>
+            <h3 data-analytics-level2="1. Boost Your Credibility">1. Meningkatkan Kredibilitas Anda</h3>
             <p>Ekstensi nama domain .com memiliki kredibilitas di seluruh dunia. Jika digunakan dengan situs web, nama domain .com khusus dapat membantu memberikan legitimasi pada bisnis Anda dan memungkinkan Anda untuk:</p>
             <x-articles.arrow-item-content>
                 <div class="flex flex-col flex-1">
-                    <p>Mengiklankan nama domain bisnis Anda dan bukan pihak ketiga. Alih-alih menggunakan URL pihak ketiga yang umum (misalnya, <span class="block break-all">PembuatSitusWeb.com/site/rumahpantaianthony)</span>, Anda dapat mempromosikan bisnis Anda menggunakan nama domain .com khusus Anda (misalnya, RumahPantaiAnthony.com) dan membantu pelanggan merasa yakin saat mengklik situs Anda.</p>
+                    <p>Mengiklankan nama domain bisnis Anda dan bukan pihak ketiga. Alih-alih menggunakan URL pihak ketiga yang umum (misalnya, <span class="break-all">PembuatSitusWeb.com/site/rumahpantaianthony)</span>, Anda dapat mempromosikan bisnis Anda menggunakan nama domain .com khusus Anda (misalnya, RumahPantaiAnthony.com) dan membantu pelanggan merasa yakin saat mengklik situs Anda.</p>
                 </div>
             </x-articles.arrow-item-content>
             <x-articles.arrow-item-content>
@@ -37,7 +37,7 @@
             </x-articles.arrow-item-content>
             <x-articles.arrow-item-content>
                 <div class="flex flex-col flex-1">
-                    <p>Buat <a href="{{ route('resources.show', 'cara-membuat-alamat-email-bisnis-khusus') }}" class="link-to">alamat email bisnis</a> khusus dengan nama domain .com Anda (misalnya, sales@RumahPantaiAnthony.com) untuk membantu bisnis Anda terlihat lebih profesional.</p>
+                    <p>Buat <a data-analytics-name="text| business email address" href="{{ route('resources.show', 'cara-membuat-alamat-email-bisnis-khusus') }}" class="link-to">alamat email bisnis</a> khusus dengan nama domain .com Anda (misalnya, sales@RumahPantaiAnthony.com) untuk membantu bisnis Anda terlihat lebih profesional.</p>
                 </div>
             </x-articles.arrow-item-content>
             <x-articles.callout-cta>
@@ -128,11 +128,11 @@
                 </div>
             </x-articles.arrow-item-content>
         </div>
-        <x-articles.tip-callout>
+        <x-articles.tip-callout data-analytics-level3="TAKEAWAY">
             <x-slot:title>
                 <p>KESIMPULAN</p>
             </x-slot:title>
-            <p>Siap membangun situs web bisnis Anda sendiri? Artikel kami tentang <a href="{{ route('resources.show', 'cara-memilih-pembuat-situs-web') }}" class="link-to">cara memilih pembuat situs web yang tepat</a> untuk bisnis Anda dan <a href="{{ route('resources.show', 'daftar-periksa-membuat-situs-web') }}" class="link-to">daftar periksa pembuatan situs web</a> dapat membantu Anda memulai.</p>
+            <p>Siap membangun situs web bisnis Anda sendiri? Artikel kami tentang <a data-analytics-name="text | choosing the right website builder" href="{{ route('resources.show', 'cara-memilih-pembuat-situs-web') }}" class="link-to">cara memilih pembuat situs web yang tepat</a> untuk bisnis Anda dan <a data-analytics-name="text | website building checklist" href="{{ route('resources.show', 'daftar-periksa-membuat-situs-web') }}" class="link-to">daftar periksa pembuatan situs web</a> dapat membantu Anda memulai.</p>
         </x-articles.tip-callout>
         <x-articles.related-article :data="$post->relatedOneArticle" class="pt-4" />
     </div>

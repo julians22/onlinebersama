@@ -14,6 +14,7 @@ class CardInside extends Component
     public function __construct(
         public string $route,
         public string $image,
+        public ?string $dataAnalytics,
         public ?string $alt
     ) {}
 

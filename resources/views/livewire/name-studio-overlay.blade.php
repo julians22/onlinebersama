@@ -11,9 +11,10 @@
     <!-- Accept Modal Popup -->
     <div
         x-show="showOverlay"
+        @keydown.escape.window="showOverlay = false"
         @click.away="showOverlay = false"
-        class="fixed inset-0 flex items-center justify-center z-20 bg-black/50">
-        <div class="bg-white p-6 rounded-lg shadow-lg max-w-2xl">
+        class="fixed inset-0 flex items-center justify-center z-100 bg-black/50">
+        <div class="bg-white p-6 rounded-[10px] shadow-lg max-w-2xl">
             <div>
                 <p class="paragraph-sm text-navy-blue-300 text-center mb-4">Saya memahami dan menyetujui ketentuan dari <a href="https://www.verisign.com/id-id/privacy/" class="text-magenta-300 underline">Pernyataan Privasi.</a></p>
             </div>

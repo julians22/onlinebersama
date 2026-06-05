@@ -2,8 +2,25 @@ import { animate, scroll } from 'motion';
 import './bootstrap';
 import './swiper';
 
-// Motion Animation
+// Video Modal
+document.addEventListener('alpine:init', () => {
+    Alpine.store('videoModal', {
+        open: false,
+        src: null,
 
+        openModal(src) {
+            console.log('Opening video modal with src');
+            this.open = true;
+            this.src = src;
+        },
+        closeModal() {
+            this.open = false;
+            this.src = null;
+        }
+    })
+})
+
+// Motion Animation (Card Stack)
 document.addEventListener("DOMContentLoaded", () => {
     const stackItems = document.querySelectorAll(".card-stack");
 

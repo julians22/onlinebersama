@@ -1,13 +1,13 @@
 <header
     data-analytics-level1="topnav"
-    x-data="{ dropdown: false, sidebar: false, expandedDataText: 'click expand | How Do I Use a .com?', collapsedDataText: 'click collapse | How Do I Use a .com?' }"
+    x-data="{ dropdown: false, sidebar: false, expandedDataText: 'click expand | How Do I Use a .com?', collapsedDataText: 'collapse | How Do I Use a .com?' }"
     class="top-0 right-0 z-50 sticky w-full">
     {{-- Navigation Menu --}}
     {{-- Desktop Navigation --}}
     <nav
         data-analytics-level1="topnav"
         class="bg-gradient-nav">
-        <div class="container-nav flex justify-between items-center gap-2.5 py-2 sm:py-3 lg:py-5">
+        <div class="container-medium flex justify-between items-center gap-2.5 py-2 sm:py-3 lg:py-5">
             <div class="flex items-center gap-3.5">
                 {{-- Toggle Button (Mobile) --}}
                 <button
@@ -67,7 +67,7 @@
         <div class="absolute hidden top-0 left-1/2 -translate-x-1/2 w-full bg-white after:absolute after:top-0 after:right-0 after:w-1/2 after:h-full after:bg-light-gray-100 lg:block">
             <div class="relative z-10 max-w-480 flex bg-white mx-auto lg:flex-col xl:flex-row">
                 <div class="gap-6 grid grid-cols-3 p-10 h-max 2xl:gap-10">
-                    <a data-analytics-name="hover | For Websites" href="{{ route('websites') }}" class="group flex gap-5 hover:bg-mint-100 p-6 rounded-[10px] min-h-54.25 transition-all duration-300 ease-in-out">
+                    <a data-analytics-name="hover | .com for Websites" href="{{ route('websites') }}" class="group flex gap-5 hover:bg-mint-100 p-6 rounded-[10px] min-h-54.25 transition-all duration-300 ease-in-out">
                         <div class="space-y-4">
                             <h3 class="text-navy-blue-300 subheadline-3">.com untuk Situs Web</h3>
                             <p class="font-bold text-deep-blue-300 paragraph-sm">Agar lebih mudah ditemukan, mulailah menggunakan situs web .com Anda sendiri.</p>
@@ -76,7 +76,7 @@
                             <x-icons.arrow-rounded width="24" height="24" fill="#304D6D" strokeWidth="1" />
                         </div>
                     </a>
-                    <a data-analytics-name="hover | For Email" href="{{ route('email') }}" class="group flex gap-5 hover:bg-mint-100 p-6 rounded-[10px] min-h-54.25 transition-all duration-300 ease-in-out">
+                    <a data-analytics-name="hover | .com for Email" href="{{ route('email') }}" class="group flex gap-5 hover:bg-mint-100 p-6 rounded-[10px] min-h-54.25 transition-all duration-300 ease-in-out">
                         <div class="space-y-4">
                             <h3 class="text-navy-blue-300 subheadline-3">.com untuk Email</h3>
                             <p class="font-bold text-deep-blue-300 paragraph-sm">Jadikan email sebagai pernyataan kredibilitas.</p>
@@ -85,7 +85,7 @@
                             <x-icons.arrow-rounded width="24" height="24" fill="#304D6D" strokeWidth="1" />
                         </div>
                     </a>
-                    <a data-analytics-name="hover | For Social Media & E-Commerce" href="{{ route('social-media') }}" class="group flex gap-5 hover:bg-mint-100 p-6 rounded-[10px] min-h-54.25 transition-all duration-300 ease-in-out">
+                    <a data-analytics-name="hover | .com for Social Media & E-Commerce" href="{{ route('social-media') }}" class="group flex gap-5 hover:bg-mint-100 p-6 rounded-[10px] min-h-54.25 transition-all duration-300 ease-in-out">
                         <div class="space-y-4">
                             <h3 class="text-navy-blue-300 subheadline-3">.com untuk Media Sosial dan E-Commerce</h3>
                             <p class="font-bold text-deep-blue-300 paragraph-sm">Dapatkan alamat web .com untuk eksistensi online Anda.</p>
@@ -122,7 +122,7 @@
             <div class="flex justify-between p-6">
                 <a
                     data-analytics-name="text | .com"
-                    href="#">
+                    href="{{ route('index') }}">
                     <img class="w-20" src="{{ asset('images/logo-com-blue.svg') }}" alt="">
                 </a>
                 <button type="button" @click="sidebar = false" class="cursor-pointer">
@@ -185,11 +185,12 @@
                     class="border-t-2 border-light-gray-300 flex flex-col gap-4 w-full px-3 py-8 min-[500px]:px-6">
                     <div
                         class="group relative rounded-2xl w-full aspect-video overflow-hidden cursor-pointer min-[500px]:max-w-97.5 min-[500px]:h-54.25">
-                        <a
+                        <button
                             data-analytics-name="play button | Startup Experience"
-                            href="#" class="transition-all duration-300 ease-in-out top-1/2 left-1/2 absolute -translate-x-1/2 -translate-y-1/2 group-hover:scale-110">
+                            type="button"
+                            class="transition-all duration-300 ease-in-out top-1/2 left-1/2 absolute -translate-x-1/2 -translate-y-1/2 group-hover:scale-110">
                             <x-icons.play width="56" height="56" fill="#fff" />
-                        </a>
+                        </button>
                         <img
                             data-analytics-name="video image | Startup Experience"
                             class="size-full object-cover object-top" src="{{ asset('images/placeholder-video-navbar.jpg') }}" alt="">

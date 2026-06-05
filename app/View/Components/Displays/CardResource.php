@@ -12,6 +12,7 @@ class CardResource extends Component
      * Create a new component instance.
      */
     public function __construct(
+        public ?string $dataAnalytics,
         public ?string $image,
         public ?string $alt,
         public ?array $tags,

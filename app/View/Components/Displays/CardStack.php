@@ -15,6 +15,7 @@ class CardStack extends Component
         public string $number,
         public string $title,
         public string $image,
+        public ?string $dataAnalytics,
         public ?string $alt
     ) {}
 

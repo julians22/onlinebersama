@@ -30,10 +30,12 @@
         @foreach($posts as $index => $post)
             <div data-analytics-level3="card-{{ $index + 1 }}" wire:key="post-{{ $index }}">
                 <x-displays.card-resource
+                    data-analytics-names="box | {{ $post->data_analytics ?? $post->title }}"
                     :tags="$post->topics->pluck('name')->toArray()"
                     :image="$post->slug"
-                    route="{{ route('resources.show', $post->slug) }}"
-                >{{ $post->title }}</x-displays.card-resource>
+                    route="{{ route('resources.show', $post->slug) }}">
+                    {{ $post->title }}
+                </x-displays.card-resource>
             </div>
         @endforeach
     </div>

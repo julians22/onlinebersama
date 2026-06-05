@@ -9,13 +9,13 @@
     <section
         data-analytics-level2="hero"
         class="bg-light-gray-100">
-        <div class="flex justify-between items-center flex-col gap-10.75 py-10 container md:gap-20 md:py-15.5 lg:flex-row">
+        <div class="flex justify-between items-center flex-col gap-10.75 py-10 container-medium md:gap-20 md:py-15.5 lg:flex-row">
             <div class="space-y-4">
                 <h1 class="text-navy-blue-300 headline-1">.com untuk Email</h1>
                 <p class="text-deep-blue-300 paragraph-md">Jadikan email sebagai pernyataan kredibilitas. Dengan alamat email .com kustom, email bisnis Anda dapat terlihat lebih profesional.</p>
             </div>
             <button data-analytics-name="video image | Email Use Case" type="button" class="group relative rounded-[10px] overflow-hidden shrink-0 cursor-pointer box-shadow-sm">
-                <div class="top-0 left-0 absolute bg-black/30 size-full"></div>
+                <div class="top-0 left-0 absolute bg-gradient-video size-full"></div>
                 <span data-analytics-name="play button | Email Use Case" class="transition-all duration-300 ease-in-out top-1/2 left-1/2 absolute -translate-x-1/2 -translate-y-1/2 group-hover:scale-110">
                     <x-icons.play-rounded width="78" height="78" fill="#fff" />
                 </span>
@@ -27,27 +27,27 @@
 
     {{-- Benefits --}}
     <section
-        data-analytics-level2="Manfaat Email Kustom"
+        data-analytics-level2="Benefits of Custom Email"
         class="py-10 container">
         <div class="pb-28 md:pb-40">
             <h2 class="sticky top-20 mb-10 text-navy-blue-300 text-center headline-1 md:top-24 lg:top-30">Manfaat Email Kustom</h2>
-            <div class="flex flex-col gap-6 mx-auto max-w-md md:max-w-208">
+            <div class="flex flex-col gap-6 mx-auto md:max-w-208">
                 <div
-                    data-analytics-level3="Membangun Legitimasi"
+                    data-analytics-level3="Build Legtimacy"
                     class="top-48 sticky card-stack min-[407px]:top-40 md:top-54 lg:top-60">
                     <x-displays.card-stack number="1" title="Membangun Legitimasi" image="images/email-editorial-1.jpg" alt="">
                         Beri bisnis Anda tampilan yang berkelas dan profesional. Dapatkan alamat email .com kustom dan tunjukkan kepada semua orang bahwa Anda profesional.
                     </x-displays.card-stack>
                 </div>
                 <div
-                    data-analytics-level3="Meningkatkan Kredibilitas"
+                    data-analytics-level3="Increase Credibility"
                     class="top-48 sticky card-stack -mt-20 translate-y-20 min-[407px]:top-40 md:-mt-22 md:translate-y-22 md:top-54 lg:-mt-20 lg:translate-y-20 lg:top-60">
                     <x-displays.card-stack number="2" title="Meningkatkan Kredibilitas" image="images/email-editorial-2.jpg" alt="">
                         Dengan alamat email .com kustom, Anda dapat memberikan kesan yang kuat dan membekas, serta menumbuhkan kepercayaan pelanggan terhadap Anda.
                     </x-displays.card-stack>
                 </div>
                 <div
-                    data-analytics-level3="Memasarkan Bisnis Anda"
+                    data-analytics-level3="Market Your Business"
                     class="top-48 sticky card-stack -mb-8 translate-y-20 min-[407px]:top-40 md:-mb-20 md:translate-y-22 md:top-54 lg:top-60">
                     <x-displays.card-stack number="3" title="Memasarkan Bisnis Anda" image="images/email-editorial-3.jpg" alt="">
                         Dapatkan alamat email .com kustom dan bangun merek Anda lewat setiap email yang dikirim.
@@ -55,9 +55,9 @@
                 </div>
             </div>
         </div>
-        <div class="justify-center mt-10 md:flex">
+        <div class="flex justify-center mt-10">
             <a
-                data-analytics-name="button | Katahui Manfaat Lainnya"
+                data-analytics-name="button | Discover More Benefits"
                 href="#"
                 class="btn-secondary w-full sm:w-auto">
                 Ketahui Manfaat Lainnya
@@ -68,12 +68,12 @@
 
     {{-- Content --}}
     <section
-        data-analytics-level2="Tiga Cara Menggunakan Alamat Email Kustom"
+        data-analytics-level2="Three Ways To Use A Custom Email Address"
         class="bg-gradient-blue-double">
         <div class="flex justify-center items-center gap-10 px-10 py-10 flex-col container md:px-8 md:gap-12 md:py-20 xl:flex-row">
-            <button data-analytics-name="video image | Tiga Cara Menggunakan Alamat Email Kustom" type="button" class="group relative rounded-[10px] overflow-hidden shrink-0 cursor-pointer">
+            <button data-analytics-name="video image | Three Ways To Use A Custom Email Address" type="button" class="group relative rounded-[10px] overflow-hidden shrink-0 cursor-pointer">
                 <img class="size-full object-cover aspect-video" src="{{ asset('images/three-ways.jpg') }}" alt="">
-                <span data-analytics-name="play button | Tiga Cara Menggunakan Alamat Email Kustom" class="transition-all duration-300 ease-in-out top-1/2 left-1/2 absolute -translate-x-1/2 -translate-y-1/2 group-hover:scale-110">
+                <span data-analytics-name="play button | Three Ways To Use A Custom Email Address" class="transition-all duration-300 ease-in-out top-1/2 left-1/2 absolute -translate-x-1/2 -translate-y-1/2 group-hover:scale-110">
                     <x-icons.play-rounded width="78" height="78" fill="#fff" />
                 </span>
             </button>
@@ -87,51 +87,49 @@
 
     {{-- List Point --}}
     <section
-        data-analytics-level2="Cara Menyiapkan Alamat Email Kustom"
+        data-analytics-level2="How To Setup a Custom Email Address"
         class="flex items-center gap-10 py-10 container flex-col md:py-19.5 xl:items-start xl:gap-28 xl:flex-row 2xl:gap-44">
-        <div class="top-28 flex flex-col gap-11.5 xl:sticky">
+        <div class="-top-12 flex flex-col gap-11.5 xl:sticky">
             <h2 class="text-navy-blue-300 headline-1 text-center md:text-[48px]! md:leading-15.5!">Cara Menyiapkan Alamat <span class="sm:block">Email Kustom</span></h2>
-            <div class="mx-auto">
-                <button type="button" class="group cursor-pointer relative rounded-[10px] overflow-hidden">
-                    <div class="top-0 left-0 absolute bg-linear-360 from-black/80 to-transparent size-full"></div>
-                    <span class="transition-all duration-300 ease-in-out top-1/2 left-1/2 absolute -translate-x-1/2 -translate-y-1/2 group-hover:scale-110">
-                        <x-icons.play-rounded width="78" height="78" fill="#fff" />
-                    </span>
-                    <img class="size-full aspect-video max-w-150 xl:max-w-full" src="{{ asset('images/usecase-email.jpg') }}" alt="">
-                </button>
-            </div>
+            <button data-analytics-name="video image | How to Setup Custom Email" type="button" class="group cursor-pointer relative rounded-[10px] overflow-hidden">
+                <div class="top-0 left-0 absolute bg-linear-360 from-black/80 to-transparent size-full"></div>
+                <span data-analytics-name="play button | How to Setup Custom Email" class="transition-all duration-300 ease-in-out top-1/2 left-1/2 absolute -translate-x-1/2 -translate-y-1/2 group-hover:scale-110">
+                    <x-icons.play-rounded width="78" height="78" fill="#fff" />
+                </span>
+                <img class="size-full aspect-video max-w-150 xl:max-w-full" src="{{ asset('images/usecase-email.jpg') }}" alt="">
+            </button>
         </div>
-        <div class="flex flex-col gap-8 max-w-125">
+        <div class="flex flex-col gap-8 max-w-125 xl:pt-28">
             <div class="sticky top-20 w-full h-25 bg-linear-180 from-white from-25% to-transparent -mt-18 hidden xl:block"></div>
-            <div data-analytics-level3="Daftarkan Nama Domain" class="flex gap-3.25 md:px-4">
+            <div data-analytics-level3="Register a Domain Name" class="flex gap-3.25 md:px-4">
                 <div class="flex justify-center items-center border-4 border-mint-300 rounded-full size-7.5 font-extrabold text-[16px] text-navy-blue-300 shrink-0 md:text-[32px] md:font-semibold md:size-12.5">1</div>
                 <div class="space-y-2 text-deep-blue-300">
                     <h3 class="subheadline-3">Daftarkan Nama Domain</h3>
                     <p class="text-deep-blue-300 text-[24px]! leading-9! paragraph-md">Awali dengan mendaftarkan nama domain .com melalui registrar pilihan Anda.</p>
                 </div>
             </div>
-            <div data-analytics-level3="Masuk ke Akun Anda" class="flex gap-3.25 md:px-4">
+            <div data-analytics-level3="Log In to Your Account" class="flex gap-3.25 md:px-4">
                 <div class="flex justify-center items-center border-4 border-mint-300 rounded-full size-7.5 font-extrabold text-[16px] text-navy-blue-300 shrink-0 md:text-[32px] md:font-semibold md:size-12.5">2</div>
                 <div class="space-y-2 text-deep-blue-300">
                     <h3 class="subheadline-3">Masuk ke Akun Anda</h3>
                     <p class="text-deep-blue-300 text-[24px]! leading-9! paragraph-md">Masuk ke akun registrar Anda, cari ikon Pengaturan, lalu temukan tab Email.</p>
                 </div>
             </div>
-            <div data-analytics-level3="Pilih Penyedia Hosting" class="flex gap-3.25 md:px-4">
+            <div data-analytics-level3="Select Hosting Provider" class="flex gap-3.25 md:px-4">
                 <div class="flex justify-center items-center border-4 border-mint-300 rounded-full size-7.5 font-extrabold text-[16px] text-navy-blue-300 shrink-0 md:text-[32px] md:font-semibold md:size-12.5">3</div>
                 <div class="space-y-2 text-deep-blue-300">
                     <h3 class="subheadline-3">Pilih Penyedia Hosting</h3>
                     <p class="text-deep-blue-300 text-[24px]! leading-9! paragraph-md">Pilih penyedia hosting email.</p>
                 </div>
             </div>
-            <div data-analytics-level3="Beli Paket Email" class="flex gap-3.25 md:px-4">
+            <div data-analytics-level3="Purchase an Email Plan" class="flex gap-3.25 md:px-4">
                 <div class="flex justify-center items-center border-4 border-mint-300 rounded-full size-7.5 font-extrabold text-[16px] text-navy-blue-300 shrink-0 md:text-[32px] md:font-semibold md:size-12.5">4</div>
                 <div class="space-y-2 text-deep-blue-300">
                     <h3 class="subheadline-3">Beli Paket Email</h3>
                     <p class="text-deep-blue-300 text-[24px]! leading-9! paragraph-md">Beli dan siapkan paket email bisnis, lalu konfigurasikan akun email menggunakan nama domain .com Anda.</p>
                 </div>
             </div>
-            <div data-analytics-level3="Klik Buat" class="flex gap-3.25 md:px-4">
+            <div data-analytics-level3="Click Create" class="flex gap-3.25 md:px-4">
                 <div class="flex justify-center items-center border-4 border-mint-300 rounded-full size-7.5 font-extrabold text-[16px] text-navy-blue-300 shrink-0 md:text-[32px] md:font-semibold md:size-12.5">5</div>
                 <div class="space-y-2 text-deep-blue-300">
                     <h3 class="subheadline-3">Klik Buat</h3>
@@ -144,19 +142,19 @@
 
     {{-- How To Use --}}
     <section
-        data-analytics-level2="Bagaimana Cara Menggunakan .com?"
+        data-analytics-level2="How Do I Use a .com?"
         class="bg-light-gray-100">
         <div class="flex flex-col gap-10 py-10 container md:pb-19.5">
             <h2 class="text-navy-blue-300 text-center headline-1">Bagaimana Cara Menggunakan .com?</h2>
             <div class="gap-8 grid grid-cols-1 md:grid-cols-2">
                 <x-displays.card-inside
-                    data-analytics-level3=".com untuk Media Sosial dan E-Commerce"
+                    data-analytics="Social Media & E-Commerce"
                     route="social-media"
                     image="images/brand-2.jpg">
                     Media Sosial dan <span class="block">E-Commerce</span>
                 </x-displays.card-inside>
                 <x-displays.card-inside
-                    data-analytics-level3=".com untuk Situs Web"
+                    data-analytics="Websites"
                     route="websites"
                     image="images/brand-3.jpg">
                     Situs Web
@@ -168,7 +166,7 @@
 
     {{-- Other Information --}}
     <section
-        data-analytics-level2="Mencari sumber informasi lainnya?"
+        data-analytics-level2="Looking for More Resources?"
         class="relative bg-[#F0EAE4]">
         <img class="mx-auto object-cover hidden h-150 md:block 2xl:h-auto" src="{{ asset('images/hero-resources-usecase.jpg') }}" alt="">
         <img class="w-full block h-187.5 object-cover md:h-auto md:hidden" src="{{ asset('images/hero-resources-usecase-mobile.jpg') }}" alt="">
@@ -176,7 +174,7 @@
             <h2 class="text-navy-blue-300 headline-1">Mencari sumber <span class="block">informasi lainnya?</span></h2>
             <p class="max-w-150 text-deep-blue-300 paragraph-md md:leading-8.5!">Jelajahi Panduan Belajar untuk menemukan semua artikel, video, dan banyak lagi tentang cara menggunakan domain .com.</p>
             <a
-                data-analytics-name="button | Kunjungi Panduan Belajar"
+                data-analytics-name="button | Visit the Learning Hub"
                 href="{{ route('resources.index') }}"
                 class="btn-secondary w-full sm:w-max">
                 Kunjungi Panduan Belajar

@@ -2,7 +2,7 @@
     <div class="article-wrapper">
         <x-articles.intro-and-quicklinks>
             <div class="article-child-wrapper">
-                <p>Belum siap untuk memiliki situs web? Memiliki Nama domain tetap dapat memberikan manfaat bagi bisnis Anda karena penerusan domain memungkinkan Anda untuk memiliki alamat situs web yang mudah diingat dan sesuai merk, terlepas di mana Anda akan membangun <x-articles.tooltip data-tooltip="Kehadiran online / eksistensi online adalah suatu keadaan di mana bisnis Anda dapat ditemukan di internet, bisa dalam bentuk situs web, halaman media sosial, dan/atau pasar online. Menggunakan nama domain .com dengan kehadiran online Anda, dapat membuka peluang dengan membantu pelanggan menemukan “markas” Anda dengan mudah saat melakukan bisnis online.">kehadiran online</x-articles.tooltip> Anda. Penerusan nama domain adalah cara yang cepat dan mudah untuk membantu Anda mulai mempersonalisasi dan memasarkan kehadiran online Anda - baik di media sosial maupun di toko online.</p>
+                <p>Belum siap untuk memiliki situs web? Memiliki Nama domain tetap dapat memberikan manfaat bagi bisnis Anda karena penerusan domain memungkinkan Anda untuk memiliki alamat situs web yang mudah diingat dan sesuai merk, terlepas di mana Anda akan membangun <x-articles.tooltip data-analytics-name="hover | online presence" data-tooltip="Kehadiran online / eksistensi online adalah suatu keadaan di mana bisnis Anda dapat ditemukan di internet, bisa dalam bentuk situs web, halaman media sosial, dan/atau pasar online. Menggunakan nama domain .com dengan kehadiran online Anda, dapat membuka peluang dengan membantu pelanggan menemukan “markas” Anda dengan mudah saat melakukan bisnis online.">kehadiran online</x-articles.tooltip> Anda. Penerusan nama domain adalah cara yang cepat dan mudah untuk membantu Anda mulai mempersonalisasi dan memasarkan kehadiran online Anda - baik di media sosial maupun di toko online.</p>
                 <p>Lihat panduan singkat ini untuk mengetahui cara melakukannya.</p>
                 <x-articles.navigate-link>
                     <a href="#apa-yang-dimaksud-dengan-penerusan-nama-domain-com">
@@ -43,13 +43,13 @@
             <x-articles.callout-cta>
                 <div class="flex flex-col gap-4">
                     <h4>Tahukah Anda?</h4>
-                    <p>Penelitian menunjukkan bahwa konsumen di seluruh dunia percaya bahwa .com merupakan pilihan yang tepat untuk kehadiran online.1 Selain itu, nama domain .com memudahkan pelanggan untuk menemukan dan mengenali bisnis di platform media sosial dan e-commerce.</p>
+                    <p>Penelitian menunjukkan bahwa konsumen di seluruh dunia percaya bahwa .com merupakan pilihan yang tepat untuk kehadiran online.<sup>1</sup> Selain itu, nama domain .com memudahkan pelanggan untuk menemukan dan mengenali bisnis di platform media sosial dan e-commerce.</p>
                 </div>
             </x-articles.callout-cta>
         </div>
         <div id="apa-saja-cara-yang-dapat-dilakukan-untuk-meneruskan-nama-domain-com" class="article-child-wrapper scroll-mt-20 sm:scroll-mt-28">
-            <h3>Apa Cara yang Dapat Dilakukan untuk Meneruskan Nama Domain?</h3>
-            <p>Sekarang setelah kita membahas <a href="#" class="link-to">manfaat penerusan nama domain</a>, mari kita uraikan berbagai jenis penerusan dan bagaimana penerusan tersebut dapat memengaruhi apa yang dilihat pelanggan Anda di browser web mereka.</p>
+            <h3 data-analytics-level2="What Are the Different Ways to Forward a Domain Name?">Apa Cara yang Dapat Dilakukan untuk Meneruskan Nama Domain?</h3>
+            <p>Sekarang setelah kita membahas <a data-analytics-name="text | benefits of domain name forwarding" href="#" class="link-to">manfaat penerusan nama domain</a>, mari kita uraikan berbagai jenis penerusan dan bagaimana penerusan tersebut dapat memengaruhi apa yang dilihat pelanggan Anda di browser web mereka.</p>
             <p>Saat bekerja dengan penjual nama domain, Anda mungkin akan memiliki dua opsi:</p>
             <x-articles.arrow-item-content>
                 <div class="flex flex-col flex-1">
@@ -63,15 +63,15 @@
             </x-articles.workflow>
             <x-icons.arrow-rounded width="24" height="24" fill="#A7127E" class="row-span-2 rotate-90 mx-auto my-2 lg:mx-0 lg:my-0 lg:rotate-0" />
             <x-articles.workflow header="URL yang Diketik Pengunjung" class="break-all">
-                TipsCantikMudah.com
+                TipsCantikChika.com
             </x-articles.workflow>
             <x-icons.arrow-rounded width="24" height="24" fill="#A7127E" class="row-span-2 rotate-90 mx-auto my-2 lg:mx-0 lg:my-0 lg:rotate-0" />
             <x-articles.workflow header="URL Situs Web yang Dilihat Pengunjung" class="break-all">
-                AkunMediaSosialAnda.com/tipscantikmudah
+                AkunMediaSosialAnda.com/tipscantikchika
             </x-articles.workflow>
             <x-icons.arrow-rounded width="24" height="24" fill="#A7127E" class="row-span-2 rotate-90 mx-auto my-2 lg:mx-0 lg:my-0 lg:rotate-0" />
             <x-articles.workflow header="Tampilan Baris Alamat" class="break-all">
-                AkunMediaSosialAnda.com/tipscantikmudah
+                AkunMediaSosialAnda.com/tipscantikchika
             </x-articles.workflow>
         </div>
         <x-articles.arrow-item-content>
@@ -85,26 +85,26 @@
             </x-articles.workflow>
             <x-icons.arrow-rounded width="20" height="20" fill="#A7127E" class="row-span-2 rotate-90 mx-auto my-2 lg:mx-0 lg:my-0 lg:rotate-0" />
             <x-articles.workflow header="URL yang Diketik Pengunjung" class="break-all">
-                TipsCantikMudah.com
+                TipsCantikChika.com
             </x-articles.workflow>
             <x-icons.arrow-rounded width="20" height="20" fill="#A7127E" class="row-span-2 rotate-90 mx-auto my-2 lg:mx-0 lg:my-0 lg:rotate-0" />
             <x-articles.workflow header="URL Situs Web yang Dilihat Pengunjung" class="break-all">
-                AkunMediaSosialAnda.com/tipscantikmudah
+                AkunMediaSosialAnda.com/tipscantikchika
             </x-articles.workflow>
             <x-icons.arrow-rounded width="20" height="20" fill="#A7127E" class="row-span-2 rotate-90 mx-auto my-2 lg:mx-0 lg:my-0 lg:rotate-0" />
             <x-articles.workflow header="Tampilan Baris Alamat" class="break-all">
-                TipsCantikMudah.com
+                TipsCantikChika.com
             </x-articles.workflow>
         </div>
         <div id="bagaimana-cara-saya-meneruskan-nama-domain-com" class="article-child-wrapper scroll-mt-20 sm:scroll-mt-28">
-            <h3>Bagaimana Cara Saya Meneruskan Nama Domain .com?</h3>
+            <h3 data-analytics-level2="How Do I Forward a .com Domain Name?">Bagaimana Cara Saya Meneruskan Nama Domain .com?</h3>
             <p>Untuk memulai, Anda harus memastikan bahwa nama domain .com sudah terdaftar dan selanjutnya menentukan alamat web tujuan Anda.</p>
             <p>Banyak penyedia domain umumnya mengikuti proses lima langkah. Namun proses pada setiap penjual nama domain mungkin akan berbeda, kami menyarankan untuk berkonsultasi dengan pusat bantuan mereka atau cari petunjuk khusus tentang cara meneruskan nama domain di situs mereka.</p>
             <div class="article-child-wrapper md:pl-4">
-                <x-articles.step-item :number="1">
+                <x-articles.step-item :number="1" data-analytics-level3="1 Register a Domain Name">
                     <div class="flex gap-2 flex-col flex-1">
                         <h4>Daftarkan nama domain .com</h4>
-                        <p>Mulailah dengan mendaftarkan nama domain .com melalui perusahaan penyedia nama domain pilihan Anda. Anda dapat menemukan berbagai saran nama domain yang menarik dengan menggunakan generator nama domain kami <a href="{{ route('find') }}" class="link-to">di sini</a>.</p>
+                        <p>Mulailah dengan mendaftarkan nama domain .com melalui perusahaan penyedia nama domain pilihan Anda. Anda dapat menemukan berbagai saran nama domain yang menarik dengan menggunakan generator nama domain kami <a data-analytics-name="text | here" href="{{ route('find') }}" class="link-to">di sini</a>.</p>
                     </div>
                 </x-articles.step-item>
                 <x-articles.step-item :number="2">

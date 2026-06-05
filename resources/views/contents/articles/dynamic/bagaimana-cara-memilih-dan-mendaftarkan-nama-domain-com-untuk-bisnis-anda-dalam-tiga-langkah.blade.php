@@ -36,8 +36,8 @@
             </div>
         </div>
         <div id="pilih-nama-domain" class="article-child-wrapper scroll-mt-20 sm:scroll-mt-28">
-            <h3>LANGKAH 2: PILIH NAMA DOMAIN</h3>
-            <p>Setelah Anda memilih ekstensi domain, sekarang saatnya untuk memikirkan dan mencari nama domain yang paling sesuai untuk menggambarkan <x-articles.tooltip data-tooltip="Kehadiran online / eksistensi online adalah suatu keadaan di mana bisnis Anda dapat ditemukan di internet, bisa dalam bentuk situs web, halaman media sosial, dan/atau pasar online. Menggunakan nama domain .com dengan kehadiran online Anda, dapat membuka peluang dengan membantu pelanggan menemukan “markas” Anda dengan mudah saat melakukan bisnis online.">kehadiran online</x-articles.tooltip> Anda.</p>
+            <h3 data-analytics-level2="2: Choose a Domain Name">LANGKAH 2: PILIH NAMA DOMAIN</h3>
+            <p>Setelah Anda memilih ekstensi domain, sekarang saatnya untuk memikirkan dan mencari nama domain yang paling sesuai untuk menggambarkan <x-articles.tooltip data-analytics-name="text | online presence" data-tooltip="Kehadiran online / eksistensi online adalah suatu keadaan di mana bisnis Anda dapat ditemukan di internet, bisa dalam bentuk situs web, halaman media sosial, dan/atau pasar online. Menggunakan nama domain .com dengan kehadiran online Anda, dapat membuka peluang dengan membantu pelanggan menemukan “markas” Anda dengan mudah saat melakukan bisnis online.">kehadiran online</x-articles.tooltip> Anda.</p>
             <p>Meskipun memilih nama domain yang sama dengan nama bisnis Anda adalah sebuah pilihan, tergantung pada ketersediaan, nama domain tidak harus sama dengan nama bisnis Anda. Agar tampil beda, beberapa bisnis menggunakan slogan yang lebih mudah diingat. Pilihan populer lainnya adalah memperpanjang nama bisnis dengan kata tambahan untuk menggambarkan bisnis Anda lebih baik. Berikut adalah beberapa contoh:</p>
             <div class="article-child-wrapper md:pl-4">
                 <x-articles.step-item :number="1">
@@ -72,11 +72,11 @@
                 </x-articles.step-item>
             </div>
             <div class="flex flex-col gap-2">
-                <h4>Coba Generator Nama Domain NameStudio&reg;</h4>
+                <h4 data-analytics-level3="Try the NameStudio Domain Name Generator">Coba Generator Nama Domain NameStudio&reg;</h4>
                 <p>Cobalah generator nama domain yang didukung oleh NameStudio&reg; untuk menemukan saran nama domain .com yang tersedia.</p>
                 <x-articles.arrow-item-content>
                     <div class="flex flex-col flex-1">
-                        <p><a href="{{ route('find') }}" class="link-to">Temukan Nama Domain Anda</a></p>
+                        <p><a data-analytics-name="text | Find a Domain Name" href="{{ route('find') }}" class="link-to">Temukan Nama Domain Anda</a></p>
                     </div>
                 </x-articles.arrow-item-content>
             </div>

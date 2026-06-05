@@ -6,15 +6,13 @@ use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class Accordion extends Component
+class CardVideo extends Component
 {
     /**
      * Create a new component instance.
      */
     public function __construct(
-        public string $question,
-        public ?string $dataAnalytics,
-        public ?bool $last = false
+        public ?string $dataAnalytics
     ) {}
 
     /**
@@ -22,6 +20,6 @@ class Accordion extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.displays.accordion');
+        return view('components.displays.card-video');
     }
 }
