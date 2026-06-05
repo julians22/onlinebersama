@@ -43,7 +43,7 @@
             <x-articles.callout-cta>
                 <div class="flex flex-col gap-4">
                     <h4>Tahukah Anda?</h4>
-                    <p>Penelitian menunjukkan bahwa konsumen di seluruh dunia percaya bahwa .com merupakan pilihan yang tepat untuk kehadiran online.1 Selain itu, nama domain .com memudahkan pelanggan untuk menemukan dan mengenali bisnis di platform media sosial dan e-commerce.</p>
+                    <p>Penelitian menunjukkan bahwa konsumen di seluruh dunia percaya bahwa .com merupakan pilihan yang tepat untuk kehadiran online.<sup>1</sup> Selain itu, nama domain .com memudahkan pelanggan untuk menemukan dan mengenali bisnis di platform media sosial dan e-commerce.</p>
                 </div>
             </x-articles.callout-cta>
         </div>
@@ -63,15 +63,15 @@
             </x-articles.workflow>
             <x-icons.arrow-rounded width="24" height="24" fill="#A7127E" class="row-span-2 rotate-90 mx-auto my-2 lg:mx-0 lg:my-0 lg:rotate-0" />
             <x-articles.workflow header="URL yang Diketik Pengunjung" class="break-all">
-                TipsCantikMudah.com
+                TipsCantikChika.com
             </x-articles.workflow>
             <x-icons.arrow-rounded width="24" height="24" fill="#A7127E" class="row-span-2 rotate-90 mx-auto my-2 lg:mx-0 lg:my-0 lg:rotate-0" />
             <x-articles.workflow header="URL Situs Web yang Dilihat Pengunjung" class="break-all">
-                AkunMediaSosialAnda.com/tipscantikmudah
+                AkunMediaSosialAnda.com/tipscantikchika
             </x-articles.workflow>
             <x-icons.arrow-rounded width="24" height="24" fill="#A7127E" class="row-span-2 rotate-90 mx-auto my-2 lg:mx-0 lg:my-0 lg:rotate-0" />
             <x-articles.workflow header="Tampilan Baris Alamat" class="break-all">
-                AkunMediaSosialAnda.com/tipscantikmudah
+                AkunMediaSosialAnda.com/tipscantikchika
             </x-articles.workflow>
         </div>
         <x-articles.arrow-item-content>
@@ -85,15 +85,15 @@
             </x-articles.workflow>
             <x-icons.arrow-rounded width="20" height="20" fill="#A7127E" class="row-span-2 rotate-90 mx-auto my-2 lg:mx-0 lg:my-0 lg:rotate-0" />
             <x-articles.workflow header="URL yang Diketik Pengunjung" class="break-all">
-                TipsCantikMudah.com
+                TipsCantikChika.com
             </x-articles.workflow>
             <x-icons.arrow-rounded width="20" height="20" fill="#A7127E" class="row-span-2 rotate-90 mx-auto my-2 lg:mx-0 lg:my-0 lg:rotate-0" />
             <x-articles.workflow header="URL Situs Web yang Dilihat Pengunjung" class="break-all">
-                AkunMediaSosialAnda.com/tipscantikmudah
+                AkunMediaSosialAnda.com/tipscantikchika
             </x-articles.workflow>
             <x-icons.arrow-rounded width="20" height="20" fill="#A7127E" class="row-span-2 rotate-90 mx-auto my-2 lg:mx-0 lg:my-0 lg:rotate-0" />
             <x-articles.workflow header="Tampilan Baris Alamat" class="break-all">
-                TipsCantikMudah.com
+                TipsCantikChika.com
             </x-articles.workflow>
         </div>
         <div id="bagaimana-cara-saya-meneruskan-nama-domain-com" class="article-child-wrapper scroll-mt-20 sm:scroll-mt-28">

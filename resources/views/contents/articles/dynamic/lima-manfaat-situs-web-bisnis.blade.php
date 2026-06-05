@@ -27,7 +27,7 @@
             <p>Ekstensi nama domain .com memiliki kredibilitas di seluruh dunia. Jika digunakan dengan situs web, nama domain .com khusus dapat membantu memberikan legitimasi pada bisnis Anda dan memungkinkan Anda untuk:</p>
             <x-articles.arrow-item-content>
                 <div class="flex flex-col flex-1">
-                    <p>Mengiklankan nama domain bisnis Anda dan bukan pihak ketiga. Alih-alih menggunakan URL pihak ketiga yang umum (misalnya, <span class="block break-all">PembuatSitusWeb.com/site/rumahpantaianthony)</span>, Anda dapat mempromosikan bisnis Anda menggunakan nama domain .com khusus Anda (misalnya, RumahPantaiAnthony.com) dan membantu pelanggan merasa yakin saat mengklik situs Anda.</p>
+                    <p>Mengiklankan nama domain bisnis Anda dan bukan pihak ketiga. Alih-alih menggunakan URL pihak ketiga yang umum (misalnya, <span class="break-all">PembuatSitusWeb.com/site/rumahpantaianthony)</span>, Anda dapat mempromosikan bisnis Anda menggunakan nama domain .com khusus Anda (misalnya, RumahPantaiAnthony.com) dan membantu pelanggan merasa yakin saat mengklik situs Anda.</p>
                 </div>
             </x-articles.arrow-item-content>
             <x-articles.arrow-item-content>
