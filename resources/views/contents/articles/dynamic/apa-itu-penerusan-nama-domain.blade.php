@@ -31,7 +31,7 @@
                 </x-articles.arrow-item-content>
                 <x-articles.arrow-item-content>
                     <div class="flex flex-col flex-1">
-                        <p><strong>Alamat web yang konsisten untuk bisnis Anda.</strong> Dapatkan alamat web .com khususkustom yang dapat mengikuti perkembangan bisnis Anda, sehingga meskipun Anda mengganti platform media sosial atau e-commerce yang digunakan, pelanggan tetap dapat menemukan Anda.</p>
+                        <p><strong>Alamat web yang konsisten untuk bisnis Anda.</strong> Dapatkan alamat web .com khusus yang dapat mengikuti perkembangan bisnis Anda, sehingga meskipun Anda mengganti platform media sosial atau e-commerce yang digunakan, pelanggan tetap dapat menemukan Anda.</p>
                     </div>
                 </x-articles.arrow-item-content>
                 <x-articles.arrow-item-content>
