@@ -68,7 +68,7 @@
             <x-articles.callout-cta>
                 <div class="flex flex-col gap-4">
                     <h4>Perlu Diingat</h4>
-                    <p>Dengan mempertimbangkan anggaran, Anda dapat membuat beberapa alamat email untuk mendukung berbagai bagian bisnis Anda, seperti info@LivingKreasi.com atau inquiries@LivingKreasi.com. Dengan melakukan ini, email Anda akan menjadi bentuk pernyataan kredibilitas yang membantu Anda tampil beda menonjol dan membangun kepercayaan di setiap email yang Anda kirim.</p>
+                    <p>Dengan mempertimbangkan anggaran, Anda dapat membuat beberapa alamat email untuk mendukung berbagai bagian bisnis Anda, seperti info@LivingKreasi.com atau inquiries@LivingKreasi.com. Dengan melakukan ini, email Anda akan menjadi bentuk pernyataan kredibilitas yang membantu Anda tampil beda dan membangun kepercayaan di setiap email yang Anda kirim.</p>
                 </div>
             </x-articles.callout-cta>
         </div>
