@@ -8,6 +8,7 @@
     <!-- Hero -->
     <section
         data-analytics-level2="hero"
+        data-analytics-name="video play button | (video name tbd)"
         class="relative">
         <img class="w-full h-112.5 object-cover aspect-48/17 lg:h-152.75 xl:h-170" src="{{ asset('images/hero-homepage.jpg') }}" alt="">
         <div class="container top-0 left-1/2 absolute flex justify-center items-end px-7 pt-7 pb-4 size-full -translate-x-1/2 md:justify-start sm:p-10 lg:px-18.5 lg:py-25.75">

@@ -76,8 +76,11 @@
                 <p class="paragraph-lg">Bangun rumah online Anda di situs web dengan nama domain .com.</p>
             </div>
             <div class="gap-8 grid grid-cols-1 max-w-214 xl:max-w-full xl:grid-cols-3">
-                <div data-analytics-level3="card1" class="gap-4 grid grid-rows-subgrid row-span-3 bg-white p-4 rounded-[10px]">
-                    <div data-analytics-name="box | Create a Plan to Build Your Website" class="flex flex-col justify-center items-center gap-2.5 bg-mint-300 p-6 rounded-lg text-deep-blue-300 text-center">
+                <div
+                    data-analytics-level3="card1"
+                    data-analytics-name="box | Create a Plan to Build Your Website"
+                    class="gap-4 grid grid-rows-subgrid row-span-3 bg-white p-4 rounded-[10px]">
+                    <div class="flex flex-col justify-center items-center gap-2.5 bg-mint-300 p-6 rounded-lg text-deep-blue-300 text-center">
                         <x-icons.list width="40" height="40" fill="#1A2E47" />
                         <h3 class="subheadline-3 hyphens-manual text-[26px]! md:text-[28px]!">Buat Rencana Pemba&shy;ngunan Situs Web Anda</span></h3>
                     </div>
@@ -90,8 +93,11 @@
                         <p class="paragraph-sm text-[20px]! font-medium! leading-6.5!">Tentukan tujuan situs web Anda (misalnya, blog, situs e-commerce, brosur online).</p>
                     </div>
                 </div>
-                <div data-analytics-level3="card2" class="gap-4 grid grid-rows-subgrid row-span-3 bg-white p-4 rounded-[10px]">
-                    <div data-analytics-name="box | Defining Website Requirements" class="flex flex-col justify-center items-center gap-2.5 bg-mint-300 p-6 rounded-lg text-deep-blue-300 text-center">
+                <div
+                    data-analytics-level3="card2"
+                    data-analytics-name="box | Defining Website Requirements"
+                    class="gap-4 grid grid-rows-subgrid row-span-3 bg-white p-4 rounded-[10px]">
+                    <div class="flex flex-col justify-center items-center gap-2.5 bg-mint-300 p-6 rounded-lg text-deep-blue-300 text-center">
                         <x-icons.list width="40" height="40" fill="#1A2E47" />
                         <h3 class="subheadline-3 text-[26px]! md:text-[28px]!">Tentukan Persyaratan Situs Web</h3>
                     </div>
@@ -104,8 +110,11 @@
                         <p class="paragraph-sm text-[20px]! font-medium! leading-6.5!">Cari tahu informasi apa yang akan menarik dan bermanfaat bagi pengunjung Anda (misalnya, informasi kontak, deskripsi produk).</p>
                     </div>
                 </div>
-                <div data-analytics-level3="card3" class="gap-4 grid grid-rows-subgrid row-span-3 bg-white p-4 rounded-[10px]">
-                    <div data-analytics-name="box | Manage Your Website" class="flex flex-col justify-center items-center gap-2.5 bg-mint-300 p-6 rounded-lg text-deep-blue-300 text-center">
+                <div
+                    data-analytics-level3="card3"
+                    data-analytics-name="box | Manage Your Website"
+                    class="gap-4 grid grid-rows-subgrid row-span-3 bg-white p-4 rounded-[10px]">
+                    <div class="flex flex-col justify-center items-center gap-2.5 bg-mint-300 p-6 rounded-lg text-deep-blue-300 text-center">
                         <x-icons.list width="40" height="40" fill="#1A2E47" />
                         <h3 class="subheadline-3 text-[26px]! md:text-[28px]! xl:max-w-xs">Kelola Situs Web Anda</h3>
                     </div>
