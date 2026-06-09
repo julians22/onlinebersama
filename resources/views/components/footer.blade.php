@@ -80,19 +80,22 @@
                     <div class="flex gap-5">
                         <a
                             data-analytics-name="icon | Facebook"
-                            href="#"
+                            href="https://www.facebook.com/yourdotcom"
+                            target="_blank"
                             class="py-2">
                             <x-icons.facebook width="24" height="24" fill="#fff" />
                         </a>
                         <a
                             data-analytics-name="icon | LinkedIn"
-                            href="#"
+                            href="https://www.linkedin.com/showcase/your-dot-com"
+                            target="_blank"
                             class="py-2">
                             <x-icons.linkedin width="24" height="24" fill="#fff" />
                         </a>
                         <a
                             data-analytics-name="icon | X"
-                            href="#"
+                            href="https://x.com/YourDotCom"
+                            target="_blank"
                             class="py-2">
                             <x-icons.x width="24" height="24" fill="#fff" />
                         </a>

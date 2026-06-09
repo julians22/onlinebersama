@@ -420,6 +420,23 @@
             }
         }
     }
+    .swiper-pagination-bullet:nth-child(4),
+    .swiper-pagination-bullet:nth-child(5),
+    .swiper-pagination-bullet:nth-child(6) {
+        @apply hidden!;
+    }
+    .swiper-pagination-bullet:nth-child(4).swiper-pagination-bullet-active ~ .swiper-pagination-bullet:nth-child(1),
+    .swiper-pagination-bullet:nth-child(1):has(~ .swiper-pagination-bullet:nth-child(4).swiper-pagination-bullet-active) {
+        @apply size-3! bg-[#b3c5d7] opacity-100!;
+    }
+    .swiper-pagination-bullet:nth-child(5).swiper-pagination-bullet-active ~ .swiper-pagination-bullet:nth-child(2),
+    .swiper-pagination-bullet:nth-child(2):has(~ .swiper-pagination-bullet:nth-child(5).swiper-pagination-bullet-active) {
+        @apply size-3! bg-[#b3c5d7] opacity-100!;
+    }
+    .swiper-pagination-bullet:nth-child(6).swiper-pagination-bullet-active ~ .swiper-pagination-bullet:nth-child(3),
+    .swiper-pagination-bullet:nth-child(3):has(~ .swiper-pagination-bullet:nth-child(6).swiper-pagination-bullet-active) {
+        @apply size-3! bg-[#b3c5d7] opacity-100!;
+    }
 }
 
 /* Explore More Topics (SLIDER) */

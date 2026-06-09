@@ -33,7 +33,7 @@
             <h2 class="sticky top-20 mb-10 text-navy-blue-300 text-center headline-1 md:top-24 lg:top-30">Manfaat Email Kustom</h2>
             <div class="flex flex-col gap-6 mx-auto md:max-w-208">
                 <div
-                    data-analytics-level3="Build Legtimacy"
+                    data-analytics-level3="Build Legitimacy"
                     class="top-48 sticky card-stack min-[407px]:top-40 md:top-54 lg:top-60">
                     <x-displays.card-stack number="1" title="Membangun Legitimasi" image="images/email-editorial-1.jpg" alt="">
                         Beri bisnis Anda tampilan yang berkelas dan profesional. Dapatkan alamat email .com kustom dan tunjukkan kepada semua orang bahwa Anda profesional.
@@ -71,9 +71,9 @@
         data-analytics-level2="Three Ways To Use A Custom Email Address"
         class="bg-gradient-blue-double">
         <div class="flex justify-center items-center gap-10 px-10 py-10 flex-col container md:px-8 md:gap-12 md:py-20 xl:flex-row">
-            <button data-analytics-name="video image | Three Ways To Use A Custom Email Address" type="button" class="group relative rounded-[10px] overflow-hidden shrink-0 cursor-pointer">
+            <button data-analytics-name="video animation | Three Ways to Use a Custom Email Address" type="button" class="group relative rounded-[10px] overflow-hidden shrink-0 cursor-pointer">
                 <img class="size-full object-cover aspect-video" src="{{ asset('images/three-ways.jpg') }}" alt="">
-                <span data-analytics-name="play button | Three Ways To Use A Custom Email Address" class="transition-all duration-300 ease-in-out top-1/2 left-1/2 absolute -translate-x-1/2 -translate-y-1/2 group-hover:scale-110">
+                <span data-analytics-name="play button | Three Ways to Use a Custom Email Address" class="transition-all duration-300 ease-in-out top-1/2 left-1/2 absolute -translate-x-1/2 -translate-y-1/2 group-hover:scale-110">
                     <x-icons.play-rounded width="78" height="78" fill="#fff" />
                 </span>
             </button>

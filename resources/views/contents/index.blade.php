@@ -38,22 +38,22 @@
         </div>
         <div class="online-bersama-small-business-story swiper">
             <div class="swiper-wrapper">
-                <div data-analytics-level3="carousel-1" class="swiper-slide">
+                <div data-analytics-level3="carousel1" class="swiper-slide">
                     <x-displays.card-video data-analytics="Startup Experience" />
                 </div>
-                <div data-analytics-level3="carousel-2" class="swiper-slide">
+                <div data-analytics-level3="carousel2"  class="swiper-slide">
                     <x-displays.card-video data-analytics="Growing Boundlessly" />
                 </div>
-                <div data-analytics-level3="carousel-3" class="swiper-slide">
+                <div data-analytics-level3="carousel3" class="swiper-slide">
                     <x-displays.card-video data-analytics="Chic Diva Geek" />
                 </div>
-                <div data-analytics-level3="carousel-4" class="swiper-slide">
+                <div data-analytics-level3="carousel4" class="swiper-slide">
                     <x-displays.card-video data-analytics="Startup Experience" />
                 </div>
-                <div data-analytics-level3="carousel-5" class="swiper-slide">
+                <div data-analytics-level3="carousel5" class="swiper-slide">
                     <x-displays.card-video data-analytics="Growing Boundlessly" />
                 </div>
-                <div data-analytics-level3="carousel-6" class="swiper-slide">
+                <div data-analytics-level3="carousel6" class="swiper-slide">
                     <x-displays.card-video data-analytics="Chic Diva Geek" />
                 </div>
             </div>
