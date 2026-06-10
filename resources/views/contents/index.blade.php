@@ -39,22 +39,34 @@
         <div class="online-bersama-small-business-story swiper">
             <div class="swiper-wrapper">
                 <div data-analytics-level3="carousel1" class="swiper-slide">
-                    <x-displays.card-video data-analytics="Startup Experience" />
+                    <x-displays.card-video title="Startup Experience" image="images/placeholder-video-why-com.jpg" data-analytics="Startup Experience">
+                        Ketahui bagaimana Henrik Scheel menggunakan nama domain .com miliknya untuk membantu bisnisnya beroperasi di 25 negara di seluruh dunia.
+                    </x-displays.card-video>
                 </div>
-                <div data-analytics-level3="carousel2"  class="swiper-slide">
-                    <x-displays.card-video data-analytics="Growing Boundlessly" />
+                <div data-analytics-level3="carousel2" class="swiper-slide">
+                    <x-displays.card-video title="IKAT Indonesia" image="images/placeholder-video-why-com.jpg" data-analytics="IKAT Indonesia">
+                        Dengarkan bagaimana nama domain .com yang dikenal membantu pemilik bisnis mengembangkan bisnisnya
+                    </x-displays.card-video>
                 </div>
                 <div data-analytics-level3="carousel3" class="swiper-slide">
-                    <x-displays.card-video data-analytics="Chic Diva Geek" />
+                    <x-displays.card-video title="Chic Diva Geek" image="images/placeholder-video-why-com.jpg" data-analytics="Chic Diva Geek">
+                        Ketahui bagaimana nama domain .com yang tepercaya membantu Adrian McLanahan dan bisnisnya menjangkau pelanggan baru
+                    </x-displays.card-video>
                 </div>
-                <div data-analytics-level3="carousel4" class="swiper-slide">
-                    <x-displays.card-video data-analytics="Startup Experience" />
+                <div data-analytics-level3="carousel1" class="swiper-slide">
+                    <x-displays.card-video title="Startup Experience" image="images/placeholder-video-why-com.jpg" data-analytics="Startup Experience">
+                        Ketahui bagaimana Henrik Scheel menggunakan nama domain .com miliknya untuk membantu bisnisnya beroperasi di 25 negara di seluruh dunia.
+                    </x-displays.card-video>
                 </div>
-                <div data-analytics-level3="carousel5" class="swiper-slide">
-                    <x-displays.card-video data-analytics="Growing Boundlessly" />
+                <div data-analytics-level3="carousel2" class="swiper-slide">
+                    <x-displays.card-video title="IKAT Indonesia" image="images/placeholder-video-why-com.jpg" data-analytics="IKAT Indonesia">
+                        Dengarkan bagaimana nama domain .com yang dikenal membantu pemilik bisnis mengembangkan bisnisnya
+                    </x-displays.card-video>
                 </div>
-                <div data-analytics-level3="carousel6" class="swiper-slide">
-                    <x-displays.card-video data-analytics="Chic Diva Geek" />
+                <div data-analytics-level3="carousel3" class="swiper-slide">
+                    <x-displays.card-video title="Chic Diva Geek" image="images/placeholder-video-why-com.jpg" data-analytics="Chic Diva Geek">
+                        Ketahui bagaimana nama domain .com yang tepercaya membantu Adrian McLanahan dan bisnisnya menjangkau pelanggan baru
+                    </x-displays.card-video>
                 </div>
             </div>
             <div class="swiper-pagination"></div>
