@@ -23,7 +23,7 @@ class Post extends Model
      *
      * @var array
      */
-    protected $fillable = ['title', 'slug', 'type', 'status', 'read_time', 'template_view_path', 'meta_title', 'meta_description', 'meta_keywords', 'data_analytics', 'writer', 'related_slug', 'published_at', 'url_name'];
+    protected $fillable = ['title', 'slug', 'type', 'status', 'read_time', 'template_view_path', 'meta_title', 'meta_description', 'meta_keywords', 'data_analytics', 'writer', 'related_slug', 'published_at', 'url_name', 'thumbnail_file_name'];
 
     /**
      * The accessors to append to the model's array form.

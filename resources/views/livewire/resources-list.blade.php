@@ -33,7 +33,7 @@
                 <x-displays.card-resource
                     data-analytics="{{ $post->data_analytics ?? $post->title }}"
                     :tags="$post->topics->pluck('name')->toArray()"
-                    :image="$post->slug"
+                    :image="$post->thumbnail_file_name"
                     route="{{ route('resources.handle_second_route', $post->route_tools) }}">
                     {{ $post->title }}
                 </x-displays.card-resource>
