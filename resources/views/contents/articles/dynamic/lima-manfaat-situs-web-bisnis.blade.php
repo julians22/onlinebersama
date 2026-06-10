@@ -37,7 +37,7 @@
             </x-articles.arrow-item-content>
             <x-articles.arrow-item-content>
                 <div class="flex flex-col flex-1">
-                    <p>Buat <a data-analytics-name="text| business email address" href="{{ route('resources.show', 'cara-membuat-alamat-email-bisnis-khusus') }}" class="link-to">alamat email bisnis</a> khusus dengan nama domain .com Anda (misalnya, sales@RumahPantaiAnthony.com) untuk membantu bisnis Anda terlihat lebih profesional.</p>
+                    <p>Buat <a data-analytics-name="text| business email address" href="{{ route('resources.handle_second_route', ['second_route' => config('onlinebersama.custom_article_route.email-detail'), 'slug' => 'buat']) }}" class="link-to">alamat email bisnis</a> khusus dengan nama domain .com Anda (misalnya, sales@RumahPantaiAnthony.com) untuk membantu bisnis Anda terlihat lebih profesional.</p>
                 </div>
             </x-articles.arrow-item-content>
             <x-articles.callout-cta>
@@ -132,7 +132,7 @@
             <x-slot:title>
                 <p>KESIMPULAN</p>
             </x-slot:title>
-            <p>Siap membangun situs web bisnis Anda sendiri? Artikel kami tentang <a data-analytics-name="text | choosing the right website builder" href="{{ route('resources.show', 'cara-memilih-pembuat-situs-web') }}" class="link-to">cara memilih pembuat situs web yang tepat</a> untuk bisnis Anda dan <a data-analytics-name="text | website building checklist" href="{{ route('resources.show', 'daftar-periksa-membuat-situs-web') }}" class="link-to">daftar periksa pembuatan situs web</a> dapat membantu Anda memulai.</p>
+            <p>Siap membangun situs web bisnis Anda sendiri? Artikel kami tentang <a data-analytics-name="text | choosing the right website builder" href="{{ route('resources.handle_second_route', ['second_route' => config('onlinebersama.custom_article_route.websites-detail'), 'slug' => 'pembuat-situs-web']) }}" class="link-to">cara memilih pembuat situs web yang tepat</a> untuk bisnis Anda dan <a data-analytics-name="text | website building checklist" href="{{ route('resources.handle_second_route', ['second_route' => config('onlinebersama.custom_article_route.websites-detail'), 'slug' => 'membuat-situs-web']) }}" class="link-to">daftar periksa pembuatan situs web</a> dapat membantu Anda memulai.</p>
         </x-articles.tip-callout>
         <x-articles.related-article :data="$post->relatedOneArticle" class="pt-4" />
     </div>

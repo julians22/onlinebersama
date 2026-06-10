@@ -99,7 +99,7 @@
                             <x-displays.card-resource
                                 data-analytics="{{ $post->data_analytics ?? $post->title }}"
                                 :image="$post->slug"
-                                route="{{ route('resources.show', $post->slug) }}">
+                                route="{{ route('resources.handle_second_route', $post->route_tools) }}">
                                 {{ $post->title }}
                             </x-displays.card-resource>
                         </div>

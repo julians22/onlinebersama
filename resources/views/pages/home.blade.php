@@ -179,7 +179,7 @@
                 <div class="justify-center md:flex">
                     <a
                         data-analytics-name="button | View Success Stories"
-                        href="{{ route('resources.show', 'pertanyaan-usaha-kecil-tentang-membangun-kehadiran-online') }}"
+                        href="{{ route('resources.handle_second_route', ['second_route' => config('onlinebersama.custom_article_route.default'), 'slug' => 'pertanyaan-usaha-kecil']) }}"
                         class="btn-primary w-full sm:w-auto">
                         Lihat Kisah Usaha Kecil
                     </a>

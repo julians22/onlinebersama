@@ -6,7 +6,7 @@
         <h3 data-analytics-level2="Creating a Plan to Build Your Website">Membuat Rencana Pembuatan Situs Web:</h3>
         <x-articles.arrow-item-content>
             <div class="flex flex-col flex-1">
-                <p><a data-analytics-name="text | Choose and register a .com domain name" href="{{ route('resources.show', 'bagaimana-cara-memilih-dan-mendaftarkan-nama-domain-com-untuk-bisnis-anda-dalam-tiga-langkah') }}" class="link-to">Pilih dan daftarkan nama domain .com</a> untuk alamat situs web Anda. <em>Tips: Bahkan jika Anda belum langsung membuat situs web Anda, nama domain .com tetap memberikan alamat situs web yang mudah diingat dan konsisten untuk bisnis Anda.</em></p>
+                <p><a data-analytics-name="text | Choose and register a .com domain name" href="{{ route('resources.handle_second_route', ['second_route' => config('onlinebersama.custom_article_route.default'), 'slug' => 'pilih-daftar-nama-domain']) }}" class="link-to">Pilih dan daftarkan nama domain .com</a> untuk alamat situs web Anda. <em>Tips: Bahkan jika Anda belum langsung membuat situs web Anda, nama domain .com tetap memberikan alamat situs web yang mudah diingat dan konsisten untuk bisnis Anda.</em></p>
             </div>
         </x-articles.arrow-item-content>
         <x-articles.arrow-item-content>
@@ -16,7 +16,7 @@
         </x-articles.arrow-item-content>
         <x-articles.arrow-item-content>
             <div class="flex flex-col flex-1">
-                <p>Tentukan apakah Anda ingin membuat situs web sendiri menggunakan pembuat situs web/<em><a data-analytics-name="text | website builders" href="{{ route('resources.show', 'cara-memilih-pembuat-situs-web') }}" class="link-to">website builder</a></em>, atau meminta bantuan ahli profesional. <em>Tips: Banyak pembuat situs web/website builder memiliki alat berbasis AI yang bisa membantu Anda membuat situs web, menemukan nama domain .com yang cocok, dan bahkan menulis konten.</em></p>
+                <p>Tentukan apakah Anda ingin membuat situs web sendiri menggunakan pembuat situs web/<em><a data-analytics-name="text | website builders" href="{{ route('resources.handel_second_route', ['second_route' => config('onlinebersama.custom_article_route.website_detail'), 'slug' => 'pembuat-situs-web']) }}" class="link-to">website builder</a></em>, atau meminta bantuan ahli profesional. <em>Tips: Banyak pembuat situs web/website builder memiliki alat berbasis AI yang bisa membantu Anda membuat situs web, menemukan nama domain .com yang cocok, dan bahkan menulis konten.</em></p>
             </div>
         </x-articles.arrow-item-content>
         <x-articles.arrow-item-content>
@@ -56,14 +56,14 @@
         </x-articles.arrow-item-content>
         <x-articles.arrow-item-content>
             <div class="flex flex-col flex-1">
-                <p>Tentukan konten situs web yang penting dan buatlah konten penting tersebut. Informasi apa yang akan dianggap menarik dan bermanfaat oleh pengunjung situs web Anda? Setidaknya, pastikan situs web Anda menyediakan beberapa cara bagi pengunjung untuk menghubungi perusahaan Anda, misalnya <a data-analytics-name="text | custom business email address" href="{{ route('resources.show', 'manfaat-alamat-email-bisnis-khusus') }}" class="link-to">alamat email bisnis khusus</a> dan nomor telepon.</p>
+                <p>Tentukan konten situs web yang penting dan buatlah konten penting tersebut. Informasi apa yang akan dianggap menarik dan bermanfaat oleh pengunjung situs web Anda? Setidaknya, pastikan situs web Anda menyediakan beberapa cara bagi pengunjung untuk menghubungi perusahaan Anda, misalnya <a data-analytics-name="text | custom business email address" href="{{ route('resources.handle_second_route', ['second_route' => config('onlinebersama.custom_article_route.email-detail'), 'slug' => 'buat']) }}" class="link-to">alamat email bisnis khusus</a> dan nomor telepon.</p>
             </div>
         </x-articles.arrow-item-content>
         <img class="rounded-[10px]" src="{{ asset('images/mid-article-image-4.jpg') }}" alt="">
         <h3 data-analytics-level2="Promoting/Maintaining/Optimizing Your Website:">Mempromosikan, Memelihara, dan Mengoptimalkan Situs Web:</h3>
         <x-articles.arrow-item-content>
             <div class="flex flex-col flex-1">
-                <p>Pikirkan cara agar pengunjung dapat menemukan situs web Anda, dan promosikan nama domain Anda di berbagai media yang memungkinkan, termasuk kartu nama, kemasan produk, materi cetak, papan nama, media sosial, iklan, dan direktori daring. Selain itu, pertimbangkan juga penggunaan iklan mesin pencari serta <a data-analytics-name="text | custom business email address" href="{{ route('resources.show', 'cara-membuat-alamat-email-bisnis-khusus') }}" class="link-to">alamat <em>email</em> bisnis khusus</a>.</p>
+                <p>Pikirkan cara agar pengunjung dapat menemukan situs web Anda, dan promosikan nama domain Anda di berbagai media yang memungkinkan, termasuk kartu nama, kemasan produk, materi cetak, papan nama, media sosial, iklan, dan direktori daring. Selain itu, pertimbangkan juga penggunaan iklan mesin pencari serta <a data-analytics-name="text | custom business email address" href="{{ route('resources.handle_second_route', ['second_route' => config('onlinebersama.custom_article_route.email-detail'), 'slug' => 'buat']) }}" class="link-to">alamat <em>email</em> bisnis khusus</a>.</p>
             </div>
         </x-articles.arrow-item-content>
         <x-articles.arrow-item-content>

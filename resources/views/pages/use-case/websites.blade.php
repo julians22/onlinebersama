@@ -130,7 +130,7 @@
             </div>
             <div class="flex w-full justify-center">
                 <a data-analytics-name="button | Explore Full Checklist"
-                    href="{{ route('resources.show', 'daftar-periksa-membuat-situs-web') }}"
+                    href="{{ route('resources.handle_second_route', ['second_route' => config('onlinebersama.custom_article_route.websites-detail'), 'slug' => 'membuat-situs-web']) }}"
                     class="btn-primary w-full sm:w-auto">
                     Telusuri Daftar Periksa Lengkap
                 </a>

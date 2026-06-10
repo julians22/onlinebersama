@@ -1,3 +1,5 @@
+@
+
 <section class="article-outer">
     <div class="article-wrapper">
         <x-articles.intro-and-quicklinks>
@@ -21,7 +23,7 @@
         </x-articles.intro-and-quicklinks>
         <div id="pilih-nama-domain" class="article-child-wrapper scroll-mt-20 sm:scroll-mt-28">
             <h3>Langkah 1: Pilih Nama Domain</h3>
-            <p>Langkah pertama dalam membuat <a data-analytics-name="text | custom business email address" href="{{ route('resources.show', 'manfaat-alamat-email-bisnis-khusus') }}" class="link-to">alamat email bisnis khusus</a> Anda adalah memilih nama domain. Untuk cara mudah untuk mendapatkan saran nama domain yang bagus, coba <a data-analytics-name="text | domain name generator" href="{{ route('find') }}" class="link-to">generator nama domain</a> yang didukung oleh NameStudio&reg;.</p>
+            <p>Langkah pertama dalam membuat <a data-analytics-name="text | custom business email address" href="{{ route('resources.handle_second_route', ['second_route' => config('onlinebersama.custom_article_route.email-detail'), 'slug' => 'manfaat']) }}" class="link-to">alamat email bisnis khusus</a> Anda adalah memilih nama domain. Untuk cara mudah untuk mendapatkan saran nama domain yang bagus, coba <a data-analytics-name="text | domain name generator" href="{{ route('find') }}" class="link-to">generator nama domain</a> yang didukung oleh NameStudio&reg;.</p>
             <img class="rounded-[10px]" src="{{ asset('images/mid-article-image-1.jpg') }}" alt="">
             <p>Jika Anda sudah mendaftarkan nama domain, Anda dapat langsung melanjutkan ke Langkah 3: Pilih Penyedia Email Bisnis yang Tepat.</p>
             <x-articles.callout-cta>
