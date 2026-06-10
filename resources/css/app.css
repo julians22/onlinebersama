@@ -378,15 +378,15 @@
     .swiper-slide {
         @apply overflow-hidden;
         img {
-            @apply w-156 rounded-[10px] mx-auto;
+            @apply w-156 rounded-[10px] md:mx-auto;
         }
         .overlay-slide {
-            @apply transition-all duration-500 ease-in-out bottom-0 flex-col justify-end w-full opacity-0 text-deep-blue-300 space-y-2 rounded-[10px] px-0 mt-4 md:absolute md:text-white md:left-1/2 md:-translate-x-1/2 md:-bottom-full md:inset-0 md:p-6 md:mt-0 md:space-y-0 md:opacity-100 lg:px-12 lg:w-156 xl:p-8;
+            @apply transition-all duration-500 ease-in-out bottom-0 flex-col justify-end w-full opacity-0 text-deep-blue-300 space-y-2 rounded-[10px] px-0 mt-4 min-[900px]:absolute min-[900px]:text-white min-[900px]:left-1/2 min-[900px]:-translate-x-1/2 min-[900px]:-bottom-full min-[900px]:inset-0 min-[900px]:p-6 min-[900px]:mt-0 min-[900px]:space-y-0 min-[900px]:opacity-100 min-[900px]:px-12 lg:w-156 lg:px-16 xl:p-8;
             &.desktop {
-                @apply hidden md:flex;
+                @apply hidden min-[900px]:flex;
             }
             &.mobile {
-                @apply flex md:hidden;
+                @apply flex min-[900px]:hidden;
             }
             h4 {
                 @apply font-extrabold!;
@@ -396,7 +396,7 @@
             }
         }
         button {
-            @apply absolute transition-all duration-500 ease-in-out scale-0 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer flex justify-center items-center w-full h-full md:-translate-y-1/2 md:w-156;
+            @apply absolute transition-all duration-500 ease-in-out scale-0 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer flex justify-center items-center w-full h-full md:-translate-y-1/2 lg:w-156;
         }
         &.swiper-slide-active {
             .overlay-slide {
