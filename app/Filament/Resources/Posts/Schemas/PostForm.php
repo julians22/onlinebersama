@@ -86,7 +86,6 @@ class PostForm
                                             ->required(),
                                         // slug akan di-generate otomatis dari title, tapi tetap bisa diedit manual jika diperlukan
                                         TextInput::make('slug')
-                                            ->unique('posts', 'slug')
                                             ->live()
                                             ->required(),
                                         Select::make('url_name')
