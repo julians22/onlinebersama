@@ -12,16 +12,18 @@ Route::controller(PageController::class)->group(function() {
 });
 
 Route::controller(UseCaseController::class)->group(function() {
-    Route::get('/penerusan-domain', 'socialMedia')->name('social-media');
-    Route::get('/alamat-email-khusus', 'email')->name('email');
-    Route::get('/situs-web-profesional', 'websites')->name('websites');
+    Route::get('penerusan-domain', 'socialMedia')->name('social-media');
+    Route::get('alamat-email-khusus', 'email')->name('email');
+    Route::get('situs-web-profesional', 'websites')->name('websites');
 });
 
 Route::name('resources.')->group(function() {
     Route::controller(ResourcesPageController::class)->group(function() {
-        Route::get('/panduan-belajar', 'index')->name('index');
-        Route::get('/panduan-belajar/{slug}', 'show')->name('show');
+        Route::get('panduan-belajar', 'index')->name('index');
+        Route::get('panduan-belajar/{slug}', 'show')->name('show');
         // Route::get('/panduan-belajar/toolbox', 'toolbox')->name('toolbox');
+
+        Route::get('{second_route}/{slug}', 'handle_second_route')->name('handle_second_route');
     });
 });
 

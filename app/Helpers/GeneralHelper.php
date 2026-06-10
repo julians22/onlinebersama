@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Post;
 use Illuminate\Support\Facades\Storage;
 
 if (!function_exists('articleViews')){
@@ -27,7 +28,7 @@ if (!function_exists('articleViewsOptions')){
     }
 }
 
-if (!function_exists('')) {
+if (!function_exists('appName')) {
     function appName() : string
     {
         $appName = config('app.name');

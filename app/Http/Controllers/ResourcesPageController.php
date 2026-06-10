@@ -14,6 +14,32 @@ class ResourcesPageController extends Controller
         return view('contents.index', compact('topics'));
     }
 
+    public function handle_second_route(string $second_route, string $slug)
+    {
+        $availableSecondRoutes = [
+            'default' => 'panduan-belajar',
+            'social-media-detail' => 'penerusan-domain',
+            'email-detail' => 'alamat-email-khusus',
+            'websites-detail' => 'situs-web-profesional'
+        ];
+
+        $routeVals = array_flip($availableSecondRoutes);
+
+        if (!in_array($second_route, $availableSecondRoutes)) {
+            abort(404);
+        }
+
+        $post = Post::published()
+            ->where('slug', $slug)
+            ->where('url_name', $routeVals[$second_route] ?? null)
+            ->first();
+
+        if (!$post) {
+            abort(404);
+        }
+        return $this->show($slug);
+    }
+
     public function show(string $slug)
     {
         $post = Post::published()

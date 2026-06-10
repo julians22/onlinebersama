@@ -89,6 +89,13 @@ class PostForm
                                             ->unique('posts', 'slug')
                                             ->live()
                                             ->required(),
+                                        Select::make('url_name')
+                                            ->label('URL Name')
+                                            ->options(
+                                                config('onlinebersama.custom_article_route')
+                                            )
+                                            ->default(null)
+                                            ->nullable(),
                                         TextInput::make('data_analytics')
                                             ->label('Data Analytics (Title)')
                                             ->helperText('Gunakan Bahasa Inggris. Contoh: "How to Create a Landing Page"'),

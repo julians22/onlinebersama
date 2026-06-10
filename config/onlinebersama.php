@@ -22,4 +22,21 @@ return [
     |
     */
     'namestudio_api_key' => env('NAMESTUDIO_API_KEY', ''),
+
+    /*
+    |--------------------------------------------------------------------------
+    | Custom Article Route
+    |--------------------------------------------------------------------------
+    |
+    | This option defines the mapping for custom article routes based on the url_name.
+    | It is used to determine the parent slug in the URL structure for specific
+    | article url_name.
+    |
+    */
+    'custom_article_route' => [
+        'default' => 'panduan-belajar',
+        'social-media-detail' => 'penerusan-domain',
+        'email-detail' => 'alamat-email-khusus',
+        'websites-detail' => 'situs-web-profesional'
+    ]
 ];
