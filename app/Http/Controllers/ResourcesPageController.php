@@ -49,7 +49,7 @@ class ResourcesPageController extends Controller
 
         if (!$post) abort(404);
 
-        $view_path = 'contents.articles.dynamic.' . $post->slug;
+        $view_path = 'contents.articles.dynamic.' . $post->template_view_path;
         if (!view()->exists($view_path)) {
             $view_path = 'contents.articles.default';
         }
