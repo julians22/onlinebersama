@@ -115,7 +115,6 @@ class PostForm
                                             ->options(Post::published()->pluck('title', 'slug')) // Ambil daftar artikel yang dipublikasikan untuk opsi select
                                             ->searchable()
                                             ->preload()
-                                            ->disableOptionWhen(fn ($option, $get) => $option === $get('slug')) // Mencegah memilih dirinya sendiri
                                             ->required()
                                     ]),
                             ]),
