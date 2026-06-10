@@ -32,7 +32,7 @@
                     <p class="paragraph-sm text-deep-blue-300">Waktu baca rata-rata {{ $post->read_time }}</p>
                 </div>
                 <div @if ($post->writer) data-analytics-level3="{{ $post->data_analytics ?? $post->title }}" @endif class="relative aspect-video w-full rounded-[10px] overflow-hidden xl:w-156.75">
-                    <img @if ($post->writer) data-analytics-name="video image | {{ $post->data_analytics ?? $post->title }}" @endif class="w-full" src="{{ imageArticle($post->slug) }}" alt="">
+                    <img @if ($post->writer) data-analytics-name="video image | {{ $post->data_analytics ?? $post->title }}" @endif class="w-full" src="{{ imageArticle($post->thumbnail_file_name) }}" alt="">
                     @if ($post->writer)
                         <button data-analytics-name="play button | {{ $post->data_analytics ?? $post->title }}" type="button" class="group absolute size-full inset-0 flex justify-center items-center bg-gradient-video cursor-pointer">
                             <x-icons.play-rounded width="78" height="78" fill="#fff" class="transition-all duration-300 ease-in-out group-hover:scale-110" />
