@@ -22,6 +22,10 @@ const smallBusinessStory = new Swiper(`.${prefix}small-business-story`, {
         type: 'bullets',
         clickable: true,
     },
+    navigation: {
+        nextEl: '.custom-swiper-button-next',
+        prevEl: '.custom-swiper-button-prev',
+    },
     breakpoints: {
         640: {
             spaceBetween: 160,
