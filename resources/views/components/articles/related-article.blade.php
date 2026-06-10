@@ -15,7 +15,7 @@
                 </a>
             </div>
             <div class="shrink-0 aspect-video h-52.5 rounded-[10px] overflow-hidden min-[500px]:h-65 sm:size-75 sm:aspect-square">
-                <img class="size-full object-cover" src="{{ imageArticle($data->slug) }}" alt="">
+                <img class="size-full object-cover" src="{{ imageArticle($data->thumbnail_file_name) }}" alt="">
             </div>
         </div>
     </div>

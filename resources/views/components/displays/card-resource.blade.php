@@ -3,13 +3,14 @@
         <img class="aspect-8/5 size-full object-cover" src="{{ imageArticle($image) }}" alt="{{ $alt }}">
     </figure>
     <div class="flex flex-col gap-y-4">
-        @if(Route::currentRouteName() !== 'resources.handle_second_route')
+        {{-- Todo fix --}}
+        {{-- @if(Route::currentRouteName() !== 'resources.handle_second_route')
             <div class="flex flex-wrap gap-2.5 min-h-7">
                 @foreach($tags as $tag)
                     <span class="font-sans text-sm bg-mint-200 text-deep-blue-300 font-semibold rounded-[5px] px-2 py-1">{{ $tag }}</span>
                 @endforeach
             </div>
-        @endif
+        @endif --}}
         <div class="min-h-28.5">
             <h2 class="subheadline-3 text-deep-blue-300 line-clamp-3 text-[26px]! md:text-[28px]!">{{ $slot }}</h2>
         </div>
