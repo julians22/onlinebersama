@@ -16,7 +16,7 @@
         </x-articles.arrow-item-content>
         <x-articles.arrow-item-content>
             <div class="flex flex-col flex-1">
-                <p>Tentukan apakah Anda ingin membuat situs web sendiri menggunakan pembuat situs web/<em><a data-analytics-name="text | website builders" href="{{ route('resources.handel_second_route', ['second_route' => config('onlinebersama.custom_article_route.website_detail'), 'slug' => 'pembuat-situs-web']) }}" class="link-to">website builder</a></em>, atau meminta bantuan ahli profesional. <em>Tips: Banyak pembuat situs web/website builder memiliki alat berbasis AI yang bisa membantu Anda membuat situs web, menemukan nama domain .com yang cocok, dan bahkan menulis konten.</em></p>
+                <p>Tentukan apakah Anda ingin membuat situs web sendiri menggunakan pembuat situs web/<em><a data-analytics-name="text | website builders" href="{{ route('resources.handle_second_route', ['second_route' => config('onlinebersama.custom_article_route.website_detail'), 'slug' => 'pembuat-situs-web']) }}" class="link-to">website builder</a></em>, atau meminta bantuan ahli profesional. <em>Tips: Banyak pembuat situs web/website builder memiliki alat berbasis AI yang bisa membantu Anda membuat situs web, menemukan nama domain .com yang cocok, dan bahkan menulis konten.</em></p>
             </div>
         </x-articles.arrow-item-content>
         <x-articles.arrow-item-content>

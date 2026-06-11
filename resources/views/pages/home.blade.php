@@ -46,7 +46,7 @@
             data-analytics-level2="How Do I Use a .com?"
             class="max-w-full mx-auto py-10 xl:px-8 2xl:px-0 2xl:max-w-331.5">
             <h2 class="headline-1 max-w-md mx-auto text-navy-blue-300 text-center -mb-6 px-4 md:px-0 md:-mb-2 md:max-w-2xl xl:mx-0 xl:max-w-full">
-                Bagaimana Cara Menggunakan .com?
+                Bagaimana Saya Menggunakan .com?
             </h2>
             <div class="online-bersama-how-to-use-grow swiper">
                 <div x-data="{ active: 'social' }" class="swiper-wrapper">

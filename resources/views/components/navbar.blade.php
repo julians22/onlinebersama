@@ -33,7 +33,7 @@
                         <button
                             :data-analytics-name="dropdown ? collapsedDataText : expandedDataText"
                             type="button"@click="dropdown = !dropdown" class="nav-link nav-dropdown text-right">
-                            Bagaimana Cara Menggunakan .com?
+                            Bagaimana Saya Menggunakan .com?
                             <span :class="dropdown ? '-rotate-180' : 'rotate-0'" class="transition-all duration-300 ease-in-out">
                                 <x-icons.arrow width="15" height="7" fill="#fff" />
                             </span>
@@ -141,7 +141,7 @@
                 <div class="sidebar-link">
                     <p
                         data-analytics-name="text | How Do I Use a .com?">
-                        Bagaimana Cara Menggunakan .com?
+                        Bagaimana Saya Menggunakan .com?
                     </p>
                 </div>
                 <div class="sidebar-list">

@@ -145,7 +145,7 @@
         data-analytics-level2="How Do I Use a .com?"
         class="bg-light-gray-100">
         <div class="flex flex-col gap-10 py-10 container md:pb-19.5">
-            <h2 class="text-navy-blue-300 text-center headline-1">Bagaimana Cara Menggunakan .com?</h2>
+            <h2 class="text-navy-blue-300 text-center headline-1">Bagaimana Saya Menggunakan .com?</h2>
             <div class="gap-8 grid grid-cols-1 md:grid-cols-2">
                 <x-displays.card-inside
                     data-analytics="Social Media & E-Commerce"
