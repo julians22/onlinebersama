@@ -3,12 +3,17 @@
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\ResourcesPageController;
 use App\Http\Controllers\UseCaseController;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 Route::controller(PageController::class)->group(function() {
     Route::get('/', 'index')->name('index');
     Route::get('/cari-nama-domain', 'find')->name('find');
     Route::get('persyaratan-layanan', 'terms')->name('terms');
+    Route::get('persyaratan_layanan', function(Request $request) {
+        $params = array_merge($request->query());
+        return redirect()->route('terms', $params, 301);
+    });
 });
 
 Route::controller(UseCaseController::class)->group(function() {

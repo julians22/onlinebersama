@@ -18,9 +18,9 @@
         </x-articles.intro-and-quicklinks>
         <p>Misalnya Anda ingin menggunakan jasa perusahaan desain interior dan Anda mencari beberapa pilihan secara online. Anda menemukan dua bisnis yang berbeda – sekilas keduanya tampak menjanjikan, tetapi bisnis mana yang ingin Anda hubungi di antara dua alamat email ini? </p>
         <div class="flex flex-col items-center justify-center gap-4">
-            <a href="mailto:info@LivingKreasi.com" class="paragraph-md text-magenta-300 font-bold! md:leading-8.5!">info@LivingKreasi.com</a>
+            <p class="paragraph-md text-magenta-300 font-bold! md:leading-8.5!">info@LivingKreasi.com</p>
             <span>atau</span>
-            <a href="mailto:livingkreasi@EmailGenerik.com" class="paragraph-md text-magenta-300 font-bold! md:leading-8.5!">livingkreasi@EmailGenerik.com</a>
+            <p class="paragraph-md text-magenta-300 font-bold! md:leading-8.5!">livingkreasi@EmailGenerik.com</p>
         </div>
         <p>Meskipun kedua bisnis mungkin sama-sama sah, ada kemungkinan besar Anda memilih opsi pertama. Ini karena dalam dunia digital yang terus berkembang, alamat email .com dapat membantu usaha kecil terlihat lebih kredibel.</p>
         <p>Mari kita bahas lebih mendalam tentang manfaat yang dapat Anda peroleh dengan menggunakan alamat email bisnis khusus.</p>

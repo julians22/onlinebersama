@@ -27,7 +27,9 @@
             <p>Setelah Anda selesai merencanakan situs web, inilah saatnya untuk meneliti pembuat situs web mana yang cocok bagi Anda dan bisnis Anda. Banyak pembuat situs web saat ini menawarkan fungsionalitas dan layanan yang mudah digunakan, serta penyedia tertentu bahkan mungkin menawarkan paket gratis atau biaya rendah dengan opsi untuk peningkatan dengan biaya tambahan. Paket gratis atau berbiaya rendah biasanya menawarkan pengalaman situs web dasar tingkat pemula, sedangkan paket premium biasanya menawarkan lebih banyak variasi manfaat, termasuk nama domain khusus.</p>
             <p>Perlu bantuan untuk mengambil keputusan? Meskipun setiap pembuat situs web menawarkan layanan dan ketentuan uniknya sendiri, untuk membantu Anda memulai, berikut adalah jenis fitur yang mungkin disertakan dalam paket gratis atau berbiaya rendah versus paket yang ditingkatkan.</p>
             <div class="flex flex-col">
-                <x-displays.accordion question="Nama Domain">
+                <x-displays.accordion
+                    data-analytics="Domain Name"
+                    question="Nama Domain">
                     <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
                         <div class="flex flex-col">
                             <p><strong>Potensi Opsi Gratis/Berbiaya Rendah dalam Paket Pembuat Situs Web</strong></p>
@@ -39,7 +41,9 @@
                         </div>
                     </div>
                 </x-displays.accordion>
-                <x-displays.accordion question="Penyimpanan Situs Web">
+                <x-displays.accordion
+                    data-analytics="Website Storage"
+                    question="Penyimpanan Situs Web">
                     <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
                         <div class="flex flex-col">
                             <p><strong>Potensi Opsi Gratis/Berbiaya Rendah dalam Paket Pembuat Situs Web</strong></p>
@@ -51,7 +55,9 @@
                         </div>
                     </div>
                 </x-displays.accordion>
-                <x-displays.accordion question="Pembayaran Online">
+                <x-displays.accordion
+                    data-analytics="Online Payments"
+                    question="Pembayaran Online">
                     <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
                         <div class="flex flex-col">
                             <p><strong>Potensi Opsi Gratis/Berbiaya Rendah dalam Paket Pembuat Situs Web</strong></p>
@@ -63,7 +69,9 @@
                         </div>
                     </div>
                 </x-displays.accordion>
-                <x-displays.accordion question="Analitik Situs Web">
+                <x-displays.accordion
+                    data-analytics="Website Analytics"
+                    question="Analitik Situs Web">
                     <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
                         <div class="flex flex-col">
                             <p><strong>Potensi Opsi Gratis/Berbiaya Rendah dalam Paket Pembuat Situs Web</strong></p>
@@ -75,7 +83,9 @@
                         </div>
                     </div>
                 </x-displays.accordion>
-                <x-displays.accordion question="Alat Dukungan Platform Pembuatan Situs Web">
+                <x-displays.accordion
+                    data-analytics="Website Building Platform Support Tools"
+                    question="Alat Dukungan Platform Pembuatan Situs Web">
                     <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
                         <div class="flex flex-col">
                             <p><strong>Potensi Opsi Gratis/Berbiaya Rendah dalam Paket Pembuat Situs Web</strong></p>
@@ -87,7 +97,9 @@
                         </div>
                     </div>
                 </x-displays.accordion>
-                <x-displays.accordion question="Iklan">
+                <x-displays.accordion
+                    data-analytics="ads"
+                    question="Iklan">
                     <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
                         <div class="flex flex-col">
                             <p><strong>Potensi Opsi Gratis/Berbiaya Rendah dalam Paket Pembuat Situs Web</strong></p>
@@ -99,7 +111,9 @@
                         </div>
                     </div>
                 </x-displays.accordion>
-                <x-displays.accordion question="Pengoptimalan Mesin Pencari (SEO)">
+                <x-displays.accordion
+                    data-analytics="Search Engine Optimization (SEO)"
+                    question="Pengoptimalan Mesin Pencari (SEO)">
                     <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
                         <div class="flex flex-col">
                             <p><strong>Potensi Opsi Gratis/Berbiaya Rendah dalam Paket Pembuat Situs Web</strong></p>
