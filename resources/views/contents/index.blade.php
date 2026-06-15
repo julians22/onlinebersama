@@ -1,6 +1,6 @@
 @extends('app')
 
-@section('title', 'Panduan Belajar')
+@section('title', 'Kumpulan Materi - Untuk Bisnis Kecil')
 
 @section('content')
 
