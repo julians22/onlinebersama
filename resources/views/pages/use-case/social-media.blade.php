@@ -82,7 +82,8 @@
                         <p class="paragraph-md text-[24px]!">Permudah pencarian bisnis Anda.</p>
                     </button>
                 </div>
-                <a x-show="active === 'social-media'" data-analytics-level3="right image" data-analytics-name="image | Reach more people by connecting your social page to a custom .com web address." href="#" class="relative rounded-[10px] max-w-full overflow-hidden h-88 md:h-auto md:max-w-156">
+                <a x-show="active === 'social-media'" data-analytics-level3="right image" data-analytics-name="image | Reach more people by connecting your social page to a custom .com web address."
+                    href="{{ route('resources.handle_second_route', ['second_route' => config('onlinebersama.custom_article_route.social-media-detail'), 'slug' => 'cara-menggunakan']) }}" class="relative rounded-[10px] max-w-full overflow-hidden h-88 md:h-auto md:max-w-156">
                     <img data-analytics-name="image | Reach more people by connecting your social page to a custom .com web address." class="size-full object-cover aspect-video" src="{{ asset('images/uc-social-media-ecommerce.jpg') }}" alt="">
                     <div class="top-0 left-0 absolute flex flex-col justify-end gap-4 bg-linear-360 from-black/60 to-transparent p-4 size-full text-white md:p-6">
                         <p class="leading-8.5! paragraph-md text-[20px]!">Jangkau lebih banyak orang dengan menghubungkan halaman media sosial Anda ke alamat web .com kustom.</p>
@@ -92,7 +93,8 @@
                         </p>
                     </div>
                 </a>
-                <a x-show="active === 'online-store'" x-cloak data-analytics-level3="right image" data-analytics-name="image | Reach more people by connecting your social page to a custom .com web address." href="#" class="relative rounded-[10px] max-w-full overflow-hidden h-88 md:h-auto md:max-w-156">
+                <a x-show="active === 'online-store'" x-cloak data-analytics-level3="right image" data-analytics-name="image | Reach more people by connecting your social page to a custom .com web address."
+                    href="{{ route('resources.handle_second_route', ['second_route' => config('onlinebersama.custom_article_route.social-media-detail'), 'slug' => 'cara-menggunakan']) }}" class="relative rounded-[10px] max-w-full overflow-hidden h-88 md:h-auto md:max-w-156">
                     <img class="size-full object-cover aspect-video" src="{{ asset('images/uc-email.jpg') }}" alt="">
                     <div class="top-0 left-0 absolute flex flex-col justify-end gap-4 bg-linear-360 from-black/60 to-transparent p-4 size-full text-white md:p-6">
                         <p class="leading-8.5! paragraph-md text-[20px]!">Tautkan toko Anda di platform mana pun dari nama domain .com kustom.</p>

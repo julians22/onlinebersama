@@ -58,7 +58,7 @@
         <div class="flex justify-center mt-10">
             <a
                 data-analytics-name="button | Discover More Benefits"
-                href="#"
+                href="{{ route('resources.handle_second_route', ['second_route' => config('onlinebersama.custom_article_route.email-detail'), 'slug' => 'manfaat']) }}"
                 class="btn-secondary w-full sm:w-auto">
                 Ketahui Manfaat Lainnya
             </a>
