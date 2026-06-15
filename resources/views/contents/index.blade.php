@@ -18,7 +18,7 @@
                 <div class="flex justify-start">
                     <a
                         data-analytics-name="button | Explore All Resources"
-                        href="#"
+                        href="#resources"
                         class="btn-secondary w-full sm:w-auto">
                         Lihat Semua Sumber Informasi
                     </a>
@@ -79,6 +79,7 @@
 
     {{-- Resources --}}
     <section
+        id="resources""
         data-analytics-level2="Browse All Resources"
         class="bg-deep-blue-300 px-4 md:px-8">
         <div class="max-w-300 mx-auto py-10 md:pb-19.5">
