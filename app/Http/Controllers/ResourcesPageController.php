@@ -37,7 +37,19 @@ class ResourcesPageController extends Controller
         if (!$post) {
             abort(404);
         }
-        return $this->show($slug);
+
+        if (!$post) abort(404);
+
+        $view_path = 'contents.articles.dynamic.' . $post->template_view_path;
+        if (!view()->exists($view_path)) {
+            $view_path = 'contents.articles.default';
+        }
+
+        return view('contents.show', [
+            'post' => $post,
+            'other_posts' => $post->relatedArticles,
+            'view_path' => $view_path
+        ]);
     }
 
     public function show(string $slug)
