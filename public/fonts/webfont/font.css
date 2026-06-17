@@ -1,0 +1,38 @@
+/* ==========================================================================
+   PLAYFAIR (Variable Font)
+   ========================================================================== */
+
+/* Normal / Upright */
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('./Playfair/PlayfairRomanVF.woff2') format('woff2-variations'),
+       url('./Playfair/PlayfairRomanVF.woff2') format('woff2');
+  font-weight: 100 900; /* Supports all weights from 100 to 900 */
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Italic */
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('./Playfair/PlayfairItalicVF.woff2') format('woff2-variations'),
+       url('./Playfair/PlayfairItalicVF.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+
+/* ==========================================================================
+   URBANIST (Variable Font)
+   ========================================================================== */
+
+/* Urbanist Variable contains both Italics and Weights in ONE file */
+@font-face {
+  font-family: 'Urbanist';
+  src: url('./Urbanist/Urbanist[ital,wght].woff2') format('woff2-variations'),
+       url('./Urbanist/Urbanist[ital,wght].woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: oblique 0deg 1deg; /* Supports italic slant dynamically */
+  font-display: swap;
+}
