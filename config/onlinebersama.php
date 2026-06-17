@@ -38,5 +38,7 @@ return [
         'social-media-detail' => 'penerusan-domain',
         'email-detail' => 'alamat-email-khusus',
         'websites-detail' => 'situs-web-profesional'
-    ]
+    ],
+
+    's3_asset_url' => env('S3_ASSET_URL', '')
 ];

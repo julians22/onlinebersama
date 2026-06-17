@@ -47,3 +47,13 @@ if (!function_exists('imageArticle')) {
         return asset('images/articles/' . $slug . '.jpg');
     }
 }
+
+if (!function_exists('assetAwsUrl')) {
+    function assetAwsUrl(string $key){
+        $base_url = config('onlinebersama.s3_asset_url');
+
+        // remove "/" from the start of the key
+        $key = ltrim($key, '/');
+        return $base_url . '/' . $key;
+    }
+}

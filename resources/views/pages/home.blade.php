@@ -10,7 +10,19 @@
         data-analytics-level2="hero"
         data-analytics-name="video play button | (video name tbd)"
         class="relative">
-        <img class="w-full h-112.5 object-cover aspect-48/17 lg:h-152.75 xl:h-170" src="{{ asset('images/hero-homepage.jpg') }}" alt="">
+        <video autoplay="true" muted="true" loop playsinline class="w-full h-112.5 object-cover aspect-48/17 lg:h-152.75 xl:h-170">
+            <!-- Mobile / Vertical screens (Width up to 599px) -->
+            <source src="{{ assetAwsUrl('onlinebersama/videos/com_Indonesia_Brand Anthem_Mobile.mp4') }}" type="video/mp4" media="(max-width: 599px)">
+
+            <!-- Tablets / Square screens (Width between 600px and 1024px) -->
+            <source src="{{ assetAwsUrl('onlinebersama/videos/com_Indonesia_Brand Anthem_Desktop.mp4') }}" type="video/mp4" media="(max-width: 1024px)">
+
+            <!-- Desktop / Widescreen fallback (Default) -->
+            <source src="{{ assetAwsUrl('onlinebersama/videos/com_Indonesia_Brand Anthem_Desktop.mp4') }}" type="video/mp4">
+
+            Your browser does not support the HTML5 video tag.
+        </video>
+        {{-- <img class="w-full h-112.5 object-cover aspect-48/17 lg:h-152.75 xl:h-170" src="{{ asset('images/hero-homepage.jpg') }}" alt=""> --}}
         <div class="container top-0 left-1/2 absolute flex justify-center items-end px-7 pt-7 pb-4 size-full -translate-x-1/2 md:justify-start sm:p-10 lg:px-18.5 lg:py-25.75">
             <div class="space-y-2 text-white text-center sm:space-y-3 md:space-y-6 md:text-left lg:space-y-7">
                 <h1 class="headline-1 leading-normal text-[28px]! sm:leading-14! sm:text-5xl! lg:leading-16! lg:text-[64px]! lg:font-extrabold!">
