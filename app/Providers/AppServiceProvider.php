@@ -28,6 +28,10 @@ class AppServiceProvider extends ServiceProvider
         }
 
         if (config('app.env') === 'staging') {
+            Livewire::setScriptRoute(function ($handle) {
+                return Route::get('/staging/livewire/livewire.js', $handle);
+            });
+
             Livewire::setUpdateRoute(function ($handle) {
                 return Route::post('/staging/livewire/update', $handle)
                     ->middleware(['web']) // Ensure necessary middleware is included
