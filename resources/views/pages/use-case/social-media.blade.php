@@ -9,12 +9,12 @@
     <section
         data-analytics-level2="hero"
         class="bg-light-gray-100">
-        <div class="flex justify-between items-center flex-col gap-10.75 py-10 container-medium md:gap-20 md:py-15.5 lg:flex-row">
+        <div x-data class="flex justify-between items-center flex-col gap-10.75 py-10 container-medium md:gap-20 md:py-15.5 lg:flex-row">
             <div class="space-y-4">
                 <h1 class="text-navy-blue-300 headline-1">.com untuk <span class="xl:block">Media Sosial dan</span> E-Commerce</h1>
                 <p class="text-deep-blue-300 paragraph-md">Dengan penerusan domain, Anda dapat membuat tautan ke toko online atau halaman media sosial dari nama domain .com yang mudah diingat.</p>
             </div>
-            <button data-analytics-name="video image | Domain Forwarding Use Case" type="button" class="group relative rounded-[10px] overflow-hidden shrink-0 cursor-pointer box-shadow-sm">
+            <button data-analytics-name="video image | Domain Forwarding Use Case" type="button" @click="$store.videoModal.openModal('6331201181112')" class="group relative rounded-[10px] overflow-hidden shrink-0 cursor-pointer box-shadow-sm">
                 <div class="top-0 left-0 absolute bg-gradient-video size-full"></div>
                 <span data-analytics-name="play button | Domain Forwarding Use Case" class="transition-all duration-300 ease-in-out top-1/2 left-1/2 absolute -translate-x-1/2 -translate-y-1/2 group-hover:scale-110">
                     <x-icons.play-rounded width="78" height="78" fill="#fff" />
@@ -113,9 +113,9 @@
     <section
         data-analytics-level2="How to Forward Your Domain Name"
         class="flex items-center gap-10 py-10 container flex-col md:py-19.5 xl:items-start xl:gap-28 xl:flex-row 2xl:gap-44">
-        <div class="-top-12 flex flex-col gap-11.5 xl:sticky">
+        <div x-data class="-top-12 flex flex-col gap-11.5 xl:sticky">
             <h2 class="text-navy-blue-300 headline-1 text-center md:text-[48px]! md:leading-15.5!">Cara Meneruskan Nama Domain Anda</h2>
-            <button data-analytics-name="video image | How to Forward Your Domain Name" type="button" class="group cursor-pointer relative rounded-[10px] overflow-hidden">
+            <button data-analytics-name="video image | How to Forward Your Domain Name" type="button" @click="$store.videoModal.openModal('6331201181112')" class="group cursor-pointer relative rounded-[10px] overflow-hidden">
                 <div class="top-0 left-0 absolute bg-linear-360 from-black/80 to-transparent size-full"></div>
                 <span data-analytics-name="play button | How to Forward Your Domain Name" class="transition-all duration-300 ease-in-out top-1/2 left-1/2 absolute -translate-x-1/2 -translate-y-1/2 group-hover:scale-110">
                     <x-icons.play-rounded width="78" height="78" fill="#fff" />

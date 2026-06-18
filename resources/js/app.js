@@ -5,18 +5,53 @@ import './swiper';
 // Video Modal
 document.addEventListener('alpine:init', () => {
     Alpine.store('videoModal', {
+        accountId: null,
+        playerId: null,
         open: false,
-        src: null,
+        videoId: null,
+        loaded: false,
 
-        openModal(src) {
-            console.log('Opening video modal with src');
+        init(accountId, playerId) {
+            this.accountId = accountId;
+            this.playerId = playerId;
+        },
+        openModal(videoId) {
             this.open = true;
-            this.src = src;
+            this.videoId = videoId;
+
+            if (!this.loaded) {
+                this.loadVideo();
+                this.loaded = true;
+            }
         },
         closeModal() {
             this.open = false;
-            this.src = null;
-        }
+            this.videoId = null;
+            this.loaded = false;
+
+            let videoRender = document.getElementById('vjs-video-render');
+            videoRender.innerHTML = '';
+        },
+        loadVideo() {
+            let videoRender = document.getElementById('vjs-video-render');
+            const video_html = `<video-js
+                    id="vjs-video-player"
+                    autoplay="play"
+                    data-account="${this.accountId}"
+                    data-player="${this.playerId}"
+                    data-embed="default"
+                    controls=""
+                    data-video-id="${this.videoId}"
+                    data-playlist-id=""
+                    data-application-id=""
+                    class="vjs-fluid">
+                </video-js>`;
+            videoRender.innerHTML = video_html;
+
+            let videoScript = document.createElement('script');
+            videoScript.setAttribute('src', `https://players.brightcove.net/${this.accountId}/${this.playerId}_default/index.min.js`);
+            document.body.appendChild(videoScript);
+        },
     })
 })
 

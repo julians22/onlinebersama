@@ -91,8 +91,8 @@
         }
 
         :root[lang^='id'] & {
-            --ns-search-terms-before-text: 'Dengan menggunakan NameStudio, Anda menyetujui ';
-            --ns-search-terms-after-text: ' kami dan mengakui Pernyataan Privasi kami.';
+            --ns-search-terms-before-text: 'Dengan menggunakan NameStudio®, artinya Anda menyetujui ';
+            --ns-search-terms-after-text: ' Ketentuan Layanan kami dan memahami Pernyataan Privasi kami';
         }
 
         &:defined {
@@ -527,7 +527,7 @@
     <name-studio api-key="{{ config('onlinebersama.namestudio_api_key') }}" engine-ai-mode="always" entry-mode="prompt" tlds="com"
         data-ns-revision="2026-05-11">
         <script type="application/json" data-type="name-studio">
-            {"i18n":{"id":{"namestudio-search":{"prompt":{"placeholder":"Temukan Nama Domain","btnreset":"","btngenerate":"Cari","btngenerateloading":"Cari","btngenerateregenerate":"Cari"}}}},"legal":{"terms":"https://onlinebersama.com/staging/persyaratan-layanan"}}
+            {"i18n":{"id":{"namestudio-search":{"prompt":{"placeholder":"Masukkan Kata, Frasa, atau Nama Bisnis","btnreset":"","btngenerate":"Cari","btngenerateloading":"Cari","btngenerateregenerate":"Cari"}}}},"legal":{"terms":"https://onlinebersama.com/staging/persyaratan-layanan"}}
         </script>
         <button slot="btn-results-close" class="btn-results-close">
             <span>Tutup</span>

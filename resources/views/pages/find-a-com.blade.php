@@ -23,11 +23,13 @@
 
     {{-- Three Tips --}}
     <section
+        x-data
         data-analytics-level2="Three Tips For Choosing a .com Domain Name"
         class="flex justify-center items-center gap-6 py-10 container flex-col-reverse md:py-20 lg:gap-12 lg:flex-row">
         <button
             data-analytics-name="video animation | Three Tips For Choosing a .com Domain Name"
             type="button"
+            @click="$store.videoModal.openModal('6331201181112')"
             class="group relative aspect-video rounded-[10px] cursor-pointer overflow-hidden max-w-lg md:w-150">
             <img class="size-full" src="{{ asset('images/placeholder-video-find.jpg') }}" alt="">
             <span data-analytics-name="play button | Three Tips For Choosing a .com Domain Name" class="transition-all duration-150 ease-in-out top-1/2 left-1/2 absolute -translate-x-1/2 -translate-y-1/2 size-19.5 group-hover:scale-110">

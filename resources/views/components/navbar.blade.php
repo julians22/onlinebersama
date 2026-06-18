@@ -96,7 +96,7 @@
                     </a>
                 </div>
                 <div class="flex flex-col gap-4 bg-light-gray-100 p-10 w-full xl:max-w-117.5">
-                    <button data-analytics-name="video image | Startup Experience" type="button" class="group relative rounded-2xl w-full aspect-video overflow-hidden cursor-pointer lg:max-w-117.5 xl:max-w-full 2xl:max-w-97.5 2xl:h-54.25">
+                    <button data-analytics-name="video image | Startup Experience" type="button" @click="$store.videoModal.openModal('6331201181112')" class="group relative rounded-2xl w-full aspect-video overflow-hidden cursor-pointer lg:max-w-117.5 xl:max-w-full 2xl:max-w-97.5 2xl:h-54.25">
                         <span data-analytics-name="play button | Startup Experience" class="transition-all duration-300 ease-in-out top-1/2 left-1/2 absolute size-14 -translate-x-1/2 -translate-y-1/2 group-hover:scale-110">
                             <x-icons.play width="56" height="56" fill="#fff" />
                         </span>
@@ -183,18 +183,20 @@
                 <div
                     data-analytics-name="video image | Startup Experience"
                     class="border-t-2 border-light-gray-300 flex flex-col gap-4 w-full px-3 py-8 min-[500px]:px-6">
-                    <div
+                    <button
+                        type="button"
+                        @click="$store.videoModal.openModal('6331201181112')"
                         class="group relative rounded-2xl w-full aspect-video overflow-hidden cursor-pointer min-[500px]:max-w-97.5 min-[500px]:h-54.25">
-                        <button
+                        <div
                             data-analytics-name="play button | Startup Experience"
                             type="button"
                             class="transition-all duration-300 ease-in-out top-1/2 left-1/2 absolute -translate-x-1/2 -translate-y-1/2 group-hover:scale-110">
                             <x-icons.play width="56" height="56" fill="#fff" />
-                        </button>
+                        </div>
                         <img
                             data-analytics-name="video image | Startup Experience"
                             class="size-full object-cover object-top" src="{{ asset('images/placeholder-video-navbar.jpg') }}" alt="">
-                    </div>
+                    </button>
                     <p class="font-sans font-semibold text-[20px]">Featured Video - Startup Experience</p>
                 </div>
             </div>

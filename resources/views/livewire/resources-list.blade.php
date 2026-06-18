@@ -26,10 +26,9 @@
         </div>
         <p class="paragraph-md text-white text-[20px]!">{{ $posts->lastItem() ?? '0' }} dari {{ $posts->total() }} Sumber Informasi</p>
     </div>
-    <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+    <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
         @foreach($posts as $index => $post)
             <div data-analytics-level3="card-{{ $index + 1 }}" wire:key="post-{{ $index }}">
-                {{-- @dump($post->route_tools) --}}
                 <x-displays.card-resource
                     data-analytics="{{ $post->data_analytics ?? $post->title }}"
                     :tags="$post->topics->pluck('name')->toArray()"
