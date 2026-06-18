@@ -114,7 +114,7 @@ class PostForm
                                             ->required(),
                                         Select::make('related_slug')
                                             ->label('Artikel Terkait')
-                                            ->options(Post::published()->pluck('title', 'slug')) // Ambil daftar artikel yang dipublikasikan untuk opsi select
+                                            ->options(Post::published()->pluck('title', 'id')) // Ambil daftar artikel yang dipublikasikan untuk opsi select
                                             ->searchable()
                                             ->preload()
                                             ->required()
