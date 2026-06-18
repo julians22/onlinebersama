@@ -26,8 +26,7 @@
     @endenv
 
     <!-- Fonts -->
-    {{-- <link rel="stylesheet" href="{{ assetAwsUrl('onlinebersama/webfont/font.css') }}"> --}}
-    <link rel="stylesheet" href="{{ asset('fonts/webfont/font.css') }}">
+    <link rel="stylesheet" href="{{ assetAwsUrl('onlinebersama/webfont/font.css') }}">
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
