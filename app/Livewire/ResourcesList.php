@@ -19,6 +19,13 @@ class ResourcesList extends Component
 
     public array $topics = [];
 
+    public function mount()
+    {
+        if (request()->has('topic')) {
+            $this->selectedTopic = request()->query('topic');
+        }
+    }
+
     #[Computed()]
     public function selectedTopicLabel()
     {
