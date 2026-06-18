@@ -13,13 +13,10 @@
         <video autoplay="true" muted="true" loop playsinline class="w-full h-112.5 object-cover aspect-48/17 lg:h-152.75 xl:h-170">
             <!-- Mobile / Vertical screens (Width up to 599px) -->
             <source src="{{ assetAwsUrl('onlinebersama/videos/com_Indonesia_Brand Anthem_Mobile.mp4') }}" type="video/mp4" media="(max-width: 599px)">
-
             <!-- Tablets / Square screens (Width between 600px and 1024px) -->
             <source src="{{ assetAwsUrl('onlinebersama/videos/com_Indonesia_Brand Anthem_Desktop.mp4') }}" type="video/mp4" media="(max-width: 1024px)">
-
             <!-- Desktop / Widescreen fallback (Default) -->
             <source src="{{ assetAwsUrl('onlinebersama/videos/com_Indonesia_Brand Anthem_Desktop.mp4') }}" type="video/mp4">
-
             Your browser does not support the HTML5 video tag.
         </video>
         {{-- <img class="w-full h-112.5 object-cover aspect-48/17 lg:h-152.75 xl:h-170" src="{{ asset('images/hero-homepage.jpg') }}" alt=""> --}}
@@ -107,11 +104,13 @@
                 </div>
             </div>
             <div
+                x-data
                 data-analytics-name="video image | Not Just a Domain. A Declaration."
                 class="w-full h-full absolute top-0 left-0 group-hover/child:scale-110 transition-all duration-300 ease-in-out">
                 <button
                     data-analytics-name="play button | Not Just a Domain. A Declaration."
                     type="button"
+                    @click="$store.videoModal.openModal('6331201181112')"
                     class="top-2/3 left-1/2 z-10 absolute -translate-x-1/2 -translate-y-1/2 cursor-pointer transition-all duration-300 ease-in-out hover:scale-110 min-[900px]:top-[60%] lg:top-[55%]">
                     <x-icons.large-play-rounded width="130" height="130" fill="#304D6D" stroke="#304D6D" strokeWidth="4" class="size-10 min-[400px]:size-16 lg:size-20 2xl:size-32.5" />
                 </button>
@@ -172,11 +171,14 @@
                             </div>
                         </div>
                         <div
+                            x-data
                             data-analytics-name="video image | Startup Experience"
                             class="w-full h-full absolute top-0 left-0 group-hover/child:scale-110 transition-all duration-300 ease-in-out">
                             <button
                                 data-analytics-name="play button | Startup Experience"
-                                type="button" class="group/child relative size-full cursor-pointer outline-none mb-6 sm:mb-0">
+                                type="button"
+                                @click="$store.videoModal.openModal('6331201181112')"
+                                class="group/child relative size-full cursor-pointer outline-none mb-6 sm:mb-0">
                                 <x-icons.play-rounded width="78" height="78" fill="#fff" class="transition-all duration-300 ease-in-out top-1/2 left-1/2 absolute size-19.5 -translate-x-1/2 -translate-y-1/2 group-hover/child:scale-110 sm:-translate-y-[90%] lg:-translate-y-1/2" />
                             </button>
                         </div>
@@ -248,7 +250,7 @@
             <x-displays.accordion
                 question="Apa itu nama domain?"
                 data-analytics="What is a domain name?">
-                <p>Nama domain adalah alamat online unik dan kustom (misalnya, contoh.com) yang dapat digunakan untuk mengarahkan orang langsung ke eksistensi online (seperti situs web atau halaman media sosial), dan sebagai alamat email kustom.</p>
+                <p>Nama domain adalah alamat online unik dan kustom (misalnya, <a href="javascript:void(0)" class="text-magenta-300">contoh.com</a>) yang dapat digunakan untuk mengarahkan orang langsung ke eksistensi online (seperti situs web atau halaman media sosial), dan sebagai alamat email kustom.</p>
             </x-displays.accordion>
             <x-displays.accordion
                 question="Apakah nama domain harus berupa nama bisnis saya?"
@@ -266,14 +268,14 @@
             <x-displays.accordion
                 question="Bagaimana cara mendapatkan nama domain .com?"
                 data-analytics="How do I get a .com domain name?">
-                <p>Anda dapat mendaftarkan nama domain .com sendiri melalui registrar atau peritel pilihan Anda. Jika Anda membutuhkan bantuan dalam menentukan nama domain yang tepat untuk ide atau bisnis, alat bantu pencarian nama domain yang didukung AI kami yang tersedia gratis, NameStudio, dapat membantu Anda menghasilkan berbagai pilihan berdasarkan kata kunci dan frasa deskriptif.</p>
+                <p>Anda dapat mendaftarkan nama domain .com sendiri melalui registrar atau peritel pilihan Anda. Jika Anda membutuhkan bantuan dalam menentukan nama domain yang tepat untuk ide atau bisnis, <a href="{{ route('find') }}" class="text-magenta-300">alat bantu pencarian nama domain yang didukung AI kami yang tersedia gratis</a>, NameStudio, dapat membantu Anda menghasilkan berbagai pilihan berdasarkan kata kunci dan frasa deskriptif.</p>
             </x-displays.accordion>
             <x-displays.accordion
                 question="Apa saja cara yang dapat saya lakukan untuk menggunakan nama domain?"
                 data-analytics="What are the different ways I can use a domain name?">
                 <div class="flex flex-col gap-4">
                     <p>Nama domain .com tidak hanya diperuntukkan bagi situs web. Ada banyak cara untuk memanfaatkan nama domain .com secara maksimal, seperti penerusan nama domain.</p>
-                    <p>Dengan meneruskan nama domain  ke media sosial atau halaman e-commerce, Anda dapat menciptakan pengalaman yang personal bagi pelanggan dalam menemukan bisnis atau toko online Anda. Anda juga dapat menggunakan nama domain sebagai alamat email kustom, yang dapat membantu bisnis Anda terlihat lebih profesional.</p>
+                    <p>Dengan <a href="{{ route('social-media') }}" class="text-magenta-300">meneruskan nama domain</a> ke media sosial atau halaman e-commerce, Anda dapat menciptakan pengalaman yang personal bagi pelanggan dalam menemukan bisnis atau toko online Anda. Anda juga dapat menggunakan nama domain sebagai alamat email kustom, yang dapat membantu bisnis Anda terlihat lebih profesional.</p>
                 </div>
             </x-displays.accordion>
             <x-displays.accordion

@@ -6,16 +6,15 @@ use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class CardVideo extends Component
+class CardAccordion extends Component
 {
     /**
      * Create a new component instance.
      */
     public function __construct(
-        public string $title,
+        public string $slug,
         public string $videoId,
         public string $image,
-        public ?string $dataAnalytics,
         public ?string $alt
     ) {}
 
@@ -24,6 +23,6 @@ class CardVideo extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.displays.card-video');
+        return view('components.displays.card-accordion');
     }
 }

@@ -37,37 +37,36 @@
             <p class="paragraph-md text-deep-blue-300">Lihat bagaimana bisnis menggunakan nama domain .com untuk membantu mereka mencapai tujuan. </p>
         </div>
         <div class="online-bersama-small-business-story swiper relative">
-            <div class="custom-swiper-button-prev z-[9999] absolute inset-y-0 left-0 w-1/4 cursor-pointer"></div>
-            <div class="custom-swiper-button-next z-[9999] absolute inset-y-0 right-0 w-1/4 cursor-pointer"></div>
-
+            <div class="custom-swiper-button-prev z-9999 absolute inset-y-0 left-0 w-1/4 cursor-pointer"></div>
+            <div class="custom-swiper-button-next z-9999 absolute inset-y-0 right-0 w-1/4 cursor-pointer"></div>
             <div class="swiper-wrapper">
                 <div data-analytics-level3="carousel1" class="swiper-slide">
-                    <x-displays.card-video title="Startup Experience" image="images/placeholder-video-startup.jpg" data-analytics="Startup Experience">
+                    <x-displays.card-video title="Startup Experience" image="images/placeholder-video-startup.jpg" videoId="6331201181112" data-analytics="Startup Experience">
                         Ketahui bagaimana Henrik Scheel menggunakan nama domain .com miliknya untuk membantu bisnisnya beroperasi di 25 negara di seluruh dunia.
                     </x-displays.card-video>
                 </div>
                 <div data-analytics-level3="carousel2" class="swiper-slide">
-                    <x-displays.card-video title="IKAT Indonesia" image="images/placeholder-video-why-com.jpg" data-analytics="IKAT Indonesia">
+                    <x-displays.card-video title="IKAT Indonesia" image="images/placeholder-video-why-com.jpg" videoId="6331201181112" data-analytics="IKAT Indonesia">
                         Dengarkan bagaimana nama domain .com yang dikenal membantu pemilik bisnis mengembangkan bisnisnya
                     </x-displays.card-video>
                 </div>
                 <div data-analytics-level3="carousel3" class="swiper-slide">
-                    <x-displays.card-video title="Chic Diva Geek" image="images/placeholder-video-chcik-diva.jpg" data-analytics="Chic Diva Geek">
+                    <x-displays.card-video title="Chic Diva Geek" image="images/placeholder-video-chcik-diva.jpg" videoId="6331201181112" data-analytics="Chic Diva Geek">
                         Ketahui bagaimana nama domain .com yang tepercaya membantu Adrian McLanahan dan bisnisnya menjangkau pelanggan baru
                     </x-displays.card-video>
                 </div>
                 <div data-analytics-level3="carousel1" class="swiper-slide">
-                    <x-displays.card-video title="Startup Experience" image="images/placeholder-video-startup.jpg" data-analytics="Startup Experience">
+                    <x-displays.card-video title="Startup Experience" image="images/placeholder-video-startup.jpg" videoId="6331201181112" data-analytics="Startup Experience">
                         Ketahui bagaimana Henrik Scheel menggunakan nama domain .com miliknya untuk membantu bisnisnya beroperasi di 25 negara di seluruh dunia.
                     </x-displays.card-video>
                 </div>
                 <div data-analytics-level3="carousel2" class="swiper-slide">
-                    <x-displays.card-video title="IKAT Indonesia" image="images/placeholder-video-why-com.jpg" data-analytics="IKAT Indonesia">
+                    <x-displays.card-video title="IKAT Indonesia" image="images/placeholder-video-why-com.jpg" videoId="6331201181112" data-analytics="IKAT Indonesia">
                         Dengarkan bagaimana nama domain .com yang dikenal membantu pemilik bisnis mengembangkan bisnisnya
                     </x-displays.card-video>
                 </div>
                 <div data-analytics-level3="carousel3" class="swiper-slide">
-                    <x-displays.card-video title="Chic Diva Geek" image="images/placeholder-video-chcik-diva.jpg" data-analytics="Chic Diva Geek">
+                    <x-displays.card-video title="Chic Diva Geek" image="images/placeholder-video-chcik-diva.jpg" videoId="6331201181112" data-analytics="Chic Diva Geek">
                         Ketahui bagaimana nama domain .com yang tepercaya membantu Adrian McLanahan dan bisnisnya menjangkau pelanggan baru
                     </x-displays.card-video>
                 </div>
@@ -104,30 +103,38 @@
             <x-displays.accordion
                 question="Pola Pikir Seorang Wirausaha"
                 data-analytics="The Entrepreneurial Mindset">
-                <p>Apakah Anda melihat masalah sebagai peluang, dan menyambut tantangan baru dengan antusias? Mampukah Anda tetap fokus ketika keadaan menjadi sulit? Ini hanyalah beberapa dari sekian banyak kualitas yang membentuk pola pikir kewirausahaan, dan sangat berharga ketika memulai bisnis Anda sendiri.</p>
+                <x-displays.card-accordion image="images/articles/pola-pikir-seorang-wirausaha.jpg" videoId="6331201181112" slug="pola-pikir-seorang-wirausaha">
+                    Apakah Anda melihat masalah sebagai peluang, dan menyambut tantangan baru dengan antusias? Mampukah Anda tetap fokus ketika keadaan menjadi sulit? Ini hanyalah beberapa dari sekian banyak kualitas yang membentuk pola pikir kewirausahaan, dan sangat berharga ketika memulai bisnis Anda sendiri.
+                </x-displays.card-accordion>
             </x-displays.accordion>
             <x-displays.accordion
                 question="Menemukan dan Menguji Ide Startup Anda"
                 data-analytics="Finding and Testing Your Startup Idea">
-                <p>Satu-satunya cara untuk menciptakan perusahaan yang brilian adalah dengan memulai dari ide yang belum sempurna, lalu mengujinya, dan belajar darinya sehingga Anda dapat mengubahnya menjadi sesuatu yang benar-benar hebat. Temukan strategi untuk menghasilkan ide bagi usaha rintisan Anda, dan cara mengujinya secara efektif.</p>
+                <x-displays.card-accordion image="images/articles/menemukan-dan-menguji-ide-startup-anda.jpg" videoId="6331201181112" slug="menemukan-dan-menguji-ide-startup-anda">
+                    Satu-satunya cara untuk menciptakan perusahaan yang brilian adalah dengan memulai dari ide yang belum sempurna, lalu mengujinya, dan belajar darinya sehingga Anda dapat mengubahnya menjadi sesuatu yang benar-benar hebat. Temukan strategi untuk menghasilkan ide bagi usaha rintisan Anda, dan cara mengujinya secara efektif.
+                </x-displays.card-accordion>
             </x-displays.accordion>
             <x-displays.accordion
                 question="Cara Menemukan Nama yang Tepat"
                 data-analytics="How to Find a Great Name">
-                <div class="flex flex-col gap-4">
-                    <p>Nama perusahaan Anda adalah kesan pertama bagi calon pelanggan. Jadi, nama itu harus relevan dan mudah diingat, tetapi juga mudah diadaptasikan dengan perubahan agar Anda memiliki ruang untuk berkembang. Bingung harus mulai dari mana? Henrik menguraikan empat langkah penting untuk membantu Anda menemukan nama yang tepat untuk usaha rintisan Anda.</p>
-                </div>
+                <x-displays.card-accordion image="images/articles/cara-menemukan-nama-yang-tepat.jpg" videoId="6331201181112" slug="cara-menemukan-nama-yang-tepat">
+                    Nama perusahaan Anda adalah kesan pertama bagi calon pelanggan. Jadi, nama itu harus relevan dan mudah diingat, tetapi juga mudah diadaptasikan dengan perubahan agar Anda memiliki ruang untuk berkembang. Bingung harus mulai dari mana? Henrik menguraikan empat langkah penting untuk membantu Anda menemukan nama yang tepat untuk usaha rintisan Anda.
+                </x-displays.card-accordion>
             </x-displays.accordion>
             <x-displays.accordion
                 question="Manfaat Landing Page"
                 data-analytics="Benefits of Landing Pages">
-                <p>Landing page difokuskan untuk mendorong pengunjung mengambil satu langkah kecil dalam prosesnya menjadi pelanggan, dan dapat berfungsi sebagai alat bantu pemasaran berbiaya rendah, tetapi bernilai tinggi bagi perusahaan dari berbagai skala. Temukan manfaat yang dapat ditawarkan halaman arahan untuk bisnis Anda dalam e-book kami.</p>
+                <x-displays.card-accordion image="images/articles/manfaat-halaman-tujuan-landing-page.jpg" videoId="6331201181112" slug="manfaat-halaman-tujuan-landing-page">
+                    Landing page difokuskan untuk mendorong pengunjung mengambil satu langkah kecil dalam prosesnya menjadi pelanggan, dan dapat berfungsi sebagai alat bantu pemasaran berbiaya rendah, tetapi bernilai tinggi bagi perusahaan dari berbagai skala. Temukan manfaat yang dapat ditawarkan halaman arahan untuk bisnis Anda dalam e-book kami.
+                </x-displays.card-accordion>
             </x-displays.accordion>
             <x-displays.accordion
                 question="Cara Efektif untuk Memasarkan Bisnis Anda"
                 data-analytics="Effective Ways to Market Your Company"
                 :last="true">
-                <p>Mempelajari cara memasarkan bisnis secara efektif adalah salah satu keterampilan terpenting yang harus dimiliki setiap wirausahawan, dan cara terbaik untuk menginformasikan apa yang ditawarkan perusahaan kepada audiens target adalah dengan menceritakan kisah Anda.</p>
+                <x-displays.card-accordion image="images/articles/cara-efektif-untuk-memasarkan-perusahaan-anda.jpg" videoId="6331201181112" slug="cara-efektif-untuk-memasarkan-perusahaan-anda">
+                    Mempelajari cara memasarkan bisnis secara efektif adalah salah satu keterampilan terpenting yang harus dimiliki setiap wirausahawan, dan cara terbaik untuk menginformasikan apa yang ditawarkan perusahaan kepada audiens target adalah dengan menceritakan kisah Anda.
+                </x-displays.card-accordion>
             </x-displays.accordion>
         </div>
     </section>

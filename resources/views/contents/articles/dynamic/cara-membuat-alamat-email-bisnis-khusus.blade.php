@@ -1,5 +1,3 @@
-@
-
 <section class="article-outer">
     <div class="article-wrapper">
         <x-articles.intro-and-quicklinks>

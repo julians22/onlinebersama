@@ -37,7 +37,7 @@
             </x-articles.arrow-item-content>
             <x-articles.arrow-item-content>
                 <div class="flex flex-col flex-1">
-                    <p>Buat <a data-analytics-name="text| business email address" href="{{ route('resources.handle_second_route', ['second_route' => config('onlinebersama.custom_article_route.email-detail'), 'slug' => 'buat']) }}" class="link-to">alamat email bisnis</a> khusus dengan nama domain .com Anda (misalnya, sales@RumahPantaiAnthony.com) untuk membantu bisnis Anda terlihat lebih profesional.</p>
+                    <p>Buat <a data-analytics-name="text| business email address" href="{{ route('resources.handle_second_route', ['second_route' => config('onlinebersama.custom_article_route.email-detail'), 'slug' => 'manfaat']) }}" class="link-to">alamat email bisnis</a> khusus dengan nama domain .com Anda (misalnya, sales@RumahPantaiAnthony.com) untuk membantu bisnis Anda terlihat lebih profesional.</p>
                 </div>
             </x-articles.arrow-item-content>
             <x-articles.callout-cta>

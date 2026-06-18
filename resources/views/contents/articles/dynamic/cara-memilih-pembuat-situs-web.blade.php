@@ -36,7 +36,7 @@
                             <p>Nama pembuat situs web mungkin muncul di alamat web untuk situs web Anda (misalnya “username. PembuatSitusWeb.com/senyumsegar”)</p>
                         </div>
                         <div class="flex flex-col">
-                            <p><strong>Potensi Opsi Upgrade dalam Paket Pembuat Situs Web*</strong></p>
+                            <p><strong>Potensi Opsi Upgrade dalam Paket Pembuat Situs Web</strong></p>
                             <p>Nama domain khusus (misalnya “SenyumSegar.com”)</p>
                         </div>
                     </div>
@@ -50,7 +50,7 @@
                             <p>Cukup untuk situs web sederhana yang berisi 1-2 halaman</p>
                         </div>
                         <div class="flex flex-col">
-                            <p><strong>Potensi Opsi Upgrade dalam Paket Pembuat Situs Web*</strong></p>
+                            <p><strong>Potensi Opsi Upgrade dalam Paket Pembuat Situs Web</strong></p>
                             <p>Penyimpanan tambahan mulai dari 2 GB hingga 100 GB atau lebih bergantung pada paket/pembuat situs web yang dipilih</p>
                         </div>
                     </div>
@@ -64,7 +64,7 @@
                             <p>Keranjang belanja dengan layanan dasar mungkin tersedia, mungkin dengan biaya per transaksi</p>
                         </div>
                         <div class="flex flex-col">
-                            <p><strong>Potensi Opsi Upgrade dalam Paket Pembuat Situs Web*</strong></p>
+                            <p><strong>Potensi Opsi Upgrade dalam Paket Pembuat Situs Web</strong></p>
                             <p>Berbagai opsi proses pembayaran, jual di banyak etalase</p>
                         </div>
                     </div>
@@ -78,7 +78,7 @@
                             <p>Analitik situs web sederhana mungkin tersedia</p>
                         </div>
                         <div class="flex flex-col">
-                            <p><strong>Potensi Opsi Upgrade dalam Paket Pembuat Situs Web*</strong></p>
+                            <p><strong>Potensi Opsi Upgrade dalam Paket Pembuat Situs Web</strong></p>
                             <p>Melaporkan performa situs web, seperti rasio konversi khusus halaman</p>
                         </div>
                     </div>
@@ -92,7 +92,7 @@
                             <p>Dukungan obrolan/email</p>
                         </div>
                         <div class="flex flex-col">
-                            <p><strong>Potensi Opsi Upgrade dalam Paket Pembuat Situs Web*</strong></p>
+                            <p><strong>Potensi Opsi Upgrade dalam Paket Pembuat Situs Web</strong></p>
                             <p>Dukungan telepon, email, dan obrolan prioritas</p>
                         </div>
                     </div>
@@ -106,7 +106,7 @@
                             <p>Iklan dari pembuat situs web mungkin ditampilkan di situs web Anda</p>
                         </div>
                         <div class="flex flex-col">
-                            <p><strong>Potensi Opsi Upgrade dalam Paket Pembuat Situs Web*</strong></p>
+                            <p><strong>Potensi Opsi Upgrade dalam Paket Pembuat Situs Web</strong></p>
                             <p>Tidak ada iklan dari pembuat situs web yang akan ditampilkan di situs web Anda</p>
                         </div>
                     </div>
@@ -120,7 +120,7 @@
                             <p>Alat SEO mungkin tersedia</p>
                         </div>
                         <div class="flex flex-col">
-                            <p><strong>Potensi Opsi Upgrade dalam Paket Pembuat Situs Web*</strong></p>
+                            <p><strong>Potensi Opsi Upgrade dalam Paket Pembuat Situs Web</strong></p>
                             <p>Alat SEO yang ditingkatkan tersedia</p>
                         </div>
                     </div>

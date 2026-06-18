@@ -40,5 +40,17 @@ return [
         'websites-detail' => 'situs-web-profesional'
     ],
 
-    's3_asset_url' => env('S3_ASSET_URL', '')
+    's3_asset_url' => env('S3_ASSET_URL', ''),
+
+    /*
+    |--------------------------------------------------------------------------
+    | Brightcove Player ID
+    |--------------------------------------------------------------------------
+    |
+    | This option is for the Brightcove Player ID used in the Video.js player.
+    | You can set this in your ".env" file using the BRIGHTCOVE_PLAYER_ID variable.
+    |
+    */
+    'brightcove_account_id' => '6056665203001',
+    'brightcove_player_id' => 'vJVBLg3XR'
 ];

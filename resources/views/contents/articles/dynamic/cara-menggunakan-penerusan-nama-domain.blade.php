@@ -31,7 +31,7 @@
             <x-slot:title>
                 <p>KESIMPULAN</p>
             </x-slot:title>
-            <p>Siap mempelajari cara meneruskan nama domain? <a data-analytics-name="text | article" href="#" class="link-to">Artikel</a> kami menjelaskan berbagai metode penerusan nama domain, atau Anda dapat melihat video langkah demi langkah tentang cara meneruskan nama domain.</p>
+            <p>Siap mempelajari cara meneruskan nama domain? <a data-analytics-name="text | article" href="{{ route('resources.show', 'apa-itu-penerusan-nama-domain') }}" class="link-to">Artikel</a> kami menjelaskan berbagai metode penerusan nama domain, atau Anda dapat melihat video langkah demi langkah tentang cara meneruskan nama domain.</p>
         </x-articles.tip-callout>
         <p class="font-semibold text-[14px] leading-5"><sup>1</sup>Studi Preferensi Konsumen Online Verisign, 2025.</p>
         <x-articles.related-article :data="$post->relatedOneArticle" class="pt-4" />
