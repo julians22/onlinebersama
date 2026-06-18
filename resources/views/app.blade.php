@@ -39,17 +39,29 @@
     <script async type="module" src="https://nswm-service.verisign.com/3.0/name-studio.js"></script>
     <!-- NameStudio end-->
 
-    <script id="namestudio-scripts" data-ns-revision="2026-05-11">
-    (() => {
-    document.addEventListener('DOMContentLoaded', () => {
-        const $ns = document.querySelector('name-studio');
-        $ns.querySelector('button[slot="btn-results-close"]')
-        .addEventListener('click', () => {
-        $ns.clearQuery();
-        $ns.clear();
-        });
-    });
-    })();
+    <script id="namestudio-scripts" data-ns-revision="2026-06-13">
+        (() => {
+            document.addEventListener('DOMContentLoaded', () => {
+                const $ns = document.querySelector('name-studio');
+                const $close = $ns.querySelector('.btn-results-close');
+
+                const observer = new MutationObserver(() => {
+                    if($ns.hasAttribute('results') && !$ns.hasAttribute('error')) {
+                        $close.style.setProperty('--btn-close-display', 'flex');
+                        $close.style.setProperty('--btn-close-pointer-evts','all');
+                    } else {
+                        $close.style.setProperty('--btn-close-display', 'none');
+                        $close.style.setProperty('--btn-close-pointer-evts','none');
+                    }
+                });
+                observer.observe($ns,{attributes:true,attributeFilter:['results','error']});
+
+                $ns.querySelector('button[slot="btn-results-close"]').addEventListener('click', () => {
+                    $ns.clearQuery();
+                    $ns.clear();
+                });
+            });
+        })();
     </script>
 </head>
 <body class="antialiased">
