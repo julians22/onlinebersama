@@ -1,4 +1,7 @@
 <div id="resources-scroll" class="flex flex-col gap-y-8 scroll-mt-28">
+    <div class="hidden">
+        {{ $selectedTopic }} | {{ $selectedTopicLabel }}
+    </div>
     <div class="flex items-center-safe justify-between bg-navy-blue-300 rounded-[10px] p-4 flex-col gap-4 lg:gap-0 lg:flex-row">
         <div
             data-analytics-name="pulldown filter | All Topics"
