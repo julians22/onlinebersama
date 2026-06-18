@@ -14,15 +14,15 @@ class ResourcesList extends Component
 
     public int $paginate = 6;
 
-    #[Url(as: 'topic', except: '*', history: true)]
-    public string $selectedTopic = '*';
+    #[Url(as: 'topic', history: true)]
+    public string|null $selectedTopic = null;
 
     public array $topics = [];
 
     #[Computed()]
     public function selectedTopicLabel()
     {
-        if ($this->selectedTopic === '*') {
+        if ($this->selectedTopic === null) {
             return 'Semua Topik';
         }
 
@@ -46,7 +46,7 @@ class ResourcesList extends Component
         $posts = Post::published()
             ->latest()
             ->with('topics')
-            ->when($this->selectedTopic !== '*', function ($query) {
+            ->when($this->selectedTopic !== null, function ($query) {
                 return $query->whereHas('topics', function ($query) {
                     $query->where('slug', $this->selectedTopic);
                 });

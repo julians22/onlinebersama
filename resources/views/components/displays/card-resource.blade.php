@@ -1,6 +1,6 @@
 <article data-analytics-name="box | {{ $dataAnalytics }}" class="flex flex-col gap-y-4 rounded-[10px] bg-white h-full p-4 box-shadow-sm">
     <figure class="rounded-lg overflow-hidden">
-        <img class="aspect-8/5 size-full object-cover" src="{{ imageArticle($image) }}" alt="{{ $alt }}">
+        <img class="aspect-8/5 size-full object-cover" src="{{ $image ? imageArticle($image) : ''  }}" alt="{{ $alt }}">
     </figure>
     <div class="flex flex-col gap-y-4">
         {{-- Todo fix --}}
