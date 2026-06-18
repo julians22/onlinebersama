@@ -46,7 +46,7 @@ class Post extends Model
 
     public function relatedOneArticle()
     {
-        return $this->hasOne(Post::class, 'slug', 'related_slug');
+        return $this->hasOne(Post::class, 'id', 'related_slug');
     }
 
     // 1. Relasi BelongsToMany (digunakan untuk memanggil data di Frontend)
