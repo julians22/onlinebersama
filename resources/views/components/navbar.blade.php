@@ -102,7 +102,7 @@
                         </span>
                         <img class="size-full object-cover object-top" src="{{ asset('images/placeholder-video-navbar.jpg') }}" alt="Placeholder Video">
                     </button>
-                    <p class="font-semibold paragraph-sm">Featured Video - Startup Experience</p>
+                    <p class="font-semibold paragraph-sm">Video Unggulan - Startup Experience</p>
                 </div>
             </div>
         </div>
@@ -197,7 +197,7 @@
                             data-analytics-name="video image | Startup Experience"
                             class="size-full object-cover object-top" src="{{ asset('images/placeholder-video-navbar.jpg') }}" alt="">
                     </button>
-                    <p class="font-sans font-semibold text-[20px]">Featured Video - Startup Experience</p>
+                    <p class="font-sans font-semibold text-[20px]">Video Unggulan - Startup Experience</p>
                 </div>
             </div>
         </div>
