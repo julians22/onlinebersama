@@ -19,10 +19,12 @@ class ResourcesList extends Component
 
     public array $topics = [];
 
-    public function mount()
+    public function mount($topic = null)
     {
-        if (request()->has('topic')) {
-            $this->selectedTopic = request()->query('topic');
+        if ($this->selectedTopic === null) {
+            if ($topic !== null) {
+                $this->selectedTopic = $topic;
+            }
         }
     }
 

@@ -86,7 +86,10 @@
                 <h2 class="headline-1">Telusuri Semua Sumber Informasi</h2>
                 <p class="paragraph-md">Jelajahi artikel, video, dan lainnya untuk mendukung perjalanan Anda.</p>
             </div>
-            <livewire:resources-list :topics="$topics->toArray()" />
+            <livewire:resources-list
+                topic="{{ request()->query('topic') }}"
+                :topics="$topics->toArray()"
+            />
         </div>
     </section>
     {{-- End Resources --}}
