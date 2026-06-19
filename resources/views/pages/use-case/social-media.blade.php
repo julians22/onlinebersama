@@ -74,12 +74,12 @@
             <div x-data="{ active: 'social-media' }" class="flex flex-col justify-center gap-4 md:flex-row">
                 <div class="flex flex-col gap-4 md:max-w-xs">
                     <button data-analytics-level3="Social Media" type="button" @click="active = 'social-media'" :class="active === 'social-media' && 'bg-white! hover:bg-white! text-deep-blue-300! hover:pl-6!'" class="transition-all duration-300 ease-in-out space-y-3 bg-navy-blue-300 p-6 rounded-[10px] h-full text-white text-left cursor-pointer hover:bg-[#2b4562] hover:pl-7.25">
-                        <h3 class="subheadline-3 text-[32px]!">Media Sosial</h3>
-                        <p class="paragraph-md text-[24px]!">Buat lebih banyak pasang mata tertuju pada halaman Anda.</p>
+                        <h3 class="subheadline-3 text-[32px]!" data-analytics-level3="Social Media">Media Sosial</h3>
+                        <p class="paragraph-md text-[24px]!" data-analytics-level3="Social Media">Buat lebih banyak pasang mata tertuju pada halaman Anda.</p>
                     </button>
                     <button data-analytics-level3="Online Store" type="button" @click="active = 'online-store'" :class="active === 'online-store' && 'bg-white! hover:bg-white! text-deep-blue-300! hover:pl-6!'" class="transition-all duration-300 ease-in-out space-y-3 bg-navy-blue-300 p-6 rounded-[10px] h-full text-white text-left cursor-pointer hover:bg-[#2b4562] hover:pl-7.25">
-                        <h3 class="subheadline-3 text-[32px]!">Toko Online</h3>
-                        <p class="paragraph-md text-[24px]!">Permudah pencarian bisnis Anda.</p>
+                        <h3 class="subheadline-3 text-[32px]!" data-analytics-level3="Online Store">Toko Online</h3>
+                        <p class="paragraph-md text-[24px]!" data-analytics-level3="Online Store">Permudah pencarian bisnis Anda.</p>
                     </button>
                 </div>
                 <a x-show="active === 'social-media'" data-analytics-level3="right image" data-analytics-name="image | Reach more people by connecting your social page to a custom .com web address."

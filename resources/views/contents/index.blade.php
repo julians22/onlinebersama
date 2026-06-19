@@ -37,8 +37,8 @@
             <p class="paragraph-md text-deep-blue-300">Lihat bagaimana bisnis menggunakan nama domain .com untuk membantu mereka mencapai tujuan. </p>
         </div>
         <div class="online-bersama-small-business-story swiper relative">
-            <div class="custom-swiper-button-prev z-9999 absolute inset-y-0 left-0 w-1/4 cursor-pointer"></div>
-            <div class="custom-swiper-button-next z-9999 absolute inset-y-0 right-0 w-1/4 cursor-pointer"></div>
+            <div data-analytics-level3="carousel" class="custom-swiper-button-prev z-9999 absolute inset-y-0 left-0 w-1/4 cursor-pointer"></div>
+            <div data-analytics-level3="carousel" class="custom-swiper-button-next z-9999 absolute inset-y-0 right-0 w-1/4 cursor-pointer"></div>
             <div class="swiper-wrapper">
                 <div data-analytics-level3="carousel1" class="swiper-slide">
                     <x-displays.card-video title="Startup Experience" image="images/placeholder-video-startup.jpg" videoId="6331201181112" data-analytics="Startup Experience">
@@ -78,7 +78,7 @@
 
     {{-- Resources --}}
     <section
-        id="resources""
+        id="resources"
         data-analytics-level2="Browse All Resources"
         class="bg-deep-blue-300 px-4 md:px-8">
         <div class="max-w-300 mx-auto py-10 md:pb-19.5">
