@@ -93,7 +93,7 @@
                         </p>
                     </div>
                 </a>
-                <a x-show="active === 'online-store'" x-cloak data-analytics-level3="right image" data-analytics-name="image | Reach more people by connecting your social page to a custom .com web address."
+                <a x-show="active === 'online-store'" x-cloak data-analytics-level3="right image" data-analytics-name="image | Link to your store on any platform from a custom .com domain name."
                     href="{{ route('resources.handle_second_route', ['second_route' => config('onlinebersama.custom_article_route.social-media-detail'), 'slug' => 'cara-menggunakan']) }}" class="relative rounded-[10px] max-w-full overflow-hidden h-88 md:h-auto md:max-w-156">
                     <img class="size-full object-cover aspect-video" src="{{ asset('images/uc-email.jpg') }}" alt="">
                     <div class="top-0 left-0 absolute flex flex-col justify-end gap-4 bg-linear-360 from-black/60 to-transparent p-4 size-full text-white md:p-6">
