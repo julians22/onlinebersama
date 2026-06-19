@@ -14,7 +14,7 @@ class ResourcesList extends Component
 
     public int $paginate = 6;
 
-    #[Url(as: 'topic', except: "")]
+    #[Url(as: 'topic')]
     public ?string $selectedTopic = "";
 
     public array $topics = [];
