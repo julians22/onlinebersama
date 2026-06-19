@@ -14,15 +14,17 @@ class ResourcesList extends Component
 
     public int $paginate = 6;
 
-    #[Url(as: 'topic', except: "*", history: true)]
-    public ?string $selectedTopic = "*";
+    // Use an empty string or null instead of '*' to avoid strict matching bugs
+    #[Url(as: 'topic', history: true)]
+    public ?string $selectedTopic = '';
 
     public array $topics = [];
 
     #[Computed()]
     public function selectedTopicLabel()
     {
-        if ($this->selectedTopic === null) {
+        // Check for empty string or null values
+        if (empty($this->selectedTopic)) {
             return 'Semua Topik';
         }
 
@@ -46,7 +48,7 @@ class ResourcesList extends Component
         $posts = Post::published()
             ->latest()
             ->with('topics')
-            ->when($this->selectedTopic !== "*", function ($query) {
+            ->when(!empty($this->selectedTopic), function ($query) { // Check if topic is not empty
                 return $query->whereHas('topics', function ($query) {
                     $query->where('slug', $this->selectedTopic);
                 });
