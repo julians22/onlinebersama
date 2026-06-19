@@ -21,7 +21,7 @@
         </x-articles.arrow-item-content>
         <x-articles.arrow-item-content>
             <div class="flex flex-col flex-1">
-                <p>Pilih perusahaan penyedia <em>hosting</em>. Ini adalah perusahaan yang akan “menampilkan” dan mengelola situs web Anda secara online agar bisa dilihat pengunjung.</p>
+                <p>Pilih perusahaan penyedia hosting. Ini adalah perusahaan yang akan “menampilkan” dan mengelola situs web Anda secara online agar bisa dilihat pengunjung.</p>
             </div>
         </x-articles.arrow-item-content>
         <x-articles.callout-cta>
@@ -41,7 +41,7 @@
                     <li>Tautan ke/integrasi dengan media sosial</li>
                     <li>Fungsi pemutar video dan/atau audio</li>
                     <li>Layanan <em>e-commerce</em> (misalnya keranjang belanja)</li>
-                    <li>Informasi layanan pelanggan, seperti halaman Tanya Jawab dan alamat <em>email</em> dukungan</li>
+                    <li>Informasi layanan pelanggan, seperti halaman Tanya Jawab dan alamat email dukungan</li>
                     <li>Optimasi perangkat seluler (agar situs web Anda dapat berfungsi dengan lancar di perangkat seluler)</li>
                     <li>Kemampuan memperbarui konten dengan mudah</li>
                     <li>Alat analitik untuk melacak jumlah pengunjung bulanan atau metrik kinerja penting</li>
@@ -56,19 +56,19 @@
         </x-articles.arrow-item-content>
         <x-articles.arrow-item-content>
             <div class="flex flex-col flex-1">
-                <p>Tentukan konten situs web yang penting dan buatlah konten penting tersebut. Informasi apa yang akan dianggap menarik dan bermanfaat oleh pengunjung situs web Anda? Setidaknya, pastikan situs web Anda menyediakan beberapa cara bagi pengunjung untuk menghubungi perusahaan Anda, misalnya <a data-analytics-name="text | custom business email address" href="{{ route('resources.handle_second_route', ['second_route' => config('onlinebersama.custom_article_route.email-detail'), 'slug' => 'manfaat']) }}" class="link-to">alamat <em>email</em> bisnis khusus</a> dan nomor telepon.</p>
+                <p>Tentukan konten situs web yang penting dan buatlah konten penting tersebut. Informasi apa yang akan dianggap menarik dan bermanfaat oleh pengunjung situs web Anda? Setidaknya, pastikan situs web Anda menyediakan beberapa cara bagi pengunjung untuk menghubungi perusahaan Anda, misalnya <a data-analytics-name="text | custom business email address" href="{{ route('resources.handle_second_route', ['second_route' => config('onlinebersama.custom_article_route.email-detail'), 'slug' => 'manfaat']) }}" class="link-to">alamat email bisnis khusus</a> dan nomor telepon.</p>
             </div>
         </x-articles.arrow-item-content>
         <img class="rounded-[10px]" src="{{ asset('images/mid-article-image-4.jpg') }}" alt="">
         <h3 data-analytics-level2="Promoting/Maintaining/Optimizing Your Website:">Mempromosikan, Memelihara, dan Mengoptimalkan Situs Web:</h3>
         <x-articles.arrow-item-content>
             <div class="flex flex-col flex-1">
-                <p>Pikirkan cara agar pengunjung dapat menemukan situs web Anda, dan promosikan nama domain Anda di berbagai media yang memungkinkan, termasuk kartu nama, kemasan produk, materi cetak, papan nama, media sosial, iklan, dan direktori daring. Selain itu, pertimbangkan juga penggunaan iklan mesin pencari serta <a data-analytics-name="text | custom business email address" href="{{ route('resources.handle_second_route', ['second_route' => config('onlinebersama.custom_article_route.email-detail'), 'slug' => 'buat']) }}" class="link-to">alamat <em>email</em> bisnis khusus</a>.</p>
+                <p>Pikirkan cara agar pengunjung dapat menemukan situs web Anda, dan promosikan nama domain Anda di berbagai media yang memungkinkan, termasuk kartu nama, kemasan produk, materi cetak, papan nama, media sosial, iklan, dan direktori daring. Selain itu, pertimbangkan juga penggunaan iklan mesin pencari serta <a data-analytics-name="text | custom business email address" href="{{ route('resources.handle_second_route', ['second_route' => config('onlinebersama.custom_article_route.email-detail'), 'slug' => 'buat']) }}" class="link-to">alamat email bisnis khusus</a>.</p>
             </div>
         </x-articles.arrow-item-content>
         <x-articles.arrow-item-content>
             <div class="flex flex-col flex-1">
-                <p>Pahami kinerja dan pengunjung situs web Anda dengan memanfaatkan alat bantu untuk menganalisis lalu lintas situs web Anda. Penyedia layanan pembuat situs web atau perusahaan <em>hosting</em> Anda biasanya menawarkan fitur analitik lalu lintas situs web sebagai bagian dari paket layanan Anda.</p>
+                <p>Pahami kinerja dan pengunjung situs web Anda dengan memanfaatkan alat bantu untuk menganalisis lalu lintas situs web Anda. Penyedia layanan pembuat situs web atau perusahaan hosting Anda biasanya menawarkan fitur analitik lalu lintas situs web sebagai bagian dari paket layanan Anda.</p>
             </div>
         </x-articles.arrow-item-content>
         <x-articles.arrow-item-content>

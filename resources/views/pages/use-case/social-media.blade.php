@@ -114,14 +114,10 @@
         data-analytics-level2="How to Forward Your Domain Name"
         class="flex items-center gap-10 py-10 container flex-col md:py-19.5 xl:items-start xl:gap-28 xl:flex-row 2xl:gap-44">
         <div x-data class="-top-12 flex flex-col gap-11.5 xl:sticky">
-            <h2 class="text-navy-blue-300 headline-1 text-center md:text-[48px]! md:leading-15.5!">Cara Meneruskan Nama Domain Anda</h2>
-            <button data-analytics-name="video image | How to Forward Your Domain Name" type="button" @click="$store.videoModal.openModal('6331201181112')" class="group cursor-pointer relative rounded-[10px] overflow-hidden">
-                <div class="top-0 left-0 absolute bg-linear-360 from-black/80 to-transparent size-full"></div>
-                <span data-analytics-name="play button | How to Forward Your Domain Name" class="transition-all duration-300 ease-in-out top-1/2 left-1/2 absolute -translate-x-1/2 -translate-y-1/2 group-hover:scale-110">
-                    <x-icons.play-rounded width="78" height="78" fill="#fff" />
-                </span>
+            <h2 class="text-navy-blue-300 headline-1 text-center md:text-[48px]! md:leading-15.5!">Cara Meneruskan Nama <span class="sm:block">Domain Anda</span></h2>
+            <div class="relative rounded-[10px] overflow-hidden">
                 <img class="size-full aspect-video max-w-150 xl:max-w-full" src="{{ asset('images/usecase-social-media.jpg') }}" alt="">
-            </button>
+            </div>
         </div>
         <div class="flex flex-col gap-8 max-w-125 xl:pt-28">
             <div class="sticky top-20 w-full h-25 bg-linear-180 from-white from-25% to-transparent -mt-18 hidden xl:block"></div>
