@@ -41,3 +41,14 @@ Route::get('/ip-debug', function () {
         'server_variables' => request()->server->all(),
     ]);
 });
+
+// routes/web.php - temporary debug route
+Route::get('/debug-uri', function () {
+    return [
+        'REQUEST_URI'  => $_SERVER['REQUEST_URI'],
+        'QUERY_STRING' => $_SERVER['QUERY_STRING'],
+        'request()->all()' => request()->all(),
+        'request()->url()' => request()->url(),
+        'request()->fullUrl()' => request()->fullUrl(),
+    ];
+});
