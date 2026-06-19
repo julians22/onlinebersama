@@ -31,7 +31,7 @@
     </div>
     <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
         @foreach($posts as $index => $post)
-        <div data-analytics-level3="card-{{ $index + 1 }}" wire:key="post-{{ $index }}">
+            <div data-analytics-level3="card-{{ $index + 1 }}" wire:key="post-{{ $index }}">
                 <x-displays.card-resource
                     data-analytics="{{ $post->data_analytics ?? $post->title }}"
                     :tags="$post->topics->pluck('name')->toArray()"
