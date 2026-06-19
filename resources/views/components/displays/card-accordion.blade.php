@@ -10,7 +10,7 @@
             {{ $slot }}
         </p>
         <a
-            href="{{ route('resources.show', $slug) }}"
+            href="{{ route('resources.handle_second_route', ['second_route' => config('onlinebersama.custom_article_route.default'), 'slug' => $slug]) }}"
             class="w-max flex items-center font-sans text-lg font-bold text-magenta-300 leading-6 md:text-xl">
             Baca Selengkapnya
             <x-icons.arrow-rounded width="24" height="24" fill="#A7127E" class="size-4.5 ml-1" strokeWidth="1" />

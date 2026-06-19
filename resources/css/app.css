@@ -164,7 +164,7 @@
     /* Accordion */
 
     .accordion-content {
-        @apply font-sans font-medium text-[18px] md:text-[24px] tracking-[0.25px] md:leading-8.5!;
+        @apply font-sans font-medium text-[18px] md:text-[24px] tracking-[0.25px] text-deep-blue-300 md:leading-8.5!;
     }
 
     /* Button */
