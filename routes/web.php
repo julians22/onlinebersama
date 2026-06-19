@@ -43,12 +43,19 @@ Route::get('/ip-debug', function () {
 });
 
 // routes/web.php - temporary debug route
-Route::get('/debug-uri', function () {
+Route::get('debug-uri', function () {
     return [
-        'REQUEST_URI'  => $_SERVER['REQUEST_URI'],
-        'QUERY_STRING' => $_SERVER['QUERY_STRING'],
-        'request()->all()' => request()->all(),
-        'request()->url()' => request()->url(),
-        'request()->fullUrl()' => request()->fullUrl(),
+        'REQUEST_URI'    => $_SERVER['REQUEST_URI']    ?? 'missing',
+        'QUERY_STRING'   => $_SERVER['QUERY_STRING']   ?? 'missing',
+        'HTTP_HOST'      => $_SERVER['HTTP_HOST']      ?? 'missing',
+        'SERVER_NAME'    => $_SERVER['SERVER_NAME']    ?? 'missing',
+        'SCRIPT_NAME'    => $_SERVER['SCRIPT_NAME']    ?? 'missing',
+        'SCRIPT_FILENAME'=> $_SERVER['SCRIPT_FILENAME']?? 'missing',
+        'PHP_SELF'       => $_SERVER['PHP_SELF']       ?? 'missing',
+        'argv'           => $_SERVER['argv']           ?? 'missing',
+        'request_all'    => request()->all(),
+        'full_url'       => request()->fullUrl(),
+        // Raw query string from PHP
+        'raw_GET'        => $_GET,
     ];
 });
