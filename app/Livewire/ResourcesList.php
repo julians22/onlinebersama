@@ -14,19 +14,10 @@ class ResourcesList extends Component
 
     public int $paginate = 6;
 
-    #[Url(as: 'topic', history: true)]
-    public string|null $selectedTopic = null;
+    #[Url(as: 'topic', except: "")]
+    public ?string $selectedTopic = "";
 
     public array $topics = [];
-
-    public function mount($topic = null)
-    {
-        if ($this->selectedTopic === null) {
-            if ($topic !== null) {
-                $this->selectedTopic = $topic;
-            }
-        }
-    }
 
     #[Computed()]
     public function selectedTopicLabel()
