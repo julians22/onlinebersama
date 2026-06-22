@@ -59,7 +59,7 @@
             <a
                 data-analytics-name="button | Discover More Benefits"
                 href="{{ route('resources.handle_second_route', ['second_route' => config('onlinebersama.custom_article_route.social-media-detail'), 'slug' => 'pelajari-selengkapnya']) }}" class="btn-secondary w-full sm:w-auto">
-                Ketahui Manfaat Lainnya
+                Temukan Manfaat Lainnya
             </a>
         </div>
     </section>

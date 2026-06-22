@@ -8,6 +8,7 @@ const prefix = 'online-bersama-';
 const smallBusinessStory = new Swiper(`.${prefix}small-business-story`, {
     effect: 'coverflow',
     centeredSlides: true,
+    initialSlide: 1,
     slidesPerView: 1.08,
     slideToClickedSlide: true,
     loop: true,
