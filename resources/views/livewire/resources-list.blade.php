@@ -21,7 +21,7 @@
                 class="option-dropdown"
                 @click.outside="openDropdown = false"
             >
-                <button x-on:click="$wire.setTopic(''); openDropdown = false;">{{ 'Semua Topik' }}</button>
+                <button x-on:click="$wire.setTopic(null); openDropdown = false;">{{ 'Semua Topik' }}</button>
                 @foreach ($topics as $topic)
                     <button x-on:click="$wire.setTopic('{{ $topic['slug'] }}'); openDropdown = false;">{{ $topic['name'] }}</button>
                 @endforeach
