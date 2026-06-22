@@ -37,7 +37,7 @@ class ResourcesList extends Component
         $this->resetPage();
     }
 
-    public function setTopic(string $topic)
+    public function setTopic(?string $topic = null)
     {
         $this->selectedTopic = $topic;
         $this->resetPage();
