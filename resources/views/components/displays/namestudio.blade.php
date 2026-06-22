@@ -79,8 +79,8 @@ name-studio {
     opacity: 0;
 
     :root[lang^='id'] & {
-        --ns-search-terms-before-text: 'Dengan menggunakan NameStudio®, artinya Anda menyetujui ';
-        --ns-search-terms-after-text: ' Ketentuan Layanan kami dan memahami Pernyataan Privasi kami';
+        --ns-search-terms-before-text: 'Dengan menggunakan NameStudio, Anda menyetujui ';
+        --ns-search-terms-after-text: ' kami dan mengakui Pernyataan Privasi kami.';
     }
 
     &:defined {
