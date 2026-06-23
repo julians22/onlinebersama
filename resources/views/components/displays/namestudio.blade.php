@@ -61,7 +61,7 @@ name-studio {
         }
     }
 
-    --ns-controls-max-width: min(1005px, calc(100cqw - 2rem));
+    --ns-controls-max-width: min(860px, calc(100cqw - 2rem));
     --ns-list-item-action-btn-width: 5.625rem;
     --ns-font-family: 'Urbanist';
     --ns-scroll-margin-top: 80px; /*needs to match the height of the sticky header*/

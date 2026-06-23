@@ -19,7 +19,6 @@
             <source src="{{ assetAwsUrl('onlinebersama/videos/com_Indonesia_Brand Anthem_Desktop.mp4') }}" type="video/mp4">
             Your browser does not support the HTML5 video tag.
         </video>
-        {{-- <img class="w-full h-112.5 object-cover aspect-48/17 lg:h-152.75 xl:h-170" src="{{ asset('images/hero-homepage.jpg') }}" alt=""> --}}
         <div class="container top-0 left-1/2 absolute flex justify-center items-end px-7 pt-7 pb-4 size-full -translate-x-1/2 md:justify-start sm:p-10 lg:px-18.5 lg:py-25.75">
             <div class="space-y-2 text-white text-center sm:space-y-3 md:space-y-6 md:text-left lg:space-y-7">
                 <h1 class="headline-1 leading-normal text-[28px]! sm:leading-14! sm:text-5xl! lg:leading-16! lg:text-[64px]! lg:font-extrabold!">
@@ -84,15 +83,16 @@
                 <div class="swiper-pagination"></div>
             </div>
         </div>
-        <div
-            data-analytics-level2="Not Just a Domain. A Declaration."
-            class="relative">
-            <img
-                data-analytics-name="video image | Not Just a Domain. A Declaration."
-                class="mx-auto hidden lg:block" src="{{ asset('images/placeholder-video-how.jpg') }}" alt="">
-            <img
-                data-analytics-name="video image | Not Just a Domain. A Declaration."
-                class="w-full mx-auto block sm:h-200 sm:object-cover sm:object-bottom md:h-210 min-[900px]:h-230! lg:hidden" src="{{ asset('images/placeholder-video-how-mobile.jpg') }}" alt="">
+        <div x-data data-analytics-level2="Not Just a Domain. A Declaration." class="relative">
+            <img data-analytics-name="video image | Not Just a Domain. A Declaration." class="mx-auto hidden lg:block" src="{{ asset('images/placeholder-video-how.jpg') }}" alt="">
+            <img data-analytics-name="video image | Not Just a Domain. A Declaration." class="w-full mx-auto block sm:h-200 sm:object-cover sm:object-bottom md:h-210 min-[900px]:h-230! lg:hidden" src="{{ asset('images/placeholder-video-how-mobile.jpg') }}" alt="">
+            <button type="button" @click="$store.videoModal.openModal('6331201181112')" data-analytics-name="video image | Not Just a Domain. A Declaration." class="group absolute top-0 left-0 size-full transition-all duration-300 ease-in-out cursor-pointer z-10">
+                <span
+                    data-analytics-name="play button | Not Just a Domain. A Declaration."
+                    class="top-2/3 left-1/2 z-10 absolute -translate-x-1/2 -translate-y-1/2 cursor-pointer transition-all duration-300 ease-in-out hover:scale-110 min-[900px]:top-[60%] lg:top-[55%] group-hover:scale-110">
+                    <x-icons.large-play-rounded width="130" height="130" fill="#304D6D" stroke="#304D6D" strokeWidth="4" class="size-10 min-[400px]:size-16 lg:size-20 2xl:size-32.5" />
+                </span>
+            </button>
             <div class="top-0 left-1/2 -translate-x-1/2 absolute flex justify-center size-full max-w-480 px-4 pt-4 min-[400px]:pt-13.5 sm:px-6 sm:pt-6 md:pt-11.75 lg:justify-start lg:px-24 lg:py-32 xl:py-38 xl:px-30 2xl:py-50 2xl:px-42">
                 <div class="space-y-3.5 text-center max-w-85 mx-auto sm:max-w-xl lg:text-left lg:max-w-full lg:mx-0">
                     <h2 class="headline-1 text-navy-blue-300 text-[24px]! leading-8! sm:leading-13! sm:text-[40px]! lg:max-w-2xl lg:mx-0 lg:text-[52px]! lg:leading-16! xl:text-[64px]! xl:leading-18! 2xl:leading-21.25! xl:max-w-3xl min-[1680px]:max-w-4xl!">
@@ -102,18 +102,6 @@
                         Tinggalkan jejak Anda dan bangun merek tepercaya dengan .com.
                     </p>
                 </div>
-            </div>
-            <div
-                x-data
-                data-analytics-name="video image | Not Just a Domain. A Declaration."
-                class="w-full h-full absolute top-0 left-0 group-hover/child:scale-110 transition-all duration-300 ease-in-out">
-                <button
-                    data-analytics-name="play button | Not Just a Domain. A Declaration."
-                    type="button"
-                    @click="$store.videoModal.openModal('6331201181112')"
-                    class="top-2/3 left-1/2 z-10 absolute -translate-x-1/2 -translate-y-1/2 cursor-pointer transition-all duration-300 ease-in-out hover:scale-110 min-[900px]:top-[60%] lg:top-[55%]">
-                    <x-icons.large-play-rounded width="130" height="130" fill="#304D6D" stroke="#304D6D" strokeWidth="4" class="size-10 min-[400px]:size-16 lg:size-20 2xl:size-32.5" />
-                </button>
             </div>
         </div>
     </section>
