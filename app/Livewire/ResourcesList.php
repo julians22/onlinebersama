@@ -46,7 +46,7 @@ class ResourcesList extends Component
     public function render()
     {
         $posts = Post::published()
-            ->latest()
+            ->orderBy('title'. 'asc')
             ->with('topics')
             ->when(!empty($this->selectedTopic), function ($query) { // Check if topic is not empty
                 return $query->whereHas('topics', function ($query) {
