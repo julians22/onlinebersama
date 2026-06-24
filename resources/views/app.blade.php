@@ -23,6 +23,30 @@
 
         <!-- ADOBE SCRIPT -->
         <script type="text/plain" class="optanon-category-C0001" src="//assets.adobedtm.com/1d6e8340b68d/b0c6093737cf/launch-adacc40eeb69-staging.min.js" defer></script>
+
+        <script type="text/plain" class="optanon-category-C0002">
+        (() => {
+
+            document.addEventListener('name-studio.verisign', function(evt) {
+
+                let {type, data} = evt.detail,
+                    actionType = data['action-type'],
+                    target = evt
+
+                if (actionType == 'submit') {
+                    const posts = JSON.stringify(data.query);
+                    console.log('Search');
+                    searchDomain();
+                }
+
+                if (actionType == 'action-performed') {
+                    console.log('registrationIntent');
+                    registrationIntent();
+                }
+
+            });
+        })();
+        </script>
     @endenv
 
     <!-- Fonts -->
