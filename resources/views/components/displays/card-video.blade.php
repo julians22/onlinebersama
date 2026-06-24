@@ -10,7 +10,7 @@
         </button>
     </div>
     <div class="overlay-slide mobile">
-        <h4 class="subheadline-4">{{ $title }}</h4>
+        <h4 class="subheadline-4 font-semibold!">{{ $title }}</h4>
         <p class="paragraph-sm">{{ $slot }}</p>
     </div>
 </div>

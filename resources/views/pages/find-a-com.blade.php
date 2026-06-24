@@ -25,7 +25,7 @@
     <section
         x-data
         data-analytics-level2="Three Tips For Choosing a .com Domain Name"
-        class="flex justify-center items-center gap-6 py-10 container flex-col-reverse md:py-20 lg:gap-12 lg:flex-row">
+        class="flex justify-center items-center gap-6 py-10 container flex-col-reverse md:py-12.5 lg:gap-12 lg:flex-row">
         <button
             data-analytics-name="video animation | Three Tips For Choosing a .com Domain Name"
             type="button"
@@ -36,7 +36,7 @@
                 <x-icons.play-rounded width="78" height="78" fill="#fff" />
             </span>
         </button>
-        <h2 class="text-navy-blue-300 headline-1 text-center md:text-[48px]! md:leading-15.5! lg:text-left lg:max-w-125">Tiga Tip Memilih Nama Domain .com</h2>
+        <h2 class="text-navy-blue-300 headline-1 text-center lg:text-left lg:max-w-125">Tiga Tip Memilih Nama Domain .com</h2>
     </section>
     {{-- End Three Tips --}}
 
@@ -44,7 +44,7 @@
     <section
         data-analytics-level2="How Do I Use a .com?"
         class="bg-light-gray-100 overflow-hidden!">
-        <div class="container py-10 px-0 md:pt-10 md:pb-19.5 xl:px-8">
+        <div class="container py-10 px-0 md:pt-12.5 xl:px-8">
             <h2 class="text-navy-blue-300 text-center -mb-6 px-4 headline-1 md:-mb-2 md:px-8">Bagaimana Cara Saya Menggunakan .com?</h2>
             <div class="online-bersama-how-to-use swiper">
                 <div class="swiper-wrapper">

@@ -21,8 +21,8 @@
                     <img class="w-20 lg:w-31.5" src="{{ asset('images/logo-com-white.svg') }}" alt="OnlineBersama">
                 </a>
             </div>
-            <div class="flex items-center lg:gap-x-4 xl:gap-x-10">
-                <ul class="hidden lg:gap-x-4 lg:flex xl:gap-x-10">
+            <div class="flex items-center gap-x-7.5">
+                <ul class="hidden gap-x-4 lg:flex xl:gap-x-8.75">
                     <li class="flex items-center text-right">
                         <a
                             data-analytics-name="{{ request()->routeIs('index') ? 'anchor | Why .com?' : 'text | Why .com?' }}"
@@ -47,7 +47,7 @@
                 </ul>
                 <a
                     data-analytics-name="button | Find a .com"
-                    href="{{ route('find') }}" class="px-4 py-0.5 font-medium text-navy-blue-300 text-[14px] btn-primary lg:text-[20px] lg:px-6 lg:py-2">
+                    href="{{ route('find') }}" class="px-4 py-0.5 font-medium text-navy-blue-300 text-[14px] btn-primary lg:text-[19px] lg:px-4 lg:py-2">
                     Temukan .com Anda
                 </a>
             </div>
@@ -66,37 +66,37 @@
     >
         <div class="absolute hidden top-0 left-1/2 -translate-x-1/2 w-full bg-white after:absolute after:top-0 after:right-0 after:w-1/2 after:h-full after:bg-light-gray-100 lg:block">
             <div class="relative z-10 max-w-480 flex bg-white mx-auto lg:flex-col xl:flex-row">
-                <div class="gap-6 grid grid-cols-3 p-10 h-max 2xl:gap-10">
-                    <a data-analytics-name="hover | .com for Websites" href="{{ route('websites') }}" class="group flex gap-5 hover:bg-mint-100 p-6 rounded-[10px] min-h-54.25 transition-all duration-300 ease-in-out">
-                        <div class="space-y-4">
-                            <h3 class="text-navy-blue-300 subheadline-3">.com untuk Situs Web</h3>
-                            <p class="font-bold text-deep-blue-300 paragraph-sm">Agar lebih mudah ditemukan, mulailah menggunakan situs web .com Anda sendiri.</p>
+                <div class="grid grid-cols-3 p-5 h-max">
+                    <a data-analytics-name="hover | .com for Websites" href="{{ route('websites') }}" class="group flex gap-3.75 hover:bg-mint-100 p-6 rounded-[10px] min-h-54.25 transition-all duration-300 ease-in-out">
+                        <div class="space-y-2">
+                            <h3 class="text-navy-blue-300 subheadline-3 text-[26px]! leading-7.5!">.com untuk Situs Web</h3>
+                            <p class="text-deep-blue-300 paragraph-sm text-[19px]! font-medium! leading-7!">Agar lebih mudah ditemukan, mulailah menggunakan situs web .com Anda sendiri.</p>
                         </div>
                         <div class="opacity-0 group-hover:opacity-100 mt-2.5 transition-all duration-300 ease-in-out shrink-0">
                             <x-icons.arrow-rounded width="24" height="24" fill="#304D6D" strokeWidth="1" />
                         </div>
                     </a>
-                    <a data-analytics-name="hover | .com for Email" href="{{ route('email') }}" class="group flex gap-5 hover:bg-mint-100 p-6 rounded-[10px] min-h-54.25 transition-all duration-300 ease-in-out">
-                        <div class="space-y-4">
-                            <h3 class="text-navy-blue-300 subheadline-3">.com untuk Email</h3>
-                            <p class="font-bold text-deep-blue-300 paragraph-sm">Jadikan email sebagai pernyataan kredibilitas.</p>
+                    <a data-analytics-name="hover | .com for Email" href="{{ route('email') }}" class="group flex gap-3.75 hover:bg-mint-100 p-6 rounded-[10px] min-h-54.25 transition-all duration-300 ease-in-out">
+                        <div class="space-y-2">
+                            <h3 class="text-navy-blue-300 subheadline-3 text-[26px]! leading-7.5!">.com untuk Email</h3>
+                            <p class="text-deep-blue-300 paragraph-sm text-[19px]! font-medium! leading-7!">Jadikan email sebagai pernyataan kredibilitas.</p>
                         </div>
                         <div class="opacity-0 group-hover:opacity-100 mt-2.5 transition-all duration-300 ease-in-out shrink-0">
                             <x-icons.arrow-rounded width="24" height="24" fill="#304D6D" strokeWidth="1" />
                         </div>
                     </a>
-                    <a data-analytics-name="hover | .com for Social Media & E-Commerce" href="{{ route('social-media') }}" class="group flex gap-5 hover:bg-mint-100 p-6 rounded-[10px] min-h-54.25 transition-all duration-300 ease-in-out">
-                        <div class="space-y-4">
-                            <h3 class="text-navy-blue-300 subheadline-3">.com untuk Media Sosial dan E-Commerce</h3>
-                            <p class="font-bold text-deep-blue-300 paragraph-sm">Dapatkan alamat web .com untuk eksistensi online Anda.</p>
+                    <a data-analytics-name="hover | .com for Social Media & E-Commerce" href="{{ route('social-media') }}" class="group flex gap-3.75 hover:bg-mint-100 p-6 rounded-[10px] min-h-54.25 transition-all duration-300 ease-in-out">
+                        <div class="space-y-2">
+                            <h3 class="text-navy-blue-300 subheadline-3 text-[26px]! leading-7.5!">.com untuk Media Sosial dan E-Commerce</h3>
+                            <p class="text-deep-blue-300 paragraph-sm text-[19px]! font-medium! leading-7!">Dapatkan alamat web .com untuk eksistensi online Anda.</p>
                         </div>
                         <div class="opacity-0 group-hover:opacity-100 mt-2.5 transition-all duration-300 ease-in-out shrink-0">
                             <x-icons.arrow-rounded width="24" height="24" fill="#304D6D" strokeWidth="1" />
                         </div>
                     </a>
                 </div>
-                <div class="flex flex-col gap-4 bg-light-gray-100 p-10 w-full xl:max-w-117.5">
-                    <button data-analytics-name="video image | Startup Experience" type="button" @click="$store.videoModal.openModal('6331201181112')" class="group relative rounded-2xl w-full aspect-video overflow-hidden cursor-pointer lg:max-w-117.5 xl:max-w-full 2xl:max-w-97.5 2xl:h-54.25">
+                <div class="flex flex-col gap-4 bg-light-gray-100 p-4 w-full xl:max-w-117.5">
+                    <button data-analytics-name="video image | Startup Experience" type="button" @click="$store.videoModal.openModal('6331201181112')" class="group relative rounded-2xl w-full aspect-video overflow-hidden cursor-pointer lg:max-w-117.5 xl:max-w-full 2xl:h-54.25">
                         <span data-analytics-name="play button | Startup Experience" class="transition-all duration-300 ease-in-out top-1/2 left-1/2 absolute size-14 -translate-x-1/2 -translate-y-1/2 group-hover:scale-110">
                             <x-icons.play width="56" height="56" fill="#fff" />
                         </span>

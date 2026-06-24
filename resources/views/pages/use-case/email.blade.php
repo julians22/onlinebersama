@@ -9,7 +9,7 @@
     <section
         data-analytics-level2="hero"
         class="bg-light-gray-100">
-        <div x-data class="flex justify-between items-center flex-col gap-10.75 py-10 container-medium md:gap-20 md:py-15.5 lg:flex-row">
+        <div x-data class="flex justify-between items-center flex-col gap-10 py-7.5 container-medium md:gap-20 md:py-12.5 lg:flex-row">
             <div class="space-y-4">
                 <h1 class="text-navy-blue-300 headline-1">.com untuk Email</h1>
                 <p class="text-deep-blue-300 paragraph-md">Jadikan email sebagai pernyataan kredibilitas. Dengan alamat email .com kustom, email bisnis Anda dapat terlihat lebih profesional.</p>
@@ -28,7 +28,7 @@
     {{-- Benefits --}}
     <section
         data-analytics-level2="Benefits of Custom Email"
-        class="py-10 container">
+        class="py-7.5 container md:py-12.5">
         <div class="pb-28 md:pb-40">
             <h2 class="sticky top-20 mb-10 text-navy-blue-300 text-center headline-1 md:top-24 lg:top-30">Manfaat Email Kustom</h2>
             <div class="flex flex-col gap-6 mx-auto md:max-w-208">
@@ -70,16 +70,16 @@
     <section
         data-analytics-level2="Three Ways To Use A Custom Email Address"
         class="bg-gradient-blue-double">
-        <div x-data class="flex justify-center items-center gap-10 px-10 py-10 flex-col container md:px-8 md:gap-12 md:py-20 xl:flex-row">
+        <div x-data class="flex justify-center items-center gap-10 px-10 py-7.5 flex-col container md:px-8 md:gap-12 md:py-12.5 xl:flex-row">
             <button data-analytics-name="video animation | Three Ways to Use a Custom Email Address" type="button" @click="$store.videoModal.openModal('6331201181112')" class="group relative rounded-[10px] overflow-hidden shrink-0 cursor-pointer">
                 <img class="size-full object-cover aspect-video" src="{{ asset('images/three-ways.jpg') }}" alt="">
                 <span data-analytics-name="play button | Three Ways to Use a Custom Email Address" class="transition-all duration-300 ease-in-out top-1/2 left-1/2 absolute -translate-x-1/2 -translate-y-1/2 group-hover:scale-110">
                     <x-icons.play-rounded width="78" height="78" fill="#fff" />
                 </span>
             </button>
-            <div class="space-y-2 max-w-150 text-white md:space-y-6 md:p-6">
-                <h2 class="headline-2">Tiga Cara Menggunakan Alamat Email Kustom</h2>
-                <p class="paragraph-md md:leading-8.5!">Siap membawa komunikasi Anda ke level selanjutnya? Cari tahu cara menggunakan alamat email kustom untuk mendukung bisnis Anda dalam video ini.</p>
+            <div class="space-y-6 max-w-150 text-white md:p-6">
+                <h2 class="headline-1">Tiga Cara Menggunakan Alamat Email Kustom</h2>
+                <p class="paragraph-md md:text-[24px]! md:leading-8.5!">Siap membawa komunikasi Anda ke level selanjutnya? Cari tahu cara menggunakan alamat email kustom untuk mendukung bisnis Anda dalam video ini.</p>
             </div>
         </div>
     </section>
@@ -88,9 +88,9 @@
     {{-- List Point --}}
     <section
         data-analytics-level2="How To Setup a Custom Email Address"
-        class="flex items-center gap-10 py-10 container flex-col md:py-19.5 xl:items-start xl:gap-28 xl:flex-row 2xl:gap-44">
+        class="flex items-center gap-10 py-7.5 container flex-col md:py-12.5 xl:items-start xl:gap-28 xl:flex-row 2xl:gap-44">
         <div x-data class="-top-12 flex flex-col gap-11.5 xl:sticky">
-            <h2 class="text-navy-blue-300 headline-1 text-center md:text-[48px]! md:leading-15.5!">Cara Menyiapkan Alamat <span class="sm:block">Email Kustom</span></h2>
+            <h2 class="text-navy-blue-300 headline-1 text-center">Cara Menyiapkan Alamat <span class="sm:block">Email Kustom</span></h2>
             <div class="relative rounded-[10px] overflow-hidden">
                 <img class="size-full aspect-video max-w-150 xl:max-w-full" src="{{ asset('images/usecase-email.jpg') }}" alt="">
             </div>
@@ -140,7 +140,7 @@
     <section
         data-analytics-level2="How Do I Use a .com?"
         class="bg-light-gray-100">
-        <div class="flex flex-col gap-10 py-10 container md:pb-19.5">
+        <div class="flex flex-col gap-10 py-7.5 container md:py-12.5">
             <h2 class="text-navy-blue-300 text-center headline-1">Bagaimana Cara Saya Menggunakan .com?</h2>
             <div class="gap-8 grid grid-cols-1 md:grid-cols-2">
                 <x-displays.card-inside
@@ -166,7 +166,7 @@
         class="relative bg-[#F0EAE4]">
         <img class="mx-auto object-cover hidden h-150 md:block 2xl:h-auto" src="{{ asset('images/hero-resources-usecase.jpg') }}" alt="">
         <img class="w-full block h-187.5 object-cover md:h-auto md:hidden" src="{{ asset('images/hero-resources-usecase-mobile.jpg') }}" alt="">
-        <div class="top-0 left-1/2 absolute flex flex-col justify-start gap-6 size-full -translate-x-1/2 py-10 container md:py-0 md:justify-center">
+        <div class="top-0 left-1/2 absolute flex flex-col justify-start gap-6 size-full -translate-x-1/2 py-7.5 container md:py-0 md:justify-center">
             <h2 class="text-navy-blue-300 headline-1">Mencari sumber <span class="block">informasi lainnya?</span></h2>
             <p class="max-w-150 text-deep-blue-300 paragraph-md md:leading-8.5!">Jelajahi Panduan Belajar untuk menemukan semua artikel, video, dan banyak lagi tentang cara menggunakan domain .com.</p>
             <a
@@ -182,7 +182,7 @@
     {{-- Search --}}
     <section
         data-analytics-level2="search"
-        class="bg-deep-blue-300 py-16 lg:py-22">
+        class="bg-deep-blue-300 py-7.5 md:py-12.5">
         <div class="container flex flex-col justify-center items-center">
             <h2 class="subheadline-2 text-white text-center max-w-xs mx-auto sm:mx-0 sm:max-w-full lg:text-[40px]!">
                 Temukan Nama Domain .com

@@ -11,7 +11,7 @@
         class="relative">
         <img class="hidden w-full h-150 object-cover aspect-16/5 md:block" src="{{ asset('images/hero-resources.jpg') }}" alt="">
         <img class="block w-full h-132.5 object-cover md:hidden" src="{{ asset('images/hero-resources-mobile.jpg') }}" alt="">
-        <div class="top-0 left-1/2 absolute flex items-end py-10 size-full -translate-x-1/2 container md:items-center md:py-19.5">
+        <div class="top-0 left-1/2 absolute flex items-end py-10 size-full -translate-x-1/2 container-medium md:items-center md:py-19.5">
             <div class="space-y-4 text-white">
                 <h1 class="headline-1">Panduan Belajar</h1>
                 <p class="max-w-162.5 paragraph-md">Temukan cara memaksimalkan nama domain .com Anda dengan kumpulan artikel, video, dan panduan kami.</p>
@@ -31,10 +31,10 @@
     {{-- Small Business Stories --}}
     <section
         data-analytics-level2="Small Business Stories"
-        class="max-w-403 mx-auto py-10 md:pt-10 md:pb-19.5">
+        class="max-w-403 mx-auto py-10 md:py-12.5">
         <div class="space-y-3 text-center mb-6 px-4 md:mb-8 md:px-8 xl:px-0">
             <h2 class="headline-1 text-navy-blue-300">Kisah Usaha Kecil</h2>
-            <p class="paragraph-md text-deep-blue-300">Lihat bagaimana bisnis menggunakan nama domain .com untuk membantu mereka mencapai tujuan. </p>
+            <p class="paragraph-md text-deep-blue-300 text-[18px]! md:text-[26px]!">Lihat bagaimana bisnis menggunakan nama domain .com untuk membantu mereka mencapai tujuan.</p>
         </div>
         <div class="online-bersama-small-business-story swiper relative">
             <div data-analytics-level3="carousel" class="custom-swiper-button-prev z-9999 absolute inset-y-0 left-0 w-1/4 cursor-pointer"></div>
@@ -81,10 +81,10 @@
         id="resources"
         data-analytics-level2="Browse All Resources"
         class="bg-deep-blue-300 px-4 md:px-8">
-        <div class="max-w-300 mx-auto py-10 md:pb-19.5">
+        <div class="max-w-300 mx-auto py-10 md:py-12.5">
             <div class="space-y-3 text-center text-white mb-10">
                 <h2 class="headline-1">Telusuri Semua Sumber Informasi</h2>
-                <p class="paragraph-md">Jelajahi artikel, video, dan lainnya untuk mendukung perjalanan Anda.</p>
+                <p class="paragraph-md text-[18px]! md:text-[26px]!">Jelajahi artikel, video, dan lainnya untuk mendukung perjalanan Anda.</p>
             </div>
             <livewire:resources-list
                 topic="{{ request()->query('topic') }}"
@@ -97,7 +97,7 @@
     {{-- Entrepreneurship Journey --}}
     <section
         data-analytics-level2="The Entrepreneurial Journey"
-        class="flex flex-col gap-21.25 py-10 max-w-250 mx-auto px-4 md:px-8 md:py-20">
+        class="flex flex-col gap-21.25 py-10 max-w-250 mx-auto px-4 md:px-8 md:py-12.5">
         <div class="space-y-3 text-center">
             <h2 class="text-navy-blue-300 text-center headline-1">Perjalanan Kewirausahaan</h2>
             <p class="paragraph-md text-deep-blue-300">Mulai dari membangun tim hingga memasarkan perusahaan Anda secara efektif, wirausahawan berpengalaman Henrik Scheel dapat membantu Anda membuka potensi pola pikir kewirausahaan.</p>
@@ -146,7 +146,7 @@
     {{-- Search --}}
     <section
         data-analytics-level2="search"
-        class="bg-deep-blue-300 py-16 lg:py-22">
+        class="bg-deep-blue-300 py-10 md:py-12.5">
         <div class="container flex flex-col justify-center items-center">
             <h2 class="subheadline-2 text-white text-center max-w-xs mx-auto sm:mx-0 sm:max-w-full lg:text-[40px]!">
                 Temukan Nama Domain .com

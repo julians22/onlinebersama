@@ -9,7 +9,7 @@
     <section
         data-analytics-level2="hero"
         class="bg-light-gray-100">
-        <div x-data class="flex justify-between items-center flex-col gap-10.75 py-10 container-medium md:gap-20 md:py-15.5 lg:flex-row">
+        <div x-data class="flex justify-between items-center flex-col gap-10 py-7.5 container-medium md:gap-20 md:py-12.5 lg:flex-row">
             <div class="space-y-4">
                 <h1 class="text-navy-blue-300 headline-1">.com untuk <span class="xl:block">Media Sosial dan</span> E-Commerce</h1>
                 <p class="text-deep-blue-300 paragraph-md">Dengan penerusan domain, Anda dapat membuat tautan ke toko online atau halaman media sosial dari nama domain .com yang mudah diingat.</p>
@@ -28,7 +28,7 @@
     {{-- Benefits --}}
     <section
         data-analytics-level2="Benefits of Domain Forwarding"
-        class="py-10 container">
+        class="py-7.5 container md:py-12.5">
         <div class="pb-30 md:pb-48">
             <h2 class="sticky top-20 mb-10 text-navy-blue-300 text-center headline-1 md:top-24 lg:top-30">Manfaat Penerusan Domain</span></h2>
             <div class="flex flex-col gap-6 mx-auto md:max-w-208">
@@ -69,17 +69,17 @@
     <section
         data-analytics-level2="Two Ways to Use Domain Forwarding"
         class="bg-deep-blue-300">
-        <div class="container-medium pt-10 pb-19.5">
+        <div class="container-medium py-7.5 md:py-12.5">
             <h2 class="mb-6 text-white text-center headline-1 max-w-4xl mx-auto md:mb-13">Dua Cara untuk Menggunakan Penerusan Domain</h2>
             <div x-data="{ active: 'social-media' }" class="flex flex-col justify-center gap-4 md:flex-row">
                 <div class="flex flex-col gap-4 md:max-w-xs">
-                    <button data-analytics-level3="Social Media" type="button" @click="active = 'social-media'" :class="active === 'social-media' && 'bg-white! hover:bg-white! text-deep-blue-300! hover:pl-6!'" class="transition-all duration-300 ease-in-out space-y-3 bg-navy-blue-300 p-6 rounded-[10px] h-full text-white text-left cursor-pointer hover:bg-[#2b4562] hover:pl-7.25">
-                        <h3 class="subheadline-3 text-[32px]!" data-analytics-level3="Social Media">Media Sosial</h3>
-                        <p class="paragraph-md text-[24px]!" data-analytics-level3="Social Media">Buat lebih banyak pasang mata tertuju pada halaman Anda.</p>
+                    <button data-analytics-level3="Social Media" type="button" @click="active = 'social-media'" :class="active === 'social-media' && 'bg-white! hover:bg-white! text-deep-blue-300! hover:pl-6!'" class="transition-all duration-300 ease-in-out space-y-3 bg-navy-blue-300 p-6 rounded-[10px] h-full text-white text-left cursor-pointer md:space-y-2 hover:bg-[#2b4562] hover:pl-7.25">
+                        <h3 class="subheadline-4 font-semibold! text-[24px]! leading-7.5! md:text-[26px]!" data-analytics-level3="Social Media">Media Sosial</h3>
+                        <p class="paragraph-sm font-medium! text-[18px]! md:text-[20px]!" data-analytics-level3="Social Media">Buat lebih banyak pasang mata tertuju pada halaman Anda.</p>
                     </button>
-                    <button data-analytics-level3="Online Store" type="button" @click="active = 'online-store'" :class="active === 'online-store' && 'bg-white! hover:bg-white! text-deep-blue-300! hover:pl-6!'" class="transition-all duration-300 ease-in-out space-y-3 bg-navy-blue-300 p-6 rounded-[10px] h-full text-white text-left cursor-pointer hover:bg-[#2b4562] hover:pl-7.25">
-                        <h3 class="subheadline-3 text-[32px]!" data-analytics-level3="Online Store">Toko Online</h3>
-                        <p class="paragraph-md text-[24px]!" data-analytics-level3="Online Store">Permudah pencarian bisnis Anda.</p>
+                    <button data-analytics-level3="Online Store" type="button" @click="active = 'online-store'" :class="active === 'online-store' && 'bg-white! hover:bg-white! text-deep-blue-300! hover:pl-6!'" class="transition-all duration-300 ease-in-out space-y-3 bg-navy-blue-300 p-6 rounded-[10px] h-full text-white text-left cursor-pointer md:space-y-2 hover:bg-[#2b4562] hover:pl-7.25">
+                        <h3 class="subheadline-4 font-semibold! text-[24px]! leading-7.5! md:text-[26px]!" data-analytics-level3="Online Store">Toko Online</h3>
+                        <p class="paragraph-sm font-medium! text-[18px]! leading-6.5! md:leading-8! md:text-[20px]!" data-analytics-level3="Online Store">Permudah pencarian bisnis Anda.</p>
                     </button>
                 </div>
                 <a x-show="active === 'social-media'" data-analytics-level3="right image" data-analytics-name="image | Reach more people by connecting your social page to a custom .com web address."
@@ -112,9 +112,9 @@
     {{-- List Point --}}
     <section
         data-analytics-level2="How to Forward Your Domain Name"
-        class="flex items-center gap-10 py-10 container flex-col md:py-19.5 xl:items-start xl:gap-28 xl:flex-row 2xl:gap-44">
+        class="flex items-center gap-10 py-7.5 container flex-col md:py-12.5 xl:items-start xl:gap-28 xl:flex-row 2xl:gap-44">
         <div x-data class="-top-12 flex flex-col gap-11.5 xl:sticky">
-            <h2 class="text-navy-blue-300 headline-1 text-center md:text-[48px]! md:leading-15.5!">Cara Meneruskan Nama <span class="sm:block">Domain Anda</span></h2>
+            <h2 class="text-navy-blue-300 headline-1 text-center">Cara Meneruskan Nama <span class="sm:block">Domain Anda</span></h2>
             <div class="relative rounded-[10px] overflow-hidden">
                 <img class="size-full aspect-video max-w-150 xl:max-w-full" src="{{ asset('images/usecase-social-media.jpg') }}" alt="">
             </div>
@@ -164,7 +164,7 @@
     <section
         data-analytics-level2="How Do I Use a .com?"
         class="bg-light-gray-100">
-        <div class="flex flex-col gap-10 py-10 container md:pb-19.5">
+        <div class="flex flex-col gap-10 py-7.5 container md:py-12.5">
             <h2 class="text-navy-blue-300 text-center headline-1">Bagaimana Cara Saya Menggunakan .com?</h2>
             <div class="gap-8 grid grid-cols-1 md:grid-cols-2">
                 <x-displays.card-inside
@@ -190,7 +190,7 @@
         class="relative bg-[#F0EAE4]">
         <img class="mx-auto object-cover hidden h-150 md:block 2xl:h-auto" src="{{ asset('images/hero-resources-usecase.jpg') }}" alt="">
         <img class="w-full block h-187.5 object-cover md:h-auto md:hidden" src="{{ asset('images/hero-resources-usecase-mobile.jpg') }}" alt="">
-        <div class="top-0 left-1/2 absolute flex flex-col justify-start gap-6 size-full -translate-x-1/2 py-10 container md:py-0 md:justify-center">
+        <div class="top-0 left-1/2 absolute flex flex-col justify-start gap-6 size-full -translate-x-1/2 py-7.5 container md:py-0 md:justify-center">
             <h2 class="text-navy-blue-300 headline-1">Mencari sumber <span class="block">informasi lainnya?</span></h2>
             <p class="max-w-150 text-deep-blue-300 paragraph-md md:leading-8.5!">Jelajahi Panduan Belajar untuk menemukan semua artikel, video, dan banyak lagi tentang cara menggunakan domain .com.</p>
             <a
@@ -206,7 +206,7 @@
     {{-- Search --}}
     <section
         data-analytics-level2="search"
-        class="bg-deep-blue-300 py-16 lg:py-22">
+        class="bg-deep-blue-300 py-7.5 md:py-12.5">
         <div class="container flex flex-col justify-center items-center">
             <h2 class="subheadline-2 text-white text-center max-w-xs mx-auto sm:mx-0 sm:max-w-full lg:text-[40px]!">
                 Temukan Nama Domain .com
