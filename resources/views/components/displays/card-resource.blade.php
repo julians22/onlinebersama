@@ -5,14 +5,9 @@
         </a>
     </figure>
     <div class="flex flex-col gap-y-4">
-        {{-- Todo fix --}}
-        @if(is_array($tags))
-            <div class="flex flex-wrap gap-2.5 min-h-7">
-                @foreach($tags as $tag)
-                    <span class="font-sans text-sm bg-mint-200 text-deep-blue-300 font-semibold rounded-[5px] px-2 py-1">{{ $tag }}</span>
-                @endforeach
-            </div>
-        @endif
+        <div class="flex flex-wrap gap-2.5 min-h-7">
+            <span class="font-sans text-sm bg-mint-200 text-deep-blue-300 font-semibold rounded-[5px] px-2 py-1">{{ $rendered_tag }}</span>
+        </div>
         <div class="min-h-28.5">
             <a href="{{ $route }}">
                 <h2 class="subheadline-3 text-deep-blue-300 line-clamp-3 text-[26px]! md:text-[28px]!">{{ $slot }}</h2>

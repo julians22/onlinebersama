@@ -34,7 +34,7 @@
             <div data-analytics-level3="card-{{ $index + 1 }}" wire:key="post-{{ $index }}">
                 <x-displays.card-resource
                     data-analytics="{{ $post->data_analytics ?? $post->title }}"
-                    :tags="$post->topics->pluck('name')->toArray()"
+                    :type="$post->type"
                     :image="$post->thumbnail_file_name"
                     route="{{ route('resources.handle_second_route', $post->route_tools) }}">
                     {{ $post->title }}
