@@ -22,7 +22,7 @@
             <p>Idealnya, nama bisnis Anda dapat mencerminkan proposisi nilai unik — yaitu hal yang ingin Anda lakukan lebih baik dibanding siapa pun. Jika hal tersebut bisa tercermin dalam nama Anda, produk Anda akan mungkin akan laku dengan sendirinya!</p>
         </x-articles.tip-callout>
         <div class="flex flex-col gap-8 mt-8">
-            <x-articles.e-book />
+            <x-articles.e-book :data="$post->ebook_url" />
             <x-articles.related-article :data="$post->relatedOneArticle" />
         </div>
     </div>

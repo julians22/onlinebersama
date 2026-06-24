@@ -7,6 +7,7 @@ use Filament\Forms\Components\Repeater;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\ToggleButtons;
+use Filament\Schemas\Components\Flex;
 use Filament\Schemas\Components\Grid;
 use Filament\Schemas\Components\Section;
 use Filament\Schemas\Components\Utilities\Set;
@@ -51,10 +52,12 @@ class PostForm
                                                     ->options([
                                                         Post::TYPE_ARTICLE => 'Artikel',
                                                         Post::TYPE_VIDEO => 'Video',
+                                                        Post::TYPE_EBOOK => 'E-Book',
                                                     ])
                                                     ->icons([
                                                         Post::TYPE_ARTICLE => 'heroicon-o-document-text',
                                                         Post::TYPE_VIDEO => 'heroicon-o-video-camera',
+                                                        Post::TYPE_EBOOK => 'heroicon-o-book-open',
                                                     ]),
                                                 ToggleButtons::make('status')
                                                     ->label('Status')
@@ -85,28 +88,34 @@ class PostForm
                                             })
                                             ->required(),
                                         // slug akan di-generate otomatis dari title, tapi tetap bisa diedit manual jika diperlukan
-                                        TextInput::make('slug')
-                                            ->live()
-                                            ->required(),
-                                            Select::make('url_name')
-                                            ->label('URL Name')
-                                            ->options(
-                                                config('onlinebersama.custom_article_route')
-                                            )
-                                            ->default(null)
-                                            ->nullable(),
+                                        Flex::make([
+                                                Select::make('url_name')
+                                                    ->label('URL Name')
+                                                    ->options(
+                                                        config('onlinebersama.custom_article_route')
+                                                    )
+                                                    ->default(null)
+                                                    ->nullable(),
+                                                TextInput::make('slug')
+                                                    ->live()
+                                                    ->required(),
+                                            ]),
                                         TextInput::make('thumbnail_file_name')
-                                            ->label('Thumbnail File Name'),
-                                        TextInput::make('data_analytics')
-                                            ->label('Data Analytics (Title)')
-                                            ->helperText('Gunakan Bahasa Inggris. Contoh: "How to Create a Landing Page"'),
-                                        TextInput::make('writer')
-                                            ->label('Penulis')
-                                            ->prefixIcon('heroicon-o-user'),
+                                            ->label('Thumbnail File Name')
+                                            ->helperText('Digunakan untuk mengambil gambar thumbnail. Nama file disamakan dengan nama file.'),
                                         TextInput::make('read_time')
                                             ->label('Waktu Baca')
                                             ->prefixIcon('heroicon-o-clock')
                                             ->required(),
+                                        TextInput::make('writer')
+                                            ->label('Penulis')
+                                            ->prefixIcon('heroicon-o-user'),
+                                        TextInput::make('video_id')
+                                            ->label('Video ID')
+                                            ->prefixIcon('heroicon-o-video-camera'),
+                                        TextInput::make('ebook_url')
+                                            ->label('E-Book URL')
+                                            ->prefixIcon('heroicon-o-book-open'),
                                         Select::make('template_view_path')
                                             ->label('Template View Path')
                                             ->options((new self())->template_view_options)
@@ -124,13 +133,16 @@ class PostForm
                         Grid::make()
                             ->columnSpan(2)
                             ->schema([
-                                Section::make('Meta Tags (SEO)')->schema([
+                                Section::make('Meta Tags (SEO) & Analytics')->schema([
                                     TextInput::make('meta_title')
                                         ->label('Meta Title'),
                                     TextInput::make('meta_description')
                                         ->label('Meta Description'),
                                     TextInput::make('meta_keywords')
                                         ->label('Meta Keywords'),
+                                    TextInput::make('data_analytics')
+                                        ->label('Data Analytics (Title)')
+                                        ->helperText('Gunakan Bahasa Inggris. Contoh: "How to Create a Landing Page"'),
                                 ])->columnSpanFull(),
                                 Section::make('Topik (Tags)')->schema([
                                     Repeater::make('pivotTopics') // Mengambil relasi pivot di Model Post
