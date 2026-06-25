@@ -144,134 +144,6 @@
         gtag('config', 'AW-708118123');
     </script>
 
-    <!-- Scripts -->
-    <script>
-        (() => {
-            class NameStudioSearchProcessor {
-                constructor(paramName) {
-                    this.paramName = paramName || 'search';
-                    this.params = new URLSearchParams(location.search);
-                }
-
-                get term() {
-                    return this.params.get(this.paramName);
-                }
-
-                get component() {
-                    return document.querySelector('name-studio');
-                }
-
-                isTermAvailable() {
-                    return this.params.has(this.paramName) && /.+/.test(this.term);
-                }
-
-                configureComponent(callback) {
-                    const listener = () => {
-                        if ('interactive' === document.readyState) {
-                            document.removeEventListener('readystatechange', listener);
-                            callback?.(this.component, this.params);
-                        }
-                    };
-
-                    document.addEventListener('readystatechange', listener);
-                }
-
-                executeSearch(waitFor) {
-                    const preconditions = Promise.all([...[waitFor].flat(), this.whenReady()]);
-
-                    let result = Promise.resolve();
-
-                    if (this.isTermAvailable()) {
-                        result = preconditions.then(() => {
-                            this.component.submit(this.term);
-
-                            const $scroll_target = document.querySelector('#cari-com');
-                            $scroll_target.scrollIntoView(true, {
-                                behavior: 'smooth',
-                                block: 'start',
-                                inline: 'nearest'
-                            });
-                        });
-                    }
-
-                    return result;
-                }
-
-                whenReady() {
-                    return new Promise((resolve) => {
-                        const readyListener = ({
-                            detail: {
-                                type
-                            }
-                        }) => {
-                            if ('ready' === type) {
-                                resolve();
-                                document.removeEventListener(
-                                    'name-studio.verisign',
-                                    readyListener
-                                );
-                            }
-                        };
-
-                        document.addEventListener('name-studio.verisign', readyListener);
-                    });
-                }
-
-                static process({
-                    configureComponent = () => {},
-                    preconditions = [],
-                    searchParamName = 'search'
-                }) {
-                    const instance = new NameStudioSearchProcessor(searchParamName);
-
-                    instance.configureComponent(configureComponent);
-
-                    return instance.executeSearch(preconditions);
-                }
-            }
-
-            //the processor can be configured to wait for one or more preconditions by supplying promises to the waitFor param.
-            const waitForAnalytics = new Promise((resolve) => setTimeout(resolve, 0));
-
-            //the configureComponent option allows the component configuration to be modified prior to loading. EG. changing the view
-            const configureComponent = ($ns, params) => {
-                const view = params.get('nswm-views');
-
-                if (view && ['keyword', 'list'].includes(view)) {
-                    $ns.setAttribute('views', view);
-                }
-            };
-
-            const processorConfig = {
-                preconditions: [waitForAnalytics],
-                configureComponent,
-                searchParamName: 'cari-domain' //changes the name of the query parameter containing the search term
-            };
-
-            NameStudioSearchProcessor.process(processorConfig).then(() => {
-
-            });
-        })();
-    </script>
-
-    <!-- Adoube launch scripts -->
-    <script type="text/plain" class="optanon-category-C0001">
-        const waitForAnalytics = new Promise((resolve, reject) => {
-            const waitForAdobe = () => {
-                if(typeof _satellite !== "undefined"){
-                    resolve();
-                } else {
-                    setTimeout(waitForAdobe, 100);
-                }
-            }
-            waitForAdobe();
-        });
-
-        waitForAnalytics.then(() => {
-            _satellite.pageBottom();
-        });
-    </script>
-
     @endenv
 
     <script id="namestudio-scripts" data-ns-revision="2026-06-13">
@@ -313,5 +185,24 @@
     <x-footer />
     @livewireScripts
     @stack('scripts')
+
+    <!-- Adoube launch scripts -->
+    <script type="text/plain" class="optanon-category-C0001">
+        const waitForAnalytics = new Promise((resolve, reject) => {
+            const waitForAdobe = () => {
+                if(typeof _satellite !== "undefined"){
+                    resolve();
+                } else {
+                    setTimeout(waitForAdobe, 100);
+                }
+            }
+            waitForAdobe();
+        });
+
+        waitForAnalytics.then(() => {
+            _satellite.pageBottom();
+        });
+    </script>
+
 </body>
 </html>
