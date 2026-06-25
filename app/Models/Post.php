@@ -17,13 +17,14 @@ class Post extends Model
 
     const TYPE_ARTICLE = 'article';
     const TYPE_VIDEO = 'video';
+    const TYPE_EBOOK = 'ebook';
 
     /**
      * The attributes that are mass assignable.
      *
      * @var array
      */
-    protected $fillable = ['title', 'slug', 'type', 'status', 'read_time', 'template_view_path', 'meta_title', 'meta_description', 'meta_keywords', 'data_analytics', 'writer', 'related_slug', 'published_at', 'url_name', 'thumbnail_file_name'];
+    protected $fillable = ['title', 'slug', 'type', 'status', 'read_time', 'template_view_path', 'meta_title', 'meta_description', 'meta_keywords', 'data_analytics', 'writer', 'related_slug', 'published_at', 'url_name', 'thumbnail_file_name', 'video_id', 'ebook_url'];
 
     /**
      * The accessors to append to the model's array form.

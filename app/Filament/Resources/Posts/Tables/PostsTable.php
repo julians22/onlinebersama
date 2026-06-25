@@ -21,18 +21,25 @@ class PostsTable
                 TextColumn::make('title')
                     ->searchable()
                     ->sortable(),
-                IconColumn::make('type')
+                TextColumn::make('type')
                     ->label('Tipe')
                     ->searchable()
+                    ->formatStateUsing(fn (string $state): string => match ($state) {
+                        Post::TYPE_ARTICLE => 'Artikel',
+                        Post::TYPE_VIDEO => 'Video',
+                        Post::TYPE_EBOOK => 'E-Book',
+                    })
                     ->color('primary')
                     ->icon(fn (string $state): Heroicon => match ($state) {
                         Post::TYPE_ARTICLE => Heroicon::OutlinedDocumentText,
                         Post::TYPE_VIDEO => Heroicon::OutlinedVideoCamera,
+                        Post::TYPE_EBOOK => Heroicon::OutlinedBookOpen,
+                    })
+                    ->iconColor(fn (string $state): string => match ($state) {
+                        Post::TYPE_ARTICLE => 'primary',
+                        Post::TYPE_VIDEO => 'primary',
+                        Post::TYPE_EBOOK => 'primary',
                     }),
-                TextColumn::make('writer')
-                    ->label('Penulis')
-                    ->searchable()
-                    ->placeholder('Tidak ada penulis'),
                 TextColumn::make('topics.name')
                     ->placeholder('Tidak ada topik')
                     ->label('Topik')

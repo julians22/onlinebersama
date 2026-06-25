@@ -9,8 +9,7 @@ class ResourcesPageController extends Controller
 {
     public function index()
     {
-        $topics = Topic::all();
-
+        $topics = Topic::orderBy('name', 'asc')->get();
         return view('contents.index', compact('topics'));
     }
 

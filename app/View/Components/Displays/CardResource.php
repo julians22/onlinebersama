@@ -8,6 +8,8 @@ use Illuminate\View\Component;
 
 class CardResource extends Component
 {
+    public string $rendered_tag;
+
     /**
      * Create a new component instance.
      */
@@ -15,9 +17,23 @@ class CardResource extends Component
         public ?string $dataAnalytics,
         public ?string $image,
         public ?string $alt,
-        public ?array $tags,
+        public string $type,
         public string $route
-    ) {}
+    ) {
+        switch ($type) {
+            case 'article':
+                $this->rendered_tag = 'Artikel';
+                break;
+            case 'video':
+                $this->rendered_tag = 'Video';
+                break;
+            case 'ebook':
+                $this->rendered_tag = 'E-Book';
+                break;
+            default:
+                $this->rendered_tag = 'Artikel';
+        }
+    }
 
     /**
      * Get the view / contents that represent the component.

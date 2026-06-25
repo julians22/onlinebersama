@@ -31,10 +31,10 @@
                     @endif
                     <p class="paragraph-sm text-deep-blue-300">Waktu baca rata-rata {{ $post->read_time }}</p>
                 </div>
-                <div x-data @if ($post->writer) data-analytics-level3="{{ $post->data_analytics ?? $post->title }}" @endif class="relative aspect-video w-full rounded-[10px] overflow-hidden xl:w-156.75">
-                    <img @if ($post->writer) data-analytics-name="video image | {{ $post->data_analytics ?? $post->title }}" @endif class="w-full" src="{{ imageArticle($post->thumbnail_file_name) }}" alt="">
-                    @if ($post->writer)
-                        <button data-analytics-name="play button | {{ $post->data_analytics ?? $post->title }}" type="button" @click="$store.videoModal.openModal('6331201181112')" class="group absolute size-full inset-0 flex justify-center items-center bg-gradient-video cursor-pointer">
+                <div x-data="{ videoId: '{{ $post->video_id }}' }" @if ($post->video_id) data-analytics-level3="{{ $post->data_analytics ?? $post->title }}" @endif class="relative aspect-video w-full rounded-[10px] overflow-hidden xl:w-156.75">
+                    <img @if ($post->video_id) data-analytics-name="video image | {{ $post->data_analytics ?? $post->title }}" @endif class="w-full" src="{{ imageArticle($post->thumbnail_file_name) }}" alt="">
+                    @if ($post->video_id)
+                        <button data-analytics-name="play button | {{ $post->data_analytics ?? $post->title }}" type="button" @click="$store.videoModal.openModal(videoId)" class="group absolute size-full inset-0 flex justify-center items-center bg-gradient-video cursor-pointer">
                             <x-icons.play-rounded width="78" height="78" fill="#fff" class="transition-all duration-300 ease-in-out group-hover:scale-110" />
                         </button>
                     @endif
@@ -98,6 +98,7 @@
                         <div data-analytics-level3="{{ $post->data_analytics ?? $post->title }}" class="swiper-slide">
                             <x-displays.card-resource
                                 data-analytics="{{ $post->data_analytics ?? $post->title }}"
+                                :type="$post->type"
                                 :image="$post->thumbnail_file_name"
                                 route="{{ route('resources.handle_second_route', $post->route_tools) }}">
                                 {{ $post->title }}

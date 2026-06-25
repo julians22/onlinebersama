@@ -71,7 +71,7 @@
             <p>Semoga saya telah memberikan banyak hal untuk dipertimbangkan saat Anda memulai bisnis dan membangun situs web Anda. Saya mendoakan yang terbaik untuk Anda dan menantikan kesuksesan Anda secara online.</p>
         </x-articles.tip-callout>
         <div class="flex flex-col gap-8 mt-8">
-            <x-articles.e-book />
+            <x-articles.e-book :data="$post->ebook_url" />
             <x-articles.related-article :data="$post->relatedOneArticle" />
         </div>
     </div>
