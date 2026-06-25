@@ -49,7 +49,7 @@
         </script>
 
         <!-- NameStudio start-->
-        <script async type="module" src="https://nswm-service.verisign.com/3.0/name-studio.js"></script>
+        <script type="module" src="https://nswm-service.verisign.com/3.0/name-studio.js"></script>
         <!-- NameStudio end-->
 
 
