@@ -19,6 +19,50 @@
         <script type="text/javascript">
         function OptanonWrapper() { }
         </script>
+
+        <script>
+            (() => {
+                window.activeFour = false;
+                let isReady = false;
+
+                document.addEventListener('name-studio.verisign', ({ detail: { type } }) => {
+                    if (type === 'ready') isReady = true;
+                });
+
+                window.OptanonWrapper = function () {
+                    const FUNCTIONAL_GROUP = 'C0003';
+                    const TARGETING_GROUP  = 'C0004';
+
+                    const raw = (window.OptanonActiveGroups || '').trim();
+                    const userGroups = raw
+                    ? raw.replace(/^\s*,|,\s*$/g,'').split(',').map(s => s.trim())
+                    : [];
+
+                    const updatePrivacySettings = () => {
+                    const $ns = document.querySelector('name-studio');
+                    if (!$ns) return;
+
+                    const settings = {
+                        analytic: false,
+                        functional: userGroups.includes(FUNCTIONAL_GROUP)
+                    };
+
+                    if (isReady && $ns.api?.privacy?.updateSettings) {
+                        $ns.api.privacy.updateSettings(settings);
+                    } else {
+                        setTimeout(updatePrivacySettings, 250);
+                    }
+                    };
+
+                    updatePrivacySettings();
+
+                    if (userGroups.includes(TARGETING_GROUP)) {
+                    window.activeFour = true;
+                    console.log('enter "c0004"');
+                    }
+                };
+                })();
+            </script>
         <!-- OneTrust Cookies Consent Notice end for onlinebersama.com -->
 
         <!-- NameStudio start-->
@@ -30,111 +74,25 @@
 
         <script type="text/plain" class="optanon-category-C0002">
         (() => {
-
-            document.addEventListener('name-studio.verisign', function(evt) {
-
-                let {type, data} = evt.detail,
-                    actionType = data['action-type'],
-                    target = evt
-
-                if (actionType == 'submit') {
-                    const posts = JSON.stringify(data.query);
-                    console.log('Search');
-                    searchDomain();
-                }
-
-                if (actionType == 'action-performed') {
-                    console.log('registrationIntent');
-                    registrationIntent();
-                }
-
-            });
-        })();
-        </script>
-
-
-        <script type="text/javascript">
-        // New script same like bereadywith.com
-        (() => {
-            window.activeFour = false;
-            let isReady = false;
-
-            document.addEventListener('name-studio.verisign', function({target: $ns, detail: {type, data}}) {
-                let actionType = data['action-type'];
+            const addClickHandlers = ({target: $ns, detail: {type}}) => {
+                if (type !== "ready") return;
 
                 if('ready' === type) {
-                    isReady = true;
-                }
+                    const $controls = $ns.shadowRoot.querySelector('namestudio-controls');
 
-                if (actionType == 'submit') {
-                    const posts = JSON.stringify(data.query);
-                }
-
-                const $controls = $ns.shadowRoot.querySelector('namestudio-controls');
-                const $search = $controls.querySelector('input[type=search]');
-                const $terms = $controls.querySelector('button[data-type=terms],.controls-menu-terms');
-                const $button = $controls.querySelector('button[part-suffix=btnsubmit]');
-
-                console.log({$controls, $search, $terms, $button});
-
-                let attributes = {
-                    'data-analytics-level1': 'body',
-                    'data-analytics-level2': 'cari',
-                    'data-analytics-name': {
-                        'search': 'cari',
-                        'terms': 'persyaratan-layanan'
-                    }
-                }
-
-                Object.keys(attributes).forEach((key) => {
-
-                    if (key === 'data-analytics-name') {
-                        $terms.setAttribute('data-analytics-name', attributes[key]['terms']);
-                        $button.setAttribute('data-analytics-name', attributes[key]['search']);
-                    }else{
-                        $button.setAttribute(key, attributes[key]);
-                        $terms.setAttribute(key, attributes[key]);
+                    const searchEl = $controls.querySelector('input[type=search]');
+                    if (searchEl) {
+                        searchEl.addEventListener('click', () => (window.s_objectID='domainsearchapi - search'));
                     }
 
-                });
+                    $controls.querySelector('button[data-type=terms],.controls-menu-terms')
+                            .addEventListener('click', () => (window.s_objectID='domainsearchapi - termsofservice'));
 
-
-            });
-
-            window.OptanonWrapper = function () {
-                const ANALYTICS_GROUP = 'C0002',
-                    FUNCTIONAL_GROUP = 'C0003',
-                    TARGETING_GROUP = 'C0004';
-                    userGroupsStr = window.OptanonActiveGroups,
-                    userGroups = userGroupsStr.substring(1, userGroupsStr.length - 1).split(','),
-                    updatePrivacySettings = () => {
-                        const $ns = document.querySelector('name-studio');
-
-                        const settings = {
-                            analytic: false,
-                            functional: userGroups.includes(FUNCTIONAL_GROUP)
-                        }
-
-                        if(isReady) {
-                            $ns.api.privacy.updateSettings(settings);
-                        } else {
-                            setTimeout(updatePrivacySettings, 250);
-                        }
-                    };
-
-                updatePrivacySettings();
-
-                const $ns = document.querySelector('name-studio');
-
-                if (!window.analyticsInitialized && userGroups.includes(ANALYTICS_GROUP)) {
-                    window.analyticsInitialized = true;
+                    document.removeEventListener('name-studio.verisign', addClickHandlers);
                 }
+            };
 
-                if(userGroups.includes(TARGETING_GROUP)) {
-                    window.activeFour = true;
-                    console.log('enter "c0004"');
-                }
-            }
+            document.addEventListener('name-studio.verisign', addClickHandlers);
         })();
         </script>
     @endenv
