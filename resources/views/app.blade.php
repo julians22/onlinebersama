@@ -21,10 +21,6 @@
         </script>
         <!-- OneTrust Cookies Consent Notice end for onlinebersama.com -->
 
-        <!-- NameStudio start-->
-        <script async type="module" src="https://nswm-service.verisign.com/3.0/name-studio.js"></script>
-        <!-- NameStudio end-->
-
         <!-- ADOBE SCRIPT -->
         <script type="text/plain" class="optanon-category-C0001" src="//assets.adobedtm.com/1d6e8340b68d/b0c6093737cf/launch-adacc40eeb69-staging.min.js" defer></script>
 
@@ -51,6 +47,11 @@
             });
         })();
         </script>
+
+        <!-- NameStudio start-->
+        <script async type="module" src="https://nswm-service.verisign.com/3.0/name-studio.js"></script>
+        <!-- NameStudio end-->
+
 
         <script type="text/javascript">
         // New script same like bereadywith.com
