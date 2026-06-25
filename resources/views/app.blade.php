@@ -21,6 +21,10 @@
         </script>
         <!-- OneTrust Cookies Consent Notice end for onlinebersama.com -->
 
+        <!-- NameStudio start-->
+        <script async type="module" src="https://nswm-service.verisign.com/3.0/name-studio.js"></script>
+        <!-- NameStudio end-->
+
         <!-- ADOBE SCRIPT -->
         <script type="text/plain" class="optanon-category-C0001" src="//assets.adobedtm.com/1d6e8340b68d/b0c6093737cf/launch-adacc40eeb69-staging.min.js" defer></script>
 
@@ -47,6 +51,91 @@
             });
         })();
         </script>
+
+        <script type="text/javascript">
+        // New script same like bereadywith.com
+        (() => {
+            window.activeFour = false;
+            let isReady = false;
+
+            document.addEventListener('name-studio.verisign', function({target: $ns, detail: {type, data}}) {
+                let actionType = data['action-type'];
+
+                if('ready' === type) {
+                    isReady = true;
+                }
+
+                if (actionType == 'submit') {
+                    const posts = JSON.stringify(data.query);
+                }
+
+                const $controls = $ns.shadowRoot.querySelector('namestudio-controls');
+                const $search = $controls.querySelector('input[type=search]');
+                const $terms = $controls.querySelector('button[data-type=terms],.controls-menu-terms');
+                const $button = $controls.querySelector('button[part-suffix=btnsubmit]');
+
+                console.log({$controls, $search, $terms, $button});
+
+                let attributes = {
+                    'data-analytics-level1': 'body',
+                    'data-analytics-level2': 'cari',
+                    'data-analytics-name': {
+                        'search': 'cari',
+                        'terms': 'persyaratan-layanan'
+                    }
+                }
+
+                Object.keys(attributes).forEach((key) => {
+
+                    if (key === 'data-analytics-name') {
+                        $terms.setAttribute('data-analytics-name', attributes[key]['terms']);
+                        $button.setAttribute('data-analytics-name', attributes[key]['search']);
+                    }else{
+                        $button.setAttribute(key, attributes[key]);
+                        $terms.setAttribute(key, attributes[key]);
+                    }
+
+                });
+
+
+            });
+
+            window.OptanonWrapper = function () {
+                const ANALYTICS_GROUP = 'C0002',
+                    FUNCTIONAL_GROUP = 'C0003',
+                    TARGETING_GROUP = 'C0004';
+                    userGroupsStr = window.OptanonActiveGroups,
+                    userGroups = userGroupsStr.substring(1, userGroupsStr.length - 1).split(','),
+                    updatePrivacySettings = () => {
+                        const $ns = document.querySelector('name-studio');
+
+                        const settings = {
+                            analytic: false,
+                            functional: userGroups.includes(FUNCTIONAL_GROUP)
+                        }
+
+                        if(isReady) {
+                            $ns.api.privacy.updateSettings(settings);
+                        } else {
+                            setTimeout(updatePrivacySettings, 250);
+                        }
+                    };
+
+                updatePrivacySettings();
+
+                const $ns = document.querySelector('name-studio');
+
+                if (!window.analyticsInitialized && userGroups.includes(ANALYTICS_GROUP)) {
+                    window.analyticsInitialized = true;
+                }
+
+                if(userGroups.includes(TARGETING_GROUP)) {
+                    window.activeFour = true;
+                    console.log('enter "c0004"');
+                }
+            }
+        })();
+        </script>
     @endenv
 
     <!-- Fonts -->
@@ -59,96 +148,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     @livewireStyles
 
-    <!-- NameStudio start-->
-    <script async type="module" src="https://nswm-service.verisign.com/3.0/name-studio.js"></script>
-    <!-- NameStudio end-->
-
     @env(['staging', 'local', 'testing'])
-
-    <script type="text/javascript">
-    // New script same like bereadywith.com
-    (() => {
-        window.activeFour = false;
-        let isReady = false;
-
-        document.addEventListener('name-studio.verisign', function({target: $ns, detail: {type, data}}) {
-            let actionType = data['action-type'];
-
-            if('ready' === type) {
-                isReady = true;
-            }
-
-            if (actionType == 'submit') {
-                const posts = JSON.stringify(data.query);
-            }
-
-            const $controls = $ns.shadowRoot.querySelector('namestudio-controls');
-            const $search = $controls.querySelector('input[type=search]');
-            const $terms = $controls.querySelector('button[data-type=terms],.controls-menu-terms');
-            const $button = $controls.querySelector('button[part-suffix=btnsubmit]');
-
-            console.log({$controls, $search, $terms, $button});
-
-            let attributes = {
-                'data-analytics-level1': 'body',
-                'data-analytics-level2': 'cari',
-                'data-analytics-name': {
-                    'search': 'cari',
-                    'terms': 'persyaratan-layanan'
-                }
-            }
-
-            Object.keys(attributes).forEach((key) => {
-
-                if (key === 'data-analytics-name') {
-                    $terms.setAttribute('data-analytics-name', attributes[key]['terms']);
-                    $button.setAttribute('data-analytics-name', attributes[key]['search']);
-                }else{
-                    $button.setAttribute(key, attributes[key]);
-                    $terms.setAttribute(key, attributes[key]);
-                }
-
-            });
-
-
-        });
-
-        window.OptanonWrapper = function () {
-            const ANALYTICS_GROUP = 'C0002',
-                FUNCTIONAL_GROUP = 'C0003',
-                TARGETING_GROUP = 'C0004';
-                userGroupsStr = window.OptanonActiveGroups,
-                userGroups = userGroupsStr.substring(1, userGroupsStr.length - 1).split(','),
-                updatePrivacySettings = () => {
-                    const $ns = document.querySelector('name-studio');
-
-                    const settings = {
-                        analytic: false,
-                        functional: userGroups.includes(FUNCTIONAL_GROUP)
-                    }
-
-                    if(isReady) {
-                        $ns.api.privacy.updateSettings(settings);
-                    } else {
-                        setTimeout(updatePrivacySettings, 250);
-                    }
-                };
-
-            updatePrivacySettings();
-
-            const $ns = document.querySelector('name-studio');
-
-            if (!window.analyticsInitialized && userGroups.includes(ANALYTICS_GROUP)) {
-                window.analyticsInitialized = true;
-            }
-
-            if(userGroups.includes(TARGETING_GROUP)) {
-                window.activeFour = true;
-                console.log('enter "c0004"');
-            }
-        }
-    })();
-    </script>
 
     <script type="text/javascript">
 
