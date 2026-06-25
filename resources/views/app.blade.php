@@ -17,7 +17,7 @@
         <!-- OneTrust Cookies Consent Notice start for onlinebersama.com -->
         <script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js"  type="text/javascript" charset="UTF-8" data-domain-script="019dac2e-6419-7678-bb88-2fce4bccca28-test" ></script>
         <script type="text/javascript">
-        function OptanonWrapper() { }
+            function OptanonWrapper(){}
         </script>
 
         <script>
