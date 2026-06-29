@@ -99,7 +99,7 @@
         data-analytics-level2="The Entrepreneurial Journey"
         class="flex flex-col gap-21.25 py-10 max-w-250 mx-auto px-4 md:px-8 md:py-20">
         <div class="space-y-3 text-center">
-            <h2 class="text-navy-blue-300 text-center headline-1">Perjalanan Kewirausahaan</h2>
+            <h2 class="text-navy-blue-300 text-center headline-1">Perjalanan Wirausaha</h2>
             <p class="paragraph-md text-deep-blue-300">Mulai dari membangun tim hingga memasarkan perusahaan Anda secara efektif, wirausahawan berpengalaman Henrik Scheel dapat membantu Anda membuka potensi pola pikir kewirausahaan.</p>
         </div>
         <div class="flex flex-col">

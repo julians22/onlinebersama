@@ -61,8 +61,8 @@
                     console.log('enter "c0004"');
                     }
                 };
-                })();
-            </script>
+            })();
+        </script>
         <!-- OneTrust Cookies Consent Notice end for onlinebersama.com -->
 
         <!-- NameStudio start-->
