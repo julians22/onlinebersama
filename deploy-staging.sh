@@ -31,4 +31,7 @@ sudo podman exec app-staging php artisan route:cache
 sudo podman exec app-staging php artisan view:cache
 sudo podman exec app-staging php artisan filament:assets
 
+echo "--- Running queue:inbackground ---"
+sudo podman exec -d app-staging php artisan queue:listen
+
 echo "--- Deployment Successful ---"
