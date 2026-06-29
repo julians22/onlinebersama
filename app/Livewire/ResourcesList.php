@@ -43,17 +43,28 @@ class ResourcesList extends Component
         $this->resetPage();
     }
 
+    protected function queryPost()
+    {
+        return Post::published()
+            ->with('topics');
+    }
+
     public function render()
     {
-        $posts = Post::published()
-            ->orderBy('title', 'asc')
-            ->with('topics')
-            ->when(!empty($this->selectedTopic), function ($query) { // Check if topic is not empty
-                return $query->whereHas('topics', function ($query) {
-                    $query->where('slug', $this->selectedTopic);
-                });
-            })
-            ->paginate($this->paginate);
+        if (empty($this->selectedTopic)) {
+            $posts = $this->queryPost()
+                ->orderBy('type', 'desc')
+                ->paginate($this->paginate);
+        } else {
+            $posts = $this->queryPost()
+                ->orderBy('title', 'asc')
+                ->when(!empty($this->selectedTopic), function ($query) { // Check if topic is not empty
+                    return $query->whereHas('topics', function ($query) {
+                        $query->where('slug', $this->selectedTopic);
+                    });
+                })
+                ->paginate($this->paginate);
+        }
 
         return view('livewire.resources-list', [
             'posts' => $posts,

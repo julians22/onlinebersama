@@ -8,4 +8,13 @@ use Filament\Resources\Pages\CreateRecord;
 class CreatePost extends CreateRecord
 {
     protected static string $resource = PostResource::class;
+
+    protected function mutateFormDataBeforeCreate(array $data): array
+    {
+        if ($data['type'] !== 'article') {
+            $data['slug'] = $data['type'] . '-' . $data['slug'];
+        }
+
+        return $data;
+    }
 }

@@ -52,5 +52,16 @@ return [
     |
     */
     'brightcove_account_id' => '6056665203001',
-    'brightcove_player_id' => 'vJVBLg3XR'
+    'brightcove_player_id' => 'vJVBLg3XR',
+
+    /*
+    |--------------------------------------------------------------------------
+    | Default Value for Video ID and E-Book URL
+    |--------------------------------------------------------------------------
+    |
+    | This option defines the default value for video ID and e-book URL used in the application.
+    |
+    */
+    'default_video_id' => '6056665203001',
+    'default_ebook' => 'https://d306cf1i69iwcu.cloudfront.net/onlinebersama/documents/Entrepreneurial_Mindset.pdf'
 ];

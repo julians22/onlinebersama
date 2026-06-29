@@ -2,6 +2,7 @@
 
 namespace App\View\Components\Displays;
 
+use App\Models\Post;
 use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
@@ -9,29 +10,60 @@ use Illuminate\View\Component;
 class CardResource extends Component
 {
     public string $rendered_tag;
+    public string $text_button = 'Baca Selengkapnya';
+    public string $as = 'a';
+    public array $extra_attributes = [];
 
     /**
      * Create a new component instance.
      */
     public function __construct(
-        public ?string $dataAnalytics,
-        public ?string $image,
-        public ?string $alt,
-        public string $type,
-        public string $route
+        public object $data,
+        public ?string $alt
     ) {
-        switch ($type) {
-            case 'article':
+        $this->renderedTag();
+        $this->clickableAs();
+    }
+
+    protected function clickableAs(): void
+    {
+        switch ($this->data->type) {
+            case Post::TYPE_ARTICLE:
+                $this->as = 'a';
+                $this->text_button = 'Baca Selengkapnya';
+                $this->extra_attributes['href'] = route('resources.handle_second_route', $this->data->route_tools);
+                break;
+
+            case Post::TYPE_VIDEO:
+                $this->as = 'button';
+                $this->text_button = 'Tonton Sekarang';
+                $this->extra_attributes['type'] = 'button';
+                $this->extra_attributes['@click'] = "\$store.videoModal.openModal('" . ($this->data->video_id ?? config('onlinebersama.default_video_id')) . "')";
+                break;
+
+            case Post::TYPE_EBOOK:
+                $this->as = 'a';
+                $this->text_button = 'Download';
+                $this->extra_attributes['href'] = $this->data->ebook_url ?? config('onlinebersama.default_ebook');
+                $this->extra_attributes['target'] = '_blank';
+                break;
+        }
+    }
+
+    protected function renderedTag(): void
+    {
+        switch ($this->data->type) {
+            case Post::TYPE_ARTICLE:
                 $this->rendered_tag = 'Artikel';
                 break;
-            case 'video':
+            case Post::TYPE_VIDEO:
                 $this->rendered_tag = 'Video';
                 break;
-            case 'ebook':
+            case Post::TYPE_EBOOK:
                 $this->rendered_tag = 'E-Book';
                 break;
             default:
-                $this->rendered_tag = 'Artikel';
+                $this->rendered_tag = '';
         }
     }
 
@@ -40,6 +72,8 @@ class CardResource extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.displays.card-resource');
+        return view('components.displays.card-resource', [
+            'data' => $this->data,
+        ]);
     }
 }
