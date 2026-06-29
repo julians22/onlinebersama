@@ -1,15 +1,15 @@
 <footer
     data-analytics-level1="footer"
     class="bg-gradient-blue-double text-white">
-    <div class="flex flex-col gap-5 py-20 container-medium">
+    <div class="flex flex-col gap-5 py-12.5 container-medium lg:py-20">
         <div class="flex flex-col gap-y-7 justify-between lg:gap-y-0 lg:flex-row">
             <a
-                class="w-56"
+                class="w-25 lg:w-31.5"
                 data-analytics-name="logo | .com"
                 href="{{ route('index') }}">
                 <img class="w-full" src="{{ asset('images/logo-com-white.svg') }}" alt="OnlineBersama">
             </a>
-            <div class="flex flex-col gap-8 md:flex-row lg:justify-between lg:w-132.5">
+            <div class="flex flex-col md:gap-8 md:flex-row lg:justify-between lg:w-132.5">
                 <div class="flex flex-col lg:w-full lg:max-w-75.5">
                     <a
                         data-analytics-name="{{ request()->routeIs('index') ? 'anchor | Why .com?' : 'text | Why .com?' }}"

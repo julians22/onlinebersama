@@ -100,6 +100,12 @@
     }
 }
 
+@utility container-medium-smaller {
+    margin-inline: auto;
+    max-width: 1150px;
+    width: 100%;
+}
+
 @utility container-extra-smaller {
     margin-inline: auto;
     max-width: 904px;
@@ -164,7 +170,7 @@
     /* Accordion */
 
     .accordion-content {
-        @apply font-sans font-medium text-[18px] md:text-[24px] tracking-[0.25px] text-deep-blue-300 md:leading-8.5!;
+        @apply font-sans font-medium text-[18px] leading-6.5! tracking-[0.25px] text-deep-blue-300 md:text-[23px] md:leading-7.5!;
     }
 
     /* Button */
@@ -252,7 +258,7 @@
     /* Footer */
 
     .footer-link {
-        @apply my-2.75 w-max font-sans text-[20px] tracking-[0.25px] hover:decoration-[8%] hover:underline hover:underline-offset-[12%];
+        @apply my-1.5 w-max font-sans text-[18px] leading-6.5 tracking-[0.25px] hover:decoration-[8%] hover:underline hover:underline-offset-[12%] md:text-[20px] md:leading-normal;
     }
 }
 
@@ -342,6 +348,11 @@
 
     .box-shadow-md {
         box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.30);
+    }
+
+    .bg-gradient-hero {
+        background: linear-gradient(1deg, rgba(0, 0, 0, 0.70) 24.47%, rgba(0, 0, 0, 0.20) 90.79%);
+        background-blend-mode: darken;
     }
 
     .bg-gradient-video {

@@ -27,7 +27,7 @@
                 @endforeach
             </div>
         </div>
-        <p class="paragraph-md text-white text-[20px]!">{{ $posts->lastItem() ?? '0' }} dari {{ $posts->total() }} Sumber Informasi</p>
+        <p class="paragraph-md text-white text-[18px]! leading-6.5! md:text-[20px]! md:leading-7.5!">{{ $posts->lastItem() ?? '0' }} dari {{ $posts->total() }} Sumber Informasi</p>
     </div>
     <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
         @foreach($posts as $index => $post)
