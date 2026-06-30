@@ -4,6 +4,8 @@
 
 @section('meta_description', 'Dengan alamat email .com khusus, email bisnis Anda akan terlihat lebih profesional')
 
+@section('meta_keywords', '.com untuk email, manfaat email khusus')
+
 @section('content')
 
 <main data-analytics-level1="body">

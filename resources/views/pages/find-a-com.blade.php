@@ -4,6 +4,8 @@
 
 @section('meta_description', 'Cari dan Tukar Pikiran Ide Nama Domain .com yang Tersedia')
 
+@section('meta_keywords', 'temukan domain .com, cari nama domain .com')
+
 @section('content')
 
 <main data-analytics-level1="body">

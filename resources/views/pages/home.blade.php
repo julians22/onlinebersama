@@ -4,6 +4,8 @@
 
 @section('meta_description', 'Nama domain .com membantu orang menemukan dan memercayai bisnis Anda. Temukan mengapa .com bisa menjadi pilihan yang tepat untuk bisnis Anda.')
 
+@section('meta_keywords', '.com, nama domain .com')
+
 @section('content')
 
 <main data-analytics-level1="body">

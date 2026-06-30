@@ -4,6 +4,8 @@
 
 @section('meta_description', 'Dengan penerusan domain, Anda dapat mengarahkan nama domain .com yang mudah diingat ke toko online atau laman media sosial Anda.')
 
+@section('meta_keywords', '.com untuk media sosial, .com untuk e-commerce, manfaat penerusan domain')
+
 @section('content')
 
 <main data-analytics-level1="body">
