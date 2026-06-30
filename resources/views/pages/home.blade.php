@@ -197,25 +197,25 @@
         data-analytics-level2="Make Your Mark Online"
         class="bg-light-gray-100">
         <div class="pt-7.5 pb-64 px-4 md:pt-12.5 md:px-8 md:container">
-            <h2 class="sticky top-20 mb-10 text-navy-blue-300 text-center headline-1 max-w-lg mx-auto md:top-24 lg:top-40 min-[1200px]:top-32!">Tinggalkan Jejak Anda di Dunia Maya</h2>
+            <h2 class="sticky top-18 mb-10 text-navy-blue-300 text-center headline-1 max-w-lg mx-auto md:top-24 lg:top-40 min-[1200px]:top-32!">Tinggalkan Jejak Anda di Dunia Maya</h2>
             <div class="flex flex-col gap-6 mx-auto md:max-w-208">
                 <div
                     data-analytics-level3="card1"
-                    class="top-38.5 sticky card-stack md:top-61.5 lg:top-77.5 min-[1200px]:top-69.5!">
+                    class="top-45 sm:top-38.5 sticky card-stack md:top-61.5 lg:top-77.5 min-[1200px]:top-69.5!">
                     <x-displays.card-stack number="1" title="Lebih Mudah Ditemukan" image="images/homepage-editorial-1.jpg" data-analytics="Be Found Easier">
                         Nama domain .com membantu memudahkan pelanggan menemukan bisnis secara online.
                     </x-displays.card-stack>
                 </div>
                 <div
                     data-analytics-level3="card2"
-                    class="top-38.5 sticky card-stack -mt-18 translate-y-18 md:-mt-20 md:translate-y-20 md:top-61.5 lg:-mt-20 lg:translate-y-20 lg:top-77.5 min-[1200px]:top-69.5!">
+                    class="top-45 sm:top-38.5 sticky card-stack -mt-18 translate-y-18 md:-mt-20 md:translate-y-20 md:top-61.5 lg:-mt-20 lg:translate-y-20 lg:top-77.5 min-[1200px]:top-69.5!">
                     <x-displays.card-stack number="2" title="Tampil Beda Secara Online" image="images/homepage-editorial-2.jpg" data-analytics="Stand Out Online">
                         Nama domain .com dapat membantu meningkatkan visibilitas bisnis.
                     </x-displays.card-stack>
                 </div>
                 <div
                     data-analytics-level3="card3"
-                    class="top-38.5 sticky card-stack -mb-24 translate-y-18 md:-mb-20 md:translate-y-20 md:top-61.5 lg:top-77.5 min-[1200px]:top-69.5!">
+                    class="top-45 sm:top-38.5 sticky card-stack -mb-24 translate-y-18 md:-mb-20 md:translate-y-20 md:top-61.5 lg:top-77.5 min-[1200px]:top-69.5!">
                     <x-displays.card-stack number="3" title="Tingkatkan Kredibilitas Anda" image="images/homepage-editorial-3.jpg" data-analytics="Enhance Your Credibility">
                         Nama domain .com dapat membantu usaha kecil terlihat lebih profesional.
                     </x-displays.card-stack>
