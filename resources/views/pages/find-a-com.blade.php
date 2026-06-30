@@ -31,7 +31,7 @@
             type="button"
             @click="$store.videoModal.openModal('6331201181112')"
             class="group relative aspect-video rounded-[10px] cursor-pointer overflow-hidden max-w-lg md:w-150">
-            <img class="size-full" src="{{ asset('images/placeholder-video-find.jpg') }}" alt="">
+            <img class="size-full" src="{{ asset('images/placeholder-video-three-tips.jpg') }}" alt="">
             <span data-analytics-name="play button | Three Tips For Choosing a .com Domain Name" class="transition-all duration-150 ease-in-out top-1/2 left-1/2 absolute -translate-x-1/2 -translate-y-1/2 size-19.5 group-hover:scale-110">
                 <x-icons.play-rounded width="78" height="78" fill="#fff" />
             </span>

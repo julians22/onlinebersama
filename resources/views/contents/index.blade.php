@@ -51,7 +51,7 @@
                     </x-displays.card-video>
                 </div>
                 <div data-analytics-level3="carousel3" class="swiper-slide">
-                    <x-displays.card-video title="Chic Diva Geek" image="images/placeholder-video-chcik-diva.jpg" videoId="6331201181112" data-analytics="Chic Diva Geek">
+                    <x-displays.card-video title="Chic Diva Geek" image="images/placeholder-video-chic-diva.jpg" videoId="6331201181112" data-analytics="Chic Diva Geek">
                         Ketahui bagaimana nama domain .com yang tepercaya membantu Adrian McLanahan dan bisnisnya menjangkau pelanggan baru
                     </x-displays.card-video>
                 </div>
@@ -66,7 +66,7 @@
                     </x-displays.card-video>
                 </div>
                 <div data-analytics-level3="carousel3" class="swiper-slide">
-                    <x-displays.card-video title="Chic Diva Geek" image="images/placeholder-video-chcik-diva.jpg" videoId="6331201181112" data-analytics="Chic Diva Geek">
+                    <x-displays.card-video title="Chic Diva Geek" image="images/placeholder-video-chic-diva.jpg" videoId="6331201181112" data-analytics="Chic Diva Geek">
                         Ketahui bagaimana nama domain .com yang tepercaya membantu Adrian McLanahan dan bisnisnya menjangkau pelanggan baru
                     </x-displays.card-video>
                 </div>
