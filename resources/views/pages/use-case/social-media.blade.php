@@ -1,6 +1,8 @@
 @extends('app')
 
-@section('title', 'Penerusan Nama Domain | Cara Menggunakan Nama Domain .com')
+@section('title', '.com untuk Media Sosial dan E-commerce | Penerusan Nama Domain')
+
+@section('meta_description', 'Dengan penerusan domain, Anda dapat mengarahkan nama domain .com yang mudah diingat ke toko online atau laman media sosial Anda.')
 
 @section('content')
 

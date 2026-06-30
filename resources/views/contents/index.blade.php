@@ -1,6 +1,8 @@
 @extends('app')
 
-@section('title', 'Panduan Belajar - Untuk Bisnis Kecil')
+@section('title', 'Panduan Belajar | Nama Domain .com')
+
+@section('meta_description', 'Temukan cara memaksimalkan penggunaan nama domain .com Anda melalui koleksi artikel, video, dan panduan kami')
 
 @section('content')
 

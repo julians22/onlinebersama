@@ -1,6 +1,8 @@
 @extends('app')
 
-@section('title', 'Alamat Email Khusus | Cara Menggunakan Nama Domain .com')
+@section('title', '.com untuk Email | Nama Domain .com')
+
+@section('meta_description', 'Dengan alamat email .com khusus, email bisnis Anda akan terlihat lebih profesional')
 
 @section('content')
 

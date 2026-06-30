@@ -1,6 +1,8 @@
 @extends('app')
 
-@section('title', 'Di Mana Dunia Menemukanmu | .com')
+@section('title', 'Di Mana Dunia Menemukanmu | Nama Domain .com')
+
+@section('meta_description', 'Nama domain .com membantu orang menemukan dan memercayai bisnis Anda. Temukan mengapa .com bisa menjadi pilihan yang tepat untuk bisnis Anda.')
 
 @section('content')
 
