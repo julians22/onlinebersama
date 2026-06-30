@@ -75,7 +75,6 @@ class PostsTable
                     ->toggleable(isToggledHiddenByDefault: true),
             ])
             ->filters([
-
                 // Filter for type article
                 SelectFilter::make('type')
                     ->label('Tipe')
@@ -83,9 +82,7 @@ class PostsTable
                         Post::TYPE_ARTICLE => 'Artikel',
                         Post::TYPE_VIDEO => 'Video',
                         Post::TYPE_EBOOK => 'E-Book',
-                    ])
-                    ->query(fn ($query, $value) => $query->where('type', $value)),
-
+                    ]),
             ])
             ->recordActions([
                 EditAction::make(),
