@@ -74,7 +74,7 @@
         class="bg-gradient-blue-double">
         <div x-data class="flex justify-center items-center gap-10 px-10 py-10 flex-col container md:px-8 md:gap-12 md:py-20 xl:flex-row">
             <button data-analytics-name="video animation | Three Ways to Use a Custom Email Address" type="button" @click="$store.videoModal.openModal('6331201181112')" class="group relative rounded-[10px] overflow-hidden shrink-0 cursor-pointer">
-                <img class="size-full object-cover aspect-video" src="{{ asset('images/three-ways.jpg') }}" alt="">
+                <img class="size-full object-cover aspect-video max-w-155.5" src="{{ asset('images/placeholder-video-three-ways.jpg') }}" alt="">
                 <span data-analytics-name="play button | Three Ways to Use a Custom Email Address" class="transition-all duration-300 ease-in-out top-1/2 left-1/2 absolute -translate-x-1/2 -translate-y-1/2 group-hover:scale-110">
                     <x-icons.play-rounded width="78" height="78" fill="#fff" />
                 </span>
