@@ -2,6 +2,7 @@
 
 namespace App\Filament\Resources\TosActions;
 
+use App\Filament\Exports\TosActionExporter;
 use App\Filament\Resources\TosActions\Pages\ManageTosActions;
 use App\Models\TosAction;
 use BackedEnum;
@@ -9,7 +10,9 @@ use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteAction;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
+use Filament\Actions\ExportAction;
 use Filament\Actions\ViewAction;
+use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\DateTimePicker;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
@@ -20,6 +23,7 @@ use Filament\Schemas\Schema;
 use Filament\Support\Icons\Heroicon;
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
+use Filament\Tables\Filters\Filter;
 use Filament\Tables\Filters\TernaryFilter;
 use Filament\Tables\Table;
 use UnitEnum;
@@ -38,12 +42,7 @@ class TosActionResource extends Resource
     {
         return $schema
             ->components([
-                TextInput::make('uuid')
-                    ->label('UUID'),
-                Toggle::make('status')
-                    ->required(),
-                TextInput::make('ip_address'),
-                DateTimePicker::make('accepted_at'),
+                //
             ]);
     }
 
@@ -53,8 +52,6 @@ class TosActionResource extends Resource
             ->components([
                 TextEntry::make('uuid')
                     ->label('UUID'),
-                IconEntry::make('status')
-                    ->boolean(),
                 TextEntry::make('ip_address'),
                 TextEntry::make('accepted_at')
                     ->dateTime(),
@@ -84,7 +81,20 @@ class TosActionResource extends Resource
                     ->toggleable(isToggledHiddenByDefault: true),
             ])
             ->filters([
-                TernaryFilter::make('status')
+                TernaryFilter::make('status'),
+                Filter::make('created_at')
+                    ->schema([
+                        DatePicker::make('created_from')
+                            ->label('Created From'),
+                        DatePicker::make('created_until')
+                            ->label('Created Until'),
+                    ])
+                    ->query(function ($query, array $data) {
+                        return $query
+                            ->when($data['created_from'], fn ($query, $date) => $query->whereDate('created_at', '>=', $date))
+                            ->when($data['created_until'], fn ($query, $date) => $query->whereDate('created_at', '<=', $date));
+                    }),
+
             ])
             ->recordActions([
                 ViewAction::make(),
@@ -93,6 +103,8 @@ class TosActionResource extends Resource
                 // BulkActionGroup::make([
                 //     DeleteBulkAction::make(),
                 // ]),
+                ExportAction::make()
+                    ->exporter(TosActionExporter::class),
             ]);
     }
 

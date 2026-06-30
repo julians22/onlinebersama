@@ -29,7 +29,11 @@ class PostsTable
                         Post::TYPE_VIDEO => 'Video',
                         Post::TYPE_EBOOK => 'E-Book',
                     })
-                    ->color('primary')
+                    ->color(fn (string $state): string => match ($state) {
+                        Post::TYPE_ARTICLE => 'primary',
+                        Post::TYPE_VIDEO => 'warning',
+                        Post::TYPE_EBOOK => 'success',
+                    })
                     ->icon(fn (string $state): Heroicon => match ($state) {
                         Post::TYPE_ARTICLE => Heroicon::OutlinedDocumentText,
                         Post::TYPE_VIDEO => Heroicon::OutlinedVideoCamera,
@@ -37,17 +41,14 @@ class PostsTable
                     })
                     ->iconColor(fn (string $state): string => match ($state) {
                         Post::TYPE_ARTICLE => 'primary',
-                        Post::TYPE_VIDEO => 'primary',
-                        Post::TYPE_EBOOK => 'primary',
+                        Post::TYPE_VIDEO => 'warning',
+                        Post::TYPE_EBOOK => 'success',
                     }),
                 TextColumn::make('topics.name')
                     ->placeholder('Tidak ada topik')
                     ->label('Topik')
                     ->badge()
                     ->separator(','),
-                TextColumn::make('read_time')
-                    ->label('Waktu Baca')
-                    ->searchable(),
                 TextColumn::make('status')
                     ->badge()
                     ->formatStateUsing(fn (string $state): string => match ($state) {
