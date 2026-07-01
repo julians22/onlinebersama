@@ -1,6 +1,10 @@
 @extends('app')
 
-@section('title', 'Situs Web Profesional | Cara  Menggunakan Nama Domain .com')
+@section('title', '.com untuk Situs Web | Nama Domain .com')
+
+@section('meta_description', 'Situs web dengan nama domain .com menjadi fondasi yang dapat diandalkan pelanggan untuk menemukan dan berinteraksi secara online, seiring pertumbuhan situs web Anda')
+
+@section('meta_keywords', '.com untuk situs web, manfaat situs web')
 
 @section('content')
 

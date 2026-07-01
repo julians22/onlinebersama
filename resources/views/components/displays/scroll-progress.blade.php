@@ -1,4 +1,4 @@
-<div x-data="scrollProgress" x-init="init()" x-cloak class="fixed inset-x-0 top-11 z-50 sm:top-13 lg:top-22 min-[1200px]:top-20!">
+<div x-data="scrollProgress" x-init="init()" x-cloak class="fixed inset-x-0 top-11 z-50 sm:top-13 lg:top-28 min-[1200px]:top-20!">
     <div class="h-1.5 bg-magenta-300 lg:h-2.5" :style="`width: ${percent}%`"></div>
 </div>
 

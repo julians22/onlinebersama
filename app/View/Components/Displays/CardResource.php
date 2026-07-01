@@ -19,7 +19,8 @@ class CardResource extends Component
      */
     public function __construct(
         public object $data,
-        public ?string $alt
+        public ?string $alt,
+        public ?bool $hideTag = true,
     ) {
         $this->renderedTag();
         $this->clickableAs();

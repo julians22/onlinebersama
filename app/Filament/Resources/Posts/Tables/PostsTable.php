@@ -10,6 +10,7 @@ use Filament\Actions\EditAction;
 use Filament\Support\Icons\Heroicon;
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
+use Filament\Tables\Filters\SelectFilter;
 use Filament\Tables\Table;
 
 class PostsTable
@@ -74,7 +75,14 @@ class PostsTable
                     ->toggleable(isToggledHiddenByDefault: true),
             ])
             ->filters([
-                //
+                // Filter for type article
+                SelectFilter::make('type')
+                    ->label('Tipe')
+                    ->options([
+                        Post::TYPE_ARTICLE => 'Artikel',
+                        Post::TYPE_VIDEO => 'Video',
+                        Post::TYPE_EBOOK => 'E-Book',
+                    ]),
             ])
             ->recordActions([
                 EditAction::make(),

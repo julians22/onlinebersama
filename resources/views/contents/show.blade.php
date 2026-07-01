@@ -96,7 +96,7 @@
                 <div class="swiper-wrapper">
                     @forelse ($other_posts as $post)
                         <div data-analytics-level3="{{ $post->data_analytics ?? $post->title }}" class="swiper-slide">
-                            <x-displays.card-resource :data="$post">
+                            <x-displays.card-resource :data="$post" :hideTag="false">
                                 {{ $post->title }}
                             </x-displays.card-resource>
                         </div>

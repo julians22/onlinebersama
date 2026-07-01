@@ -1,6 +1,8 @@
 @extends('app')
 
-@section('title', 'Panduan Belajar - Untuk Bisnis Kecil')
+@section('title', 'Panduan Belajar | Nama Domain .com')
+
+@section('meta_description', 'Temukan cara memaksimalkan penggunaan nama domain .com Anda melalui koleksi artikel, video, dan panduan kami')
 
 @section('content')
 
@@ -51,7 +53,7 @@
                     </x-displays.card-video>
                 </div>
                 <div data-analytics-level3="carousel3" class="swiper-slide">
-                    <x-displays.card-video title="Chic Diva Geek" image="images/placeholder-video-chcik-diva.jpg" videoId="6331201181112" data-analytics="Chic Diva Geek">
+                    <x-displays.card-video title="Chic Diva Geek" image="images/placeholder-video-chic-diva.jpg" videoId="6331201181112" data-analytics="Chic Diva Geek">
                         Ketahui bagaimana nama domain .com yang tepercaya membantu Adrian McLanahan dan bisnisnya menjangkau pelanggan baru
                     </x-displays.card-video>
                 </div>
@@ -66,12 +68,12 @@
                     </x-displays.card-video>
                 </div>
                 <div data-analytics-level3="carousel3" class="swiper-slide">
-                    <x-displays.card-video title="Chic Diva Geek" image="images/placeholder-video-chcik-diva.jpg" videoId="6331201181112" data-analytics="Chic Diva Geek">
+                    <x-displays.card-video title="Chic Diva Geek" image="images/placeholder-video-chic-diva.jpg" videoId="6331201181112" data-analytics="Chic Diva Geek">
                         Ketahui bagaimana nama domain .com yang tepercaya membantu Adrian McLanahan dan bisnisnya menjangkau pelanggan baru
                     </x-displays.card-video>
                 </div>
             </div>
-            <div class="swiper-pagination"></div>
+            <div data-analytics-name="buttons | carousel nav" class="swiper-pagination"></div>
         </div>
     </section>
     {{-- End Small Business Stories --}}
