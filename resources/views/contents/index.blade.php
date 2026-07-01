@@ -73,7 +73,7 @@
                     </x-displays.card-video>
                 </div>
             </div>
-            <div class="swiper-pagination"></div>
+            <div data-analytics-name="buttons | carousel nav" class="swiper-pagination"></div>
         </div>
     </section>
     {{-- End Small Business Stories --}}
