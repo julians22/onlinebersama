@@ -142,48 +142,48 @@
     {{-- List Point --}}
     <section
         data-analytics-level2="How to Build a Professional Website"
-        class="flex items-center gap-10 py-7.5 container flex-col md:py-12.5 xl:items-start xl:gap-28 xl:flex-row 2xl:gap-44">
-        <div x-data class="-top-12 flex flex-col gap-11.5 xl:sticky">
+        class="flex items-center gap-10 py-7.5 container flex-col md:py-12.5 xl:items-start xl:gap-30 xl:flex-row">
+        <div x-data class="-top-12 flex flex-col gap-7.5 md:gap-11.5 xl:sticky">
             <h2 class="text-navy-blue-300 headline-1 text-center">Cara Membangun Situs <span class="sm:block">Web Profesional</span></h2>
             <div class="relative rounded-[10px] overflow-hidden">
                 <img class="size-full aspect-video object-cover max-w-150 xl:max-w-full" src="{{ asset('images/usecase-website.jpg') }}" alt="">
             </div>
         </div>
-        <div class="flex flex-col gap-8 max-w-125 xl:-mt-12">
+        <div class="flex flex-col gap-8 max-w-157.5 xl:-mt-12">
             <div class="sticky top-20 w-full h-25 bg-linear-180 from-white from-25% to-transparent -mt-18 hidden xl:block"></div>
             <div data-analytics-level3="Register a Domain Name" class="flex gap-3.25 md:px-4">
                 <div class="flex justify-center items-center border-4 border-mint-300 rounded-full size-7.5 font-extrabold text-[16px] text-navy-blue-300 shrink-0 md:text-[32px] md:font-semibold md:size-12.5">1</div>
                 <div class="space-y-2 text-deep-blue-300">
-                    <h3 class="subheadline-3">Daftarkan Nama Domain</h3>
-                    <p class="text-deep-blue-300 text-[24px]! leading-9! paragraph-md">Pertama, daftarkan nama domain .com melalui registrar pilihan Anda.</p>
+                    <h3 class="subheadline-3 text-[24px]! leading-7.5! md:text-[26px]!">Daftarkan Nama Domain</h3>
+                    <p class="text-deep-blue-300 text-[18px]! leading-6.5! paragraph-md md:text-[20px]! md:leading-8!">Pertama, daftarkan nama domain .com melalui registrar pilihan Anda.</p>
                 </div>
             </div>
             <div data-analytics-level3="Log In to Your Account" class="flex gap-3.25 md:px-4">
                 <div class="flex justify-center items-center border-4 border-mint-300 rounded-full size-7.5 font-extrabold text-[16px] text-navy-blue-300 shrink-0 md:text-[32px] md:font-semibold md:size-12.5">2</div>
                 <div class="space-y-2 text-deep-blue-300">
-                    <h3 class="subheadline-3">Pilih Platform Hosting</h3>
-                    <p class="text-deep-blue-300 text-[24px]! leading-9! paragraph-md">Selanjutnya, pilih platform hosting, lalu pilih paket situs web yang sesuai.</p>
+                    <h3 class="subheadline-3 text-[24px]! leading-7.5! md:text-[26px]!">Pilih Platform Hosting</h3>
+                    <p class="text-deep-blue-300 text-[18px]! leading-6.5! paragraph-md md:text-[20px]! md:leading-8!">Selanjutnya, pilih platform hosting, lalu pilih paket situs web yang sesuai.</p>
                 </div>
             </div>
             <div data-analytics-level3="Select the Domain Name" class="flex gap-3.25 md:px-4">
                 <div class="flex justify-center items-center border-4 border-mint-300 rounded-full size-7.5 font-extrabold text-[16px] text-navy-blue-300 shrink-0 md:text-[32px] md:font-semibold md:size-12.5">3</div>
                 <div class="space-y-2 text-deep-blue-300">
-                    <h3 class="subheadline-3">Pilih Paket dan Template</h3>
-                    <p class="text-deep-blue-300 text-[24px]! leading-9! paragraph-md">Pilih paket dan template sesuai tujuan, anggaran, dan gaya Anda.</p>
+                    <h3 class="subheadline-3 text-[24px]! leading-7.5! md:text-[26px]!">Pilih Paket dan Template</h3>
+                    <p class="text-deep-blue-300 text-[18px]! leading-6.5! paragraph-md md:text-[20px]! md:leading-8!">Pilih paket dan template sesuai tujuan, anggaran, dan gaya Anda.</p>
                 </div>
             </div>
             <div data-analytics-level3="Paste the Destination URL" class="flex gap-3.25 md:px-4">
                 <div class="flex justify-center items-center border-4 border-mint-300 rounded-full size-7.5 font-extrabold text-[16px] text-navy-blue-300 shrink-0 md:text-[32px] md:font-semibold md:size-12.5">4</div>
                 <div class="space-y-2 text-deep-blue-300">
-                    <h3 class="subheadline-3">Rancang situs web Anda</h3>
-                    <p class="text-deep-blue-300 text-[24px]! leading-9! paragraph-md">Buat desain situs web dan halaman yang Anda butuhkan.</p>
+                    <h3 class="subheadline-3 text-[24px]! leading-7.5! md:text-[26px]!">Rancang situs web Anda</h3>
+                    <p class="text-deep-blue-300 text-[18px]! leading-6.5! paragraph-md md:text-[20px]! md:leading-8!">Buat desain situs web dan halaman yang Anda butuhkan.</p>
                 </div>
             </div>
             <div data-analytics-level3="Update DNS & Save" class="flex gap-3.25 md:px-4">
                 <div class="flex justify-center items-center border-4 border-mint-300 rounded-full size-7.5 font-extrabold text-[16px] text-navy-blue-300 shrink-0 md:text-[32px] md:font-semibold md:size-12.5">5</div>
                 <div class="space-y-2 text-deep-blue-300">
-                    <h3 class="subheadline-3">Klik Buat</h3>
-                    <p class="text-deep-blue-300 text-[24px]! leading-9! paragraph-md">Setelah siap, tinjau kembali, lalu publikasikan situs web Anda.</p>
+                    <h3 class="subheadline-3 text-[24px]! leading-7.5! md:text-[26px]!">Klik Buat</h3>
+                    <p class="text-deep-blue-300 text-[18px]! leading-6.5! paragraph-md md:text-[20px]! md:leading-8!">Setelah siap, tinjau kembali, lalu publikasikan situs web Anda.</p>
                 </div>
             </div>
         </div>

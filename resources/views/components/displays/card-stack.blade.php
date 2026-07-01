@@ -4,12 +4,12 @@
         @if ($dataAnalytics) data-analytics-name="text | {{ $dataAnalytics }}" @endif
         class="flex flex-col gap-2.5 md:gap-4 md:pl-4">
         {{-- Head --}}
-        <div class="flex items-center-safe text-deep-blue-300 gap-3">
+        <div class="flex items-center-safe text-deep-blue-300 gap-3 min-h-15 md:min-h-auto">
             <div class="shrink-0 flex justify-center items-center size-11.25 rounded-full border-4 border-mint-300 font-extrabold text-navy-blue-300 text-[26px]">{{ $number }}</div>
             <h3 class="subheadline-3 text-[24px]! leading-7.5! md:text-[26px]!">{{ $title }}</h3>
         </div>
         {{-- Body/Content --}}
-        <p class="paragraph-md text-deep-blue-300 md:leading-7.5!">{{ $slot }}</p>
+        <div class="paragraph-md text-deep-blue-300 md:leading-7.5!">{{ $slot }}</div>
     </div>
     {{-- Image --}}
     <div class="shrink-0 rounded-[10px] overflow-hidden">
