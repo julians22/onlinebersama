@@ -113,7 +113,8 @@
                 </x-displays.accordion>
                 <x-displays.accordion
                     data-analytics="Search Engine Optimization (SEO)"
-                    question="Pengoptimalan Mesin Pencari (SEO)">
+                    question="Pengoptimalan Mesin Pencari (SEO)"
+                    :last="true">
                     <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
                         <div class="flex flex-col">
                             <p><strong>Potensi Opsi Gratis/Berbiaya Rendah dalam Paket Pembuat Situs Web</strong></p>

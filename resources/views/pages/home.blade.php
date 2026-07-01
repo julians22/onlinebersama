@@ -201,7 +201,7 @@
         data-analytics-level2="Make Your Mark Online"
         class="bg-light-gray-100">
         <div class="pt-7.5 pb-50 px-4 md:pb-58 md:pt-12.5 md:px-8 md:container">
-            <h2 class="sticky top-18 mb-10 text-navy-blue-300 text-center headline-1 max-w-lg mx-auto md:top-24 lg:top-40 min-[1200px]:top-32!">Tinggalkan Jejak Anda di Dunia Maya</h2>
+            <h2 class="sticky top-18 mb-10 text-navy-blue-300 text-center headline-1 max-w-lg mx-auto sm:top-20 md:top-24 lg:top-40 min-[1200px]:top-32!">Tinggalkan Jejak Anda di Dunia Maya</h2>
             <div class="flex flex-col gap-6 mx-auto md:max-w-208">
                 <div
                     data-analytics-level3="card1"

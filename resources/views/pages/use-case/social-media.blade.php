@@ -33,28 +33,28 @@
     <section
         data-analytics-level2="Benefits of Domain Forwarding"
         class="py-7.5 container md:py-12.5">
-        <div class="pb-30 md:pb-48">
-            <h2 class="sticky top-20 mb-10 text-navy-blue-300 text-center headline-1 md:top-24 lg:top-30">Manfaat Penerusan Domain</span></h2>
+        <div class="pb-42 md:pb-44">
+            <h2 class="sticky top-18 mb-10 text-navy-blue-300 text-center headline-1 sm:top-20 md:top-24 lg:top-40 min-[1200px]:top-32!">Manfaat Penerusan Domain</span></h2>
             <div class="flex flex-col gap-6 mx-auto md:max-w-208">
                 <div
                     data-analytics-level3="Memorable Way to Market"
-                    class="top-48 sticky card-stack min-[490px]:top-42 md:top-54 lg:top-60">
+                    class="top-36.5 sticky card-stack sm:top-38.5 md:top-48 lg:top-64 min-[1200px]:top-55.5!">
                     <x-displays.card-stack number="1" title="Cara Pemasaran yang Tak Terlupakan" image="images/social-media-editorial-1.jpg" alt="">
-                        Nama domain .com tidak hanya diperuntukkan bagi situs web. Dengan penerusan domain, Anda dapat memberikan alamat web yang mudah diingat untuk setiap eksistensi online.
+                        <p class="min-h-40 min-[500px]:min-h-32 sm:min-h-24 md:min-h-auto">Nama domain .com tidak hanya diperuntukkan bagi situs web. Dengan penerusan domain, Anda dapat memberikan alamat web yang mudah diingat untuk setiap eksistensi online.</p>
                     </x-displays.card-stack>
                 </div>
                 <div
                     data-analytics-level3="A Consistent Web Address"
-                    class="top-48 sticky card-stack -mt-20 translate-y-20 min-[490px]:top-42 md:-mt-22 md:translate-y-22 md:top-54 lg:top-60 lg:-mt-24 lg:translate-y-24">
+                    class="top-36.5 sticky card-stack -mt-22 translate-y-22 sm:top-38.5 md:top-48 md:-mt-22 md:translate-y-22 lg:top-64 min-[1200px]:top-55.5! lg:-mt-24 lg:translate-y-24">
                     <x-displays.card-stack number="2" title="Alamat Web yang Konsisten" image="images/social-media-editorial-2.jpg" alt="">
-                        Dapatkan alamat web .com kustom yang bergerak bersama bisnis Anda. Dengan begitu, meskipun toko fisik berpindah tempat, pelanggan akan selalu dapat menemukan Anda.
+                        <p class="min-h-40 min-[500px]:min-h-32 sm:min-h-24 md:min-h-auto">Dapatkan alamat web .com kustom yang bergerak bersama bisnis Anda. Dengan begitu, meskipun toko fisik berpindah tempat, pelanggan akan selalu dapat menemukan Anda.</p>
                     </x-displays.card-stack>
                 </div>
                 <div
                     data-analytics-level3="The Flexibility of Change"
-                    class="top-48 sticky card-stack -mb-10 translate-y-20 min-[490px]:top-42 md:-mb-24 md:translate-y-22 md:top-54 lg:top-60 lg:translate-y-24">
+                    class="top-36.5 sticky card-stack -mb-20 translate-y-22 sm:top-38.5 md:top-48 md:-mb-20 md:translate-y-22 lg:top-64 min-[1200px]:top-55.5! lg:translate-y-24">
                     <x-displays.card-stack number="3" title="Fleksibilitas untuk Berubah" image="images/social-media-editorial-3.jpg" alt="">
-                        Anda dapat sewaktu-waktu memperbarui destinasi online yang dituju pengunjung yang mengakses nama domain .com.
+                        <p class="min-h-40 min-[500px]:min-h-32 sm:min-h-24 md:min-h-auto">Anda dapat sewaktu-waktu memperbarui destinasi online yang dituju pengunjung yang mengakses nama domain .com.</p>
                     </x-displays.card-stack>
                 </div>
             </div>
@@ -72,14 +72,14 @@
     {{-- Content --}}
     <section
         data-analytics-level2="Two Ways to Use Domain Forwarding"
-        class="bg-deep-blue-300">
+        class="bg-deep-blue-300 relative z-10">
         <div class="container-medium py-7.5 md:py-12.5">
             <h2 class="mb-6 text-white text-center headline-1 max-w-4xl mx-auto md:mb-13">Dua Cara untuk Menggunakan Penerusan Domain</h2>
             <div x-data="{ active: 'social-media' }" class="flex flex-col justify-center gap-4 md:flex-row">
                 <div class="flex flex-col gap-4 md:max-w-xs">
                     <button data-analytics-level3="Social Media" type="button" @click="active = 'social-media'" :class="active === 'social-media' && 'bg-white! hover:bg-white! text-deep-blue-300! hover:pl-6!'" class="transition-all duration-300 ease-in-out space-y-3 bg-navy-blue-300 p-6 rounded-[10px] h-full text-white text-left cursor-pointer md:space-y-2 hover:bg-[#2b4562] hover:pl-7.25">
                         <h3 class="subheadline-4 font-semibold! text-[24px]! leading-7.5! md:text-[26px]!" data-analytics-level3="Social Media">Media Sosial</h3>
-                        <p class="paragraph-sm font-medium! text-[18px]! md:text-[20px]!" data-analytics-level3="Social Media">Buat lebih banyak pasang mata tertuju pada halaman Anda.</p>
+                        <p class="paragraph-sm font-medium! text-[18px]! leading-6.5! md:leading-8! md:text-[20px]!" data-analytics-level3="Social Media">Buat lebih banyak pasang mata tertuju pada halaman Anda.</p>
                     </button>
                     <button data-analytics-level3="Online Store" type="button" @click="active = 'online-store'" :class="active === 'online-store' && 'bg-white! hover:bg-white! text-deep-blue-300! hover:pl-6!'" class="transition-all duration-300 ease-in-out space-y-3 bg-navy-blue-300 p-6 rounded-[10px] h-full text-white text-left cursor-pointer md:space-y-2 hover:bg-[#2b4562] hover:pl-7.25">
                         <h3 class="subheadline-4 font-semibold! text-[24px]! leading-7.5! md:text-[26px]!" data-analytics-level3="Online Store">Toko Online</h3>
@@ -116,48 +116,48 @@
     {{-- List Point --}}
     <section
         data-analytics-level2="How to Forward Your Domain Name"
-        class="flex items-center gap-10 py-7.5 container flex-col md:py-12.5 xl:items-start xl:gap-28 xl:flex-row 2xl:gap-44">
-        <div x-data class="-top-12 flex flex-col gap-11.5 xl:sticky">
+        class="flex items-center gap-10 py-7.5 container flex-col md:py-12.5 xl:items-start xl:gap-30 xl:flex-row">
+        <div x-data class="-top-12 flex flex-col gap-7.5 md:gap-11.5 xl:sticky">
             <h2 class="text-navy-blue-300 headline-1 text-center">Cara Meneruskan Nama <span class="sm:block">Domain Anda</span></h2>
             <div class="relative rounded-[10px] overflow-hidden">
-                <img class="size-full aspect-video max-w-150 xl:max-w-full" src="{{ asset('images/usecase-social-media.jpg') }}" alt="">
+                <img class="size-full aspect-video object-cover max-w-150 xl:max-w-full" src="{{ asset('images/usecase-social-media.jpg') }}" alt="">
             </div>
         </div>
-        <div class="flex flex-col gap-8 max-w-125 xl:pt-28">
+        <div class="flex flex-col gap-8 max-w-157.5 xl:-mt-12">
             <div class="sticky top-20 w-full h-25 bg-linear-180 from-white from-25% to-transparent -mt-18 hidden xl:block"></div>
             <div data-analytics-level3="Register a Domain Name" class="flex gap-3.25 md:px-4">
                 <div class="flex justify-center items-center border-4 border-mint-300 rounded-full size-7.5 font-extrabold text-[16px] text-navy-blue-300 shrink-0 md:text-[32px] md:font-semibold md:size-12.5">1</div>
                 <div class="space-y-2 text-deep-blue-300">
-                    <h3 class="subheadline-3">Daftarkan Nama Domain</h3>
-                    <p class="text-deep-blue-300 text-[24px]! leading-9! paragraph-md">Awali dengan mendaftarkan nama domain .com melalui registrar pilihan Anda.</p>
+                    <h3 class="subheadline-3 text-[24px]! leading-7.5! md:text-[26px]!">Daftarkan Nama Domain</h3>
+                    <p class="text-deep-blue-300 text-[18px]! leading-6.5! paragraph-md md:text-[20px]! md:leading-8!">Awali dengan mendaftarkan nama domain .com melalui registrar pilihan Anda.</p>
                 </div>
             </div>
             <div data-analytics-level3="Log In to Your Account" class="flex gap-3.25 md:px-4">
                 <div class="flex justify-center items-center border-4 border-mint-300 rounded-full size-7.5 font-extrabold text-[16px] text-navy-blue-300 shrink-0 md:text-[32px] md:font-semibold md:size-12.5">2</div>
                 <div class="space-y-2 text-deep-blue-300">
-                    <h3 class="subheadline-3">Masuk ke Akun Anda</h3>
-                    <p class="text-deep-blue-300 text-[24px]! leading-9! paragraph-md">Masuk dan buka Kelola Nama Domain atau klik tab Nama Domain.</p>
+                    <h3 class="subheadline-3 text-[24px]! leading-7.5! md:text-[26px]!">Masuk ke Akun Anda</h3>
+                    <p class="text-deep-blue-300 text-[18px]! leading-6.5! paragraph-md md:text-[20px]! md:leading-8!">Masuk dan buka Kelola Nama Domain atau klik tab Nama Domain.</p>
                 </div>
             </div>
             <div data-analytics-level3="Select the Domain Name" class="flex gap-3.25 md:px-4">
                 <div class="flex justify-center items-center border-4 border-mint-300 rounded-full size-7.5 font-extrabold text-[16px] text-navy-blue-300 shrink-0 md:text-[32px] md:font-semibold md:size-12.5">3</div>
                 <div class="space-y-2 text-deep-blue-300">
-                    <h3 class="subheadline-3">Pilih Nama Domain</h3>
-                    <p class="text-deep-blue-300 text-[24px]! leading-9! paragraph-md">Pilih nama domain yang ingin Anda teruskan, cari opsi Penerusan Domain (juga dikenal sebagai Pengalihan), lalu klik Tambah Baru.</p>
+                    <h3 class="subheadline-3 text-[24px]! leading-7.5! md:text-[26px]!">Pilih Nama Domain</h3>
+                    <p class="text-deep-blue-300 text-[18px]! leading-6.5! paragraph-md md:text-[20px]! md:leading-8!">Pilih nama domain yang ingin Anda teruskan, cari opsi Penerusan Domain (juga dikenal sebagai Pengalihan), lalu klik Tambah Baru.</p>
                 </div>
             </div>
             <div data-analytics-level3="Paste the Destination URL" class="flex gap-3.25 md:px-4">
                 <div class="flex justify-center items-center border-4 border-mint-300 rounded-full size-7.5 font-extrabold text-[16px] text-navy-blue-300 shrink-0 md:text-[32px] md:font-semibold md:size-12.5">4</div>
                 <div class="space-y-2 text-deep-blue-300">
-                    <h3 class="subheadline-3">Tempel URL Tujuan</h3>
-                    <p class="text-deep-blue-300 text-[24px]! leading-9! paragraph-md">Tempelkan URL media sosial atau halaman e-commerce Anda ke bagian Penerusan atau Pengalihan Domain.</p>
+                    <h3 class="subheadline-3 text-[24px]! leading-7.5! md:text-[26px]!">Tempel URL Tujuan</h3>
+                    <p class="text-deep-blue-300 text-[18px]! leading-6.5! paragraph-md md:text-[20px]! md:leading-8!">Tempelkan URL media sosial atau halaman e-commerce Anda ke bagian Penerusan atau Pengalihan Domain.</p>
                 </div>
             </div>
             <div data-analytics-level3="Update DNS & Save" class="flex gap-3.25 md:px-4">
                 <div class="flex justify-center items-center border-4 border-mint-300 rounded-full size-7.5 font-extrabold text-[16px] text-navy-blue-300 shrink-0 md:text-[32px] md:font-semibold md:size-12.5">5</div>
                 <div class="space-y-2 text-deep-blue-300">
-                    <h3 class="subheadline-3">Perbarui DNS dan Simpan</h3>
-                    <p class="text-deep-blue-300 text-[24px]! leading-9! paragraph-md">Pastikan Anda memperbarui pengaturan DNS untuk mendukung perubahan ini, lalu klik Simpan, dan selesai!</p>
+                    <h3 class="subheadline-3 text-[24px]! leading-7.5! md:text-[26px]!">Perbarui DNS dan Simpan</h3>
+                    <p class="text-deep-blue-300 text-[18px]! leading-6.5! paragraph-md md:text-[20px]! md:leading-8!">Pastikan Anda memperbarui pengaturan DNS untuk mendukung perubahan ini, lalu klik Simpan, dan selesai!</p>
                 </div>
             </div>
         </div>
@@ -196,7 +196,7 @@
         <img class="w-full block h-187.5 object-cover md:h-auto md:hidden" src="{{ asset('images/hero-resources-usecase-mobile.jpg') }}" alt="">
         <div class="top-0 left-1/2 absolute flex flex-col justify-start gap-6 size-full -translate-x-1/2 py-7.5 container md:py-0 md:justify-center">
             <h2 class="text-navy-blue-300 headline-1">Mencari sumber <span class="block">informasi lainnya?</span></h2>
-            <p class="max-w-150 text-deep-blue-300 paragraph-md md:leading-8.5!">Jelajahi Panduan Belajar untuk menemukan semua artikel, video, dan banyak lagi tentang cara menggunakan domain .com.</p>
+            <p class="max-w-150 text-deep-blue-300 paragraph-md">Jelajahi Panduan Belajar untuk menemukan semua artikel, video, dan banyak lagi tentang cara menggunakan domain .com.</p>
             <a
                 data-analytics-name="button | Visit the Learning Hub"
                 href="{{ route('resources.index') }}"
@@ -210,9 +210,9 @@
     {{-- Search --}}
     <section
         data-analytics-level2="search"
-        class="bg-deep-blue-300 py-7.5 md:py-12.5">
+        class="bg-deep-blue-300 py-7.5 md:pt-13.75 md:pb-10">
         <div class="container flex flex-col justify-center items-center">
-            <h2 class="subheadline-2 text-white text-center max-w-xs mx-auto sm:mx-0 sm:max-w-full lg:text-[40px]!">
+            <h2 class="subheadline-2 text-white text-center text-[26px]! leading-7.5! max-w-62.5 mx-auto sm:mx-0 sm:max-w-full lg:text-[40px]!">
                 Temukan Nama Domain .com
             </h2>
         </div>

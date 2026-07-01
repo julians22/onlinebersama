@@ -34,27 +34,27 @@
         data-analytics-level2="Benefits of a Website"
         class="py-7.5 container md:py-12.5">
         <div class="pb-42 md:pb-44">
-            <h2 class="sticky mb-10 text-navy-blue-300 text-center headline-1 top-40 min-[1200px]:top-33">Manfaat Situs Web</h2>
+            <h2 class="sticky top-18 mb-10 text-navy-blue-300 text-center headline-1 sm:top-20 md:top-24 lg:top-40 min-[1200px]:top-32!">Manfaat Situs Web</h2>
             <div class="flex flex-col gap-6 mx-auto md:max-w-208">
                 <div
                     data-analytics-level3="Grow on Your Terms"
-                    class="top-42 sticky card-stack lg:top-64 min-[1200px]:top-56.5!">
+                    class="top-36.5 sticky card-stack sm:top-38.5 md:top-48 lg:top-64 min-[1200px]:top-55.5!">
                     <x-displays.card-stack number="1" title="Berkembang Sesuai Keinginan Anda" image="images/website-editorial-1.jpg" alt="">
-                        Ciptakan tempat bagi bisnis Anda untuk berakar dan berkembang sesuai keinginan Anda. Situs web dengan nama domain .com dapat berkembang seiring perkembangan bisnis Anda.
+                        <p class="min-h-40 min-[500px]:min-h-32 sm:min-h-24 md:min-h-auto">Ciptakan tempat bagi bisnis Anda untuk berakar dan berkembang sesuai keinginan Anda. Situs web dengan nama domain .com dapat berkembang seiring perkembangan bisnis Anda.</p>
                     </x-displays.card-stack>
                 </div>
                 <div
                     data-analytics-level3="Control Your Brand"
-                    class="top-42 sticky card-stack -mt-18 translate-y-18 md:-mt-22 md:translate-y-22 lg:top-64 min-[1200px]:top-56.5! lg:-mt-24 lg:translate-y-24">
+                    class="top-36.5 sticky card-stack -mt-22 translate-y-22 sm:top-38.5 md:top-48 md:-mt-22 md:translate-y-22 lg:top-64 min-[1200px]:top-55.5! lg:-mt-24 lg:translate-y-24">
                     <x-displays.card-stack number="2" title="Kendalikan Merek Anda" image="images/website-editorial-2.jpg" alt="">
-                        Memiliki situs web dengan nama domain .com memberi Anda ruang untuk membangun merek dan mengendalikan eksistensi online Anda.
+                        <p class="min-h-40 min-[500px]:min-h-32 sm:min-h-24 md:min-h-auto">Memiliki situs web dengan nama domain .com memberi Anda ruang untuk membangun merek dan mengendalikan eksistensi online Anda.</p>
                     </x-displays.card-stack>
                 </div>
                 <div
                     data-analytics-level3="Get Noticed by Customers"
-                    class="top-42 sticky card-stack -mb-24 translate-y-18 md:-mb-20 md:translate-y-22 lg:top-64 min-[1200px]:top-56.5! lg:translate-y-24">
+                    class="top-36.5 sticky card-stack -mb-20 translate-y-22 sm:top-38.5 md:top-48 md:-mb-20 md:translate-y-22 lg:top-64 min-[1200px]:top-55.5! lg:translate-y-24">
                     <x-displays.card-stack number="3" title="Lebih Mudah Ditemukan" image="images/website-editorial-3.jpg" alt="">
-                        Situs web dengan nama domain .com memudahkan pelanggan menemukan Anda. Di situlah dunia akan menemukan Anda.
+                        <p class="min-h-40 min-[500px]:min-h-32 sm:min-h-24 md:min-h-auto">Situs web dengan nama domain .com memudahkan pelanggan menemukan Anda. Di situlah dunia akan menemukan Anda.</p>
                     </x-displays.card-stack>
                 </div>
             </div>
@@ -226,7 +226,7 @@
         <img class="w-full block h-187.5 object-cover md:h-auto md:hidden" src="{{ asset('images/hero-resources-usecase-mobile.jpg') }}" alt="">
         <div class="top-0 left-1/2 absolute flex flex-col justify-start gap-6 size-full -translate-x-1/2 py-7.5 container md:py-0 md:justify-center">
             <h2 class="text-navy-blue-300 headline-1">Mencari sumber <span class="block">informasi lainnya?</span></h2>
-            <p class="max-w-150 text-deep-blue-300 paragraph-md md:leading-8.5!">Jelajahi Panduan Belajar untuk menemukan semua artikel, video, dan banyak lagi tentang cara menggunakan domain .com.</p>
+            <p class="max-w-150 text-deep-blue-300 paragraph-md">Jelajahi Panduan Belajar untuk menemukan semua artikel, video, dan banyak lagi tentang cara menggunakan domain .com.</p>
             <a
                 data-analytics-name="button | Visit the Learning Hub"
                 href="{{ route('resources.index') }}"
@@ -240,9 +240,9 @@
     {{-- Search --}}
     <section
         data-analytics-level2="search"
-        class="bg-deep-blue-300 py-7.5 md:py-12.5">
+        class="bg-deep-blue-300 py-7.5 md:pt-13.75 md:pb-10">
         <div class="container flex flex-col justify-center items-center">
-            <h2 class="subheadline-2 text-white text-center max-w-xs mx-auto sm:mx-0 sm:max-w-full lg:text-[40px]!">
+            <h2 class="subheadline-2 text-white text-center text-[26px]! leading-7.5! max-w-62.5 mx-auto sm:mx-0 sm:max-w-full lg:text-[40px]!">
                 Temukan Nama Domain .com
             </h2>
         </div>

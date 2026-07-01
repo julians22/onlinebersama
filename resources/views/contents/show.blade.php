@@ -44,9 +44,9 @@
         @include($view_path)
         <section
             data-analytics-level2="search"
-            class="bg-deep-blue-300 py-16 lg:py-22">
+            class="bg-deep-blue-300 py-7.5 md:pt-13.75 md:pb-10">
             <div class="container flex flex-col justify-center items-center">
-                <h2 class="subheadline-2 text-white text-center max-w-xs mx-auto sm:mx-0 sm:max-w-full lg:text-[40px]!">
+                <h2 class="subheadline-2 text-white text-center text-[26px]! leading-7.5! max-w-62.5 mx-auto sm:mx-0 sm:max-w-full lg:text-[40px]!">
                     Temukan Nama Domain .com
                 </h2>
             </div>
