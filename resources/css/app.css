@@ -147,7 +147,7 @@
     .sidebar-link {
         @apply py-5 px-6 border-t-2 border-light-gray-300;
         p {
-            @apply flex justify-between items-center gap-x-2 font-sans font-bold text-navy-blue-300 text-[28px] leading-8;
+            @apply flex justify-between items-center gap-x-2 font-sans font-bold text-navy-blue-300 text-[25px] leading-8;
         }
         a {
             @apply flex justify-between items-center gap-x-2 font-sans font-bold text-navy-blue-300 text-[25px] leading-8;

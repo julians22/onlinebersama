@@ -177,7 +177,7 @@
         <div x-data x-cloak x-init="$store.videoModal.init('{{ config('onlinebersama.brightcove_account_id') }}', '{{ config('onlinebersama.brightcove_player_id') }}')" x-show="$store.videoModal.open" class="fixed inset-0 flex items-center justify-center z-100 bg-black/50 px-4 md:px-16">
             <div class="relative bg-white max-w-240 w-full rounded-[10px] shadow-lg p-4 md:p-12">
                 <button type="button" @click="$store.videoModal.closeModal()" class="absolute -top-10 right-0 cursor-pointer md:top-3 md:right-3">
-                    <x-icons.close width="24" height="24" fill="#000" class="w-8 h-8" />
+                    <x-icons.close width="24" height="24" fill="#A7127E" class="w-8 h-8" />
                 </button>
                 <div id="vjs-video-render"></div>
             </div>
