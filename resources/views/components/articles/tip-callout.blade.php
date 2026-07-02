@@ -1,4 +1,6 @@
 <div class="p-6 border-l-4 border-light-gray-100 space-y-2.5" {{ $attributes }}>
-    {{ $title }}
+    <div class="tip-callout">
+        {{ $title }}
+    </div>
     {{ $slot }}
 </div>

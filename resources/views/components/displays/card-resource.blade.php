@@ -12,7 +12,7 @@
         @endif
         <div class="h-28.5">
             <x-displays.clickable :as="$as" {{ $attributes->merge($extra_attributes) }} class="text-left cursor-pointer">
-                <h2 class="subheadline-3 text-deep-blue-300 line-clamp-3 text-[26px]! md:text-[28px]!">{{ $slot }}</h2>
+                <h2 class="subheadline-3 text-deep-blue-300 line-clamp-3 text-[24px]! leading-7.5! md:text-[26px]!">{{ $slot }}</h2>
             </x-displays.clickable>
         </div>
         <x-displays.clickable :as="$as" {{ $attributes->merge($extra_attributes) }}

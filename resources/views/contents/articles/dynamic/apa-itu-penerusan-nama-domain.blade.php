@@ -21,7 +21,7 @@
         <div id="apa-yang-dimaksud-dengan-penerusan-nama-domain-com" class="article-child-wrapper scroll-mt-20 sm:scroll-mt-28">
             <h3>Apa yang Dimaksud dengan “Penerusan” Nama Domain .com?</h3>
             <p>Penerusan nama domain(juga disebut penerusan atau pengalihan web) mirip seperti mengalihkan alamat surat menyurat Anda saat Anda pindah rumah - <strong>Anda cukup membuat aturan yang memberi tahu penyedia nama domain Anda untuk mengarahkan semua pengunjung yang mengetik nama domain Anda di browser ke halaman online pilihan Anda.</strong> Anda dapat memperbarui aturan tersebut kapan saja, sehingga seiring perkembangan dan pertumbuhan kehadiran online Anda, nama domain Anda dapat ikut menyesuaikan.</p>
-            <img class="aspect-video md:h-81.25" src="{{ asset('images/gif/penerusan-nama-domain.gif') }}" alt="" />
+            <img class="aspect-video object-contain md:h-81.25" src="{{ asset('images/gif/penerusan-nama-domain.gif') }}" alt="" />
             <p>Beberapa manfaat tambahan yang dapat Anda peroleh dari penerusan nama domain .com meliputi:</p>
             <div class="flex flex-col gap-2.5">
                 <x-articles.arrow-item-content>

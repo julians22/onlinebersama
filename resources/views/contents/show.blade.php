@@ -14,7 +14,7 @@
         <section
             data-analytics-level2="hero"
             class="bg-light-gray-100">
-            <div class="container grid grid-cols-1 items-center gap-6 py-10 md:gap-10 md:py-19.5 xl:grid-flow-col">
+            <div class="container grid grid-cols-1 items-center gap-6 py-10 md:gap-10 md:py-19.5 lg:grid-flow-col">
                 <div class="flex flex-col gap-4 md:gap-6">
                     <div
                         data-analytics-name="text | breadcrumb"
@@ -27,13 +27,13 @@
                     </div>
                     <h1 class="headline-1 text-navy-blue-300">{{ $post->title }}</h1>
                     @if ($post->writer)
-                        <h4 class="subheadline-4 text-deep-blue-300 font-extrabold!">Oleh {{ $post->writer }}</h4>
+                        <h4 class="subheadline-4 text-deep-blue-300 font-extrabold! text-[20px]! leading-6.25! md:text-[22px]! md:leading-6!">Oleh {{ $post->writer }}</h4>
                     @endif
                     <p class="paragraph-sm text-deep-blue-300">Waktu baca rata-rata {{ $post->read_time }}</p>
                 </div>
-                <div x-data="{ videoId: '{{ $post->video_id }}' }" @if ($post->video_id) data-analytics-level3="{{ $post->data_analytics ?? $post->title }}" @endif class="relative aspect-video w-full rounded-[10px] overflow-hidden xl:w-156.75">
-                    <img @if ($post->video_id) data-analytics-name="video image | {{ $post->data_analytics ?? $post->title }}" @endif class="w-full" src="{{ imageArticle($post->thumbnail_file_name) }}" alt="">
-                    @if ($post->video_id)
+                <div x-data="{ videoId: '{{ $post->video_id }}' }" @if ($post->video_id) data-analytics-level3="{{ $post->data_analytics ?? $post->title }}" @endif class="relative aspect-video w-full rounded-[10px] overflow-hidden lg:w-156.75">
+                    <img @if ($post->type === 'video') data-analytics-name="video image | {{ $post->data_analytics ?? $post->title }}" @endif class="w-full" src="{{ imageArticle($post->thumbnail_file_name) }}" alt="">
+                    @if ($post->type === 'video')
                         <button data-analytics-name="play button | {{ $post->data_analytics ?? $post->title }}" type="button" @click="$store.videoModal.openModal(videoId)" class="group absolute size-full inset-0 flex justify-center items-center bg-gradient-video cursor-pointer">
                             <x-icons.play-rounded width="78" height="78" fill="#fff" class="transition-all duration-300 ease-in-out group-hover:scale-110" />
                         </button>
@@ -55,7 +55,7 @@
         <section
             data-analytics-level2="How Do I Use a .com?"
             class="bg-light-gray-100 overflow-hidden!">
-            <div class="container py-10 px-0 md:pt-10 md:pb-19.5 xl:px-8">
+            <div class="container py-10 px-0 md:py-12.5 xl:px-8">
                 <h2 class="text-navy-blue-300 text-center -mb-6 px-4 headline-1 md:-mb-2 md:px-8">Bagaimana Cara Saya Menggunakan .com?</h2>
                 <div class="online-bersama-how-to-use swiper">
                     <div class="swiper-wrapper">
@@ -90,7 +90,7 @@
         </section>
         <section
             data-analytics-level2="Explore More Topics"
-            class="container overflow-hidden! py-10 md:pt-10 md:pb-19.5">
+            class="container overflow-hidden! py-10 md:py-12.5">
             <h2 class="text-navy-blue-300 text-center -mb-6 px-4 headline-1 md:-mb-2 md:px-8">Jelajahi Topik Lain</h2>
             <div class="online-bersama-explore-more-topics swiper">
                 <div class="swiper-wrapper">

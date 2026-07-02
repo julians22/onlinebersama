@@ -4,7 +4,7 @@
     <div data-analytics-name="box | Get More Insights With the Full E-book" class="flex flex-col bg-light-gray-100 rounded-[10px] gap-8 py-4 pr-4 pl-4 sm:items-center md:flex-row min-[900px]:pl-14">
         <img class="max-w-53.75 h-59 w-full mx-auto sm:mx-0" src="{{ asset('images/ebook-image.png') }}" alt="">
         <div class="flex flex-col gap-3 text-left px-3 sm:px-0 sm:text-center md:gap-4 md:text-left">
-            <h3 class="smaller leading-7.5!">Ambil Langkah Selanjutnya</h3>
+            <h3 class="smaller-ebook">Ambil Langkah Selanjutnya</h3>
             <a
                 data-analytics-name="text | Download"
                 href="{{ $data ?? '#' }}"
