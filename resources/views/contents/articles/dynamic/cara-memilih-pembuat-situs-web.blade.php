@@ -3,26 +3,26 @@
         <x-articles.intro-and-quicklinks>
             <div class="article-child-wrapper">
                 <p>Situs web bisnis dapat berfungsi sebagai fondasi kehadiran online dengan memungkinkan Anda memasarkan produk dan layanan sambil terhubung dengan pelanggan di satu lokasi yang nyaman. Jika berencana meluncurkan situs web bisnis Anda sendiri dengan nama domain .com, berikut panduan untuk membantu Anda memulai:</p>
-                <x-articles.navigate-link>
-                    <a href="#membuat-rencana-identifikasi-kebutuhan-situs-web-anda">
-                        1: Membuat Rencana: Identifikasi Kebutuhan Situs Web Anda
+                <x-articles.navigate-link :article="true">
+                    <a data-analytics-name="anchor | Creating a Plan: Identify Your Website Needs" href="#membuat-rencana-identifikasi-kebutuhan-situs-web-anda">
+                        <span class="hidden md:inline">1:</span> Membuat Rencana: Identifikasi Kebutuhan Situs Web Anda
                     </a>
-                    <a href="#menemukan-pembuat-situs-web-yang-memenuhi-kebutuhan-anda">
-                        2: Menemukan Pembuat Situs Web yang Memenuhi Kebutuhan Anda
+                    <a data-analytics-name="anchor | Finding a Website Builder That Meets Your Needs" href="#menemukan-pembuat-situs-web-yang-memenuhi-kebutuhan-anda">
+                        <span class="hidden md:inline">2:</span> Menemukan Pembuat Situs Web yang Memenuhi Kebutuhan Anda
                     </a>
-                    <a href="#memilih-paket-terbaik-untuk-bisnis-anda">
-                        3: Memilih Paket Terbaik untuk Bisnis Anda
+                    <a data-analytics-name="anchor | Choosing the Best Plan for Your Business" href="#memilih-paket-terbaik-untuk-bisnis-anda">
+                        <span class="hidden md:inline">3:</span> Memilih Paket Terbaik untuk Bisnis Anda
                     </a>
                 </x-articles.navigate-link>
             </div>
         </x-articles.intro-and-quicklinks>
-        <div id="membuat-rencana-identifikasi-kebutuhan-situs-web-anda" class="article-child-wrapper scroll-mt-20 sm:scroll-mt-28">
+        <div id="membuat-rencana-identifikasi-kebutuhan-situs-web-anda" class="article-child-wrapper scroll-mt-110 min-[450px]:scroll-mt-86 md:scroll-mt-28">
             <h3 data-analytics-level2="Creating a Plan: Identify Your Website Needs">Membuat Rencana: Identifikasi Kebutuhan Situs Web Anda</h3>
             <p>Langkah pertama yang perlu dipertimbangkan saat membangun situs web adalah memetakan tujuan dan sasaran Anda untuk situs web tersebut. Sebagai contoh, apakah situs Anda berbasis pada <em>informasi</em>, atau berfokus pada <em>e-commerce</em>? Siapa audiens yang ingin Anda jangkau? Menjawab pertanyaan ini dapat membantu menentukan tidak hanya layanan pembuatan situs web apa yang akan digunakan, tetapi juga apa yang akan disertakan dalam situs, cara merencanakan pemeliharaan dan promosi situs, serta alamat web apa yang Anda inginkan agar dilihat pengunjung saat membuka situs Anda.</p>
-            <p>Meskipun mungkin merupakan titik awal yang mudah untuk menggunakan alamat web gratis yang disediakan oleh pembuat situs web (seperti “username.PembuatSitusWeb.com/senyumegar”), <strong>ada banyak manfaat dalam memiliki <a data-analytics-name="text | .com domain name." href="{{ route('find') }}" class="link-to">nama domain .com</a> khusus Anda sendiri.</strong> Hal ini secara jelas akan mengiklankan bisnis Anda, memberi alamat web konsisten yang dapat berpindah bersama bisnis meskipun Anda memutuskan untuk mengganti penyedia situs web nanti, serta memberi opsi untuk membuat email bisnis khusus, dan masih banyak lagi.</p>
+            <p>Meskipun mungkin merupakan titik awal yang mudah untuk menggunakan alamat web gratis yang disediakan oleh pembuat situs web (seperti <span class="break-all">“username.PembuatSitusWeb.com/senyumegar”)</span>, <strong>ada banyak manfaat dalam memiliki <a data-analytics-name="text | .com domain name." href="{{ route('find') }}" class="link-to">nama domain .com</a> khusus Anda sendiri.</strong> Hal ini secara jelas akan mengiklankan bisnis Anda, memberi alamat web konsisten yang dapat berpindah bersama bisnis meskipun Anda memutuskan untuk mengganti penyedia situs web nanti, serta memberi opsi untuk membuat email bisnis khusus, dan masih banyak lagi.</p>
             <p data-analytics-name="creating your website plan.">Untuk mengetahui informasi selengkapnya tentang cara membuat rencana situs web, tinjau <a href="{{ route('resources.handle_second_route', ['second_route' => config('onlinebersama.custom_article_route.websites-detail'), 'slug' => 'membuat-situs-web']) }}" class="link-to">daftar periksa</a> kami yang menguraikan poin-poin utama yang perlu dipertimbangkan saat memulai.</p>
         </div>
-        <div id="menemukan-pembuat-situs-web-yang-memenuhi-kebutuhan-anda" class="article-child-wrapper scroll-mt-20 sm:scroll-mt-28">
+        <div id="menemukan-pembuat-situs-web-yang-memenuhi-kebutuhan-anda" class="article-child-wrapper scroll-mt-110 min-[450px]:scroll-mt-86 md:scroll-mt-28">
             <h3>Menemukan Pembuat Situs Web yang Memenuhi Kebutuhan Anda</h3>
             <p>Setelah Anda selesai merencanakan situs web, inilah saatnya untuk meneliti pembuat situs web mana yang cocok bagi Anda dan bisnis Anda. Banyak pembuat situs web saat ini menawarkan fungsionalitas dan layanan yang mudah digunakan, serta penyedia tertentu bahkan mungkin menawarkan paket gratis atau biaya rendah dengan opsi untuk peningkatan dengan biaya tambahan. Paket gratis atau berbiaya rendah biasanya menawarkan pengalaman situs web dasar tingkat pemula, sedangkan paket premium biasanya menawarkan lebih banyak variasi manfaat, termasuk nama domain khusus.</p>
             <p>Perlu bantuan untuk mengambil keputusan? Meskipun setiap pembuat situs web menawarkan layanan dan ketentuan uniknya sendiri, untuk membantu Anda memulai, berikut adalah jenis fitur yang mungkin disertakan dalam paket gratis atau berbiaya rendah versus paket yang ditingkatkan.</p>
@@ -135,7 +135,7 @@
                 </div>
             </x-articles.callout-cta>
         </div>
-        <div id="memilih-paket-terbaik-untuk-bisnis-anda" class="article-child-wrapper scroll-mt-20 sm:scroll-mt-28">
+        <div id="memilih-paket-terbaik-untuk-bisnis-anda" class="article-child-wrapper scroll-mt-110 min-[450px]:scroll-mt-86 md:scroll-mt-28">
             <h3>Memilih Paket Terbaik untuk Bisnis Anda</h3>
             <p>Jika Anda sedang mencari rekomendasi pembuat situs web mana yang paling cocok untuk bisnis Anda, jawabannya adalah: <em>tergantung pada tujuan Anda.</em></p>
             <p>Ide, proyek, dan bisnis memiliki kebutuhan yang berbeda-beda – pembuat situs web tertentu mungkin berfungsi dengan baik untuk beberapa orang, namun mungkin tidak optimal untuk kebutuhan Anda. Untuk memilih pembuat situs web, pikirkan tujuan Anda dan evaluasi opsi Anda:</p>

@@ -189,12 +189,32 @@
         @apply w-full flex items-center justify-between gap-x-2.5 font-sans text-left font-semibold text-xl rounded-[10px] text-deep-blue-300 border border-light-gray-500 leading-7.5 cursor-pointer bg-white px-4 py-3;
     }
 
+    button.select-dropdown-article {
+        @apply w-full flex items-center justify-between gap-x-2.5 font-sans text-left font-semibold text-xl text-deep-blue-300 leading-7.5 cursor-pointer bg-white px-4 py-3;
+    }
+
     .option-dropdown {
         @apply flex flex-col gap-3 top-full bg-white rounded-[10px] overflow-hidden z-10 mt-1.5 inset-x-0 shadow-md min-h-10 absolute py-3 max-h-87.5 overflow-y-auto;
         button, a {
             @apply px-4 py-2 font-sans text-left font-semibold text-xl text-deep-blue-300 leading-7.5 cursor-pointer bg-white transition-colors duration-300;
             &:hover {
                 @apply bg-mint-300;
+            }
+            span {
+                @apply font-semibold! text-[20px] leading-7.5 md:leading-8;
+            }
+        }
+    }
+
+    .option-dropdown-article {
+        @apply flex flex-col gap-2.5 bg-white overflow-hidden z-10 min-h-10 py-3 max-h-87.5 overflow-y-auto;
+        button, a {
+            @apply px-4 py-1.5 font-sans text-left font-semibold text-xl text-deep-blue-300 leading-7.5 cursor-pointer bg-white transition-colors duration-300;
+            &:hover {
+                @apply bg-mint-300;
+            }
+            span {
+                @apply font-semibold! text-[20px] leading-7.5 md:leading-8;
             }
         }
     }
@@ -216,7 +236,10 @@
         .anchor-link {
             @apply flex flex-col gap-3;
             a {
-                @apply font-sans text-[22px] font-semibold leading-[140%] text-deep-blue-300;
+                @apply font-sans text-[20px] font-semibold leading-8 text-deep-blue-300;
+                span {
+                    @apply font-semibold! text-[20px] leading-7.5 md:leading-8;
+                }
             }
         }
         a.link-to {

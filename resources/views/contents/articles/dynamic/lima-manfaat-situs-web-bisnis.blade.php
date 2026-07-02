@@ -3,26 +3,31 @@
         <x-articles.intro-and-quicklinks>
             <div class="article-child-wrapper">
                 <p>Situs web adalah salah satu alat pemasaran terpenting bagi bisnis dalam skala apa pun. Sebagai fondasi kehadiran online Anda, situs web bisnis dapat menyediakan platform fleksibel untuk menampilkan produk, layanan, dan identitas perusahaan, sehingga memberi Anda kontrol lebih besar atas cara pelanggan berinteraksi dengan bisnis Anda. Berikut adalah lima manfaat utama memiliki situs web bisnis dengan nama domain .com.</p>
-                <x-articles.navigate-link>
-                    <a href="#meningkatkan-kredibilitas-anda">
-                        1: Meningkatkan Kredibilitas Anda
+                <x-articles.navigate-link :article="true">
+                    <a data-analytics-name="anchor | 1. Boost Your Credibility" href="#meningkatkan-kredibilitas-anda">
+                        <span class="hidden md:inline">1:</span>
+                        <span class="inline md:hidden">1.</span> Meningkatkan Kredibilitas Anda
                     </a>
-                    <a href="#mencuri-perhatian-pelanggan">
-                        2: Mencuri Perhatian Pelanggan
+                    <a data-analytics-name="anchor | 2. Get Noticed by Customers" href="#mencuri-perhatian-pelanggan">
+                        <span class="hidden md:inline">2:</span>
+                        <span class="inline md:hidden">2.</span> Mencuri Perhatian Pelanggan
                     </a>
-                    <a href="#memusatkan-kehadiran-online-anda">
-                        3: Memusatkan Kehadiran Online Anda
+                    <a data-analytics-name="anchor | 3. Centralized Your Online Presence" href="#memusatkan-kehadiran-online-anda">
+                        <span class="hidden md:inline">3:</span>
+                        <span class="inline md:hidden">3.</span> Memusatkan Kehadiran Online Anda
                     </a>
-                    <a href="#mengontrol-pemasaran-anda">
-                        4: Mengontrol Pemasaran Anda
+                    <a data-analytics-name="anchor | 4. Control Your Marketing" href="#mengontrol-pemasaran-anda">
+                        <span class="hidden md:inline">4:</span>
+                        <span class="inline md:hidden">4.</span> Mengontrol Pemasaran Anda
                     </a>
-                    <a href="#mendapatkan-wawasan-lebih-dalam">
-                        5: Mendapatkan Wawasan Lebih Dalam
+                    <a data-analytics-name="anchor | 5. Gain Deeper Insights" href="#mendapatkan-wawasan-lebih-dalam">
+                        <span class="hidden md:inline">5:</span>
+                        <span class="inline md:hidden">5.</span> Mendapatkan Wawasan Lebih Dalam
                     </a>
                 </x-articles.navigate-link>
             </div>
         </x-articles.intro-and-quicklinks>
-        <div id="meningkatkan-kredibilitas-anda" class="article-child-wrapper scroll-mt-20 sm:scroll-mt-28">
+        <div id="meningkatkan-kredibilitas-anda" class="article-child-wrapper scroll-mt-110 min-[450px]:scroll-mt-86 md:scroll-mt-28">
             <h3 data-analytics-level2="1. Boost Your Credibility">1. Meningkatkan Kredibilitas Anda</h3>
             <p>Ekstensi nama domain .com memiliki kredibilitas di seluruh dunia. Jika digunakan dengan situs web, nama domain .com khusus dapat membantu memberikan legitimasi pada bisnis Anda dan memungkinkan Anda untuk:</p>
             <x-articles.arrow-item-content>
@@ -47,7 +52,7 @@
                 </div>
             </x-articles.callout-cta>
         </div>
-        <div id="mencuri-perhatian-pelanggan" class="article-child-wrapper scroll-mt-20 sm:scroll-mt-28">
+        <div id="mencuri-perhatian-pelanggan" class="article-child-wrapper scroll-mt-110 min-[450px]:scroll-mt-86 md:scroll-mt-28">
             <h3>2. Mencuri Perhatian Pelanggan</h3>
             <p>Situs web dengan nama domain .com khusus dapat membantu bisnis dari semua ukuran untuk terhubung dengan pelanggan dan mitra di seluruh dunia karena:</p>
             <x-articles.arrow-item-content>
@@ -66,7 +71,7 @@
                 </div>
             </x-articles.arrow-item-content>
         </div>
-        <div id="memusatkan-kehadiran-online-anda" class="article-child-wrapper scroll-mt-20 sm:scroll-mt-28">
+        <div id="memusatkan-kehadiran-online-anda" class="article-child-wrapper scroll-mt-110 min-[450px]:scroll-mt-86 md:scroll-mt-28">
             <h3>3. Memusatkan Kehadiran Online Anda</h3>
             <p>Mempertahankan kehadiran online Anda di berbagai saluran, seperti media sosial dan pasar e-commerce adalah ide yang bagus. Namun, akan sangat bermanfaat jika memiliki situs web sebagai lokasi online pusat tempat Anda mengarahkan pelanggan karena situs web memungkinkan Anda untuk:</p>
             <x-articles.arrow-item-content>
@@ -85,7 +90,7 @@
                 </div>
             </x-articles.arrow-item-content>
         </div>
-        <div id="mengontrol-pemasaran-anda" class="article-child-wrapper scroll-mt-20 sm:scroll-mt-28">
+        <div id="mengontrol-pemasaran-anda" class="article-child-wrapper scroll-mt-110 min-[450px]:scroll-mt-86 md:scroll-mt-28">
             <h3>4. Mengontrol Pemasaran Anda</h3>
             <p>Seperti nama domain .com khusus, situs web Anda dirancang khusus untuk bisnis Anda. Dengan situs web bisnis Anda sendiri, Anda dapat:</p>
             <x-articles.arrow-item-content>
@@ -104,7 +109,7 @@
                 </div>
             </x-articles.arrow-item-content>
         </div>
-        <div id="mendapatkan-wawasan-lebih-dalam" class="article-child-wrapper scroll-mt-20 sm:scroll-mt-28">
+        <div id="mendapatkan-wawasan-lebih-dalam" class="article-child-wrapper scroll-mt-110 min-[450px]:scroll-mt-86 md:scroll-mt-28">
             <h3>5. Mendapatkan Wawasan Lebih Dalam</h3>
             <p>Memiliki situs web sendiri sering kali dapat memberikan wawasan yang dapat memberi Anda keuntungan dalam pemasaran. Misalnya, Anda dapat mempelajari produk mana yang paling populer dengan melacak klik, ulasan, dan volume pembelian; pengunjung dapat memilih untuk mengirimkan alamat email mereka guna menerima buletin email atau informasi promosi; dan Anda dapat melihat konten mana yang paling sering berinteraksi. Jenis informasi ini dapat digunakan untuk:</p>
             <x-articles.arrow-item-content>

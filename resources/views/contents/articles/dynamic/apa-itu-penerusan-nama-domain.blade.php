@@ -4,21 +4,21 @@
             <div class="article-child-wrapper">
                 <p>Belum siap untuk memiliki situs web? Memiliki Nama domain tetap dapat memberikan manfaat bagi bisnis Anda karena penerusan domain memungkinkan Anda untuk memiliki alamat situs web yang mudah diingat dan sesuai merk, terlepas di mana Anda akan membangun <x-articles.tooltip data-analytics-name="hover | online presence" data-tooltip="Kehadiran online / eksistensi online adalah suatu keadaan di mana bisnis Anda dapat ditemukan di internet, bisa dalam bentuk situs web, halaman media sosial, dan/atau pasar online. Menggunakan nama domain .com dengan kehadiran online Anda, dapat membuka peluang dengan membantu pelanggan menemukan “markas” Anda dengan mudah saat melakukan bisnis online.">kehadiran online</x-articles.tooltip> Anda. Penerusan nama domain adalah cara yang cepat dan mudah untuk membantu Anda mulai mempersonalisasi dan memasarkan kehadiran online Anda - baik di media sosial maupun di toko online.</p>
                 <p>Lihat panduan singkat ini untuk mengetahui cara melakukannya.</p>
-                <x-articles.navigate-link>
-                    <a href="#apa-yang-dimaksud-dengan-penerusan-nama-domain-com">
-                        1: Apa yang Dimaksud dengan “Penerusan” Nama Domain .com?
+                <x-articles.navigate-link :article="true">
+                    <a data-analytics-name='anchor | What does "Forwarding" a .com Domain Name Mean?' href="#apa-yang-dimaksud-dengan-penerusan-nama-domain-com">
+                        <span class="hidden md:inline">1:</span> Apa yang Dimaksud dengan “Penerusan” Nama Domain .com?
                     </a>
-                    <a href="#apa-saja-cara-yang-dapat-dilakukan-untuk-meneruskan-nama-domain-com">
-                        2: Apa Saja Cara yang Dapat Dilakukan untuk Meneruskan Nama Domain .com?
+                    <a data-analytics-name="anchor | What Are the Different Ways to Forward a Domain Name?" href="#apa-saja-cara-yang-dapat-dilakukan-untuk-meneruskan-nama-domain-com">
+                        <span class="hidden md:inline">2:</span> Apa Saja Cara yang Dapat Dilakukan untuk Meneruskan Nama Domain .com?
                     </a>
-                    <a href="#bagaimana-cara-saya-meneruskan-nama-domain-com">
-                        3: Bagaimana Cara Saya Meneruskan Nama Domain .com?
+                    <a data-analytics-name="anchor | How Do I forward a .com Domain Name?" href="#bagaimana-cara-saya-meneruskan-nama-domain-com">
+                        <span class="hidden md:inline">3:</span> Bagaimana Cara Saya Meneruskan Nama Domain .com?
                     </a>
                 </x-articles.navigate-link>
             </div>
         </x-articles.intro-and-quicklinks>
         <p>Jika bisnis Anda memiliki halaman media sosial atau toko online, Anda dapat membuatnya lebih mudah ditemukan dengan alamat web .com khusus yang mudah diingat. Hal ini karena dengan penerusan domain, Anda dapat mengarahkan nama domain ke kehadiran online pilihan Anda, sehingga membantu Anda menjangkau lebih banyak orang.</p>
-        <div id="apa-yang-dimaksud-dengan-penerusan-nama-domain-com" class="article-child-wrapper scroll-mt-20 sm:scroll-mt-28">
+        <div id="apa-yang-dimaksud-dengan-penerusan-nama-domain-com" class="article-child-wrapper scroll-mt-110 min-[450px]:scroll-mt-86 md:scroll-mt-28">
             <h3>Apa yang Dimaksud dengan “Penerusan” Nama Domain .com?</h3>
             <p>Penerusan nama domain(juga disebut penerusan atau pengalihan web) mirip seperti mengalihkan alamat surat menyurat Anda saat Anda pindah rumah - <strong>Anda cukup membuat aturan yang memberi tahu penyedia nama domain Anda untuk mengarahkan semua pengunjung yang mengetik nama domain Anda di browser ke halaman online pilihan Anda.</strong> Anda dapat memperbarui aturan tersebut kapan saja, sehingga seiring perkembangan dan pertumbuhan kehadiran online Anda, nama domain Anda dapat ikut menyesuaikan.</p>
             <img class="aspect-video object-contain md:h-81.25" src="{{ asset('images/gif/penerusan-nama-domain.gif') }}" alt="" />
@@ -47,7 +47,7 @@
                 </div>
             </x-articles.callout-cta>
         </div>
-        <div id="apa-saja-cara-yang-dapat-dilakukan-untuk-meneruskan-nama-domain-com" class="article-child-wrapper scroll-mt-20 sm:scroll-mt-28">
+        <div id="apa-saja-cara-yang-dapat-dilakukan-untuk-meneruskan-nama-domain-com" class="article-child-wrapper scroll-mt-110 min-[450px]:scroll-mt-86 md:scroll-mt-28">
             <h3 data-analytics-level2="What Are the Different Ways to Forward a Domain Name?">Apa Cara yang Dapat Dilakukan untuk Meneruskan Nama Domain?</h3>
             <p>Sekarang setelah kita membahas <a data-analytics-name="text | benefits of domain name forwarding" href="{{ route('resources.handle_second_route', ['second_route' => config('onlinebersama.custom_article_route.social-media-detail'), 'slug' => 'cara-menggunakan']) }}" class="link-to">manfaat penerusan nama domain</a>, mari kita uraikan berbagai jenis penerusan dan bagaimana penerusan tersebut dapat memengaruhi apa yang dilihat pelanggan Anda di browser web mereka.</p>
             <p>Saat bekerja dengan penjual nama domain, Anda mungkin akan memiliki dua opsi:</p>
@@ -96,7 +96,7 @@
                 TipsCantikChika.com
             </x-articles.workflow>
         </div>
-        <div id="bagaimana-cara-saya-meneruskan-nama-domain-com" class="article-child-wrapper scroll-mt-20 sm:scroll-mt-28">
+        <div id="bagaimana-cara-saya-meneruskan-nama-domain-com" class="article-child-wrapper scroll-mt-110 min-[450px]:scroll-mt-86 md:scroll-mt-28">
             <h3 data-analytics-level2="How Do I Forward a .com Domain Name?">Bagaimana Cara Saya Meneruskan Nama Domain .com?</h3>
             <p>Untuk memulai, Anda harus memastikan bahwa nama domain .com sudah terdaftar dan selanjutnya menentukan alamat web tujuan Anda.</p>
             <p>Banyak penyedia domain umumnya mengikuti proses lima langkah. Namun proses pada setiap penjual nama domain mungkin akan berbeda, kami menyarankan untuk berkonsultasi dengan pusat bantuan mereka atau cari petunjuk khusus tentang cara meneruskan nama domain di situs mereka.</p>

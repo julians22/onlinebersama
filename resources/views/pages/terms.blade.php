@@ -52,7 +52,7 @@
 
             <div class="flex lg:py-6 lg:px-6 py-6 px-4 flex-col gap-4 lg:gap-8 rounded-[10px] bg-light-gray-100 article-wrapper">
                 <h2 class="subheadline-2 text-deep-blue-300">Daftar Isi</h2>
-                <x-articles.navigate-link>
+                <x-articles.navigate-link :article="true">
                     <a href="#section-1">
                         1. Persyaratan
                     </a>
