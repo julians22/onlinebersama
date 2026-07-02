@@ -4,6 +4,8 @@
 
 @section('meta_description', 'Temukan cara memaksimalkan penggunaan nama domain .com Anda melalui koleksi artikel, video, dan panduan kami')
 
+@section('meta_keywords', 'panduan belajar .com, artikel .com')
+
 @section('content')
 
 <main data-analytics-level1="body">
