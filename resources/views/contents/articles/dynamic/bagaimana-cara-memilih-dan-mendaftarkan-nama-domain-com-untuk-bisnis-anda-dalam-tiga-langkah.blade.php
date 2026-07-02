@@ -3,20 +3,23 @@
         <x-articles.intro-and-quicklinks>
             <div class="article-child-wrapper">
                 <p>Memilih nama domain yang bagus untuk bisnis atau minat Anda adalah langkah penting dalam kehadiran online Anda, yang mungkin juga dapat membantu usaha pemasaran Anda. Di dalam panduan kami, kami menjabarkan tentang bagaimana cara memilih nama domain .com yang sesuai untuk bisnis Anda, termasuk ringkasan dari proses pendaftaran nama domain.</p>
-                <x-articles.navigate-link>
-                    <a href="#pilih-ekstensi-domain">
-                        1: Pilih Ekstensi Domain
+                <x-articles.navigate-link :article="true">
+                    <a data-analytics-name="anchor | Step 1: Select a Domain Name" href="#pilih-ekstensi-domain">
+                        <span class="hidden md:inline">1:</span>
+                        <span class="inline md:hidden">Langkah 1:</span> Pilih Ekstensi Domain
                     </a>
-                    <a href="#pilih-nama-domain">
-                        2: Pilih Nama Domain
+                    <a data-analytics-name="anchor | Step 2: Choose a Domain Name" href="#pilih-nama-domain">
+                        <span class="hidden md:inline">2:</span>
+                        <span class="inline md:hidden">Langkah 2:</span> Pilih Nama Domain
                     </a>
-                    <a href="#daftarkan-nama-domain-anda">
-                        3: Daftarkan Nama Domain Anda
+                    <a data-analytics-name="anchor | Step 3: Register a Domain Name" href="#daftarkan-nama-domain-anda">
+                        <span class="hidden md:inline">3:</span>
+                        <span class="inline md:hidden">Langkah 3:</span> Daftarkan Nama Domain Anda
                     </a>
                 </x-articles.navigate-link>
             </div>
         </x-articles.intro-and-quicklinks>
-        <div id="pilih-ekstensi-domain" class="article-child-wrapper scroll-mt-20 sm:scroll-mt-28">
+        <div id="pilih-ekstensi-domain" class="article-child-wrapper scroll-mt-110 min-[450px]:scroll-mt-86 md:scroll-mt-28">
             <h3>LANGKAH 1: PILIH EKSTENSI DOMAIN</h3>
             <p>Sebelum Anda memilih nama domain, pertama Anda harus mencari dan memilih ekstensi domain yang tepat (bagian setelah tanda titik) seperti .com.</p>
             <p>Juga disebut sebagai domain tingkat teratas (TLD), ekstensi domain bisa memengaruhi persepsi audiens terhadap Anda atau bisnis Anda. Jutaan nama domain .com1 telah didaftarkan, karena orang-orang tahu bahwa .com adalah TLD yang universal, tepercaya, dan dikenal.</p>
@@ -35,7 +38,7 @@
                 </x-articles.numbered-card>
             </div>
         </div>
-        <div id="pilih-nama-domain" class="article-child-wrapper scroll-mt-20 sm:scroll-mt-28">
+        <div id="pilih-nama-domain" class="article-child-wrapper scroll-mt-110 min-[450px]:scroll-mt-86 md:scroll-mt-28">
             <h3 data-analytics-level2="2: Choose a Domain Name">LANGKAH 2: PILIH NAMA DOMAIN</h3>
             <p>Setelah Anda memilih ekstensi domain, sekarang saatnya untuk memikirkan dan mencari nama domain yang paling sesuai untuk menggambarkan <x-articles.tooltip data-analytics-name="text | online presence" data-tooltip="Kehadiran online / eksistensi online adalah suatu keadaan di mana bisnis Anda dapat ditemukan di internet, bisa dalam bentuk situs web, halaman media sosial, dan/atau pasar online. Menggunakan nama domain .com dengan kehadiran online Anda, dapat membuka peluang dengan membantu pelanggan menemukan “markas” Anda dengan mudah saat melakukan bisnis online.">kehadiran online</x-articles.tooltip> Anda.</p>
             <p>Meskipun memilih nama domain yang sama dengan nama bisnis Anda adalah sebuah pilihan, tergantung pada ketersediaan, nama domain tidak harus sama dengan nama bisnis Anda. Agar tampil beda, beberapa bisnis menggunakan slogan yang lebih mudah diingat. Pilihan populer lainnya adalah memperpanjang nama bisnis dengan kata tambahan untuk menggambarkan bisnis Anda lebih baik. Berikut adalah beberapa contoh:</p>
@@ -81,7 +84,7 @@
                 </x-articles.arrow-item-content>
             </div>
         </div>
-        <div id="daftarkan-nama-domain-anda" class="article-child-wrapper scroll-mt-20 sm:scroll-mt-28">
+        <div id="daftarkan-nama-domain-anda" class="article-child-wrapper scroll-mt-110 min-[450px]:scroll-mt-86 md:scroll-mt-28">
             <h3>LANGKAH 3: MENDAFTARKAN NAMA DOMAIN</h3>
             <p>Setelah Anda menemukan nama domain .com yang diinginkan, Anda harus memilih penjual nama domain untuk membantu Anda mendaftarkan nama domain tersebut. Jika Anda belum menemukan penjual nama domain, Anda bisa mencari penjual nama domain  yang memenuhi kebutuhan Anda secara online atau dengan bertanya kepada teman atau pemilik bisnis yang Anda percaya untuk mendapatkan rekomendasi.</p>
             <x-articles.callout-cta>
