@@ -124,14 +124,14 @@
             <x-displays.accordion
                 question="Cara Menemukan Nama yang Tepat"
                 data-analytics="How to Find a Great Name">
-                <x-displays.card-accordion image="images/articles/cara-menemukan-nama-yang-tepat.jpg" videoId="6331201181112" slug="cara-temukan-nama-yang-tepat">
+                <x-displays.card-accordion image="images/articles/cara-menemukan-nama-yang-tepat.jpg" videoId="6331201181112" slug="cara-menemukan-nama-tepat">
                     Nama perusahaan Anda adalah kesan pertama bagi calon pelanggan. Jadi, nama itu harus relevan dan mudah diingat, tetapi juga mudah diadaptasikan dengan perubahan agar Anda memiliki ruang untuk berkembang. Bingung harus mulai dari mana? Henrik menguraikan empat langkah penting untuk membantu Anda menemukan nama yang tepat untuk usaha rintisan Anda.
                 </x-displays.card-accordion>
             </x-displays.accordion>
             <x-displays.accordion
                 question="Manfaat Landing Page"
                 data-analytics="Benefits of Landing Pages">
-                <x-displays.card-accordion image="images/articles/manfaat-halaman-tujuan-landing-page.jpg" videoId="6331201181112" slug="manfaat-landing-page">
+                <x-displays.card-accordion image="images/articles/manfaat-halaman-tujuan-landing-page.jpg" videoId="6331201181112" slug="manfaat-halaman-tujuan">
                     Landing page difokuskan untuk mendorong pengunjung mengambil satu langkah kecil dalam prosesnya menjadi pelanggan, dan dapat berfungsi sebagai alat bantu pemasaran berbiaya rendah, tetapi bernilai tinggi bagi perusahaan dari berbagai skala. Temukan manfaat yang dapat ditawarkan halaman arahan untuk bisnis Anda dalam e-book kami.
                 </x-displays.card-accordion>
             </x-displays.accordion>
@@ -139,7 +139,7 @@
                 question="Cara Efektif untuk Memasarkan Bisnis Anda"
                 data-analytics="Effective Ways to Market Your Company"
                 :last="true">
-                <x-displays.card-accordion image="images/articles/cara-efektif-untuk-memasarkan-perusahaan-anda.jpg" videoId="6331201181112" slug="pasarkan-bisnis">
+                <x-displays.card-accordion image="images/articles/cara-efektif-untuk-memasarkan-perusahaan-anda.jpg" videoId="6331201181112" slug="memasarkan-bisnis-anda">
                     Mempelajari cara memasarkan bisnis secara efektif adalah salah satu keterampilan terpenting yang harus dimiliki setiap wirausahawan, dan cara terbaik untuk menginformasikan apa yang ditawarkan perusahaan kepada audiens target adalah dengan menceritakan kisah Anda.
                 </x-displays.card-accordion>
             </x-displays.accordion>
