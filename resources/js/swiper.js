@@ -22,6 +22,9 @@ const smallBusinessStory = new Swiper(`.${prefix}small-business-story`, {
         el: '.swiper-pagination',
         type: 'bullets',
         clickable: true,
+        renderBullet: function (index, className) {
+            return '<span data-analytics-name="buttons | carousel nav" class="' + className + '" role="button" aria-label="Go to slide ' + (index + 1) + '"> </span>';
+        }
     },
     navigation: {
         nextEl: '.custom-swiper-button-next',

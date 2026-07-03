@@ -294,6 +294,10 @@
 /* ====== Utilities ====== */
 
 @layer utilities {
+    .tm {
+        @apply absolute top-3 font-sans text-[6px] font-extrabold sm:top-5 md:top-7 md:text-[10px];
+    }
+
     /* Headlines */
 
     .headline-xl {

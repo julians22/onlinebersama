@@ -63,5 +63,32 @@ return [
     |
     */
     'default_video_id' => '6056665203001',
-    'default_ebook' => 'https://d306cf1i69iwcu.cloudfront.net/onlinebersama/documents/Entrepreneurial_Mindset.pdf'
+    'default_ebook' => 'https://d306cf1i69iwcu.cloudfront.net/onlinebersama/documents/Entrepreneurial_Mindset.pdf',
+
+    /*
+    |--------------------------------------------------------------------------
+    | Video ID
+    |--------------------------------------------------------------------------
+    |
+    | This option defines the video ID used in the application.
+    |
+    */
+    'video_id' => [
+        // Position Video: Navigation Bar (Dropdown) and Panduan Belajar Page
+        'startup_experience' => 6365586738112,
+
+        // Position Video: Home Page, Panduan Belajar Page
+        'ikat_indonesia' => 6365585682112,
+
+        // Position Video: Use Case Page (Website, Email, Social Media)
+        'website' => 6399827707112,
+        'email' => 6399829651112,
+        'social_media' => 6399829157112,
+
+        // Position Video: Use Case Page (Email)
+        'tiga_cara' => 6398669179112,
+
+        // Position Video: Temukan .com Page
+        'tiga_tips' => 6398667906112
+    ],
 ];

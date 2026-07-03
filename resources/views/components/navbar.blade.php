@@ -96,7 +96,7 @@
                     </a>
                 </div>
                 <div class="flex flex-col gap-4 bg-light-gray-100 p-4 w-full xl:max-w-117.5">
-                    <button data-analytics-name="video image | Startup Experience" type="button" @click="$store.videoModal.openModal('6331201181112')" class="group relative rounded-2xl w-full aspect-video overflow-hidden cursor-pointer lg:max-w-117.5 xl:max-w-full 2xl:h-54.25">
+                    <button data-analytics-name="video image | Startup Experience" type="button" @click="$store.videoModal.openModal('{{ config('onlinebersama.video_id.startup_experience') }}')" class="group relative rounded-2xl w-full aspect-video overflow-hidden cursor-pointer lg:max-w-117.5 xl:max-w-full 2xl:h-54.25">
                         <span data-analytics-name="play button | Startup Experience" class="transition-all duration-300 ease-in-out top-1/2 left-1/2 absolute size-14 -translate-x-1/2 -translate-y-1/2 group-hover:scale-110">
                             <x-icons.play width="56" height="56" fill="#fff" />
                         </span>
@@ -185,7 +185,7 @@
                     class="border-t-2 border-light-gray-300 flex flex-col gap-4 w-full px-3 py-8 min-[500px]:px-6">
                     <button
                         type="button"
-                        @click="$store.videoModal.openModal('6331201181112')"
+                        @click="$store.videoModal.openModal('{{ config('onlinebersama.video_id.startup_experience') }}')"
                         class="group relative rounded-2xl w-full aspect-video overflow-hidden cursor-pointer min-[500px]:max-w-97.5 min-[500px]:h-54.25">
                         <div
                             data-analytics-name="play button | Startup Experience"

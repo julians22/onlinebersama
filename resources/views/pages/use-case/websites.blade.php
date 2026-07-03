@@ -1,10 +1,9 @@
 @extends('app')
 
 @section('title', '.com untuk Situs Web | Nama Domain .com')
-
 @section('meta_description', 'Situs web dengan nama domain .com menjadi fondasi yang dapat diandalkan pelanggan untuk menemukan dan berinteraksi secara online, seiring pertumbuhan situs web Anda')
-
 @section('meta_keywords', '.com untuk situs web, manfaat situs web')
+@section('meta_image', asset('images/uc-websites.jpg'))
 
 @section('content')
 
@@ -18,7 +17,7 @@
                 <h1 class="text-navy-blue-300 headline-1">.com untuk Situs Web</h1>
                 <p class="text-deep-blue-300 paragraph-md">Situs web dengan nama domain .com adalah fondasi yang dapat diandalkan pelanggan Anda untuk menemukan dan berinteraksi secara online seiring perkembangan bisnis Anda.</p>
             </div>
-            <button data-analytics-name="video image | Website Use Case" type="button" @click="$store.videoModal.openModal('6331201181112')" class="group relative rounded-[10px] overflow-hidden shrink-0 cursor-pointer box-shadow-sm">
+            <button data-analytics-name="video image | Website Use Case" type="button" @click="$store.videoModal.openModal('{{ config('onlinebersama.video_id.website') }}')" class="group relative rounded-[10px] overflow-hidden shrink-0 cursor-pointer box-shadow-sm">
                 <div class="top-0 left-0 absolute bg-gradient-video size-full"></div>
                 <span data-analytics-name="play button | Website Use Case" class="transition-all duration-300 ease-in-out top-1/2 left-1/2 absolute -translate-x-1/2 -translate-y-1/2 group-hover:scale-110">
                     <x-icons.play-rounded width="78" height="78" fill="#fff" />

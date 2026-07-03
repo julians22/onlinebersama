@@ -1,10 +1,9 @@
 @extends('app')
 
 @section('title', 'Di Mana Dunia Menemukanmu | Nama Domain .com')
-
 @section('meta_description', 'Nama domain .com membantu orang menemukan dan memercayai bisnis Anda. Temukan mengapa .com bisa menjadi pilihan yang tepat untuk bisnis Anda.')
-
 @section('meta_keywords', '.com, nama domain .com')
+@section('meta_image', asset('images/hero-homepage.jpg'))
 
 @section('content')
 
@@ -27,9 +26,9 @@
         <div class="container top-0 left-1/2 absolute flex justify-center items-end px-7 pt-7 pb-4 size-full -translate-x-1/2 md:justify-start sm:p-10 lg:px-18 lg:py-20">
             <div class="space-y-2 text-white text-center sm:space-y-3 md:space-y-6 md:text-left lg:space-y-5">
                 <h1 class="headline-1 leading-normal text-[28px]! sm:leading-10! sm:text-[42px]! lg:leading-13.5! lg:text-[54px]! lg:font-extrabold!">
-                    Di Mana
-                    <span class="md:block md:leading-19 md:text-[78px] lg:text-[90px] lg:leading-22!">
-                        <span class="inline md:block">Dunia</span> Menemukanmu
+                    Di Mana Dunia
+                    <span class="relative md:block md:leading-19 md:text-[78px] lg:text-[90px] lg:leading-22!">
+                        Menemukanmu<sup class="tm">TM</sup>
                     </span>
                 </h1>
                 <p class="max-w-135 leading-7! text-[20px]! paragraph-md md:max-w-212.5 md:leading-9! lg:text-[28px]!">
@@ -170,7 +169,7 @@
                             <button
                                 data-analytics-name="play button | Startup Experience"
                                 type="button"
-                                @click="$store.videoModal.openModal('6331201181112')"
+                                @click="$store.videoModal.openModal('{{ config('onlinebersama.video_id.ikat_indonesia') }}')"
                                 class="group/child relative size-full cursor-pointer outline-none mb-6 sm:mb-0">
                                 <x-icons.play-rounded width="78" height="78" fill="#fff" class="transition-all duration-300 ease-in-out top-1/2 left-1/2 absolute size-19.5 -translate-x-1/2 -translate-y-1/2 group-hover/child:scale-110 sm:-translate-y-[90%] lg:-translate-y-1/2" />
                             </button>

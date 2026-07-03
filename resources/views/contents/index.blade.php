@@ -1,10 +1,9 @@
 @extends('app')
 
 @section('title', 'Panduan Belajar | Nama Domain .com')
-
 @section('meta_description', 'Temukan cara memaksimalkan penggunaan nama domain .com Anda melalui koleksi artikel, video, dan panduan kami')
-
 @section('meta_keywords', 'panduan belajar .com, artikel .com')
+@section('meta_image', asset('images/hero-resources.jpg'))
 
 @section('content')
 
@@ -45,12 +44,12 @@
             <div data-analytics-level3="carousel" class="custom-swiper-button-next z-9999 absolute inset-y-0 right-0 w-1/4 cursor-pointer"></div>
             <div class="swiper-wrapper">
                 <div data-analytics-level3="carousel1" class="swiper-slide">
-                    <x-displays.card-video title="Startup Experience" image="images/placeholder-video-startup.jpg" videoId="6331201181112" data-analytics="Startup Experience">
+                    <x-displays.card-video title="Startup Experience" image="images/placeholder-video-startup.jpg" videoId="{{ config('onlinebersama.video_id.startup_experience') }}" data-analytics="Startup Experience">
                         Ketahui bagaimana Henrik Scheel menggunakan nama domain .com miliknya untuk membantu bisnisnya beroperasi di 25 negara di seluruh dunia.
                     </x-displays.card-video>
                 </div>
                 <div data-analytics-level3="carousel2" class="swiper-slide">
-                    <x-displays.card-video title="IKAT Indonesia" image="images/placeholder-video-why-com.jpg" videoId="6331201181112" data-analytics="IKAT Indonesia">
+                    <x-displays.card-video title="IKAT Indonesia" image="images/placeholder-video-why-com.jpg" videoId="{{ config('onlinebersama.video_id.ikat_indonesia') }}" data-analytics="IKAT Indonesia">
                         Dengarkan bagaimana nama domain .com yang dikenal membantu pemilik bisnis mengembangkan bisnisnya
                     </x-displays.card-video>
                 </div>
@@ -60,12 +59,12 @@
                     </x-displays.card-video>
                 </div>
                 <div data-analytics-level3="carousel1" class="swiper-slide">
-                    <x-displays.card-video title="Startup Experience" image="images/placeholder-video-startup.jpg" videoId="6331201181112" data-analytics="Startup Experience">
+                    <x-displays.card-video title="Startup Experience" image="images/placeholder-video-startup.jpg" videoId="{{ config('onlinebersama.video_id.startup_experience') }}" data-analytics="Startup Experience">
                         Ketahui bagaimana Henrik Scheel menggunakan nama domain .com miliknya untuk membantu bisnisnya beroperasi di 25 negara di seluruh dunia.
                     </x-displays.card-video>
                 </div>
                 <div data-analytics-level3="carousel2" class="swiper-slide">
-                    <x-displays.card-video title="IKAT Indonesia" image="images/placeholder-video-why-com.jpg" videoId="6331201181112" data-analytics="IKAT Indonesia">
+                    <x-displays.card-video title="IKAT Indonesia" image="images/placeholder-video-why-com.jpg" videoId="{{ config('onlinebersama.video_id.ikat_indonesia') }}" data-analytics="IKAT Indonesia">
                         Dengarkan bagaimana nama domain .com yang dikenal membantu pemilik bisnis mengembangkan bisnisnya
                     </x-displays.card-video>
                 </div>
@@ -75,7 +74,7 @@
                     </x-displays.card-video>
                 </div>
             </div>
-            <div data-analytics-name="buttons | carousel nav" class="swiper-pagination"></div>
+            <div class="swiper-pagination"></div>
         </div>
     </section>
     {{-- End Small Business Stories --}}
@@ -129,7 +128,7 @@
                 </x-displays.card-accordion>
             </x-displays.accordion>
             <x-displays.accordion
-                question="Manfaat Landing Page"
+                question="Manfaat Halaman Tujuan"
                 data-analytics="Benefits of Landing Pages">
                 <x-displays.card-accordion image="images/articles/manfaat-halaman-tujuan-landing-page.jpg" videoId="6331201181112" slug="manfaat-halaman-tujuan">
                     Landing page difokuskan untuk mendorong pengunjung mengambil satu langkah kecil dalam prosesnya menjadi pelanggan, dan dapat berfungsi sebagai alat bantu pemasaran berbiaya rendah, tetapi bernilai tinggi bagi perusahaan dari berbagai skala. Temukan manfaat yang dapat ditawarkan halaman arahan untuk bisnis Anda dalam e-book kami.
