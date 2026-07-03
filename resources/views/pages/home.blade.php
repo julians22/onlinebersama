@@ -23,7 +23,7 @@
             <source src="{{ assetAwsUrl('onlinebersama/videos/com_Indonesia_Brand Anthem_Desktop.mp4') }}" type="video/mp4">
             Your browser does not support the HTML5 video tag.
         </video>
-        <div class="container top-0 left-1/2 absolute flex justify-center items-end px-7 pt-7 pb-4 size-full -translate-x-1/2 md:justify-start sm:p-10 lg:px-18 lg:py-20">
+        <div class="container top-0 left-1/2 absolute flex justify-center items-end px-7 pt-7 pb-4 size-full -translate-x-1/2 md:justify-start sm:p-10 lg:px-18 lg:pt-20 lg:pb-15">
             <div class="space-y-2 text-white text-center sm:space-y-3 md:space-y-6 md:text-left lg:space-y-5">
                 <h1 class="headline-1 leading-normal text-[28px]! sm:leading-10! sm:text-[42px]! lg:leading-13.5! lg:text-[54px]! lg:font-extrabold!">
                     Di Mana Dunia
@@ -42,7 +42,7 @@
     <!-- Search -->
     <section
         data-analytics-level2="search"
-        class="bg-deep-blue-300 py-7.5 md:pt-13.75 md:pb-10">
+        class="bg-deep-blue-300 -mb-2.5 pb-0 pt-7.5 md:mb-0 md:pt-13.75 md:pb-3.75">
         <div class="container flex flex-col justify-center items-center">
             <h2 class="subheadline-2 text-white text-center text-[26px]! leading-7.5! max-w-62.5 mx-auto sm:mx-0 sm:max-w-full lg:text-[40px]!">
                 Temukan Nama Domain .com
