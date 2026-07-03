@@ -1,6 +1,6 @@
 <header
     data-analytics-level1="topnav"
-    x-data="{ dropdown: false, sidebar: false, expandedDataText: 'click expand | How Do I Use a .com?', collapsedDataText: 'collapse | How Do I Use a .com?' }"
+    x-data="{ dropdown: false, sidebar: false, expandedDataText: 'click expand How Do I Use a .com?', collapsedDataText: 'collapse How Do I Use a .com?' }"
     class="top-0 right-0 z-50 sticky w-full">
     {{-- Navigation Menu --}}
     {{-- Desktop Navigation --}}
@@ -11,12 +11,12 @@
             <div class="flex items-center gap-3.5">
                 {{-- Toggle Button (Mobile) --}}
                 <button
-                    data-analytics-name="hamburger expand | topnav"
+                    data-analytics-name="hamburger expand topnav"
                     type="button" @click="sidebar = !sidebar" class="lg:hidden block size-6 cursor-pointer">
                     <x-icons.burger width="24" height="24" fill="#fff" />
                 </button>
                 <a
-                    data-analytics-name="logo | .com"
+                    data-analytics-name="logo .com"
                     href="{{ route('index') }}">
                     <img class="w-20 lg:w-31.5" src="{{ asset('images/logo-com-white.svg') }}" alt="OnlineBersama">
                 </a>
@@ -25,7 +25,7 @@
                 <ul class="hidden gap-x-4 lg:flex xl:gap-x-8.75">
                     <li class="flex items-center text-right">
                         <a
-                            data-analytics-name="{{ request()->routeIs('index') ? 'anchor | Why .com?' : 'text | Why .com?' }}"
+                            data-analytics-name="{{ request()->routeIs('index') ? 'anchor Why .com?' : 'text Why .com?' }}"
                             href="{{ request()->routeIs('index') ? '' : route('index') }}#mengapa-com"
                             class="nav-link">Mengapa .com?</a>
                     </li>
@@ -41,12 +41,12 @@
                     </li>
                     <li class="flex items-center text-right">
                         <a
-                            data-analytics-name="text | Learning Hub"
+                            data-analytics-name="text Learning Hub"
                             href="{{ route('resources.index') }}" class="nav-link">Panduan Belajar</a>
                     </li>
                 </ul>
                 <a
-                    data-analytics-name="button | Find a .com"
+                    data-analytics-name="button Find a .com"
                     href="{{ route('find') }}" class="px-4 py-0.5 font-medium text-navy-blue-300 text-[14px] btn-primary lg:text-[19px] lg:px-4 lg:py-2">
                     Temukan .com Anda
                 </a>
@@ -67,7 +67,7 @@
         <div class="absolute hidden top-0 left-1/2 -translate-x-1/2 w-full bg-white after:absolute after:top-0 after:right-0 after:w-1/2 after:h-full after:bg-light-gray-100 lg:block">
             <div class="relative z-10 max-w-480 flex bg-white mx-auto lg:flex-col xl:flex-row">
                 <div class="grid grid-cols-3 p-5 h-max">
-                    <a data-analytics-name="hover | .com for Websites" href="{{ route('websites') }}" class="group flex gap-3.75 hover:bg-mint-100 p-6 rounded-[10px] min-h-54.25 transition-all duration-300 ease-in-out">
+                    <a data-analytics-name="hover .com for Websites" href="{{ route('websites') }}" class="group flex gap-3.75 hover:bg-mint-100 p-6 rounded-[10px] min-h-54.25 transition-all duration-300 ease-in-out">
                         <div class="space-y-2">
                             <h3 class="text-navy-blue-300 subheadline-3 text-[26px]! leading-7.5!">.com untuk Situs Web</h3>
                             <p class="text-deep-blue-300 paragraph-sm text-[19px]! font-medium! leading-7!">Agar lebih mudah ditemukan, mulailah menggunakan situs web .com Anda sendiri.</p>
@@ -76,7 +76,7 @@
                             <x-icons.arrow-rounded width="24" height="24" fill="#304D6D" strokeWidth="1" />
                         </div>
                     </a>
-                    <a data-analytics-name="hover | .com for Email" href="{{ route('email') }}" class="group flex gap-3.75 hover:bg-mint-100 p-6 rounded-[10px] min-h-54.25 transition-all duration-300 ease-in-out">
+                    <a data-analytics-name="hover .com for Email" href="{{ route('email') }}" class="group flex gap-3.75 hover:bg-mint-100 p-6 rounded-[10px] min-h-54.25 transition-all duration-300 ease-in-out">
                         <div class="space-y-2">
                             <h3 class="text-navy-blue-300 subheadline-3 text-[26px]! leading-7.5!">.com untuk Email</h3>
                             <p class="text-deep-blue-300 paragraph-sm text-[19px]! font-medium! leading-7!">Jadikan email sebagai pernyataan kredibilitas.</p>
@@ -85,7 +85,7 @@
                             <x-icons.arrow-rounded width="24" height="24" fill="#304D6D" strokeWidth="1" />
                         </div>
                     </a>
-                    <a data-analytics-name="hover | .com for Social Media & E-Commerce" href="{{ route('social-media') }}" class="group flex gap-3.75 hover:bg-mint-100 p-6 rounded-[10px] min-h-54.25 transition-all duration-300 ease-in-out">
+                    <a data-analytics-name="hover .com for Social Media & E-Commerce" href="{{ route('social-media') }}" class="group flex gap-3.75 hover:bg-mint-100 p-6 rounded-[10px] min-h-54.25 transition-all duration-300 ease-in-out">
                         <div class="space-y-2">
                             <h3 class="text-navy-blue-300 subheadline-3 text-[26px]! leading-7.5!">.com untuk Media Sosial dan E-Commerce</h3>
                             <p class="text-deep-blue-300 paragraph-sm text-[19px]! font-medium! leading-7!">Dapatkan alamat web .com untuk eksistensi online Anda.</p>
@@ -96,8 +96,8 @@
                     </a>
                 </div>
                 <div class="flex flex-col gap-4 bg-light-gray-100 p-4 w-full xl:max-w-117.5">
-                    <button data-analytics-name="video image | Startup Experience" type="button" @click="$store.videoModal.openModal('{{ config('onlinebersama.video_id.startup_experience') }}')" class="group relative rounded-2xl w-full aspect-video overflow-hidden cursor-pointer lg:max-w-117.5 xl:max-w-full 2xl:h-54.25">
-                        <span data-analytics-name="play button | Startup Experience" class="transition-all duration-300 ease-in-out top-1/2 left-1/2 absolute size-14 -translate-x-1/2 -translate-y-1/2 group-hover:scale-110">
+                    <button data-analytics-name="video image Startup Experience" type="button" @click="$store.videoModal.openModal('{{ config('onlinebersama.video_id.startup_experience') }}')" class="group relative rounded-2xl w-full aspect-video overflow-hidden cursor-pointer lg:max-w-117.5 xl:max-w-full 2xl:h-54.25">
+                        <span data-analytics-name="play button Startup Experience" class="transition-all duration-300 ease-in-out top-1/2 left-1/2 absolute size-14 -translate-x-1/2 -translate-y-1/2 group-hover:scale-110">
                             <x-icons.play width="56" height="56" fill="#fff" />
                         </span>
                         <img class="size-full object-cover object-top" src="{{ asset('images/featured-video.jpg') }}" alt="Placeholder Video">
@@ -121,7 +121,7 @@
         <div class="flex flex-col">
             <div class="flex justify-between p-6">
                 <a
-                    data-analytics-name="text | .com"
+                    data-analytics-name="text .com"
                     href="{{ route('index') }}">
                     <img class="w-20" src="{{ asset('images/logo-com-blue.svg') }}" alt="">
                 </a>
@@ -132,7 +132,7 @@
             <div class="flex flex-col h-[calc(100dvh-72px)] overflow-y-auto">
                 <div class="sidebar-link">
                     <a
-                        data-analytics-name="text | Why .com?"
+                        data-analytics-name="text Why .com?"
                         href="{{ request()->routeIs('index') ? '' : route('index') }}#mengapa-com" class="group">
                         Mengapa .com?
                         <x-icons.arrow-rounded width="24" height="24" fill="#1C1B1F" class="group-hover:opacity-100" />
@@ -140,25 +140,25 @@
                 </div>
                 <div class="sidebar-link">
                     <p
-                        data-analytics-name="text | How Do I Use a .com?">
+                        data-analytics-name="text How Do I Use a .com?">
                         Bagaimana Cara Saya Menggunakan .com?
                     </p>
                 </div>
                 <div class="sidebar-list">
                     <a
-                        data-analytics-name="text | .com for Websites"
+                        data-analytics-name="text .com for Websites"
                         href="{{ route('websites') }}" class="group">
                         .com untuk Situs Web
                         <x-icons.arrow-rounded width="24" height="24" fill="#1C1B1F" class="group-hover:opacity-100" />
                     </a>
                     <a
-                        data-analytics-name="text | .com for Email"
+                        data-analytics-name="text .com for Email"
                         href="{{ route('email') }}" class="group">
                         .com untuk Email
                         <x-icons.arrow-rounded width="24" height="24" fill="#1C1B1F" class="group-hover:opacity-100" />
                     </a>
                     <a
-                        data-analytics-name="text | .com for Social Media & E-Commerce"
+                        data-analytics-name="text .com for Social Media & E-Commerce"
                         href="{{ route('social-media') }}" class="group">
                         .com untuk Sosial Media dan E-Commerce
                         <x-icons.arrow-rounded width="24" height="24" fill="#1C1B1F" class="group-hover:opacity-100" />
@@ -166,7 +166,7 @@
                 </div>
                 <div class="sidebar-link">
                     <a
-                        data-analytics-name="text | Learning Hub"
+                        data-analytics-name="text Learning Hub"
                         href="{{ route('resources.index') }}" class="group">
                         Panduan Belajar
                         <x-icons.arrow-rounded width="24" height="24" fill="#1C1B1F" class="group-hover:opacity-100" />
@@ -174,27 +174,27 @@
                 </div>
                 <div class="sidebar-link">
                     <a
-                        data-analytics-name="text | Find a .com"
+                        data-analytics-name="text Find a .com"
                         href="{{ route('find') }}" class="group">
                         Temukan .com Anda
                         <x-icons.arrow-rounded width="24" height="24" fill="#1C1B1F" class="group-hover:opacity-100" />
                     </a>
                 </div>
                 <div
-                    data-analytics-name="video image | Startup Experience"
+                    data-analytics-name="video image Startup Experience"
                     class="border-t-2 border-light-gray-300 flex flex-col gap-4 w-full px-3 py-8 min-[500px]:px-6">
                     <button
                         type="button"
                         @click="$store.videoModal.openModal('{{ config('onlinebersama.video_id.startup_experience') }}')"
                         class="group relative rounded-2xl w-full aspect-video overflow-hidden cursor-pointer min-[500px]:max-w-97.5 min-[500px]:h-54.25">
                         <div
-                            data-analytics-name="play button | Startup Experience"
+                            data-analytics-name="play button Startup Experience"
                             type="button"
                             class="transition-all duration-300 ease-in-out top-1/2 left-1/2 absolute -translate-x-1/2 -translate-y-1/2 group-hover:scale-110">
                             <x-icons.play width="56" height="56" fill="#fff" />
                         </div>
                         <img
-                            data-analytics-name="video image | Startup Experience"
+                            data-analytics-name="video image Startup Experience"
                             class="size-full object-cover object-top" src="{{ asset('images/featured-video.jpg') }}" alt="">
                     </button>
                     <p class="font-sans font-semibold text-[20px]">Video Unggulan - Startup Experience</p>

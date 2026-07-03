@@ -11,7 +11,7 @@
     <!-- Hero -->
     <section
         data-analytics-level2="hero"
-        data-analytics-name="video play button | (video name tbd)"
+        data-analytics-name="video play button (video name tbd)"
         class="relative">
         <div class="absolute inset-0 bg-gradient-hero size-full"></div>
         <video autoplay="true" muted="true" loop playsinline class="w-full h-100 object-cover aspect-48/17 lg:h-152.75 xl:h-170">
@@ -88,11 +88,11 @@
             </div>
         </div>
         <div x-data data-analytics-level2="Not Just a Domain. A Declaration." class="relative">
-            <img data-analytics-name="video image | Not Just a Domain. A Declaration." class="mx-auto hidden lg:block" src="{{ asset('images/placeholder-video-how.jpg') }}" alt="">
-            <img data-analytics-name="video image | Not Just a Domain. A Declaration." class="w-full mx-auto block object-cover sm:h-200 sm:object-bottom md:h-210 min-[900px]:h-230! lg:hidden" src="{{ asset('images/placeholder-video-how-mobile.jpg') }}" alt="">
-            <button type="button" @click="$store.videoModal.openModal('6331201181112')" data-analytics-name="video image | Not Just a Domain. A Declaration." class="group absolute top-0 left-0 size-full transition-all duration-300 ease-in-out cursor-pointer z-10">
+            <img data-analytics-name="video image Not Just a Domain. A Declaration." class="mx-auto hidden lg:block" src="{{ asset('images/placeholder-video-how.jpg') }}" alt="">
+            <img data-analytics-name="video image Not Just a Domain. A Declaration." class="w-full mx-auto block object-cover sm:h-200 sm:object-bottom md:h-210 min-[900px]:h-230! lg:hidden" src="{{ asset('images/placeholder-video-how-mobile.jpg') }}" alt="">
+            <button type="button" @click="$store.videoModal.openModal('6331201181112')" data-analytics-name="video image Not Just a Domain. A Declaration." class="group absolute top-0 left-0 size-full transition-all duration-300 ease-in-out cursor-pointer z-10">
                 <span
-                    data-analytics-name="play button | Not Just a Domain. A Declaration."
+                    data-analytics-name="play button Not Just a Domain. A Declaration."
                     class="top-2/3 left-1/2 z-10 absolute -translate-x-1/2 -translate-y-1/2 cursor-pointer transition-all duration-300 ease-in-out hover:scale-110 min-[900px]:top-[60%] lg:top-[55%] group-hover:scale-110">
                     <x-icons.large-play-rounded width="130" height="130" fill="#304D6D" stroke="#304D6D" strokeWidth="4" class="size-10 min-[400px]:size-16 lg:size-20 2xl:size-32.5" />
                 </span>
@@ -127,7 +127,7 @@
                             data-analytics-level3="box1"
                             class="bg-navy-blue-500 p-6 rounded-[10px]">
                             <div
-                                data-analytics-name="text | Universal"
+                                data-analytics-name="text Universal"
                                 class="space-y-1.25 md:space-y-3">
                                 <h3 class="text-vibrant-yellow-300 text-[24px]! leading-7.5! subheadline-3 md:text-[32px]!">Universal</h3>
                                 <p class="text-white paragraph-md">Nama domain .com dipahami semua orang, di mana pun.</p>
@@ -137,7 +137,7 @@
                             data-analytics-level3="box2"
                             class="space-y-3 bg-navy-blue-500 p-6 rounded-[10px]">
                             <div
-                                data-analytics-name="text | Trusted"
+                                data-analytics-name="text Trusted"
                                 class="space-y-1.25 md:space-y-3">
                                 <h3 class="text-vibrant-yellow-300 text-[24px]! leading-7.5! subheadline-3 md:text-[32px]!">Tepercaya</h3>
                                 <p class="text-white paragraph-md">Domain yang dipercaya perusahaan global dan merchant lokal.</p>
@@ -147,7 +147,7 @@
                             data-analytics-level3="box3"
                             class="bg-navy-blue-500 p-6 rounded-[10px]">
                             <div
-                                data-analytics-name="text | Recognized"
+                                data-analytics-name="text Recognized"
                                 class="space-y-1.25 md:space-y-3">
                                 <h3 class="text-vibrant-yellow-300 text-[24px]! leading-7.5! subheadline-3 md:text-[32px]!">Diakui</h3>
                                 <p class="text-white paragraph-md">.com diakui oleh bisnis dan konsumen di seluruh dunia.</p>
@@ -164,10 +164,10 @@
                         </div>
                         <div
                             x-data
-                            data-analytics-name="video image | Startup Experience"
+                            data-analytics-name="video image Startup Experience"
                             class="w-full h-full absolute top-0 left-0 group-hover/child:scale-110 transition-all duration-300 ease-in-out">
                             <button
-                                data-analytics-name="play button | Startup Experience"
+                                data-analytics-name="play button Startup Experience"
                                 type="button"
                                 @click="$store.videoModal.openModal('{{ config('onlinebersama.video_id.ikat_indonesia') }}')"
                                 class="group/child relative size-full cursor-pointer outline-none mb-6 sm:mb-0">
@@ -184,7 +184,7 @@
                 </div>
                 <div class="justify-center md:flex">
                     <a
-                        data-analytics-name="button | View Success Stories"
+                        data-analytics-name="button View Success Stories"
                         href="{{ route('resources.handle_second_route', ['second_route' => config('onlinebersama.custom_article_route.default'), 'slug' => 'pertanyaan-usaha-kecil']) }}"
                         class="btn-primary w-full sm:w-auto">
                         Lihat Kisah Usaha Kecil
@@ -285,7 +285,7 @@
             </div>
             <div class="justify-center md:flex">
                 <a
-                    data-analytics-name="button | Discover More"
+                    data-analytics-name="button Discover More"
                     href="{{ route('resources.index') }}"
                     class="btn-secondary w-full sm:w-auto">
                     Ketahui Selengkapnya

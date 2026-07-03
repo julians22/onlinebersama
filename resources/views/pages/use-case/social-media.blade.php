@@ -17,9 +17,9 @@
                 <h1 class="text-navy-blue-300 headline-1">.com untuk <span class="xl:block">Media Sosial dan</span> E-Commerce</h1>
                 <p class="text-deep-blue-300 paragraph-md">Dengan penerusan domain, Anda dapat membuat tautan ke toko online atau halaman media sosial dari nama domain .com yang mudah diingat.</p>
             </div>
-            <button data-analytics-name="video image | Domain Forwarding Use Case" type="button" @click="$store.videoModal.openModal('{{ config('onlinebersama.video_id.social_media') }}')" class="group relative rounded-[10px] overflow-hidden shrink-0 cursor-pointer box-shadow-sm">
+            <button data-analytics-name="video image Domain Forwarding Use Case" type="button" @click="$store.videoModal.openModal('{{ config('onlinebersama.video_id.social_media') }}')" class="group relative rounded-[10px] overflow-hidden shrink-0 cursor-pointer box-shadow-sm">
                 <div class="top-0 left-0 absolute bg-gradient-video size-full"></div>
-                <span data-analytics-name="play button | Domain Forwarding Use Case" class="transition-all duration-300 ease-in-out top-1/2 left-1/2 absolute -translate-x-1/2 -translate-y-1/2 group-hover:scale-110">
+                <span data-analytics-name="play button Domain Forwarding Use Case" class="transition-all duration-300 ease-in-out top-1/2 left-1/2 absolute -translate-x-1/2 -translate-y-1/2 group-hover:scale-110">
                     <x-icons.play-rounded width="78" height="78" fill="#fff" />
                 </span>
                 <img class="w-156 object-cover aspect-video lg:w-125 xl:w-156" src="{{ asset('images/uc-social-media-ecommerce.jpg') }}" alt="">
@@ -60,7 +60,7 @@
         </div>
         <div class="flex justify-center mt-10">
             <a
-                data-analytics-name="button | Discover More Benefits"
+                data-analytics-name="button Discover More Benefits"
                 href="{{ route('resources.handle_second_route', ['second_route' => config('onlinebersama.custom_article_route.social-media-detail'), 'slug' => 'pelajari-selengkapnya']) }}" class="btn-secondary w-full sm:w-auto">
                 Temukan Manfaat Lainnya
             </a>
@@ -85,23 +85,23 @@
                         <p class="paragraph-sm font-medium! text-[18px]! leading-6.5! md:leading-8! md:text-[20px]!" data-analytics-level3="Online Store">Permudah pencarian bisnis Anda.</p>
                     </button>
                 </div>
-                <a x-show="active === 'social-media'" data-analytics-level3="right image" data-analytics-name="image | Reach more people by connecting your social page to a custom .com web address."
+                <a x-show="active === 'social-media'" data-analytics-level3="right image" data-analytics-name="image Reach more people by connecting your social page to a custom .com web address."
                     href="{{ route('resources.handle_second_route', ['second_route' => config('onlinebersama.custom_article_route.social-media-detail'), 'slug' => 'cara-menggunakan']) }}" class="relative rounded-[10px] max-w-full overflow-hidden h-88 md:h-auto md:max-w-156">
-                    <img data-analytics-name="image | Reach more people by connecting your social page to a custom .com web address." class="size-full object-cover aspect-video" src="{{ asset('images/uc-social-media-ecommerce.jpg') }}" alt="">
+                    <img data-analytics-name="image Reach more people by connecting your social page to a custom .com web address." class="size-full object-cover aspect-video" src="{{ asset('images/uc-social-media-ecommerce.jpg') }}" alt="">
                     <div class="top-0 left-0 absolute flex flex-col justify-end gap-4 bg-linear-360 from-black/60 to-transparent p-4 size-full text-white md:p-6">
                         <p class="leading-8.5! paragraph-md text-[20px]!">Jangkau lebih banyak orang dengan menghubungkan halaman media sosial Anda ke alamat web .com kustom.</p>
-                        <p data-analytics-name="text | Read More" class="flex items-center w-max font-sans font-bold text-[20px] decoration-[8%] underline underline-offset-[12%] tracking-[0.25px]">
+                        <p data-analytics-name="text Read More" class="flex items-center w-max font-sans font-bold text-[20px] decoration-[8%] underline underline-offset-[12%] tracking-[0.25px]">
                             Baca Selengkapnya
                             <x-icons.arrow-rounded width="24" height="24" fill="#fff" class="size-4.5 ml-1" strokeWidth="1" />
                         </p>
                     </div>
                 </a>
-                <a x-show="active === 'online-store'" x-cloak data-analytics-level3="right image" data-analytics-name="image | Link to your store on any platform from a custom .com domain name."
+                <a x-show="active === 'online-store'" x-cloak data-analytics-level3="right image" data-analytics-name="image Link to your store on any platform from a custom .com domain name."
                     href="{{ route('resources.handle_second_route', ['second_route' => config('onlinebersama.custom_article_route.social-media-detail'), 'slug' => 'cara-menggunakan']) }}" class="relative rounded-[10px] max-w-full overflow-hidden h-88 md:h-auto md:max-w-156">
                     <img class="size-full object-cover aspect-video" src="{{ asset('images/uc-email.jpg') }}" alt="">
                     <div class="top-0 left-0 absolute flex flex-col justify-end gap-4 bg-linear-360 from-black/60 to-transparent p-4 size-full text-white md:p-6">
                         <p class="leading-8.5! paragraph-md text-[20px]!">Tautkan toko Anda di platform mana pun dari nama domain .com kustom.</p>
-                        <p data-analytics-name="text | Read More" class="flex items-center w-max font-sans font-bold text-[20px] decoration-[8%] underline underline-offset-[12%] tracking-[0.25px]">
+                        <p data-analytics-name="text Read More" class="flex items-center w-max font-sans font-bold text-[20px] decoration-[8%] underline underline-offset-[12%] tracking-[0.25px]">
                             Baca Selengkapnya
                             <x-icons.arrow-rounded width="24" height="24" fill="#fff" class="size-4.5 ml-1" strokeWidth="1" />
                         </p>
@@ -197,7 +197,7 @@
             <h2 class="text-navy-blue-300 headline-1">Mencari sumber <span class="block">informasi lainnya?</span></h2>
             <p class="max-w-150 text-deep-blue-300 paragraph-md">Jelajahi Panduan Belajar untuk menemukan semua artikel, video, dan banyak lagi tentang cara menggunakan domain .com.</p>
             <a
-                data-analytics-name="button | Visit the Learning Hub"
+                data-analytics-name="button Visit the Learning Hub"
                 href="{{ route('resources.index') }}"
                 class="btn-secondary w-full sm:w-max">
                 Kunjungi Panduan Belajar

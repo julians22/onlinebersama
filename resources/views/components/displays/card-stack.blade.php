@@ -1,7 +1,7 @@
 <div class="box-shadow-sm flex gap-4 rounded-[10px] bg-white p-4 relative overflow-hidden flex-col md:gap-8 md:flex-row">
     <div class="overlay-dark absolute inset-0 bg-deep-blue-300 opacity-0 z-10"></div>
     <div
-        @if ($dataAnalytics) data-analytics-name="text | {{ $dataAnalytics }}" @endif
+        @if ($dataAnalytics) data-analytics-name="text {{ $dataAnalytics }}" @endif
         class="flex flex-col gap-2.5 md:gap-4 md:pl-4">
         {{-- Head --}}
         <div class="flex items-center-safe text-deep-blue-300 gap-3 min-h-15 md:min-h-auto">

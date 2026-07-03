@@ -13,10 +13,10 @@
         <div class="flex text-left gap-4">
             <h2 :class="open ? 'py-3.5' : 'py-0'" class="w-full text-navy-blue-300 transition-all duration-300 ease-in-out subheadline-2 text-[24px]! leading-8! md:text-[30px]! md:leading-9.5!">{{ $question }}</h2>
             <div class="flex items-center shrink-0">
-                <button x-show="!open" data-analytics-name="expand | {{ $dataAnalytics }}" type="button" class="cursor-pointer" @click="toggleAccordion">
+                <button x-show="!open" data-analytics-name="expand {{ $dataAnalytics }}" type="button" class="cursor-pointer" @click="toggleAccordion">
                     <x-icons.plus width="36" height="36" fill="#1A2E47" class="size-6.5 md:size-7.5" />
                 </button>
-                <button x-show="open" data-analytics-name="collapse | {{ $dataAnalytics }}" type="button" class="cursor-pointer" @click="toggleAccordion">
+                <button x-show="open" data-analytics-name="collapse {{ $dataAnalytics }}" type="button" class="cursor-pointer" @click="toggleAccordion">
                     <x-icons.minus x-cloak width="36" height="36" fill="#1A2E47" class="size-6.5 md:size-7.5" />
                 </button>
             </div>

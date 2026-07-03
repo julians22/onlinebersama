@@ -4,23 +4,23 @@
             <div class="article-child-wrapper">
                 <p>Situs web adalah salah satu alat pemasaran terpenting bagi bisnis dalam skala apa pun. Sebagai fondasi kehadiran online Anda, situs web bisnis dapat menyediakan platform fleksibel untuk menampilkan produk, layanan, dan identitas perusahaan, sehingga memberi Anda kontrol lebih besar atas cara pelanggan berinteraksi dengan bisnis Anda. Berikut adalah lima manfaat utama memiliki situs web bisnis dengan nama domain .com.</p>
                 <x-articles.navigate-link :article="true">
-                    <a data-analytics-name="anchor | 1. Boost Your Credibility" href="#meningkatkan-kredibilitas-anda">
+                    <a data-analytics-name="anchor 1. Boost Your Credibility" href="#meningkatkan-kredibilitas-anda">
                         <span class="hidden md:inline">1:</span>
                         <span class="inline md:hidden">1.</span> Meningkatkan Kredibilitas Anda
                     </a>
-                    <a data-analytics-name="anchor | 2. Get Noticed by Customers" href="#mencuri-perhatian-pelanggan">
+                    <a data-analytics-name="anchor 2. Get Noticed by Customers" href="#mencuri-perhatian-pelanggan">
                         <span class="hidden md:inline">2:</span>
                         <span class="inline md:hidden">2.</span> Mencuri Perhatian Pelanggan
                     </a>
-                    <a data-analytics-name="anchor | 3. Centralized Your Online Presence" href="#memusatkan-kehadiran-online-anda">
+                    <a data-analytics-name="anchor 3. Centralized Your Online Presence" href="#memusatkan-kehadiran-online-anda">
                         <span class="hidden md:inline">3:</span>
                         <span class="inline md:hidden">3.</span> Memusatkan Kehadiran Online Anda
                     </a>
-                    <a data-analytics-name="anchor | 4. Control Your Marketing" href="#mengontrol-pemasaran-anda">
+                    <a data-analytics-name="anchor 4. Control Your Marketing" href="#mengontrol-pemasaran-anda">
                         <span class="hidden md:inline">4:</span>
                         <span class="inline md:hidden">4.</span> Mengontrol Pemasaran Anda
                     </a>
-                    <a data-analytics-name="anchor | 5. Gain Deeper Insights" href="#mendapatkan-wawasan-lebih-dalam">
+                    <a data-analytics-name="anchor 5. Gain Deeper Insights" href="#mendapatkan-wawasan-lebih-dalam">
                         <span class="hidden md:inline">5:</span>
                         <span class="inline md:hidden">5.</span> Mendapatkan Wawasan Lebih Dalam
                     </a>
@@ -42,7 +42,7 @@
             </x-articles.arrow-item-content>
             <x-articles.arrow-item-content>
                 <div class="flex flex-col flex-1">
-                    <p>Buat <a data-analytics-name="text| business email address" href="{{ route('resources.handle_second_route', ['second_route' => config('onlinebersama.custom_article_route.email-detail'), 'slug' => 'manfaat']) }}" class="link-to">alamat email bisnis</a> khusus dengan nama domain .com Anda (misalnya, sales@RumahPantaiAnthony.com) untuk membantu bisnis Anda terlihat lebih profesional.</p>
+                    <p>Buat <a data-analytics-name="text business email address" href="{{ route('resources.handle_second_route', ['second_route' => config('onlinebersama.custom_article_route.email-detail'), 'slug' => 'manfaat']) }}" class="link-to">alamat email bisnis</a> khusus dengan nama domain .com Anda (misalnya, sales@RumahPantaiAnthony.com) untuk membantu bisnis Anda terlihat lebih profesional.</p>
                 </div>
             </x-articles.arrow-item-content>
             <x-articles.callout-cta>
@@ -137,7 +137,7 @@
             <x-slot:title>
                 <p>KESIMPULAN</p>
             </x-slot:title>
-            <p>Siap membangun situs web bisnis Anda sendiri? Artikel kami tentang <a data-analytics-name="text | choosing the right website builder" href="{{ route('resources.handle_second_route', ['second_route' => config('onlinebersama.custom_article_route.websites-detail'), 'slug' => 'pembuat-situs-web']) }}" class="link-to">cara memilih pembuat situs web yang tepat</a> untuk bisnis Anda dan <a data-analytics-name="text | website building checklist" href="{{ route('resources.handle_second_route', ['second_route' => config('onlinebersama.custom_article_route.websites-detail'), 'slug' => 'membuat-situs-web']) }}" class="link-to">daftar periksa pembuatan situs web</a> dapat membantu Anda memulai.</p>
+            <p>Siap membangun situs web bisnis Anda sendiri? Artikel kami tentang <a data-analytics-name="text choosing the right website builder" href="{{ route('resources.handle_second_route', ['second_route' => config('onlinebersama.custom_article_route.websites-detail'), 'slug' => 'pembuat-situs-web']) }}" class="link-to">cara memilih pembuat situs web yang tepat</a> untuk bisnis Anda dan <a data-analytics-name="text website building checklist" href="{{ route('resources.handle_second_route', ['second_route' => config('onlinebersama.custom_article_route.websites-detail'), 'slug' => 'membuat-situs-web']) }}" class="link-to">daftar periksa pembuatan situs web</a> dapat membantu Anda memulai.</p>
         </x-articles.tip-callout>
         <x-articles.related-article :data="$post->relatedOneArticle" class="pt-4" />
     </div>

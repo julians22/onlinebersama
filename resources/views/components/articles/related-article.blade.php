@@ -3,11 +3,11 @@
 <div data-analytics-level2="Related Article" {{ $attributes }}>
     <h4 class="py-4 text-[24px]! leading-7.5! md:text-[26px]!">Artikel Terkait</h4>
     <div data-analytics-level3="{{ $data->data_analytics ?? $data->title }}">
-        <div data-analytics-name="box | {{ $data->data_analytics ?? $data->title }}" class="flex flex-col-reverse justify-between gap-4 p-4 rounded-[10px] box-shadow-sm sm:gap-8 sm:flex-row">
+        <div data-analytics-name="box {{ $data->data_analytics ?? $data->title }}" class="flex flex-col-reverse justify-between gap-4 p-4 rounded-[10px] box-shadow-sm sm:gap-8 sm:flex-row">
             <div class="flex flex-col justify-between space-y-4 sm:space-y-0 sm:pl-4">
                 <h3 class="related-title">{{ $data->title }}</h3>
                 <a
-                    data-analytics-name="text | Read More"
+                    data-analytics-name="text Read More"
                     href="{{ route('resources.handle_second_route', $data->route_tools) }}"
                     class="w-max flex items-center font-sans text-xl font-bold text-magenta-300 leading-6">
                     Baca Selengkapnya

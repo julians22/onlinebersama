@@ -4,19 +4,19 @@
             <div class="article-child-wrapper">
                 <p>Siap membawa komunikasi Anda ke tingkat berikutnya? Dapatkan alamat email .com khusus dan bangun merek Anda di setiap email yang Anda kirim. Berikut panduan singkat untuk membantu Anda mulai menggunakan alamat email .com Anda sendiri dalam empat langkah sederhana:</p>
                 <x-articles.navigate-link :article="true">
-                    <a data-analytics-name="anchor | Step 1: Choose a Domain Name" href="#pilih-nama-domain">
+                    <a data-analytics-name="anchor Step 1: Choose a Domain Name" href="#pilih-nama-domain">
                         <span class="hidden md:inline">1:</span>
                         <span class="inline md:hidden">Langkah 1:</span> Pilih Nama Domain
                     </a>
-                    <a data-analytics-name="anchor | Step 2: Register a Domain Name" href="#daftarkan-nama-domain">
+                    <a data-analytics-name="anchor Step 2: Register a Domain Name" href="#daftarkan-nama-domain">
                         <span class="hidden md:inline">2:</span>
                         <span class="inline md:hidden">Langkah 2:</span> Daftarkan Nama Domain
                     </a>
-                    <a data-analytics-name="anchor | Step 3: Choose the Right Business Email Provider" href="#pilih-penyedia-email-bisnis-yang-tepat">
+                    <a data-analytics-name="anchor Step 3: Choose the Right Business Email Provider" href="#pilih-penyedia-email-bisnis-yang-tepat">
                         <span class="hidden md:inline">3:</span>
                         <span class="inline md:hidden">Langkah 3:</span> Pilih Penyedia Email Bisnis yang Tepat
                     </a>
-                    <a data-analytics-name="anchor | Step 4: Connect an Email Address to a Domain Name" href="#sambungkan-alamat-email-ke-nama-domain">
+                    <a data-analytics-name="anchor Step 4: Connect an Email Address to a Domain Name" href="#sambungkan-alamat-email-ke-nama-domain">
                         <span class="hidden md:inline">4:</span>
                         <span class="inline md:hidden">Langkah 4:</span> Sambungkan Alamat Email ke Nama Domain
                     </a>
@@ -25,7 +25,7 @@
         </x-articles.intro-and-quicklinks>
         <div id="pilih-nama-domain" class="article-child-wrapper scroll-mt-110 min-[450px]:scroll-mt-86 md:scroll-mt-28">
             <h3>Langkah 1: Pilih Nama Domain</h3>
-            <p>Langkah pertama dalam membuat <a data-analytics-name="text | custom business email address" href="{{ route('resources.handle_second_route', ['second_route' => config('onlinebersama.custom_article_route.email-detail'), 'slug' => 'manfaat']) }}" class="link-to">alamat email bisnis khusus</a> Anda adalah memilih nama domain. Untuk cara mudah untuk mendapatkan saran nama domain yang bagus, coba <a data-analytics-name="text | domain name generator" href="{{ route('find') }}" class="link-to">generator nama domain</a> yang didukung oleh NameStudio&reg;.</p>
+            <p>Langkah pertama dalam membuat <a data-analytics-name="text custom business email address" href="{{ route('resources.handle_second_route', ['second_route' => config('onlinebersama.custom_article_route.email-detail'), 'slug' => 'manfaat']) }}" class="link-to">alamat email bisnis khusus</a> Anda adalah memilih nama domain. Untuk cara mudah untuk mendapatkan saran nama domain yang bagus, coba <a data-analytics-name="text domain name generator" href="{{ route('find') }}" class="link-to">generator nama domain</a> yang didukung oleh NameStudio&reg;.</p>
             <img class="rounded-[10px]" src="{{ asset('images/mid-article-image-1.jpg') }}" alt="">
             <p>Jika Anda sudah mendaftarkan nama domain, Anda dapat langsung melanjutkan ke Langkah 3: Pilih Penyedia Email Bisnis yang Tepat.</p>
             <x-articles.callout-cta>

@@ -20,7 +20,7 @@
                 <p class="max-w-162.5 paragraph-md">Temukan cara memaksimalkan nama domain .com Anda dengan kumpulan artikel, video, dan panduan kami.</p>
                 <div class="flex justify-start">
                     <a
-                        data-analytics-name="button | Explore All Resources"
+                        data-analytics-name="button Explore All Resources"
                         href="#resources"
                         class="btn-secondary w-full sm:w-auto">
                         Lihat Semua Sumber Informasi

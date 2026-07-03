@@ -8,7 +8,7 @@
             'aspect-208/223 object-cover w-full'
         ]) src="{{ asset($image) }}" alt="{{ $alt }}">
         <div class="absolute top-0 left-0 flex flex-col justify-between size-full py-2.5 px-3 sm:p-4 md:p-6">
-            <div data-analytics-name="text | .com for {{ $dataAnalytics }}" class="text-white">
+            <div data-analytics-name="text .com for {{ $dataAnalytics }}" class="text-white">
                 <p class="paragraph-md leading-5! text-[16px]! md:leading-7! md:text-[18px]!">.com untuk</p>
                 <h3 @class([
                     'text-[20px]! leading-6.25!' => !in_array(Route::currentRouteName(), ['email', 'social-media', 'websites']),
@@ -18,7 +18,7 @@
             </div>
             <div class="card-action">
                 <span
-                    data-analytics-name="button | Learn More"
+                    data-analytics-name="button Learn More"
                     class="btn-primary px-3! sm:px-10!">
                     Pelajari Selengkapnya
                 </span>

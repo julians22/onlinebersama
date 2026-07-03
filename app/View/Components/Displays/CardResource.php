@@ -10,7 +10,8 @@ use Illuminate\View\Component;
 class CardResource extends Component
 {
     public string $rendered_tag;
-    public string $text_button = 'Baca Selengkapnya';
+    public string $data_analytics_button;
+    public string $text_button;
     public string $as = 'a';
     public array $extra_attributes = [];
 
@@ -32,12 +33,14 @@ class CardResource extends Component
             case Post::TYPE_ARTICLE:
                 $this->as = 'a';
                 $this->text_button = 'Baca Selengkapnya';
+                $this->data_analytics_button = 'Read More';
                 $this->extra_attributes['href'] = route('resources.handle_second_route', $this->data->route_tools);
                 break;
 
             case Post::TYPE_VIDEO:
                 $this->as = 'button';
                 $this->text_button = 'Tonton Sekarang';
+                $this->data_analytics_button = 'Watch Now';
                 $this->extra_attributes['type'] = 'button';
                 $this->extra_attributes['@click'] = "\$store.videoModal.openModal('" . ($this->data->video_id ?? config('onlinebersama.default_video_id')) . "')";
                 break;
@@ -45,6 +48,7 @@ class CardResource extends Component
             case Post::TYPE_EBOOK:
                 $this->as = 'a';
                 $this->text_button = 'Download';
+                $this->data_analytics_button = 'Download';
                 $this->extra_attributes['href'] = $this->data->ebook_url ?? config('onlinebersama.default_ebook');
                 $this->extra_attributes['target'] = '_blank';
                 break;

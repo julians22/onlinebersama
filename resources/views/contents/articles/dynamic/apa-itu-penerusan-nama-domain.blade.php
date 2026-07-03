@@ -2,16 +2,16 @@
     <div class="article-wrapper">
         <x-articles.intro-and-quicklinks>
             <div class="article-child-wrapper">
-                <p>Belum siap untuk memiliki situs web? Memiliki Nama domain tetap dapat memberikan manfaat bagi bisnis Anda karena penerusan domain memungkinkan Anda untuk memiliki alamat situs web yang mudah diingat dan sesuai merk, terlepas di mana Anda akan membangun <x-articles.tooltip data-analytics-name="hover | online presence" data-tooltip="Kehadiran online / eksistensi online adalah suatu keadaan di mana bisnis Anda dapat ditemukan di internet, bisa dalam bentuk situs web, halaman media sosial, dan/atau pasar online. Menggunakan nama domain .com dengan kehadiran online Anda, dapat membuka peluang dengan membantu pelanggan menemukan “markas” Anda dengan mudah saat melakukan bisnis online.">kehadiran online</x-articles.tooltip> Anda. Penerusan nama domain adalah cara yang cepat dan mudah untuk membantu Anda mulai mempersonalisasi dan memasarkan kehadiran online Anda - baik di media sosial maupun di toko online.</p>
+                <p>Belum siap untuk memiliki situs web? Memiliki Nama domain tetap dapat memberikan manfaat bagi bisnis Anda karena penerusan domain memungkinkan Anda untuk memiliki alamat situs web yang mudah diingat dan sesuai merk, terlepas di mana Anda akan membangun <x-articles.tooltip data-analytics-name="hover online presence" data-tooltip="Kehadiran online / eksistensi online adalah suatu keadaan di mana bisnis Anda dapat ditemukan di internet, bisa dalam bentuk situs web, halaman media sosial, dan/atau pasar online. Menggunakan nama domain .com dengan kehadiran online Anda, dapat membuka peluang dengan membantu pelanggan menemukan “markas” Anda dengan mudah saat melakukan bisnis online.">kehadiran online</x-articles.tooltip> Anda. Penerusan nama domain adalah cara yang cepat dan mudah untuk membantu Anda mulai mempersonalisasi dan memasarkan kehadiran online Anda - baik di media sosial maupun di toko online.</p>
                 <p>Lihat panduan singkat ini untuk mengetahui cara melakukannya.</p>
                 <x-articles.navigate-link :article="true">
-                    <a data-analytics-name='anchor | What does "Forwarding" a .com Domain Name Mean?' href="#apa-yang-dimaksud-dengan-penerusan-nama-domain-com">
+                    <a data-analytics-name='anchor What does "Forwarding" a .com Domain Name Mean?' href="#apa-yang-dimaksud-dengan-penerusan-nama-domain-com">
                         <span class="hidden md:inline">1:</span> Apa yang Dimaksud dengan “Penerusan” Nama Domain .com?
                     </a>
-                    <a data-analytics-name="anchor | What Are the Different Ways to Forward a Domain Name?" href="#apa-saja-cara-yang-dapat-dilakukan-untuk-meneruskan-nama-domain-com">
+                    <a data-analytics-name="anchor What Are the Different Ways to Forward a Domain Name?" href="#apa-saja-cara-yang-dapat-dilakukan-untuk-meneruskan-nama-domain-com">
                         <span class="hidden md:inline">2:</span> Apa Saja Cara yang Dapat Dilakukan untuk Meneruskan Nama Domain .com?
                     </a>
-                    <a data-analytics-name="anchor | How Do I forward a .com Domain Name?" href="#bagaimana-cara-saya-meneruskan-nama-domain-com">
+                    <a data-analytics-name="anchor How Do I forward a .com Domain Name?" href="#bagaimana-cara-saya-meneruskan-nama-domain-com">
                         <span class="hidden md:inline">3:</span> Bagaimana Cara Saya Meneruskan Nama Domain .com?
                     </a>
                 </x-articles.navigate-link>
@@ -49,7 +49,7 @@
         </div>
         <div id="apa-saja-cara-yang-dapat-dilakukan-untuk-meneruskan-nama-domain-com" class="article-child-wrapper scroll-mt-110 min-[450px]:scroll-mt-86 md:scroll-mt-28">
             <h3 data-analytics-level2="What Are the Different Ways to Forward a Domain Name?">Apa Cara yang Dapat Dilakukan untuk Meneruskan Nama Domain?</h3>
-            <p>Sekarang setelah kita membahas <a data-analytics-name="text | benefits of domain name forwarding" href="{{ route('resources.handle_second_route', ['second_route' => config('onlinebersama.custom_article_route.social-media-detail'), 'slug' => 'cara-menggunakan']) }}" class="link-to">manfaat penerusan nama domain</a>, mari kita uraikan berbagai jenis penerusan dan bagaimana penerusan tersebut dapat memengaruhi apa yang dilihat pelanggan Anda di browser web mereka.</p>
+            <p>Sekarang setelah kita membahas <a data-analytics-name="text benefits of domain name forwarding" href="{{ route('resources.handle_second_route', ['second_route' => config('onlinebersama.custom_article_route.social-media-detail'), 'slug' => 'cara-menggunakan']) }}" class="link-to">manfaat penerusan nama domain</a>, mari kita uraikan berbagai jenis penerusan dan bagaimana penerusan tersebut dapat memengaruhi apa yang dilihat pelanggan Anda di browser web mereka.</p>
             <p>Saat bekerja dengan penjual nama domain, Anda mungkin akan memiliki dua opsi:</p>
             <x-articles.arrow-item-content>
                 <div class="flex flex-col flex-1">
@@ -104,7 +104,7 @@
                 <x-articles.step-item :number="1" data-analytics-level3="1 Register a Domain Name">
                     <div class="flex gap-2 flex-col flex-1">
                         <h4>Daftarkan nama domain .com</h4>
-                        <p>Mulailah dengan mendaftarkan nama domain .com melalui perusahaan penyedia nama domain pilihan Anda. Anda dapat menemukan berbagai saran nama domain yang menarik dengan menggunakan generator nama domain kami <a data-analytics-name="text | here" href="{{ route('find') }}" class="link-to">di sini</a>.</p>
+                        <p>Mulailah dengan mendaftarkan nama domain .com melalui perusahaan penyedia nama domain pilihan Anda. Anda dapat menemukan berbagai saran nama domain yang menarik dengan menggunakan generator nama domain kami <a data-analytics-name="text here" href="{{ route('find') }}" class="link-to">di sini</a>.</p>
                     </div>
                 </x-articles.step-item>
                 <x-articles.step-item :number="2">
