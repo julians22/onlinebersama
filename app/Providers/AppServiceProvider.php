@@ -37,6 +37,8 @@ class AppServiceProvider extends ServiceProvider
                     ->middleware(['web']) // Ensure necessary middleware is included
                     ->name('staging.livewire.update'); // Giving it a name is recommended
             });
+
+            URL::forceRootUrl(config('app.url'));
         }
 
         // Memaksa root URL agar selalu menggunakan /staging

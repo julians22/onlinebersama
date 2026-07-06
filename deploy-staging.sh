@@ -32,6 +32,7 @@ sudo podman exec app-staging php artisan view:cache
 sudo podman exec app-staging php artisan filament:assets
 
 echo "--- Running queue:inbackground ---"
-sudo podman exec -d app-staging php artisan queue:listen
+# restart the queue listener in the background
+sudo podman exec -d app-staging php artisan queue:work --daemon --sleep=3 --tries=3
 
 echo "--- Deployment Successful ---"
