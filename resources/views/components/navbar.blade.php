@@ -100,7 +100,7 @@
                         <span data-analytics-name="play button Startup Experience" class="transition-all duration-300 ease-in-out top-1/2 left-1/2 absolute size-14 -translate-x-1/2 -translate-y-1/2 group-hover:scale-110">
                             <x-icons.play width="56" height="56" fill="#fff" />
                         </span>
-                        <img class="size-full object-cover object-top" src="{{ asset('images/featured-video.jpg') }}" alt="Placeholder Video">
+                        <img class="size-full object-cover object-top" src="{{ asset('images/featured-video.webp') }}" alt="Placeholder Video">
                     </button>
                     <p class="font-semibold paragraph-sm">Video Unggulan - Startup Experience</p>
                 </div>
@@ -195,7 +195,7 @@
                         </div>
                         <img
                             data-analytics-name="video image Startup Experience"
-                            class="size-full object-cover object-top" src="{{ asset('images/featured-video.jpg') }}" alt="">
+                            class="size-full object-cover object-top" src="{{ asset('images/featured-video.webp') }}" alt="">
                     </button>
                     <p class="font-sans font-semibold text-[20px]">Video Unggulan - Startup Experience</p>
                 </div>

@@ -10,11 +10,33 @@
 <main data-analytics-level1="body">
     <!-- Hero -->
     <section
+        x-data="{
+            initVideoObserver() {
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            this.$refs.heroVideo.play();
+                            observer.unobserve(this.$refs.heroVideo);
+                        }
+                    });
+                }, { threshold: 0.5 });
+
+                observer.observe(this.$refs.heroVideo);
+            }
+        }"
         data-analytics-level2="hero"
         data-analytics-name="video play button (video name tbd)"
+        x-init="initVideoObserver()"
         class="relative">
         <div class="absolute inset-0 bg-gradient-hero size-full"></div>
-        <video autoplay="true" muted="true" loop playsinline class="w-full h-100 object-cover aspect-48/17 lg:h-152.75 xl:h-170">
+        <video
+            x-ref="heroVideo"
+            class="w-full h-100 object-cover aspect-48/17 lg:h-152.75 xl:h-170"
+            poster="{{ asset('images/hero-homepage.webp') }}"
+            autoplay="true"
+            muted="true"
+            loop
+            playsinline>
             <!-- Mobile / Vertical screens (Width up to 599px) -->
             <source src="{{ assetAwsUrl('onlinebersama/videos/com_Indonesia_Brand Anthem_Mobile.mp4') }}" type="video/mp4" media="(max-width: 599px)">
             <!-- Tablets / Square screens (Width between 600px and 1024px) -->
@@ -164,10 +186,10 @@
                         </div>
                         <div
                             x-data
-                            data-analytics-name="video image Startup Experience"
+                            data-analytics-name="video image IKAT Indonesia"
                             class="w-full h-full absolute top-0 left-0 group-hover/child:scale-110 transition-all duration-300 ease-in-out">
                             <button
-                                data-analytics-name="play button Startup Experience"
+                                data-analytics-name="play button IKAT Indonesia"
                                 type="button"
                                 @click="$store.videoModal.openModal('{{ config('onlinebersama.video_id.ikat_indonesia') }}')"
                                 class="group/child relative size-full cursor-pointer outline-none mb-6 sm:mb-0">
