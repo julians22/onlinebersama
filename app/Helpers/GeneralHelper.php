@@ -39,12 +39,12 @@ if (!function_exists('appName')) {
 if (!function_exists('imageArticle')) {
     function imageArticle(string $slug)
     {
-        $check_image_exists = file_exists(public_path('images/articles/' . $slug . '.jpg'));
+        $check_image_exists = file_exists(public_path('images/articles/' . $slug . '.webp'));
         if (!$check_image_exists) {
-            return asset('images/articles/default-image.jpg');
+            return asset('images/articles/default-image.webp');
         }
 
-        return asset('images/articles/' . $slug . '.jpg');
+        return asset('images/articles/' . $slug . '.webp');
     }
 }
 

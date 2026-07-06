@@ -59,7 +59,7 @@
                 <p>Tentukan konten situs web yang penting dan buatlah konten penting tersebut. Informasi apa yang akan dianggap menarik dan bermanfaat oleh pengunjung situs web Anda? Setidaknya, pastikan situs web Anda menyediakan beberapa cara bagi pengunjung untuk menghubungi perusahaan Anda, misalnya <a data-analytics-name="text custom business email address" href="{{ route('resources.handle_second_route', ['second_route' => config('onlinebersama.custom_article_route.email-detail'), 'slug' => 'manfaat']) }}" class="link-to">alamat email bisnis khusus</a> dan nomor telepon.</p>
             </div>
         </x-articles.arrow-item-content>
-        <img class="rounded-[10px]" src="{{ asset('images/mid-article-image-4.jpg') }}" alt="">
+        <img class="rounded-[10px]" src="{{ asset('images/mid-article-image-4.webp') }}" alt="">
         <h3 data-analytics-level2="Promoting/Maintaining/Optimizing Your Website:">Mempromosikan, Memelihara, dan Mengoptimalkan Situs Web:</h3>
         <x-articles.arrow-item-content>
             <div class="flex flex-col flex-1">

@@ -30,7 +30,7 @@
         </div>
         <div id="membangun-legitimasi-dengan-citra-profesional" class="article-child-wrapper scroll-mt-110 min-[450px]:scroll-mt-86 md:scroll-mt-28">
             <h3>Membangun Legitimasi Dengan Citra Profesional</h3>
-            <img class="rounded-[10px]" src="{{ asset('images/mid-article-image-1.jpg') }}" alt="">
+            <img class="rounded-[10px]" src="{{ asset('images/mid-article-image-1.webp') }}" alt="">
             <p>Selain membangun kredibilitas, alamat email khusus dapat membantu memperkenalkan kepada seluruh dunia bahwa bisnis Anda sudah berdiri. Alamat email khusus dapat meningkatkan citra profesional Anda bagi calon konsumen yang mungkin masih ragu untuk menjalin komunikasi melalui alamat email umum.</p>
             <p>Gunakan <strong>livingkreasi@EmailGenerik.com</strong> sebagai contoh. Alamat email umum seperti ini mungkin tidak memiliki legitimasi yang sama dengan alamat email khusus. Namun, ketika Anda menggunakan alamat email khusus, konsumen Anda mungkin akan cenderung lebih berinteraksi dengan Anda dan bisnis Anda. Bahkan, alamat email .com dapat membantu usaha kecil terlihat lebih profesional di seluruh dunia.</p>
         </div>

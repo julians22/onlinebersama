@@ -3,7 +3,7 @@
 @section('title', '.com untuk Situs Web | Nama Domain .com')
 @section('meta_description', 'Situs web dengan nama domain .com menjadi fondasi yang dapat diandalkan pelanggan untuk menemukan dan berinteraksi secara online, seiring pertumbuhan situs web Anda')
 @section('meta_keywords', '.com untuk situs web, manfaat situs web')
-@section('meta_image', asset('images/uc-websites.jpg'))
+@section('meta_image', asset('images/uc-websites.webp'))
 
 @section('content')
 
@@ -22,7 +22,7 @@
                 <span data-analytics-name="play button Website Use Case" class="transition-all duration-300 ease-in-out top-1/2 left-1/2 absolute -translate-x-1/2 -translate-y-1/2 group-hover:scale-110">
                     <x-icons.play-rounded width="78" height="78" fill="#fff" />
                 </span>
-                <img class="w-156 object-cover aspect-video lg:w-125 xl:w-156" src="{{ asset('images/uc-websites.jpg') }}" alt="">
+                <img class="w-156 object-cover aspect-video lg:w-125 xl:w-156" src="{{ asset('images/uc-websites.webp') }}" alt="">
             </button>
         </div>
     </section>
@@ -38,21 +38,21 @@
                 <div
                     data-analytics-level3="Grow on Your Terms"
                     class="top-36.5 sticky card-stack sm:top-38.5 md:top-48 lg:top-64 min-[1200px]:top-55.5!">
-                    <x-displays.card-stack number="1" title="Berkembang Sesuai Keinginan Anda" image="images/website-editorial-1.jpg" alt="">
+                    <x-displays.card-stack number="1" title="Berkembang Sesuai Keinginan Anda" image="images/website-editorial-1.webp" alt="">
                         <p class="min-h-40 min-[500px]:min-h-32 sm:min-h-24 md:min-h-auto">Ciptakan tempat bagi bisnis Anda untuk berakar dan berkembang sesuai keinginan Anda. Situs web dengan nama domain .com dapat berkembang seiring perkembangan bisnis Anda.</p>
                     </x-displays.card-stack>
                 </div>
                 <div
                     data-analytics-level3="Control Your Brand"
                     class="top-36.5 sticky card-stack -mt-22 translate-y-22 sm:top-38.5 md:top-48 md:-mt-22 md:translate-y-22 lg:top-64 min-[1200px]:top-55.5! lg:-mt-24 lg:translate-y-24">
-                    <x-displays.card-stack number="2" title="Kendalikan Merek Anda" image="images/website-editorial-2.jpg" alt="">
+                    <x-displays.card-stack number="2" title="Kendalikan Merek Anda" image="images/website-editorial-2.webp" alt="">
                         <p class="min-h-40 min-[500px]:min-h-32 sm:min-h-24 md:min-h-auto">Memiliki situs web dengan nama domain .com memberi Anda ruang untuk membangun merek dan mengendalikan eksistensi online Anda.</p>
                     </x-displays.card-stack>
                 </div>
                 <div
                     data-analytics-level3="Get Noticed by Customers"
                     class="top-36.5 sticky card-stack -mb-20 translate-y-22 sm:top-38.5 md:top-48 md:-mb-20 md:translate-y-22 lg:top-64 min-[1200px]:top-55.5! lg:translate-y-24">
-                    <x-displays.card-stack number="3" title="Lebih Mudah Ditemukan" image="images/website-editorial-3.jpg" alt="">
+                    <x-displays.card-stack number="3" title="Lebih Mudah Ditemukan" image="images/website-editorial-3.webp" alt="">
                         <p class="min-h-40 min-[500px]:min-h-32 sm:min-h-24 md:min-h-auto">Situs web dengan nama domain .com memudahkan pelanggan menemukan Anda. Di situlah dunia akan menemukan Anda.</p>
                     </x-displays.card-stack>
                 </div>
@@ -149,7 +149,7 @@
         <div x-data class="-top-12 flex flex-col gap-7.5 md:gap-11.5 xl:sticky">
             <h2 class="text-navy-blue-300 headline-1 text-center">Cara Membangun Situs <span class="sm:block">Web Profesional</span></h2>
             <div class="relative rounded-[10px] overflow-hidden">
-                <img class="size-full aspect-video object-cover max-w-150 xl:max-w-full" src="{{ asset('images/usecase-website.jpg') }}" alt="">
+                <img class="size-full aspect-video object-cover max-w-150 xl:max-w-full" src="{{ asset('images/usecase-website.webp') }}" alt="">
             </div>
         </div>
         <div class="flex flex-col gap-8 max-w-157.5 xl:-mt-12">
@@ -203,13 +203,13 @@
                 <x-displays.card-inside
                     data-analytics="Social Media & E-Commerce"
                     route="social-media"
-                    image="images/brand-2.jpg">
+                    image="images/brand-2.webp">
                     Media Sosial dan <span class="block">E-Commerce</span>
                 </x-displays.card-inside>
                 <x-displays.card-inside
                     data-analytics="Email"
                     route="email"
-                    image="images/brand-1.jpg">
+                    image="images/brand-1.webp">
                     Email
                 </x-displays.card-inside>
             </div>
@@ -221,8 +221,8 @@
     <section
         data-analytics-level2="Looking for More Resources?"
         class="relative bg-[#F0EAE4]">
-        <img class="mx-auto object-cover hidden h-150 md:block 2xl:h-auto" src="{{ asset('images/hero-resources-usecase.jpg') }}" alt="">
-        <img class="w-full block h-187.5 object-cover md:h-auto md:hidden" src="{{ asset('images/hero-resources-usecase-mobile.jpg') }}" alt="">
+        <img class="mx-auto object-cover hidden h-150 md:block 2xl:h-auto" src="{{ asset('images/hero-resources-usecase.webp') }}" alt="">
+        <img class="w-full block h-187.5 object-cover md:h-auto md:hidden" src="{{ asset('images/hero-resources-usecase-mobile.webp') }}" alt="">
         <div class="top-0 left-1/2 absolute flex flex-col justify-start gap-6 size-full -translate-x-1/2 py-7.5 container md:py-0 md:justify-center">
             <h2 class="text-navy-blue-300 headline-1">Mencari sumber <span class="block">informasi lainnya?</span></h2>
             <p class="max-w-150 text-deep-blue-300 paragraph-md">Jelajahi Panduan Belajar untuk menemukan semua artikel, video, dan banyak lagi tentang cara menggunakan domain .com.</p>

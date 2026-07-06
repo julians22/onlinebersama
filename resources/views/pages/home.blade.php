@@ -3,7 +3,7 @@
 @section('title', 'Di Mana Dunia Menemukanmu | Nama Domain .com')
 @section('meta_description', 'Nama domain .com membantu orang menemukan dan memercayai bisnis Anda. Temukan mengapa .com bisa menjadi pilihan yang tepat untuk bisnis Anda.')
 @section('meta_keywords', '.com, nama domain .com')
-@section('meta_image', asset('images/hero-homepage.jpg'))
+@section('meta_image', asset('images/hero-homepage.webp'))
 
 @section('content')
 
@@ -65,21 +65,21 @@
                     <div @mouseenter="active = 'email'" :class="active === 'email' ? 'hovered' : 'not-hovered'"
                         data-analytics-level3=".com for Email"
                         class="swiper-slide">
-                        <x-displays.card-grow active="email" route="email" image="images/brand-1.jpg" data-analytics=".com for Email">
+                        <x-displays.card-grow active="email" route="email" image="images/brand-1.webp" data-analytics=".com for Email">
                             Email
                         </x-displays.card-grow>
                     </div>
                     <div @mouseenter="active = 'social'" :class="active === 'social' ? 'hovered' : 'not-hovered'"
                         data-analytics-level3=".com for Social Media & E-Commerce"
                         class="swiper-slide">
-                        <x-displays.card-grow active="social" route="social-media" image="images/brand-2.jpg" data-analytics=".com for Social Media & E-Commerce">
+                        <x-displays.card-grow active="social" route="social-media" image="images/brand-2.webp" data-analytics=".com for Social Media & E-Commerce">
                             Media Sosial dan <span class="block">E-Commerce</span>
                         </x-displays.card-grow>
                     </div>
                     <div @mouseenter="active = 'websites'" :class="active === 'websites' ? 'hovered' : 'not-hovered'"
                         data-analytics-level3=".com for Websites"
                         class="swiper-slide">
-                        <x-displays.card-grow active="websites" route="websites" image="images/brand-3.jpg" data-analytics=".com for Websites">
+                        <x-displays.card-grow active="websites" route="websites" image="images/brand-3.webp" data-analytics=".com for Websites">
                             Situs Web
                         </x-displays.card-grow>
                     </div>
@@ -88,8 +88,8 @@
             </div>
         </div>
         <div x-data data-analytics-level2="Not Just a Domain. A Declaration." class="relative">
-            <img data-analytics-name="video image Not Just a Domain. A Declaration." class="mx-auto hidden lg:block" src="{{ asset('images/placeholder-video-how.jpg') }}" alt="">
-            <img data-analytics-name="video image Not Just a Domain. A Declaration." class="w-full mx-auto block object-cover sm:h-200 sm:object-bottom md:h-210 min-[900px]:h-230! lg:hidden" src="{{ asset('images/placeholder-video-how-mobile.jpg') }}" alt="">
+            <img data-analytics-name="video image Not Just a Domain. A Declaration." class="mx-auto hidden lg:block" src="{{ asset('images/placeholder-video-how.webp') }}" alt="">
+            <img data-analytics-name="video image Not Just a Domain. A Declaration." class="w-full mx-auto block object-cover sm:h-200 sm:object-bottom md:h-210 min-[900px]:h-230! lg:hidden" src="{{ asset('images/placeholder-video-how-mobile.webp') }}" alt="">
             <button type="button" @click="$store.videoModal.openModal('{{ config('onlinebersama.video_id.bukan_sekadar_domain') }}')" data-analytics-name="video image Not Just a Domain. A Declaration." class="group absolute top-0 left-0 size-full transition-all duration-300 ease-in-out cursor-pointer z-10">
                 <span
                     data-analytics-name="play button Not Just a Domain. A Declaration."
@@ -155,7 +155,7 @@
                         </div>
                     </div>
                     <div class="relative rounded-[10px] overflow-hidden">
-                        <img class="w-full rounded-[10px]" src="{{ asset('images/placeholder-video-why-com.jpg') }}" alt="">
+                        <img class="w-full rounded-[10px]" src="{{ asset('images/placeholder-video-why-com.webp') }}" alt="">
                         <div class="bottom-0 left-0 p-8 absolute hidden sm:block">
                             <div class="max-w-3xl space-y-2 text-white">
                                 <h4 class="font-extrabold! text-[20px]! subheadline-3 sm:text-[28px]!">IKAT Indonesia</h4>
@@ -205,21 +205,21 @@
                 <div
                     data-analytics-level3="card1"
                     class="top-45 sticky card-stack sm:top-38.5 md:top-61.5 lg:top-77.5 min-[1200px]:top-69.5!">
-                    <x-displays.card-stack number="1" title="Lebih Mudah Ditemukan" image="images/homepage-editorial-1.jpg" data-analytics="Be Found Easier">
+                    <x-displays.card-stack number="1" title="Lebih Mudah Ditemukan" image="images/homepage-editorial-1.webp" data-analytics="Be Found Easier">
                         <p class="min-h-20 md:min-h-auto">Nama domain .com membantu memudahkan pelanggan menemukan bisnis secara online.</p>
                     </x-displays.card-stack>
                 </div>
                 <div
                     data-analytics-level3="card2"
                     class="top-45 sticky card-stack -mt-20 translate-y-20 sm:top-38.5 md:-mt-20 md:translate-y-20 md:top-61.5 lg:-mt-20 lg:translate-y-20 lg:top-77.5 min-[1200px]:top-69.5!">
-                    <x-displays.card-stack number="2" title="Tampil Beda Secara Online" image="images/homepage-editorial-2.jpg" data-analytics="Stand Out Online">
+                    <x-displays.card-stack number="2" title="Tampil Beda Secara Online" image="images/homepage-editorial-2.webp" data-analytics="Stand Out Online">
                         <p class="min-h-20 md:min-h-auto">Nama domain .com dapat membantu meningkatkan visibilitas bisnis.</p>
                     </x-displays.card-stack>
                 </div>
                 <div
                     data-analytics-level3="card3"
                     class="top-45 sticky card-stack -mb-20 translate-y-20 sm:top-38.5 md:-mb-20 md:translate-y-20 md:top-61.5 lg:top-77.5 min-[1200px]:top-69.5!">
-                    <x-displays.card-stack number="3" title="Tingkatkan Kredibilitas Anda" image="images/homepage-editorial-3.jpg" data-analytics="Enhance Your Credibility">
+                    <x-displays.card-stack number="3" title="Tingkatkan Kredibilitas Anda" image="images/homepage-editorial-3.webp" data-analytics="Enhance Your Credibility">
                         <p class="min-h-20 md:min-h-auto">Nama domain .com dapat membantu usaha kecil terlihat lebih profesional.</p>
                     </x-displays.card-stack>
                 </div>

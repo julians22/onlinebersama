@@ -3,7 +3,7 @@
 @section('title', '.com untuk Media Sosial dan E-commerce | Penerusan Nama Domain')
 @section('meta_description', 'Dengan penerusan domain, Anda dapat mengarahkan nama domain .com yang mudah diingat ke toko online atau laman media sosial Anda.')
 @section('meta_keywords', '.com untuk media sosial, .com untuk e-commerce, manfaat penerusan domain')
-@section('meta_image', asset('images/uc-social-media-ecommerce.jpg'))
+@section('meta_image', asset('images/uc-social-media-ecommerce.webp'))
 
 @section('content')
 
@@ -22,7 +22,7 @@
                 <span data-analytics-name="play button Domain Forwarding Use Case" class="transition-all duration-300 ease-in-out top-1/2 left-1/2 absolute -translate-x-1/2 -translate-y-1/2 group-hover:scale-110">
                     <x-icons.play-rounded width="78" height="78" fill="#fff" />
                 </span>
-                <img class="w-156 object-cover aspect-video lg:w-125 xl:w-156" src="{{ asset('images/uc-social-media-ecommerce.jpg') }}" alt="">
+                <img class="w-156 object-cover aspect-video lg:w-125 xl:w-156" src="{{ asset('images/uc-social-media-ecommerce.webp') }}" alt="">
             </button>
         </div>
     </section>
@@ -38,21 +38,21 @@
                 <div
                     data-analytics-level3="Memorable Way to Market"
                     class="top-36.5 sticky card-stack sm:top-38.5 md:top-48 lg:top-64 min-[1200px]:top-55.5!">
-                    <x-displays.card-stack number="1" title="Cara Pemasaran yang Tak Terlupakan" image="images/social-media-editorial-1.jpg" alt="">
+                    <x-displays.card-stack number="1" title="Cara Pemasaran yang Tak Terlupakan" image="images/social-media-editorial-1.webp" alt="">
                         <p class="min-h-40 min-[500px]:min-h-32 sm:min-h-24 md:min-h-auto">Nama domain .com tidak hanya diperuntukkan bagi situs web. Dengan penerusan domain, Anda dapat memberikan alamat web yang mudah diingat untuk setiap eksistensi online.</p>
                     </x-displays.card-stack>
                 </div>
                 <div
                     data-analytics-level3="A Consistent Web Address"
                     class="top-36.5 sticky card-stack -mt-22 translate-y-22 sm:top-38.5 md:top-48 md:-mt-22 md:translate-y-22 lg:top-64 min-[1200px]:top-55.5! lg:-mt-24 lg:translate-y-24">
-                    <x-displays.card-stack number="2" title="Alamat Web yang Konsisten" image="images/social-media-editorial-2.jpg" alt="">
+                    <x-displays.card-stack number="2" title="Alamat Web yang Konsisten" image="images/social-media-editorial-2.webp" alt="">
                         <p class="min-h-40 min-[500px]:min-h-32 sm:min-h-24 md:min-h-auto">Dapatkan alamat web .com kustom yang bergerak bersama bisnis Anda. Dengan begitu, meskipun toko fisik berpindah tempat, pelanggan akan selalu dapat menemukan Anda.</p>
                     </x-displays.card-stack>
                 </div>
                 <div
                     data-analytics-level3="The Flexibility of Change"
                     class="top-36.5 sticky card-stack -mb-20 translate-y-22 sm:top-38.5 md:top-48 md:-mb-20 md:translate-y-22 lg:top-64 min-[1200px]:top-55.5! lg:translate-y-24">
-                    <x-displays.card-stack number="3" title="Fleksibilitas untuk Berubah" image="images/social-media-editorial-3.jpg" alt="">
+                    <x-displays.card-stack number="3" title="Fleksibilitas untuk Berubah" image="images/social-media-editorial-3.webp" alt="">
                         <p class="min-h-40 min-[500px]:min-h-32 sm:min-h-24 md:min-h-auto">Anda dapat sewaktu-waktu memperbarui destinasi online yang dituju pengunjung yang mengakses nama domain .com.</p>
                     </x-displays.card-stack>
                 </div>
@@ -87,7 +87,7 @@
                 </div>
                 <a x-show="active === 'social-media'" data-analytics-level3="right image" data-analytics-name="image Reach more people by connecting your social page to a custom .com web address."
                     href="{{ route('resources.handle_second_route', ['second_route' => config('onlinebersama.custom_article_route.social-media-detail'), 'slug' => 'cara-menggunakan']) }}" class="relative rounded-[10px] max-w-full overflow-hidden h-88 md:h-auto md:max-w-156">
-                    <img data-analytics-name="image Reach more people by connecting your social page to a custom .com web address." class="size-full object-cover aspect-video" src="{{ asset('images/uc-social-media-ecommerce.jpg') }}" alt="">
+                    <img data-analytics-name="image Reach more people by connecting your social page to a custom .com web address." class="size-full object-cover aspect-video" src="{{ asset('images/uc-social-media-ecommerce.webp') }}" alt="">
                     <div class="top-0 left-0 absolute flex flex-col justify-end gap-4 bg-linear-360 from-black/60 to-transparent p-4 size-full text-white md:p-6">
                         <p class="leading-8.5! paragraph-md text-[20px]!">Jangkau lebih banyak orang dengan menghubungkan halaman media sosial Anda ke alamat web .com kustom.</p>
                         <p data-analytics-name="text Read More" class="flex items-center w-max font-sans font-bold text-[20px] decoration-[8%] underline underline-offset-[12%] tracking-[0.25px]">
@@ -98,7 +98,7 @@
                 </a>
                 <a x-show="active === 'online-store'" x-cloak data-analytics-level3="right image" data-analytics-name="image Link to your store on any platform from a custom .com domain name."
                     href="{{ route('resources.handle_second_route', ['second_route' => config('onlinebersama.custom_article_route.social-media-detail'), 'slug' => 'cara-menggunakan']) }}" class="relative rounded-[10px] max-w-full overflow-hidden h-88 md:h-auto md:max-w-156">
-                    <img class="size-full object-cover aspect-video" src="{{ asset('images/uc-email.jpg') }}" alt="">
+                    <img class="size-full object-cover aspect-video" src="{{ asset('images/uc-email.webp') }}" alt="">
                     <div class="top-0 left-0 absolute flex flex-col justify-end gap-4 bg-linear-360 from-black/60 to-transparent p-4 size-full text-white md:p-6">
                         <p class="leading-8.5! paragraph-md text-[20px]!">Tautkan toko Anda di platform mana pun dari nama domain .com kustom.</p>
                         <p data-analytics-name="text Read More" class="flex items-center w-max font-sans font-bold text-[20px] decoration-[8%] underline underline-offset-[12%] tracking-[0.25px]">
@@ -119,7 +119,7 @@
         <div x-data class="-top-12 flex flex-col gap-7.5 md:gap-11.5 xl:sticky">
             <h2 class="text-navy-blue-300 headline-1 text-center">Cara Meneruskan Nama <span class="sm:block">Domain Anda</span></h2>
             <div class="relative rounded-[10px] overflow-hidden">
-                <img class="size-full aspect-video object-cover max-w-150 xl:max-w-full" src="{{ asset('images/usecase-social-media.jpg') }}" alt="">
+                <img class="size-full aspect-video object-cover max-w-150 xl:max-w-full" src="{{ asset('images/usecase-social-media.webp') }}" alt="">
             </div>
         </div>
         <div class="flex flex-col gap-8 max-w-157.5 xl:-mt-12">
@@ -173,13 +173,13 @@
                 <x-displays.card-inside
                     data-analytics="Email"
                     route="email"
-                    image="images/brand-1.jpg">
+                    image="images/brand-1.webp">
                     Email
                 </x-displays.card-inside>
                 <x-displays.card-inside
                     data-analytics="Websites"
                     route="websites"
-                    image="images/brand-3.jpg">
+                    image="images/brand-3.webp">
                     Situs Web
                 </x-displays.card-inside>
             </div>
@@ -191,8 +191,8 @@
     <section
         data-analytics-level2="Looking for More Resources?"
         class="relative bg-[#F0EAE4]">
-        <img class="mx-auto object-cover hidden h-150 md:block 2xl:h-auto" src="{{ asset('images/hero-resources-usecase.jpg') }}" alt="">
-        <img class="w-full block h-187.5 object-cover md:h-auto md:hidden" src="{{ asset('images/hero-resources-usecase-mobile.jpg') }}" alt="">
+        <img class="mx-auto object-cover hidden h-150 md:block 2xl:h-auto" src="{{ asset('images/hero-resources-usecase.webp') }}" alt="">
+        <img class="w-full block h-187.5 object-cover md:h-auto md:hidden" src="{{ asset('images/hero-resources-usecase-mobile.webp') }}" alt="">
         <div class="top-0 left-1/2 absolute flex flex-col justify-start gap-6 size-full -translate-x-1/2 py-7.5 container md:py-0 md:justify-center">
             <h2 class="text-navy-blue-300 headline-1">Mencari sumber <span class="block">informasi lainnya?</span></h2>
             <p class="max-w-150 text-deep-blue-300 paragraph-md">Jelajahi Panduan Belajar untuk menemukan semua artikel, video, dan banyak lagi tentang cara menggunakan domain .com.</p>

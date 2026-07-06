@@ -139,7 +139,7 @@
             <h3>Memilih Paket Terbaik untuk Bisnis Anda</h3>
             <p>Jika Anda sedang mencari rekomendasi pembuat situs web mana yang paling cocok untuk bisnis Anda, jawabannya adalah: <em>tergantung pada tujuan Anda.</em></p>
             <p>Ide, proyek, dan bisnis memiliki kebutuhan yang berbeda-beda – pembuat situs web tertentu mungkin berfungsi dengan baik untuk beberapa orang, namun mungkin tidak optimal untuk kebutuhan Anda. Untuk memilih pembuat situs web, pikirkan tujuan Anda dan evaluasi opsi Anda:</p>
-            <img class="rounded-[10px]" src="{{ asset('images/mid-article-image-7.jpg') }}" alt="">
+            <img class="rounded-[10px]" src="{{ asset('images/mid-article-image-7.webp') }}" alt="">
             <x-articles.arrow-item-content>
                 <div class="flex flex-col flex-1 gap-2">
                     <h3 class="smaller">Bandingkan</h3>

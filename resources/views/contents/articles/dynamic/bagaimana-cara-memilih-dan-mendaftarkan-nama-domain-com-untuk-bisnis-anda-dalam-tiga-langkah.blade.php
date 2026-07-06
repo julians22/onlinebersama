@@ -94,7 +94,7 @@
                 </div>
             </x-articles.callout-cta>
             <p>Proses untuk pendaftaran nama domain mungkin berbeda tergantung dari penjual dan pilihan Anda, namun umumnya Anda bisa mengomunikasikan nama domain .com yang Anda inginkan dan selama berapa tahun Anda ingin mendaftarkan nama domain tersebut (pilihan biasanya tersedia antara 1 hingga 10 tahun) kepada penjual beserta alamat kontak dan detail pembayaran Anda. Jika nama domain tersebut masih tersedia, mereka bisa membantu Anda menyelesaikan proses pendaftaran dan mungkin menawarkan kepada Anda layanan tambahan yang terkait, seperti email khusus atau hosting dan pembuatan situs web. Setelah terdaftar, Anda bisa langsung menggunakan nama domain .com yang terdaftar tersebut, seperti mengarahkan ke kehadiran online yang sudah ada atau membangun situs web.</p>
-            <img class="rounded-[10px]" src="{{ asset('images/mid-article-image-2.jpg') }}" alt="">
+            <img class="rounded-[10px]" src="{{ asset('images/mid-article-image-2.webp') }}" alt="">
         </div>
         <x-articles.tip-callout>
             <x-slot:title>

@@ -3,7 +3,7 @@
 @section('title', '.com untuk Email | Nama Domain .com')
 @section('meta_description', 'Dengan alamat email .com khusus, email bisnis Anda akan terlihat lebih profesional')
 @section('meta_keywords', '.com untuk email, manfaat email khusus')
-@section('meta_image', asset('images/uc-email.jpg'))
+@section('meta_image', asset('images/uc-email.webp'))
 
 @section('content')
 
@@ -22,7 +22,7 @@
                 <span data-analytics-name="play button Email Use Case" class="transition-all duration-300 ease-in-out top-1/2 left-1/2 absolute -translate-x-1/2 -translate-y-1/2 group-hover:scale-110">
                     <x-icons.play-rounded width="78" height="78" fill="#fff" />
                 </span>
-                <img class="w-156 object-cover aspect-video lg:w-125 xl:w-156" src="{{ asset('images/uc-email.jpg') }}" alt="">
+                <img class="w-156 object-cover aspect-video lg:w-125 xl:w-156" src="{{ asset('images/uc-email.webp') }}" alt="">
             </button>
         </div>
     </section>
@@ -38,21 +38,21 @@
                 <div
                     data-analytics-level3="Build Legitimacy"
                     class="top-36.5 sticky card-stack sm:top-38.5 md:top-48 lg:top-64 min-[1200px]:top-55.5!">
-                    <x-displays.card-stack number="1" title="Membangun Legitimasi" image="images/email-editorial-1.jpg" alt="">
+                    <x-displays.card-stack number="1" title="Membangun Legitimasi" image="images/email-editorial-1.webp" alt="">
                         <p class="min-h-40 min-[500px]:min-h-32 sm:min-h-24 md:min-h-auto">Beri bisnis Anda tampilan yang berkelas dan profesional. Dapatkan alamat email .com kustom dan tunjukkan kepada semua orang bahwa Anda profesional.</p>
                     </x-displays.card-stack>
                 </div>
                 <div
                     data-analytics-level3="Increase Credibility"
                     class="top-36.5 sticky card-stack -mt-22 translate-y-22 sm:top-38.5 md:top-48 md:-mt-20 md:translate-y-20 lg:top-64 min-[1200px]:top-55.5! lg:-mt-20 lg:translate-y-20">
-                    <x-displays.card-stack number="2" title="Meningkatkan Kredibilitas" image="images/email-editorial-2.jpg" alt="">
+                    <x-displays.card-stack number="2" title="Meningkatkan Kredibilitas" image="images/email-editorial-2.webp" alt="">
                         <p class="min-h-40 min-[500px]:min-h-32 sm:min-h-24 md:min-h-auto">Dengan alamat email .com kustom, Anda dapat memberikan kesan yang kuat dan membekas, serta menumbuhkan kepercayaan pelanggan terhadap Anda.</p>
                     </x-displays.card-stack>
                 </div>
                 <div
                     data-analytics-level3="Market Your Business"
                     class="top-36.5 sticky card-stack -mb-20 translate-y-22 sm:top-38.5 md:top-48 md:-mb-18 md:translate-y-20 lg:top-60 min-[1200px]:top-55.5! lg:translate-y-20">
-                    <x-displays.card-stack number="3" title="Memasarkan Bisnis Anda" image="images/email-editorial-3.jpg" alt="">
+                    <x-displays.card-stack number="3" title="Memasarkan Bisnis Anda" image="images/email-editorial-3.webp" alt="">
                         <p class="min-h-40 min-[500px]:min-h-32 sm:min-h-24 md:min-h-auto">Dapatkan alamat email .com kustom dan bangun merek Anda lewat setiap email yang dikirim.</p>
                     </x-displays.card-stack>
                 </div>
@@ -75,7 +75,7 @@
         class="bg-gradient-blue-double relative z-10">
         <div x-data class="flex justify-center items-center gap-10 px-10 py-7.5 flex-col container md:px-8 md:gap-12 md:py-12.5 xl:flex-row">
             <button data-analytics-name="video animation Three Ways to Use a Custom Email Address" type="button" @click="$store.videoModal.openModal('{{ config('onlinebersama.video_id.tiga_cara') }}')" class="group relative rounded-[10px] overflow-hidden shrink-0 cursor-pointer">
-                <img class="size-full object-cover aspect-video max-w-155.5" src="{{ asset('images/placeholder-video-three-ways.jpg') }}" alt="">
+                <img class="size-full object-cover aspect-video max-w-155.5" src="{{ asset('images/placeholder-video-three-ways.webp') }}" alt="">
                 <span data-analytics-name="play button Three Ways to Use a Custom Email Address" class="transition-all duration-300 ease-in-out top-1/2 left-1/2 absolute -translate-x-1/2 -translate-y-1/2 group-hover:scale-110">
                     <x-icons.play-rounded width="78" height="78" fill="#fff" />
                 </span>
@@ -95,7 +95,7 @@
         <div x-data class="-top-12 flex flex-col gap-7.5 md:gap-11.5 xl:sticky">
             <h2 class="text-navy-blue-300 headline-1 text-center">Cara Menyiapkan Alamat <span class="sm:block">Email Kustom</span></h2>
             <div class="relative rounded-[10px] overflow-hidden">
-                <img class="size-full aspect-video object-cover max-w-150 xl:max-w-full" src="{{ asset('images/usecase-email.jpg') }}" alt="">
+                <img class="size-full aspect-video object-cover max-w-150 xl:max-w-full" src="{{ asset('images/usecase-email.webp') }}" alt="">
             </div>
         </div>
         <div class="flex flex-col gap-8 max-w-157.5 xl:-mt-12">
@@ -149,13 +149,13 @@
                 <x-displays.card-inside
                     data-analytics="Social Media & E-Commerce"
                     route="social-media"
-                    image="images/brand-2.jpg">
+                    image="images/brand-2.webp">
                     Media Sosial dan <span class="block">E-Commerce</span>
                 </x-displays.card-inside>
                 <x-displays.card-inside
                     data-analytics="Websites"
                     route="websites"
-                    image="images/brand-3.jpg">
+                    image="images/brand-3.webp">
                     Situs Web
                 </x-displays.card-inside>
             </div>
@@ -167,8 +167,8 @@
     <section
         data-analytics-level2="Looking for More Resources?"
         class="relative bg-[#F0EAE4]">
-        <img class="mx-auto object-cover hidden h-150 md:block 2xl:h-auto" src="{{ asset('images/hero-resources-usecase.jpg') }}" alt="">
-        <img class="w-full block h-187.5 object-cover md:h-auto md:hidden" src="{{ asset('images/hero-resources-usecase-mobile.jpg') }}" alt="">
+        <img class="mx-auto object-cover hidden h-150 md:block 2xl:h-auto" src="{{ asset('images/hero-resources-usecase.webp') }}" alt="">
+        <img class="w-full block h-187.5 object-cover md:h-auto md:hidden" src="{{ asset('images/hero-resources-usecase-mobile.webp') }}" alt="">
         <div class="top-0 left-1/2 absolute flex flex-col justify-start gap-6 size-full -translate-x-1/2 py-7.5 container md:py-0 md:justify-center">
             <h2 class="text-navy-blue-300 headline-1">Mencari sumber <span class="block">informasi lainnya?</span></h2>
             <p class="max-w-150 text-deep-blue-300 paragraph-md">Jelajahi Panduan Belajar untuk menemukan semua artikel, video, dan banyak lagi tentang cara menggunakan domain .com.</p>

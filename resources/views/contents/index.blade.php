@@ -3,7 +3,7 @@
 @section('title', 'Panduan Belajar | Nama Domain .com')
 @section('meta_description', 'Temukan cara memaksimalkan penggunaan nama domain .com Anda melalui koleksi artikel, video, dan panduan kami')
 @section('meta_keywords', 'panduan belajar .com, artikel .com')
-@section('meta_image', asset('images/hero-resources.jpg'))
+@section('meta_image', asset('images/hero-resources.webp'))
 
 @section('content')
 
@@ -12,8 +12,8 @@
     <section
         data-analytics-level2="hero"
         class="relative">
-        <img class="hidden w-full h-150 object-cover aspect-16/5 md:block" src="{{ asset('images/hero-resources.jpg') }}" alt="">
-        <img class="block w-full h-132.5 object-cover md:hidden" src="{{ asset('images/hero-resources-mobile.jpg') }}" alt="">
+        <img class="hidden w-full h-150 object-cover aspect-16/5 md:block" src="{{ asset('images/hero-resources.webp') }}" alt="">
+        <img class="block w-full h-132.5 object-cover md:hidden" src="{{ asset('images/hero-resources-mobile.webp') }}" alt="">
         <div class="top-0 left-1/2 absolute flex items-end py-10 size-full -translate-x-1/2 container-medium md:items-center md:py-19.5">
             <div class="space-y-4 text-white">
                 <h1 class="headline-1">Panduan Belajar</h1>
@@ -44,32 +44,32 @@
             <div data-analytics-level3="carousel" class="custom-swiper-button-next z-9999 absolute inset-y-0 right-0 w-1/4 cursor-pointer"></div>
             <div class="swiper-wrapper">
                 <div data-analytics-level3="carousel1" class="swiper-slide">
-                    <x-displays.card-video title="Startup Experience" image="images/placeholder-video-startup.jpg" videoId="{{ config('onlinebersama.video_id.startup_experience') }}" data-analytics="Startup Experience">
+                    <x-displays.card-video title="Startup Experience" image="images/placeholder-video-startup.webp" videoId="{{ config('onlinebersama.video_id.startup_experience') }}" data-analytics="Startup Experience">
                         Ketahui bagaimana Henrik Scheel menggunakan nama domain .com miliknya untuk membantu bisnisnya beroperasi di 25 negara di seluruh dunia.
                     </x-displays.card-video>
                 </div>
                 <div data-analytics-level3="carousel2" class="swiper-slide">
-                    <x-displays.card-video title="IKAT Indonesia" image="images/placeholder-video-why-com.jpg" videoId="{{ config('onlinebersama.video_id.ikat_indonesia') }}" data-analytics="IKAT Indonesia">
+                    <x-displays.card-video title="IKAT Indonesia" image="images/placeholder-video-why-com.webp" videoId="{{ config('onlinebersama.video_id.ikat_indonesia') }}" data-analytics="IKAT Indonesia">
                         Dengarkan bagaimana nama domain .com yang dikenal membantu pemilik bisnis mengembangkan bisnisnya
                     </x-displays.card-video>
                 </div>
                 <div data-analytics-level3="carousel3" class="swiper-slide">
-                    <x-displays.card-video title="Chic Diva Geek" image="images/placeholder-video-chic-diva.jpg" videoId="6331201181112" data-analytics="Chic Diva Geek">
+                    <x-displays.card-video title="Chic Diva Geek" image="images/placeholder-video-chic-diva.webp" videoId="6331201181112" data-analytics="Chic Diva Geek">
                         Ketahui bagaimana nama domain .com yang tepercaya membantu Adrian McLanahan dan bisnisnya menjangkau pelanggan baru
                     </x-displays.card-video>
                 </div>
                 <div data-analytics-level3="carousel1" class="swiper-slide">
-                    <x-displays.card-video title="Startup Experience" image="images/placeholder-video-startup.jpg" videoId="{{ config('onlinebersama.video_id.startup_experience') }}" data-analytics="Startup Experience">
+                    <x-displays.card-video title="Startup Experience" image="images/placeholder-video-startup.webp" videoId="{{ config('onlinebersama.video_id.startup_experience') }}" data-analytics="Startup Experience">
                         Ketahui bagaimana Henrik Scheel menggunakan nama domain .com miliknya untuk membantu bisnisnya beroperasi di 25 negara di seluruh dunia.
                     </x-displays.card-video>
                 </div>
                 <div data-analytics-level3="carousel2" class="swiper-slide">
-                    <x-displays.card-video title="IKAT Indonesia" image="images/placeholder-video-why-com.jpg" videoId="{{ config('onlinebersama.video_id.ikat_indonesia') }}" data-analytics="IKAT Indonesia">
+                    <x-displays.card-video title="IKAT Indonesia" image="images/placeholder-video-why-com.webp" videoId="{{ config('onlinebersama.video_id.ikat_indonesia') }}" data-analytics="IKAT Indonesia">
                         Dengarkan bagaimana nama domain .com yang dikenal membantu pemilik bisnis mengembangkan bisnisnya
                     </x-displays.card-video>
                 </div>
                 <div data-analytics-level3="carousel3" class="swiper-slide">
-                    <x-displays.card-video title="Chic Diva Geek" image="images/placeholder-video-chic-diva.jpg" videoId="6331201181112" data-analytics="Chic Diva Geek">
+                    <x-displays.card-video title="Chic Diva Geek" image="images/placeholder-video-chic-diva.webp" videoId="6331201181112" data-analytics="Chic Diva Geek">
                         Ketahui bagaimana nama domain .com yang tepercaya membantu Adrian McLanahan dan bisnisnya menjangkau pelanggan baru
                     </x-displays.card-video>
                 </div>

@@ -35,7 +35,7 @@
                     <p>Soroti berbagai halaman atau produk di situs web Anda dengan mendaftarkan nama domain .com tambahan sebagai alamat web promosi.</p>
                 </div>
             </x-articles.step-item>
-            <img class="rounded-[10px]" src="{{ asset('images/mid-article-image-3.jpg') }}" alt="">
+            <img class="rounded-[10px]" src="{{ asset('images/mid-article-image-3.webp') }}" alt="">
             <x-articles.step-item :number="6">
                 <div class="flex gap-2 flex-col flex-1">
                     <h4>Profil bisnis di aplikasi pesan</h4>

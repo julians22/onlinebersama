@@ -5,7 +5,7 @@
         </x-articles.intro-and-quicklinks>
         <h3>Apa Itu Call-To-Action?</h3>
         <p>Terdapat berbagai jenis CTA yang bisa diterapkan; misalnya, CTA bisa mengarah ke formulir untuk diisi, keranjang untuk pemesanan, atau opsi untuk berkomunikasi melalui teks – pada dasarnya merupakan cara untuk berinteraksi langsung dengan bisnis tersebut.</p>
-        <img class="rounded-[10px]" src="{{ asset('images/mid-article-image-5.jpg') }}" alt="">
+        <img class="rounded-[10px]" src="{{ asset('images/mid-article-image-5.webp') }}" alt="">
         <h3>Menyusun Halaman Tujuan Anda</h3>
         <p>Saat membuat halaman tujuan untuk perusahaan Anda, penting untuk mempertimbangkan lima elemen kunci untuk memastikan Anda menciptakan pengalaman yang menarik bagi calon pelanggan:</p>
         <div class="flex flex-col gap-2.5">

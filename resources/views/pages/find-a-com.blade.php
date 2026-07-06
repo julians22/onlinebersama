@@ -3,7 +3,7 @@
 @section('title', 'Temukan Nama Domain .com')
 @section('meta_description', 'Cari dan Tukar Pikiran Ide Nama Domain .com yang Tersedia')
 @section('meta_keywords', 'temukan domain .com, cari nama domain .com')
-@section('meta_image', asset('images/hero-homepage.jpg'))
+@section('meta_image', asset('images/hero-homepage.webp'))
 
 @section('content')
 
@@ -34,7 +34,7 @@
             type="button"
             @click="$store.videoModal.openModal('{{ config('onlinebersama.video_id.tiga_tips') }}')"
             class="group relative aspect-video rounded-[10px] cursor-pointer overflow-hidden max-w-lg md:w-150">
-            <img class="size-full" src="{{ asset('images/placeholder-video-three-tips.jpg') }}" alt="">
+            <img class="size-full" src="{{ asset('images/placeholder-video-three-tips.webp') }}" alt="">
             <span data-analytics-name="play button Three Tips For Choosing a .com Domain Name" class="transition-all duration-150 ease-in-out top-1/2 left-1/2 absolute -translate-x-1/2 -translate-y-1/2 size-19.5 group-hover:scale-110">
                 <x-icons.play-rounded width="78" height="78" fill="#fff" />
             </span>
@@ -55,7 +55,7 @@
                         <x-displays.card-inside
                             data-analytics="Email"
                             route="email"
-                            image="images/brand-1.jpg">
+                            image="images/brand-1.webp">
                             Email
                         </x-displays.card-inside>
                     </div>
@@ -63,7 +63,7 @@
                         <x-displays.card-inside
                             data-analytics="Social Media & E-Commerce"
                             route="social-media"
-                            image="images/brand-2.jpg">
+                            image="images/brand-2.webp">
                             Media Sosial dan <span class="block">E-Commerce</span>
                         </x-displays.card-inside>
                     </div>
@@ -71,7 +71,7 @@
                         <x-displays.card-inside
                             data-analytics="Websites"
                             route="websites"
-                            image="images/brand-3.jpg">
+                            image="images/brand-3.webp">
                             Situs Web
                         </x-displays.card-inside>
                     </div>
