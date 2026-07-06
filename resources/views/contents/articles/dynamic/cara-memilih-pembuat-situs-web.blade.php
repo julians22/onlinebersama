@@ -169,7 +169,7 @@
             <x-slot:title>
                 <p>KESIMPULAN</p>
             </x-slot:title>
-            <p data-analytics-name="text marketing your business with a .com domain name">Setelah Anda memilih pembuat situs web terbaik untuk bisnis dan membangun situs web, Anda dapat mulai mempromosikan situs sehingga orang dapat menemukan Anda. <a href="{{ route('resources.handle_second_route', ['second_route' => config('onlinebersama.custom_article_route.default'), 'slug' => 'sepuluh-cara-memasarkan-bisnis']) }}" class="link-to">Panduan</a> kami tentang cara memasarkan bisnis Anda dengan nama domain .com dapat membantu Anda memulai.</p>
+            <p data-analytics-name="text marketing your business with a .com domain name">Setelah Anda memilih pembuat situs web terbaik untuk bisnis dan membangun situs web, Anda dapat mulai mempromosikan situs sehingga orang dapat menemukan Anda. <a href="{{ route('resources.handle_second_route', ['second_route' => config('onlinebersama.custom_article_route.default'), 'slug' => 'sepuluh-cara-pasarkan-nama-domain']) }}" class="link-to">Panduan</a> kami tentang cara memasarkan bisnis Anda dengan nama domain .com dapat membantu Anda memulai.</p>
         </x-articles.tip-callout>
         <x-articles.related-article :data="$post->relatedOneArticle" class="pt-4" />
     </div>

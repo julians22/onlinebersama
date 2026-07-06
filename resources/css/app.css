@@ -121,7 +121,7 @@
 }
 
 @utility ns-overlay-max-width{
-    max-width: min(43.5rem, calc(100cqw - 2rem));
+    max-width: min(860px, calc(100cqw - 2rem));
 }
 
 * {
@@ -267,7 +267,7 @@
             @apply font-sans font-medium text-[18px] leading-6.5 tracking-[0.25px] text-deep-blue-300 md:text-[20px] md:leading-8;
         }
         .tip-callout p {
-            @apply text-[20px]! leading-6!;
+            @apply text-[20px]! leading-6! md:text-[24px]! md:leading-8.5!;
         }
         ul {
             @apply pl-5;

@@ -30,7 +30,7 @@
                     @if ($post->writer)
                         <h4 class="subheadline-4 text-deep-blue-300 font-extrabold! text-[20px]! leading-6.25! md:text-[22px]! md:leading-6!">Oleh {{ $post->writer }}</h4>
                     @endif
-                    <p class="paragraph-sm text-deep-blue-300">Waktu baca rata-rata {{ $post->read_time }}</p>
+                    <p class="paragraph-sm text-deep-blue-300">Rata-rata waktu baca {{ $post->read_time }}</p>
                 </div>
                 <div x-data="{ videoId: '{{ $post->video_id }}' }" @if ($post->video_id) data-analytics-level3="{{ $post->data_analytics ?? $post->title }}" @endif class="relative aspect-video w-full rounded-[10px] overflow-hidden lg:w-156.75">
                     <img @if ($post->type === 'video') data-analytics-name="video image {{ $post->data_analytics ?? $post->title }}" @endif class="w-full" src="{{ imageArticle($post->thumbnail_file_name) }}" alt="">
@@ -64,7 +64,7 @@
                             <x-displays.card-inside
                                 data-analytics="Email"
                                 route="email"
-                                image="images/brand-1.jpg">
+                                image="images/brand-1.webp">
                                 Email
                             </x-displays.card-inside>
                         </div>
@@ -72,7 +72,7 @@
                             <x-displays.card-inside
                                 data-analytics="Social Media & E-Commerce"
                                 route="social-media"
-                                image="images/brand-2.jpg">
+                                image="images/brand-2.webp">
                                 Media Sosial dan <span class="block">E-Commerce</span>
                             </x-displays.card-inside>
                         </div>
@@ -80,7 +80,7 @@
                             <x-displays.card-inside
                                 data-analytics="Websites"
                                 route="websites"
-                                image="images/brand-3.jpg">
+                                image="images/brand-3.webp">
                                 Situs Web
                             </x-displays.card-inside>
                         </div>

@@ -45,7 +45,7 @@
                         data-analytics-name="text Find a .com"
                         href="{{ route('find') }}"
                         class="footer-link">
-                        Temukan .com Anda
+                        Temukan .com
                     </a>
                 </div>
                 <div class="flex flex-col gap-y-10 md:gap-y-2.5">
@@ -53,12 +53,14 @@
                         <a
                             data-analytics-name="text Privacy Statement"
                             href="https://www.verisign.com/id-id/privacy/"
+                            target="_blank"
                             class="footer-link">
                             Pernyataan Privasi
                         </a>
                         <a
                             data-analytics-name="text Conditions of Use"
                             href="https://www.verisign.com/id-id/privacy/legal-notices/"
+                            target="_blank"
                             class="footer-link">
                             Ketentuan Penggunaan
                         </a>
@@ -73,6 +75,7 @@
                         <a
                             data-analytics-name="text Verisign.com"
                             href="https://www.verisign.com/"
+                            target="_blank"
                             class="footer-link">
                             Verisign.com
                         </a>
@@ -104,7 +107,7 @@
             </div>
         </div>
         <div class="space-y-4 font-sans text-[12px] leading-5">
-            <p>&copy; 2026 VeriSign, Inc. Semua hak dilindungi undang-undang. VERISIGN, logo VERISIGN, serta merek dagang, merek layanan, dan desain lainnya adalah merek dagang terdaftar atau tidak terdaftar dari VeriSign, Inc. serta anak perusahaannya di Amerika Serikat dan di negara lainnya. Semua merek dagang lainnya merupakan hak milik dari pemiliknya masing-masing.</p>
+            <p>&copy; 2026 VeriSign, Inc. <strong>Hak cipta dilindungi undang-undang</strong>. VERISIGN, logo VERISIGN, serta merek dagang, merek layanan, dan desain lainnya adalah merek dagang terdaftar atau tidak terdaftar dari VeriSign, Inc. serta anak perusahaannya di Amerika Serikat dan di negara lainnya. Semua merek dagang lainnya merupakan hak milik <strong>dari masing-masing pemiliknya.</strong></p>
             <p>Referensi terhadap X dan logo X adalah merek dagang dari X Corp atau afiliasinya.</p>
         </div>
     </div>

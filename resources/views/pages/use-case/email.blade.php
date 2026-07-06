@@ -81,8 +81,8 @@
                 </span>
             </button>
             <div class="space-y-6 max-w-150 text-white md:p-6">
-                <h2 class="headline-1">Tiga Cara Menggunakan Alamat Email Kustom</h2>
-                <p class="paragraph-md md:text-[20px]! md:leading-8!">Siap membawa komunikasi Anda ke level selanjutnya? Cari tahu cara menggunakan alamat email kustom untuk mendukung bisnis Anda dalam video ini.</p>
+                <h2 class="headline-1">Tiga Cara Menggunakan Alamat Email Khusus</h2>
+                <p class="paragraph-md md:text-[20px]! md:leading-8!">Siap membawa komunikasi Anda ke level selanjutnya? Cari tahu cara menggunakan alamat email khusus untuk mendukung bisnis Anda dalam video ini.</p>
             </div>
         </div>
     </section>
@@ -93,7 +93,7 @@
         data-analytics-level2="How To Setup a Custom Email Address"
         class="flex items-center gap-10 py-7.5 container flex-col md:py-12.5 xl:items-start xl:gap-30 xl:flex-row">
         <div x-data class="-top-12 flex flex-col gap-7.5 md:gap-11.5 xl:sticky">
-            <h2 class="text-navy-blue-300 headline-1 text-center">Cara Menyiapkan Alamat <span class="sm:block">Email Kustom</span></h2>
+            <h2 class="text-navy-blue-300 headline-1 text-center">Cara Menyiapkan Alamat <span class="sm:block">Email Khusus</span></h2>
             <div class="relative rounded-[10px] overflow-hidden">
                 <img class="size-full aspect-video object-cover max-w-150 xl:max-w-full" src="{{ asset('images/usecase-email.webp') }}" alt="">
             </div>
