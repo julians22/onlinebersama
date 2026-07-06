@@ -90,7 +90,7 @@
         <div x-data data-analytics-level2="Not Just a Domain. A Declaration." class="relative">
             <img data-analytics-name="video image Not Just a Domain. A Declaration." class="mx-auto hidden lg:block" src="{{ asset('images/placeholder-video-how.jpg') }}" alt="">
             <img data-analytics-name="video image Not Just a Domain. A Declaration." class="w-full mx-auto block object-cover sm:h-200 sm:object-bottom md:h-210 min-[900px]:h-230! lg:hidden" src="{{ asset('images/placeholder-video-how-mobile.jpg') }}" alt="">
-            <button type="button" @click="$store.videoModal.openModal('6331201181112')" data-analytics-name="video image Not Just a Domain. A Declaration." class="group absolute top-0 left-0 size-full transition-all duration-300 ease-in-out cursor-pointer z-10">
+            <button type="button" @click="$store.videoModal.openModal('{{ config('onlinebersama.video_id.bukan_sekadar_domain') }}')" data-analytics-name="video image Not Just a Domain. A Declaration." class="group absolute top-0 left-0 size-full transition-all duration-300 ease-in-out cursor-pointer z-10">
                 <span
                     data-analytics-name="play button Not Just a Domain. A Declaration."
                     class="top-2/3 left-1/2 z-10 absolute -translate-x-1/2 -translate-y-1/2 cursor-pointer transition-all duration-300 ease-in-out hover:scale-110 min-[900px]:top-[60%] lg:top-[55%] group-hover:scale-110">

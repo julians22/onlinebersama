@@ -80,6 +80,8 @@ return [
         // Position Video: Home Page, Panduan Belajar Page
         'ikat_indonesia' => 6365585682112,
 
+        'bukan_sekadar_domain' => 6399828948112,
+
         // Position Video: Use Case Page (Website, Email, Social Media)
         'website' => 6399827707112,
         'email' => 6399829651112,
