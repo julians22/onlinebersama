@@ -1,6 +1,6 @@
 @extends('app')
 
-@section('title', '.com untuk Email | Nama Domain .com')
+@section('title', '.com untuk Email')
 @section('meta_description', 'Dengan alamat email .com khusus, email bisnis Anda akan terlihat lebih profesional')
 @section('meta_keywords', '.com untuk email, manfaat email khusus')
 @section('meta_image', asset('images/uc-email.webp'))
@@ -15,7 +15,7 @@
         <div x-data class="flex justify-between items-center flex-col gap-10 py-7.5 container-medium md:gap-20 md:py-12.5 lg:flex-row">
             <div class="space-y-4">
                 <h1 class="text-navy-blue-300 headline-1">.com untuk Email</h1>
-                <p class="text-deep-blue-300 paragraph-md">Jadikan email sebagai pernyataan kredibilitas. Dengan alamat email .com kustom, email bisnis Anda dapat terlihat lebih profesional.</p>
+                <p class="text-deep-blue-300 paragraph-md">Jadikan email sebagai pernyataan kredibilitas. Dengan alamat email .com khusus, email bisnis Anda dapat terlihat lebih profesional.</p>
             </div>
             <button data-analytics-name="video image Email Use Case" type="button" @click="$store.videoModal.openModal('{{ config('onlinebersama.video_id.email') }}')" class="group relative rounded-[10px] overflow-hidden shrink-0 cursor-pointer box-shadow-sm">
                 <div class="top-0 left-0 absolute bg-gradient-video size-full"></div>
@@ -33,27 +33,27 @@
         data-analytics-level2="Benefits of Custom Email"
         class="py-7.5 container md:py-12.5">
         <div class="pb-42 md:pb-38">
-            <h2 class="sticky top-18 mb-10 text-navy-blue-300 text-center headline-1 sm:top-20 md:top-24 lg:top-40 min-[1200px]:top-32!">Manfaat Email Kustom</h2>
+            <h2 class="sticky top-18 mb-10 text-navy-blue-300 text-center headline-1 sm:top-20 md:top-24 lg:top-40 min-[1200px]:top-32!">Manfaat Email Khusus</h2>
             <div class="flex flex-col gap-6 mx-auto md:max-w-208">
                 <div
                     data-analytics-level3="Build Legitimacy"
                     class="top-36.5 sticky card-stack sm:top-38.5 md:top-48 lg:top-64 min-[1200px]:top-55.5!">
                     <x-displays.card-stack number="1" title="Membangun Legitimasi" image="images/email-editorial-1.webp" alt="">
-                        <p class="min-h-40 min-[500px]:min-h-32 sm:min-h-24 md:min-h-auto">Beri bisnis Anda tampilan yang berkelas dan profesional. Dapatkan alamat email .com kustom dan tunjukkan kepada semua orang bahwa Anda profesional.</p>
+                        <p class="min-h-40 min-[500px]:min-h-32 sm:min-h-24 md:min-h-auto">Beri bisnis Anda tampilan yang berkelas dan profesional. Dapatkan alamat email .com khusus dan tunjukkan kepada semua orang bahwa Anda profesional.</p>
                     </x-displays.card-stack>
                 </div>
                 <div
                     data-analytics-level3="Increase Credibility"
                     class="top-36.5 sticky card-stack -mt-22 translate-y-22 sm:top-38.5 md:top-48 md:-mt-20 md:translate-y-20 lg:top-64 min-[1200px]:top-55.5! lg:-mt-20 lg:translate-y-20">
                     <x-displays.card-stack number="2" title="Meningkatkan Kredibilitas" image="images/email-editorial-2.webp" alt="">
-                        <p class="min-h-40 min-[500px]:min-h-32 sm:min-h-24 md:min-h-auto">Dengan alamat email .com kustom, Anda dapat memberikan kesan yang kuat dan membekas, serta menumbuhkan kepercayaan pelanggan terhadap Anda.</p>
+                        <p class="min-h-40 min-[500px]:min-h-32 sm:min-h-24 md:min-h-auto">Dengan alamat email .com khusus, Anda dapat memberikan kesan yang kuat dan membekas, serta menumbuhkan kepercayaan pelanggan terhadap Anda.</p>
                     </x-displays.card-stack>
                 </div>
                 <div
                     data-analytics-level3="Market Your Business"
                     class="top-36.5 sticky card-stack -mb-20 translate-y-22 sm:top-38.5 md:top-48 md:-mb-18 md:translate-y-20 lg:top-60 min-[1200px]:top-55.5! lg:translate-y-20">
                     <x-displays.card-stack number="3" title="Memasarkan Bisnis Anda" image="images/email-editorial-3.webp" alt="">
-                        <p class="min-h-40 min-[500px]:min-h-32 sm:min-h-24 md:min-h-auto">Dapatkan alamat email .com kustom dan bangun merek Anda lewat setiap email yang dikirim.</p>
+                        <p class="min-h-40 min-[500px]:min-h-32 sm:min-h-24 md:min-h-auto">Dapatkan alamat email .com khusus dan bangun merek Anda lewat setiap email yang dikirim.</p>
                     </x-displays.card-stack>
                 </div>
             </div>

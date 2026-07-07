@@ -121,8 +121,8 @@
             </button>
             <div class="top-0 left-1/2 -translate-x-1/2 absolute flex justify-center size-full max-w-480 pt-7.5 md:pt-11.75 lg:justify-start lg:px-24 lg:py-32 xl:py-38 xl:px-30 2xl:py-50 2xl:px-42">
                 <div class="space-y-3.5 text-center max-w-85 mx-auto sm:max-w-xl lg:text-left lg:max-w-full lg:mx-0">
-                    <h2 class="headline-1 text-navy-blue-300 text-[28px]! leading-8.5! sm:leading-13! sm:text-[40px]! lg:max-w-2xl lg:mx-0 lg:text-[52px]! lg:leading-16! xl:text-[50px]! xl:leading-13.75! xl:max-w-3xl">
-                        Bukan Sekadar Domain. Melainkan Suatu Pernyataan.
+                    <h2 class="headline-1 text-navy-blue-300 text-[28px]! leading-8.5! sm:leading-13! sm:text-[40px]! lg:max-w-xl lg:mx-0 lg:text-[52px]! lg:leading-16! xl:text-[50px]! xl:leading-13.75!">
+                        Bukan Sekadar Domain. Ini Suatu <span class="inline lg:block min-[1120px]:inline!">Pernyataan.</span>
                     </h2>
                     <p class="paragraph-md text-deep-blue-300 text-[18px]! leading-6.5! sm:text-[20px]! lg:max-w-lg lg:text-[22px]! lg:leading-9! xl:text-[26px]!">
                         Tinggalkan jejak Anda dan bangun merek tepercaya dengan .com.
@@ -178,6 +178,7 @@
                     </div>
                     <div class="relative rounded-[10px] overflow-hidden">
                         <img class="w-full rounded-[10px]" src="{{ asset('images/placeholder-video-why-com.webp') }}" alt="">
+                        <div class="top-0 left-0 absolute bg-gradient-video size-full"></div>
                         <div class="bottom-0 left-0 p-8 absolute hidden sm:block">
                             <div class="max-w-3xl space-y-2 text-white">
                                 <h4 class="font-extrabold! text-[20px]! subheadline-3 sm:text-[28px]!">IKAT Indonesia</h4>
@@ -207,7 +208,7 @@
                 <div class="justify-center md:flex">
                     <a
                         data-analytics-name="button View Success Stories"
-                        href="{{ route('resources.handle_second_route', ['second_route' => config('onlinebersama.custom_article_route.default'), 'slug' => 'pertanyaan-usaha-kecil']) }}"
+                        href="{{ route('find') }}"
                         class="btn-primary w-full sm:w-auto">
                         Lihat Kisah Usaha Kecil
                     </a>
@@ -222,7 +223,7 @@
         data-analytics-level2="Make Your Mark Online"
         class="bg-light-gray-100">
         <div class="pt-7.5 pb-50 px-4 md:pb-58 md:pt-12.5 md:px-8 md:container">
-            <h2 class="sticky top-18 mb-10 text-navy-blue-300 text-center headline-1 max-w-lg mx-auto sm:top-20 md:top-24 lg:top-40 min-[1200px]:top-32!">Tinggalkan Jejak Anda di Dunia Maya</h2>
+            <h2 class="sticky top-18 mb-10 text-navy-blue-300 text-center headline-1 max-w-lg mx-auto sm:top-20 md:top-24 lg:top-40 min-[1200px]:top-32!">Tinggalkan Jejak Anda Secara Online</h2>
             <div class="flex flex-col gap-6 mx-auto md:max-w-208">
                 <div
                     data-analytics-level3="card1"
@@ -260,49 +261,49 @@
                 <x-displays.accordion
                     question="Mengapa saya harus memilih .com?"
                     data-analytics="Why should I chose a .com?">
-                    <p>Selama lebih dari 40 tahun, .com telah menjadi pilihan universal, tepercaya, dan diakui bisnis dari berbagai skala. .com adalah simbol kepercayaan - tempat tepercaya dan diakui untuk membangun basis online bisnis Anda.</p>
+                    <p>Selama lebih dari 40 tahun, .com telah menjadi pilihan universal, tepercaya dan diakui bagi bisnis dari berbagai skala. .com merupakan simbol kepercayaan—tempat yang tepercaya dan diakui untuk membangun kehadiran online bisnis Anda.</p>
                 </x-displays.accordion>
                 <x-displays.accordion
                     question="Apa itu nama domain?"
                     data-analytics="What is a domain name?">
-                    <p>Nama domain adalah alamat online unik dan kustom (misalnya, <a href="javascript:void(0)" class="text-magenta-300">contoh.com</a>) yang dapat digunakan untuk mengarahkan orang langsung ke eksistensi online (seperti situs web atau halaman media sosial), dan sebagai alamat email kustom.</p>
+                    <p>Nama domain adalah alamat online yang unik dan dapat disesuaikan (misalnya, <button type="button" class="cursor-pointer text-magenta-300">example.com</button>). Nama domain dapat digunakan untuk mengarahkan orang langsung ke kehadiran online Anda (seperti situs web atau laman media sosial), serta digunakan sebagai alamat email khusus.</p>
                 </x-displays.accordion>
                 <x-displays.accordion
                     question="Apakah nama domain harus berupa nama bisnis saya?"
                     data-analytics="Does my domain name need to be my business name?">
                     <div class="flex flex-col gap-4">
-                        <p>Nama domain dapat mewakili apa pun yang diinginkan, baik bisnis, slogan, nama pribadi, maupun judul proyek yang sedang Anda kerjakan.</p>
+                        <p>Nama domain dapat mewakili apa pun yang diinginkan, baik bisnis, slogan, nama pribadi, maupun nama proyek yang sedang Anda kerjakan.</p>
                         <p>Pertimbangkan untuk menambahkan lokasi atau kata-kata deskriptif untuk membantu menyampaikan apa yang membuat bisnis, ide, atau proyek Anda unik. Terlepas dari bagaimana Anda menggunakan nama domain nantinya, Anda harus menciptakan alamat web yang mudah diingat dan konsisten agar pelanggan dapat menemukan Anda secara online.</p>
                     </div>
                 </x-displays.accordion>
                 <x-displays.accordion
                     question="Jika saya membeli nama domain, apakah nama tersebut akan menjadi milik saya selamanya?"
                     data-analytics="When I buy a domain name, is it mine forever?">
-                    <p>Secara teknis, Anda “mendaftarkan” nama domain untuk jangka waktu tertentu (biasanya 1-10 tahun), bukan “membeli”. Artinya, selama Anda terus memperpanjang penggunaan nama domain tersebut, Anda akan tetap memiliki kendali eksklusif atasnya. Jika Anda berencana menggunakan nama domain untuk jangka panjang, pertimbangkan untuk mengatur “perpanjangan otomatis” melalui registrar.</p>
+                    <p>Secara teknis, Anda sebenarnya “mendaftarkan” nama domain, bukan “membeli”, untuk jangka waktu tertentu (biasanya 1–10 tahun). Artinya, selama Anda terus memperpanjang masa pendaftaran nama domain tersebut, Anda tetap memiliki hak eksklusif untuk menggunakannya. Jika Anda berencana menggunakan nama domain dalam jangka panjang, pertimbangkan untuk mengaktifkan fitur “perpanjangan otomatis” (auto-renew) melalui registrar Anda.</p>
                 </x-displays.accordion>
                 <x-displays.accordion
                     question="Bagaimana cara mendapatkan nama domain .com?"
                     data-analytics="How do I get a .com domain name?">
-                    <p>Anda dapat mendaftarkan nama domain .com sendiri melalui registrar atau peritel pilihan Anda. Jika Anda membutuhkan bantuan dalam menentukan nama domain yang tepat untuk ide atau bisnis, <a href="{{ route('find') }}" class="text-magenta-300">alat bantu pencarian nama domain yang didukung AI kami yang tersedia gratis</a>, NameStudio, dapat membantu Anda menghasilkan berbagai pilihan berdasarkan kata kunci dan frasa deskriptif.</p>
+                    <p>Anda dapat mendaftarkan nama domain .com melalui registrar atau penyedia layanan pilihan Anda. Jika Anda memerlukan bantuan untuk menentukan nama domain yang tepat bagi ide atau bisnis Anda, NameStudio—<a href="{{ route('find') }}" class="text-magenta-300">alat pencarian nama domain berbasis AI yang dapat digunakan tanpa biaya kami</a>—dapat membantu Anda menemukan berbagai ide nama domain berdasarkan kata kunci dan frasa deskriptif.</p>
                 </x-displays.accordion>
                 <x-displays.accordion
                     question="Apa saja cara yang dapat saya lakukan untuk menggunakan nama domain?"
                     data-analytics="What are the different ways I can use a domain name?">
                     <div class="flex flex-col gap-4">
                         <p>Nama domain .com tidak hanya diperuntukkan bagi situs web. Ada banyak cara untuk memanfaatkan nama domain .com secara maksimal, seperti penerusan nama domain.</p>
-                        <p>Dengan <a href="{{ route('social-media') }}" class="text-magenta-300">meneruskan nama domain</a> ke media sosial atau halaman e-commerce, Anda dapat menciptakan pengalaman yang personal bagi pelanggan dalam menemukan bisnis atau toko online Anda. Anda juga dapat menggunakan nama domain sebagai alamat email kustom, yang dapat membantu bisnis Anda terlihat lebih profesional.</p>
+                        <p>Dengan <a href="{{ route('social-media') }}" class="text-magenta-300">meneruskan nama domain</a> ke media sosial atau halaman e-commerce, Anda dapat menciptakan pengalaman yang personal bagi pelanggan dalam menemukan bisnis atau toko online Anda. Anda juga dapat menggunakan nama domain sebagai alamat email khusus, yang dapat membantu bisnis Anda terlihat lebih profesional.</p>
                     </div>
                 </x-displays.accordion>
                 <x-displays.accordion
-                    question="Mengapa perlu nama domain .com jika sudah punya akun media sosial?"
+                    question="Mengapa saya perlu nama domain .com jika saya sudah punya akun media sosial?"
                     data-analytics="Why do I need a .com domain name if I already have a social media account? ">
-                    <p>Jika bisnis Anda memiliki halaman media sosial, permudah pencarian dengan meneruskan alamat web .com kustom yang mudah diingat ke halaman tersebut. Dengan begitu, begitu sudah siap membangun situs web, Anda akan memiliki nama domain .com yang sudah mapan dan dikenal pelanggan, serta dapat berkembang seiring dengan kemajuan bisnis Anda.</p>
+                    <p>Jika bisnis Anda memiliki laman media sosial, permudah pelanggan menemukannya dengan mengarahkan alamat web .com khusus yang mudah diingat ke laman tersebut. Dengan begitu, ketika Anda siap membangun situs web, Anda sudah memiliki nama domain .com yang telah dikenal pelanggan dan dapat terus berkembang seiring pertumbuhan bisnis Anda.</p>
                 </x-displays.accordion>
                 <x-displays.accordion
                     question="Apa saja manfaat memiliki nama domain .com jika saya sudah memiliki ccTLD?"
                     data-analytics="Why Choose a .com if you already registered a cc TLD?"
                     :last="true">
-                    <p>Jika Anda memiliki nama domain tingkat atas kode negara (ccTLD), Anda dapat memperluas jangkauan bisnis dengan memasangkannya dengan nama domain .com yang sesuai. Sebagai contoh, jika Anda menggunakan nama domain ccTLD yang sudah ada untuk situs web, Anda dapat meneruskan nama domain .com ke situs web tersebut. Sekarang pelanggan dapat menemukan Anda saat mengetik nama domain .com atau ccTLD Anda.</p>
+                    <p>Jika Anda memiliki nama domain tingkat atas berdasarkan kode negara (ccTLD), Anda dapat memperluas jangkauan bisnis dengan memasangkannya dengan nama domain .com yang sesuai. Misalnya, jika Anda menggunakan nama domain ccTLD untuk situs web Anda, Anda dapat mengarahkan nama domain .com ke situs web tersebut. Dengan begitu, pelanggan dapat menemukan bisnis Anda, baik saat mereka mengetik nama domain .com maupun nama domain ccTLD Anda.</p>
                 </x-displays.accordion>
             </div>
             <div class="justify-center md:flex">

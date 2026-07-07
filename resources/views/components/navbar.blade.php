@@ -48,7 +48,7 @@
                 <a
                     data-analytics-name="button Find a .com"
                     href="{{ route('find') }}" class="px-4 py-0.5 font-medium text-navy-blue-300 text-[14px] btn-primary lg:text-[19px] lg:px-4 lg:py-2">
-                    Temukan .com Anda
+                    Temukan .com
                 </a>
             </div>
         </div>
@@ -96,13 +96,13 @@
                     </a>
                 </div>
                 <div class="flex flex-col gap-4 bg-light-gray-100 p-4 w-full xl:max-w-117.5">
-                    <button data-analytics-name="video image Startup Experience" type="button" @click="$store.videoModal.openModal('{{ config('onlinebersama.video_id.startup_experience') }}')" class="group relative rounded-2xl w-full aspect-video overflow-hidden cursor-pointer lg:max-w-117.5 xl:max-w-full 2xl:h-54.25">
-                        <span data-analytics-name="play button Startup Experience" class="transition-all duration-300 ease-in-out top-1/2 left-1/2 absolute size-14 -translate-x-1/2 -translate-y-1/2 group-hover:scale-110">
+                    <button data-analytics-name="video image IKAT Indonesia" type="button" @click="$store.videoModal.openModal('{{ config('onlinebersama.video_id.ikat_indonesia') }}')" class="group relative rounded-2xl w-full aspect-video overflow-hidden cursor-pointer lg:max-w-117.5 xl:max-w-full 2xl:h-54.25">
+                        <span data-analytics-name="play button IKAT Indonesia" class="transition-all duration-300 ease-in-out top-1/2 left-1/2 absolute size-14 -translate-x-1/2 -translate-y-1/2 group-hover:scale-110">
                             <x-icons.play width="56" height="56" fill="#fff" />
                         </span>
-                        <img class="size-full object-cover object-top" src="{{ asset('images/featured-video.webp') }}" alt="Placeholder Video">
+                        <img class="size-full object-cover object-top" src="{{ asset('images/placeholder-video-why-com.webp') }}" alt="">
                     </button>
-                    <p class="font-semibold paragraph-sm">Video Unggulan - Startup Experience</p>
+                    <p class="font-semibold paragraph-sm">Video Unggulan - IKAT Indonesia</p>
                 </div>
             </div>
         </div>
@@ -176,28 +176,28 @@
                     <a
                         data-analytics-name="text Find a .com"
                         href="{{ route('find') }}" class="group">
-                        Temukan .com Anda
+                        Temukan .com
                         <x-icons.arrow-rounded width="24" height="24" fill="#1C1B1F" class="group-hover:opacity-100" />
                     </a>
                 </div>
                 <div
-                    data-analytics-name="video image Startup Experience"
+                    data-analytics-name="video image IKAT Indonesia"
                     class="border-t-2 border-light-gray-300 flex flex-col gap-4 w-full px-3 py-8 min-[500px]:px-6">
                     <button
                         type="button"
-                        @click="$store.videoModal.openModal('{{ config('onlinebersama.video_id.startup_experience') }}')"
+                        @click="$store.videoModal.openModal('{{ config('onlinebersama.video_id.ikat_indonesia') }}')"
                         class="group relative rounded-2xl w-full aspect-video overflow-hidden cursor-pointer min-[500px]:max-w-97.5 min-[500px]:h-54.25">
                         <div
-                            data-analytics-name="play button Startup Experience"
+                            data-analytics-name="play button IKAT Indonesia"
                             type="button"
                             class="transition-all duration-300 ease-in-out top-1/2 left-1/2 absolute -translate-x-1/2 -translate-y-1/2 group-hover:scale-110">
                             <x-icons.play width="56" height="56" fill="#fff" />
                         </div>
                         <img
-                            data-analytics-name="video image Startup Experience"
-                            class="size-full object-cover object-top" src="{{ asset('images/featured-video.webp') }}" alt="">
+                            data-analytics-name="video image IKAT Indonesia"
+                            class="size-full object-cover object-top" src="{{ asset('images/placeholder-video-why-com.webp') }}" alt="">
                     </button>
-                    <p class="font-sans font-semibold text-[20px]">Video Unggulan - Startup Experience</p>
+                    <p class="font-sans font-semibold text-[20px]">Video Unggulan - IKAT Indonesia</p>
                 </div>
             </div>
         </div>

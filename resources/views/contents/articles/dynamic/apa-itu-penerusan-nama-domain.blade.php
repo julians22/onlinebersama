@@ -2,7 +2,7 @@
     <div class="article-wrapper">
         <x-articles.intro-and-quicklinks>
             <div class="article-child-wrapper">
-                <p>Belum siap untuk memiliki situs web? Memiliki Nama domain tetap dapat memberikan manfaat bagi bisnis Anda karena penerusan domain memungkinkan Anda untuk memiliki alamat situs web yang mudah diingat dan sesuai merk, terlepas di mana Anda akan membangun <x-articles.tooltip data-analytics-name="hover online presence" data-tooltip="Kehadiran online / eksistensi online adalah suatu keadaan di mana bisnis Anda dapat ditemukan di internet, bisa dalam bentuk situs web, halaman media sosial, dan/atau pasar online. Dengan menggunakan nama domain .com untuk kehadiran online Anda, dapat membuka peluang dengan membantu pelanggan menemukan “markas” Anda dengan mudah saat melakukan bisnis online.">kehadiran online</x-articles.tooltip> Anda. Penerusan nama domain adalah cara yang cepat dan mudah untuk membantu Anda mulai mempersonalisasi dan memasarkan kehadiran online Anda - baik di media sosial maupun di toko online.</p>
+                <p>Belum siap untuk memiliki situs web? Memiliki Nama domain tetap dapat memberikan manfaat bagi bisnis Anda karena penerusan domain memungkinkan Anda untuk memiliki alamat situs web yang mudah diingat dan sesuai merk, terlepas di mana Anda akan membangun <x-articles.tooltip data-analytics-name="hover online presence" data-tooltip="Kehadiran online adalah cara bisnis Anda dapat ditemukan di internet, baik melalui situs web, laman media sosial, maupun toko online. Menggunakan nama domain .com sebagai alamat utama kehadiran online membantu bisnis Anda memiliki alamat online yang mudah diingat.">kehadiran online</x-articles.tooltip> Anda. Penerusan nama domain adalah cara yang cepat dan mudah untuk membantu Anda mulai mempersonalisasi dan memasarkan kehadiran online Anda - baik di media sosial maupun di toko online.</p>
                 <p>Lihat panduan singkat ini untuk mengetahui cara melakukannya.</p>
                 <x-articles.navigate-link :article="true">
                     <a data-analytics-name='anchor What does "Forwarding" a .com Domain Name Mean?' href="#apa-yang-dimaksud-dengan-penerusan-nama-domain-com">
@@ -66,12 +66,12 @@
                 TipsCantikChika<span class="paragraph-sm text-navy-blue-300 font-semibold! lg:block">.com</span>
             </x-articles.workflow>
             <x-icons.arrow-rounded width="24" height="24" fill="#A7127E" class="row-span-2 rotate-90 mx-auto my-2 lg:mx-0 lg:my-0 lg:rotate-0" />
-            <x-articles.workflow header="URL Situs Web yang Dilihat Pengunjung" class="break-all">
-                AkunMediaSosialAnda.com/tipscantikchika
+            <x-articles.workflow header="URL Situs Web yang Dilihat Pengunjung" class="lg:-ml-0.75">
+                AkunMediaSosial<span class="paragraph-sm text-navy-blue-300 font-semibold! lg:block">Anda.com/tipscantik<span class="paragraph-sm text-navy-blue-300 font-semibold! lg:block">chika</span></span>
             </x-articles.workflow>
             <x-icons.arrow-rounded width="24" height="24" fill="#A7127E" class="row-span-2 rotate-90 mx-auto my-2 lg:mx-0 lg:my-0 lg:rotate-0" />
-            <x-articles.workflow header="Tampilan Baris Alamat" class="break-all">
-                AkunMediaSosialAnda.com/tipscantikchika
+            <x-articles.workflow header="Tampilan Baris Alamat" class="lg:-ml-0.75">
+                AkunMediaSosial<span class="paragraph-sm text-navy-blue-300 font-semibold! lg:block">Anda.com/tipscantik<span class="paragraph-sm text-navy-blue-300 font-semibold! lg:block">chika</span></span>
             </x-articles.workflow>
         </div>
         <x-articles.arrow-item-content>
@@ -88,8 +88,8 @@
                 TipsCantikChika<span class="paragraph-sm text-navy-blue-300 font-semibold! lg:block">.com</span>
             </x-articles.workflow>
             <x-icons.arrow-rounded width="20" height="20" fill="#A7127E" class="row-span-2 rotate-90 mx-auto my-2 lg:mx-0 lg:my-0 lg:rotate-0" />
-            <x-articles.workflow header="URL Situs Web yang Dilihat Pengunjung" class="break-all">
-                AkunMediaSosialAnda.com/tipscantikchika
+            <x-articles.workflow header="URL Situs Web yang Dilihat Pengunjung" class="lg:-ml-0.75">
+                AkunMediaSosial<span class="paragraph-sm text-navy-blue-300 font-semibold! lg:block">Anda.com/tipscantik<span class="paragraph-sm text-navy-blue-300 font-semibold! lg:block">chika</span></span>
             </x-articles.workflow>
             <x-icons.arrow-rounded width="20" height="20" fill="#A7127E" class="row-span-2 rotate-90 mx-auto my-2 lg:mx-0 lg:my-0 lg:rotate-0" />
             <x-articles.workflow header="Tampilan Baris Alamat" class="break-all">

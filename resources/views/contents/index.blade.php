@@ -49,12 +49,12 @@
                     </x-displays.card-video>
                 </div>
                 <div data-analytics-level3="carousel2" class="swiper-slide">
-                    <x-displays.card-video title="IKAT Indonesia" image="images/placeholder-video-why-com.webp" videoId="{{ config('onlinebersama.video_id.ikat_indonesia') }}" data-analytics="IKAT Indonesia">
+                    <x-displays.card-video title="IKAT Indonesia" image="images/placeholder-video-ikat-indonesia.webp" videoId="{{ config('onlinebersama.video_id.ikat_indonesia') }}" data-analytics="IKAT Indonesia">
                         Dengarkan bagaimana nama domain .com yang dikenal membantu pemilik bisnis mengembangkan bisnisnya
                     </x-displays.card-video>
                 </div>
                 <div data-analytics-level3="carousel3" class="swiper-slide">
-                    <x-displays.card-video title="Chic Diva Geek" image="images/placeholder-video-chic-diva.webp" videoId="6331201181112" data-analytics="Chic Diva Geek">
+                    <x-displays.card-video title="Chic Diva Geek" image="images/placeholder-video-chic-diva.webp" videoId="{{ config('onlinebersama.video_id.chic_diva') }}" data-analytics="Chic Diva Geek">
                         Ketahui bagaimana nama domain .com yang tepercaya membantu Adrian McLanahan dan bisnisnya menjangkau pelanggan baru
                     </x-displays.card-video>
                 </div>
@@ -64,12 +64,12 @@
                     </x-displays.card-video>
                 </div>
                 <div data-analytics-level3="carousel2" class="swiper-slide">
-                    <x-displays.card-video title="IKAT Indonesia" image="images/placeholder-video-why-com.webp" videoId="{{ config('onlinebersama.video_id.ikat_indonesia') }}" data-analytics="IKAT Indonesia">
+                    <x-displays.card-video title="IKAT Indonesia" image="images/placeholder-video-ikat-indonesia.webp" videoId="{{ config('onlinebersama.video_id.ikat_indonesia') }}" data-analytics="IKAT Indonesia">
                         Dengarkan bagaimana nama domain .com yang dikenal membantu pemilik bisnis mengembangkan bisnisnya
                     </x-displays.card-video>
                 </div>
                 <div data-analytics-level3="carousel3" class="swiper-slide">
-                    <x-displays.card-video title="Chic Diva Geek" image="images/placeholder-video-chic-diva.webp" videoId="6331201181112" data-analytics="Chic Diva Geek">
+                    <x-displays.card-video title="Chic Diva Geek" image="images/placeholder-video-chic-diva.webp" videoId="{{ config('onlinebersama.video_id.chic_diva') }}" data-analytics="Chic Diva Geek">
                         Ketahui bagaimana nama domain .com yang tepercaya membantu Adrian McLanahan dan bisnisnya menjangkau pelanggan baru
                     </x-displays.card-video>
                 </div>
