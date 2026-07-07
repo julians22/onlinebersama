@@ -64,6 +64,7 @@ class TosActionResource extends Resource
     {
         return $table
             ->recordTitleAttribute('Tos Action')
+            ->defaultSort('created_at', 'desc')
             ->columns([
                 TextColumn::make('uuid')
                     ->label('UUID')

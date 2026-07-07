@@ -25,9 +25,10 @@ class NameStudioOverlay extends Component
 
     public function accept()
     {
-        // collect IP address and user agent
-        $ipAddress = request()->ip();
-        $userAgent = request()->header('User-Agent');
+        // Collect user identifiers with proxy-aware IP resolution.
+        $request = request();
+        $ipAddress = realUserIp($request) ?? '0.0.0.0';
+        $userAgent = (string) ($request->userAgent() ?? 'unknown');
         $uuid = Uuid::uuid4()->toString();
 
         Cookie::queue('accepted_consent_date', $uuid, 365 * 24 * 60); // Set cookie for 1 year
