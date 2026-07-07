@@ -4,15 +4,15 @@
             <div class="article-child-wrapper">
                 <p>Memilih nama domain yang bagus untuk bisnis atau minat Anda adalah langkah penting dalam kehadiran online Anda, yang mungkin juga dapat membantu usaha pemasaran Anda. Di dalam panduan kami, kami menjabarkan tentang bagaimana cara memilih nama domain .com yang sesuai untuk bisnis Anda, termasuk ringkasan dari proses pendaftaran nama domain.</p>
                 <x-articles.navigate-link :article="true">
-                    <a data-analytics-name="anchor Step 1: Select a Domain Name" href="#pilih-ekstensi-domain">
+                    <a data-analytics-name="anchor | Step 1: Select a Domain Name" href="#pilih-ekstensi-domain">
                         <span class="hidden md:inline">1:</span>
                         <span class="inline md:hidden">Langkah 1:</span> Pilih Ekstensi Domain
                     </a>
-                    <a data-analytics-name="anchor Step 2: Choose a Domain Name" href="#pilih-nama-domain">
+                    <a data-analytics-name="anchor | Step 2: Choose a Domain Name" href="#pilih-nama-domain">
                         <span class="hidden md:inline">2:</span>
                         <span class="inline md:hidden">Langkah 2:</span> Pilih Nama Domain
                     </a>
-                    <a data-analytics-name="anchor Step 3: Register a Domain Name" href="#daftarkan-nama-domain-anda">
+                    <a data-analytics-name="anchor | Step 3: Register a Domain Name" href="#daftarkan-nama-domain-anda">
                         <span class="hidden md:inline">3:</span>
                         <span class="inline md:hidden">Langkah 3:</span> Daftarkan Nama Domain Anda
                     </a>
@@ -40,7 +40,7 @@
         </div>
         <div id="pilih-nama-domain" class="article-child-wrapper scroll-mt-110 min-[450px]:scroll-mt-86 md:scroll-mt-28">
             <h3 data-analytics-level2="2: Choose a Domain Name">LANGKAH 2: PILIH NAMA DOMAIN</h3>
-            <p>Setelah Anda memilih ekstensi domain, sekarang saatnya untuk memikirkan dan mencari nama domain yang paling sesuai untuk menggambarkan <x-articles.tooltip data-analytics-name="text online presence" data-tooltip="Kehadiran online adalah cara bisnis Anda dapat ditemukan di internet, baik melalui situs web, laman media sosial, maupun toko online. Menggunakan nama domain .com sebagai alamat utama kehadiran online membantu bisnis Anda memiliki alamat online yang mudah diingat.">kehadiran online</x-articles.tooltip> Anda.</p>
+            <p>Setelah Anda memilih ekstensi domain, sekarang saatnya untuk memikirkan dan mencari nama domain yang paling sesuai untuk menggambarkan <x-articles.tooltip data-analytics-name="text | online presence" data-tooltip="Kehadiran online adalah cara bisnis Anda dapat ditemukan di internet, baik melalui situs web, laman media sosial, maupun toko online. Menggunakan nama domain .com sebagai alamat utama kehadiran online membantu bisnis Anda memiliki alamat online yang mudah diingat.">kehadiran online</x-articles.tooltip> Anda.</p>
             <p>Meskipun memilih nama domain yang sama dengan nama bisnis Anda adalah sebuah pilihan, tergantung pada ketersediaan, nama domain tidak harus sama dengan nama bisnis Anda. Agar tampil beda, beberapa bisnis menggunakan slogan yang lebih mudah diingat. Pilihan populer lainnya adalah memperpanjang nama bisnis dengan kata tambahan untuk menggambarkan bisnis Anda lebih baik. Berikut adalah beberapa contoh:</p>
             <div class="article-child-wrapper md:pl-4">
                 <x-articles.step-item :number="1">
@@ -79,7 +79,7 @@
                 <p>Cobalah generator nama domain yang didukung oleh NameStudio untuk menemukan saran nama domain .com yang tersedia.</p>
                 <x-articles.arrow-item-content>
                     <div class="flex flex-col flex-1">
-                        <p><a data-analytics-name="text Find a Domain Name" href="{{ route('find') }}" class="link-to">Temukan Nama Domain Anda</a></p>
+                        <p><a data-analytics-name="text | Find a Domain Name" href="{{ route('find') }}" class="link-to">Temukan Nama Domain Anda</a></p>
                     </div>
                 </x-articles.arrow-item-content>
             </div>

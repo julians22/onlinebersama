@@ -4,13 +4,13 @@
             <div class="article-child-wrapper">
                 <p>Apakah anda sedang mencari cara yang cepat dan mudah untuk membantu membangun kredibilitas, membentuk citra profesional, sekaligus memasarkan bisnis Anda? Alamat bisnis khusus (dengan nama domain .com) dapat berfungsi sebagai alat pemasaran yang berharga sekaligus membantu membangun legitimasi Anda. Berikut manfaat yang dapat Anda peroleh dengan memiliki alamat email bisnis khusus:</p>
                 <x-articles.navigate-link :article="true">
-                    <a data-analytics-name="anchor Develop Credibility" href="#membangun-kredibilitas">
+                    <a data-analytics-name="anchor | Develop Credibility" href="#membangun-kredibilitas">
                         <span class="hidden md:inline">1:</span> Membangun Kredibilitas
                     </a>
-                    <a data-analytics-name="anchor Build Legitimacy With a Professional Image" href="#membangun-legitimasi-dengan-citra-profesional">
+                    <a data-analytics-name="anchor | Build Legitimacy With a Professional Image" href="#membangun-legitimasi-dengan-citra-profesional">
                         <span class="hidden md:inline">2:</span> Membangun Legitimasi Dengan Citra Profesional
                     </a>
-                    <a data-analytics-name="anchor Market Your Whole Business" href="#memasarkan-keseluruhan-bisnis-anda">
+                    <a data-analytics-name="anchor | Market Your Whole Business" href="#memasarkan-keseluruhan-bisnis-anda">
                         <span class="hidden md:inline">3:</span> Memasarkan Keseluruhan Bisnis Anda
                     </a>
                 </x-articles.navigate-link>

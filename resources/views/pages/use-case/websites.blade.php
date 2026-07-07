@@ -17,9 +17,9 @@
                 <h1 class="text-navy-blue-300 headline-1">.com untuk Situs Web</h1>
                 <p class="text-deep-blue-300 paragraph-md">Situs web dengan nama domain .com adalah fondasi yang dapat diandalkan pelanggan Anda untuk menemukan dan berinteraksi secara online seiring perkembangan bisnis Anda.</p>
             </div>
-            <button data-analytics-name="video image Website Use Case" type="button" @click="$store.videoModal.openModal('{{ config('onlinebersama.video_id.website') }}')" class="group relative rounded-[10px] overflow-hidden shrink-0 cursor-pointer box-shadow-sm">
+            <button data-analytics-name="video image | Website Use Case" type="button" @click="$store.videoModal.openModal('{{ config('onlinebersama.video_id.website') }}')" class="group relative rounded-[10px] overflow-hidden shrink-0 cursor-pointer box-shadow-sm">
                 <div class="top-0 left-0 absolute bg-gradient-video size-full"></div>
-                <span data-analytics-name="play button Website Use Case" class="transition-all duration-300 ease-in-out top-1/2 left-1/2 absolute -translate-x-1/2 -translate-y-1/2 group-hover:scale-110">
+                <span data-analytics-name="play button | Website Use Case" class="transition-all duration-300 ease-in-out top-1/2 left-1/2 absolute -translate-x-1/2 -translate-y-1/2 group-hover:scale-110">
                     <x-icons.play-rounded width="78" height="78" fill="#fff" />
                 </span>
                 <img class="w-156 object-cover aspect-video lg:w-125 xl:w-156" src="{{ asset('images/uc-websites.webp') }}" alt="">
@@ -60,7 +60,7 @@
         </div>
         <div class="flex justify-center mt-10">
             <a
-                data-analytics-name="button Discover More Benefits"
+                data-analytics-name="button | Discover More Benefits"
                 href="{{ route('resources.handle_second_route', ['second_route' => config('onlinebersama.custom_article_route.websites-detail'), 'slug' => 'manfaat']) }}"
                 class="btn-secondary w-full sm:w-auto">
                 Temukan Manfaat Lainnya
@@ -81,7 +81,7 @@
             <div class="gap-8 grid grid-cols-1 max-w-214 xl:max-w-full xl:grid-cols-3">
                 <div
                     data-analytics-level3="card1"
-                    data-analytics-name="box Create a Plan to Build Your Website"
+                    data-analytics-name="box | Create a Plan to Build Your Website"
                     class="gap-4 grid grid-rows-subgrid row-span-3 bg-white p-4 rounded-[10px]">
                     <div class="flex flex-col justify-center items-center gap-2.5 bg-mint-300 p-6 rounded-lg text-deep-blue-300 text-center">
                         <x-icons.list width="40" height="40" fill="#1A2E47" />
@@ -98,7 +98,7 @@
                 </div>
                 <div
                     data-analytics-level3="card2"
-                    data-analytics-name="box Defining Website Requirements"
+                    data-analytics-name="box | Defining Website Requirements"
                     class="gap-4 grid grid-rows-subgrid row-span-3 bg-white p-4 rounded-[10px]">
                     <div class="flex flex-col justify-center items-center gap-2.5 bg-mint-300 p-6 rounded-lg text-deep-blue-300 text-center">
                         <x-icons.list width="40" height="40" fill="#1A2E47" />
@@ -115,7 +115,7 @@
                 </div>
                 <div
                     data-analytics-level3="card3"
-                    data-analytics-name="box Manage Your Website"
+                    data-analytics-name="box | Manage Your Website"
                     class="gap-4 grid grid-rows-subgrid row-span-3 bg-white p-4 rounded-[10px]">
                     <div class="flex flex-col justify-center items-center gap-2.5 bg-mint-300 p-6 rounded-lg text-deep-blue-300 text-center">
                         <x-icons.list width="40" height="40" fill="#1A2E47" />
@@ -132,7 +132,7 @@
                 </div>
             </div>
             <div class="flex w-full justify-center">
-                <a data-analytics-name="button Explore Full Checklist"
+                <a data-analytics-name="button | Explore Full Checklist"
                     href="{{ route('resources.handle_second_route', ['second_route' => config('onlinebersama.custom_article_route.websites-detail'), 'slug' => 'membuat-situs-web']) }}"
                     class="btn-primary w-full sm:w-auto">
                     Telusuri Daftar Periksa Lengkap
@@ -227,7 +227,7 @@
             <h2 class="text-navy-blue-300 headline-1">Mencari sumber <span class="block">informasi lainnya?</span></h2>
             <p class="max-w-150 text-deep-blue-300 paragraph-md">Jelajahi Panduan Belajar untuk menemukan semua artikel, video, dan banyak lagi tentang cara menggunakan domain .com.</p>
             <a
-                data-analytics-name="button Visit the Learning Hub"
+                data-analytics-name="button | Visit the Learning Hub"
                 href="{{ route('resources.index') }}"
                 class="btn-secondary w-full sm:w-max">
                 Kunjungi Panduan Belajar

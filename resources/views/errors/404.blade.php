@@ -9,7 +9,7 @@
     </div>
     <div class="flex justify-center">
         <a
-            data-analytics-name="button Back to Home"
+            data-analytics-name="button | Back to Home"
             href="{{ route('index') }}"
             class="w-full max-w-61.75 font-bold btn-secondary py-4 text-[18px]!">
             Kembali ke Beranda

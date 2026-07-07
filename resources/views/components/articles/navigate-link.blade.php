@@ -10,7 +10,7 @@
         'rounded-[10px] overflow-hidden border border-light-gray-500' => $article,
         'block w-full relative md:hidden',
     ])>
-        <button data-analytics-name="expand Navigate this Page" type="button" @class([
+        <button data-analytics-name="expand | Navigate this Page" type="button" @class([
             'select-dropdown' => !$article,
             'select-dropdown-article' => $article
         ]) @click="openDropdown = !openDropdown">

@@ -4,7 +4,7 @@
     </div>
     <div class="flex items-center-safe justify-between bg-navy-blue-300 rounded-[10px] p-4 flex-col gap-4 lg:gap-0 lg:flex-row">
         <div
-            data-analytics-name="pulldown filter All Topics"
+            data-analytics-name="pulldown filter | All Topics"
             x-data="{ openDropdown: false }"
             class="lg:max-w-100.5 w-full relative">
             <button
@@ -39,7 +39,7 @@
         @endforeach
     </div>
     <div
-        data-analytics-name="sequence <1 2 3 4>">
+        data-analytics-name="sequence | <1 2 3 4>">
         {{ $posts->links(data: ['scrollTo' => '#resources-scroll']) }}
     </div>
 </div>

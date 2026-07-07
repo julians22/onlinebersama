@@ -16,7 +16,7 @@
             <div class="container grid grid-cols-1 items-center gap-6 py-10 md:gap-10 md:py-19.5 lg:grid-flow-col">
                 <div class="flex flex-col gap-4 md:gap-6">
                     <div
-                        data-analytics-name="text breadcrumb"
+                        data-analytics-name="text | breadcrumb"
                         class="flex items-center gap-1 font-sans text-deep-blue-300 text-sm font-semibold">
                         <div class="mb-0.5">
                             <x-icons.home width="13" height="13" fill="#1A2E47" />
@@ -31,9 +31,9 @@
                     <p class="paragraph-sm text-deep-blue-300">Rata-rata waktu baca {{ $post->read_time }}</p>
                 </div>
                 <div x-data="{ videoId: '{{ $post->video_id }}' }" @if ($post->video_id) data-analytics-level3="{{ $post->data_analytics ?? $post->title }}" @endif class="relative aspect-video w-full rounded-[10px] overflow-hidden lg:w-156.75">
-                    <img @if ($post->type === 'video') data-analytics-name="video image {{ $post->data_analytics ?? $post->title }}" @endif class="w-full" src="{{ imageArticle($post->thumbnail_file_name) }}" alt="">
+                    <img @if ($post->type === 'video') data-analytics-name="video image | {{ $post->data_analytics ?? $post->title }}" @endif class="w-full" src="{{ imageArticle($post->thumbnail_file_name) }}" alt="">
                     @if ($post->type === 'video')
-                        <button data-analytics-name="play button {{ $post->data_analytics ?? $post->title }}" type="button" @click="$store.videoModal.openModal(videoId)" class="group absolute size-full inset-0 flex justify-center items-center bg-gradient-video cursor-pointer">
+                        <button data-analytics-name="play button | {{ $post->data_analytics ?? $post->title }}" type="button" @click="$store.videoModal.openModal(videoId)" class="group absolute size-full inset-0 flex justify-center items-center bg-gradient-video cursor-pointer">
                             <x-icons.play-rounded width="78" height="78" fill="#fff" class="transition-all duration-300 ease-in-out group-hover:scale-110" />
                         </button>
                     @endif
