@@ -15,7 +15,7 @@
         <div x-data class="flex justify-between items-center flex-col gap-10 py-7.5 container-medium md:gap-20 md:py-12.5 lg:flex-row">
             <div class="space-y-4">
                 <h1 class="text-navy-blue-300 headline-1">.com untuk <span class="xl:block">Media Sosial dan</span> E-Commerce</h1>
-                <p class="text-deep-blue-300 paragraph-md">Dengan penerusan domain, Anda dapat membuat tautan ke toko online atau halaman media sosial dari nama domain .com yang mudah diingat.</p>
+                <p class="text-deep-blue-300 paragraph-md">Dengan penerusan domain, Anda dapat membuat tautan ke toko online atau halaman media sosial dengan nama domain .com yang mudah diingat.</p>
             </div>
             <button data-analytics-name="video image | Domain Forwarding Use Case" type="button" @click="$store.videoModal.openModal('{{ config('onlinebersama.video_id.social_media') }}')" class="group relative rounded-[10px] overflow-hidden shrink-0 cursor-pointer box-shadow-sm">
                 <div class="top-0 left-0 absolute bg-gradient-video size-full"></div>
@@ -39,7 +39,7 @@
                     data-analytics-level3="Memorable Way to Market"
                     class="top-36.5 sticky card-stack sm:top-38.5 md:top-48 lg:top-64 min-[1200px]:top-55.5!">
                     <x-displays.card-stack number="1" title="Cara Pemasaran yang Tak Terlupakan" image="images/social-media-editorial-1.webp" alt="">
-                        <p class="min-h-40 min-[500px]:min-h-32 sm:min-h-24 md:min-h-auto">Nama domain .com tidak hanya diperuntukkan bagi situs web. Dengan penerusan domain, Anda dapat memberikan alamat web yang mudah diingat untuk setiap eksistensi online.</p>
+                        <p class="min-h-40 min-[500px]:min-h-32 sm:min-h-24 md:min-h-auto">Nama domain .com tidak hanya diperuntukkan bagi situs web. Dengan penerusan domain, Anda dapat memberikan alamat web yang mudah diingat untuk setiap kehadiran online.</p>
                     </x-displays.card-stack>
                 </div>
                 <div
@@ -78,7 +78,7 @@
                 <div class="flex flex-col gap-4 md:max-w-xs">
                     <button data-analytics-level3="Social Media" type="button" @click="active = 'social-media'" :class="active === 'social-media' && 'bg-white! hover:bg-white! text-deep-blue-300! hover:pl-6!'" class="transition-all duration-300 ease-in-out space-y-3 bg-navy-blue-300 p-6 rounded-[10px] h-full text-white text-left cursor-pointer md:space-y-2 hover:bg-[#2b4562] hover:pl-7.25">
                         <h3 class="subheadline-4 font-semibold! text-[24px]! leading-7.5! md:text-[26px]!" data-analytics-level3="Social Media">Media Sosial</h3>
-                        <p class="paragraph-sm font-medium! text-[18px]! leading-6.5! md:leading-8! md:text-[20px]!" data-analytics-level3="Social Media">Buat lebih banyak pasang mata tertuju pada halaman Anda.</p>
+                        <p class="paragraph-sm font-medium! text-[18px]! leading-6.5! md:leading-8! md:text-[20px]!" data-analytics-level3="Social Media">Buat lebih banyak orang melihat halaman Anda.</p>
                     </button>
                     <button data-analytics-level3="Online Store" type="button" @click="active = 'online-store'" :class="active === 'online-store' && 'bg-white! hover:bg-white! text-deep-blue-300! hover:pl-6!'" class="transition-all duration-300 ease-in-out space-y-3 bg-navy-blue-300 p-6 rounded-[10px] h-full text-white text-left cursor-pointer md:space-y-2 hover:bg-[#2b4562] hover:pl-7.25">
                         <h3 class="subheadline-4 font-semibold! text-[24px]! leading-7.5! md:text-[26px]!" data-analytics-level3="Online Store">Toko Online</h3>
@@ -100,7 +100,7 @@
                     href="{{ route('resources.handle_second_route', ['second_route' => config('onlinebersama.custom_article_route.social-media-detail'), 'slug' => 'cara-menggunakan']) }}" class="relative rounded-[10px] max-w-full overflow-hidden h-88 md:h-auto md:max-w-156">
                     <img class="size-full object-cover aspect-video" src="{{ asset('images/uc-email.webp') }}" alt="">
                     <div class="top-0 left-0 absolute flex flex-col justify-end gap-4 bg-linear-360 from-black/60 to-transparent p-4 size-full text-white md:p-6">
-                        <p class="leading-8.5! paragraph-md text-[20px]!">Tautkan toko Anda di platform mana pun dari nama domain .com khusus.</p>
+                        <p class="leading-8.5! paragraph-md text-[20px]!">Hubungkan toko Anda di platform apa pun dengan nama domain .com khusus</p>
                         <p data-analytics-name="text | Read More" class="flex items-center w-max font-sans font-bold text-[20px] decoration-[8%] underline underline-offset-[12%] tracking-[0.25px]">
                             Baca Selengkapnya
                             <x-icons.arrow-rounded width="24" height="24" fill="#fff" class="size-4.5 ml-1" strokeWidth="1" />
@@ -209,7 +209,7 @@
     {{-- Search --}}
     <section
         data-analytics-level2="search"
-        class="bg-deep-blue-300 -mb-2.5 pb-0 pt-7.5 md:mb-0 md:pt-13.75 md:pb-3.75">
+        class="bg-deep-blue-300 pb-3 pt-7.5 min-[415px]:-mb-2! min-[415px]:pb-0! sm:mb-auto! md:mb-0! md:pt-13.75! md:pb-3.75!">
         <div class="container flex flex-col justify-center items-center">
             <h2 class="subheadline-2 text-white text-center text-[26px]! leading-7.5! max-w-62.5 mx-auto sm:mx-0 sm:max-w-full lg:text-[40px]!">
                 Temukan Nama Domain .com

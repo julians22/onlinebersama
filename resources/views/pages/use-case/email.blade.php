@@ -132,7 +132,7 @@
                 <div class="flex justify-center items-center border-4 border-mint-300 rounded-full size-7.5 font-extrabold text-[16px] text-navy-blue-300 shrink-0 md:text-[32px] md:font-semibold md:size-12.5">5</div>
                 <div class="space-y-2 text-deep-blue-300">
                     <h3 class="subheadline-3 text-[24px]! leading-7.5! md:text-[26px]!">Klik Buat</h3>
-                    <p class="text-deep-blue-300 text-[18px]! leading-6.5! paragraph-md md:text-[20px]! md:leading-8!">Cukup klik buat, dan selesai!</p>
+                    <p class="text-deep-blue-300 text-[18px]! leading-6.5! paragraph-md md:text-[20px]! md:leading-8!">Cukup klik Buat, dan selesai!</p>
                 </div>
             </div>
         </div>
@@ -185,7 +185,7 @@
     {{-- Search --}}
     <section
         data-analytics-level2="search"
-        class="bg-deep-blue-300 -mb-2.5 pb-0 pt-7.5 md:mb-0 md:pt-13.75 md:pb-3.75">
+        class="bg-deep-blue-300 pb-3 pt-7.5 min-[415px]:-mb-2! min-[415px]:pb-0! sm:mb-auto! md:mb-0! md:pt-13.75! md:pb-3.75!">
         <div class="container flex flex-col justify-center items-center">
             <h2 class="subheadline-2 text-white text-center text-[26px]! leading-7.5! max-w-62.5 mx-auto sm:mx-0 sm:max-w-full lg:text-[40px]!">
                 Temukan Nama Domain .com

@@ -48,7 +48,7 @@
                 <a
                     data-analytics-name="button | Find a .com"
                     href="{{ route('find') }}" class="px-4 py-0.5 font-medium text-navy-blue-300 text-[14px] btn-primary lg:text-[19px] lg:px-4 lg:py-2">
-                    Temukan .com
+                    Temukan <span class="font-bold">.com</span>
                 </a>
             </div>
         </div>

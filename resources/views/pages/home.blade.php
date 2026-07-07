@@ -31,7 +31,7 @@
         <div class="absolute inset-0 bg-gradient-hero size-full"></div>
         <video
             x-ref="heroVideo"
-            class="w-full h-100 object-cover aspect-48/17 lg:h-152.75 xl:h-170"
+            class="w-full h-100 object-cover aspect-48/17 md:h-147 lg:h-170"
             poster="{{ asset('images/hero-homepage.webp') }}"
             autoplay="true"
             muted="true"
@@ -47,14 +47,14 @@
         </video>
         <div class="container top-0 left-1/2 absolute flex justify-center items-end px-7 pt-7 pb-4 size-full -translate-x-1/2 md:justify-start sm:p-10 lg:px-18 lg:pt-20 lg:pb-15">
             <div class="space-y-2 text-white text-center sm:space-y-3 md:space-y-6 md:text-left lg:space-y-5">
-                <h1 class="headline-1 leading-normal text-[28px]! sm:leading-10! sm:text-[42px]! lg:leading-13.5! lg:text-[54px]! lg:font-extrabold!">
+                <h1 class="headline-1 leading-normal text-[28px]! md:leading-16! md:text-[60px]! lg:leading-20! lg:text-[72px]! lg:font-extrabold!">
                     Di Mana Dunia
                     <span class="relative md:block md:leading-19 md:text-[78px] lg:text-[90px] lg:leading-22!">
                         Menemukanmu<sup class="tm">TM</sup>
                     </span>
                 </h1>
-                <p class="max-w-135 leading-7! text-[20px]! paragraph-md md:max-w-212.5 md:leading-9! lg:text-[28px]!">
-                    Nama domain .com membantu orang-orang menemukan dan memercayai Anda
+                <p class="max-w-135 leading-7! text-[20px]! mx-auto paragraph-md md:max-w-212.5 md:leading-9! lg:text-[24px]!">
+                    Nama domain .com membantu orang menemukan dan memercayai Anda
                 </p>
             </div>
         </div>
@@ -64,7 +64,7 @@
     <!-- Search -->
     <section
         data-analytics-level2="search"
-        class="bg-deep-blue-300 -mb-2.5 pb-0 pt-7.5 md:mb-0 md:pt-13.75 md:pb-3.75">
+        class="bg-deep-blue-300 pb-3 pt-7.5 min-[415px]:-mb-2! min-[415px]:pb-0! sm:mb-auto! md:mb-0! md:pt-13.75! md:pb-3.75!">
         <div class="container flex flex-col justify-center items-center">
             <h2 class="subheadline-2 text-white text-center text-[26px]! leading-7.5! max-w-62.5 mx-auto sm:mx-0 sm:max-w-full lg:text-[40px]!">
                 Temukan Nama Domain .com
@@ -210,7 +210,7 @@
                         data-analytics-name="button | View Success Stories"
                         href="{{ route('find') }}"
                         class="btn-primary w-full sm:w-auto">
-                        Lihat Kisah Usaha Kecil
+                        Lihat Kisah Sukses Usaha Kecil
                     </a>
                 </div>
             </div>
