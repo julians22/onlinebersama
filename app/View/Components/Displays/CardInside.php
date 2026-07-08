@@ -15,7 +15,8 @@ class CardInside extends Component
         public string $route,
         public string $image,
         public ?string $dataAnalytics,
-        public ?string $alt
+        public ?string $alt,
+        public ?string $position = 'top',
     ) {}
 
     /**

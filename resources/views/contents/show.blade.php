@@ -68,6 +68,7 @@
                         </div>
                         <div class="swiper-slide">
                             <x-displays.card-inside
+                                position="left"
                                 data-analytics="Social Media & E-Commerce"
                                 route="social-media"
                                 image="images/brand-2.webp">
@@ -76,6 +77,7 @@
                         </div>
                         <div class="swiper-slide">
                             <x-displays.card-inside
+                                position="right"
                                 data-analytics="Websites"
                                 route="websites"
                                 image="images/brand-3.webp">

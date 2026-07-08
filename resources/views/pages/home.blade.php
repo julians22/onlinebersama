@@ -89,21 +89,35 @@
                     <div @mouseenter="active = 'email'" :class="active === 'email' ? 'hovered' : 'not-hovered'"
                         data-analytics-level3=".com for Email"
                         class="swiper-slide">
-                        <x-displays.card-grow active="email" route="email" image="images/brand-1.webp" data-analytics=".com for Email">
+                        <x-displays.card-grow
+                            active="email"
+                            route="email"
+                            image="images/brand-1.webp"
+                            data-analytics=".com for Email">
                             Email
                         </x-displays.card-grow>
                     </div>
                     <div @mouseenter="active = 'social'" :class="active === 'social' ? 'hovered' : 'not-hovered'"
                         data-analytics-level3=".com for Social Media & E-Commerce"
                         class="swiper-slide">
-                        <x-displays.card-grow active="social" route="social-media" image="images/brand-2.webp" data-analytics=".com for Social Media & E-Commerce">
+                        <x-displays.card-grow
+                            position="left"
+                            active="social"
+                            route="social-media"
+                            image="images/brand-2.webp"
+                            data-analytics=".com for Social Media & E-Commerce">
                             Media Sosial dan <span class="block">E-Commerce</span>
                         </x-displays.card-grow>
                     </div>
                     <div @mouseenter="active = 'websites'" :class="active === 'websites' ? 'hovered' : 'not-hovered'"
                         data-analytics-level3=".com for Websites"
                         class="swiper-slide">
-                        <x-displays.card-grow active="websites" route="websites" image="images/brand-3.webp" data-analytics=".com for Websites">
+                        <x-displays.card-grow
+                            position="right"
+                            active="websites"
+                            route="websites"
+                            image="images/brand-3.webp"
+                            data-analytics=".com for Websites">
                             Situs Web
                         </x-displays.card-grow>
                     </div>

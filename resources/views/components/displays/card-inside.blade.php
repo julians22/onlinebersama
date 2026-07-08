@@ -4,6 +4,9 @@
     <img @class([
         'h-71.35 md:h-111.5' => !in_array(Route::currentRouteName(), ['email', 'social-media', 'websites']),
         'h-111.5' => in_array(Route::currentRouteName(), ['email', 'social-media', 'websites']),
+        'object-left' => $position === 'left',
+        'object-right' => $position === 'right',
+        'object-center' => $position === 'center',
         'aspect-208/223 object-cover w-full'
     ]) src="{{ asset($image) }}" alt="{{ $alt }}">
     <div class="absolute top-0 left-0 flex flex-col justify-between size-full py-2.5 px-3 sm:p-4 md:p-6">
