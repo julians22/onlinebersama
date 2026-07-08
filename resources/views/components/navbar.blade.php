@@ -66,7 +66,7 @@
     >
         <div class="absolute hidden top-0 left-1/2 -translate-x-1/2 w-full bg-white after:absolute after:top-0 after:right-0 after:w-1/2 after:h-full after:bg-light-gray-100 lg:block">
             <div class="relative z-10 max-w-480 flex bg-white mx-auto lg:flex-col xl:flex-row">
-                <div class="grid grid-cols-3 p-5 h-max">
+                <div class="grid grid-cols-3 p-5">
                     <a data-analytics-name="hover | .com for Websites" href="{{ route('websites') }}" class="group flex gap-3.75 hover:bg-mint-100 p-6 rounded-[10px] min-h-54.25 transition-all duration-300 ease-in-out">
                         <div class="space-y-2">
                             <h3 class="text-navy-blue-300 subheadline-3 text-[26px]! leading-7.5!">.com untuk Situs Web</h3>
@@ -95,7 +95,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="flex flex-col gap-4 bg-light-gray-100 p-4 w-full xl:max-w-117.5">
+                <div class="flex flex-col gap-4 bg-light-gray-100 p-4 w-full xl:max-w-116.5">
                     <button data-analytics-name="video image | IKAT Indonesia" type="button" @click="$store.videoModal.openModal('{{ config('onlinebersama.video_id.ikat_indonesia') }}')" class="group relative rounded-2xl w-full aspect-video overflow-hidden cursor-pointer lg:max-w-117.5 xl:max-w-full 2xl:h-54.25">
                         <span data-analytics-name="play button | IKAT Indonesia" class="transition-all duration-300 ease-in-out top-1/2 left-1/2 absolute size-14 -translate-x-1/2 -translate-y-1/2 group-hover:scale-110">
                             <x-icons.play width="56" height="56" fill="#fff" />

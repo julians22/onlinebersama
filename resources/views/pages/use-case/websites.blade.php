@@ -33,25 +33,25 @@
         data-analytics-level2="Benefits of a Website"
         class="py-7.5 container md:py-12.5">
         <div class="pb-42 md:pb-44">
-            <h2 class="sticky top-18 mb-10 text-navy-blue-300 text-center headline-1 sm:top-20 md:top-24 lg:top-40 min-[1200px]:top-32!">Manfaat Situs Web</h2>
             <div class="flex flex-col gap-6 mx-auto md:max-w-208">
-                <div
-                    data-analytics-level3="Grow on Your Terms"
-                    class="top-36.5 sticky card-stack sm:top-38.5 md:top-48 lg:top-64 min-[1200px]:top-55.5!">
-                    <x-displays.card-stack number="1" title="Berkembang Sesuai Keinginan Anda" image="images/website-editorial-1.webp" alt="">
-                        <p class="min-h-40 min-[500px]:min-h-32 sm:min-h-24 md:min-h-auto">Berikan bisnis Anda tempat untuk berakar dan berkembang sesuai keinginan Anda. Situs web dengan nama domain .com dapat terus berkembang seiring pertumbuhan bisnis Anda</p>
-                    </x-displays.card-stack>
+                <div class="top-18 sticky card-stack sm:top-20 md:top-25 lg:top-40 min-[1200px]:top-32!">
+                    <h2 class="mb-10 text-navy-blue-300 text-center headline-1">Manfaat Situs Web</h2>
+                    <div data-analytics-level3="Grow on Your Terms">
+                        <x-displays.card-stack number="1" title="Berkembang Sesuai Keinginan Anda" image="images/website-editorial-1.webp" alt="">
+                            <p class="min-h-40 min-[500px]:min-h-32 sm:min-h-24 md:min-h-auto">Berikan bisnis Anda tempat untuk berakar dan berkembang sesuai keinginan Anda. Situs web dengan nama domain .com dapat terus berkembang seiring pertumbuhan bisnis Anda</p>
+                        </x-displays.card-stack>
+                    </div>
                 </div>
                 <div
                     data-analytics-level3="Control Your Brand"
-                    class="top-36.5 sticky card-stack -mt-22 translate-y-22 sm:top-38.5 md:top-48 md:-mt-22 md:translate-y-22 lg:top-64 min-[1200px]:top-55.5! lg:-mt-24 lg:translate-y-24">
+                    class="top-36.5 sticky card-stack -mt-22 translate-y-22 md:top-48.5 md:-mt-22 md:translate-y-22 lg:top-64 min-[1200px]:top-55.5! lg:-mt-24 lg:translate-y-24">
                     <x-displays.card-stack number="2" title="Kendalikan Merek Anda" image="images/website-editorial-2.webp" alt="">
                         <p class="min-h-40 min-[500px]:min-h-32 sm:min-h-24 md:min-h-auto">Memiliki situs web dengan nama domain .com memberi Anda ruang untuk membangun merek dan mengendalikan kehadiran online Anda.</p>
                     </x-displays.card-stack>
                 </div>
                 <div
                     data-analytics-level3="Get Noticed by Customers"
-                    class="top-36.5 sticky card-stack -mb-20 translate-y-22 sm:top-38.5 md:top-48 md:-mb-20 md:translate-y-22 lg:top-64 min-[1200px]:top-55.5! lg:translate-y-24">
+                    class="top-36.5 sticky card-stack -mb-20 translate-y-22 md:top-48.5 md:-mb-20 md:translate-y-22 lg:top-64 min-[1200px]:top-55.5! lg:translate-y-24">
                     <x-displays.card-stack number="3" title="Lebih Mudah Ditemukan" image="images/website-editorial-3.webp" alt="">
                         <p class="min-h-40 min-[500px]:min-h-32 sm:min-h-24 md:min-h-auto">Situs web dengan nama domain .com memudahkan pelanggan menemukan Anda. Di sinilah dunia menemukan Anda.</p>
                     </x-displays.card-stack>

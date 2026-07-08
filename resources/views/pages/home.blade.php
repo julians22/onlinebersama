@@ -33,10 +33,12 @@
             x-ref="heroVideo"
             class="w-full h-100 object-cover aspect-48/17 md:h-147 lg:h-170"
             poster="{{ asset('images/hero-homepage.webp') }}"
+            preload="none"
             autoplay="true"
             muted="true"
             loop
-            playsinline>
+            playsinline
+            webkit-playsinline>
             <!-- Mobile / Vertical screens (Width up to 599px) -->
             <source src="{{ assetAwsUrl('onlinebersama/videos/com_Indonesia_Brand Anthem_Mobile.mp4') }}" type="video/mp4" media="(max-width: 599px)">
             <!-- Tablets / Square screens (Width between 600px and 1024px) -->
@@ -54,7 +56,7 @@
                     </span>
                 </h1>
                 <p class="max-w-135 leading-7! text-[20px]! mx-auto paragraph-md md:max-w-212.5 md:leading-9! lg:text-[24px]!">
-                    Nama domain .com membantu orang menemukan dan memercayai Anda
+                    Nama domain .com membantu orang menemukan dan memercayai Anda.
                 </p>
             </div>
         </div>
@@ -208,7 +210,7 @@
                 <div class="justify-center md:flex">
                     <a
                         data-analytics-name="button | View Success Stories"
-                        href="{{ route('find') }}"
+                        href="{{ route('resources.index') }}"
                         class="btn-primary w-full sm:w-auto">
                         Lihat Kisah Sukses Usaha Kecil
                     </a>
@@ -223,25 +225,25 @@
         data-analytics-level2="Make Your Mark Online"
         class="bg-light-gray-100">
         <div class="pt-7.5 pb-50 px-4 md:pb-58 md:pt-12.5 md:px-8 md:container">
-            <h2 class="sticky top-18 mb-10 text-navy-blue-300 text-center headline-1 max-w-lg mx-auto sm:top-20 md:top-24 lg:top-40 min-[1200px]:top-32!">Tinggalkan Jejak Anda Secara Online</h2>
             <div class="flex flex-col gap-6 mx-auto md:max-w-208">
-                <div
-                    data-analytics-level3="card1"
-                    class="top-45 sticky card-stack sm:top-38.5 md:top-61.5 lg:top-77.5 min-[1200px]:top-69.5!">
-                    <x-displays.card-stack number="1" title="Lebih Mudah Ditemukan" image="images/homepage-editorial-1.webp" data-analytics="Be Found Easier">
-                        <p class="min-h-20 md:min-h-auto">Nama domain .com membantu memudahkan pelanggan menemukan bisnis secara online.</p>
-                    </x-displays.card-stack>
+                <div class="top-18 sticky card-stack sm:top-20 md:top-24 lg:top-40 min-[1200px]:top-30!">
+                    <h2 class="mb-10 text-navy-blue-300 text-center headline-1 max-w-lg mx-auto">Tinggalkan Jejak Anda Secara Online</h2>
+                    <div data-analytics-level3="card1">
+                        <x-displays.card-stack number="1" title="Lebih Mudah Ditemukan" image="images/homepage-editorial-1.webp" data-analytics="Be Found Easier">
+                            <p class="min-h-20 md:min-h-auto">Nama domain .com membantu memudahkan pelanggan menemukan bisnis secara online.</p>
+                        </x-displays.card-stack>
+                    </div>
                 </div>
                 <div
                     data-analytics-level3="card2"
-                    class="top-45 sticky card-stack -mt-20 translate-y-20 sm:top-38.5 md:-mt-20 md:translate-y-20 md:top-61.5 lg:-mt-20 lg:translate-y-20 lg:top-77.5 min-[1200px]:top-69.5!">
+                    class="top-45 sticky card-stack -mt-20 translate-y-20 min-[502px]:top-36.5 sm:top-38.5 md:-mt-20 md:translate-y-20 md:top-61.5 lg:-mt-20 lg:translate-y-20 lg:top-77.5 min-[1200px]:top-68!">
                     <x-displays.card-stack number="2" title="Tampil Beda Secara Online" image="images/homepage-editorial-2.webp" data-analytics="Stand Out Online">
                         <p class="min-h-20 md:min-h-auto">Nama domain .com dapat membantu meningkatkan visibilitas bisnis.</p>
                     </x-displays.card-stack>
                 </div>
                 <div
                     data-analytics-level3="card3"
-                    class="top-45 sticky card-stack -mb-20 translate-y-20 sm:top-38.5 md:-mb-20 md:translate-y-20 md:top-61.5 lg:top-77.5 min-[1200px]:top-69.5!">
+                    class="top-45 sticky card-stack -mb-20 translate-y-20 min-[502px]:top-36.5 sm:top-38.5 md:-mb-20 md:translate-y-20 md:top-61.5 lg:top-77.5 min-[1200px]:top-68!">
                     <x-displays.card-stack number="3" title="Tingkatkan Kredibilitas Anda" image="images/homepage-editorial-3.webp" data-analytics="Enhance Your Credibility">
                         <p class="min-h-20 md:min-h-auto">Nama domain .com dapat membantu usaha kecil terlihat lebih profesional.</p>
                     </x-displays.card-stack>

@@ -15,7 +15,8 @@ class CardAccordion extends Component
         public string $slug,
         public string $videoId,
         public string $image,
-        public ?string $alt
+        public ?string $alt,
+        public ?string $dataAnalytics
     ) {}
 
     /**

@@ -49,7 +49,7 @@
         </div>
         <div id="apa-saja-cara-yang-dapat-dilakukan-untuk-meneruskan-nama-domain-com" class="article-child-wrapper scroll-mt-110 min-[450px]:scroll-mt-86 md:scroll-mt-28">
             <h3 data-analytics-level2="What Are the Different Ways to Forward a Domain Name?">Apa Cara yang Dapat Dilakukan untuk Meneruskan Nama Domain?</h3>
-            <p>Sekarang setelah kita membahas <a data-analytics-name="text | benefits of domain name forwarding" href="{{ route('resources.handle_second_route', ['second_route' => config('onlinebersama.custom_article_route.social-media-detail'), 'slug' => 'cara-menggunakan']) }}" class="link-to">manfaat penerusan nama domain</a>, mari kita uraikan berbagai jenis penerusan dan bagaimana penerusan tersebut dapat memengaruhi apa yang dilihat pelanggan Anda di browser web mereka.</p>
+            <p>Sekarang setelah kita membahas <a data-analytics-name="text | How To Use Domain Name Forwarding" href="{{ route('resources.handle_second_route', ['second_route' => config('onlinebersama.custom_article_route.social-media-detail'), 'slug' => 'cara-menggunakan']) }}" class="link-to">manfaat penerusan nama domain</a>, mari kita uraikan berbagai jenis penerusan dan bagaimana penerusan tersebut dapat memengaruhi apa yang dilihat pelanggan Anda di browser web mereka.</p>
             <p>Saat bekerja dengan penjual nama domain, Anda mungkin akan memiliki dua opsi:</p>
             <x-articles.arrow-item-content>
                 <div class="flex flex-col flex-1">

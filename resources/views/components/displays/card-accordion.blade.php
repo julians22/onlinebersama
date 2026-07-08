@@ -7,6 +7,7 @@
             {{ $slot }}
         </p>
         <a
+            data-analytics-name="text | {{ $dataAnalytics ?? 'Read More' }}"
             href="{{ route('resources.handle_second_route', ['second_route' => config('onlinebersama.custom_article_route.default'), 'slug' => $slug]) }}"
             class="w-max flex items-center font-sans text-lg font-bold text-magenta-300 leading-6 md:text-xl">
             Baca Selengkapnya
