@@ -119,10 +119,11 @@
         x-transition:leave-end="-translate-x-full"
     >
         <div class="flex flex-col">
-            <div class="flex justify-between p-6">
+            <div class="flex justify-between px-3 py-2.5 sm:py-3.5 sm:px-6">
                 <a
                     data-analytics-name="text | .com"
-                    href="{{ route('index') }}">
+                    href="{{ route('index') }}"
+                    class="flex justify-center items-center">
                     <img class="w-20" src="{{ asset('images/logo-com-blue.svg') }}" alt="">
                 </a>
                 <button type="button" @click="sidebar = false" class="cursor-pointer">
@@ -182,7 +183,7 @@
                 </div>
                 <div
                     data-analytics-name="video image | IKAT Indonesia"
-                    class="border-t-2 border-light-gray-300 flex flex-col gap-4 w-full px-3 py-8 min-[500px]:px-6">
+                    class="border-t-2 border-light-gray-300 flex flex-col gap-4 w-full px-3 py-3 sm:px-6">
                     <button
                         type="button"
                         @click="$store.videoModal.openModal('{{ config('onlinebersama.video_id.ikat_indonesia') }}')"

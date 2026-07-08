@@ -145,12 +145,12 @@
     }
 
     .sidebar-link {
-        @apply py-5 px-6 border-t-2 border-light-gray-300;
+        @apply py-3 px-3 border-t-2 border-light-gray-300 sm:px-6;
         p {
-            @apply flex justify-between items-center gap-x-2 font-sans font-bold text-navy-blue-300 text-[25px] leading-8;
+            @apply flex justify-between items-center gap-x-2 font-sans font-bold text-navy-blue-300 text-[24px] leading-8;
         }
         a {
-            @apply flex justify-between items-center gap-x-2 font-sans font-bold text-navy-blue-300 text-[25px] leading-8;
+            @apply flex justify-between items-center gap-x-2 font-sans font-bold text-navy-blue-300 text-[24px] leading-8;
             svg {
                 @apply transition-all duration-150 ease-in-out size-6 opacity-0 shrink-0;
             }
@@ -158,9 +158,9 @@
     }
 
     .sidebar-list {
-        @apply flex flex-col gap-y-2 pr-6 pb-4.5;
+        @apply flex flex-col gap-y-2 pr-6 pb-3;
         a {
-            @apply flex justify-between items-center gap-x-2 transition-all duration-150 ease-in-out font-sans font-semibold text-[22px] rounded-r-[10px] leading-7 text-navy-blue-300 py-2.5 pl-6 pr-4 hover:bg-mint-100;
+            @apply flex justify-between items-center gap-x-2 transition-all duration-150 ease-in-out font-sans font-semibold text-[22px] rounded-r-[10px] leading-7 text-navy-blue-300 py-2.5 pl-3 pr-4 hover:bg-mint-100 sm:pl-6;
             svg {
                 @apply transition-all duration-150 ease-in-out size-6 opacity-0 shrink-0;
             }
