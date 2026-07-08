@@ -50,7 +50,7 @@ class CardResource extends Component
                 $this->text_button = 'Download';
                 $this->data_analytics_button = 'Download';
                 $this->extra_attributes['href'] = $this->data->ebook_url ?? config('onlinebersama.default_ebook');
-                $this->extra_attributes['target'] = '_blank';
+                $this->extra_attributes['download'] = '';
                 break;
         }
     }
