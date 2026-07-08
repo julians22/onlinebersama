@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\EbookDownloader;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\ResourcesPageController;
 use App\Http\Controllers\UseCaseController;
@@ -33,6 +34,8 @@ Route::name('resources.')->group(function() {
 });
 
 Route::get('kumpulan-materi', fn() => redirect()->route('resources.index'));
+
+Route::get('download-ebook/{ebookUrl?}', EbookDownloader::class)->name('download-ebook')->where('ebookUrl', '.*'); // Allow any characters in the ebookUrl parameter
 
 Route::get('/ip-debug', function () {
     return response()->json([
