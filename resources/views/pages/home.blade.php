@@ -31,7 +31,7 @@
         <div class="absolute inset-0 bg-gradient-hero size-full"></div>
         <video
             x-ref="heroVideo"
-            class="w-full h-100 object-cover aspect-48/17 md:h-147 lg:h-170"
+            class="w-full h-100 object-cover aspect-48/17 md:h-145"
             poster="{{ asset('images/hero-homepage.webp') }}"
             preload="none"
             autoplay="true"
