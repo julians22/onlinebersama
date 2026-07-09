@@ -1,4 +1,4 @@
-<div id="resources-scroll" class="flex flex-col gap-y-8 scroll-mt-28">
+<div data-resources-list id="resources-scroll" class="flex flex-col gap-y-8 scroll-mt-28">
     <div class="hidden">
         {{ $selectedTopic }} | {{ $selectedTopicLabel }}
     </div>
@@ -40,24 +40,40 @@
     </div>
     <div
         data-analytics-name="sequence | <1 2 3 4>">
-        {{ $posts->links(data: ['scrollTo' => '#resources-scroll']) }}
+        {{ $posts->onEachSide(0)->links(data: ['scrollTo' => '#resources-scroll']) }}
     </div>
 </div>
 
 @push('scripts')
 
 <script>
-    const checkResolution = () => {
-        const isMobile = window.innerWidth < 768;
-        const currentPaginate = @this.get('paginate');
-        const newPaginate = isMobile ? 3 : 6;
+    function initResourcesResolutionWatcher() {
+        const el = document.querySelector('[data-resources-list]');
+        if (! el) return;
 
-        if (currentPaginate !== newPaginate) {
-            @this.call('updatePaginate', newPaginate);
-        }
+        const component = Livewire.find(el.closest('[wire\\:id]').getAttribute('wire:id'));
+        if (! component) return;
+
+        const applyPaginate = () => {
+            const isMobile = window.innerWidth < 768;
+            const newPaginate = isMobile ? 3 : 6;
+
+            if (component.get('paginate') !== newPaginate) {
+                component.call('updatePaginate', newPaginate);
+            }
+        };
+
+        applyPaginate();
+
+        let resizeTimer;
+        window.addEventListener('resize', () => {
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(applyPaginate, 200);
+        });
     }
 
-    setTimeout(() => { checkResolution() }, 1)
+    document.addEventListener('livewire:initialized', initResourcesResolutionWatcher);
+    document.addEventListener('livewire:navigated', initResourcesResolutionWatcher);
 </script>
 
 @endpush
