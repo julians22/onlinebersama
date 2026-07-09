@@ -65,44 +65,50 @@
         x-transition:leave-end="-translate-y-[1100px] xl:-translate-y-[350px]"
     >
         <div class="absolute hidden top-0 left-1/2 -translate-x-1/2 w-full bg-white after:absolute after:top-0 after:right-0 after:w-1/2 after:h-full after:bg-light-gray-100 lg:block">
-            <div class="relative z-10 max-w-480 flex bg-white mx-auto lg:flex-col xl:flex-row">
-                <div class="grid grid-cols-3 p-5">
-                    <a data-analytics-name="hover | .com for Websites" href="{{ route('websites') }}" class="group flex gap-3.75 hover:bg-mint-100 p-6 rounded-[10px] min-h-54.25 transition-all duration-300 ease-in-out">
-                        <div class="space-y-2">
-                            <h3 class="text-navy-blue-300 subheadline-3 text-[26px]! leading-7.5!">.com untuk Situs Web</h3>
-                            <p class="text-deep-blue-300 paragraph-sm text-[19px]! font-medium! leading-7!">Agar lebih mudah ditemukan, mulailah menggunakan situs web .com Anda sendiri.</p>
-                        </div>
-                        <div class="opacity-0 group-hover:opacity-100 mt-2.5 transition-all duration-300 ease-in-out shrink-0">
-                            <x-icons.arrow-rounded width="24" height="24" fill="#304D6D" strokeWidth="1" />
-                        </div>
-                    </a>
-                    <a data-analytics-name="hover | .com for Email" href="{{ route('email') }}" class="group flex gap-3.75 hover:bg-mint-100 p-6 rounded-[10px] min-h-54.25 transition-all duration-300 ease-in-out">
-                        <div class="space-y-2">
-                            <h3 class="text-navy-blue-300 subheadline-3 text-[26px]! leading-7.5!">.com untuk Email</h3>
-                            <p class="text-deep-blue-300 paragraph-sm text-[19px]! font-medium! leading-7!">Jadikan email sebagai pernyataan kredibilitas.</p>
-                        </div>
-                        <div class="opacity-0 group-hover:opacity-100 mt-2.5 transition-all duration-300 ease-in-out shrink-0">
-                            <x-icons.arrow-rounded width="24" height="24" fill="#304D6D" strokeWidth="1" />
-                        </div>
-                    </a>
-                    <a data-analytics-name="hover | .com for Social Media & E-Commerce" href="{{ route('social-media') }}" class="group flex gap-3.75 hover:bg-mint-100 p-6 rounded-[10px] min-h-54.25 transition-all duration-300 ease-in-out">
-                        <div class="space-y-2">
-                            <h3 class="text-navy-blue-300 subheadline-3 text-[26px]! leading-7.5!">.com untuk Media Sosial dan E-Commerce</h3>
-                            <p class="text-deep-blue-300 paragraph-sm text-[19px]! font-medium! leading-7!">Dapatkan alamat web .com untuk eksistensi online Anda.</p>
-                        </div>
-                        <div class="opacity-0 group-hover:opacity-100 mt-2.5 transition-all duration-300 ease-in-out shrink-0">
-                            <x-icons.arrow-rounded width="24" height="24" fill="#304D6D" strokeWidth="1" />
-                        </div>
-                    </a>
-                </div>
-                <div class="flex flex-col gap-4 bg-light-gray-100 p-4 w-full xl:max-w-116.5">
-                    <button data-analytics-name="video image | IKAT Indonesia" type="button" @click="$store.videoModal.openModal('{{ config('onlinebersama.video_id.ikat_indonesia') }}')" class="group relative rounded-2xl w-full aspect-video overflow-hidden cursor-pointer lg:max-w-117.5 xl:max-w-full 2xl:h-54.25">
-                        <span data-analytics-name="play button | IKAT Indonesia" class="transition-all duration-300 ease-in-out top-1/2 left-1/2 absolute size-14 -translate-x-1/2 -translate-y-1/2 group-hover:scale-110">
-                            <x-icons.play width="56" height="56" fill="#fff" />
-                        </span>
-                        <img class="size-full object-cover object-top" src="{{ asset('images/placeholder-video-why-com.webp') }}" alt="">
-                    </button>
-                    <p class="font-semibold paragraph-sm">Video Unggulan - IKAT Indonesia</p>
+            <div class="relative z-10 max-w-480 flex flex-col bg-white mx-auto lg:flex-row">
+                <div class="flex">
+                    <div class="flex-1 p-3 2xl:p-5">
+                        <a data-analytics-name="hover | .com for Websites" href="{{ route('websites') }}" class="group flex gap-2.75 hover:bg-mint-100 p-4 rounded-[10px] h-full transition-all duration-300 ease-in-out 2xl:p-6">
+                            <div class="space-y-2">
+                                <h3 class="text-navy-blue-300 subheadline-3 text-[26px]! leading-7.5!">.com untuk Situs Web</h3>
+                                <p class="text-deep-blue-300 paragraph-sm text-[19px]! font-medium! leading-7!">Agar lebih mudah ditemukan, mulailah menggunakan situs web .com Anda sendiri.</p>
+                            </div>
+                            <div class="opacity-0 group-hover:opacity-100 mt-2.5 transition-all duration-300 ease-in-out shrink-0">
+                                <x-icons.arrow-rounded width="24" height="24" fill="#304D6D" strokeWidth="1" />
+                            </div>
+                        </a>
+                    </div>
+                    <div class="flex-1 p-3 2xl:p-5">
+                        <a data-analytics-name="hover | .com for Email" href="{{ route('email') }}" class="group flex gap-2.75 hover:bg-mint-100 p-4 rounded-[10px] h-full transition-all duration-300 ease-in-out 2xl:p-6">
+                            <div class="space-y-2">
+                                <h3 class="text-navy-blue-300 subheadline-3 text-[26px]! leading-7.5!">.com untuk Email</h3>
+                                <p class="text-deep-blue-300 paragraph-sm text-[19px]! font-medium! leading-7!">Jadikan email sebagai pernyataan kredibilitas.</p>
+                            </div>
+                            <div class="opacity-0 group-hover:opacity-100 mt-2.5 transition-all duration-300 ease-in-out shrink-0">
+                                <x-icons.arrow-rounded width="24" height="24" fill="#304D6D" strokeWidth="1" />
+                            </div>
+                        </a>
+                    </div>
+                    <div class="flex-1 p-3 2xl:p-5">
+                        <a data-analytics-name="hover | .com for Social Media & E-Commerce" href="{{ route('social-media') }}" class="group flex gap-2.75 hover:bg-mint-100 p-4 rounded-[10px] h-full transition-all duration-300 ease-in-out 2xl:p-6">
+                            <div class="space-y-2">
+                                <h3 class="text-navy-blue-300 subheadline-3 text-[26px]! leading-7.5!">.com untuk Media Sosial dan E-Commerce</h3>
+                                <p class="text-deep-blue-300 paragraph-sm text-[19px]! font-medium! leading-7!">Dapatkan alamat web .com untuk eksistensi online Anda.</p>
+                            </div>
+                            <div class="opacity-0 group-hover:opacity-100 mt-2.5 transition-all duration-300 ease-in-out shrink-0">
+                                <x-icons.arrow-rounded width="24" height="24" fill="#304D6D" strokeWidth="1" />
+                            </div>
+                        </a>
+                    </div>
+                    <div class="flex-1 flex flex-col gap-4 bg-light-gray-100 p-3 w-full 2xl:p-5">
+                        <button data-analytics-name="video image | IKAT Indonesia" type="button" @click="$store.videoModal.openModal('{{ config('onlinebersama.video_id.ikat_indonesia') }}')" class="group relative rounded-2xl w-full aspect-video overflow-hidden cursor-pointer lg:max-w-117.5 xl:max-w-full 2xl:h-54.25">
+                            <span data-analytics-name="play button | IKAT Indonesia" class="transition-all duration-300 ease-in-out top-1/2 left-1/2 absolute size-14 -translate-x-1/2 -translate-y-1/2 group-hover:scale-110">
+                                <x-icons.play width="56" height="56" fill="#fff" />
+                            </span>
+                            <img class="size-full object-cover object-top" src="{{ asset('images/placeholder-video-why-com.webp') }}" alt="">
+                        </button>
+                        <p class="font-semibold paragraph-sm">Video Unggulan - IKAT Indonesia</p>
+                    </div>
                 </div>
             </div>
         </div>
