@@ -93,7 +93,7 @@
                         <a data-analytics-name="hover | .com for Social Media & E-Commerce" href="{{ route('social-media') }}" class="group flex gap-2.75 hover:bg-mint-100 p-4 rounded-[10px] h-full transition-all duration-300 ease-in-out 2xl:p-6">
                             <div class="space-y-2">
                                 <h3 class="text-navy-blue-300 subheadline-3 text-[26px]! leading-7.5!">.com untuk Media Sosial dan E-Commerce</h3>
-                                <p class="text-deep-blue-300 paragraph-sm text-[19px]! font-medium! leading-7!">Dapatkan alamat web .com untuk eksistensi online Anda.</p>
+                                <p class="text-deep-blue-300 paragraph-sm text-[19px]! font-medium! leading-7!">Dapatkan alamat web .com untuk kehadiran online Anda.</p>
                             </div>
                             <div class="opacity-0 group-hover:opacity-100 mt-2.5 transition-all duration-300 ease-in-out shrink-0">
                                 <x-icons.arrow-rounded width="24" height="24" fill="#304D6D" strokeWidth="1" />

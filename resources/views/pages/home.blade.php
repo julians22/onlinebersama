@@ -277,12 +277,12 @@
                 <x-displays.accordion
                     question="Mengapa saya harus memilih .com?"
                     data-analytics="Why should I chose a .com?">
-                    <p>Selama lebih dari 40 tahun, .com telah menjadi pilihan universal, tepercaya dan diakui bagi bisnis dari berbagai skala. .com merupakan simbol kepercayaan—tempat yang tepercaya dan diakui untuk membangun kehadiran online bisnis Anda.</p>
+                    <p>Selama lebih dari 40 tahun, .com telah menjadi pilihan universal, tepercaya dan diakui oleh bisnis dari berbagai skala. .com merupakan simbol kepercayaan—tempat yang tepercaya dan diakui untuk membangun kehadiran online bisnis Anda.</p>
                 </x-displays.accordion>
                 <x-displays.accordion
                     question="Apa itu nama domain?"
                     data-analytics="What is a domain name?">
-                    <p>Nama domain adalah alamat online yang unik dan dapat disesuaikan (misalnya, <button type="button" class="cursor-pointer text-magenta-300">example.com</button>). Nama domain dapat digunakan untuk mengarahkan orang langsung ke kehadiran online Anda (seperti situs web atau laman media sosial), serta digunakan sebagai alamat email khusus.</p>
+                    <p>Nama domain adalah alamat online yang unik dan dapat disesuaikan (misalnya, <button type="button" class="cursor-pointer text-magenta-300">contoh.com</button>). Nama domain dapat digunakan untuk mengarahkan orang langsung ke kehadiran online Anda (seperti situs web atau laman media sosial), serta digunakan sebagai alamat email khusus.</p>
                 </x-displays.accordion>
                 <x-displays.accordion
                     question="Apakah nama domain harus berupa nama bisnis saya?"

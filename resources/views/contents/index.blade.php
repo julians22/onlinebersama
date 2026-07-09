@@ -50,7 +50,7 @@
                 </div>
                 <div data-analytics-level3="carousel2" class="swiper-slide">
                     <x-displays.card-video title="IKAT Indonesia" image="images/placeholder-video-ikat-indonesia.webp" videoId="{{ config('onlinebersama.video_id.ikat_indonesia') }}" data-analytics="IKAT Indonesia">
-                        Dengarkan bagaimana nama domain .com yang dikenal membantu pemilik bisnis mengembangkan bisnisnya
+                        Dengarkan bagaimana nama domain .com yang dikenal membantu Didiet Maulana mengembangkan bisnisnya.
                     </x-displays.card-video>
                 </div>
                 <div data-analytics-level3="carousel3" class="swiper-slide">
@@ -65,7 +65,7 @@
                 </div>
                 <div data-analytics-level3="carousel2" class="swiper-slide">
                     <x-displays.card-video title="IKAT Indonesia" image="images/placeholder-video-ikat-indonesia.webp" videoId="{{ config('onlinebersama.video_id.ikat_indonesia') }}" data-analytics="IKAT Indonesia">
-                        Dengarkan bagaimana nama domain .com yang dikenal membantu pemilik bisnis mengembangkan bisnisnya
+                        Dengarkan bagaimana nama domain .com yang dikenal membantu Didiet Maulana mengembangkan bisnisnya.
                     </x-displays.card-video>
                 </div>
                 <div data-analytics-level3="carousel3" class="swiper-slide">
