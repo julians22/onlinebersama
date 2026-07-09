@@ -192,27 +192,24 @@
                             </div>
                         </div>
                     </div>
-                    <div class="relative rounded-[10px] overflow-hidden">
-                        <img class="w-full rounded-[10px]" src="{{ asset('images/placeholder-video-why-com.webp') }}" alt="">
-                        <div class="top-0 left-0 absolute bg-gradient-video size-full"></div>
-                        <div class="bottom-0 left-0 p-8 absolute hidden sm:block">
-                            <div class="max-w-3xl space-y-2 text-white">
-                                <h4 class="font-extrabold! text-[20px]! subheadline-3 sm:text-[28px]!">IKAT Indonesia</h4>
-                                <p class="font-semibold! paragraph-sm sm:text-[20px]! sm:leading-normal!">Dengarkan bagaimana nama domain .com yang dikenal membantu pemilik bisnis mengembangkan bisnisnya.</p>
+                    <div x-data class="group relative rounded-[10px] overflow-hidden">
+                        <div data-analytics-name="video image | IKAT Indonesia" @click="$store.videoModal.openModal('{{ config('onlinebersama.video_id.ikat_indonesia') }}')" class="cursor-pointer">
+                            <img class="w-full cursor-pointer rounded-[10px]" src="{{ asset('images/placeholder-video-why-com.webp') }}" alt="">
+                            <div class="top-0 left-0 absolute bg-gradient-video size-full"></div>
+                            <div class="bottom-0 left-0 p-8 absolute hidden sm:block">
+                                <div class="max-w-3xl space-y-2 text-white">
+                                    <h4 class="font-extrabold! text-[20px]! subheadline-3 sm:text-[28px]!">IKAT Indonesia</h4>
+                                    <p class="font-semibold! paragraph-sm sm:text-[20px]! sm:leading-normal!">Dengarkan bagaimana nama domain .com yang dikenal membantu pemilik bisnis mengembangkan bisnisnya.</p>
+                                </div>
                             </div>
                         </div>
-                        <div
-                            x-data
-                            data-analytics-name="video image | IKAT Indonesia"
-                            class="w-full h-full absolute top-0 left-0 group-hover/child:scale-110 transition-all duration-300 ease-in-out">
-                            <button
-                                data-analytics-name="play button | IKAT Indonesia"
-                                type="button"
-                                @click="$store.videoModal.openModal('{{ config('onlinebersama.video_id.ikat_indonesia') }}')"
-                                class="group/child relative size-full cursor-pointer outline-none mb-6 sm:mb-0">
-                                <x-icons.play-rounded width="78" height="78" fill="#fff" class="transition-all duration-300 ease-in-out top-1/2 left-1/2 absolute size-19.5 -translate-x-1/2 -translate-y-1/2 group-hover/child:scale-110 sm:-translate-y-[90%] lg:-translate-y-1/2" />
-                            </button>
-                        </div>
+                        <button
+                            data-analytics-name="play button | IKAT Indonesia"
+                            type="button"
+                            @click="$store.videoModal.openModal('{{ config('onlinebersama.video_id.ikat_indonesia') }}')"
+                            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer outline-none transition-all duration-300 ease-in-out mb-6 group-hover:scale-110 sm:mb-0">
+                            <x-icons.play-rounded width="78" height="78" fill="#fff" />
+                        </button>
                     </div>
                     <div class="block sm:hidden">
                         <div class="max-w-3xl space-y-2 text-white">

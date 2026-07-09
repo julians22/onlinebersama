@@ -29,16 +29,16 @@
         x-data
         data-analytics-level2="Three Tips For Choosing a .com Domain Name"
         class="flex justify-center items-center gap-6 py-10 container flex-col-reverse md:py-12.5 lg:gap-12 lg:flex-row">
-        <button
-            data-analytics-name="video animation | Three Tips For Choosing a .com Domain Name"
-            type="button"
-            @click="$store.videoModal.openModal('{{ config('onlinebersama.video_id.tiga_tips') }}')"
-            class="group relative aspect-video rounded-[10px] cursor-pointer overflow-hidden max-w-lg md:w-150">
-            <img class="size-full" src="{{ asset('images/placeholder-video-three-tips.webp') }}" alt="">
-            <span data-analytics-name="play button | Three Tips For Choosing a .com Domain Name" class="transition-all duration-150 ease-in-out top-1/2 left-1/2 absolute -translate-x-1/2 -translate-y-1/2 size-19.5 group-hover:scale-110">
-                <x-icons.play-rounded width="78" height="78" fill="#fff" />
-            </span>
-        </button>
+        <div class="group relative aspect-video rounded-[10px] cursor-pointer overflow-hidden max-w-lg md:w-150">
+            <img data-analytics-name="video animation | Three Tips For Choosing a .com Domain Name" class="size-full" src="{{ asset('images/placeholder-video-three-tips.webp') }}" @click="$store.videoModal.openModal('{{ config('onlinebersama.video_id.tiga_tips') }}')" alt="">
+            <button
+                type="button"
+                data-analytics-name="play button | Three Tips For Choosing a .com Domain Name"
+                @click="$store.videoModal.openModal('{{ config('onlinebersama.video_id.tiga_tips') }}')"
+                class="absolute cursor-pointer top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition-all duration-150 ease-in-out size-19.5 group-hover:scale-110">
+                <x-icons.play-rounded width="78" height="78" fill="#fff" class="g" />
+            </button>
+        </div>
         <h2 class="text-navy-blue-300 headline-1 text-center lg:text-left lg:max-w-125">Tiga Tip Memilih Nama Domain .com</h2>
     </section>
     {{-- End Three Tips --}}
