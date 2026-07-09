@@ -1,7 +1,7 @@
 <section class="article-outer">
     <div class="article-wrapper">
         <x-articles.intro-and-quicklinks>
-            <p>Anda mungkin pernah mendengar istilah "situs web" dan "halaman tujuan" / Landing Page digunakan secara bergantian, namun penting untuk mencatat perbedaan kunci antara keduanya. Situs web berfokus pada perusahaan Anda: apa yang Anda tawarkan, siapa Anda, serta mengapa dan bagaimana Anda menjalankan bisnis Anda. Halaman tujuan berfokus pada mendorong pengunjung untuk mengambil satu langkah kecil untuk menjadi pelanggan, seperti mengisi formulir untuk berlangganan buletin email. Hal ini disebut sebagai “call-to-action” atau CTA.</p>
+            <p>Anda mungkin pernah mendengar istilah "situs web" dan "halaman tujuan" digunakan secara bergantian, namun penting untuk mencatat perbedaan kunci antara keduanya. Situs web berfokus pada perusahaan Anda: apa yang Anda tawarkan, siapa Anda, serta mengapa dan bagaimana Anda menjalankan bisnis Anda. Halaman tujuan berfokus pada mendorong pengunjung untuk mengambil satu langkah kecil untuk menjadi pelanggan, seperti mengisi formulir untuk berlangganan buletin email. Hal ini disebut sebagai “call-to-action” atau CTA.</p>
         </x-articles.intro-and-quicklinks>
         <h3>Apa Itu Call-To-Action?</h3>
         <p>Terdapat berbagai jenis CTA yang bisa diterapkan; misalnya, CTA bisa mengarah ke formulir untuk diisi, keranjang untuk pemesanan, atau opsi untuk berkomunikasi melalui teks – pada dasarnya merupakan cara untuk berinteraksi langsung dengan bisnis tersebut.</p>

@@ -147,7 +147,7 @@
                     data-analytics="The Benefits of Landing Pages"
                     videoId="6331201181112"
                     slug="manfaat-halaman-tujuan">
-                    Halaman Tujuan atau Landing page difokuskan untuk mendorong pengunjung mengambil satu langkah kecil dalam prosesnya menjadi pelanggan, dan dapat berfungsi sebagai alat bantu pemasaran berbiaya rendah, tetapi bernilai tinggi bagi perusahaan dari berbagai skala. Temukan manfaat yang dapat ditawarkan halaman arahan untuk bisnis Anda dalam e-book kami.
+                    Halaman Tujuan difokuskan untuk mendorong pengunjung mengambil satu langkah kecil dalam prosesnya menjadi pelanggan, dan dapat berfungsi sebagai alat bantu pemasaran berbiaya rendah, tetapi bernilai tinggi bagi perusahaan dari berbagai skala. Temukan manfaat yang dapat ditawarkan halaman arahan untuk bisnis Anda dalam e-book kami.
                 </x-displays.card-accordion>
             </x-displays.accordion>
             <x-displays.accordion

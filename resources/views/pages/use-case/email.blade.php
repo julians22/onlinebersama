@@ -92,13 +92,13 @@
     <section
         data-analytics-level2="How To Setup a Custom Email Address"
         class="flex items-center gap-10 py-7.5 container flex-col md:py-12.5 xl:items-start xl:gap-30 xl:flex-row">
-        <div x-data class="-top-12 flex flex-col gap-7.5 md:gap-11.5 xl:sticky">
+        <div x-data class="-top-12 flex flex-col gap-7.5 w-full md:gap-11.5 xl:sticky">
             <h2 class="text-navy-blue-300 headline-1 text-center">Cara Menyiapkan Alamat <span class="sm:block">Email Khusus</span></h2>
-            <div class="relative rounded-[10px] overflow-hidden">
-                <img class="size-full aspect-video object-cover max-w-150 xl:max-w-full" src="{{ asset('images/usecase-email.webp') }}" alt="">
+            <div class="mx-auto">
+                <img class="size-full aspect-video object-cover max-w-140 rounded-[10px]" src="{{ asset('images/usecase-email.webp') }}" alt="">
             </div>
         </div>
-        <div class="flex flex-col gap-8 max-w-157.5 xl:-mt-12">
+        <div class="flex flex-col gap-8 w-full max-w-157.5 xl:-mt-12">
             <div class="sticky top-20 w-full h-25 bg-linear-180 from-white from-25% to-transparent -mt-18 hidden xl:block"></div>
             <div data-analytics-level3="Register a Domain Name" class="flex gap-3.25 md:px-4">
                 <div class="flex justify-center items-center border-4 border-mint-300 rounded-full size-7.5 font-extrabold text-[16px] text-navy-blue-300 shrink-0 md:text-[32px] md:font-semibold md:size-12.5">1</div>

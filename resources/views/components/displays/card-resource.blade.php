@@ -1,7 +1,7 @@
 <div x-data class="flex flex-col gap-y-4 p-4 rounded-[10px] bg-white h-full box-shadow-sm">
     <x-displays.clickable data-analytics-name="image | {{ $data->data_analytics }}" :as="$as" {{ $attributes->merge($extra_attributes) }} class="block cursor-pointer">
         <figure class="rounded-lg overflow-hidden">
-            <img class="aspect-8/5 size-full object-cover" src="{{ $data->thumbnail_file_name ? imageArticle($data->thumbnail_file_name) : '' }}" alt="{{ $alt }}">
+            <img class="aspect-video size-full object-cover" src="{{ $data->thumbnail_file_name ? imageArticle($data->thumbnail_file_name) : '' }}" alt="{{ $alt }}">
         </figure>
     </x-displays.clickable>
     <div class="flex flex-col gap-y-4">

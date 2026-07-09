@@ -89,7 +89,7 @@
                     href="{{ route('resources.handle_second_route', ['second_route' => config('onlinebersama.custom_article_route.social-media-detail'), 'slug' => 'cara-menggunakan']) }}" class="relative rounded-[10px] max-w-full overflow-hidden h-88 md:h-auto md:max-w-156">
                     <img data-analytics-name="image | Reach more people by connecting your social page to a custom .com web address." class="size-full object-cover aspect-video" src="{{ asset('images/uc-social-media-ecommerce.webp') }}" alt="">
                     <div class="top-0 left-0 absolute flex flex-col justify-end gap-4 bg-linear-360 from-black/60 to-transparent p-4 size-full text-white md:p-6">
-                        <p class="leading-8.5! paragraph-md text-[20px]!">Jangkau lebih banyak orang dengan menghubungkan halaman media sosial Anda ke alamat web .com khusus.</p>
+                        <p class="leading-6.5! paragraph-md text-[18px]!">Jangkau lebih banyak orang dengan menghubungkan halaman media sosial Anda ke alamat web .com khusus.</p>
                         <p data-analytics-name="text | Read More" class="flex items-center w-max font-sans font-bold text-[20px] decoration-[8%] underline underline-offset-[12%] tracking-[0.25px]">
                             Baca Selengkapnya
                             <x-icons.arrow-rounded width="24" height="24" fill="#fff" class="size-4.5 ml-1" strokeWidth="1" />
@@ -100,7 +100,7 @@
                     href="{{ route('resources.handle_second_route', ['second_route' => config('onlinebersama.custom_article_route.social-media-detail'), 'slug' => 'cara-menggunakan']) }}" class="relative rounded-[10px] max-w-full overflow-hidden h-88 md:h-auto md:max-w-156">
                     <img class="size-full object-cover aspect-video" src="{{ asset('images/uc-email.webp') }}" alt="">
                     <div class="top-0 left-0 absolute flex flex-col justify-end gap-4 bg-linear-360 from-black/60 to-transparent p-4 size-full text-white md:p-6">
-                        <p class="leading-8.5! paragraph-md text-[20px]!">Hubungkan toko Anda di platform apa pun dengan nama domain .com khusus</p>
+                        <p class="leading-6.5! paragraph-md text-[18px]!">Hubungkan toko Anda di platform apa pun dengan nama domain .com khusus</p>
                         <p data-analytics-name="text | Read More" class="flex items-center w-max font-sans font-bold text-[20px] decoration-[8%] underline underline-offset-[12%] tracking-[0.25px]">
                             Baca Selengkapnya
                             <x-icons.arrow-rounded width="24" height="24" fill="#fff" class="size-4.5 ml-1" strokeWidth="1" />
@@ -116,13 +116,13 @@
     <section
         data-analytics-level2="How to Forward Your Domain Name"
         class="flex items-center gap-10 py-7.5 container flex-col md:py-12.5 xl:items-start xl:gap-30 xl:flex-row">
-        <div x-data class="-top-12 flex flex-col gap-7.5 md:gap-11.5 xl:sticky">
+        <div x-data class="-top-12 flex flex-col gap-7.5 w-full md:gap-11.5 xl:sticky">
             <h2 class="text-navy-blue-300 headline-1 text-center">Cara Meneruskan Nama <span class="sm:block">Domain Anda</span></h2>
-            <div class="relative rounded-[10px] overflow-hidden">
-                <img class="size-full aspect-video object-cover max-w-150 xl:max-w-full" src="{{ asset('images/usecase-social-media.webp') }}" alt="">
+            <div class="mx-auto">
+                <img class="size-full aspect-video object-cover max-w-140 rounded-[10px]" src="{{ asset('images/usecase-social-media.webp') }}" alt="">
             </div>
         </div>
-        <div class="flex flex-col gap-8 max-w-157.5 xl:-mt-12">
+        <div class="flex flex-col gap-8 w-full max-w-157.5 xl:-mt-12">
             <div class="sticky top-20 w-full h-25 bg-linear-180 from-white from-25% to-transparent -mt-18 hidden xl:block"></div>
             <div data-analytics-level3="Register a Domain Name" class="flex gap-3.25 md:px-4">
                 <div class="flex justify-center items-center border-4 border-mint-300 rounded-full size-7.5 font-extrabold text-[16px] text-navy-blue-300 shrink-0 md:text-[32px] md:font-semibold md:size-12.5">1</div>
