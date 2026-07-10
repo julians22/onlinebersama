@@ -101,12 +101,12 @@
                         </a>
                     </div>
                     <div class="flex-1 flex flex-col gap-4 bg-light-gray-100 p-3 w-full 2xl:p-5">
-                        <button data-analytics-name="video image | IKAT Indonesia" type="button" @click="$store.videoModal.openModal('{{ config('onlinebersama.video_id.ikat_indonesia') }}')" class="group relative rounded-2xl w-full aspect-video overflow-hidden cursor-pointer lg:max-w-117.5 xl:max-w-full 2xl:h-54.25">
-                            <span data-analytics-name="play button | IKAT Indonesia" class="transition-all duration-300 ease-in-out top-1/2 left-1/2 absolute size-14 -translate-x-1/2 -translate-y-1/2 group-hover:scale-110">
+                        <div class="group relative rounded-2xl w-full aspect-video overflow-hidden cursor-pointer lg:max-w-117.5 xl:max-w-full 2xl:h-54.25" @click="$store.videoModal.openModal('{{ config('onlinebersama.video_id.ikat_indonesia') }}')">
+                            <img data-analytics-name="video image | IKAT Indonesia" class="size-full object-cover object-top" src="{{ asset('images/placeholder-video-why-com.webp') }}"  alt="">
+                            <button type="button" data-analytics-name="play button | IKAT Indonesia" class="transition-all duration-300 ease-in-out cursor-pointer top-1/2 left-1/2 absolute size-14 -translate-x-1/2 -translate-y-1/2 group-hover:scale-110">
                                 <x-icons.play width="56" height="56" fill="#fff" />
-                            </span>
-                            <img class="size-full object-cover object-top" src="{{ asset('images/placeholder-video-why-com.webp') }}" alt="">
-                        </button>
+                            </button>
+                        </div>
                         <p class="font-semibold paragraph-sm">Video Unggulan - IKAT Indonesia</p>
                     </div>
                 </div>
@@ -187,23 +187,16 @@
                         <x-icons.arrow-rounded width="24" height="24" fill="#1C1B1F" class="group-hover:opacity-100" />
                     </a>
                 </div>
-                <div
-                    data-analytics-name="video image | IKAT Indonesia"
-                    class="border-t-2 border-light-gray-300 flex flex-col gap-4 w-full px-3 py-3 sm:px-6">
-                    <button
-                        type="button"
-                        @click="$store.videoModal.openModal('{{ config('onlinebersama.video_id.ikat_indonesia') }}')"
-                        class="group relative rounded-2xl w-full aspect-video overflow-hidden cursor-pointer min-[500px]:max-w-97.5 min-[500px]:h-54.25">
-                        <div
-                            data-analytics-name="play button | IKAT Indonesia"
+                <div class="border-t-2 border-light-gray-300 flex flex-col gap-4 w-full px-3 py-3 sm:px-6">
+                    <div class="group relative rounded-2xl w-full aspect-video overflow-hidden cursor-pointer min-[500px]:max-w-97.5 min-[500px]:h-54.25" @click="$store.videoModal.openModal('{{ config('onlinebersama.video_id.ikat_indonesia') }}')">
+                        <img data-analytics-name="video image | IKAT Indonesia" class="size-full object-cover object-top" src="{{ asset('images/placeholder-video-why-com.webp') }}" alt="">
+                        <button
                             type="button"
-                            class="transition-all duration-300 ease-in-out top-1/2 left-1/2 absolute -translate-x-1/2 -translate-y-1/2 group-hover:scale-110">
-                            <x-icons.play width="56" height="56" fill="#fff" />
-                        </div>
-                        <img
-                            data-analytics-name="video image | IKAT Indonesia"
-                            class="size-full object-cover object-top" src="{{ asset('images/placeholder-video-why-com.webp') }}" alt="">
-                    </button>
+                            data-analytics-name="play button | IKAT Indonesia"
+                            class="transition-all duration-300 ease-in-out cursor-pointer top-1/2 left-1/2 absolute -translate-x-1/2 -translate-y-1/2 group-hover:scale-110">
+                                <x-icons.play width="56" height="56" fill="#fff" />
+                        </button>
+                    </div>
                     <p class="font-sans font-semibold text-[20px]">Video Unggulan - IKAT Indonesia</p>
                 </div>
             </div>

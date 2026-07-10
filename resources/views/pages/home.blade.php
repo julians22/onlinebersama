@@ -125,17 +125,13 @@
                 <div class="swiper-pagination"></div>
             </div>
         </div>
-        <div x-data data-analytics-level2="Not Just a Domain. A Declaration." class="relative">
-            <img data-analytics-name="video image | Not Just a Domain. A Declaration." class="mx-auto hidden lg:block" src="{{ asset('images/placeholder-video-how.webp') }}" alt="">
-            <img data-analytics-name="video image | Not Just a Domain. A Declaration." class="w-full mx-auto block object-cover sm:h-200 sm:object-bottom md:h-210 min-[900px]:h-230! lg:hidden" src="{{ asset('images/placeholder-video-how-mobile.webp') }}" alt="">
-            <button type="button" @click="$store.videoModal.openModal('{{ config('onlinebersama.video_id.bukan_sekadar_domain') }}')" data-analytics-name="video image | Not Just a Domain. A Declaration." class="group absolute top-0 left-0 size-full transition-all duration-300 ease-in-out cursor-pointer z-10">
-                <span
-                    data-analytics-name="play button | Not Just a Domain. A Declaration."
-                    class="top-2/3 left-1/2 z-10 absolute -translate-x-1/2 -translate-y-1/2 cursor-pointer transition-all duration-300 ease-in-out hover:scale-110 min-[900px]:top-[60%] lg:top-[55%] group-hover:scale-110">
-                    <x-icons.large-play-rounded width="130" height="130" fill="#304D6D" stroke="#304D6D" strokeWidth="4" class="size-10 min-[400px]:size-16 lg:size-20 2xl:size-32.5" />
-                </span>
+        <div x-data data-analytics-level2="Not Just a Domain. A Declaration." class="group relative cursor-pointer" @click="$store.videoModal.openModal('{{ config('onlinebersama.video_id.bukan_sekadar_domain') }}')">
+            <img class="mx-auto hidden lg:block" src="{{ asset('images/placeholder-video-how.webp') }}" alt="">
+            <img class="w-full mx-auto block object-cover sm:h-200 sm:object-bottom md:h-210 min-[900px]:h-230! lg:hidden" src="{{ asset('images/placeholder-video-how-mobile.webp') }}" alt="">
+            <button type="button" data-analytics-name="play button | Not Just a Domain. A Declaration." class="absolute top-2/3 left-1/2 z-10 -translate-x-1/2 -translate-y-1/2 transition-all duration-300 ease-in-out cursor-pointer hover:scale-110 min-[900px]:top-[60%] lg:top-[55%] group-hover:scale-110">
+                <x-icons.large-play-rounded width="130" height="130" fill="#304D6D" stroke="#304D6D" strokeWidth="4" class="size-10 min-[400px]:size-16 lg:size-20 2xl:size-32.5" />
             </button>
-            <div class="top-0 left-1/2 -translate-x-1/2 absolute flex justify-center size-full max-w-480 pt-7.5 md:pt-11.75 lg:justify-start lg:px-24 lg:py-32 xl:py-38 xl:px-30 2xl:py-50 2xl:px-42">
+            <div data-analytics-name="video image | Not Just a Domain. A Declaration." class="top-0 left-1/2 -translate-x-1/2 absolute flex justify-center size-full max-w-480 pt-7.5 md:pt-11.75 lg:justify-start lg:px-24 lg:py-32 xl:py-38 xl:px-30 2xl:py-50 2xl:px-42">
                 <div class="space-y-3.5 text-center max-w-85 mx-auto sm:max-w-xl lg:text-left lg:max-w-full lg:mx-0">
                     <h2 class="headline-1 text-navy-blue-300 text-[28px]! leading-8.5! sm:leading-13! sm:text-[40px]! lg:max-w-xl lg:mx-0 lg:text-[52px]! lg:leading-16! xl:text-[50px]! xl:leading-13.75!">
                         Bukan Sekadar Domain. Ini Suatu <span class="inline lg:block min-[1120px]:inline!">Pernyataan.</span>
@@ -192,8 +188,8 @@
                             </div>
                         </div>
                     </div>
-                    <div x-data class="group relative rounded-[10px] overflow-hidden">
-                        <div data-analytics-name="video image | IKAT Indonesia" @click="$store.videoModal.openModal('{{ config('onlinebersama.video_id.ikat_indonesia') }}')" class="cursor-pointer">
+                    <div x-data class="group relative rounded-[10px] overflow-hidden" @click="$store.videoModal.openModal('{{ config('onlinebersama.video_id.ikat_indonesia') }}')">
+                        <div data-analytics-name="video image | IKAT Indonesia" class="cursor-pointer">
                             <img class="w-full cursor-pointer rounded-[10px]" src="{{ asset('images/placeholder-video-why-com.webp') }}" alt="">
                             <div class="top-0 left-0 absolute bg-gradient-video size-full"></div>
                             <div class="bottom-0 left-0 p-8 absolute hidden sm:block">
@@ -206,7 +202,6 @@
                         <button
                             data-analytics-name="play button | IKAT Indonesia"
                             type="button"
-                            @click="$store.videoModal.openModal('{{ config('onlinebersama.video_id.ikat_indonesia') }}')"
                             class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer outline-none transition-all duration-300 ease-in-out mb-6 group-hover:scale-110 sm:mb-0">
                             <x-icons.play-rounded width="78" height="78" fill="#fff" />
                         </button>

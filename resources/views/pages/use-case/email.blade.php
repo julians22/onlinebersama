@@ -17,13 +17,13 @@
                 <h1 class="text-navy-blue-300 headline-1">.com untuk Email</h1>
                 <p class="text-deep-blue-300 paragraph-md">Jadikan email sebagai pernyataan kredibilitas. Dengan alamat email .com khusus, email bisnis Anda dapat terlihat lebih profesional.</p>
             </div>
-            <button data-analytics-name="video image | Email Use Case" type="button" @click="$store.videoModal.openModal('{{ config('onlinebersama.video_id.email') }}')" class="group relative rounded-[10px] overflow-hidden shrink-0 cursor-pointer box-shadow-sm">
-                <div class="top-0 left-0 absolute bg-gradient-video size-full"></div>
-                <span data-analytics-name="play button | Email Use Case" class="transition-all duration-300 ease-in-out top-1/2 left-1/2 absolute -translate-x-1/2 -translate-y-1/2 group-hover:scale-110">
-                    <x-icons.play-rounded width="78" height="78" fill="#fff" />
-                </span>
+            <div class="group relative rounded-[10px] overflow-hidden shrink-0 cursor-pointer box-shadow-sm" @click="$store.videoModal.openModal('{{ config('onlinebersama.video_id.email') }}')">
                 <img class="w-156 object-cover aspect-video lg:w-125 xl:w-156" src="{{ asset('images/uc-email.webp') }}" alt="">
-            </button>
+                <div data-analytics-name="video image | Email Use Case" class="top-0 left-0 absolute bg-gradient-video size-full"></div>
+                <button type="button" data-analytics-name="play button | Email Use Case" class="transition-all duration-300 ease-in-out cursor-pointer top-1/2 left-1/2 absolute -translate-x-1/2 -translate-y-1/2 group-hover:scale-110">
+                    <x-icons.play-rounded width="78" height="78" fill="#fff" />
+                </button>
+            </div>
         </div>
     </section>
     {{-- End Hero --}}
@@ -74,12 +74,12 @@
         data-analytics-level2="Three Ways To Use A Custom Email Address"
         class="bg-gradient-blue-double relative z-10">
         <div x-data class="flex justify-center items-center gap-10 px-10 py-7.5 flex-col container md:px-8 md:gap-12 md:py-12.5 xl:flex-row">
-            <button data-analytics-name="video animation | Three Ways to Use a Custom Email Address" type="button" @click="$store.videoModal.openModal('{{ config('onlinebersama.video_id.tiga_cara') }}')" class="group relative rounded-[10px] overflow-hidden shrink-0 cursor-pointer">
-                <img class="size-full object-cover aspect-video max-w-155.5" src="{{ asset('images/placeholder-video-three-ways.webp') }}" alt="">
-                <span data-analytics-name="play button | Three Ways to Use a Custom Email Address" class="transition-all duration-300 ease-in-out top-1/2 left-1/2 absolute -translate-x-1/2 -translate-y-1/2 group-hover:scale-110">
+            <div class="group relative rounded-[10px] overflow-hidden shrink-0 cursor-pointer" @click="$store.videoModal.openModal('{{ config('onlinebersama.video_id.tiga_cara') }}')">
+                <img data-analytics-name="video animation | Three Ways to Use a Custom Email Address" class="size-full object-cover aspect-video max-w-155.5" src="{{ asset('images/placeholder-video-three-ways.webp') }}" alt="">
+                <button type="button" data-analytics-name="play button | Three Ways to Use a Custom Email Address" class="transition-all duration-300 ease-in-out cursor-pointer top-1/2 left-1/2 absolute -translate-x-1/2 -translate-y-1/2 group-hover:scale-110">
                     <x-icons.play-rounded width="78" height="78" fill="#fff" />
-                </span>
-            </button>
+                </button>
+            </div>
             <div class="space-y-6 max-w-150 text-white md:p-6">
                 <h2 class="headline-1">Tiga Cara Menggunakan Alamat Email Khusus</h2>
                 <p class="paragraph-md md:text-[20px]! md:leading-8!">Siap membawa komunikasi Anda ke level selanjutnya? Cari tahu cara menggunakan alamat email khusus untuk mendukung bisnis Anda dalam video ini.</p>

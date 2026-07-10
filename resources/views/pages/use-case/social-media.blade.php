@@ -17,13 +17,13 @@
                 <h1 class="text-navy-blue-300 headline-1">.com untuk <span class="xl:block">Media Sosial dan</span> E-Commerce</h1>
                 <p class="text-deep-blue-300 paragraph-md">Dengan penerusan domain, Anda dapat membuat tautan ke toko online atau halaman media sosial dengan nama domain .com yang mudah diingat.</p>
             </div>
-            <button data-analytics-name="video image | Domain Forwarding Use Case" type="button" @click="$store.videoModal.openModal('{{ config('onlinebersama.video_id.social_media') }}')" class="group relative rounded-[10px] overflow-hidden shrink-0 cursor-pointer box-shadow-sm">
-                <div class="top-0 left-0 absolute bg-gradient-video size-full"></div>
-                <span data-analytics-name="play button | Domain Forwarding Use Case" class="transition-all duration-300 ease-in-out top-1/2 left-1/2 absolute -translate-x-1/2 -translate-y-1/2 group-hover:scale-110">
-                    <x-icons.play-rounded width="78" height="78" fill="#fff" />
-                </span>
+            <div class="group relative rounded-[10px] overflow-hidden shrink-0 cursor-pointer box-shadow-sm" @click="$store.videoModal.openModal('{{ config('onlinebersama.video_id.social_media') }}')">
                 <img class="w-156 object-cover aspect-video lg:w-125 xl:w-156" src="{{ asset('images/uc-social-media-ecommerce.webp') }}" alt="">
-            </button>
+                <div data-analytics-name="video image | Domain Forwarding Use Case" class="top-0 left-0 absolute bg-gradient-video size-full"></div>
+                <button type="button" data-analytics-name="play button | Domain Forwarding Use Case" class="transition-all duration-300 ease-in-out cursor-pointer top-1/2 left-1/2 absolute -translate-x-1/2 -translate-y-1/2 group-hover:scale-110">
+                    <x-icons.play-rounded width="78" height="78" fill="#fff" />
+                </button>
+            </div>
         </div>
     </section>
     {{-- End Hero --}}

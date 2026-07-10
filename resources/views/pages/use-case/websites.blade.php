@@ -17,13 +17,13 @@
                 <h1 class="text-navy-blue-300 headline-1">.com untuk Situs Web</h1>
                 <p class="text-deep-blue-300 paragraph-md">Situs web dengan nama domain .com adalah fondasi yang dapat diandalkan pelanggan Anda untuk menemukan dan berinteraksi secara online seiring perkembangan bisnis Anda.</p>
             </div>
-            <button data-analytics-name="video image | Website Use Case" type="button" @click="$store.videoModal.openModal('{{ config('onlinebersama.video_id.website') }}')" class="group relative rounded-[10px] overflow-hidden shrink-0 cursor-pointer box-shadow-sm">
-                <div class="top-0 left-0 absolute bg-gradient-video size-full"></div>
-                <span data-analytics-name="play button | Website Use Case" class="transition-all duration-300 ease-in-out top-1/2 left-1/2 absolute -translate-x-1/2 -translate-y-1/2 group-hover:scale-110">
-                    <x-icons.play-rounded width="78" height="78" fill="#fff" />
-                </span>
+            <div class="group relative rounded-[10px] overflow-hidden shrink-0 cursor-pointer box-shadow-sm" @click="$store.videoModal.openModal('{{ config('onlinebersama.video_id.website') }}')">
                 <img class="w-156 object-cover aspect-video lg:w-125 xl:w-156" src="{{ asset('images/uc-websites.webp') }}" alt="">
-            </button>
+                <div data-analytics-name="video image | Website Use Case" class="top-0 left-0 absolute bg-gradient-video size-full"></div>
+                <button type="button" data-analytics-name="play button | Website Use Case" class="transition-all duration-300 ease-in-out cursor-pointer top-1/2 left-1/2 absolute -translate-x-1/2 -translate-y-1/2 group-hover:scale-110">
+                    <x-icons.play-rounded width="78" height="78" fill="#fff" />
+                </button>
+            </div>
         </div>
     </section>
     {{-- End Hero --}}
