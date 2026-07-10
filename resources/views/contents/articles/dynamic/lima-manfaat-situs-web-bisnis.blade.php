@@ -139,6 +139,13 @@
             </x-slot:title>
             <p>Siap membangun situs web bisnis Anda sendiri? Artikel kami tentang <a data-analytics-name="text | How To Choose a Website Builder" href="{{ route('resources.handle_second_route', ['second_route' => config('onlinebersama.custom_article_route.websites-detail'), 'slug' => 'pembuat-situs-web']) }}" class="link-to">cara memilih pembuat situs web yang tepat</a> untuk bisnis Anda dan <a data-analytics-name="text | Checklist: Building a Website" href="{{ route('resources.handle_second_route', ['second_route' => config('onlinebersama.custom_article_route.websites-detail'), 'slug' => 'membuat-situs-web']) }}" class="link-to">daftar periksa pembuatan situs web</a> dapat membantu Anda memulai.</p>
         </x-articles.tip-callout>
-        <x-articles.related-article :data="$post->relatedOneArticle" class="pt-4" />
+        @if($post->ebook_url)
+            <div class="flex flex-col gap-8 mt-8">
+                <x-articles.e-book :data="$post->ebook_url" />
+                <x-articles.related-article :data="$post->relatedOneArticle" />
+            </div>
+        @else
+            <x-articles.related-article :data="$post->relatedOneArticle" class="pt-4" />
+        @endif
     </div>
 </section>

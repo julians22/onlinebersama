@@ -8,6 +8,8 @@
             <a
                 data-analytics-name="text | Download"
                 href="{{ $data ?? '#' }}"
+                target="_blank"
+                rel="noopener"
                 class="flex items-center font-sans text-xl font-bold text-magenta-300 leading-6 wrap-break-word">
                 Unduh Buku Digital dan Daftar Periksa
                 <x-icons.arrow-rounded width="24" height="24" fill="#A7127E" class="size-4.5 ml-1 shrink-0" strokeWidth="1" />

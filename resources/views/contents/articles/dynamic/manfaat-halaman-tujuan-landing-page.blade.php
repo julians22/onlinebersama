@@ -38,9 +38,13 @@
             </x-slot:title>
             <p>Halaman tujuan dapat memberikan berbagai manfaat bagi perusahaan Anda, jadi pastikan Anda membuat halaman tujuan yang paling sesuai untuk Anda dan bisnis Anda.</p>
         </x-articles.tip-callout>
-        <div class="flex flex-col gap-8 mt-8">
-            <x-articles.e-book :data="$post->ebook_url" />
-            <x-articles.related-article :data="$post->relatedOneArticle" />
-        </div>
+        @if($post->ebook_url)
+            <div class="flex flex-col gap-8 mt-8">
+                <x-articles.e-book :data="$post->ebook_url" />
+                <x-articles.related-article :data="$post->relatedOneArticle" />
+            </div>
+        @else
+            <x-articles.related-article :data="$post->relatedOneArticle" class="pt-4" />
+        @endif
     </div>
 </section>

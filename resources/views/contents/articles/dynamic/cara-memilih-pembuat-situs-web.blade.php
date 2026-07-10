@@ -171,6 +171,13 @@
             </x-slot:title>
             <p>Setelah Anda memilih pembuat situs web terbaik untuk bisnis dan membangun situs web, Anda dapat mulai mempromosikan situs sehingga orang dapat menemukan Anda. <a data-analytics-name="text | Ten Ways To Market a Business With a .com Domain Name" href="{{ route('resources.handle_second_route', ['second_route' => config('onlinebersama.custom_article_route.default'), 'slug' => 'sepuluh-cara-pasarkan-nama-domain']) }}" class="link-to">Panduan</a> kami tentang cara memasarkan bisnis Anda dengan nama domain .com dapat membantu Anda memulai.</p>
         </x-articles.tip-callout>
-        <x-articles.related-article :data="$post->relatedOneArticle" class="pt-4" />
+        @if($post->ebook_url)
+            <div class="flex flex-col gap-8 mt-8">
+                <x-articles.e-book :data="$post->ebook_url" />
+                <x-articles.related-article :data="$post->relatedOneArticle" />
+            </div>
+        @else
+            <x-articles.related-article :data="$post->relatedOneArticle" class="pt-4" />
+        @endif
     </div>
 </section>

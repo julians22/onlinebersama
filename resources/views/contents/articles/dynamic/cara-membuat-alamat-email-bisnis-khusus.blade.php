@@ -86,6 +86,13 @@
             </x-slot:title>
             <p>Dengan alamat email .com khusus, Anda dapat menciptakan kesan yang kuat dan tahan lama serta membangun kepercayaan dengan pelanggan.</p>
         </x-articles.tip-callout>
-        <x-articles.related-article :data="$post->relatedOneArticle" class="pt-4" />
+        @if($post->ebook_url)
+            <div class="flex flex-col gap-8 mt-8">
+                <x-articles.e-book :data="$post->ebook_url" />
+                <x-articles.related-article :data="$post->relatedOneArticle" />
+            </div>
+        @else
+            <x-articles.related-article :data="$post->relatedOneArticle" class="pt-4" />
+        @endif
     </div>
 </section>

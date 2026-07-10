@@ -195,7 +195,7 @@
                             <div class="bottom-0 left-0 p-8 absolute hidden sm:block">
                                 <div class="max-w-3xl space-y-2 text-white">
                                     <h4 class="font-extrabold! text-[20px]! subheadline-3 sm:text-[28px]!">IKAT Indonesia</h4>
-                                    <p class="font-semibold! paragraph-sm sm:text-[20px]! sm:leading-normal!">Dengarkan bagaimana nama domain .com yang dikenal membantu pemilik bisnis mengembangkan bisnisnya.</p>
+                                    <p class="font-semibold! paragraph-sm sm:text-[20px]! sm:leading-normal!">Dengarkan bagaimana nama domain .com yang dikenal membantu Didiet Maulana mengembangkan bisnisnya.</p>
                                 </div>
                             </div>
                         </div>
@@ -209,7 +209,7 @@
                     <div class="block sm:hidden">
                         <div class="max-w-3xl space-y-2 text-white">
                             <h4 class="text-[20px]! subheadline-3 sm:text-[28px]!">IKAT Indonesia</h4>
-                            <p class="paragraph-sm sm:text-[20px]! sm:leading-normal!">Dengarkan bagaimana nama domain .com yang dikenal membantu pemilik bisnis mengembangkan bisnisnya.</p>
+                            <p class="paragraph-sm sm:text-[20px]! sm:leading-normal!">Dengarkan bagaimana nama domain .com yang dikenal membantu Didiet Maulana mengembangkan bisnisnya.</p>
                         </div>
                     </div>
                 </div>

@@ -49,8 +49,9 @@ class CardResource extends Component
                 $this->as = 'a';
                 $this->text_button = 'Download';
                 $this->data_analytics_button = 'Download';
-                $this->extra_attributes['href'] = $this->data->ebook_url ? route('download-ebook', ['ebookUrl' => $this->data->ebook_url]) : route('download-ebook');
-                $this->extra_attributes['download'] = '';
+                $this->extra_attributes['href'] = $this->data->ebook_url;
+                $this->extra_attributes['target'] = '_blank';
+                $this->extra_attributes['rel'] = 'noopener';
                 break;
         }
     }

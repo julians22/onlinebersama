@@ -34,6 +34,13 @@
             <p>Siap mempelajari cara meneruskan nama domain? <a data-analytics-name="text | What Is Domain Name Forwarding?" href="{{ route('resources.handle_second_route', ['second_route' => config('onlinebersama.custom_article_route.social-media-detail'), 'slug' => 'pelajari-selengkapnya']) }}" class="link-to">Artikel</a> kami menjelaskan berbagai metode penerusan nama domain, atau Anda dapat melihat video langkah demi langkah tentang cara meneruskan nama domain.</p>
         </x-articles.tip-callout>
         <p class="font-semibold text-[14px] leading-5"><sup>1</sup>Studi Preferensi Konsumen Online Verisign, 2025.</p>
-        <x-articles.related-article :data="$post->relatedOneArticle" class="pt-4" />
+        @if($post->ebook_url)
+            <div class="flex flex-col gap-8 mt-8">
+                <x-articles.e-book :data="$post->ebook_url" />
+                <x-articles.related-article :data="$post->relatedOneArticle" />
+            </div>
+        @else
+            <x-articles.related-article :data="$post->relatedOneArticle" class="pt-4" />
+        @endif
     </div>
 </section>

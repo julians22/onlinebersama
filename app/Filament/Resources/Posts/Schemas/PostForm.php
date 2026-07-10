@@ -123,7 +123,7 @@ class PostForm
                                         TextInput::make('video_id')
                                             ->label('Video ID')
                                             ->required(fn (Get $get): bool => $get('type') === Post::TYPE_VIDEO)
-                                            ->hidden(fn (Get $get): bool => $get('type') !== Post::TYPE_VIDEO && $get('type') !== Post::TYPE_ARTICLE)
+                                            ->hidden(fn (Get $get): bool => $get('type') === Post::TYPE_ARTICLE || $get('type') !== Post::TYPE_VIDEO)
                                             ->prefixIcon('heroicon-o-video-camera'),
                                         TextInput::make('ebook_url')
                                             ->label('E-Book URL')

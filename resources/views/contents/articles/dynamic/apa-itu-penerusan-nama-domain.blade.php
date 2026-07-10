@@ -140,6 +140,13 @@
             <p>Anda kini siap mengembangkan kehadiran online Anda dengan bantuan nama domain .com.</p>
         </x-articles.tip-callout>
         <p class="text-[14px] leading-5 font-semibold"><sup>1</sup> Studi Preferensi Konsumen Online Verisign, 2025.</p>
-        <x-articles.related-article :data="$post->relatedOneArticle" />
+        @if($post->ebook_url)
+            <div class="flex flex-col gap-8 mt-8">
+                <x-articles.e-book :data="$post->ebook_url" />
+                <x-articles.related-article :data="$post->relatedOneArticle" />
+            </div>
+        @else
+            <x-articles.related-article :data="$post->relatedOneArticle" class="pt-4" />
+        @endif
     </div>
 </section>
