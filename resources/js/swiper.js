@@ -9,10 +9,11 @@ const smallBusinessStory = new Swiper(`.${prefix}small-business-story`, {
     effect: 'coverflow',
     centeredSlides: true,
     initialSlide: 1,
-    slidesPerView: 1.08,
     slideToClickedSlide: true,
+    slidesPerView: 1.08,
     loop: true,
     spaceBetween: 140,
+    grabCursor: true,
     coverflowEffect: {
         rotate: 0,
         depth: 300,
@@ -39,12 +40,15 @@ const smallBusinessStory = new Swiper(`.${prefix}small-business-story`, {
             slidesPerView: 1.75,
         },
         1280: {
+            slidesPerView: 2.05,
+        },
+        1560: {
             slidesPerView: 2,
             spaceBetween: -70,
             coverflowEffect: {
                 depth: 450,
             },
-        }
+        },
     }
 });
 
