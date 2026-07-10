@@ -2,6 +2,12 @@ import { animate, scroll } from 'motion';
 import './bootstrap';
 import './swiper';
 
+import { articleEvent, registrationIntent, searchDomain } from './custom-events';
+
+window.articleEvent = articleEvent;
+window.registrationIntent = registrationIntent;
+window.searchDomain = searchDomain;
+
 // Video Modal
 document.addEventListener('alpine:init', () => {
     Alpine.store('videoModal', {
@@ -23,6 +29,8 @@ document.addEventListener('alpine:init', () => {
                 this.loadVideo();
                 this.loaded = true;
             }
+
+            articleEvent();
         },
         closeModal() {
             this.open = false;

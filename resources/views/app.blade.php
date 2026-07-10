@@ -136,6 +136,7 @@
         document.addEventListener('name-studio.verisign', function (evt) {
 
             const { target: $ns, detail: { type, data }} = evt;
+            const actionType = data['action-type'];
 
             const eventString = type + ":" + data["action-type"] + ":" + data["event-type"];
 
@@ -150,7 +151,27 @@
 
             adobeDataLayer.push(eventMessage);
 
+            if (actionType == 'submit') {
+                const posts = JSON.stringify(data.query);
+                console.log('Search');
+                searchDomain();
+            }
+
+            if (actionType == 'action-performed') {
+                console.log('registrationIntent');
+                registrationIntent();
+            }
+
         });
+
+    </script>
+
+    <!-- Debug -->
+    <script type="text/javascript">
+
+        window.addEventListener('load', () => {
+            console.log(window)
+        })
 
     </script>
 
