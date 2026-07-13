@@ -1,11 +1,14 @@
 <div class="card-video">
-    <div x-data class="group relative">
+    <div x-data class="relative">
         <img src="{{ asset($image) }}" alt="{{ $alt }}">
-        <div class="overlay-slide desktop">
+        <div class="group overlay-slide desktop">
             <h4 class="subheadline-4">{{ $title }}</h4>
             <p class="paragraph-sm">{{ $slot }}</p>
+            <button data-analytics-name="play button | {{ $dataAnalytics }}" type="button" @click="$store.videoModal.openModal('{{ $videoId }}')" class="hidden min-[900px]:block">
+                <x-icons.play-rounded width="78" height="78" fill="#fff" class="group-hover:scale-110 transition-all duration-300 ease-in-out" />
+            </button>
         </div>
-        <button data-analytics-name="play button | {{ $dataAnalytics }}" type="button" @click="$store.videoModal.openModal('{{ $videoId }}')">
+        <button data-analytics-name="play button | {{ $dataAnalytics }}" type="button" @click="$store.videoModal.openModal('{{ $videoId }}')" class="block min-[900px]:hidden">
             <x-icons.play-rounded width="78" height="78" fill="#fff" class="group-hover:scale-110 transition-all duration-300 ease-in-out" />
         </button>
     </div>
