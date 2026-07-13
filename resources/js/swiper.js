@@ -9,7 +9,7 @@ const smallBusinessStory = new Swiper(`.${prefix}small-business-story`, {
     effect: 'coverflow',
     centeredSlides: true,
     initialSlide: 1,
-    slideToClickedSlide: true,
+    // slideToClickedSlide: true,
     slidesPerView: 1.08,
     loop: true,
     spaceBetween: 140,
