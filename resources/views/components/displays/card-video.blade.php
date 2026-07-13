@@ -1,6 +1,6 @@
 <div class="card-video">
     <div x-data class="relative">
-        <img src="{{ asset($image) }}" alt="{{ $alt }}">
+        <img data-analytics-name="video image | {{ $dataAnalytics }}" src="{{ asset($image) }}" alt="{{ $alt }}">
         <div class="group overlay-slide desktop">
             <h4 class="subheadline-4">{{ $title }}</h4>
             <p class="paragraph-sm">{{ $slot }}</p>
