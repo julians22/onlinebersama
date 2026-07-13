@@ -53,7 +53,7 @@ class ResourcesList extends Component
     {
         if (empty($this->selectedTopic)) {
             $posts = $this->queryPost()
-                ->orderBy('type', 'desc')
+                ->orderBy('title', 'desc')
                 ->paginate($this->paginate);
         } else {
             $posts = $this->queryPost()
