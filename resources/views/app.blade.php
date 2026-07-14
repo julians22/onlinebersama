@@ -86,7 +86,7 @@
         <!-- NameStudio end-->
 
         <!-- ADOBE SCRIPT -->
-        <script type="text/plain" class="optanon-category-C0001" src="//assets.adobedtm.com/1d6e8340b68d/b0c6093737cf/launchf517a559ca8c.min.js" defer></script>
+        <script type="text/plain" class="optanon-category-C0001" src="//assets.adobedtm.com/1d6e8340b68d/b0c6093737cf/launch-f517a559ca8c.min.js" defer></script>
 
         <script type="text/plain" class="optanon-category-C0002">
         (() => {
