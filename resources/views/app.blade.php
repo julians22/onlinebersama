@@ -28,6 +28,91 @@
     <meta property="twitter:image" content="@yield('meta_image')" />
 
     <!-- Analytics Scripts -->
+
+    @production
+        <!-- OneTrust Cookies Consent Notice start for onlinebersama.com -->
+        <script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js"  type="text/javascript" charset="UTF-8" data-domain-script="019dac2e-6419-7678-bb88-2fce4bccca28" ></script>
+        <script type="text/javascript">
+            function OptanonWrapper(){}
+        </script>
+
+        <script>
+            (() => {
+                window.activeFour = false;
+                let isReady = false;
+
+                document.addEventListener('name-studio.verisign', ({ detail: { type } }) => {
+                    if (type === 'ready') isReady = true;
+                });
+
+                window.OptanonWrapper = function () {
+                    const FUNCTIONAL_GROUP = 'C0003';
+                    const TARGETING_GROUP  = 'C0004';
+
+                    const raw = (window.OptanonActiveGroups || '').trim();
+                    const userGroups = raw
+                    ? raw.replace(/^\s*,|,\s*$/g,'').split(',').map(s => s.trim())
+                    : [];
+
+                    const updatePrivacySettings = () => {
+                    const $ns = document.querySelector('name-studio');
+                    if (!$ns) return;
+
+                    const settings = {
+                        analytic: false,
+                        functional: userGroups.includes(FUNCTIONAL_GROUP)
+                    };
+
+                    if (isReady && $ns.api?.privacy?.updateSettings) {
+                        $ns.api.privacy.updateSettings(settings);
+                    } else {
+                        setTimeout(updatePrivacySettings, 250);
+                    }
+                    };
+
+                    updatePrivacySettings();
+
+                    if (userGroups.includes(TARGETING_GROUP)) {
+                    window.activeFour = true;
+                    console.log('enter "c0004"');
+                    }
+                };
+            })();
+        </script>
+        <!-- OneTrust Cookies Consent Notice end for onlinebersama.com -->
+
+        <!-- NameStudio start-->
+        <script async type="module" src="https://nswm-service.verisign.com/3.0/name-studio.js"></script>
+        <!-- NameStudio end-->
+
+        <!-- ADOBE SCRIPT -->
+        <script type="text/plain" class="optanon-category-C0001" src="//assets.adobedtm.com/1d6e8340b68d/b0c6093737cf/launchf517a559ca8c.min.js" defer></script>
+
+        <script type="text/plain" class="optanon-category-C0002">
+        (() => {
+            const addClickHandlers = ({target: $ns, detail: {type}}) => {
+                if (type !== "ready") return;
+
+                if('ready' === type) {
+                    const $controls = $ns.shadowRoot.querySelector('namestudio-controls');
+
+                    const searchEl = $controls.querySelector('input[type=search]');
+                    if (searchEl) {
+                        searchEl.addEventListener('click', () => (window.s_objectID='domainsearchapi - search'));
+                    }
+
+                    $controls.querySelector('button[data-type=terms],.controls-menu-terms')
+                            .addEventListener('click', () => (window.s_objectID='domainsearchapi - termsofservice'));
+
+                    document.removeEventListener('name-studio.verisign', addClickHandlers);
+                }
+            };
+
+            document.addEventListener('name-studio.verisign', addClickHandlers);
+        })();
+        </script>
+    @endproduction
+
     @env(['staging', 'local', 'testing'])
         <!-- OneTrust Cookies Consent Notice start for onlinebersama.com -->
         <script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js"  type="text/javascript" charset="UTF-8" data-domain-script="019dac2e-6419-7678-bb88-2fce4bccca28-test" ></script>
@@ -123,8 +208,6 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     @livewireStyles
 
-    @env(['staging', 'local', 'testing'])
-
     <script type="text/javascript">
 
         window.adobeDataLayer = window.adobeDataLayer || [];
@@ -162,15 +245,7 @@
 
     </script>
 
-    <!-- Debug -->
-    <script type="text/javascript">
-
-        window.addEventListener('load', () => {
-            console.log(window)
-        })
-
-    </script>
-
+    @production
     <!-- Google Tag Manager -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-708118123"></script>
     <script type="text/plain" class="optanon-category-C0004">
@@ -180,7 +255,18 @@
 
         gtag('config', 'AW-708118123');
     </script>
+    @endproduction
 
+    @env(['staging', 'local', 'testing'])
+    <!-- Google Tag Manager -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-708118123"></script>
+    <script type="text/plain" class="optanon-category-C0004">
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'AW-708118123');
+    </script>
     @endenv
 
     <script id="namestudio-scripts" data-ns-revision="2026-06-13">
