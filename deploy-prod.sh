@@ -47,6 +47,18 @@ sudo podman cp app-prod:/var/www/html/public/vendor /home/ubuntu/applications/pr
 sudo chown -R www-data:www-data /home/ubuntu/applications/prod/onlinebersama/public
 sudo chmod -R 755 /home/ubuntu/applications/prod/onlinebersama/public
 
+echo "--- Fixing Storage Permissions for Podman Mount ---"
+# Pastikan folder esensial Laravel sudah terbentuk di host
+sudo mkdir -p /home/ubuntu/applications/prod/onlinebersama/storage/framework/views
+sudo mkdir -p /home/ubuntu/applications/prod/onlinebersama/storage/framework/cache
+sudo mkdir -p /home/ubuntu/applications/prod/onlinebersama/storage/framework/sessions
+sudo mkdir -p /home/ubuntu/applications/prod/onlinebersama/storage/logs
+
+# Berikan kepemilikan dan permission longgar khusus untuk folder storage di host
+sudo chown -R www-data:www-data /home/ubuntu/applications/prod/onlinebersama/storage
+sudo chmod -R 775 /home/ubuntu/applications/prod/onlinebersama/storage
+sudo chmod -R 777 /home/ubuntu/applications/prod/onlinebersama/storage/framework
+
 echo "--- Optimizing Laravel for Production ---"
 sudo podman exec app-prod php artisan migrate --force
 sudo podman exec app-prod php artisan config:cache
