@@ -146,7 +146,7 @@
     <section
         data-analytics-level2="How to Build a Professional Website"
         class="flex items-center gap-10 py-7.5 container flex-col md:py-12.5 xl:items-start xl:gap-30 xl:flex-row">
-        <div x-data class="-top-12 flex flex-col gap-7.5 w-full md:gap-11.5 xl:sticky">
+        <div x-data class="xl:top-20 flex flex-col gap-7.5 w-full md:gap-11.5 xl:sticky">
             <h2 class="text-navy-blue-300 headline-1 text-center">Cara Membangun Situs <span class="sm:block">Web Profesional</span></h2>
             <div class="mx-auto">
                 <img class="size-full aspect-video object-cover max-w-140 rounded-[10px]" src="{{ asset('images/usecase-website.webp') }}" alt="">
