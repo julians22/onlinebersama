@@ -27,11 +27,12 @@ sudo chmod -R 777 /home/ubuntu/applications/prod/onlinebersama/storage
 sudo chown -R www-data:www-data /home/ubuntu/applications/prod/onlinebersama/storage || true
 
 echo "--- Starting Podman Container ---"
-# Jalankan container di port 8081, mount .env dan storage
+# Jalankan container di port 8081, mount .env dan storage dengan tambahan --userns=keep-id
 sudo podman run -d \
   --name app-prod \
   -p 8081:9000 \
   --restart always \
+  --userns=keep-id \
   -v /home/ubuntu/applications/prod/onlinebersama/.env:/var/www/html/.env:Z \
   -v /home/ubuntu/applications/prod/onlinebersama/storage:/var/www/html/storage:Z \
   laravel-prod
