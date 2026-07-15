@@ -86,7 +86,8 @@ return [
         'ikat_indonesia' => 6365585682112,
 
         // Position Video: Home Page
-        'bukan_sekadar_domain' => 6399828948112,
+        // 'bukan_sekadar_domain' => 6399828948112,
+        'bukan_sekadar_domain' => 6401047158112,
 
         // Position Video: Use Case Page (Website, Email, Social Media)
         // 'website' => 6399827707112,
