@@ -36,6 +36,16 @@ return [
             'serve' => true,
             'throw' => false,
             'report' => false,
+            'permissions' => [
+                'file' => [
+                    'public' => 0666,
+                    'private' => 0666,
+                ],
+                'dir' => [
+                    'public' => 0777,
+                    'private' => 0777,
+                ],
+            ],
         ],
 
         'public' => [
@@ -66,6 +76,15 @@ return [
             'serve' => true,
             'throw' => false,
             'report' => false,
+        ],
+
+        'filament_exports' => [
+            'driver' => 'local',
+            'root' => storage_path('app/filament_exports'),
+            'permissions' => [
+                'file' => [ 'public' => 0666, 'private' => 0666 ],
+                'dir' => [ 'public' => 0777, 'private' => 0777 ],
+            ],
         ],
 
     ],
