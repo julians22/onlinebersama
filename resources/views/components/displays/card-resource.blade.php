@@ -17,7 +17,7 @@
             </div>
         @endif
         <div class="h-28.5">
-            <x-displays.clickable :as="$as" data-analytics-name="text | {{ $data->data_analytics }}" :as="$as" {{ $attributes->merge($extra_attributes) }} class="text-left cursor-pointer">
+            <x-displays.clickable :as="$as" data-analytics-name="text | {{ $data->data_analytics }}" {{ $attributes->merge($extra_attributes) }} class="text-left cursor-pointer">
                 <h2 class="subheadline-3 text-deep-blue-300 line-clamp-3 text-[24px]! leading-7.5! md:text-[26px]!">{{ $slot }}</h2>
             </x-displays.clickable>
         </div>

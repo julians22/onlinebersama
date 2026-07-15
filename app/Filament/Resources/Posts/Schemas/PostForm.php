@@ -111,6 +111,10 @@ class PostForm
                                             ->label('Thumbnail File Name')
                                             ->helperText('Digunakan untuk mengambil gambar thumbnail. Nama file disamakan dengan nama file.')
                                             ->required(),
+                                        TextInput::make('thumbnail_related_file_name')
+                                            ->label('Thumbnail Related File Name')
+                                            // ->helperText('Digunakan untuk mengambil gambar thumbnail. Nama file disamakan dengan nama file.')
+                                            ->required(),
                                         TextInput::make('read_time')
                                             ->label('Waktu Baca')
                                             ->prefixIcon('heroicon-o-clock')
