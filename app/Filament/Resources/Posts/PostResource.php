@@ -13,6 +13,7 @@ use Filament\Resources\Resource;
 use Filament\Schemas\Schema;
 use Filament\Support\Icons\Heroicon;
 use Filament\Tables\Table;
+use Illuminate\Support\Facades\Auth;
 use UnitEnum;
 
 class PostResource extends Resource
@@ -24,6 +25,16 @@ class PostResource extends Resource
     protected static ?string $model = Post::class;
 
     protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedSquare3Stack3d;
+
+    public static function shouldRegisterNavigation(): bool
+    {
+        return ! static::isHiddenForCurrentUser();
+    }
+
+    public static function canViewAny(): bool
+    {
+        return ! static::isHiddenForCurrentUser();
+    }
 
     public static function form(Schema $schema): Schema
     {
@@ -49,5 +60,18 @@ class PostResource extends Resource
             'create' => CreatePost::route('/create'),
             'edit' => EditPost::route('/{record}/edit'),
         ];
+    }
+
+    protected static function isHiddenForCurrentUser(): bool
+    {
+        $user = Auth::user();
+
+        if (! $user?->email) {
+            return false;
+        }
+
+        $blockedEmails = config('onlinebersama.post_resource_hidden_emails', []);
+
+        return in_array(strtolower((string) $user->email), array_map('strtolower', $blockedEmails), true);
     }
 }

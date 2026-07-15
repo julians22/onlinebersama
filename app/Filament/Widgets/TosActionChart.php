@@ -8,8 +8,6 @@ use Filament\Widgets\ChartWidget;
 use Flowframe\Trend\Trend;
 use Flowframe\Trend\TrendValue;
 
-use function Symfony\Component\Clock\now;
-
 class TosActionChart extends ChartWidget
 {
 

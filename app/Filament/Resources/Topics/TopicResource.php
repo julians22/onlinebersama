@@ -13,6 +13,7 @@ use Filament\Resources\Resource;
 use Filament\Schemas\Schema;
 use Filament\Support\Icons\Heroicon;
 use Filament\Tables\Table;
+use Illuminate\Support\Facades\Auth;
 use UnitEnum;
 
 class TopicResource extends Resource
@@ -28,6 +29,16 @@ class TopicResource extends Resource
     protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedChatBubbleBottomCenterText;
 
     protected static ?string $recordTitleAttribute = 'name';
+
+    public static function shouldRegisterNavigation(): bool
+    {
+        return ! static::isHiddenForCurrentUser();
+    }
+
+    public static function canViewAny(): bool
+    {
+        return ! static::isHiddenForCurrentUser();
+    }
 
     public static function form(Schema $schema): Schema
     {
@@ -53,5 +64,18 @@ class TopicResource extends Resource
             'create' => CreateTopic::route('/create'),
             'edit' => EditTopic::route('/{record}/edit'),
         ];
+    }
+
+    protected static function isHiddenForCurrentUser(): bool
+    {
+        $user = Auth::user();
+
+        if (! $user?->email) {
+            return false;
+        }
+
+        $blockedEmails = config('onlinebersama.topic_resource_hidden_emails', []);
+
+        return in_array(strtolower((string) $user->email), array_map('strtolower', $blockedEmails), true);
     }
 }

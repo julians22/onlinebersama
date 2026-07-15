@@ -11,7 +11,11 @@
     <div :class="open ? 'gap-1.25' : 'gap-0'" class="flex flex-col py-5 md:py-8.75">
         {{-- Title & Toggle --}}
         <div class="flex text-left gap-4">
-            <h2 :class="open ? 'py-3.5' : 'py-0'" class="w-full text-navy-blue-300 transition-all duration-300 ease-in-out subheadline-2 text-[24px]! leading-8! md:text-[30px]! md:leading-9.5!">{{ $question }}</h2>
+            <a href="#" :data-analytics-name="open ? 'collapse | {{ $dataAnalytics }}' : 'expand | {{ $dataAnalytics }}'" class="w-full cursor-pointer" @click.prevent="toggleAccordion">
+                <h2
+                    :class="open ? 'py-3.5' : 'py-0'"
+                    class="w-full text-navy-blue-300 transition-all duration-300 ease-in-out subheadline-2 text-[24px]! leading-8! md:text-[30px]! md:leading-9.5!">{{ $question }}</h2>
+            </a>
             <div class="flex items-center shrink-0">
                 <button x-show="!open" data-analytics-name="expand | {{ $dataAnalytics }}" type="button" class="cursor-pointer" @click="toggleAccordion">
                     <x-icons.plus width="36" height="36" fill="#1A2E47" class="size-6.5 md:size-7.5" />

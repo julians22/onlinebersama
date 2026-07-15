@@ -2,6 +2,10 @@
 
 return [
 
+    'topic_resource_hidden_emails' => array_filter(array_map('trim', explode(',', (string) env('TOPIC_RESOURCE_HIDDEN_EMAILS', '')))),
+
+    'post_resource_hidden_emails' => array_filter(array_map('trim', explode(',', (string) env('POST_RESOURCE_HIDDEN_EMAILS', '')))),
+
     /*
     |--------------------------------------------------------------------------
     | Namestudio Overlay Enabled
@@ -85,9 +89,12 @@ return [
         'bukan_sekadar_domain' => 6399828948112,
 
         // Position Video: Use Case Page (Website, Email, Social Media)
-        'website' => 6399827707112,
-        'email' => 6399829651112,
-        'social_media' => 6399829157112,
+        // 'website' => 6399827707112,
+        'website' => 6401048120112,
+        // 'email' => 6399829651112,
+        'email' => 6401045385112,
+        // 'social_media' => 6399829157112,
+        'social_media' => 6401048230112,
 
         // Position Video: Use Case Page (Email)
         'tiga_cara' => 6398669179112,
