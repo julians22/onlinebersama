@@ -292,14 +292,14 @@
                 <x-displays.accordion
                     question="Bagaimana cara mendapatkan nama domain .com?"
                     data-analytics="How do I get a .com domain name?">
-                    <p>Anda dapat mendaftarkan nama domain .com melalui registrar atau penyedia layanan pilihan Anda. Jika Anda memerlukan bantuan untuk menentukan nama domain yang tepat bagi ide atau bisnis Anda, NameStudio—<a href="{{ route('find') }}" class="text-magenta-300">alat pencarian nama domain berbasis AI yang dapat digunakan tanpa biaya kami</a>—dapat membantu Anda menemukan berbagai ide nama domain berdasarkan kata kunci dan frasa deskriptif.</p>
+                    <p>Anda dapat mendaftarkan nama domain .com melalui registrar atau penyedia layanan pilihan Anda. Jika Anda memerlukan bantuan untuk menentukan nama domain yang tepat bagi ide atau bisnis Anda, NameStudio—<a data-analytics-name="text | our no-cost, AI-powered domain name search tool" href="{{ route('find') }}" class="text-magenta-300">alat pencarian nama domain berbasis AI yang dapat digunakan tanpa biaya kami</a>—dapat membantu Anda menemukan berbagai ide nama domain berdasarkan kata kunci dan frasa deskriptif.</p>
                 </x-displays.accordion>
                 <x-displays.accordion
                     question="Apa saja cara yang dapat saya lakukan untuk menggunakan nama domain?"
                     data-analytics="What are the different ways I can use a domain name?">
                     <div class="flex flex-col gap-4">
                         <p>Nama domain .com tidak hanya diperuntukkan bagi situs web. Ada banyak cara untuk memanfaatkan nama domain .com secara maksimal, seperti penerusan nama domain.</p>
-                        <p>Dengan <a href="{{ route('social-media') }}" class="text-magenta-300">meneruskan nama domain</a> ke media sosial atau halaman e-commerce, Anda dapat menciptakan pengalaman yang personal bagi pelanggan dalam menemukan bisnis atau toko online Anda. Anda juga dapat menggunakan nama domain sebagai alamat email khusus, yang dapat membantu bisnis Anda terlihat lebih profesional.</p>
+                        <p>Dengan <a data-analytics-name="text | forwarding a domain name" href="{{ route('social-media') }}" class="text-magenta-300">meneruskan nama domain</a> ke media sosial atau halaman e-commerce, Anda dapat menciptakan pengalaman yang personal bagi pelanggan dalam menemukan bisnis atau toko online Anda. Anda juga dapat menggunakan nama domain sebagai alamat email khusus, yang dapat membantu bisnis Anda terlihat lebih profesional.</p>
                     </div>
                 </x-displays.accordion>
                 <x-displays.accordion
