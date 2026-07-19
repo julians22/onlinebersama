@@ -79,11 +79,11 @@ return [
     */
     'video_id' => [
         // Position Video: Panduan Belajar Page
-        'startup_experience' => 6365586738112,
-        'chic_diva' => 6365585876112,
+        'startup_experience' => 6401393906112,
+        'chic_diva' => 6401393884112,
 
         // Position Video: Home Page, Panduan Belajar Page, Navigation Bar (Dropdown)
-        'ikat_indonesia' => 6365585682112,
+        'ikat_indonesia' => 6401393416112,
 
         // Position Video: Home Page
         // 'bukan_sekadar_domain' => 6399828948112,
