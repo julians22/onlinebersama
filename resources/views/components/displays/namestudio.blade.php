@@ -521,7 +521,7 @@ name-studio[results] {
 </style>
 
 
-<div class="namestudio-container relative w-full mt-6">
+<div class="namestudio-container relative w-full z-10 mt-6">
 
     @if (config('onlinebersama.namestudio_overlay_enabled'))
         <livewire:name-studio-overlay>
