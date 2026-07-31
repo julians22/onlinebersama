@@ -1,6 +1,6 @@
 @extends('app')
 
-@section('title', '.com untuk Media Sosial dan E-Commerce')
+@section('title', '.com untuk Media Sosial dan E-commerce | Penerusan Nama Domain')
 @section('meta_description', 'Dengan penerusan domain, Anda dapat mengarahkan nama domain .com yang mudah diingat ke toko online atau laman media sosial Anda.')
 @section('meta_keywords', '.com untuk media sosial, .com untuk e-commerce, manfaat penerusan domain')
 @section('meta_image', asset('images/uc-social-media-ecommerce.webp'))
