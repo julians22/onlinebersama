@@ -10,6 +10,7 @@
     <!-- Primary Meta Tags -->
     <meta name="title" content="@yield('title')" />
     <meta name="description" content="@yield('meta_description')" />
+    <meta name="googlebot" content="max-snippet:200" />
     <meta name="keywords" content="@yield('meta_keywords')" />
     <meta name="author" content="@yield('meta_author')" />
 
