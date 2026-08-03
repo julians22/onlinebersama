@@ -12,10 +12,17 @@
     <div
         x-show="showOverlay"
         @keydown.escape.window="showOverlay = false"
-        @click.away="showOverlay = false"
+        @click.away="
+            showOverlay = false;
+            $wire.decline();
+            "
         class="fixed inset-0 flex items-center justify-center z-100 px-4 bg-black/50 md:px-16">
         <div class="relative bg-white p-8 rounded-[10px] shadow-lg max-w-full w-full space-y-8 md:max-w-2xl md:p-10 md:space-y-10">
-            <button type="button" @click="showOverlay = false" class="absolute top-3 right-3 cursor-pointer">
+            <button type="button"
+                @click="
+                    showOverlay = false;
+                    $wire.decline();
+                    " class="absolute top-3 right-3 cursor-pointer">
                 <x-icons.close width="24" height="24" fill="#A7127E" class="w-8 h-8" />
             </button>
             <p class="paragraph-md text-navy-blue-300 text-[20px]! font-bold! md:text-[24px]!">Saya memahami dan menyetujui ketentuan dari <a target="_blank" href="https://www.verisign.com/id-id/privacy/" class="text-magenta-300 underline">Pernyataan Privasi.</a></p>
