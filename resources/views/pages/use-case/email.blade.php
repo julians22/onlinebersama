@@ -1,6 +1,6 @@
 @extends('app')
 
-@section('title', '.com untuk Email')
+@section('title', '.com untuk Email | Nama Domain .com')
 @section('meta_description', 'Dengan alamat email .com khusus, email bisnis Anda akan terlihat lebih profesional')
 @section('meta_keywords', '.com untuk email, manfaat email khusus')
 @section('meta_image', asset('images/uc-email.webp'))
