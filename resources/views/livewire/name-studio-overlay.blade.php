@@ -1,6 +1,6 @@
 <div
     x-cloak
-    x-data="{ isAccepted: @entangle('isAccepted'), showOverlay: false }" x-show="!isAccepted" class="absolute inset- z-10 w-full h-full">
+    x-data="{ isAccepted: @entangle('isAccepted'), showOverlay: false }" x-show="!isAccepted" class="absolute inset-0 z-10 w-full h-[calc(100%-4.5rem)] min-[415px]:h-[calc(100%-5.5rem)] min-[452px]:h-[calc(100%-5rem)] min-[842px]:h-[calc(100%-4rem)]">
     <div
         style="--ns-overlay-max-width: min(860px, calc(100cqw - 2rem));"
         @click="showOverlay = true"
@@ -12,11 +12,12 @@
     <template x-teleport="body">
         <div
             x-show="showOverlay"
-            @keydown.escape.window="showOverlay = false"
+            @keydown.escape.window="
+                showOverlay = false
+                $wire.decline();"
             @click.away="
                 showOverlay = false;
-                $wire.decline();
-                "
+                $wire.decline();"
             class="fixed inset-0 flex items-center justify-center z-100 px-4 bg-black/50 md:px-16">
             <div class="relative bg-white p-8 rounded-[10px] shadow-lg max-w-full w-full space-y-8 md:max-w-2xl md:p-10 md:space-y-10">
                 <button type="button"
