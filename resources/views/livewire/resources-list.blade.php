@@ -38,10 +38,7 @@
             </article>
         @endforeach
     </div>
-    <div
-        data-analytics-name="sequence | <1 2 3 4>">
-        {{ $posts->onEachSide(0)->links(data: ['scrollTo' => '#resources-scroll']) }}
-    </div>
+    {{ $posts->onEachSide(0)->links(data: ['scrollTo' => '#resources-scroll']) }}
 </div>
 
 @push('scripts')
