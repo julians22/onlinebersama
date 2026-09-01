@@ -118,8 +118,12 @@
         class="flex items-center gap-10 py-7.5 container flex-col md:py-12.5 xl:items-start xl:gap-30 xl:flex-row">
         <div x-data class="xl:top-20 flex flex-col gap-7.5 w-full md:gap-11.5 xl:sticky">
             <h2 class="text-navy-blue-300 headline-1 text-center">Cara Meneruskan Nama <span class="sm:block">Domain Anda</span></h2>
-            <div class="mx-auto">
+            <div class="group relative mx-auto rounded-[10px] overflow-hidden cursor-pointer" @click="$store.videoModal.openModal('{{ config('onlinebersama.video_id.social_media_detail') }}')">
                 <img class="size-full aspect-video object-cover max-w-140 rounded-[10px]" src="{{ asset('images/usecase-social-media.webp') }}" alt="">
+                <div data-analytics-name="video image | How to Forward Your Domain Name" class="top-0 left-0 absolute bg-gradient-video size-full"></div>
+                <button type="button" data-analytics-name="play button | How to Forward Your Domain Name" class="transition-all duration-300 ease-in-out cursor-pointer top-1/2 left-1/2 absolute -translate-x-1/2 -translate-y-1/2 group-hover:scale-110">
+                    <x-icons.play-rounded width="78" height="78" fill="#fff" />
+                </button>
             </div>
         </div>
         <div class="flex flex-col gap-8 w-full max-w-157.5 xl:-mt-12">

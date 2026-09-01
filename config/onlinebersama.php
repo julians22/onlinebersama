@@ -86,16 +86,16 @@ return [
         'ikat_indonesia' => 6401393416112,
 
         // Position Video: Home Page
-        // 'bukan_sekadar_domain' => 6399828948112,
         'bukan_sekadar_domain' => 6401047158112,
 
         // Position Video: Use Case Page (Website, Email, Social Media)
-        // 'website' => 6399827707112,
         'website' => 6401048230112,
-        // 'email' => 6399829651112,
         'email' => 6401045385112,
-        // 'social_media' => 6399829157112,
         'social_media' => 6401048120112,
+
+        'website_detail' => 6404362186112,
+        'email_detail' => 6404363148112,
+        'social_media_detail' => 6404361870112,
 
         // Position Video: Use Case Page (Email)
         'tiga_cara' => 6398669179112,
