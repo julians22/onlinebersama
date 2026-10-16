@@ -202,8 +202,13 @@
     <link rel="stylesheet" href="{{ asset('fonts/webfont/font.css') }}">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
-    <link rel="icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
+    <!-- Light Mode Browser -->
+    <link rel="shortcut icon" href="{{ asset('favicon-light.ico') }}" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="{{ asset('favicon-light.ico') }}" media="(prefers-color-scheme: light)">
+
+    <!-- Dark Mode Browser -->
+    <link rel="shortcut icon" href="{{ asset('favicon-dark.ico') }}" media="(prefers-color-scheme: dark)">
+    <link rel="icon" href="{{ asset('favicon-dark.ico') }}" media="(prefers-color-scheme: dark)">
 
     <!-- Vite scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
