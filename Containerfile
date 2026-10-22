@@ -7,7 +7,10 @@ COPY . .
 RUN npm run build
 
 # STAGE 2: PHP-FPM
-FROM php:8.3-fpm-alpine
+# FROM php:8.3-fpm-alpine
+FROM php:8.3.36-fpm-alpine
+# atau jika menggunakan base Ubuntu/Debian:
+# FROM php:8.3.36-fpm
 RUN apk add --no-cache icu-dev libpng-dev libzip-dev zlib-dev git unzip curl
 RUN docker-php-ext-install pdo_mysql intl gd zip
 COPY --from=docker.io/library/composer:latest /usr/bin/composer /usr/bin/composer
