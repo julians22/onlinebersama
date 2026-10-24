@@ -20,6 +20,8 @@ COPY . .
 # Ambil hasil build JS dari stage 1
 COPY --from=frontend-builder /app/public/build ./public/build
 
+RUN echo "session.upload_progress.enabled = Off" > /usr/local/etc/php/conf.d/disable-upload-progress.ini
+
 RUN composer install --no-dev --optimize-autoloader --no-interaction
 RUN mkdir -p storage bootstrap/cache && \
     chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache && \
