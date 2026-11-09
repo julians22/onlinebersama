@@ -275,30 +275,68 @@
     </script>
     @endenv
 
-    <script id="namestudio-scripts" data-ns-revision="2026-06-13">
-        (() => {
-            document.addEventListener('DOMContentLoaded', () => {
-                const $ns = document.querySelector('name-studio');
-                const $close = $ns.querySelector('.btn-results-close');
+    <script id="namestudio-scripts" data-ns-revision="2026-10-16">
+    (() => {
+        function observeSearch($ns) {
+        const ready = new MutationObserver(() => {
+            ready.disconnect();
+            const $search = $ns.shadowRoot.querySelector("namestudio-search");
 
-                const observer = new MutationObserver(() => {
-                    if($ns.hasAttribute('results') && !$ns.hasAttribute('error')) {
-                        $close.style.setProperty('--btn-close-display', 'flex');
-                        $close.style.setProperty('--btn-close-pointer-evts','all');
-                    } else {
-                        $close.style.setProperty('--btn-close-display', 'none');
-                        $close.style.setProperty('--btn-close-pointer-evts','none');
-                    }
-                });
-                observer.observe($ns,{attributes:true,attributeFilter:['results','error']});
-
-                $ns.querySelector('button[slot="btn-results-close"]').addEventListener('click', () => {
-                    $ns.clearQuery();
-                    $ns.clear();
-                });
+            const observer = new MutationObserver(() => {
+            if ($search.hasAttribute("info")) {
+                $search.style.setProperty("--btn-info-zindex", "1");
+            } else {
+                $search.style.removeProperty("--btn-info-zindex");
+            }
             });
-        })();
+
+            observer.observe($search, {
+            attributes: true,
+            attributeFilter: ["info"],
+            });
+        });
+
+        ready.observe($ns, { attributes: true, attributeFilter: ["ready"] });
+        }
+
+        function observeClose($ns) {
+        const $close = $ns.querySelector(".btn-results-close");
+        const shouldShowClose = () =>
+            $ns.hasAttribute("results") &&
+            "keyword" !== $ns.getAttribute("view") &&
+            !$ns.hasAttribute("error");
+
+        const observer = new MutationObserver(() => {
+            const isShown = shouldShowClose();
+            $close.style.setProperty(
+            "--btn-close-display",
+            isShown ? "flex" : "none",
+            );
+            $close.style.setProperty(
+            "--btn-close-pointer-evts",
+            isShown ? "all" : "none",
+            );
+        });
+        observer.observe($ns, {
+            attributes: true,
+            attributeFilter: ["results", "view", "error"],
+        });
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+        const $ns = document.querySelector("name-studio");
+        observeSearch($ns);
+        observeClose($ns);
+
+        const $btn = $ns.querySelector('button[slot="btn-results-close"]');
+        $btn.addEventListener("click", () => {
+            $ns.clearQuery();
+            $ns.clear();
+        });
+        });
+    })();
     </script>
+
 </head>
 <body class="antialiased">
     <x-navbar />
