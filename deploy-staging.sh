@@ -28,6 +28,8 @@ sudo podman exec app-staging php artisan migrate --force
 sudo podman exec app-staging php artisan key:generate
 sudo podman exec app-staging php artisan config:cache
 sudo podman exec app-staging php artisan route:cache
+# clear compiled views
+sudo podman exec app-staging php artisan view:clear
 sudo podman exec app-staging php artisan view:cache
 sudo podman exec app-staging php artisan filament:assets
 
